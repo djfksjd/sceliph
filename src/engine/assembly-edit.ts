@@ -1,3 +1,4 @@
+import {LATHE_CHAMFER_SCHEMA,chamferLatheCorner,latheChamferBlocker} from './lathe-chamfer';
 import {LATHE_SEGMENT_EDIT_SCHEMA,latheSegmentEditBlocker,setLatheSegments} from './lathe-segment-edit';
 import {migrateLatheNormalPolicy,type LatheNormalPolicy} from './lathe-normal-policy';
 import {migrateBladeSideWinding,validateBladeSideWinding} from './blade-side-winding';
@@ -15,6 +16,7 @@ export interface AssemblyComponentPatch {
   rotateRadians?: Vector3;
   scaleMultiplier?: Vector3;
   geometry?:
+    | { operation: 'lathe-corner-chamfer'; schema: 'morphloom.lathe-corner-chamfer/0.1'; pointIndex: number; setbackMm: number }
     | { operation: 'lathe-segments'; schema: 'morphloom.lathe-segments/0.1'; segments: number }
     | { operation: 'lathe-normal-policy'; action: 'set'; policy: LatheNormalPolicy }
     | { operation: 'lathe-normal-policy'; action: 'clear' }
@@ -115,6 +117,7 @@ function validMaterialPatch(material: AssemblyComponentPatch['material']): boole
 
 function validGeometryPatch(geometry: AssemblyComponentPatch['geometry']): boolean {
   if (!geometry) return true;
+  if(geometry.operation==='lathe-corner-chamfer')return Object.keys(geometry).every(k=>['operation','schema','pointIndex','setbackMm'].includes(k))&&geometry.schema===LATHE_CHAMFER_SCHEMA&&Number.isInteger(geometry.pointIndex)&&geometry.pointIndex>=1&&Number.isFinite(geometry.setbackMm)&&geometry.setbackMm>=.001&&geometry.setbackMm<=100000;
   if(geometry.operation==='lathe-segments')return Object.keys(geometry).every(k=>['operation','schema','segments'].includes(k))&&geometry.schema===LATHE_SEGMENT_EDIT_SCHEMA&&Number.isInteger(geometry.segments)&&geometry.segments>=3&&geometry.segments<=512;
   if (geometry.operation === 'tube-cap-winding' || geometry.operation === 'tube-cap-finish' || geometry.operation === 'blade-side-winding') return Object.keys(geometry).every(k => ['operation', 'action'].includes(k)) && ['set', 'clear'].includes(geometry.action);
   if (geometry.operation === 'lathe-normal-policy') {
@@ -141,6 +144,7 @@ function applyGeometryPatch(
   source: AssemblyGeometryIR,
   patch: NonNullable<AssemblyComponentPatch['geometry']>,
 ): AssemblyGeometryIR {
+  if(patch.operation==='lathe-corner-chamfer')return chamferLatheCorner(source,patch.pointIndex,patch.setbackMm);
   if(patch.operation==='lathe-segments')return setLatheSegments(source,patch.segments);
   if (patch.operation === 'lathe-normal-policy') {
     if(source.op!=='lathe')throw new Error('Normal policy edit requires lathe.');
@@ -225,6 +229,7 @@ export async function applyAssemblyComponentPatch(
   ir: AssemblyIR,
   patch: AssemblyComponentPatch,
 ): Promise<{ ir: AssemblyIR; receipt: AssemblyEditReceipt }> {
+  if(patch.geometry?.operation==='lathe-corner-chamfer'&&patch.schema!=='morphloom.component-patch/0.2')throw new Error('Lathe chamfer requires component-patch/0.2.');
   if(patch.geometry?.operation==='lathe-segments'&&patch.schema!=='morphloom.component-patch/0.2')throw new Error('Lathe segment edit requires component-patch/0.2.');
   if (patch.geometry?.operation === 'lathe-normal-policy' && patch.schema !== 'morphloom.component-patch/0.2') throw new Error('Lathe normal policy requires component-patch/0.2.');
   if (patch.geometry?.operation === 'blade-side-winding' && patch.schema !== 'morphloom.component-patch/0.2') throw new Error('Blade winding edit requires component-patch/0.2.');
@@ -254,6 +259,7 @@ export async function applyAssemblyComponentPatch(
   const unaffectedBefore = ir.components.filter((_, index) => index !== targetIndex);
   const target = ir.components[targetIndex]!;
   if(patch.geometry?.operation==='lathe-segments'){const reason=latheSegmentEditBlocker(ir,target);if(reason)throw new Error(reason);}
+  if(patch.geometry?.operation==='lathe-corner-chamfer'){const reason=latheChamferBlocker(ir,target);if(reason)throw new Error(reason);}
   const edited = {
     ...target,
     ...(patch.translateMm ? { position: addVector(target.position, patch.translateMm) } : {}),
@@ -263,6 +269,7 @@ export async function applyAssemblyComponentPatch(
     ...(patch.geometry ? { geometry: applyGeometryPatch(target.geometry, patch.geometry) } : {}),
   };
   if(patch.geometry?.operation==='lathe-segments'){const reason=latheSegmentEditBlocker(ir,edited);if(reason)throw new Error(reason);}
+  if(patch.geometry?.operation==='lathe-corner-chamfer'){const reason=latheChamferBlocker(ir,edited);if(reason)throw new Error(reason);}
   const components = [...ir.components];
   components[targetIndex] = edited;
   const result: AssemblyIR = { ...ir, components };

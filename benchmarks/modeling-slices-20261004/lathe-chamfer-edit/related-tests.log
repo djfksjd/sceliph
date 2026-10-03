@@ -1,0 +1,15 @@
+
+> sceliph@0.4.0 test
+> vitest run --run tests/lathe-chamfer-edit.test.ts tests/assembly-edit.test.ts
+
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ✓ tests/lathe-chamfer-edit.test.ts (3 tests) 41ms
+ ✓ tests/assembly-edit.test.ts (7 tests) 118ms
+
+ Test Files  2 passed (2)
+      Tests  10 passed (10)
+   Start at  06:05:55
+   Duration  461ms (transform 125ms, setup 0ms, collect 183ms, tests 159ms, environment 0ms, prepare 38ms)
+

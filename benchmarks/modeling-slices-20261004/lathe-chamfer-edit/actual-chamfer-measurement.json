@@ -1,0 +1,50 @@
+[
+  {
+    "id": "small",
+    "setbackMm": 0.25,
+    "profileSetbacksMm": [
+      0.25,
+      0.25
+    ],
+    "actualConnectingTriangles": 72,
+    "maxActualRingErrorMm": 5.4677410202631204e-8,
+    "diagnosticFloat32ToleranceMm": 0.00001,
+    "scope": "actual GLB connected chamfer faces, not a normal-only effect or manufacturing tolerance"
+  },
+  {
+    "id": "default",
+    "setbackMm": 0.5,
+    "profileSetbacksMm": [
+      0.5,
+      0.5
+    ],
+    "actualConnectingTriangles": 96,
+    "maxActualRingErrorMm": 9.739239441737992e-8,
+    "diagnosticFloat32ToleranceMm": 0.00001,
+    "scope": "actual GLB connected chamfer faces, not a normal-only effect or manufacturing tolerance"
+  },
+  {
+    "id": "large",
+    "setbackMm": 1,
+    "profileSetbacksMm": [
+      1,
+      1
+    ],
+    "actualConnectingTriangles": 288,
+    "maxActualRingErrorMm": 1.3896283612219455e-7,
+    "diagnosticFloat32ToleranceMm": 0.00001,
+    "scope": "actual GLB connected chamfer faces, not a normal-only effect or manufacturing tolerance"
+  },
+  {
+    "id": "solid",
+    "setbackMm": 0.5,
+    "profileSetbacksMm": [
+      0.5,
+      0.5
+    ],
+    "actualConnectingTriangles": 192,
+    "maxActualRingErrorMm": 5.7188705585412606e-8,
+    "diagnosticFloat32ToleranceMm": 0.00001,
+    "scope": "actual GLB connected chamfer faces, not a normal-only effect or manufacturing tolerance"
+  }
+]

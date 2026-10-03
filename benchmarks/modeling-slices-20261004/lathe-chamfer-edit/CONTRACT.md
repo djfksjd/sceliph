@@ -1,0 +1,8 @@
+# Explicit lathe corner chamfer 2026-10-04
+Base1931b597d1d2243a3a7174ba081818986cd76c90/compiler0.40.
+Budget30min/two diagnosed attempts/artifacts100MiB/API0.
+Versioned component-patch0.2 command morphloom.lathe-corner-chamfer/0.1: interior pointIndex, setbackMm along each adjacent profile edge. Not fillet radius; 45degree only for right-angle corner.
+Declared raw scalar PBR/unscaled component only; retain existing frozen/mapping blocker. Require convex material-removal corner and unchanged min/max radius/height envelope. Reject axis/seam endpoints, concavity/collinearity, stale fingerprint, oversized setbacks, unsupported version/keys, >128 resulting points or10000 target triangles.
+Replace one point by two computed points; all other points, geometry options and non-target components remain exact. Existing IR0.1 stores editable generated profile; no hidden modifier or new default behavior. Point indices shift and require re-selection against current fingerprint. Re-applying to a new corner is a new destructive geometry operation, not a parameter update; Undo restores source.
+Generate and validate actual geometry/UV/topology before returning patch. Keep existing thresholds; source/failed batches unchanged. Apply/Cancel/Undo/Redo/save/reopen/additional editing required.
+Small/default/large/solid authored diagnostic corner1 setback0.25/0.5/1/0.5mm; bounds preserved, real chamfer edge and generated vertices, deterministic wholeGLB, non-target accessor/PBR/hierarchy exact. Independent GLB/Blender/reopen/neutral paired renders required. No manufacturing/CAD approval or automatic wear claim.
