@@ -1,0 +1,77 @@
+[
+  {
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "scripts/blender-static-mesh-audit.py",
+      "--",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/asphalt.obj",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/obj-report.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "scripts/blender-static-mesh-audit.py",
+      "--",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/asphalt.stl",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/stl-report.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "scripts/blender-static-mesh-audit.py",
+      "--",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/asphalt.ply",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/ply-report.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "./node_modules/.bin/vite-node",
+      "scripts/static-delivery-benchmark.ts",
+      "--obj-report",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/obj-report.json",
+      "--obj-file",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/asphalt.obj",
+      "--stl-report",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/stl-report.json",
+      "--stl-file",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/asphalt.stl",
+      "--ply-report",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/ply-report.json",
+      "--ply-file",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/asphalt.ply",
+      "--asset-id",
+      "asphalt-surface",
+      "--asset-pack",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/asphalt-pack.zip",
+      "--usdz-file",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static/asphalt.usdz",
+      "--output",
+      "/Users/danny/Documents/morphloom/outputs/current-delivery-041-20261004/static-delivery.json"
+    ],
+    "exitCode": 0
+  }
+]

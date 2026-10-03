@@ -1,0 +1,29 @@
+[
+  {
+    "command": "npm test",
+    "exitCode": 0,
+    "evidence": "../lathe-profile-surface-normals/full-tests.log",
+    "result": "119 files; 832 tests"
+  },
+  {
+    "command": "npm run check",
+    "exitCode": 0,
+    "evidence": "../lathe-profile-surface-normals/check-current.log"
+  },
+  {
+    "command": "npm run benchmark",
+    "exitCode": 0,
+    "evidence": "../lathe-profile-surface-normals/benchmark.log"
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "evidence": "../lathe-profile-surface-normals/build-after-asset-fix.log"
+  },
+  {
+    "command": "npm run quality:production",
+    "exitCode": 1,
+    "evidence": "quality-production.log",
+    "result": "current internal quality rates1; competitive cooling infos23; dominance not-run"
+  }
+]

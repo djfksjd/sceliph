@@ -1,0 +1,3 @@
+# Current compiler 0.41 evidence refresh
+Uncommitted profile-surface-normal implementation on eb402fa4; source SHA manifest in preceding normal phase.
+Budget30min/native artifacts1GiB/API0. Actual five-domain fixture generation and repeat SHA, Blender import/export/reimport, native edit, Godot, Prusa, static browser download and reopen, strict bound Blender single-proof. Preserve prior0.40 evidence separately; never rewrite old compiler labels to claim new execution. Keep existing quality thresholds and cooling info failure. No geometry/UV workaround or new domain work. Completed phase requires current local execution, not report metadata-only edits.

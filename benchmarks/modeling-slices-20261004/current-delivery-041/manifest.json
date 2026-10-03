@@ -1,0 +1,408 @@
+{
+  "schema": "sceliph.current-execution-evidence/0.1",
+  "baselineHead": "eb402fa477eae10f4080639b5ca4791d7979208a",
+  "compiler": "morphloom-compiler/0.41.0",
+  "sourceHashes": {
+    "schemas/assembly-ir.schema.json": "d9155f43c17fb187b5b49626be23b48d310bbc61d8c0f72ff318842270e80252",
+    "src/App.tsx": "964fb40bf83323fc3f3ab2fedd5ead8d1ae26c12c1eb3626721448f334845116",
+    "src/AssemblyComponentEditor.tsx": "6bf5155b704b6cda6dcd5829c668dd782bd18820d7b7efc1d095351449301aa4",
+    "src/ViewerApp.tsx": "2f353331498faa6bda40ddff2b203dffae29c7b1905302b8cdfcf6ef3c027391",
+    "src/engine/delivery-validation.ts": "690abf2560177317c1f0eb2bb5503483234a1d5959dcbe1a0dd36443ee951bed",
+    "src/engine/lathe-normal-policy.ts": "02e740d90e7c80479bf6be46f7adc7e07090a83664dc7e2eb93f3c4ac6f94cab",
+    "src/styles.css": "dac47104be6e719c2de32b68a4032890298242fa13f64e90121e36a275baafdb",
+    "tests/browser-proof-recorder.test.ts": "3ac70425f50695844bf200c15328e696434ce8cf54588fbc29c51b6c0c4a88c2",
+    "src/SceliphIcon.tsx": "470f3fcd447e7586c465176d6cdd761cf3f8d7ecc4f266eddbf1dc442e56af63",
+    "src/engine/lathe-profile-surface-normals.ts": "cc96b39d417f9a23beee4e566687a70af930b79519352f6efe5e9dc74ea2ed10",
+    "tests/lathe-profile-surface-normals.test.ts": "2b0e71b699632b4bd886195f9efba525dcbd82cccfc0a6cb9df3cb278570cf73"
+  },
+  "environment": {
+    "node": "v24.13.1",
+    "macOS": "Apple M5",
+    "blender": "5.2.1 LTS build9e2066aef7ef",
+    "godot": "4.7.2",
+    "prusaslicer": "2.9.6"
+  },
+  "status": "feature verified; full production blocked by existing cooling infos23 and separately unresolved first-import sphere normal drift",
+  "files": {
+    "fixture-run.log": {
+      "sha256": "c961d17590fb6e1ed4d2eb1f76ce87bfc559a49dabc2cedb5e39c4e379b222c2",
+      "bytes": 7282
+    },
+    "previous-static-delivery-latest.json": {
+      "sha256": "26c3147acfc1beeaabdb457e2183407c3f06424352ba12a731f706c412003a7e",
+      "bytes": 3186
+    },
+    "quality-gate.log": {
+      "sha256": "1de2a09cef9594e93fad3e71baec60edffb93ebd80402e2ca999a16e2b2fd19d",
+      "bytes": 211472
+    },
+    "blender-cross-domain-run.log": {
+      "sha256": "f32a6e2ffc99da50a2e437e331dc8e9502713196c5de1f9aea99534f359fc21f",
+      "bytes": 446
+    },
+    "previous-blender-roundtrip-latest.json": {
+      "sha256": "e537232ef9a8b86a042ea8c60a1480fdf1bc640340c01f83bd99cffd89e2031b",
+      "bytes": 6853
+    },
+    "static-commands.json": {
+      "sha256": "6851620f429748fcd15788ad72ea0351aeb2ba04a3f17b831eaa6c7b70fcdd30",
+      "bytes": 2712
+    },
+    "prusaslicer-run.log": {
+      "sha256": "bf3fedf50ca844510f4cae990223c4f825dcb9917b935fdee87030aca326e7e4",
+      "bytes": 579
+    },
+    "blender-edit.json": {
+      "sha256": "9d86b168d2b48001b7b27bfd5345bd2d81734a8c60ddab44dd9e4a04916286fc",
+      "bytes": 20985
+    },
+    "blender-edit-run.log": {
+      "sha256": "7d227651c3676871d4098b389e92f0dea98352354ccb3d03660785f340f200d0",
+      "bytes": 458
+    },
+    "previous-blender-cross-domain-latest.json": {
+      "sha256": "988d1aaba48d9d606c153deca0f150cc61b90a8ae973acf32f01727607d1dfca",
+      "bytes": 47668
+    },
+    "static-delivery.json": {
+      "sha256": "8db9aaa8907f7625021f6c3b7739160d23d88324cd81f497afe62ef19f455abf",
+      "bytes": 3186
+    },
+    "static-obj-run.log": {
+      "sha256": "637363ca8fc716de71499eb67a159b6f56682820380dc5f21c6e54087787faf0",
+      "bytes": 946
+    },
+    "blender-cross-domain.json": {
+      "sha256": "3d9dfcc5872e8e96865d411e4438a4021c6abf9fe2e105ba331e9a4727a9504d",
+      "bytes": 47680
+    },
+    "CONTRACT.md": {
+      "sha256": "a9112c3fbfd6db3a7ba611db370124016e2b2dedacc4ab0a1df43c564839543d",
+      "bytes": 659
+    },
+    "static-ply-run.log": {
+      "sha256": "035bd2f0190c67ef041049191b7bea76794ad7e86b3771265c992ec2bbeb5efa",
+      "bytes": 944
+    },
+    "static-delivery-run.log": {
+      "sha256": "8db9aaa8907f7625021f6c3b7739160d23d88324cd81f497afe62ef19f455abf",
+      "bytes": 3186
+    },
+    "quality-production.log": {
+      "sha256": "30f910920fc79fd17b09d6ea04e9e7cf95244cd593f6c14e84203c85d0c39f49",
+      "bytes": 211511
+    },
+    "pin-attempt-note.txt": {
+      "sha256": "c157797c69fbc65f4bfa7b74fc271ec17e2c8b706b804eaf7dc0e62593197f22",
+      "bytes": 326
+    },
+    "prusaslicer.json": {
+      "sha256": "9e3eb1ac8a03a957398e534381c6ee6c0a601c020d4e56dc5b929d57773083e8",
+      "bytes": 2203
+    },
+    "static-browser-run.log": {
+      "sha256": "7f0b6b442057d95f2fdbf6982da974a113490709b619433152a0b2f541e35da4",
+      "bytes": 37
+    },
+    "static-stl-run.log": {
+      "sha256": "49a75ad8dc6df418290b86697a4179bc515adee040f19c283b79906000b63594",
+      "bytes": 830
+    },
+    "godot.json": {
+      "sha256": "6906a458da07feaf7ddb2b9b2df28bf25138f67f4b585856ef41730476ffcc94",
+      "bytes": 13589
+    },
+    "blender-bound-single.json": {
+      "sha256": "b045531fccf6de76bd06764f27025f3cef0cd16f62f526b563e5f97fcab403c8",
+      "bytes": 6873
+    },
+    "godot-run.log": {
+      "sha256": "6da5ef183d684b839c6c39c4ef2242ac4c1e8187a4984ba69a24092f87b600d1",
+      "bytes": 336
+    },
+    "previous-godot-cross-domain-latest.json": {
+      "sha256": "7a76352f62c03284b99f4916ddd473d6d2ca638ee830172f194f0be950d8af1d",
+      "bytes": 13589
+    },
+    "blender-bound-single-run.log": {
+      "sha256": "2ebd73a39b90f3a8a6bb96dff7eaad7be8d69f6b03b725f5866f6a950a127288",
+      "bytes": 364
+    },
+    "previous-blender-cross-domain-edit-latest.json": {
+      "sha256": "8effe507c940a0ad2f91e3c66cc3b55a9000160418ae7204e3c59ec4f93e550b",
+      "bytes": 20990
+    },
+    "previous-prusaslicer-latest.json": {
+      "sha256": "eab97da2f7f13ef0ec6d6051b7a4eb764dda38dde06d70db3f83952ce671f803",
+      "bytes": 2203
+    },
+    "static/obj-report.json": {
+      "sha256": "a6511f3fb6c6098644ad4d1fe351bc081916430f94c37aebafe818166df08852",
+      "bytes": 825
+    },
+    "static/asphalt.stl": {
+      "sha256": "01657f9c3b9c36eb58a3a17d14b7ea28947361b00aea3d76d7a26b935fdc1d00",
+      "bytes": 5596884
+    },
+    "static/browser-downloads.json": {
+      "sha256": "6c993fef944874df5eddb15a8dd1c2aaabb8ce43ea24b48ab223f674319de8ad",
+      "bytes": 279
+    },
+    "static/ply-report.json": {
+      "sha256": "08005ceca4bb15f08eae3c39ab663aab4bfd4b7277994319e0868bffbd515b5b",
+      "bytes": 824
+    },
+    "static/asphalt.usdz": {
+      "sha256": "2ac9a9d024f7a5acb6e60c8c46a29f5347abd96ad2384866de4e17e09597d3af",
+      "bytes": 37239190
+    },
+    "static/asphalt-pack.zip": {
+      "sha256": "e6fc3a233ae3fed44512caf1522289b16e67cee8cfa347a975e5b23d4bf7dcf6",
+      "bytes": 13022008
+    },
+    "static/asphalt.obj": {
+      "sha256": "2db5177d9226da384ea7017943bf537d2d70da55543e9a0afafa6178bbe17176",
+      "bytes": 51036132
+    },
+    "static/stl-report.json": {
+      "sha256": "7a02572fc4fb2e36095a536776900ce1e784dae480590ed214946e8cc6b5343b",
+      "bytes": 719
+    },
+    "static/asphalt.ply": {
+      "sha256": "1dbe6e98b5ff7ce7ab9717ca3cb4d77d92f073f326e484de42814015a5a65d1e",
+      "bytes": 12201286
+    },
+    "fixtures/asphalt-print-surface.stl": {
+      "sha256": "01657f9c3b9c36eb58a3a17d14b7ea28947361b00aea3d76d7a26b935fdc1d00",
+      "bytes": 5596884
+    },
+    "fixtures/laurel-homes-architecture.glb": {
+      "sha256": "a7ea7dc3300d8d261b50e925ce586ffb4c2580981bc05b98b91900f0c329cca2",
+      "bytes": 29636712
+    },
+    "fixtures/laurel-homes-architecture.godot.json": {
+      "sha256": "31656b9411feedd481d3dc941d901807cbf651da823a5bb5efefa4a8e542a5ee",
+      "bytes": 1175
+    },
+    "fixtures/ornate-knife-product.glb": {
+      "sha256": "5ac1b5922f0ec53bdacfffe393a0a4a1f7946a4523eb824bd65148054c54eb7d",
+      "bytes": 1154560
+    },
+    "fixtures/field-human-runtime.godot.json": {
+      "sha256": "ba0d817e156f7ae77de459625770a4dada839824d3d569478c27433755d322a4",
+      "bytes": 1779
+    },
+    "fixtures/cooling-electronics-assembly.godot.json": {
+      "sha256": "d7555717346e7f1b11118b22554d646bfc4a17b3c049de49e3565e6f74af3cbf",
+      "bytes": 1106
+    },
+    "fixtures/field-human-runtime.glb": {
+      "sha256": "1835c245ffac5988edacf1bfc8ca619c84de96c0627e0433836952a23ec6cef9",
+      "bytes": 5065808
+    },
+    "fixtures/cooling-electronics-assembly.glb": {
+      "sha256": "a75d2d3401189becd548f76ee1c54e609938c4af06c8802f619c33f37f0845a7",
+      "bytes": 18622544
+    },
+    "fixtures/asphalt-print-surface.glb": {
+      "sha256": "421e9091be553f25f1e52faed6c621396634c79b40cefbc3030ffa847d7aaae8",
+      "bytes": 17745400
+    },
+    "fixtures/ornate-knife-product.godot.json": {
+      "sha256": "4810eae43bcf022ce72648a720b081a6505d303ebb2d84b73681433cf322eb31",
+      "bytes": 1099
+    },
+    "fixtures/asphalt-print-surface.godot.json": {
+      "sha256": "ef56e134ad0463e009ecee3d5be2e088070d6caded781178bf2e7c70bd007215",
+      "bytes": 1294
+    },
+    "fixtures/godot-import.log": {
+      "sha256": "8380e8508e771d129411aaf6a8be0989bad5a80f2322ad8cb05f0646d26474bf",
+      "bytes": 9617
+    },
+    "fixtures/asphalt-print-surface.gcode": {
+      "sha256": "c563c5809e8f96bc98bed3bd9c63d3526941200077750e56c272005086d3789e",
+      "bytes": 7070485
+    },
+    "fixtures/blender-run-emIWw6/laurel-homes-architecture.edited.glb": {
+      "sha256": "dc37405aeaa9c8e9282782bb920b9d651ac01465d3467cf043943a2770e6fd44",
+      "bytes": 28420456
+    },
+    "fixtures/blender-run-emIWw6/asphalt-print-surface.edited.delivery.glb": {
+      "sha256": "08522c297133be77669e3e486470a27ea6a7fe78143aedcffb66c7739607d1fb",
+      "bytes": 17744372
+    },
+    "fixtures/blender-run-emIWw6/ornate-knife-product.edited.delivery.glb": {
+      "sha256": "ff605dce4f1739e9fa90d6e64a32736733c3c8fd0a7b08182a6a40bee8c3d383",
+      "bytes": 1105300
+    },
+    "fixtures/blender-run-emIWw6/ornate-knife-product.repair.json": {
+      "sha256": "9d94a301915e5e4a8a393cf2e917cf74aa2a534e1b5150f57b3d4ed33266b4bd",
+      "bytes": 1160
+    },
+    "fixtures/blender-run-emIWw6/asphalt-print-surface.edited-stability.glb": {
+      "sha256": "5c8bd67e6fd23d86e74cc67f039db96c784f4795933b026ad7684a45ff7141f1",
+      "bytes": 17744564
+    },
+    "fixtures/blender-run-emIWw6/field-human-runtime.edited.glb": {
+      "sha256": "1eec62944b3796fb387d9ba9b814066af905abe87304f329e38ca8b968a40cc8",
+      "bytes": 3180356
+    },
+    "fixtures/blender-run-emIWw6/cooling-electronics-assembly.edited-stability.glb": {
+      "sha256": "c5dc6da946d68602aee555a7b502e4e4e144625227cb6fec354b01a5d7e36a58",
+      "bytes": 18205080
+    },
+    "fixtures/blender-run-emIWw6/laurel-homes-architecture.edited-stability.glb": {
+      "sha256": "9f59a823378f5147b74a463e5b8f6a33215f4f28beafa57ae4b349b17d3537ed",
+      "bytes": 28418988
+    },
+    "fixtures/blender-run-emIWw6/field-human-runtime.repair.json": {
+      "sha256": "4ef8bc2fe1c7c5d1e447d87ac2f3495798c4a5e5fc71b93c55a54755958215a8",
+      "bytes": 1155
+    },
+    "fixtures/blender-run-emIWw6/field-human-runtime.edit.json": {
+      "sha256": "0d39d6bcf6fcab719e50ce250fa46f182e8b0bb926baa285a9723ed75442e0fa",
+      "bytes": 2475
+    },
+    "fixtures/blender-run-emIWw6/laurel-homes-architecture.edit.json": {
+      "sha256": "d5e13e71641032649e45cc9c684e8b31a90d79b3112b785d3c50532126bd1955",
+      "bytes": 2184
+    },
+    "fixtures/blender-run-emIWw6/laurel-homes-architecture.edited.delivery.glb": {
+      "sha256": "86db09cdcf59dad99f12a0805016abeb70106abbe4be9798cd133b1ac8452526",
+      "bytes": 28343380
+    },
+    "fixtures/blender-run-emIWw6/ornate-knife-product.edited-stability.glb": {
+      "sha256": "5653aa31b402a07d270f67102b720ed59c183c05d69710c5635e6064e09a9652",
+      "bytes": 1112136
+    },
+    "fixtures/blender-run-emIWw6/cooling-electronics-assembly.repair.json": {
+      "sha256": "64f4d0ffc0de7f196d6f13250a3f4ab5e0cd79c2c38c7a94e9ded18a6b110f5d",
+      "bytes": 1215
+    },
+    "fixtures/blender-run-emIWw6/ornate-knife-product.edit.json": {
+      "sha256": "c116d6c180407ae7d4ac255c1b29162dcebdcb1297fd4f60797f295ad138b864",
+      "bytes": 2651
+    },
+    "fixtures/blender-run-emIWw6/cooling-electronics-assembly.edit.json": {
+      "sha256": "b7e80af3709c42dcb78c1428c944755a53193cfdc35c09a2c84636b3c84f3ad8",
+      "bytes": 3178
+    },
+    "fixtures/blender-run-emIWw6/asphalt-print-surface.edit.json": {
+      "sha256": "3860c6c91ddbd8dff397d9cafcc336b9ad4f0810ea3f740ecaeceeccbc4c5f39",
+      "bytes": 2297
+    },
+    "fixtures/blender-run-emIWw6/cooling-electronics-assembly.edited.glb": {
+      "sha256": "d71bd52409295b7f3e918eb36d1ae896d372888498c9a7a16fcdaa1efec3f5f3",
+      "bytes": 18205720
+    },
+    "fixtures/blender-run-emIWw6/asphalt-print-surface.edited.glb": {
+      "sha256": "5c8bd67e6fd23d86e74cc67f039db96c784f4795933b026ad7684a45ff7141f1",
+      "bytes": 17744564
+    },
+    "fixtures/blender-run-emIWw6/field-human-runtime.edited.delivery.glb": {
+      "sha256": "b27678bf355cbe38d6146f4db51bfa30164b0100546230edf8b4ecdd317f44bd",
+      "bytes": 3167100
+    },
+    "fixtures/blender-run-emIWw6/cooling-electronics-assembly.edited.delivery.glb": {
+      "sha256": "f63be2831fb61ffe490d9f65c0bc20090cf527128ae1d11fa465351de54b7a69",
+      "bytes": 17017324
+    },
+    "fixtures/blender-run-emIWw6/asphalt-print-surface.repair.json": {
+      "sha256": "ee16687dae54632b1b0ece08673bad749f130aa237b795a814b47c9acafad1ec",
+      "bytes": 1159
+    },
+    "fixtures/blender-run-emIWw6/laurel-homes-architecture.repair.json": {
+      "sha256": "313bcb6f8c1fa8d9b9f03d378c7e927599c42395c8588a362add5ad52747e3ed",
+      "bytes": 1179
+    },
+    "fixtures/blender-run-emIWw6/ornate-knife-product.edited.glb": {
+      "sha256": "ac2de6de8710fad2ea329a48fb408892eecd9ec5bf7a6a4044418c01e280d596",
+      "bytes": 1112436
+    },
+    "fixtures/blender-run-emIWw6/field-human-runtime.edited-stability.glb": {
+      "sha256": "20c50290231639dd0d5720c1608f1ff66ec4646fa6404681addde60994341c5b",
+      "bytes": 3183424
+    },
+    "fixtures/blender-run-5hYgUB/cooling-electronics-assembly.blender.json": {
+      "sha256": "d37faa46a465c738e604dc7d0aea03d79c016dc19f630fb711d01c6da5a33dfa",
+      "bytes": 4651
+    },
+    "fixtures/blender-run-5hYgUB/ornate-knife-product.blender.glb": {
+      "sha256": "5f3be40c6f06b784679c96d7e558434ab3e5e08145ba677b7ab944289b196dc4",
+      "bytes": 1087040
+    },
+    "fixtures/blender-run-5hYgUB/ornate-knife-product.repair.json": {
+      "sha256": "95fbee6c02b8213965064d6da6db176390e07cb9215ff9b6ff8aa9960aad945f",
+      "bytes": 1099
+    },
+    "fixtures/blender-run-5hYgUB/asphalt-print-surface.blender.repaired.glb": {
+      "sha256": "fbea92d7a1032a08650f01cfa8577efa38f0b1959bec07415d4a7142c2cc738b",
+      "bytes": 17740400
+    },
+    "fixtures/blender-run-5hYgUB/cooling-electronics-assembly.blender.repaired.glb": {
+      "sha256": "a556db26b662741a52aec69e80ae8b85674f283fe4a3d798e52be8a68fa35df4",
+      "bytes": 16576700
+    },
+    "fixtures/blender-run-5hYgUB/field-human-runtime.blender.glb": {
+      "sha256": "9da21935d6a20a862e31b006fe7f9004a9742f44da7fa334bdf48c82a343c708",
+      "bytes": 3923288
+    },
+    "fixtures/blender-run-5hYgUB/laurel-homes-architecture.blender.repaired.glb": {
+      "sha256": "c9338a90672d2261b549e74c4167dcd6d3f0b09b6e617cf9040fa02b8df8782e",
+      "bytes": 27797708
+    },
+    "fixtures/blender-run-5hYgUB/field-human-runtime.repair.json": {
+      "sha256": "b339045967a8b2f61364eb48dc264c46c1f8b90ac32e9aea5df1dc799f987d87",
+      "bytes": 1095
+    },
+    "fixtures/blender-run-5hYgUB/ornate-knife-product.blender.repaired.glb": {
+      "sha256": "aad830bc27e1777b7fc92a9008863568e13b0551cafb0c60ccf12e19bebb5d53",
+      "bytes": 1083848
+    },
+    "fixtures/blender-run-5hYgUB/field-human-runtime.blender.json": {
+      "sha256": "da3a54f63b9256e285115101591618c31c2f260f0fab767972e4492fce551749",
+      "bytes": 6329
+    },
+    "fixtures/blender-run-5hYgUB/cooling-electronics-assembly.repair.json": {
+      "sha256": "ba3fdb4cabb9ae3969f5df746053b95a76601427e4bcb2ad69c80b3263a6a995",
+      "bytes": 1153
+    },
+    "fixtures/blender-run-5hYgUB/cooling-electronics-assembly.blender.glb": {
+      "sha256": "3f253655f1764f948ed2d116936b4cce92089a8f15d7d8d28694b528a3d119a1",
+      "bytes": 17712160
+    },
+    "fixtures/blender-run-5hYgUB/laurel-homes-architecture.blender.json": {
+      "sha256": "f49f3adea21d03872adad48c3deeb9d56294e5acceea6179978f19d8bc88d881",
+      "bytes": 5092
+    },
+    "fixtures/blender-run-5hYgUB/asphalt-print-surface.blender.json": {
+      "sha256": "32614d444595dd797ef15f05b39ef5218ca5610f3bdae2bcb74b86d51b771dcc",
+      "bytes": 3004
+    },
+    "fixtures/blender-run-5hYgUB/ornate-knife-product.blender.json": {
+      "sha256": "eaf7ad43356741996891aad5efe24de58dac11d1ea39cdb0211712471b600948",
+      "bytes": 4167
+    },
+    "fixtures/blender-run-5hYgUB/asphalt-print-surface.repair.json": {
+      "sha256": "ea5bc401573db773e2c4444b69ed039752bc152ca0bf59e0202e4f3dd4e47857",
+      "bytes": 1099
+    },
+    "fixtures/blender-run-5hYgUB/laurel-homes-architecture.repair.json": {
+      "sha256": "39bc1a02d76e6234ae78cfc594bb902b65fb0e53800ab4fd88970c1a2cee8c7c",
+      "bytes": 1117
+    },
+    "fixtures/blender-run-5hYgUB/asphalt-print-surface.blender.glb": {
+      "sha256": "81009455308fb0b72b4e79f2cf987a739e7615900efba2e06e19de091b9c76e7",
+      "bytes": 17740484
+    },
+    "fixtures/blender-run-5hYgUB/laurel-homes-architecture.blender.glb": {
+      "sha256": "cd6395a371fb192f684b22835b55dd07696ac25f54eeeff6fb4e81ba63822c77",
+      "bytes": 27856404
+    },
+    "fixtures/blender-run-5hYgUB/field-human-runtime.blender.repaired.glb": {
+      "sha256": "c7be582eccdcf1d70d535d99895e52994ab3ac4f3a96ec193e933599c6612bb1",
+      "bytes": 3856752
+    }
+  }
+}

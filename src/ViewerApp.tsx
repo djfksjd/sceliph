@@ -1,3 +1,4 @@
+import SceliphIcon from './SceliphIcon';
 import { createLatestIntentGate } from './engine/latest-intent';
 import AssemblyComponentEditor from './AssemblyComponentEditor';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -151,13 +152,6 @@ const BROWSER_PROOF_ASSETS: Record<string, BrowserProofDefinition> = {
 
 const BROWSER_PROOF_EXPECTED_COUNT = Object.keys(BROWSER_PROOF_ASSETS).length;
 
-function AppIcon() {
-  return (
-    <svg viewBox="0 0 36 36" aria-hidden="true">
-      <path d="M6 29V7h7.2L18 15l4.8-8H30v22h-6.2V17.4L18 26l-5.8-8.6V29H6Z" />
-    </svg>
-  );
-}
 
 function StatusMark({ status }: { status: 'pass' | 'warn' | 'blocked' }) {
   return <span className={`status-mark status-${status}`} aria-label={status} />;
@@ -532,7 +526,7 @@ export function ViewerApp() {
     <main className={`app-shell viewer-shell${pipelineCollapsed ? ' pipeline-is-collapsed' : ''}`}>
       <header className="topbar viewer-topbar">
         <div className="brand-lockup">
-          <span className="brand-mark"><AppIcon /></span>
+          <span className="brand-mark"><SceliphIcon /></span>
           <span className="brand-name">SCELIPH</span>
           <span className="brand-edition">Result Viewer / α04</span>
         </div>

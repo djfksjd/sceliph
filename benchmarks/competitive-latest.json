@@ -1,6 +1,6 @@
 {
   "schema": "morphloom.competitive-benchmark/0.1",
-  "generatedAt": "2026-10-03T21:09:04.226Z",
+  "generatedAt": "2026-10-03T21:43:07.888Z",
   "comparisonPolicy": "Capability and executable-gate comparison. This does not claim perceptual superiority without a same-reference blind visual evaluation.",
   "visualSuperiorityPolicy": {
     "status": "not-established",
@@ -2326,9 +2326,9 @@
     },
     "browserRoundTrip": {
       "schema": "morphloom.browser-roundtrip/0.4",
-      "compilerRevision": "morphloom-compiler/0.40.0",
+      "compilerRevision": "morphloom-compiler/0.41.0",
       "fingerprintRevision": "morphloom-scene-fingerprint/0.6.0",
-      "generatedAt": "2026-10-03T19:35:16.160Z",
+      "generatedAt": "2026-10-03T21:37:01.387Z",
       "receiptIntegrityPass": true,
       "assets": [
         {
@@ -2337,7 +2337,7 @@
           "morphTargetPayloadParity": true,
           "texturePayloadParity": true,
           "materialPayloadParity": true,
-          "inputFingerprint": "38eaf26f21674f68",
+          "inputFingerprint": "d2ac5e48854ce5c1",
           "buildFingerprint": "d551a6fff505d014",
           "preparedSceneFingerprint": "0f37aca4277b3c18"
         },
@@ -2347,7 +2347,7 @@
           "morphTargetPayloadParity": true,
           "texturePayloadParity": true,
           "materialPayloadParity": true,
-          "inputFingerprint": "084cd707e3311877",
+          "inputFingerprint": "01bf28202fc724b2",
           "buildFingerprint": "1105c27b29a66804",
           "preparedSceneFingerprint": "53fd17548d495ead"
         },
@@ -2357,7 +2357,7 @@
           "morphTargetPayloadParity": true,
           "texturePayloadParity": true,
           "materialPayloadParity": true,
-          "inputFingerprint": "3efa8d1064462277",
+          "inputFingerprint": "a28137c1200b9ab4",
           "buildFingerprint": "b2f078bc0e9cd087",
           "preparedSceneFingerprint": "9ac4dab658b20d9f"
         },
@@ -2367,7 +2367,7 @@
           "morphTargetPayloadParity": true,
           "texturePayloadParity": true,
           "materialPayloadParity": true,
-          "inputFingerprint": "fc91284a66863806",
+          "inputFingerprint": "e36e56b15974884b",
           "buildFingerprint": "f29c5455caf31d78",
           "preparedSceneFingerprint": "e31f630773c891a9"
         },
@@ -2377,7 +2377,7 @@
           "morphTargetPayloadParity": true,
           "texturePayloadParity": true,
           "materialPayloadParity": true,
-          "inputFingerprint": "cee300a4b1d74e10",
+          "inputFingerprint": "c2e515915a59853b",
           "buildFingerprint": "aa81c975351f2d52",
           "preparedSceneFingerprint": "820a3de6647a4b53"
         },
@@ -2387,7 +2387,7 @@
           "morphTargetPayloadParity": true,
           "texturePayloadParity": true,
           "materialPayloadParity": true,
-          "inputFingerprint": "2cd0696f691ce271",
+          "inputFingerprint": "c691d5487a253a98",
           "buildFingerprint": "d617b036941a397b",
           "preparedSceneFingerprint": "0dd3479b3d4177f6"
         },
@@ -2397,7 +2397,7 @@
           "morphTargetPayloadParity": true,
           "texturePayloadParity": true,
           "materialPayloadParity": true,
-          "inputFingerprint": "4916e71fa09aa2d6",
+          "inputFingerprint": "eddefcf699c9ce95",
           "buildFingerprint": "92d399300e9f3dc1",
           "preparedSceneFingerprint": "a643566447cf76c3"
         }
@@ -2539,7 +2539,7 @@
       "source": "laurel-homes-architecture.glb",
       "sourceBytes": 29636712,
       "sourceSha256": "a7ea7dc3300d8d261b50e925ce586ffb4c2580981bc05b98b91900f0c329cca2",
-      "roundTrip": "actual-native.glb",
+      "roundTrip": "laurel-homes-architecture.blender.glb",
       "roundTripBytes": 27856404,
       "roundTripSha256": "cd6395a371fb192f684b22835b55dd07696ac25f54eeeff6fb4e81ba63822c77",
       "boundsErrorMm": 0,
@@ -2855,7 +2855,7 @@
           ]
         }
       },
-      "compilerRevision": "morphloom-compiler/0.40.0",
+      "compilerRevision": "morphloom-compiler/0.41.0",
       "assetId": "laurel-homes-architecture",
       "assemblyFingerprintRepresentation": "source-json/0.1",
       "assemblyFingerprint": "afde11c75687e314f2b73379b701c5e7d905f81bef782c2d4948960bf4c78b6b",
@@ -2908,14 +2908,14 @@
           "animations": 0
         }
       },
-      "generatedAt": "2026-10-03T19:55:28.977Z",
+      "generatedAt": "2026-10-03T21:41:13.760Z",
       "scope": "Native first import/export/reimport semantic report bound to actual current source and raw output. Final repaired bytes independently revalidated; raw normal byte parity and repaired-file Blender reimport are not asserted.",
       "benchmarkAccepted": true,
       "competitiveBlockers": []
     },
     "blenderCrossDomain": {
       "schema": "morphloom.blender-cross-domain-proof/0.1",
-      "compilerRevision": "morphloom-compiler/0.40.0",
+      "compilerRevision": "morphloom-compiler/0.41.0",
       "pass": true,
       "benchmarkAccepted": false,
       "blenderVersions": [
@@ -2996,7 +2996,7 @@
     },
     "blenderCrossDomainEdit": {
       "schema": "morphloom.blender-cross-domain-edit-proof/0.1",
-      "compilerRevision": "morphloom-compiler/0.40.0",
+      "compilerRevision": "morphloom-compiler/0.41.0",
       "pass": true,
       "benchmarkAccepted": false,
       "cases": [
@@ -3079,7 +3079,7 @@
     },
     "unityCrossDomain": {
       "schema": "morphloom.unity-cross-domain-proof/0.1",
-      "compilerRevision": "morphloom-compiler/0.40.0",
+      "compilerRevision": "morphloom-compiler/0.41.0",
       "pass": false,
       "status": "not-run",
       "blockers": [
@@ -3092,8 +3092,8 @@
     },
     "godotCrossDomain": {
       "schema": "morphloom.godot-cross-domain-proof/0.1",
-      "compilerRevision": "morphloom-compiler/0.40.0",
-      "generatedAt": "2026-10-03T19:38:09.698Z",
+      "compilerRevision": "morphloom-compiler/0.41.0",
+      "generatedAt": "2026-10-03T21:40:52.910Z",
       "pass": true,
       "status": "pass",
       "scope": "Actual Godot native PackedScene import with source-byte, geometry, material, texture, rig, animation, axis-normalized bounds, and delivered-vertex surface-relief parity.",
@@ -3556,9 +3556,9 @@
     },
     "prusaSlicer": {
       "schema": "morphloom.prusaslicer-print-proof/0.1",
-      "compilerRevision": "morphloom-compiler/0.40.0",
+      "compilerRevision": "morphloom-compiler/0.41.0",
       "staticDeliveryRevision": "morphloom-static-delivery/0.6.0",
-      "generatedAt": "2026-10-03T19:37:42.321Z",
+      "generatedAt": "2026-10-03T21:41:24.934Z",
       "pass": true,
       "status": "pass",
       "source": {
@@ -3632,7 +3632,7 @@
         },
         "gcode": {
           "bytes": 7070485,
-          "sha256": "a5b53097589c5e5d194e4f6baa2b279fdbecea25dbcd98f0dcaabcc2c65b435c",
+          "sha256": "c563c5809e8f96bc98bed3bd9c63d3526941200077750e56c272005086d3789e",
           "layers": 43,
           "extrusionMoves": 190170
         }
@@ -3643,17 +3643,17 @@
     },
     "staticDelivery": {
       "schema": "morphloom.static-delivery-proof/0.4",
-      "generatedAt": "2026-10-03T19:39:19.446Z",
-      "compilerRevision": "morphloom-compiler/0.40.0",
+      "generatedAt": "2026-10-03T21:42:01.546Z",
+      "compilerRevision": "morphloom-compiler/0.41.0",
       "staticDeliveryRevision": "morphloom-static-delivery/0.6.0",
       "assetId": "asphalt-surface",
       "expectedSourceTriangles": 111936,
       "assetPack": {
         "source": "asphalt-pack.zip",
-        "bytes": 13022011,
-        "sha256": "6f02f6389def9461648d2675f360d4b4c12cec53f67f1b94cbf35254866cf2e5",
-        "compilerRevision": "morphloom-compiler/0.40.0",
-        "inputFingerprint": "38eaf26f21674f68",
+        "bytes": 13022008,
+        "sha256": "e6fc3a233ae3fed44512caf1522289b16e67cee8cfa347a975e5b23d4bf7dcf6",
+        "compilerRevision": "morphloom-compiler/0.41.0",
+        "inputFingerprint": "d2ac5e48854ce5c1",
         "browserRoundTrip": "pass"
       },
       "status": "pass",
@@ -3751,7 +3751,7 @@
       "usdz": {
         "source": "asphalt.usdz",
         "bytes": 37239190,
-        "sha256": "12604174276c7f65d7174cfa5bd795738db6a36674d393b115926bc3e24a31d5",
+        "sha256": "2ac9a9d024f7a5acb6e60c8c46a29f5347abd96ad2384866de4e17e09597d3af",
         "validator": "/usr/bin/usdchecker",
         "status": "pass"
       },

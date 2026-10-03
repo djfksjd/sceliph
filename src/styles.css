@@ -104,6 +104,11 @@ input:focus-visible {
   fill: currentColor;
 }
 
+.brand-mark .sceliph-symbol {
+  width: 50px;
+  filter: brightness(4);
+}
+
 .brand-name {
   padding: 0 18px;
   font-size: 17px;

@@ -1,0 +1,117 @@
+{
+  "schema": "morphloom.static-delivery-proof/0.4",
+  "generatedAt": "2026-10-03T19:39:19.446Z",
+  "compilerRevision": "morphloom-compiler/0.40.0",
+  "staticDeliveryRevision": "morphloom-static-delivery/0.6.0",
+  "assetId": "asphalt-surface",
+  "expectedSourceTriangles": 111936,
+  "assetPack": {
+    "source": "asphalt-pack.zip",
+    "bytes": 13022011,
+    "sha256": "6f02f6389def9461648d2675f360d4b4c12cec53f67f1b94cbf35254866cf2e5",
+    "compilerRevision": "morphloom-compiler/0.40.0",
+    "inputFingerprint": "38eaf26f21674f68",
+    "browserRoundTrip": "pass"
+  },
+  "status": "pass",
+  "blenderVersion": "5.2.1 LTS",
+  "formats": {
+    "obj": {
+      "source": "asphalt.obj",
+      "bytes": 51036132,
+      "sha256": "2db5177d9226da384ea7017943bf537d2d70da55543e9a0afafa6178bbe17176",
+      "meshes": 1,
+      "vertices": 335808,
+      "triangles": 111936,
+      "coordinateUnit": "m",
+      "coordinateScaleFromMeters": 1,
+      "axisConvention": "source-y-up",
+      "bounds": {
+        "min": [
+          -0.30000001192092896,
+          -0.22499999403953552,
+          -0.020000016316771507
+        ],
+        "max": [
+          0.30000001192092896,
+          0.22499999403953552,
+          0.023453492671251297
+        ],
+        "size": [
+          0.6000000238418579,
+          0.44999998807907104,
+          0.043453507125377655
+        ]
+      }
+    },
+    "stl": {
+      "source": "asphalt.stl",
+      "bytes": 5596884,
+      "sha256": "01657f9c3b9c36eb58a3a17d14b7ea28947361b00aea3d76d7a26b935fdc1d00",
+      "meshes": 1,
+      "vertices": 55970,
+      "triangles": 111936,
+      "coordinateUnit": "mm",
+      "coordinateScaleFromMeters": 1000,
+      "axisConvention": "print-z-up",
+      "bounds": {
+        "min": [
+          -300,
+          -225,
+          -20
+        ],
+        "max": [
+          300,
+          225,
+          23.453475952148438
+        ],
+        "size": [
+          600,
+          450,
+          43.45347595214844
+        ]
+      }
+    },
+    "ply": {
+      "source": "asphalt.ply",
+      "bytes": 12201286,
+      "sha256": "1dbe6e98b5ff7ce7ab9717ca3cb4d77d92f073f326e484de42814015a5a65d1e",
+      "meshes": 1,
+      "vertices": 335808,
+      "triangles": 111936,
+      "coordinateUnit": "m",
+      "coordinateScaleFromMeters": 1,
+      "axisConvention": "source-y-up",
+      "bounds": {
+        "min": [
+          -0.30000001192092896,
+          -0.019999999552965164,
+          -0.22499999403953552
+        ],
+        "max": [
+          0.30000001192092896,
+          0.023453475907444954,
+          0.22499999403953552
+        ],
+        "size": [
+          0.6000000238418579,
+          0.04345347732305527,
+          0.44999998807907104
+        ]
+      }
+    }
+  },
+  "parity": {
+    "triangles": 111936,
+    "maximumAxisNormalizedEnvelopeDriftMm": 0.00003117322922019383
+  },
+  "usdz": {
+    "source": "asphalt.usdz",
+    "bytes": 37239190,
+    "sha256": "12604174276c7f65d7174cfa5bd795738db6a36674d393b115926bc3e24a31d5",
+    "validator": "/usr/bin/usdchecker",
+    "status": "pass"
+  },
+  "blockers": [],
+  "limitation": "OBJ/STL/PLY are static mesh handoffs, not STEP/BREP, rig or PBR interchange. USDZ is Apple AR scene interchange."
+}

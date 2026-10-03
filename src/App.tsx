@@ -1,3 +1,4 @@
+import SceliphIcon from './SceliphIcon';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { CharacterBuild } from './engine/character';
 import type { ProductBuild, ProductPartInfo } from './engine/product';
@@ -81,13 +82,6 @@ const PRODUCT_PRESETS: Array<{ name: string; caption: string; spec: ProductSpec;
   { name: 'FOLD8 / 04', caption: `${GALAXY_Z_FOLD8_EXTERIOR_IR.components.length}부품·공식 치수`, spec: DEFAULT_PRODUCT_SPEC, prompt: '공식 161.4×123.9×4.5mm Galaxy Z Fold8 Graphite 외관을 펼침 상태로', assemblyIR: GALAXY_Z_FOLD8_EXTERIOR_IR },
 ];
 
-function AppIcon() {
-  return (
-    <svg viewBox="0 0 36 36" aria-hidden="true">
-      <path d="M6 29V7h7.2L18 15l4.8-8H30v22h-6.2V17.4L18 26l-5.8-8.6V29H6Z" />
-    </svg>
-  );
-}
 
 function StatusMark({ status }: { status: 'pass' | 'warn' | 'blocked' }) {
   return <span className={`status-mark status-${status}`} aria-label={status} />;
@@ -540,7 +534,7 @@ export function App({evidenceOnly = false}: {evidenceOnly?: boolean} = {}) {
     <main className="app-shell">
       <header className="topbar">
         <div className="brand-lockup">
-          <span className="brand-mark"><AppIcon /></span>
+          <span className="brand-mark"><SceliphIcon /></span>
           <span className="brand-name">SCELIPH</span>
           <span className="brand-edition">Asset Foundry / α04</span>
         </div>

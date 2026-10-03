@@ -1,0 +1,380 @@
+{
+  "schema": "morphloom.blender-roundtrip/0.3",
+  "pass": true,
+  "exportTangentsRequiredBySource": true,
+  "blenderVersion": "5.2.1 LTS",
+  "source": "laurel-homes-architecture.glb",
+  "sourceBytes": 29636712,
+  "sourceSha256": "a7ea7dc3300d8d261b50e925ce586ffb4c2580981bc05b98b91900f0c329cca2",
+  "roundTrip": "actual-native.glb",
+  "roundTripBytes": 27856404,
+  "roundTripSha256": "cd6395a371fb192f684b22835b55dd07696ac25f54eeeff6fb4e81ba63822c77",
+  "boundsErrorMm": 0,
+  "boundsToleranceMm": 0.1,
+  "geometryParity": true,
+  "imageParity": true,
+  "skinningParity": true,
+  "lostImageDimensions": [
+    [
+      1,
+      1
+    ]
+  ],
+  "addedImageDimensions": [],
+  "imported": {
+    "objects": 322,
+    "excludedImporterHelpers": 0,
+    "meshes": 321,
+    "vertices": 566244,
+    "polygons": 188748,
+    "materials": 321,
+    "images": 21,
+    "imageNames": [
+      "Image_0",
+      "Image_1",
+      "Image_10",
+      "Image_11",
+      "Image_12",
+      "Image_13",
+      "Image_14",
+      "Image_15",
+      "Image_16",
+      "Image_17",
+      "Image_18",
+      "Image_19",
+      "Image_2",
+      "Image_20",
+      "Image_3",
+      "Image_4",
+      "Image_5",
+      "Image_6",
+      "Image_7",
+      "Image_8",
+      "Image_9"
+    ],
+    "imageDimensions": [
+      [
+        1,
+        1
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ]
+    ],
+    "shapeKeys": 0,
+    "skinnedVertices": 0,
+    "weightedVertices": 0,
+    "weightedCoverage": 1,
+    "armatures": 0,
+    "bones": 0,
+    "boneNames": [],
+    "actions": 0,
+    "actionNames": [],
+    "geometryMoments": {
+      "cornerCount": 566244,
+      "cornerSum": [
+        100399.83054471016,
+        477984.37860542536,
+        608756.4006285723
+      ],
+      "cornerSumSquares": [
+        92136179.36359191,
+        14908681.968322106,
+        1107239.9983003687
+      ],
+      "surfaceAreaSquareMeters": 3461.6359382362098
+    },
+    "boundsMeters": {
+      "min": [
+        -21.36359977722168,
+        -8.271200180053711,
+        -0.2199999988079071
+      ],
+      "max": [
+        21.36359977722168,
+        13.350199699401855,
+        2.700000047683716
+      ]
+    }
+  },
+  "reopened": {
+    "objects": 322,
+    "excludedImporterHelpers": 0,
+    "meshes": 321,
+    "vertices": 566244,
+    "polygons": 188748,
+    "materials": 321,
+    "images": 20,
+    "imageNames": [
+      "Image_0",
+      "Image_1",
+      "Image_10",
+      "Image_11",
+      "Image_12",
+      "Image_13",
+      "Image_14",
+      "Image_15",
+      "Image_16",
+      "Image_17",
+      "Image_18",
+      "Image_19",
+      "Image_2",
+      "Image_20",
+      "Image_3",
+      "Image_4",
+      "Image_5",
+      "Image_7",
+      "Image_8",
+      "Image_9"
+    ],
+    "imageDimensions": [
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        64
+      ]
+    ],
+    "shapeKeys": 0,
+    "skinnedVertices": 0,
+    "weightedVertices": 0,
+    "weightedCoverage": 1,
+    "armatures": 0,
+    "bones": 0,
+    "boneNames": [],
+    "actions": 0,
+    "actionNames": [],
+    "geometryMoments": {
+      "cornerCount": 566244,
+      "cornerSum": [
+        100399.83054471016,
+        477984.37860542536,
+        608756.4006285723
+      ],
+      "cornerSumSquares": [
+        92136179.366138,
+        14908681.972415688,
+        1107239.9982996818
+      ],
+      "surfaceAreaSquareMeters": 3461.635948218494
+    },
+    "boundsMeters": {
+      "min": [
+        -21.36359977722168,
+        -8.271200180053711,
+        -0.2199999988079071
+      ],
+      "max": [
+        21.36359977722168,
+        13.350199699401855,
+        2.700000047683716
+      ]
+    }
+  },
+  "compilerRevision": "morphloom-compiler/0.40.0",
+  "assetId": "laurel-homes-architecture",
+  "assemblyFingerprintRepresentation": "source-json/0.1",
+  "assemblyFingerprint": "afde11c75687e314f2b73379b701c5e7d905f81bef782c2d4948960bf4c78b6b",
+  "finalDeliverySha256": "c9338a90672d2261b549e74c4167dcd6d3f0b09b6e617cf9040fa02b8df8782e",
+  "finalDeliveryBytes": 27797708,
+  "roundTripStandardValidation": {
+    "status": "pass",
+    "khronosErrors": 0,
+    "khronosWarnings": 0,
+    "independentReadStatus": "pass",
+    "validatedSha256": "c9338a90672d2261b549e74c4167dcd6d3f0b09b6e617cf9040fa02b8df8782e"
+  },
+  "sourceStandard": {
+    "status": "pass",
+    "validator": "Khronos glTF Validator",
+    "validatorVersion": "2.0.0-dev.3.10",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "hints": 0,
+    "truncated": false,
+    "issueCodes": [],
+    "independentRead": {
+      "status": "pass",
+      "parser": "glTF Transform WebIO",
+      "nodes": 322,
+      "meshes": 321,
+      "materials": 321,
+      "skins": 0,
+      "animations": 0
+    }
+  },
+  "finalStandard": {
+    "status": "pass",
+    "validator": "Khronos glTF Validator",
+    "validatorVersion": "2.0.0-dev.3.10",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "hints": 0,
+    "truncated": false,
+    "issueCodes": [],
+    "independentRead": {
+      "status": "pass",
+      "parser": "glTF Transform WebIO",
+      "nodes": 322,
+      "meshes": 321,
+      "materials": 321,
+      "skins": 0,
+      "animations": 0
+    }
+  },
+  "generatedAt": "2026-10-03T19:55:28.977Z",
+  "scope": "Native first import/export/reimport semantic report bound to actual current source and raw output. Final repaired bytes independently revalidated; raw normal byte parity and repaired-file Blender reimport are not asserted."
+}

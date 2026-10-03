@@ -1,0 +1,50 @@
+[
+  {
+    "id": "shallow",
+    "stage": "before",
+    "actualFlatTopTriangles": 96,
+    "maxFlatTopShadingNormalDeviationDeg": 3.654878402496272,
+    "policy": "explicit0.1 corner-angle",
+    "scope": "diagnosis of smoothing across profile edges, not normal-byte preservation or a changed acceptance threshold"
+  },
+  {
+    "id": "shallow",
+    "stage": "after",
+    "actualFlatTopTriangles": 96,
+    "maxFlatTopShadingNormalDeviationDeg": 0,
+    "policy": "explicit0.2 profile-surfaces",
+    "scope": "diagnosis of smoothing across profile edges, not normal-byte preservation or a changed acceptance threshold"
+  },
+  {
+    "id": "moderate",
+    "stage": "before",
+    "actualFlatTopTriangles": 96,
+    "maxFlatTopShadingNormalDeviationDeg": 11.70570695859561,
+    "policy": "explicit0.1 corner-angle",
+    "scope": "diagnosis of smoothing across profile edges, not normal-byte preservation or a changed acceptance threshold"
+  },
+  {
+    "id": "moderate",
+    "stage": "after",
+    "actualFlatTopTriangles": 96,
+    "maxFlatTopShadingNormalDeviationDeg": 0,
+    "policy": "explicit0.2 profile-surfaces",
+    "scope": "diagnosis of smoothing across profile edges, not normal-byte preservation or a changed acceptance threshold"
+  },
+  {
+    "id": "steep",
+    "stage": "before",
+    "actualFlatTopTriangles": 96,
+    "maxFlatTopShadingNormalDeviationDeg": 0,
+    "policy": "explicit0.1 corner-angle",
+    "scope": "diagnosis of smoothing across profile edges, not normal-byte preservation or a changed acceptance threshold"
+  },
+  {
+    "id": "steep",
+    "stage": "after",
+    "actualFlatTopTriangles": 96,
+    "maxFlatTopShadingNormalDeviationDeg": 0,
+    "policy": "explicit0.2 profile-surfaces",
+    "scope": "diagnosis of smoothing across profile edges, not normal-byte preservation or a changed acceptance threshold"
+  }
+]
