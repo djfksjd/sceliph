@@ -1,0 +1,39 @@
+
+> sceliph@0.4.0 test
+> vitest run --run tests/assembly-lathe-segment-edit.test.ts tests/assembly-lathe-normals.test.ts
+
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ❯ tests/assembly-lathe-segment-edit.test.ts (2 tests | 1 failed) 166ms
+   ✓ edits existing segments and reduces actual chord error while preserving bounds and non-target buffers 164ms
+   × saves/reopens declarative IR and repeated absolute edits never accumulate or rewrite other fields 2ms
+     → Component patch did not produce an isolated edit.
+stderr | tests/assembly-lathe-normals.test.ts > preserves actual expanded position/UV, dimensions and topology while changing normals
+THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed.
+THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed.
+THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed.
+
+ ✓ tests/assembly-lathe-normals.test.ts (6 tests) 74ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/assembly-lathe-segment-edit.test.ts > saves/reopens declarative IR and repeated absolute edits never accumulate or rewrite other fields
+Error: Component patch did not produce an isolated edit.
+ ❯ applyAssemblyComponentPatch src/engine/assembly-edit.ts:284:11
+    282|   };
+    283|   if (!receipt.unaffectedComponentsPreserved || receipt.outputFingerpr…
+    284|     throw new Error('Component patch did not produce an isolated edit.…
+       |           ^
+    285|   }
+    286|   return { ir: result, receipt };
+ ❯ tests/assembly-lathe-segment-edit.test.ts:9:317
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  1 failed | 7 passed (8)
+   Start at  05:28:48
+   Duration  550ms (transform 120ms, setup 0ms, collect 179ms, tests 240ms, environment 0ms, prepare 42ms)
+

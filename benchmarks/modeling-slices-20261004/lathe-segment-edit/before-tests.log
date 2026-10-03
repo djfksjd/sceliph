@@ -1,0 +1,47 @@
+
+> sceliph@0.4.0 test
+> vitest run --run tests/assembly-lathe-segment-edit.test.ts
+
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ❯ tests/assembly-lathe-segment-edit.test.ts (2 tests | 2 failed) 4ms
+   × edits existing segments and reduces actual chord error while preserving bounds and non-target buffers 3ms
+     → Component patch is unsafe.
+   × saves/reopens declarative IR and repeated absolute edits never accumulate or rewrite other fields 1ms
+     → Component patch is unsafe.
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/assembly-lathe-segment-edit.test.ts > edits existing segments and reduces actual chord error while preserving bounds and non-target buffers
+Error: Component patch is unsafe.
+ ❯ applyAssemblyComponentPatch src/engine/assembly-edit.ts:237:11
+    235|     || !validGeometryPatch(patch.geometry)
+    236|     || !validMaterialPatch(patch.material)) {
+    237|     throw new Error('Component patch is unsafe.');
+       |           ^
+    238|   }
+    239|   const changedFields = [
+ ❯ tests/assembly-lathe-segment-edit.test.ts:7:156
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/assembly-lathe-segment-edit.test.ts > saves/reopens declarative IR and repeated absolute edits never accumulate or rewrite other fields
+Error: Component patch is unsafe.
+ ❯ applyAssemblyComponentPatch src/engine/assembly-edit.ts:237:11
+    235|     || !validGeometryPatch(patch.geometry)
+    236|     || !validMaterialPatch(patch.material)) {
+    237|     throw new Error('Component patch is unsafe.');
+       |           ^
+    238|   }
+    239|   const changedFields = [
+ ❯ tests/assembly-lathe-segment-edit.test.ts:9:144
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed (2)
+   Start at  05:27:16
+   Duration  235ms (transform 119ms, setup 0ms, collect 149ms, tests 4ms, environment 0ms, prepare 31ms)
+

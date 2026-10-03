@@ -1,0 +1,40 @@
+{
+  "status": "in-progress",
+  "head": "d14fae197bfa1335dc3a1823eb158d971734bced",
+  "compiler": "morphloom-compiler/0.40.0",
+  "tests": {
+    "files": 114,
+    "tests": 818,
+    "status": "pass"
+  },
+  "check": "pass",
+  "benchmark": "pass",
+  "build": "pass",
+  "browser": {
+    "cancel": "48 draft -> 32 restored",
+    "apply": "32 -> 48",
+    "savedIrEqualsEngineIr": true,
+    "freshSessionReopenedSegments": 48,
+    "savedAndReopenedGlbSha256": "506c17919a1cc7f4d09ea6564ca9edd5b768436c9661200ab08cbbcb27d429c5",
+    "undoRedo": "not-run",
+    "additionalEdit": "not-run",
+    "failedSelectorAttempt": "aria-label selectors for Apply/Cancel absent; corrected using observed snapshot refs; earlier wait saw draft only, not committed success"
+  },
+  "blender": {
+    "cases": [
+      "small",
+      "default",
+      "large",
+      "solid"
+    ],
+    "importExportReimport": "executed exit 0",
+    "normalParity": "not-evaluated"
+  },
+  "remaining": [
+    "browser undo/redo, additional edit and invalid edit",
+    "paired neutral renders",
+    "current quality gates",
+    "evidence review and meaningful batch push"
+  ],
+  "apiCalls": 0
+}

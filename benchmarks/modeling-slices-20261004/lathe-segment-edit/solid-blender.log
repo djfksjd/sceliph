@@ -1,0 +1,131 @@
+05:35:51 | INFO: Data are loaded, start creating Blender stuff
+05:35:51 | INFO: Blender create Mesh node 0
+05:35:51 | INFO: Blender create Mesh node 1
+05:35:51 | INFO: glTF import finished in 0.00s
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+05:35:51 | INFO: Starting glTF 2.0 export
+05:35:51 | INFO: Extracting primitive: Mesh_0
+05:35:51 | INFO: Primitives created: 1
+05:35:51 | INFO: Extracting primitive: Mesh_1
+05:35:51 | INFO: Primitives created: 1
+05:35:51 | INFO: Finished glTF 2.0 export in 0.006048917770385742 s
+
+05:35:51 | INFO: Data are loaded, start creating Blender stuff
+05:35:51 | INFO: Blender create Mesh node Mesh_0
+05:35:51 | INFO: Blender create Mesh node Mesh_1
+05:35:51 | INFO: glTF import finished in 0.00s
+{
+  "schema": "morphloom.blender-roundtrip/0.2",
+  "pass": true,
+  "exportTangentsRequiredBySource": false,
+  "blenderVersion": "5.2.1 LTS",
+  "source": "solid-after.glb",
+  "sourceBytes": 104404,
+  "sourceSha256": "65eb9929dfbdc2fe5e4cf0b311d23bf0b462465701cc2d18ace55b98c4a17158",
+  "roundTrip": "solid-blender.glb",
+  "roundTripBytes": 102836,
+  "roundTripSha256": "ba82e5d90440e675b5c48d1d07fa357601c9f09fcd492678c3ac36935299f640",
+  "boundsErrorMm": 0.0,
+  "boundsToleranceMm": 0.1,
+  "geometryParity": true,
+  "imageParity": true,
+  "skinningParity": true,
+  "lostImageDimensions": [],
+  "addedImageDimensions": [],
+  "imported": {
+    "objects": 3,
+    "excludedImporterHelpers": 0,
+    "meshes": 2,
+    "vertices": 2571,
+    "polygons": 2976,
+    "materials": 2,
+    "images": 0,
+    "imageNames": [],
+    "imageDimensions": [],
+    "shapeKeys": 0,
+    "skinnedVertices": 0,
+    "weightedVertices": 0,
+    "weightedCoverage": 1.0,
+    "armatures": 0,
+    "bones": 0,
+    "boneNames": [],
+    "actions": 0,
+    "actionNames": [],
+    "geometryMoments": {
+      "cornerCount": 8928,
+      "cornerSum": [
+        194.40000289678574,
+        -1.7279472123987722e-19,
+        0.0
+      ],
+      "cornerSumSquares": [
+        4.96214173701423,
+        0.10214159272386202,
+        0.056452814531683354
+      ],
+      "surfaceAreaSquareMeters": 0.002336126810305157
+    },
+    "boundsMeters": {
+      "min": [
+        -0.014000000432133675,
+        -0.014000000432133675,
+        -0.006000000052154064
+      ],
+      "max": [
+        0.027000000700354576,
+        0.014000000432133675,
+        0.006000000052154064
+      ]
+    }
+  },
+  "reopened": {
+    "objects": 3,
+    "excludedImporterHelpers": 0,
+    "meshes": 2,
+    "vertices": 2571,
+    "polygons": 2976,
+    "materials": 2,
+    "images": 0,
+    "imageNames": [],
+    "imageDimensions": [],
+    "shapeKeys": 0,
+    "skinnedVertices": 0,
+    "weightedVertices": 0,
+    "weightedCoverage": 1.0,
+    "armatures": 0,
+    "bones": 0,
+    "boneNames": [],
+    "actions": 0,
+    "actionNames": [],
+    "geometryMoments": {
+      "cornerCount": 8928,
+      "cornerSum": [
+        194.40000289678574,
+        -1.7279472123987722e-19,
+        0.0
+      ],
+      "cornerSumSquares": [
+        4.96214173701423,
+        0.10214159272386202,
+        0.056452814531683354
+      ],
+      "surfaceAreaSquareMeters": 0.002336126810305157
+    },
+    "boundsMeters": {
+      "min": [
+        -0.014000000432133675,
+        -0.014000000432133675,
+        -0.006000000052154064
+      ],
+      "max": [
+        0.027000000700354576,
+        0.014000000432133675,
+        0.006000000052154064
+      ]
+    }
+  }
+}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

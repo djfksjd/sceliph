@@ -1,0 +1,24 @@
+{
+  "phaseStatus": "editing-and-local-file-verified",
+  "platformProductionReady": false,
+  "apiCalls": 0,
+  "tests": 818,
+  "testFiles": 114,
+  "qualityGateExit": 1,
+  "qualityProductionExit": 1,
+  "nativeFirstImportNormalPayload": "not-run",
+  "nativeReexportBushingNormal": "4/4 pass at existing 0.01 degree",
+  "browser": [
+    "cancel",
+    "apply",
+    "undo",
+    "redo",
+    "save",
+    "fresh session reopen",
+    "additional edit",
+    "invalid edit blocks unchanged IR"
+  ],
+  "renderConfigurationExact": true,
+  "renderFraming": "alpha bounds change from x119..904 to117..906 under fixed camera; actual silhouette change, not identical masks",
+  "diagnosticCorrection": "initial comparison treated measured framing as settings; configuration compared separately; no rendering settings changed"
+}
