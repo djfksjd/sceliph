@@ -74,6 +74,7 @@ export interface InspectablePart {
 
 export interface ViewportHandle {
   exportGlb: () => Promise<ExportReceipt>;
+  exportBlenderNormalKit: (source: AssemblyIR) => Promise<ExportReceipt>;
   exportObj: () => Promise<ExportReceipt>;
   exportStl: () => Promise<ExportReceipt>;
   exportPly: () => Promise<ExportReceipt>;
@@ -1262,6 +1263,22 @@ export const ResultViewport = forwardRef<ViewportHandle, ResultViewportProps>(
       },
       cancelExport() {
         exportSequenceRef.current += 1;
+      },
+      async exportBlenderNormalKit(source) {
+        const token = ++exportSequenceRef.current;
+        const sequence = validationSequenceRef.current;
+        const snapshot = structuredClone(source);
+        const { bytes } = await ensureValidatedGlb();
+        const [{ buildBlenderNormalKit }, wrapper, helper, license] = await Promise.all([
+          import('../engine/blender-normal-kit'),
+          import('../../scripts/blender-source-normal-import.py?raw'),
+          import('../../scripts/blender_source_normal_import.py?raw'),
+          import('../../LICENSE?raw'),
+        ]);
+        if (token !== exportSequenceRef.current || sequence !== validationSequenceRef.current) throw new Error('Blender normal kit 저장이 취소되었습니다.');
+        const kit = await buildBlenderNormalKit(bytes, snapshot, { wrapper: wrapper.default, helper: helper.default, license: license.default });
+        if (token !== exportSequenceRef.current || sequence !== validationSequenceRef.current) throw new Error('Blender normal kit 저장이 취소되었습니다.');
+        return downloadBlob(new Blob([new Uint8Array(kit).buffer], { type: 'application/zip' }), 'sceliph-blender-normal-kit.zip');
       },
       async exportGlb() {
         const token = ++exportSequenceRef.current;

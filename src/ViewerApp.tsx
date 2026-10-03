@@ -186,6 +186,12 @@ export function ViewerApp() {
   const [browserProofReceipts, setBrowserProofReceipts] = useState<Record<string, BrowserRoundTripAssetReceipt>>({});
   const [telemetry, setTelemetry] = useState<LocalBuildTelemetry>();
   const [importedExpiresAt, setImportedExpiresAt] = useState<number>();
+  const [normalKitSourceCurrent, setNormalKitSourceCurrent] = useState(true);
+  const normalKitSourceCurrentRef = useRef(true);
+  const markNormalKitSourceCurrent = (current: boolean) => {
+    normalKitSourceCurrentRef.current = current;
+    setNormalKitSourceCurrent(current);
+  };
   const [viewerNote, setViewerNote] = useState('CLI/Codex에서 생성한 결과를 검수하는 읽기 전용 화면입니다.');
   const [measurementEnabled, setMeasurementEnabled] = useState(true);
   const measurementMode: MeasurementMode = 'distance';
@@ -384,6 +390,7 @@ export function ViewerApp() {
     const next = VIEWER_ASSETS.find((item) => item.id === id);
     if (!next) return;
     importIntent.cancel();
+    markNormalKitSourceCurrent(true);
     setActiveAssetId(next.id);
     setAssetKind(next.kind);
     setSelectedPart(undefined);
@@ -956,6 +963,8 @@ export function ViewerApp() {
             }))}>
               <span><b>SAVE ASSET PACK</b><small>GLB + OBJ/STL/PLY + IR + quality + preview + Figma SVG</small></span><i>↓</i>
             </button>
+            <button className="normal-kit-action" disabled={!pack || !assemblyIR || !normalKitSourceCurrent} title={!normalKitSourceCurrent ? '새로 선택한 IR을 유효하게 읽은 뒤 kit를 저장할 수 있습니다.' : assemblyIR ? 'Blender 5.2용 선택형 원본 법선 도구. GLB 검사 후 texture/rig/animation/morph 입력을 거부합니다.' : '정적 AssemblyIR이 필요합니다. 캐릭터/일반 product spec은 이 경로에서 지원하지 않습니다.'} onClick={() => assemblyIR && runAction('BLENDER NORMAL KIT', async () => { if (!normalKitSourceCurrentRef.current) throw new Error('새로 선택한 IR 검사가 완료되지 않아 이전 kit를 재사용할 수 없습니다.'); return viewportRef.current!.exportBlenderNormalKit(assemblyIR); })}>BLENDER 5.2 · SOURCE NORMAL KIT</button>
+            <small className="normal-kit-description">선택형 도구: ZIP을 풀고 포함된 명령을 직접 실행하세요. 기본 Blender import와 다르며, Blender 메시 수정은 IR에 역반영되지 않습니다.</small>
             <button disabled={!pack} title="PBR scene exchange for Blender, Unity glTF workflows, Unreal, Godot and web viewers" onClick={() => runAction('GLB', () => viewportRef.current!.exportGlb())}>GLB · BLENDER/UNITY/UNREAL/GODOT</button>
             <button disabled={!pack} title="Mesh reference only; not STEP/BREP" onClick={() => runAction('OBJ', () => viewportRef.current!.exportObj())}>CAD MESH · OBJ</button>
             <button disabled={!pack} title="Millimetre-valued print/CAD mesh; not STEP/BREP" onClick={() => runAction('STL', () => viewportRef.current!.exportStl())}>PRINT MESH · STL (MM)</button>
@@ -973,6 +982,10 @@ export function ViewerApp() {
                 const file = event.currentTarget.files?.[0];
                 event.currentTarget.value = '';
                 if (!file) return;
+                markNormalKitSourceCurrent(false);
+                for (const job of jobsRef.current) {
+                  if (job.name === 'BLENDER NORMAL KIT' && (job.status === 'queued' || job.status === 'running')) cancelJob(job.id);
+                }
                 const intent = importIntent.begin();
                 const isCurrent = () => mountedRef.current && importIntent.isCurrent(intent);
                 if (file.size > 2_000_000) { setViewerNote('AssemblyIR은 최대 2MB입니다.'); return; }
@@ -982,6 +995,7 @@ export function ViewerApp() {
                     const value: unknown = JSON.parse(text);
                     validateAssemblyIR(value);
                     if (!isCurrent()) return;
+                    markNormalKitSourceCurrent(true);
                     setAssemblyIR(value);
                     setAssetKind('product');
                     setActiveAssetId('imported');

@@ -1,0 +1,27 @@
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/blender-normal-kit.test.ts [ tests/blender-normal-kit.test.ts ]
+Error: Cannot find module '../src/engine/blender-normal-kit' imported from '/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/tests/blender-normal-kit.test.ts'
+ ❯ tests/blender-normal-kit.test.ts:4:1
+      2| import {expect,it} from 'vitest';
+      3| import {unzipSync,strFromU8} from 'fflate';
+      4| import {buildBlenderNormalKit,assertBlenderNormalKitSource} from '../s…
+       | ^
+      5| const root='benchmarks/modeling-slices-20261004/lathe-profile-surface-…
+      6| const bytes=()=>new Uint8Array(readFileSync(root+'default-after.glb'))…
+
+Caused by: Error: Failed to load url ../src/engine/blender-normal-kit (resolved id: ../src/engine/blender-normal-kit) in /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/tests/blender-normal-kit.test.ts. Does the file exist?
+ ❯ loadAndTransform ../../../../../../../../Users/danny/Documents/morphloom/node_modules/vite/dist/node/chunks/config.js:22739:33
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  06:54:11
+   Duration  101ms (transform 12ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 27ms)
+

@@ -1,0 +1,4 @@
+import {readFileSync,writeFileSync}from'node:fs';import{createHash}from'node:crypto';import{validateGlbStandard}from'../../src/engine/gltf-standard-validation';
+const out='/Users/danny/Documents/morphloom/outputs/blender-normal-kit-20261004';const rows=[];
+for(const id of ['small','default','large','solid']){const path=`${out}/${id}-browser-kit/edited.glb`,data=new Uint8Array(readFileSync(path)),validation=await validateGlbStandard(data.buffer);if(validation.status!=='pass'||validation.independentRead.status!=='pass')throw Error('Actual edited GLB failed');rows.push({id,sha256:createHash('sha256').update(data).digest('hex'),validation})}
+writeFileSync(out+'/actual-edited-glb-validation.json',JSON.stringify(rows,null,2));console.log('Four actual native-edited GLBs Khronos and independent read PASS');

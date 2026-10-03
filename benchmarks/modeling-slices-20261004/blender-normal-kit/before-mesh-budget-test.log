@@ -1,0 +1,36 @@
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ❯ tests/blender-normal-kit.test.ts (3 tests | 1 failed) 173ms
+   ✓ packages unchanged actual GLB and editable IR with explicit helper provenance 170ms
+   ✓ rejects unsupported native inputs instead of discarding texture, rig or required extensions 0ms
+   × matches the native per-mesh combined corner budget across multiple primitives 2ms
+     → expected [Function] to throw an error
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/blender-normal-kit.test.ts > matches the native per-mesh combined corner budget across multiple primitives
+AssertionError: expected [Function] to throw an error
+
+- Expected: 
+null
+
++ Received: 
+undefined
+
+ ❯ tests/blender-normal-kit.test.ts:31:48
+     29|  if(p.indices!==undefined)doc.accessors[p.indices].count=120000;
+     30|  doc.meshes[0].primitives.push(structuredClone(p));
+     31|  expect(()=>assertBlenderNormalKitSource(doc)).toThrow(/mesh.*corner b…
+       |                                                ^
+     32| });
+     33| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 2 passed (3)
+   Start at  07:13:35
+   Duration  432ms (transform 140ms, setup 0ms, collect 178ms, tests 173ms, environment 0ms, prepare 26ms)
+

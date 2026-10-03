@@ -1,0 +1,34 @@
+[
+  {
+    "command": "npm test",
+    "exitCode": 0,
+    "evidence": "full-tests-after-invalid-source-block.log",
+    "result": "120 files/835 tests"
+  },
+  {
+    "command": "npm run check",
+    "exitCode": 0,
+    "evidence": "check-after-invalid-source-block.log"
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "evidence": "build-after-invalid-source-block.log"
+  },
+  {
+    "command": "npm run benchmark",
+    "exitCode": 0,
+    "evidence": "benchmark-after-invalid-source-block.log"
+  },
+  {
+    "command": "npm run quality:gate",
+    "exitCode": 1,
+    "evidence": "quality-gate-after-invalid-source-block.log"
+  },
+  {
+    "command": "npm run quality:production",
+    "exitCode": 1,
+    "evidence": "quality-production-after-invalid-source-block.log",
+    "result": "existing cooling infos23; internal rates1; dominance not-run"
+  }
+]

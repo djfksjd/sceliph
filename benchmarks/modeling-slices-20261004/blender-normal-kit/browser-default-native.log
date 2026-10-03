@@ -1,0 +1,9 @@
+06:58:32 | INFO: Data are loaded, start creating Blender stuff
+06:58:32 | INFO: Blender create Mesh node 0
+06:58:32 | INFO: Blender create Mesh node 1
+06:58:32 | INFO: glTF import finished in 0.01s
+Info: Saved as "checked.blend"
+{"schema": "morphloom.blender-source-normal-import-receipt/0.1", "sourceSha256": "0af6396261fc14f98a0232f8512da73f72404782aef12bc3ad976ad7d37e4f56", "blenderVersion": "5.2.1 LTS", "fixedNormalToleranceDeg": 0.01, "import": {"policy": "morphloom.blender-source-normal-import/0.1", "referenceReceipts": [{"mesh": "Mesh_0", "storage": "FLOAT_VECTOR/CORNER", "appliedMaxInputErrorDeg": 0, "corners": 1152}, {"mesh": "Mesh_1", "storage": "FLOAT_VECTOR/CORNER", "appliedMaxInputErrorDeg": 0, "corners": 7776}], "meshCount": 2, "vertices": 2571, "nonNormalPayloadExact": true, "hierarchyTransformsExact": true, "scope": "static explicit source Float32 normals; no normal recalculation, quantization or geometry/UV/PBR/transform changes; no arbitrary DCC edit/IR inverse conversion", "inputSha256": "0af6396261fc14f98a0232f8512da73f72404782aef12bc3ad976ad7d37e4f56"}, "scope": "Explicit static first import/.blend preservation; GLB reexport and general delivery not certified", "currentEditableIRAvailable": false, "sourceSpecState": "before-edit-reference", "blendSha256": "d6c4ae5292473b632efbdaeb7e722cf328af13f8b9ec4b383a29d4d720491eb8"}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

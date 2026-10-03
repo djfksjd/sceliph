@@ -1,0 +1,27 @@
+{
+  "schema": "morphloom.native-normal-payload-comparison/0.1",
+  "pass": true,
+  "meshId": "preserved",
+  "before": {
+    "sha256": "fd7be15d14999dfc2c04204f9f5284fca300119e880de2158db83373bd5aa0a6",
+    "kind": "actual GLB NORMAL accessor"
+  },
+  "after": {
+    "sha256": "6d0a4610eb28980b4323c7be866e3cb9918678fbae909eb0146a40d8f48dc797",
+    "kind": "actual GLB NORMAL accessor"
+  },
+  "translationMm": [
+    0,
+    0,
+    0
+  ],
+  "corners": 7776,
+  "worldCoordinates": 1298,
+  "bidirectionalSamples": 15552,
+  "coordinateToleranceMeters": 0.000001,
+  "maxCoordinateDriftMeters": 7.450580569168253e-10,
+  "maxNormalDifferenceDeg": 0.0038534017767132404,
+  "worstCoordinateMicrometers": "47840,3127,1247",
+  "fixedToleranceDeg": 0.01,
+  "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+}

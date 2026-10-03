@@ -1,0 +1,23 @@
+[
+  {
+    "id": "default-optin",
+    "blendReopen": {
+      "pass": true,
+      "meshes": [
+        {
+          "mesh": "Mesh_0",
+          "maxNormalErrorDeg": 0,
+          "pass": true
+        },
+        {
+          "mesh": "Mesh_1",
+          "maxNormalErrorDeg": 0,
+          "pass": true
+        }
+      ]
+    },
+    "source": "/Users/danny/Documents/morphloom/outputs/lathe-profile-surface-normals-20261004/default-after.glb",
+    "exported": "/Users/danny/Documents/morphloom/outputs/blender-normal-kit-20261004/default-optin.reexport.glb",
+    "exportSha256": "e4b891bf057b93bd1d51cb22604adc2d832969cb29ded957a6287c37daa31b29"
+  }
+]

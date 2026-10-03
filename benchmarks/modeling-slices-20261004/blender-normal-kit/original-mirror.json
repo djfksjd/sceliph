@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "file": "benchmarks/competitive-latest.json",
+      "status": "conflict preserved"
+    },
+    {
+      "file": "benchmarks/quality-latest.json",
+      "status": "conflict preserved"
+    },
+    {
+      "file": "src/ViewerApp.tsx",
+      "status": "mirrored"
+    },
+    {
+      "file": "src/components/ResultViewport.tsx",
+      "status": "mirrored"
+    },
+    {
+      "file": "src/styles.css",
+      "status": "mirrored"
+    },
+    {
+      "file": "src/engine/blender-normal-kit.ts",
+      "status": "mirrored"
+    },
+    {
+      "file": "src/vite-env.d.ts",
+      "status": "mirrored"
+    },
+    {
+      "file": "tests/blender-normal-kit.test.ts",
+      "status": "mirrored"
+    },
+    {
+      "file": "docs/BLENDER_NORMAL_KIT_STATUS.ko.md",
+      "status": "mirrored"
+    }
+  ],
+  "nativeScriptDependenciesMatch": {
+    "scripts/blender-source-normal-import.py": true,
+    "scripts/blender_source_normal_import.py": true,
+    "LICENSE": true
+  }
+}

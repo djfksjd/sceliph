@@ -1,0 +1,41 @@
+{
+  "baselineHead": "2f17ead6e83ab96ae2a0648aa338673730760f3e",
+  "plainFirstImport": {
+    "pass": false,
+    "worstDeg": 0.02968046410761413,
+    "fixedToleranceDeg": 0.01
+  },
+  "optinFirstImportAndBlendReopen": "PASS; existing helper; no new geometry or importer implementation",
+  "reexport": [
+    {
+      "mesh": "preserved",
+      "pass": true,
+      "maxDeg": 0.0038534017767132404
+    },
+    {
+      "mesh": "bushing",
+      "pass": true,
+      "maxDeg": 0.0011521892830921182
+    }
+  ],
+  "uiReachability": "not implemented yet; no source-normal kit/export action in current ViewerApp or ResultViewport",
+  "files": {
+    "default-plain-comparison.json": "f1958be68cb29735f8158e7874ccc92c26a9ae2d15c5cace2e8c38767c045c3f",
+    "default-plain-probe.json": "401070a78077a6650172bf2c33298e9f8afeb20a8ab5f34ba358d9cd897681d2",
+    "default-optin.log": "9f7e18188100fd0fb2caadb831252fade73deae72012fa8d60cca279f623a51c",
+    "default-optin.json": "dae6ad7bdef50908bf69a182c3ec5f8e9dae03288bb95615b3bb9cdd716c4c47",
+    "default-plain-comparison.log": "f1958be68cb29735f8158e7874ccc92c26a9ae2d15c5cace2e8c38767c045c3f",
+    "default-reopen.log": "cdded4d1db179d02a158d88db08b64f022ff8d33b12614cfe5b21974121b8da1",
+    "CONTRACT.md": "43e6319a207891c7ee3be0c2c8fe2552db0cacd30251b33e673a04986a18e477",
+    "native-flow.json": "cdc5dc072202aa4cd260feed6f2f3f200289b097af7818873c43ecd3eaf57991",
+    "default-plain-probe.log": "de1c5376078ed8ce6df549f2118ab30c320d1a604e7a7ac700a56b8e019aec9b",
+    "default-optin.blend": "ea12660ef322ce9d1d71ad06a7da568a01c206523deb1f19cb79087f701dfb5f",
+    "default-optin.receipt.json": "dae6ad7bdef50908bf69a182c3ec5f8e9dae03288bb95615b3bb9cdd716c4c47",
+    "optin-preserved-reexport.json": "63c79101bfcb0298d8bcc88d9aaefa538763344ebabfd48c4dfb8e84c7c6893b",
+    "default-optin.reexport.glb": "e4b891bf057b93bd1d51cb22604adc2d832969cb29ded957a6287c37daa31b29",
+    "reopen.json": "f3231dd3f9b803881ac0bd12f58b393487843192c1969e854f3313360fdb8a44",
+    "optin-bushing-reexport.log": "5f7f7eb47c74a9d4c1695614b2a50bde0031166ab2b97c3735e84e46c677c93e",
+    "optin-bushing-reexport.json": "5f7f7eb47c74a9d4c1695614b2a50bde0031166ab2b97c3735e84e46c677c93e",
+    "optin-preserved-reexport.log": "63c79101bfcb0298d8bcc88d9aaefa538763344ebabfd48c4dfb8e84c7c6893b"
+  }
+}

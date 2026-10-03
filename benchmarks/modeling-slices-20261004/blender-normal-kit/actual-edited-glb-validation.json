@@ -1,0 +1,106 @@
+[
+  {
+    "id": "small",
+    "sha256": "03a8ecfd75f46d5cec275fc8fa53034fba31b193e318da52a6de8d2c4e319434",
+    "validation": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  },
+  {
+    "id": "default",
+    "sha256": "4aa72fdb8fc47012623642e458e63b87deddba20327b93cf49eea649f31b0e8d",
+    "validation": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  },
+  {
+    "id": "large",
+    "sha256": "6d0a4610eb28980b4323c7be866e3cb9918678fbae909eb0146a40d8f48dc797",
+    "validation": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  },
+  {
+    "id": "solid",
+    "sha256": "d54e000d6c796e94ffa1ffe94607860649b00049ee0c23c06bfd8069ecad8831",
+    "validation": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  }
+]
