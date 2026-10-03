@@ -4,6 +4,17 @@ import {applyAssemblyComponentPatch,fingerprintAssemblyIR} from './assembly-edit
 import {compileAssemblyGeometry} from './assembly-compiler';
 import {latheSegmentEditBlocker} from './lathe-segment-edit';
 import {analyzeTopology} from './topology';
+/** Exact diagnostics only. Ambiguous contacts still go through existing mesh checks. */
+function validateProfileSegments(points:Array<[number,number]>):void {
+ for(let i=0;i<points.length-1;i++)if(points[i][0]===points[i+1][0]&&points[i][1]===points[i+1][1])
+  throw new Error(`Lathe profile points ${i}-${i+1} coincide at radius ${points[i][0]}, height ${points[i][1]} mm. Move one point to restore a nonzero segment.`);
+ const orient=(a:number[],b:number[],c:number[])=> (b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);
+ for(let i=0;i<points.length-1;i++)for(let j=i+2;j<points.length-1;j++){
+  const a=points[i],b=points[i+1],c=points[j],d=points[j+1];
+  if(orient(a,b,c)*orient(a,b,d)<0&&orient(c,d,a)*orient(c,d,b)<0)
+   throw new Error(`Lathe profile segments ${i}-${i+1} and ${j}-${j+1} cross in the local radius/height plane. Adjust their points so the profile does not cross itself.`);
+ }
+}
 export async function editLatheProfile(ir:AssemblyIR,componentId:string,points:Array<[number,number]>):Promise<AssemblyIR>{
  const c=ir.components.find(x=>x.id===componentId);if(!c||c.geometry.op!=='lathe')throw new Error('Lathe profile target is missing.');
  const reason=latheSegmentEditBlocker(ir,c);if(reason)throw new Error(reason);
@@ -16,6 +27,7 @@ export async function editLatheProfile(ir:AssemblyIR,componentId:string,points:A
   if(firstChanged&&lastChanged&&!equal(edited[0],edited[last]))throw new Error('Closed profile endpoints conflict.');
   if(firstChanged)edited[last]=[...edited[0]];else if(lastChanged)edited[0]=[...edited[last]];
  }
+ validateProfileSegments(edited);
  const deltas=edited.flatMap((p,i)=>equal(p,g.profile[i])?[]:[{pointIndex:i,deltaMm:[p[0]-g.profile[i][0],p[1]-g.profile[i][1]] as [number,number]}]);
  if(!deltas.length)return ir;
  const result=await applyAssemblyComponentPatch(ir,{schema:'morphloom.component-patch/0.2',operationId:'ui-lathe-profile-'+componentId,componentId,expectedInputFingerprint:await fingerprintAssemblyIR(ir),geometry:{operation:'lathe-profile-deltas',deltas}});
