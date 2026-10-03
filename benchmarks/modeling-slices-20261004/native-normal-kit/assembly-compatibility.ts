@@ -1,0 +1,6 @@
+import {readFileSync,writeFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+import {buildBlenderNormalKit} from '../../src/engine/blender-normal-kit';
+const root='/Users/danny/Documents/morphloom/outputs/blender-normal-kit-20261004/',folder=root+'default-browser-kit/',raw=new Uint8Array(readFileSync(folder+'model.glb'));
+const source=JSON.parse(readFileSync(folder+'source.json','utf8')),scripts={wrapper:readFileSync('scripts/blender-source-normal-import.py','utf8'),helper:readFileSync('scripts/blender_source_normal_import.py','utf8'),license:readFileSync('LICENSE','utf8')};
+const generated=await buildBlenderNormalKit(raw.buffer,source,scripts),old=readFileSync(root+'default-browser-kit.zip'),same=Buffer.from(generated).equals(old);
+writeFileSync('work/native-normal-kit-20261004/assembly-compatibility.json',JSON.stringify({currentImplementationOldInputsWholeZIPExact:same,oldZIPsha256:createHash('sha256').update(old).digest('hex'),generatedZIPsha256:createHash('sha256').update(generated).digest('hex'),scope:'fresh execution of current builder using preserved previous input; previous successful receipt not reused'},null,2));if(!same)throw new Error('Assembly 0.1 kit bytes changed');console.log('Current builder preserves old Assembly kit whole ZIP bytes');

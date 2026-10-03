@@ -1,0 +1,31 @@
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ❯ tests/native-blender-normal-kit.test.ts (3 tests | 1 failed) 465ms
+   × packs actual native bearing bytes and editable source without claiming native execution 202ms
+     → Blender normal kit native regenerated GLB bytes differ.
+   ✓ rejects source mismatch and changed export selection 127ms
+   ✓ rejects changed actual NORMAL payload even with unchanged editable source reference 136ms
+ ✓ tests/blender-normal-kit.test.ts (3 tests) 167ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/native-blender-normal-kit.test.ts > packs actual native bearing bytes and editable source without claiming native execution
+Error: Blender normal kit native regenerated GLB bytes differ.
+ ❯ buildNativeBlenderNormalKit src/engine/blender-normal-kit.ts:93:114
+     91|   const regenerated=await new GLTFExporter().parseAsync(built.root,{bi…
+     92|   const original=new Uint8Array(input);
+     93|   if(regenerated.byteLength!==input.byteLength||!new Uint8Array(regene…
+       |                                                                                                                  ^
+     94|  }finally{built.dispose();}
+     95|  const validation=await validateGlbStandard(input);
+ ❯ tests/native-blender-normal-kit.test.ts:15:32
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  1 failed | 5 passed (6)
+   Start at  07:50:45
+   Duration  995ms (transform 158ms, setup 0ms, collect 232ms, tests 633ms, environment 0ms, prepare 43ms)
+

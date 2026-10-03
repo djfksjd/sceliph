@@ -1,0 +1,299 @@
+[
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "inner_race",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      0,
+      0,
+      0
+    ],
+    "corners": 25344,
+    "worldCoordinates": 4224,
+    "bidirectionalSamples": 50688,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 0,
+    "maxNormalDifferenceDeg": 0.004427907932898632,
+    "worstCoordinateMicrometers": "5232,205,2474",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  },
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "outer_race",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      0,
+      0,
+      0
+    ],
+    "corners": 25344,
+    "worldCoordinates": 4224,
+    "bidirectionalSamples": 50688,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 0,
+    "maxNormalDifferenceDeg": 0.004307817201202521,
+    "worstCoordinateMicrometers": "-3939,-205,8328",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  },
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "cage",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      0,
+      0,
+      0
+    ],
+    "corners": 9312,
+    "worldCoordinates": 1536,
+    "bidirectionalSamples": 18624,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 2.765668506431392e-09,
+    "maxNormalDifferenceDeg": 0.003307279538261709,
+    "worstCoordinateMicrometers": "2536,270,5363",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  },
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "ball_0000",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      1,
+      0,
+      0
+    ],
+    "corners": 8928,
+    "worldCoordinates": 1490,
+    "bidirectionalSamples": 17856,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 4.693865782168238e-10,
+    "maxNormalDifferenceDeg": 0.004165662238711668,
+    "worstCoordinateMicrometers": "6911,1247,589",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  },
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "ball_0001",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      0,
+      0,
+      0
+    ],
+    "corners": 8928,
+    "worldCoordinates": 1490,
+    "bidirectionalSamples": 17856,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 8.223452476596007e-11,
+    "maxNormalDifferenceDeg": 0.004165662238711668,
+    "worstCoordinateMicrometers": "4714,1247,5893",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  },
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "ball_0002",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      0,
+      0,
+      0
+    ],
+    "corners": 8928,
+    "worldCoordinates": 1490,
+    "bidirectionalSamples": 17856,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 1.6763806315323038e-10,
+    "maxNormalDifferenceDeg": 0.004165662238711668,
+    "worstCoordinateMicrometers": "-589,1247,8089",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  },
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "ball_0003",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      0,
+      0,
+      0
+    ],
+    "corners": 8928,
+    "worldCoordinates": 1490,
+    "bidirectionalSamples": 17856,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 8.223452476596007e-11,
+    "maxNormalDifferenceDeg": 0.004165662238711668,
+    "worstCoordinateMicrometers": "-5893,1247,5893",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  },
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "ball_0004",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      0,
+      0,
+      0
+    ],
+    "corners": 8928,
+    "worldCoordinates": 1490,
+    "bidirectionalSamples": 17856,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 1.6763806315323038e-10,
+    "maxNormalDifferenceDeg": 0.004165662238711668,
+    "worstCoordinateMicrometers": "-8089,1247,589",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  },
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "ball_0005",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      0,
+      0,
+      0
+    ],
+    "corners": 8928,
+    "worldCoordinates": 1490,
+    "bidirectionalSamples": 17856,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 8.223452476596007e-11,
+    "maxNormalDifferenceDeg": 0.004165662238711668,
+    "worstCoordinateMicrometers": "-5893,1247,-4714",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  },
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "ball_0006",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      0,
+      0,
+      0
+    ],
+    "corners": 8928,
+    "worldCoordinates": 1490,
+    "bidirectionalSamples": 17856,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 1.6763806315323038e-10,
+    "maxNormalDifferenceDeg": 0.004165662238711668,
+    "worstCoordinateMicrometers": "-589,1247,-6911",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  },
+  {
+    "schema": "morphloom.native-normal-payload-comparison/0.1",
+    "pass": true,
+    "meshId": "ball_0007",
+    "before": {
+      "sha256": "2c0667efe9b59b52f1f460a81d55ccc2bffca7cb3fc21cc0c46397e5b5b5715e",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "after": {
+      "sha256": "0b123deb03e1a7a723e2783415878caab6d1aa67857847e83393f45cb0ba1802",
+      "kind": "actual GLB NORMAL accessor"
+    },
+    "translationMm": [
+      0,
+      0,
+      0
+    ],
+    "corners": 8928,
+    "worldCoordinates": 1490,
+    "bidirectionalSamples": 17856,
+    "coordinateToleranceMeters": 1e-06,
+    "maxCoordinateDriftMeters": 8.223452476596007e-11,
+    "maxNormalDifferenceDeg": 0.004165662238711668,
+    "worstCoordinateMicrometers": "4714,1247,-4714",
+    "fixedToleranceDeg": 0.01,
+    "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+  }
+]

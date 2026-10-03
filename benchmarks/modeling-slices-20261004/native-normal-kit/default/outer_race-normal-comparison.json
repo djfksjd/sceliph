@@ -1,0 +1,27 @@
+{
+  "schema": "morphloom.native-normal-payload-comparison/0.1",
+  "pass": true,
+  "meshId": "outer_race",
+  "before": {
+    "sha256": "bc97e3378fe18438b250ff7498800e82a49853e86682a86f50725ab7f9e34795",
+    "kind": "actual GLB NORMAL accessor"
+  },
+  "after": {
+    "sha256": "25039b7dea5fccf314ae1bf027207cdc8361a3d78b87ae270594d290b2f94f31",
+    "kind": "actual GLB NORMAL accessor"
+  },
+  "translationMm": [
+    0,
+    0,
+    0
+  ],
+  "corners": 25344,
+  "worldCoordinates": 4224,
+  "bidirectionalSamples": 50688,
+  "coordinateToleranceMeters": 0.000001,
+  "maxCoordinateDriftMeters": 0,
+  "maxNormalDifferenceDeg": 0.004307817201202521,
+  "worstCoordinateMicrometers": "-7878,-410,16657",
+  "fixedToleranceDeg": 0.01,
+  "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+}

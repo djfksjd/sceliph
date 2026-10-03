@@ -1,0 +1,98 @@
+[
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/default.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "inner_race"
+    ],
+    "exit": 0,
+    "stdout": "inner_race\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(async()=>{const text=await(await fetch('/src/ElementEditor.tsx')).text();const {GLTFExporter}=await import(text.match(/import \\{ GLTFExporter \\} from \"([^\"]+)\"/)[1]);const old=GLTFExporter.prototype.parseAsync;let calls=0;window.downloads=[];HTMLAnchorElement.prototype.click=function(){window.downloads.push(this.download)};GLTFExporter.prototype.parseAsync=async function(...args){const data=await old.apply(this,args);if(++calls===2){GLTFExporter.prototype.parseAsync=old;window.waiting=true;await new Promise(r=>window.release=r)}return data};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "BLENDER 5.2 \u00b7 NATIVE NORMAL KIT"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "Boolean(window.waiting)"
+    ],
+    "exit": 0,
+    "stdout": "false\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "Boolean(window.waiting)"
+    ],
+    "exit": 0,
+    "stdout": "false\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "Boolean(window.waiting)"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{File.prototype.text=async()=>{throw new Error('intentional kit replacement read failure')};const input=document.querySelector('nav input[type=file]'),dt=new DataTransfer();dt.items.add(new File(['{}'],'failed.json'));input.files=dt.files;input.dispatchEvent(new Event('change',{bubbles:true}));return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.release();true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"Error: intentional kit replacement read failure\\\"}\"\n",
+    "stderr": ""
+  }
+]

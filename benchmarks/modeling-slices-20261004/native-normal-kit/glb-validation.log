@@ -1,0 +1,226 @@
+
+> sceliph@0.4.0 gltf:validate
+> vite-node scripts/validate-glb.ts work/native-normal-kit-20261004/small/model.glb work/native-normal-kit-20261004/default/model.glb work/native-normal-kit-20261004/large/model.glb work/native-normal-kit-20261004/gear/model.glb work/native-normal-kit-20261004/small/edited.glb work/native-normal-kit-20261004/default/edited.glb work/native-normal-kit-20261004/large/edited.glb work/native-normal-kit-20261004/gear/edited.glb work/native-normal-kit-20261004/edited/model.glb
+
+{
+  "schema": "morphloom.khronos-gltf-validation/0.1",
+  "pass": true,
+  "reports": [
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/small/model.glb",
+      "bytes": 2519316,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 11,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 13,
+        "meshes": 11,
+        "materials": 11,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/default/model.glb",
+      "bytes": 2520096,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 11,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 13,
+        "meshes": 11,
+        "materials": 11,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/large/model.glb",
+      "bytes": 2520416,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 11,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 13,
+        "meshes": 11,
+        "materials": 11,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/gear/model.glb",
+      "bytes": 809148,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 1,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/small/edited.glb",
+      "bytes": 2431644,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 11,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 13,
+        "meshes": 11,
+        "materials": 11,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/default/edited.glb",
+      "bytes": 2431640,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 11,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 13,
+        "meshes": 11,
+        "materials": 11,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/large/edited.glb",
+      "bytes": 2431632,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 11,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 13,
+        "meshes": 11,
+        "materials": 11,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/gear/edited.glb",
+      "bytes": 856540,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 1,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/edited/model.glb",
+      "bytes": 2520096,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 11,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 13,
+        "meshes": 11,
+        "materials": 11,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/small.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "inner_race"
+    ],
+    "exit": 0,
+    "stdout": "inner_race\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "download",
+      "button:has-text(\"BLENDER 5.2 \u00b7 NATIVE NORMAL KIT\")",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/small.zip"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "\u2717 Element not found: button:has-text(\"BLENDER 5.2 \u00b7 NATIVE NORMAL KIT\"). Verify the selector, role, or name is correct and the element exists in the DOM.\n"
+  }
+]

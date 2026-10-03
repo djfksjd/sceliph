@@ -1,0 +1,45 @@
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ❯ tests/native-blender-normal-kit.test.ts (3 tests | 3 failed) 226ms
+   × packs actual native bearing bytes and editable source without claiming native execution 96ms
+     → (0 , buildNativeBlenderNormalKit) is not a function
+   × rejects source mismatch and changed export selection 67ms
+     → (0 , buildNativeBlenderNormalKit) is not a function
+   × rejects changed actual NORMAL payload even with unchanged editable source reference 62ms
+     → (0 , buildNativeBlenderNormalKit) is not a function
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/native-blender-normal-kit.test.ts > packs actual native bearing bytes and editable source without claiming native execution
+TypeError: (0 , buildNativeBlenderNormalKit) is not a function
+ ❯ tests/native-blender-normal-kit.test.ts:15:38
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  tests/native-blender-normal-kit.test.ts > rejects source mismatch and changed export selection
+TypeError: (0 , buildNativeBlenderNormalKit) is not a function
+ ❯ tests/native-blender-normal-kit.test.ts:21:105
+     19| });
+     20| it('rejects source mismatch and changed export selection',async()=>{
+     21|  try{const f=await fixture(),wrong=structuredClone(f.source);wrong.par…
+       |                                                                                                         ^
+     22|  await expect(buildNativeBlenderNormalKit(f.glb,{...f.source,selection…
+     23|  }finally{vi.unstubAllGlobals();}
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  tests/native-blender-normal-kit.test.ts > rejects changed actual NORMAL payload even with unchanged editable source reference
+TypeError: (0 , buildNativeBlenderNormalKit) is not a function
+ ❯ tests/native-blender-normal-kit.test.ts:27:15
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  3 failed (3)
+   Start at  07:49:46
+   Duration  525ms (transform 167ms, setup 0ms, collect 213ms, tests 226ms, environment 0ms, prepare 28ms)
+

@@ -5,6 +5,9 @@ import {fingerprintAssemblyIR} from './assembly-edit';
 import {canonicalizeGlbBufferViews} from './glb-canonicalization';
 import {validateGlbStandard} from './gltf-standard-validation';
 import {DELIVERY_PIPELINE_REVISION} from './delivery-validation';
+import {parseProject,serializeProject,type ElementProject} from './element-project';
+import {exportSelectedScene,ELEMENT_RENDERER_REVISION} from './element-renderer';
+import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js';
 
 interface Accessor {componentType:number;type:string;count:number}
 interface Primitive {mode?:number;targets?:unknown[];attributes:Record<string,number>;indices?:number}
@@ -52,6 +55,9 @@ export async function buildBlenderNormalKit(input:ArrayBuffer,source:AssemblyIR,
  if(await fingerprintAssemblyIR(references[0])!==await fingerprintAssemblyIR(savedSource))throw new Error('Blender normal kit IR does not match the current GLB reference.');
  const validation=await validateGlbStandard(input);
  if(validation.status!=='pass'||validation.independentRead.status!=='pass')throw new Error('Blender normal kit GLB validation failed.');
+ return packageNormalKit(input,savedSource,scripts);
+}
+async function packageNormalKit(input:ArrayBuffer,savedSource:AssemblyIR|ElementProject,scripts:{wrapper:string;helper:string;license:string},native=false):Promise<Uint8Array>{
  const files:Record<string,Uint8Array>={
   'model.glb':new Uint8Array(input),'source.json':strToU8(JSON.stringify(savedSource,null,2)),
   'tools/blender-source-normal-import.py':strToU8(scripts.wrapper),'tools/blender_source_normal_import.py':strToU8(scripts.helper),'LICENSE':strToU8(scripts.license),
@@ -59,8 +65,37 @@ export async function buildBlenderNormalKit(input:ArrayBuffer,source:AssemblyIR,
  };
  if(Object.values(files).reduce((n,b)=>n+b.byteLength,0)>100*1024*1024)throw new Error('Blender normal kit combined budget exceeded.');
  const hashes=Object.fromEntries(await Promise.all(Object.entries(files).map(async([name,data])=>[name,await sha(data)])));
- files['manifest.json']=strToU8(JSON.stringify({schema:'sceliph.blender-normal-kit/0.1',compilerRevision:DELIVERY_PIPELINE_REVISION,blenderVersion:'5.2',policy:'morphloom.blender-source-normal-import/0.1',nativeImportVerified:false,sourceReferenceState:'before-edit-reference',sourceFingerprintRepresentation:'source-json/0.1',sha256:hashes},null,2));
+ files['manifest.json']=strToU8(JSON.stringify({schema:'sceliph.blender-normal-kit/0.1',compilerRevision:DELIVERY_PIPELINE_REVISION,blenderVersion:'5.2',policy:'morphloom.blender-source-normal-import/0.1',nativeImportVerified:false,sourceReferenceState:'before-edit-reference',sourceFingerprintRepresentation:'source-json/0.1',sha256:hashes,...(native?{schema:'sceliph.blender-normal-kit/0.2',sourceKind:'native-elements',sourceSchema:savedSource.schema,rendererRevision:ELEMENT_RENDERER_REVISION}: {})},null,2));
  const zipped=zipSync(Object.fromEntries(Object.entries(files).map(([name,bytes])=>[name,[bytes,{mtime:new Date(1980,0,1)}]])),{level:6});
  if(zipped.byteLength>100*1024*1024)throw new Error('Blender normal kit ZIP budget exceeded.');
  return zipped;
+}
+
+/** A current native source is accepted only when it regenerates the entire input byte-for-byte.
+ * Unlike a baked before-edit reference, this separate JSON remains editable in ElementEditor.
+ */
+export async function buildNativeBlenderNormalKit(input:ArrayBuffer,source:ElementProject,scripts:{wrapper:string;helper:string;license:string}):Promise<Uint8Array>{
+ if(input.byteLength>100*1024*1024)throw new Error('Blender normal kit exceeds 100MiB budget.');
+ canonicalizeGlbBufferViews(input);
+ const view=new DataView(input),doc=JSON.parse(new TextDecoder().decode(new Uint8Array(input,20,view.getUint32(12,true))));
+ assertBlenderNormalKitSource(doc);
+ const saved=parseProject(serializeProject(source)),project=structuredClone(saved);delete project.selection;
+ if(project.groups.length||project.elements.length)throw new Error('Blender normal kit: generated groups/elements unsupported by native part profile.');
+ const owners=(doc.nodes??[]).filter((n:any)=>n.extras?.sourceSpec);
+ if(owners.length!==1||!Array.isArray(owners[0].extras.sourceSpec.parts)||owners[0].extras.rendererRevision!==ELEMENT_RENDERER_REVISION)throw new Error('Blender normal kit requires one current native part source; mixed workspace/reference-only sources unsupported.');
+ const ids=owners[0].extras.selectedIds;
+ if(!Array.isArray(ids)||!ids.length||ids.length>128||new Set(ids).size!==ids.length||ids.some((id:unknown)=>typeof id!=='string'||!project.parts.some(p=>p.id===id))||JSON.stringify(ids)!==JSON.stringify(saved.selection))throw new Error('Blender normal kit native selection mismatch.');
+ const referenced=parseProject(JSON.stringify(owners[0].extras.sourceSpec));
+ if(serializeProject(referenced)!==serializeProject(project))throw new Error('Blender normal kit native source does not match GLB reference.');
+ // serializeProject sorts keys; retain the validated reference ordering for exact GLB metadata bytes.
+ // All source values must first equal the separately saved editable JSON. Never rewrite input payloads.
+ const built=exportSelectedScene(referenced,ids);
+ try{
+  const regenerated=await new GLTFExporter().parseAsync(built.root,{binary:true}) as ArrayBuffer;
+  const original=new Uint8Array(input);
+  if(regenerated.byteLength!==input.byteLength||!new Uint8Array(regenerated).every((v,i)=>v===original[i]))throw new Error('Blender normal kit native regenerated GLB bytes differ.');
+ }finally{built.dispose();}
+ const validation=await validateGlbStandard(input);
+ if(validation.status!=='pass'||validation.independentRead.status!=='pass')throw new Error('Blender normal kit GLB validation failed.');
+ return packageNormalKit(input,saved,scripts,true);
 }

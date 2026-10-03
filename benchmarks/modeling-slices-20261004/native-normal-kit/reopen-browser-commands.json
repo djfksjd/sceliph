@@ -1,0 +1,116 @@
+[
+  {
+    "args": [
+      "open",
+      "http://127.0.0.1:4179/?editor=elements&freshkit=1"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Sceliph \u2014 Result Viewer\n  http://127.0.0.1:4179/?editor=elements&freshkit=1\n",
+    "stderr": "[agent-browser] launched browser\n"
+  },
+  {
+    "args": [
+      "wait",
+      "--load",
+      "networkidle"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/default/source.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "inner_race"
+    ],
+    "exit": 0,
+    "stdout": "inner_race\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "download",
+      "button[title^=\"Textureless static native parts only\"]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/reopened.zip"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Download saved to /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/reopened.zip\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "textbox",
+      "fill",
+      "--name",
+      "Select by ID",
+      "ball_0000"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Select",
+      "--exact"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "spinbutton",
+      "fill",
+      "--name",
+      "Position X",
+      "17"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Apply part edit"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "download",
+      "button[title^=\"Textureless static native parts only\"]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/edited.zip"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Download saved to /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/edited.zip\n",
+    "stderr": ""
+  }
+]

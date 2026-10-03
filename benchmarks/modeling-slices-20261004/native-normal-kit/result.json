@@ -1,0 +1,56 @@
+{
+  "baseline": "d368e3508b7dc3ca6264814c9e93e023e1718128",
+  "compilerRevision": "0.41",
+  "rendererRevision": "morphloom.element-renderer/0.12",
+  "manifestVersion": "sceliph.blender-normal-kit/0.2",
+  "sourceSha256": {
+    "src/ElementEditor.tsx": "442f5f0528007ebb1955aacd5c716104f0abd0b0d8c76643323b9ad206bfdbfe",
+    "src/engine/blender-normal-kit.ts": "47362172b50884bd307c3411644e883419a774953f5622f7afe6792bcf737bcc",
+    "tests/native-blender-normal-kit.test.ts": "9c0f9758a7f2455e7c90fbde9fa72ce2ff2103bd396da7980ea6bb270a781bc7"
+  },
+  "environment": {
+    "platform": "macOS-26.4.1-arm64-arm-64bit",
+    "node": "v24.13.1",
+    "blender": "5.2.1 LTS 9e2066aef7ef"
+  },
+  "commands": {
+    "npm test": "121 files / 839 tests PASS",
+    "npm run check": "PASS",
+    "npm run benchmark": "PASS",
+    "npm run build": "PASS",
+    "quality:gate": "exit 1; existing competitive gate failure",
+    "quality:production": "exit 1; dominance not-run"
+  },
+  "scope": "optional textureless static native parts kit, editable separate IR; no DCC inverse IR",
+  "native": {
+    "firstImportMeshes": 34,
+    "firstImportWorstNormalErrorDeg": 0,
+    "blendSaveReopenNativeTranslationAndLocalPayloadExact": "4/4 PASS",
+    "editedGLBNormalMeshes": 34,
+    "editedGLBWorstNormalErrorDeg": 0.004427907932898632,
+    "fixedToleranceDeg": 0.01
+  },
+  "limits": [
+    "default Blender importer normal drift not fixed",
+    "Khronos unused UV infos retained; raw fixture validation pass does not mean strict production acceptance",
+    "texture/rig/animation/morph/feather/strand/mixed workspace unsupported",
+    "independent expert quality evaluation not-run"
+  ],
+  "attempts": [
+    {
+      "hypothesis": "sourceJSON serialize key ordering affects exact GLB bytes",
+      "result": "BIN exact, JSON semantic fields exact, first byte diff400",
+      "change": "validate all source values via native canonical serializer then use verified reference key ordering for exact regenerated GLB; keep full byte comparison"
+    },
+    {
+      "hypothesis": "browser selector supports :has-text",
+      "result": "selector unsupported by this browser provider",
+      "change": "stable CSS title selector, fresh page and actual source load; initial failures retained"
+    },
+    {
+      "hypothesis": "translation represented as TRS",
+      "result": "native renderer uses explicit matrix; initial diagnostic assumption failed",
+      "change": "diagnostic reads actual matrix12..14; product code unchanged"
+    }
+  ]
+}

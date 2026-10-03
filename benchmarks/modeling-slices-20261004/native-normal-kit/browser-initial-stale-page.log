@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/browser.py", line 12, in <module>
+    call('download','button:has-text("BLENDER 5.2 · NATIVE NORMAL KIT")',str(target))
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/native-normal-kit-20261004/browser.py", line 5, in call
+    r=subprocess.run([CLI,'--session','native-kit',*args],text=True,capture_output=True);logs.append({'args':list(args),'exit':r.returncode,'stdout':r.stdout,'stderr':r.stderr});assert r.returncode==0,r.stderr;return r.stdout
+AssertionError: ✗ Element not found: button:has-text("BLENDER 5.2 · NATIVE NORMAL KIT"). Verify the selector, role, or name is correct and the element exists in the DOM.
+
