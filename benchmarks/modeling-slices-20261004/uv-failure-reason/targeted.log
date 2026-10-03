@@ -1,0 +1,15 @@
+
+> sceliph@0.4.0 test
+> vitest run tests/mesh-export-policy.test.ts tests/uv-quality.test.ts
+
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ✓ tests/mesh-export-policy.test.ts (5 tests) 303ms
+ ✓ tests/uv-quality.test.ts (6 tests) 161ms
+
+ Test Files  2 passed (2)
+      Tests  11 passed (11)
+   Start at  08:51:23
+   Duration  805ms (transform 148ms, setup 0ms, collect 209ms, tests 464ms, environment 0ms, prepare 37ms)
+

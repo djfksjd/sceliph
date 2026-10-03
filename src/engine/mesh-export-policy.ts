@@ -1,3 +1,4 @@
+import {describeUvMinimumArea} from './uv-failure-description';
 import {inspectExportedUv} from './uv-delivery';
 import {validateGlbStandard} from './gltf-standard-validation';
 import type {UvQualityReport} from './uv-quality';
@@ -8,8 +9,8 @@ export function evaluateMeshUvExport(report:UvQualityReport,purpose:MeshExportPu
  if(!report.meshes.length)issues.push({id:'scene',reason:'No inspected meshes'});
  for(const mesh of report.meshes){
   if(mesh.blocked)issues.push({id:mesh.id,reason:mesh.blocked});
-  else if(!mesh.integrityPass)issues.push({id:mesh.id,reason:`UV integrity failed: ${mesh.degenerateUvTriangles}/${mesh.eligibleUvTriangles} degenerate; ${mesh.invalidUvVertices} invalid vertices; ${mesh.invalidWorldTriangles} invalid world triangles`});
-  for(const feature of mesh.features)if(!feature.integrityPass)issues.push({id:feature.id,reason:`Critical feature UV failed: ${feature.degenerateUvTriangles}/${feature.triangles} degenerate`});
+  else if(!mesh.integrityPass)issues.push({id:mesh.id,reason:`UV integrity failed: ${describeUvMinimumArea(mesh.degenerateUvTriangles,mesh.eligibleUvTriangles)}; ${mesh.zeroUvTriangles} exactly zero-area; ${mesh.invalidUvVertices} invalid vertices; ${mesh.invalidWorldTriangles} invalid world triangles`});
+  for(const feature of mesh.features)if(!feature.integrityPass)issues.push({id:feature.id,reason:`Critical feature UV failed: ${describeUvMinimumArea(feature.degenerateUvTriangles,feature.triangles)}`});
  }
  if(report.fingerprintCoverage!=='complete')issues.push({id:'scene',reason:'Static mesh inspection coverage incomplete'});
  if(!report.integrityPass&&!issues.length)issues.push({id:'scene',reason:'UV integrity failed'});

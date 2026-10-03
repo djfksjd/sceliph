@@ -1,0 +1,41 @@
+[
+  {
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "benchmark"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "quality:gate"
+    ],
+    "exit": 1
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "quality:production"
+    ],
+    "exit": 1
+  }
+]

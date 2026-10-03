@@ -1,0 +1,128 @@
+[
+  {
+    "glb": "default-before/morphloom-uv-diagnostic.glb",
+    "sha256": "b64c987da16549db2171ee237a69292f55e738680b0181c68764c6759b3d7545",
+    "sourceSha256": "573e0c81836779536127d5792494717745fe9f957cb501158cbe313d351e847d",
+    "allowed": false,
+    "error": "Error: Mesh export blocked: spur_gear: UV integrity failed: 1490/8384 double-area <= 1e-10 or non-finite; 0 exactly zero-area; 0 invalid vertices; 0 invalid world triangles; spur_gear/tooth_0000: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite; spur_gear/tooth_0001: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite; spur_gear/tooth_0002: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite; spur_gear/tooth_0003: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite; spur_gear/tooth_0004: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite; spur_gear/tooth_0005: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite; spur_gear/tooth_0006: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite; spur_gear/tooth_0007: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite; spur_gear/tooth_0008: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite; spur_gear/tooth_0009: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite; spur_gear/tooth_0010: Critical feature UV failed: 62/294 double-area <= 1e-10 or non-finite. Fix the affected UVs or use explicit diagnostic export. This is not production approval.",
+    "zeroUvTriangles": 0,
+    "degenerateUvTriangles": 1490,
+    "eligibleUvTriangles": 8384,
+    "failedFeatures": [
+      "spur_gear/tooth_0000",
+      "spur_gear/tooth_0001",
+      "spur_gear/tooth_0002",
+      "spur_gear/tooth_0003",
+      "spur_gear/tooth_0004",
+      "spur_gear/tooth_0005",
+      "spur_gear/tooth_0006",
+      "spur_gear/tooth_0007",
+      "spur_gear/tooth_0008",
+      "spur_gear/tooth_0009",
+      "spur_gear/tooth_0010",
+      "spur_gear/tooth_0011",
+      "spur_gear/tooth_0012",
+      "spur_gear/tooth_0013",
+      "spur_gear/tooth_0014",
+      "spur_gear/tooth_0015",
+      "spur_gear/tooth_0016",
+      "spur_gear/tooth_0017",
+      "spur_gear/tooth_0018",
+      "spur_gear/tooth_0019",
+      "spur_gear/tooth_0020",
+      "spur_gear/tooth_0021",
+      "spur_gear/tooth_0022",
+      "spur_gear/tooth_0023"
+    ],
+    "standard": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  },
+  {
+    "glb": "default-after/morphloom-project.glb",
+    "sha256": "da2be76cec6b2089910848c680063fdb811c1f2de6d752cd6c1cdd28442da609",
+    "sourceSha256": "ff62705d7e3ce66a0e9941fe910d2345c0d10596ede4766a0f4c78cbb99b07f3",
+    "allowed": true,
+    "error": "",
+    "zeroUvTriangles": 0,
+    "degenerateUvTriangles": 0,
+    "eligibleUvTriangles": 8384,
+    "failedFeatures": [],
+    "standard": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  },
+  {
+    "glb": "damaged-tooth.glb",
+    "sha256": "154edb0301d3d493479dcc85c9da48d53c907da57cb4cd082bcab90dea28fb98",
+    "sourceSha256": "ff62705d7e3ce66a0e9941fe910d2345c0d10596ede4766a0f4c78cbb99b07f3",
+    "allowed": false,
+    "error": "Error: Mesh export blocked: spur_gear: UV integrity failed: 20/8384 double-area <= 1e-10 or non-finite; 20 exactly zero-area; 0 invalid vertices; 0 invalid world triangles; spur_gear/tooth_0003: Critical feature UV failed: 20/294 double-area <= 1e-10 or non-finite. Fix the affected UVs or use explicit diagnostic export. This is not production approval.",
+    "zeroUvTriangles": 20,
+    "degenerateUvTriangles": 20,
+    "eligibleUvTriangles": 8384,
+    "failedFeatures": [
+      "spur_gear/tooth_0003"
+    ],
+    "standard": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  }
+]

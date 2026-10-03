@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/uv-failure-reason-20261004/browser.py", line 22, in <module>
+    text=call('eval','document.querySelector("details[aria-label=\"UV quality\"]").textContent')
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/uv-failure-reason-20261004/browser.py", line 5, in call
+    r=subprocess.run(['/Users/danny/.nvm/versions/node/v24.13.1/bin/agent-browser','--session','uv-reason',*args],capture_output=True,text=True);logs.append({'args':list(args),'exit':r.returncode,'stdout':r.stdout,'stderr':r.stderr});assert r.returncode==0,r.stderr;return r.stdout
+AssertionError: ✗ Evaluation error: SyntaxError: missing ) after argument list
+

@@ -1,0 +1,20 @@
+{
+  "baseline": "5b9644c1f0fa6eaed3e4877ac1d4858a488e80d8",
+  "recordedUTC": "2026-10-03T23:55:46.858410+00:00",
+  "sourceSHA256": {
+    "src/ElementEditor.tsx": "d10bfa2c4cd1a720e7f8cacd7bbf5add5e4f1e0d41c868685ab76dd90b126be8",
+    "src/engine/mesh-export-policy.ts": "0237459dc6f077f70df2d97d4f80acf5392a11339d59334088361c1e554b7ad7",
+    "src/engine/uv-failure-description.ts": "9cd7c1afcc494f1aba8b08b4f1ba767cd50f121e053f37e4cc74e415166d957c",
+    "tests/mesh-export-policy.test.ts": "426732a5fb7238353159bb2939d92d8d3292d359e69223e9088f43f1fb3251a8"
+  },
+  "currentFiles": "file-results.json",
+  "currentBrowser": "browser-result.json",
+  "commands": "command-results.json",
+  "checkExit": 0,
+  "tests": 842,
+  "blender": "not-run: presentation-only change; actual diagnostic GLB bytes unchanged",
+  "qualityCoreRates": "all six rates 1.0; release browser proof audit passes",
+  "competitive": "exit1; strict cross-domain DCC final-delivery conditions require zero infos, known cooling unused UV information remains",
+  "productionDominance": "not-run: preceding quality:gate failed",
+  "APIAndClaudeCalls": 0
+}

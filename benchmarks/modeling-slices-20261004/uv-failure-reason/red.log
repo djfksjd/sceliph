@@ -1,0 +1,39 @@
+
+> sceliph@0.4.0 test
+> vitest run tests/mesh-export-policy.test.ts
+
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ❯ tests/mesh-export-policy.test.ts (5 tests | 1 failed) 302ms
+   ✓ blocks actual default gear UV failure and distinguishes diagnostic purpose 53ms
+   ✓ allows actual repaired UV without claiming production approval 49ms
+   ✓ checks actual GLB bytes and records failed diagnostic UV without production approval 112ms
+   ✓ blocks one damaged connected feature even while aggregate UV stays under five percent 55ms
+   × explains actual small UVs separately from truly collapsed and non-finite UVs without changing export decisions 33ms
+     → expected 'UV integrity failed: 1490/8384 degene…' to contain 'double-area <= 1e-10 or non-finite'
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/mesh-export-policy.test.ts > explains actual small UVs separately from truly collapsed and non-finite UVs without changing export decisions
+AssertionError: expected 'UV integrity failed: 1490/8384 degene…' to contain 'double-area <= 1e-10 or non-finite'
+
+Expected: "double-area <= 1e-10 or non-finite"
+Received: "UV integrity failed: 1490/8384 degenerate; 0 invalid vertices; 0 invalid world triangles"
+
+ ❯ tests/mesh-export-policy.test.ts:12:55
+     10|  try{const report=await inspectUvQuality(s.root),m=report.meshes[0];ex…
+     11|  const decision=evaluateMeshUvExport(report,'editable-mesh');expect(de…
+     12|  expect(decision.issues.find(i=>i.id===m.id)?.reason).toContain(`doubl…
+       |                                                       ^
+     13|  expect(decision.issues.find(i=>i.id===m.id)?.reason).toContain('0 exa…
+     14|  const mesh=s.root.getObjectByName(m.id) as import('three').Mesh,uv=me…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 4 passed (5)
+   Start at  08:50:52
+   Duration  567ms (transform 150ms, setup 0ms, collect 188ms, tests 302ms, environment 0ms, prepare 27ms)
+
