@@ -267,6 +267,10 @@ export function validateAssemblyIR(value: unknown): asserts value is AssemblyIR 
         break;
       case 'lathe':
         if (component.geometry.profile.length < 2 || component.geometry.profile.some(([radius]) => radius < 0)) throw new Error(`Lathe profile is invalid in ${component.id}.`);
+        if (component.geometry.segments !== undefined && (!Number.isInteger(component.geometry.segments)
+          || component.geometry.segments < 3 || component.geometry.segments > 512)) {
+          throw new Error(`Lathe segments must be an integer from 3 to 512 in ${component.id}.`);
+        }
         break;
       case 'tube':
         validateTubeQuadraticCurve(component.geometry);

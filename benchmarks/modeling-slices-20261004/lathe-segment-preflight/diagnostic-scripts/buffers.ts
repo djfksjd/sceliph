@@ -1,0 +1,4 @@
+import {compileAssemblyGeometry} from '../../src/engine/assembly-compiler';import {writeFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+const output=process.argv[2];if(!output)throw Error('output required');const rows=[];
+for(const segments of [undefined,3,16,32,64,128,512]){const g=compileAssemblyGeometry({op:'lathe',profile:[[8,-6],[8,6],[14,6],[14,-6],[8,-6]],...(segments===undefined?{}:{segments})});try{g.computeBoundingBox();const hash=(a:ArrayBufferView)=>createHash('sha256').update(new Uint8Array(a.buffer,a.byteOffset,a.byteLength)).digest('hex');rows.push({segments:segments??'default',vertices:g.getAttribute('position').count,attributes:Object.fromEntries(Object.entries(g.attributes).map(([key,a])=>[key,hash(a.array)])),index:g.index?hash(g.index.array):null,bounds:g.boundingBox});}finally{g.dispose()}}
+writeFileSync(output,JSON.stringify(rows,null,2)+'\n');console.log('Saved7actual buffer fingerprints');

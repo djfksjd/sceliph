@@ -155,3 +155,8 @@ Actual browser7/current release4of4, deterministic5GLBs, native Blender5import/r
 ## 2026-10-04 bound single Blender proof0.3
 
 Historical2026-09-02 source mismatch and omitted count equality reproduced in2 failing tests. Current compiler/source JSON IR/final-file SHA and semantic/standard/parser checks now required; real CLI4 negative cases preserve source/no output. New native architecture import/export/reimport and actual final-byte revalidation PASS. source-json fingerprint explicitly handles246omitted undefined rotations without changing patch fingerprints. 112files811tests/check/benchmark/build and strict scripts PASS. Current proof accepted, old proof blocked; whole production remainsFAILcoolinginfos23, dominance not-run; final repaired Blender reimport/UI/render not-run this phase. [Evidence](BOUND_BLENDER_SINGLE_PROOF_STATUS.ko.md). Goal active; next actual mesh direction/section audit.
+
+
+## 2026-10-04 lathe segment preflight
+
+Schema integer3..512 now enforced before geometry for legacy lathe. Fraction32.5 previously passed preflight but UV degenerate safety already blocked export; no released corrupt-model claim. Default+6integer cases exact buffers, current8GLBs exact SHA/Khronos/WebIO PASS. Native browser invalid import leaves SAVEIR/GLB identical; visible error after inspector scroll verified. 113files814tests/check/benchmark/build PASS. Whole production FAILcoolinginfos23, dominance not-run; native apps not rerun this phase. [Evidence](LATHE_SEGMENT_PREFLIGHT_STATUS.ko.md). Goal active; next measure actual chord deviation and local lathe segment editing need.

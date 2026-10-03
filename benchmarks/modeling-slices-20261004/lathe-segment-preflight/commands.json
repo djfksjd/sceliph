@@ -1,0 +1,55 @@
+[
+  {
+    "command": [
+      "npm",
+      "test",
+      "--",
+      "--run",
+      "tests/assembly-lathe-segment-validation.test.ts",
+      "tests/assembly-lathe-normals.test.ts"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "files": 113,
+    "tests": 814
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "benchmark"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "quality:production"
+    ],
+    "exitCode": 1,
+    "dominance": "not-run"
+  }
+]

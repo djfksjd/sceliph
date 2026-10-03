@@ -1,0 +1,236 @@
+{
+  "scope": "Declared AssemblyIR lathe segment count; schema requires integer, runtime diagnosis before any fix",
+  "cases": [
+    {
+      "segments": 3,
+      "preflightAccepted": true,
+      "runtimeAccepted": true,
+      "vertices": 72,
+      "nonfinitePositions": 0,
+      "nonfiniteNormals": 0,
+      "nonfiniteUvs": 0,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 80,
+        "selfIntersectionComplete": true,
+        "triangles": 24,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      }
+    },
+    {
+      "segments": 16,
+      "preflightAccepted": true,
+      "runtimeAccepted": true,
+      "vertices": 384,
+      "nonfinitePositions": 0,
+      "nonfiniteNormals": 0,
+      "nonfiniteUvs": 0,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 193,
+        "selfIntersectionComplete": true,
+        "triangles": 128,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      }
+    },
+    {
+      "segments": 32,
+      "preflightAccepted": true,
+      "runtimeAccepted": true,
+      "vertices": 768,
+      "nonfinitePositions": 0,
+      "nonfiniteNormals": 0,
+      "nonfiniteUvs": 0,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 481,
+        "selfIntersectionComplete": true,
+        "triangles": 256,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      }
+    },
+    {
+      "segments": 32.5,
+      "preflightAccepted": true,
+      "runtimeAccepted": false,
+      "reason": "Error: Custom geometry contains a degenerate triangle before UV generation."
+    },
+    {
+      "segments": 64,
+      "preflightAccepted": true,
+      "runtimeAccepted": true,
+      "vertices": 1536,
+      "nonfinitePositions": 0,
+      "nonfiniteNormals": 0,
+      "nonfiniteUvs": 0,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 1537,
+        "selfIntersectionComplete": true,
+        "triangles": 512,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      }
+    },
+    {
+      "segments": 128,
+      "preflightAccepted": true,
+      "runtimeAccepted": true,
+      "vertices": 3072,
+      "nonfinitePositions": 0,
+      "nonfiniteNormals": 0,
+      "nonfiniteUvs": 0,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 5473,
+        "selfIntersectionComplete": true,
+        "triangles": 1024,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      }
+    }
+  ]
+}

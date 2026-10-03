@@ -1,0 +1,55 @@
+
+> sceliph@0.4.0 test
+> vitest run --run tests/assembly-lathe-segment-validation.test.ts
+
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ❯ tests/assembly-lathe-segment-validation.test.ts (3 tests | 2 failed) 6ms
+   × rejects fractional and nonnumeric lathe segment declarations during IR preflight 3ms
+     → expected [Function] to throw an error
+   ✓ preserves omitted default and all supported integer segment inputs 0ms
+   × never reaches the UV degenerate fallback for the schema-invalid fractional declaration 2ms
+     → expected [Function] to throw error matching /lathe.*segments.*integer/i but got 'Custom geometry contains a degenerate…'
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/assembly-lathe-segment-validation.test.ts > rejects fractional and nonnumeric lathe segment declarations during IR preflight
+AssertionError: expected [Function] to throw an error
+
+- Expected: 
+null
+
++ Received: 
+undefined
+
+ ❯ tests/assembly-lathe-segment-validation.test.ts:5:124
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/assembly-lathe-segment-validation.test.ts > never reaches the UV degenerate fallback for the schema-invalid fractional declaration
+AssertionError: expected [Function] to throw error matching /lathe.*segments.*integer/i but got 'Custom geometry contains a degenerate…'
+
+- Expected: 
+/lathe.*segments.*integer/i
+
++ Received: 
+"Custom geometry contains a degenerate triangle before UV generation."
+
+ ❯ tests/assembly-lathe-segment-validation.test.ts:11:84
+      9| });
+     10| it('never reaches the UV degenerate fallback for the schema-invalid fr…
+     11|  expect(()=>compileAssemblyGeometry(source(32.5).components[0].geometr…
+       |                                                                                    ^
+     12| });
+     13| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 1 passed (3)
+   Start at  05:06:13
+   Duration  268ms (transform 127ms, setup 0ms, collect 161ms, tests 6ms, environment 0ms, prepare 35ms)
+
