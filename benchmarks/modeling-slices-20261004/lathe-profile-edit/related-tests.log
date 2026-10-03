@@ -1,0 +1,15 @@
+
+> sceliph@0.4.0 test
+> vitest run --run tests/lathe-profile-edit.test.ts tests/assembly-edit.test.ts
+
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ✓ tests/assembly-edit.test.ts (7 tests) 120ms
+ ✓ tests/lathe-profile-edit.test.ts (3 tests) 57ms
+
+ Test Files  2 passed (2)
+      Tests  10 passed (10)
+   Start at  05:50:22
+   Duration  487ms (transform 124ms, setup 0ms, collect 183ms, tests 178ms, environment 0ms, prepare 43ms)
+

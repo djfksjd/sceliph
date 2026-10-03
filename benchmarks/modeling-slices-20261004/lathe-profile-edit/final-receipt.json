@@ -1,0 +1,34 @@
+{
+  "baseHead": "c76a062ce1b0d101c9221c24c9ac9ba5f27c675f",
+  "compiler": "morphloom-compiler/0.40.0",
+  "phase": "profile editing/local mesh handoff verified",
+  "productionReady": false,
+  "tests": 824,
+  "testFiles": 116,
+  "check": "pass",
+  "benchmark": "pass",
+  "build": "pass",
+  "qualityGateExit": 1,
+  "qualityProductionExit": 1,
+  "blenderImportExportReimport": "4/4 executed exit0",
+  "blenderReexportTargetNormal": "4/4 fixed0.01degree pass",
+  "blenderFirstImportNormalPayload": "not-run",
+  "browser": [
+    "apply",
+    "cancel",
+    "undo",
+    "redo",
+    "save",
+    "new session reopen",
+    "additional edit",
+    "invalid degenerate profile blocked"
+  ],
+  "apiCalls": 0,
+  "neutralRenderConfiguration": "fixed camera/light/space; changed bounds/framing intentional",
+  "limitations": [
+    "no automatic bevel",
+    "no target texture mapping preservation",
+    "no assembly constraint solve",
+    "no expert manufacturing approval"
+  ]
+}
