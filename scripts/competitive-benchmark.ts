@@ -1,3 +1,6 @@
+import {auditBlenderRoundTripProof} from '../src/engine/blender-roundtrip-proof';
+import {fingerprintAssemblyIR} from '../src/engine/assembly-edit';
+import {LAUREL_HOMES_BUILDING_B_IR} from '../src/engine/laurel-homes-building-b';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { compileAssemblyIR } from '../src/engine/assembly-compiler';
 import {
@@ -376,29 +379,12 @@ const browserRoundTripSummary = {
     preparedSceneFingerprint: asset.sceneFingerprint,
   })),
 };
-const blenderRoundTrip = JSON.parse(readFileSync('benchmarks/blender-roundtrip-latest.json', 'utf8')) as {
-  pass?: boolean;
-  blenderVersion?: string;
-  boundsErrorMm?: number;
-  imported?: { meshes?: number; polygons?: number; materials?: number };
-  reopened?: { meshes?: number; polygons?: number; materials?: number };
-  roundTripStandardValidation?: { status?: string; khronosErrors?: number; khronosWarnings?: number; independentReadStatus?: string };
-};
-const blenderRoundTripPass = blenderRoundTrip.pass === true
-  && /^5\.2\./.test(blenderRoundTrip.blenderVersion ?? '')
-  && Number(blenderRoundTrip.boundsErrorMm) <= 0.1
-  && blenderRoundTrip.imported?.meshes === blenderRoundTrip.reopened?.meshes
-  && blenderRoundTrip.imported?.polygons === blenderRoundTrip.reopened?.polygons
-  && blenderRoundTrip.imported?.materials === blenderRoundTrip.reopened?.materials
-  && blenderRoundTrip.roundTripStandardValidation?.status === 'pass'
-  && blenderRoundTrip.roundTripStandardValidation?.khronosErrors === 0
-  && blenderRoundTrip.roundTripStandardValidation?.khronosWarnings === 0
-  && blenderRoundTrip.roundTripStandardValidation?.independentReadStatus === 'pass';
+const blenderRoundTrip = JSON.parse(readFileSync('benchmarks/blender-roundtrip-latest.json', 'utf8')) as Record<string,unknown>;
 type BlenderCrossDomainCase = {
   id?: string;
   domain?: string;
   pass?: boolean;
-  source?: { byteDeterministic?: boolean; standard?: { status?: string; errors?: number; warnings?: number } };
+  source?: { sha256?: string; byteDeterministic?: boolean; standard?: { status?: string; errors?: number; warnings?: number } };
   blender?: {
     version?: string;
     semanticRoundTrip?: {
@@ -412,6 +398,7 @@ type BlenderCrossDomainCase = {
     rawReexportStandard?: { status?: string };
     deliveryRepair?: {
       applied?: boolean;
+      outputSha256?: string;
       repairedTangents?: number;
       removedUnusedTangentAccessors?: number;
       standard?: { status?: string; errors?: number; warnings?: number; infos?: number; independentRead?: { status?: string } };
@@ -426,6 +413,14 @@ const blenderCrossDomain = JSON.parse(readFileSync('benchmarks/blender-cross-dom
 };
 const requiredBlenderDomains = new Set(['architecture', 'industrial-design', 'electronics', 'animation-game', '3d-printing']);
 const blenderCrossDomainCases = blenderCrossDomain.cases ?? [];
+const architectureBlenderCase=blenderCrossDomainCases.find(item=>item.id==='laurel-homes-architecture');
+const blenderRoundTripBlockers=auditBlenderRoundTripProof(blenderRoundTrip,{
+  compilerRevision:DELIVERY_PIPELINE_REVISION,assetId:'laurel-homes-architecture',
+  assemblyFingerprint:await fingerprintAssemblyIR(JSON.parse(JSON.stringify(LAUREL_HOMES_BUILDING_B_IR))),
+  sourceSha256:blenderCrossDomain.compilerRevision===DELIVERY_PIPELINE_REVISION?architectureBlenderCase?.source?.sha256??'':'',
+  finalDeliverySha256:blenderCrossDomain.compilerRevision===DELIVERY_PIPELINE_REVISION?architectureBlenderCase?.blender?.deliveryRepair?.outputSha256??'':'',
+});
+const blenderRoundTripPass=blenderRoundTripBlockers.length===0;
 const blenderCrossDomainPass = blenderCrossDomain.pass === true
   && blenderCrossDomain.compilerRevision === DELIVERY_PIPELINE_REVISION
   && blenderCrossDomainCases.length === requiredBlenderDomains.size
@@ -795,6 +790,8 @@ const qualityBenchmark = JSON.parse(readFileSync('benchmarks/quality-latest.json
     checks?: Array<{ id?: string; pass?: boolean; blocking?: boolean }>;
     metrics?: {
       facialMorphTargets?: number;
+      facialMorphLocalizedTargets?: number;
+      facialMorphSemanticTargets?: number;
       collisionPrimitives?: number;
       sampledWallThicknessComplete?: boolean;
       sampledWallThicknessRays?: number;
@@ -911,7 +908,7 @@ const output = {
       releaseEngineBinding: releaseBrowserBinding,
     },
     gltfStandardValidation: standardValidationAudit,
-    blenderRoundTrip: { ...blenderRoundTrip, benchmarkAccepted: blenderRoundTripPass },
+    blenderRoundTrip: { ...blenderRoundTrip, benchmarkAccepted: blenderRoundTripPass, competitiveBlockers:blenderRoundTripBlockers },
     blenderCrossDomain: blenderCrossDomainSummary,
     blenderCrossDomainEdit: blenderCrossDomainEditSummary,
     unityCrossDomain: unityCrossDomainSummary,

@@ -1,0 +1,95 @@
+[
+  {
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "testFiles": 112,
+    "tests": 811
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "benchmark"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "quality:gate"
+    ],
+    "exitCode": 1,
+    "phase": "historical pinned report blocked"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "quality:production"
+    ],
+    "exitCode": 1,
+    "phase": "current bound report accepted; competitive cooling UV infos23 FAIL; dominance not-run"
+  },
+  {
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "scripts/blender-glb-roundtrip.py",
+      "--",
+      "/Users/danny/Documents/morphloom/outputs/current-browser-040-20261004/fixtures/laurel-homes-architecture.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/repair-glb-interchange.ts",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-final.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-repair.json"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/bind-blender-roundtrip-proof.ts",
+      "/Users/danny/Documents/morphloom/outputs/current-browser-040-20261004/blender-cross-domain.json",
+      "/Users/danny/Documents/morphloom/outputs/current-browser-040-20261004/fixtures/laurel-homes-architecture.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/current-proof.json",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.json",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-final.glb"
+    ],
+    "exitCode": 0
+  }
+]

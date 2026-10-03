@@ -1,5 +1,5 @@
 {
-  "schema": "morphloom.blender-roundtrip/0.3",
+  "schema": "morphloom.blender-roundtrip/0.2",
   "pass": true,
   "exportTangentsRequiredBySource": true,
   "blenderVersion": "5.2.1 LTS",
@@ -9,7 +9,7 @@
   "roundTrip": "actual-native.glb",
   "roundTripBytes": 27856404,
   "roundTripSha256": "cd6395a371fb192f684b22835b55dd07696ac25f54eeeff6fb4e81ba63822c77",
-  "boundsErrorMm": 0,
+  "boundsErrorMm": 0.0,
   "boundsToleranceMm": 0.1,
   "geometryParity": true,
   "imageParity": true,
@@ -141,7 +141,7 @@
     "shapeKeys": 0,
     "skinnedVertices": 0,
     "weightedVertices": 0,
-    "weightedCoverage": 1,
+    "weightedCoverage": 1.0,
     "armatures": 0,
     "bones": 0,
     "boneNames": [],
@@ -289,7 +289,7 @@
     "shapeKeys": 0,
     "skinnedVertices": 0,
     "weightedVertices": 0,
-    "weightedCoverage": 1,
+    "weightedCoverage": 1.0,
     "armatures": 0,
     "bones": 0,
     "boneNames": [],
@@ -321,60 +321,5 @@
         2.700000047683716
       ]
     }
-  },
-  "compilerRevision": "morphloom-compiler/0.40.0",
-  "assetId": "laurel-homes-architecture",
-  "assemblyFingerprintRepresentation": "source-json/0.1",
-  "assemblyFingerprint": "afde11c75687e314f2b73379b701c5e7d905f81bef782c2d4948960bf4c78b6b",
-  "finalDeliverySha256": "c9338a90672d2261b549e74c4167dcd6d3f0b09b6e617cf9040fa02b8df8782e",
-  "finalDeliveryBytes": 27797708,
-  "roundTripStandardValidation": {
-    "status": "pass",
-    "khronosErrors": 0,
-    "khronosWarnings": 0,
-    "independentReadStatus": "pass",
-    "validatedSha256": "c9338a90672d2261b549e74c4167dcd6d3f0b09b6e617cf9040fa02b8df8782e"
-  },
-  "sourceStandard": {
-    "status": "pass",
-    "validator": "Khronos glTF Validator",
-    "validatorVersion": "2.0.0-dev.3.10",
-    "errors": 0,
-    "warnings": 0,
-    "infos": 0,
-    "hints": 0,
-    "truncated": false,
-    "issueCodes": [],
-    "independentRead": {
-      "status": "pass",
-      "parser": "glTF Transform WebIO",
-      "nodes": 322,
-      "meshes": 321,
-      "materials": 321,
-      "skins": 0,
-      "animations": 0
-    }
-  },
-  "finalStandard": {
-    "status": "pass",
-    "validator": "Khronos glTF Validator",
-    "validatorVersion": "2.0.0-dev.3.10",
-    "errors": 0,
-    "warnings": 0,
-    "infos": 0,
-    "hints": 0,
-    "truncated": false,
-    "issueCodes": [],
-    "independentRead": {
-      "status": "pass",
-      "parser": "glTF Transform WebIO",
-      "nodes": 322,
-      "meshes": 321,
-      "materials": 321,
-      "skins": 0,
-      "animations": 0
-    }
-  },
-  "generatedAt": "2026-10-03T19:55:28.977Z",
-  "scope": "Native first import/export/reimport semantic report bound to actual current source and raw output. Final repaired bytes independently revalidated; raw normal byte parity and repaired-file Blender reimport are not asserted."
+  }
 }

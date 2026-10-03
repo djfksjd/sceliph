@@ -1,0 +1,70 @@
+[
+  {
+    "case": "stale",
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/bind-blender-roundtrip-proof.ts",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/stale-aggregate.json",
+      "/Users/danny/Documents/morphloom/outputs/current-browser-040-20261004/fixtures/laurel-homes-architecture.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/stale-result.json",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.json",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-final.glb"
+    ],
+    "exitCode": 1,
+    "noPartialOutput": true,
+    "originalSourcePreserved": true
+  },
+  {
+    "case": "wrong-source",
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/bind-blender-roundtrip-proof.ts",
+      "/Users/danny/Documents/morphloom/outputs/current-browser-040-20261004/blender-cross-domain.json",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/wrong-source-result.json",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.json",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-final.glb"
+    ],
+    "exitCode": 1,
+    "noPartialOutput": true,
+    "originalSourcePreserved": true
+  },
+  {
+    "case": "missing-counts",
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/bind-blender-roundtrip-proof.ts",
+      "/Users/danny/Documents/morphloom/outputs/current-browser-040-20261004/blender-cross-domain.json",
+      "/Users/danny/Documents/morphloom/outputs/current-browser-040-20261004/fixtures/laurel-homes-architecture.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/missing-counts-result.json",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/missing-counts-native.json",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-final.glb"
+    ],
+    "exitCode": 1,
+    "noPartialOutput": true,
+    "originalSourcePreserved": true
+  },
+  {
+    "case": "source-output-alias",
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/bind-blender-roundtrip-proof.ts",
+      "/Users/danny/Documents/morphloom/outputs/current-browser-040-20261004/blender-cross-domain.json",
+      "/Users/danny/Documents/morphloom/outputs/current-browser-040-20261004/fixtures/laurel-homes-architecture.glb",
+      "/Users/danny/Documents/morphloom/outputs/current-browser-040-20261004/fixtures/laurel-homes-architecture.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.json",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-native.glb",
+      "/Users/danny/Documents/morphloom/outputs/single-blender-binding-20261004/actual-final.glb"
+    ],
+    "exitCode": 1,
+    "noPartialOutput": true,
+    "originalSourcePreserved": true
+  }
+]

@@ -1,0 +1,45 @@
+
+> sceliph@0.4.0 test
+> vitest run --run tests/blender-roundtrip-proof.test.ts
+
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ❯ tests/blender-roundtrip-proof.test.ts (2 tests | 2 failed) 2ms
+   × blocks the actual historical single report despite its legacy PASS flags 2ms
+     → expected 0 to be greater than 0
+   × blocks omitted imported/reopened counts that the legacy undefined equality accepted 0ms
+     → expected 0 to be greater than 0
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/blender-roundtrip-proof.test.ts > blocks the actual historical single report despite its legacy PASS flags
+AssertionError: expected 0 to be greater than 0
+ ❯ tests/blender-roundtrip-proof.test.ts:7:61
+      5| it('blocks the actual historical single report despite its legacy PASS…
+      6|  const report=JSON.parse(readFileSync('benchmarks/blender-roundtrip-la…
+      7|  expect(auditBlenderRoundTripProof(report,expected).length).toBeGreate…
+       |                                                             ^
+      8| });
+      9| it('blocks omitted imported/reopened counts that the legacy undefined …
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/blender-roundtrip-proof.test.ts > blocks omitted imported/reopened counts that the legacy undefined equality accepted
+AssertionError: expected 0 to be greater than 0
+ ❯ tests/blender-roundtrip-proof.test.ts:11:61
+      9| it('blocks omitted imported/reopened counts that the legacy undefined …
+     10|  const report=JSON.parse(readFileSync('benchmarks/blender-roundtrip-la…
+     11|  expect(auditBlenderRoundTripProof(report,expected).length).toBeGreate…
+       |                                                             ^
+     12| });
+     13| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed (2)
+   Start at  04:47:38
+   Duration  101ms (transform 13ms, setup 0ms, collect 10ms, tests 2ms, environment 0ms, prepare 29ms)
+

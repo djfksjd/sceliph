@@ -1,0 +1,33 @@
+/** Bind existing actual native execution to current IR/source and revalidate final file bytes. */
+import assert from 'node:assert/strict';
+import {readFileSync,statSync} from 'node:fs';
+import {resolve} from 'node:path';
+import {createHash} from 'node:crypto';
+import {LAUREL_HOMES_BUILDING_B_IR} from '../src/engine/laurel-homes-building-b';
+import {fingerprintAssemblyIR} from '../src/engine/assembly-edit';
+import {validateAssemblyIR} from '../src/engine/assembly-compiler';
+import {validateGlbStandard} from '../src/engine/gltf-standard-validation';
+import {DELIVERY_PIPELINE_REVISION} from '../src/engine/delivery-validation';
+import {BOUND_BLENDER_ROUNDTRIP_SCHEMA,auditBlenderRoundTripProof} from '../src/engine/blender-roundtrip-proof';
+import {writeBenchmarkReport} from './lib/benchmark-run-directory';
+const args=process.argv.slice(2);assert(args.length===3||args.length===6);
+const [aggregateArgument,sourceArgument,outputArgument,nativeOverride,rawOverride,finalOverride]=args;
+assert(aggregateArgument&&sourceArgument&&outputArgument,'aggregate-native-report.json actual-source.glb new-bound-report.json [actual-native.json raw.glb final.glb]');
+function read(path:string,limit:number){const info=statSync(path);assert(info.isFile()&&info.size>0&&info.size<=limit,'File budget exceeded');return readFileSync(path)}
+const digest=(b:Uint8Array)=>createHash('sha256').update(b).digest('hex');
+const aggregatePath=resolve(aggregateArgument),sourcePath=resolve(sourceArgument),outputPath=resolve(outputArgument);
+const aggregate=JSON.parse(read(aggregatePath,2_000_000).toString());assert(aggregate.compilerRevision===DELIVERY_PIPELINE_REVISION&&aggregate.pass===true&&Array.isArray(aggregate.cases),'Stale/incomplete native aggregate');
+const cases=aggregate.cases.filter((r:{id?:string})=>r.id==='laurel-homes-architecture');assert.equal(cases.length,1,'Missing/ambiguous architecture execution');const entry=cases[0];assert(entry.pass===true&&entry.source.byteDeterministic===true);
+const nativePath=resolve(nativeOverride??entry.blender.artifactPaths.blenderReportPath),rawPath=resolve(rawOverride??entry.blender.artifactPaths.rawRoundTrip),finalPath=resolve(finalOverride??entry.blender.artifactPaths.repaired);
+assert([sourcePath,rawPath,finalPath].reduce((sum,path)=>sum+statSync(path).size,0)<=100*1024*1024,'Combined file budget exceeded before allocation');
+const native=JSON.parse(read(nativePath,2_000_000).toString());assert(native.schema==='morphloom.blender-roundtrip/0.2'&&native.pass===true,'Unsupported native execution report');
+const source=read(sourcePath,256_000_000);assert.equal(digest(source),entry.source.sha256);assert.equal(digest(source),native.sourceSha256);assert.equal(source.length,native.sourceBytes);
+assert.equal(source.toString('ascii',0,4),'glTF');assert.equal(source.readUInt32LE(4),2);assert.equal(source.readUInt32LE(8),source.length);assert.equal(source.readUInt32LE(16),0x4e4f534a);const jsonLength=source.readUInt32LE(12);assert(jsonLength<=16_000_000&&20+jsonLength<=source.length);const json=JSON.parse(source.subarray(20,20+jsonLength).toString());
+const sourceIrs=json.nodes.filter((n:{extras?:{assemblyIR?:unknown}})=>n.extras?.assemblyIR!==undefined);assert.equal(sourceIrs.length,1,'Source must retain one assembly IR');const ir=sourceIrs[0].extras.assemblyIR;validateAssemblyIR(ir);const assemblyFingerprint=await fingerprintAssemblyIR(ir);assert.equal(assemblyFingerprint,await fingerprintAssemblyIR(JSON.parse(JSON.stringify(LAUREL_HOMES_BUILDING_B_IR))),'Source IR differs from current assembly');
+const raw=read(rawPath,256_000_000);assert.equal(digest(raw),native.roundTripSha256);assert.equal(raw.length,native.roundTripBytes);
+const final=read(finalPath,256_000_000),finalHash=digest(final);assert.equal(finalHash,entry.blender.deliveryRepair.outputSha256);assert(source.length+raw.length+final.length<=100*1024*1024,'Bound proof file budget exceeded');
+const sourceStandard=await validateGlbStandard(new Uint8Array(source).buffer);assert.equal(sourceStandard.status,'pass');assert.equal(sourceStandard.independentRead.status,'pass');
+const standard=await validateGlbStandard(new Uint8Array(final).buffer);
+const report={...native,schema:BOUND_BLENDER_ROUNDTRIP_SCHEMA,compilerRevision:DELIVERY_PIPELINE_REVISION,assetId:'laurel-homes-architecture',assemblyFingerprintRepresentation:'source-json/0.1',assemblyFingerprint,finalDeliverySha256:finalHash,finalDeliveryBytes:final.length,roundTripStandardValidation:{status:standard.status,khronosErrors:standard.errors,khronosWarnings:standard.warnings,independentReadStatus:standard.independentRead.status,validatedSha256:finalHash},sourceStandard,finalStandard:standard,generatedAt:new Date().toISOString(),scope:'Native first import/export/reimport semantic report bound to actual current source and raw output. Final repaired bytes independently revalidated; raw normal byte parity and repaired-file Blender reimport are not asserted.'};
+assert.deepEqual(auditBlenderRoundTripProof(report,{compilerRevision:DELIVERY_PIPELINE_REVISION,assetId:'laurel-homes-architecture',assemblyFingerprint,sourceSha256:digest(source),finalDeliverySha256:finalHash}),[]);
+writeBenchmarkReport(outputPath,JSON.stringify(report,null,2)+'\n',[aggregatePath,sourcePath,nativePath,rawPath,finalPath]);console.log(JSON.stringify({output:outputPath,sourceSha256:report.sourceSha256,rawSha256:report.roundTripSha256,finalSha256:finalHash,pass:true}));

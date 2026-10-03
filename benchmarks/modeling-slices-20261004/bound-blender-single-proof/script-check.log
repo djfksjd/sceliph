@@ -1,0 +1,5 @@
+src/engine/gltf-standard-validation.ts(38,34): error TS7016: Could not find a declaration file for module 'gltf-validator'. '/Users/danny/Documents/morphloom/node_modules/gltf-validator/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/gltf-validator` if it exists or add a new declaration (.d.ts) file containing `declare module 'gltf-validator';`
+src/engine/gltf-standard-validation.ts(51,11): error TS7006: Parameter 'message' implicitly has an 'any' type.
+src/engine/gltf-standard-validation.ts(94,5): error TS2322: Type 'unknown[]' is not assignable to type 'string[]'.
+  Type 'unknown' is not assignable to type 'string'.

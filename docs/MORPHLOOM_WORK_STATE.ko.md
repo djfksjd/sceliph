@@ -150,3 +150,8 @@ Compiler0.40 opt-in corner-angle normals preserve actual POSITION/UV/index/mater
 ## 2026-10-04 compiler0.40 actual delivery receipt refresh
 
 Actual browser7/current release4of4, deterministic5GLBs, native Blender5import/reexport and5edits, Godot5, Prusa/coarse toolpath and actual static browser downloads/BlenderOBJ-STL-PLY/USDchecker PASS. First quality now100%; whole production exit1 due competitive cooling UV infos23, strict Blender native/edit not accepted. No UV removal or threshold changes. Tests not repeated because product code remains0e94ded/805PASS. [Current evidence](CURRENT_DELIVERY_040_STATUS.ko.md). Next reproduce competitive acceptance of historical2026-09-02 single Blender report without current source binding. Goal active.
+
+
+## 2026-10-04 bound single Blender proof0.3
+
+Historical2026-09-02 source mismatch and omitted count equality reproduced in2 failing tests. Current compiler/source JSON IR/final-file SHA and semantic/standard/parser checks now required; real CLI4 negative cases preserve source/no output. New native architecture import/export/reimport and actual final-byte revalidation PASS. source-json fingerprint explicitly handles246omitted undefined rotations without changing patch fingerprints. 112files811tests/check/benchmark/build and strict scripts PASS. Current proof accepted, old proof blocked; whole production remainsFAILcoolinginfos23, dominance not-run; final repaired Blender reimport/UI/render not-run this phase. [Evidence](BOUND_BLENDER_SINGLE_PROOF_STATUS.ko.md). Goal active; next actual mesh direction/section audit.
