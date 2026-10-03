@@ -1,0 +1,7 @@
+import {expect,it} from 'vitest';
+import {compileAssemblyIR,validateAssemblyIR} from '../src/engine/assembly-compiler';
+import type {AssemblyIR} from '../src/engine/assembly-ir';
+function fixture(segments?:unknown,active=true):AssemblyIR{return {schema:'morphloom.assembly/0.1',name:'Authored bevel diagnostic',units:'mm',components:[{id:'housing',name:'Housing diagnostic',category:'mechanical',materialName:'raw metal',detail:'Authored fixture',geometry:{op:'extrude',points:[[-12,-8],[8,-8],[12,-4],[12,8],[-12,8]],depth:8,bevelSize:active?1:0,bevelThickness:active?1:0,...(segments!==undefined?{bevelSegments:segments as number}:{})},material:{surface:'raw',color:'#aaaaaa',roughness:.4,metalness:.6}}]}}
+it('rejects malformed declared bevel subdivisions before compilation without source mutation',()=>{for(const n of [3.5,null,'3',true,[],{},NaN,Infinity,-1,513]){const ir=fixture(n),copy=structuredClone(ir);expect(()=>validateAssemblyIR(ir)).toThrow();expect(()=>compileAssemblyIR(ir,'beauty')).toThrow();expect(ir).toEqual(copy)}});
+it('preserves omitted default, integer range and legacy inactive zero',()=>{for(const n of [undefined,1,3,32,512])expect(()=>validateAssemblyIR(fixture(n))).not.toThrow();expect(()=>validateAssemblyIR(fixture(0,false))).not.toThrow();expect(()=>validateAssemblyIR(fixture(0))).toThrow(/bevel segments are invalid/)});
+it('does not silently accept malformed values when bevel is disabled',()=>{for(const n of [3.5,null,'3',true])expect(()=>validateAssemblyIR(fixture(n,false))).toThrow()});

@@ -1,0 +1,402 @@
+[
+  {
+    "id": "default",
+    "buffers": {
+      "position": {
+        "count": 228,
+        "itemSize": 3,
+        "sha256": "12354cd556394f7dc14add0c14a266c2b38af829ee19590385c7245990bc0bd5"
+      },
+      "uv": {
+        "count": 228,
+        "itemSize": 2,
+        "sha256": "4db6b99adef5f942db55b78726a49971595b673ffbce1c476750987e2b6210ae"
+      },
+      "normal": {
+        "count": 228,
+        "itemSize": 3,
+        "sha256": "9f2998ef34e746deb4f530c412f130540bb7239c3196ce7dc2d09971e9641bf6"
+      }
+    },
+    "index": null,
+    "sha256": "a77e8aeb85cea9d9cc905681d2e6981c807b85154bb1a5058386fb84d6b0307c",
+    "validation": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 1,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    "topology": {
+      "meshes": 1,
+      "watertightMeshes": 1,
+      "boundaryEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "orientationConsistent": true,
+      "nonManifoldEdges": 0,
+      "degenerateTriangles": 0,
+      "selfIntersections": 0,
+      "selfIntersectionMeshes": 0,
+      "selfIntersectionCandidatePairs": 97,
+      "selfIntersectionComplete": true,
+      "triangles": 76,
+      "edgeTaperMeshes": 0,
+      "verifiedEdgeTaperSegments": 0,
+      "surfaceReliefMeshes": 0,
+      "surfaceReliefSamples": 0,
+      "surfaceAggregateFeatures": 0,
+      "referenceReliefMeshes": 0,
+      "referenceReliefSamples": 0,
+      "maximumReferenceIrregularity": 0,
+      "pass": true,
+      "details": [
+        {
+          "name": "housing",
+          "boundaryEdges": 0,
+          "inconsistentWindingEdges": 0,
+          "orientationConsistent": true,
+          "nonManifoldEdges": 0,
+          "degenerateTriangles": 0,
+          "selfIntersections": 0,
+          "selfIntersectionComplete": true,
+          "watertight": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "one",
+    "buffers": {
+      "position": {
+        "count": 108,
+        "itemSize": 3,
+        "sha256": "cd833efa525f309a08b2667a595f5657edde6cda7a1c9158375e23b46c0de817"
+      },
+      "uv": {
+        "count": 108,
+        "itemSize": 2,
+        "sha256": "87c1eeae3f4e80725bc776406bc014dbb394eb05874ab64c25dd687ec95f3d32"
+      },
+      "normal": {
+        "count": 108,
+        "itemSize": 3,
+        "sha256": "025c221de7abd3ad7b363ff5c4fae172a69257e43a8405709c65fe178ae43f4c"
+      }
+    },
+    "index": null,
+    "sha256": "ecb70a0f3a14f31466ac424d7364210abfb46ce219de20b65ef3a4e2e18ed8e0",
+    "validation": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 1,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    "topology": {
+      "meshes": 1,
+      "watertightMeshes": 1,
+      "boundaryEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "orientationConsistent": true,
+      "nonManifoldEdges": 0,
+      "degenerateTriangles": 0,
+      "selfIntersections": 0,
+      "selfIntersectionMeshes": 0,
+      "selfIntersectionCandidatePairs": 45,
+      "selfIntersectionComplete": true,
+      "triangles": 36,
+      "edgeTaperMeshes": 0,
+      "verifiedEdgeTaperSegments": 0,
+      "surfaceReliefMeshes": 0,
+      "surfaceReliefSamples": 0,
+      "surfaceAggregateFeatures": 0,
+      "referenceReliefMeshes": 0,
+      "referenceReliefSamples": 0,
+      "maximumReferenceIrregularity": 0,
+      "pass": true,
+      "details": [
+        {
+          "name": "housing",
+          "boundaryEdges": 0,
+          "inconsistentWindingEdges": 0,
+          "orientationConsistent": true,
+          "nonManifoldEdges": 0,
+          "degenerateTriangles": 0,
+          "selfIntersections": 0,
+          "selfIntersectionComplete": true,
+          "watertight": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "three",
+    "buffers": {
+      "position": {
+        "count": 228,
+        "itemSize": 3,
+        "sha256": "12354cd556394f7dc14add0c14a266c2b38af829ee19590385c7245990bc0bd5"
+      },
+      "uv": {
+        "count": 228,
+        "itemSize": 2,
+        "sha256": "4db6b99adef5f942db55b78726a49971595b673ffbce1c476750987e2b6210ae"
+      },
+      "normal": {
+        "count": 228,
+        "itemSize": 3,
+        "sha256": "9f2998ef34e746deb4f530c412f130540bb7239c3196ce7dc2d09971e9641bf6"
+      }
+    },
+    "index": null,
+    "sha256": "3c8f1c3d297848bb7d206992885b07dfff43b2dc406f18ce2b613ce9e5947f65",
+    "validation": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 1,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    "topology": {
+      "meshes": 1,
+      "watertightMeshes": 1,
+      "boundaryEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "orientationConsistent": true,
+      "nonManifoldEdges": 0,
+      "degenerateTriangles": 0,
+      "selfIntersections": 0,
+      "selfIntersectionMeshes": 0,
+      "selfIntersectionCandidatePairs": 97,
+      "selfIntersectionComplete": true,
+      "triangles": 76,
+      "edgeTaperMeshes": 0,
+      "verifiedEdgeTaperSegments": 0,
+      "surfaceReliefMeshes": 0,
+      "surfaceReliefSamples": 0,
+      "surfaceAggregateFeatures": 0,
+      "referenceReliefMeshes": 0,
+      "referenceReliefSamples": 0,
+      "maximumReferenceIrregularity": 0,
+      "pass": true,
+      "details": [
+        {
+          "name": "housing",
+          "boundaryEdges": 0,
+          "inconsistentWindingEdges": 0,
+          "orientationConsistent": true,
+          "nonManifoldEdges": 0,
+          "degenerateTriangles": 0,
+          "selfIntersections": 0,
+          "selfIntersectionComplete": true,
+          "watertight": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "fine",
+    "buffers": {
+      "position": {
+        "count": 1968,
+        "itemSize": 3,
+        "sha256": "fecdd08464aeb8b234322eb6ddafef7eef9bc41ad31a208bc6fd17cb3a74036f"
+      },
+      "uv": {
+        "count": 1968,
+        "itemSize": 2,
+        "sha256": "70c031e44beaad1408c8ffa3a555a0719e42df9a264777b0fa3620f11fcca071"
+      },
+      "normal": {
+        "count": 1968,
+        "itemSize": 3,
+        "sha256": "c83a44750296a8da5b0fe5fa1cba00571fbe4c26fdb9a1484a0242a9075c8da8"
+      }
+    },
+    "index": null,
+    "sha256": "098c8477f9835c086ed7552bae9243f0e36bba04db98dd72177a3feb40dca871",
+    "validation": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 1,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    "topology": {
+      "meshes": 1,
+      "watertightMeshes": 1,
+      "boundaryEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "orientationConsistent": true,
+      "nonManifoldEdges": 0,
+      "degenerateTriangles": 0,
+      "selfIntersections": 0,
+      "selfIntersectionMeshes": 0,
+      "selfIntersectionCandidatePairs": 851,
+      "selfIntersectionComplete": true,
+      "triangles": 656,
+      "edgeTaperMeshes": 0,
+      "verifiedEdgeTaperSegments": 0,
+      "surfaceReliefMeshes": 0,
+      "surfaceReliefSamples": 0,
+      "surfaceAggregateFeatures": 0,
+      "referenceReliefMeshes": 0,
+      "referenceReliefSamples": 0,
+      "maximumReferenceIrregularity": 0,
+      "pass": true,
+      "details": [
+        {
+          "name": "housing",
+          "boundaryEdges": 0,
+          "inconsistentWindingEdges": 0,
+          "orientationConsistent": true,
+          "nonManifoldEdges": 0,
+          "degenerateTriangles": 0,
+          "selfIntersections": 0,
+          "selfIntersectionComplete": true,
+          "watertight": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "legacy-off",
+    "buffers": {
+      "position": {
+        "count": 48,
+        "itemSize": 3,
+        "sha256": "6bcb8dd3b0fa9ecb1a8a5dfbe067ab66d425333e6773c361d9070a7c4edc18b2"
+      },
+      "uv": {
+        "count": 48,
+        "itemSize": 2,
+        "sha256": "52c058036389c1d8303cb0e4fb0b082fed1478716ee32502b1d4efad5658a111"
+      },
+      "normal": {
+        "count": 48,
+        "itemSize": 3,
+        "sha256": "6958c07e2b23d1f7ed254ddf8cd95335c2edfea21d2e365dc8d167128f055774"
+      }
+    },
+    "index": null,
+    "sha256": "88c6fd770c97ad9993ac42bc2e872c7debf6b75a948a5316cb805413acb3aa25",
+    "validation": {
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 1,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    "topology": {
+      "meshes": 1,
+      "watertightMeshes": 1,
+      "boundaryEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "orientationConsistent": true,
+      "nonManifoldEdges": 0,
+      "degenerateTriangles": 0,
+      "selfIntersections": 0,
+      "selfIntersectionMeshes": 0,
+      "selfIntersectionCandidatePairs": 17,
+      "selfIntersectionComplete": true,
+      "triangles": 16,
+      "edgeTaperMeshes": 0,
+      "verifiedEdgeTaperSegments": 0,
+      "surfaceReliefMeshes": 0,
+      "surfaceReliefSamples": 0,
+      "surfaceAggregateFeatures": 0,
+      "referenceReliefMeshes": 0,
+      "referenceReliefSamples": 0,
+      "maximumReferenceIrregularity": 0,
+      "pass": true,
+      "details": [
+        {
+          "name": "housing",
+          "boundaryEdges": 0,
+          "inconsistentWindingEdges": 0,
+          "orientationConsistent": true,
+          "nonManifoldEdges": 0,
+          "degenerateTriangles": 0,
+          "selfIntersections": 0,
+          "selfIntersectionComplete": true,
+          "watertight": true
+        }
+      ]
+    }
+  }
+]

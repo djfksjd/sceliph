@@ -244,6 +244,10 @@ export function validateAssemblyIR(value: unknown): asserts value is AssemblyIR 
         }
         break;
       case 'extrude':
+        if (component.geometry.bevelSegments !== undefined && (!Number.isInteger(component.geometry.bevelSegments)
+          || component.geometry.bevelSegments < 0 || component.geometry.bevelSegments > 512)) {
+          throw new Error(`Extrude bevel segments are invalid in ${component.id}: expected integer 0..512 (0 only with bevel disabled).`);
+        }
         if (component.geometry.points.length < 3 || component.geometry.depth <= 0) throw new Error(`Extrude profile is invalid in ${component.id}.`);
         if (component.geometry.holes?.some((loop) => loop.length < 3)) throw new Error(`Extrude hole loop is invalid in ${component.id}.`);
         if (component.geometry.ovalHoles?.some((hole) => hole.radii.some((radius) => radius <= 0)
