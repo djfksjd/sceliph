@@ -1,0 +1,26 @@
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/gear-projection-tile.test.ts [ tests/gear-projection-tile.test.ts ]
+Error: Cannot find module '../src/engine/projection-uv-tile' imported from '/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/tests/gear-projection-tile.test.ts'
+ ❯ tests/gear-projection-tile.test.ts:2:1
+      1| import {expect,it} from 'vitest';
+      2| import {projectionUvScalarForTileMm} from '../src/engine/projection-uv…
+       | ^
+      3| import {generateSpurGearProject} from '../src/engine/gear-pack';
+      4| import {migrateElementProjectToV4,editPart,parseProject,serializeProje…
+
+Caused by: Error: Failed to load url ../src/engine/projection-uv-tile (resolved id: ../src/engine/projection-uv-tile) in /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/tests/gear-projection-tile.test.ts. Does the file exist?
+ ❯ loadAndTransform ../../../../../../../../Users/danny/Documents/morphloom/node_modules/vite/dist/node/chunks/config.js:22739:33
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  08:16:03
+   Duration  90ms (transform 12ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 27ms)
+

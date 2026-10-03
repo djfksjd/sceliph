@@ -205,11 +205,14 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
       if(normalKit&&workspace)throw new Error('Blender normal kit: mixed workspace unsupported; reopen a separate native source first');
       const ids = wholeProject ? [...project.parts.map(p=>p.id),...elements.map(e=>e.id)] : group ? elements.filter(e => e.groupId === group.id).map(e => e.id) : selection ? [selection] : [];
       if (!ids.length) throw new Error('Select an element or body part first');
-      built = exportSelectedScene(project, ids);
+      // Match the saved native JSON representation so reopening cannot reorder GLB metadata.
+      const exportSource=normalKit?parseProject(serializeProject(project)):project;
+      if(normalKit)delete exportSource.selection;
+      built = exportSelectedScene(exportSource, ids);
       const legacyDiagnostic=project.schema==='morphloom.elements/0.1'&&(diagnosticChecker||diagnosticUv);
       if (!legacyDiagnostic&&!analyzeTopology(built.root).pass) throw new Error('Export blocked: topology gate failed');
       if(diagnosticChecker){restoreChecker=attachUvChecker(built.root);built.root.userData.diagnosticAppearance='synthetic-checker; original PBR retained in source IR';}
-      const sourceJson=serializeProject(normalKit?{...project,selection:ids}:savedProject());
+      const sourceJson=serializeProject(normalKit?{...exportSource,selection:ids}:savedProject());
       const data = await new GLTFExporter().parseAsync(built.root, { binary: true });
       const uvDelivery=await inspectMeshExport(data as ArrayBuffer,sourceJson,diagnosticChecker||diagnosticUv?'diagnostic':'editable-mesh');
       const uvJson=JSON.stringify({...uvDelivery,topologyInspection:legacyDiagnostic?{status:'not-run',reason:'Legacy 0.1 diagnostic retains prior export compatibility; not certified closed topology'}:{status:'pass',scope:'Current native volumetric generators only; intentional open representations unsupported'}});if(new Blob([uvJson]).size>20_000_000)throw new Error('UV report exceeds 20 MB budget');

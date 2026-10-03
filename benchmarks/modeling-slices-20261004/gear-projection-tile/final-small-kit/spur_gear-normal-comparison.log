@@ -1,0 +1,27 @@
+{
+  "schema": "morphloom.native-normal-payload-comparison/0.1",
+  "pass": true,
+  "meshId": "spur_gear",
+  "before": {
+    "sha256": "dec460073cf8ab7de0238330ed9da8a3d7d1b4f45324f703ffa3a3953e660101",
+    "kind": "actual GLB NORMAL accessor"
+  },
+  "after": {
+    "sha256": "4d616caf7536d68aedf4ae855a83b984d4b02b209d82fc9e01898f14582b9258",
+    "kind": "actual GLB NORMAL accessor"
+  },
+  "translationMm": [
+    0,
+    0,
+    0
+  ],
+  "corners": 25152,
+  "worldCoordinates": 4192,
+  "bidirectionalSamples": 50304,
+  "coordinateToleranceMeters": 0.000001,
+  "maxCoordinateDriftMeters": 0,
+  "maxNormalDifferenceDeg": 0.0036079377263572012,
+  "worstCoordinateMicrometers": "-6208,-1406,-2000",
+  "fixedToleranceDeg": 0.01,
+  "scope": "Raw NORMAL payload or actual first-import normals; worst per selected mesh, no quality averaging or geometry regeneration"
+}

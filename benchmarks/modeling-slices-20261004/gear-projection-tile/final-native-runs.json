@@ -1,0 +1,56 @@
+[
+  {
+    "case": "small",
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-small-kit/tools/blender-source-normal-import.py",
+      "--",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-small-kit/model.glb",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-small-kit/output.blend",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-small-kit/receipt.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": "default",
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-default-kit/tools/blender-source-normal-import.py",
+      "--",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-default-kit/model.glb",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-default-kit/output.blend",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-default-kit/receipt.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": "large",
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-large-kit/tools/blender-source-normal-import.py",
+      "--",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-large-kit/model.glb",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-large-kit/output.blend",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-large-kit/receipt.json"
+    ],
+    "exit": 0
+  }
+]

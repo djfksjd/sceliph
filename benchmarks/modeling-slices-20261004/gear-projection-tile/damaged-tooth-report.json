@@ -1,0 +1,13 @@
+{
+  "originalSHA256": "da2be76cec6b2089910848c680063fdb811c1f2de6d752cd6c1cdd28442da609",
+  "damagedSHA256": "154edb0301d3d493479dcc85c9da48d53c907da57cb4cd082bcab90dea28fb98",
+  "aggregateDegenerateFraction": 0.002385496183206107,
+  "feature": {
+    "id": "spur_gear/tooth_0003",
+    "triangles": 294,
+    "degenerateUvTriangles": 20,
+    "integrityPass": false
+  },
+  "integrityPass": false,
+  "blockedReason": "Error: Mesh export blocked: spur_gear: UV integrity failed: 20/8384 degenerate; 0 invalid vertices; 0 invalid world triangles; spur_gear/tooth_0003: Critical feature UV failed: 20/294 degenerate. Fix the affected UVs or use explicit diagnostic export. This is not production approval."
+}

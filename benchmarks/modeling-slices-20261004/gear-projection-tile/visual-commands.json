@@ -1,0 +1,193 @@
+[
+  {
+    "args": [
+      "open",
+      "http://127.0.0.1:4179/?editor=elements&tilevisual=1"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Sceliph \u2014 Result Viewer\n  http://127.0.0.1:4179/?editor=elements&tilevisual=1\n",
+    "stderr": "[agent-browser] launched browser\n"
+  },
+  {
+    "args": [
+      "wait",
+      "--load",
+      "networkidle"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(async()=>{const text=await(await fetch('/src/ElementEditor.tsx')).text();const {OrbitControls}=await import(text.match(/import \\{ OrbitControls \\} from \"([^\"]+)\"/)[1]);const old=OrbitControls.prototype.update;OrbitControls.prototype.update=function(...args){const r=old.apply(this,args);window.actualCamera={position:this.object.position.toArray(),target:this.target.toArray(),fov:this.object.fov,aspect:this.object.aspect,near:this.object.near,far:this.object.far};return r};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/default-source.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "spur_gear"
+    ],
+    "exit": 0,
+    "stdout": "spur_gear\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Enable UV editing (schema 0.4)"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Local projection tile (mm)"
+    ],
+    "exit": 0,
+    "stdout": "Local projection tile (mm)\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "checkbox",
+      "check",
+      "--name",
+      "Isolate selection"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "checkbox",
+      "check",
+      "--name",
+      "Synthetic UV checker preview"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Fit view"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "document.querySelector(\".element-viewport\").scrollIntoView({block:\"center\"});true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({camera:window.actualCamera,viewport:document.querySelector(\".element-viewport\").getBoundingClientRect().toJSON()})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"camera\\\":{\\\"position\\\":[0.03625294076222317,0.019939117419222746,0.03625294076222318],\\\"target\\\":[0,0,0],\\\"fov\\\":45,\\\"aspect\\\":1.805352798053528,\\\"near\\\":0.00001881488813326844,\\\"far\\\":10},\\\"viewport\\\":{\\\"x\\\":269.1875,\\\"y\\\":210,\\\"width\\\":741.609375,\\\"height\\\":411.4375,\\\"top\\\":210,\\\"right\\\":1010.796875,\\\"bottom\\\":621.4375,\\\"left\\\":269.1875}}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "screenshot",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/fixed-checker-before.png"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Screenshot saved to /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/fixed-checker-before.png\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "spinbutton",
+      "fill",
+      "--name",
+      "Local projection tile (mm)",
+      "10"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Apply part edit"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "document.querySelector(\".element-viewport\").scrollIntoView({block:\"center\"});true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({camera:window.actualCamera,viewport:document.querySelector(\".element-viewport\").getBoundingClientRect().toJSON()})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"camera\\\":{\\\"position\\\":[0.03625294076222317,0.019939117419222746,0.03625294076222318],\\\"target\\\":[0,0,0],\\\"fov\\\":45,\\\"aspect\\\":1.805352798053528,\\\"near\\\":0.00001881488813326844,\\\"far\\\":10},\\\"viewport\\\":{\\\"x\\\":269.1875,\\\"y\\\":210,\\\"width\\\":741.609375,\\\"height\\\":411.4375,\\\"top\\\":210,\\\"right\\\":1010.796875,\\\"bottom\\\":621.4375,\\\"left\\\":269.1875}}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "screenshot",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/fixed-checker-after.png"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Screenshot saved to /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/fixed-checker-after.png\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "name": "small",
+    "scalar": 1,
+    "pass": false,
+    "triangles": 8384,
+    "degenerate": 2258,
+    "zero": 0,
+    "invalidWorld": 0,
+    "minimumNonzeroDoubleUvArea": 9.292387002826207e-12,
+    "failingTeeth": 24,
+    "uvUnitsPerMeterRange": [
+      0.8408972473456912,
+      1.000000989529699
+    ],
+    "maximumAnisotropy": 1.4142163611871208
+  },
+  {
+    "name": "small",
+    "scalar": 100,
+    "pass": true,
+    "triangles": 8384,
+    "degenerate": 0,
+    "zero": 0,
+    "invalidWorld": 0,
+    "minimumNonzeroDoubleUvArea": 9.284385982244459e-8,
+    "failingTeeth": 0,
+    "uvUnitsPerMeterRange": [
+      84.08980367725583,
+      100.1339674211639
+    ],
+    "maximumAnisotropy": 1.4142187634999488
+  },
+  {
+    "name": "default",
+    "scalar": 1,
+    "pass": false,
+    "triangles": 8384,
+    "degenerate": 1490,
+    "zero": 0,
+    "invalidWorld": 0,
+    "minimumNonzeroDoubleUvArea": 3.716954801130483e-11,
+    "failingTeeth": 24,
+    "uvUnitsPerMeterRange": [
+      0.8408972473456912,
+      1.000000989529699
+    ],
+    "maximumAnisotropy": 1.4142163611871208
+  },
+  {
+    "name": "default",
+    "scalar": 100,
+    "pass": true,
+    "triangles": 8384,
+    "degenerate": 0,
+    "zero": 0,
+    "invalidWorld": 0,
+    "minimumNonzeroDoubleUvArea": 3.7137543928977834e-7,
+    "failingTeeth": 0,
+    "uvUnitsPerMeterRange": [
+      84.08980367725583,
+      100.1339674211639
+    ],
+    "maximumAnisotropy": 1.4142187634999488
+  },
+  {
+    "name": "large",
+    "scalar": 1,
+    "pass": true,
+    "triangles": 8384,
+    "degenerate": 0,
+    "zero": 0,
+    "invalidWorld": 0,
+    "minimumNonzeroDoubleUvArea": 1.4867819204521932e-10,
+    "failingTeeth": 0,
+    "uvUnitsPerMeterRange": [
+      0.8408956810542277,
+      1
+    ],
+    "maximumAnisotropy": 1.4142110928313083
+  },
+  {
+    "name": "large",
+    "scalar": 100,
+    "pass": true,
+    "triangles": 8384,
+    "degenerate": 0,
+    "zero": 0,
+    "invalidWorld": 0,
+    "minimumNonzeroDoubleUvArea": 0.0000014855017571591134,
+    "failingTeeth": 0,
+    "uvUnitsPerMeterRange": [
+      84.08960319206653,
+      100.1339674211639
+    ],
+    "maximumAnisotropy": 1.4142120200051107
+  }
+]

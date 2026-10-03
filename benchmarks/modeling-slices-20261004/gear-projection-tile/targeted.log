@@ -1,0 +1,14 @@
+
+ RUN  v3.2.7 /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo
+
+ ✓ tests/gear-projection-tile.test.ts (2 tests) 1294ms
+   ✓ changes actual UV only for three scales and a different tooth count, with native source reopen/history  1293ms
+ ✓ tests/uv-scale.test.ts (3 tests) 782ms
+   ✓ opt-in native UV scalar > changes only selected UV data; preserves all other buffers and parts; history restores  650ms
+ ✓ tests/bound-reference-uv.test.ts (4 tests) 327ms
+
+ Test Files  3 passed (3)
+      Tests  9 passed (9)
+   Start at  08:16:32
+   Duration  2.85s (transform 161ms, setup 0ms, collect 262ms, tests 2.40s, environment 0ms, prepare 61ms)
+

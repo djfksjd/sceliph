@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/browser.py", line 34, in <module>
+    assert (redo/'morphloom-project.glb').read_bytes()==(after/'morphloom-project.glb').read_bytes()
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/browser.py", line 5, in call
+    r=subprocess.run(['/Users/danny/.nvm/versions/node/v24.13.1/bin/agent-browser','--session','gear-tile',*args],capture_output=True,text=True);logs.append({'args':list(args),'exit':r.returncode,'stdout':r.stdout,'stderr':r.stderr});assert r.returncode==0,r.stderr;return r.stdout
+AssertionError: ✗ Failed to read: Resource temporarily unavailable (os error 35) (after 5 retries - daemon may be busy or unresponsive)
+

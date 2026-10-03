@@ -1,0 +1,154 @@
+
+> sceliph@0.4.0 gltf:validate
+> vite-node scripts/validate-glb.ts work/gear-projection-tile-20261004/final-small-kit/model.glb work/gear-projection-tile-20261004/final-small-kit/reexport.glb work/gear-projection-tile-20261004/final-default-kit/model.glb work/gear-projection-tile-20261004/final-default-kit/reexport.glb work/gear-projection-tile-20261004/final-large-kit/model.glb work/gear-projection-tile-20261004/final-large-kit/reexport.glb
+
+{
+  "schema": "morphloom.khronos-gltf-validation/0.1",
+  "pass": true,
+  "reports": [
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-small-kit/model.glb",
+      "bytes": 828844,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-small-kit/reexport.glb",
+      "bytes": 875408,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-default-kit/model.glb",
+      "bytes": 828840,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-default-kit/reexport.glb",
+      "bytes": 875404,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-large-kit/model.glb",
+      "bytes": 828840,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-large-kit/reexport.glb",
+      "bytes": 875404,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  ]
+}
