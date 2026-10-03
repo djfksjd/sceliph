@@ -1,0 +1,29 @@
+{
+  "baseline": "d285077b8f641da7576d72f87a163d55be236553",
+  "scope": "native export intent cancellation; no geometry/schema change",
+  "tests": {
+    "npm test": "120 files / 835 tests PASS",
+    "npm run check": "PASS",
+    "npm run benchmark": "PASS",
+    "npm run build": "PASS",
+    "quality:gate": "exit 1: existing competitive gate failure",
+    "quality:production": "exit 1: existing competitive gate failure; dominance not-run"
+  },
+  "environment": {
+    "platform": "macOS-26.4.1-arm64-arm-64bit",
+    "node": "v24.13.1",
+    "blender": "5.2.1 LTS"
+  },
+  "browser": {
+    "readFailure": "PASS: stale downloads zero, replacement error retained",
+    "selection": "PASS: stale downloads zero",
+    "freshSessionReopen": "PASS: source JSON and GLB SHA identical; UV report receipt bytes differ across runs",
+    "tooth-selection": "PASS: actual unchamfered gear diagnostic tooth export suspended; reselection intent blocks all stale downloads"
+  },
+  "native": {
+    "semanticRoundtrip": "PASS: existing blender-glb-roundtrip.py, bounds error 0 mm",
+    "strictNormalComparison": "not-run; general semantic receipt does not prove normals",
+    "optionalNormalHelper": "expected unsupported: actual source has textures; not promoted to PASS"
+  },
+  "sourceSha256": "22c77cb7d8d3ea5a6a5980d1b25f8f308dc974c6b63f119e52d1470baaea38cc"
+}

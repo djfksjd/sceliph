@@ -1,0 +1,235 @@
+[
+  {
+    "args": [
+      "open",
+      "http://127.0.0.1:4179/?editor=elements&race=1791067339.0025651"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Sceliph \u2014 Result Viewer\n  http://127.0.0.1:4179/?editor=elements&race=1791067339.0025651\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--load",
+      "networkidle"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/benchmarks/modeling-slices-20261002/part-material-preservation/gear.elements.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "spur_gear"
+    ],
+    "exit": 0,
+    "stdout": "spur_gear\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(async()=>{const text=await(await fetch('/src/ElementEditor.tsx')).text();const url=text.match(/import \\{ GLTFExporter \\} from \"([^\"]+)\"/)[1];const {GLTFExporter}=await import(url);const old=GLTFExporter.prototype.parseAsync;window.downloads=[];HTMLAnchorElement.prototype.click=function(){window.downloads.push(this.download)};GLTFExporter.prototype.parseAsync=async function(...args){GLTFExporter.prototype.parseAsync=old;window.waiting=true;await new Promise(r=>window.release=r);return old.apply(this,args)};return 'armed actual exporter';})()"
+    ],
+    "exit": 0,
+    "stdout": "\"armed actual exporter\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "Boolean(window.waiting)"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "textbox",
+      "fill",
+      "--name",
+      "Select by ID",
+      "spur_gear"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Select",
+      "--exact"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.release(); true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 16768 triangles \u00b7 1609728 geometry-buffer bytes \u00b7 136.5 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  }
+]

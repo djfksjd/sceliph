@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/scripts/blender-source-normal-import.py", line 9, in <module>
+    result=import_static_with_source_normals(source)
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/scripts/blender_source_normal_import.py", line 97, in import_static_with_source_normals
+    result=_import_checked(snapshot)
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/scripts/blender_source_normal_import.py", line 54, in _import_checked
+    specs,total=_source_spec(source);path=Path(source)
+                ~~~~~~~~~~~~^^^^^^^^
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/scripts/blender_source_normal_import.py", line 24, in _source_spec
+    assert not data.images and not data.textures,'Textured sources unsupported by this import profile'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Textured sources unsupported by this import profile
+
+Error: script failed, file: 'scripts/blender-source-normal-import.py', exiting.
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

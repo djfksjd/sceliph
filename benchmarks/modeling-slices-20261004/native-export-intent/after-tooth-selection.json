@@ -1,0 +1,254 @@
+[
+  {
+    "args": [
+      "open",
+      "http://127.0.0.1:4179/?editor=elements&race=1791067576.126996"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Sceliph \u2014 Result Viewer\n  http://127.0.0.1:4179/?editor=elements&race=1791067576.126996\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--load",
+      "networkidle"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/benchmarks/modeling-slices-20261002/part-material-preservation/gear.elements.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "spur_gear"
+    ],
+    "exit": 0,
+    "stdout": "spur_gear\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(async()=>{const p=await(await fetch('/benchmarks/modeling-slices-20261002/part-material-preservation/gear.elements.json')).json();for(const part of p.parts)delete part.axialChamferMm;const dt=new DataTransfer();dt.items.add(new File([JSON.stringify(p)],'unchamfered-gear.json',{type:'application/json'}));const input=document.querySelector('nav input[type=file]');input.files=dt.files;input.dispatchEvent(new Event('change',{bubbles:true}));await new Promise(r=>setTimeout(r,200));return document.querySelector('[role=status]').textContent})()"
+    ],
+    "exit": 0,
+    "stdout": "\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(async()=>{const text=await(await fetch('/src/ElementEditor.tsx')).text();const url=text.match(/import \\{ GLTFExporter \\} from \"([^\"]+)\"/)[1];const {GLTFExporter}=await import(url);const old=GLTFExporter.prototype.parseAsync;window.downloads=[];HTMLAnchorElement.prototype.click=function(){window.downloads.push(this.download)};GLTFExporter.prototype.parseAsync=async function(...args){GLTFExporter.prototype.parseAsync=old;window.waiting=true;await new Promise(r=>window.release=r);return old.apply(this,args)};return 'armed actual exporter';})()"
+    ],
+    "exit": 0,
+    "stdout": "\"armed actual exporter\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "select",
+      "select[aria-label=\"Connected feature ID\"]",
+      "tooth_0000"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export diagnostic tooth cut"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "Boolean(window.waiting)"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "textbox",
+      "fill",
+      "--name",
+      "Select by ID",
+      "spur_gear"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Select",
+      "--exact"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.release(); true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"status\\\":\\\"0/0 elements \u00b7 8384 triangles \u00b7 804864 geometry-buffer bytes \u00b7 10.9 ms build \u00b7 1 estimated calls \u00b7 2 measured render calls \u00b7 0.0 ms last pick \u00b7 0 bytes last GLB \u00b7 viewport ready\\\"}\"\n",
+    "stderr": ""
+  }
+]

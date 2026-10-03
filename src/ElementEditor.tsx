@@ -198,6 +198,7 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
   const exportGlb = async (wholeProject = false,diagnosticChecker=false,diagnosticUv=false): Promise<void> => {
     if (exportBusy.current) return;
     exportBusy.current = true;
+    const ticket = loadTicket.current;
     let built: ReturnType<typeof exportSelectedScene> | undefined;
     let restoreChecker:(()=>void)|undefined;
     try {
@@ -211,16 +212,16 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
       const data = await new GLTFExporter().parseAsync(built.root, { binary: true });
       const uvDelivery=await inspectMeshExport(data as ArrayBuffer,sourceJson,diagnosticChecker||diagnosticUv?'diagnostic':'editable-mesh');
       const uvJson=JSON.stringify({...uvDelivery,topologyInspection:legacyDiagnostic?{status:'not-run',reason:'Legacy 0.1 diagnostic retains prior export compatibility; not certified closed topology'}:{status:'pass',scope:'Current native volumetric generators only; intentional open representations unsupported'}});if(new Blob([uvJson]).size>20_000_000)throw new Error('UV report exceeds 20 MB budget');
-      if (!mounted.current || currentProject.current !== project) return; // discard an export from a superseded project
+      if (!mounted.current || currentProject.current !== project || ticket !== loadTicket.current) return; // discard superseded project, selection or file-read intent
       const blob = new Blob([data as ArrayBuffer], { type: 'model/gltf-binary' });
       download(blob, diagnosticChecker ? 'morphloom-checker-diagnostic.glb' : diagnosticUv ? 'morphloom-uv-diagnostic.glb' : wholeProject ? 'morphloom-project.glb' : 'morphloom-selection.glb'); setGlbBytes(blob.size);
       download(new Blob([sourceJson], { type: 'application/json' }), 'morphloom-source.json');
       download(new Blob([uvJson],{type:'application/json'}),'morphloom-uv-quality.json');
       setError('');
-    } catch (e) { if (mounted.current && currentProject.current === project) setError(String(e)); } finally { restoreChecker?.(); built?.dispose(); exportBusy.current = false; }
+    } catch (e) { if (mounted.current && currentProject.current === project && ticket === loadTicket.current) setError(String(e)); } finally { restoreChecker?.(); built?.dispose(); exportBusy.current = false; }
   };
   const exportTooth=async(id:string):Promise<void>=>{
-    if(exportBusy.current)return;exportBusy.current=true;let built:ReturnType<typeof exportSelectedScene>|undefined;
+    if(exportBusy.current)return;exportBusy.current=true;const ticket=loadTicket.current;let built:ReturnType<typeof exportSelectedScene>|undefined;
     try{
       if(part?.axialChamferMm)throw new Error('Chamfered diagnostic tooth cuts are unsupported; export whole gear or set chamfer to 0');
       if(part?.geometry?.op!=='spur-gear')throw new Error('Select a spur gear');
@@ -233,11 +234,11 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
       const sourceJson=serializeProject(project);
       const data=await new GLTFExporter().parseAsync(built.root,{binary:true});
       const uvDelivery=await inspectMeshExport(data as ArrayBuffer,sourceJson,'diagnostic');const uvJson=JSON.stringify(uvDelivery);if(new Blob([uvJson]).size>20_000_000)throw new Error('UV report exceeds 20 MB budget');
-      if(!mounted.current||currentProject.current!==project)return;
+      if(!mounted.current||currentProject.current!==project||ticket!==loadTicket.current)return;
       download(new Blob([data as ArrayBuffer],{type:'model/gltf-binary'}),`${part.id}-${id}-diagnostic.glb`);
       download(new Blob([sourceJson],{type:'application/json'}),'morphloom-gear-source.json');
       download(new Blob([uvJson],{type:'application/json'}),'morphloom-tooth-uv-quality.json');setError('');
-    }catch(e){if(mounted.current&&currentProject.current===project)setError(String(e));}finally{built?.dispose();exportBusy.current=false;}
+    }catch(e){if(mounted.current&&currentProject.current===project&&ticket===loadTicket.current)setError(String(e));}finally{built?.dispose();exportBusy.current=false;}
   };
   const button = (text: string, action: () => void): React.JSX.Element => <button type="button" onClick={action}>{text}</button>;
   return <main className="element-editor" onClickCapture={e => { if (e.target instanceof Element && e.target.closest('button')) loadTicket.current++; }} onChangeCapture={e => { if (!(e.target instanceof HTMLInputElement && e.target.type === 'file')) loadTicket.current++; }} style={{ font: '14px system-ui', color: '#eee', background: '#292d33', minHeight: '100vh', padding: 12 }}>
@@ -245,7 +246,7 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
     <nav aria-label="Project actions">{button('Bird example', () => switchPack('morphloom.bird'))}{button('Fur example', () => switchPack('morphloom.fur'))}
       {button('Undo', () => { loadTicket.current++; setProject(history.current.undo()); })}{button('Redo', () => { loadTicket.current++; setProject(history.current.redo()); })}
       {button('Save project JSON', () => { try { download(new Blob([serializeProject(savedProject())], { type: 'application/json' }), 'morphloom-elements.json'); } catch (e) { setError(String(e)); } })}
-      <label>Load JSON (max 2 MB) <input type="file" accept=".json,application/json" onChange={async e => { const input = e.currentTarget; const ticket = ++loadTicket.current; try { const f = input.files?.[0]; input.value = ''; if (!f) return; if (f.size > 2_000_000) throw new Error('File exceeds 2 MB'); const p = parseProject(await f.text()); const savedSelection = p.selection?.[0] ?? ''; delete p.selection; if (ticket !== loadTicket.current) return; resetPose.current = true; history.current = new ElementHistory(p); setProject(p); setPackChoice(''); setPackInputs({}); setSelection(savedSelection); setFeatureId(''); setError(''); } catch (err) { if (ticket === loadTicket.current) setError(String(err)); } }} /></label>
+      <label>Load JSON (max 2 MB) <input type="file" accept=".json,application/json" onChange={async e => { const input = e.currentTarget; const ticket = ++loadTicket.current; try { const f = input.files?.[0]; input.value = ''; if (!f) return; if (f.size > 2_000_000) throw new Error('File exceeds 2 MB'); const p = parseProject(await f.text()); const savedSelection = p.selection?.[0] ?? ''; delete p.selection; if (!mounted.current || ticket !== loadTicket.current) return; resetPose.current = true; history.current = new ElementHistory(p); setProject(p); setPackChoice(''); setPackInputs({}); setSelection(savedSelection); setFeatureId(''); setError(''); } catch (err) { if (mounted.current && ticket === loadTicket.current) setError(String(err)); } }} /></label>
       {button('Export selected GLB + source JSON', () => { void exportGlb(); })}{button('Export project GLB + source JSON', () => { void exportGlb(true); })}{button('Export project UV diagnostic GLB + source JSON', () => { void exportGlb(true,false,true); })}</nav>
     <p>GLB contains independently named baked meshes in meters, not a native procedural groom. Companion JSON preserves the editable source.</p>
     {button('Fit view', () => { resetPose.current = true; setCameraRevision(n => n + 1); })}<form onSubmit={e => { e.preventDefault(); if (project.parts.some(p => p.id === targetId) || project.groups.some(g => g.id === targetId) || elements.some(x => x.id === targetId)) { select(targetId); setError(''); } else setError(`Unknown element ID: ${targetId}`); }}><label>Select by ID <input value={targetId} onChange={e => setTargetId(e.target.value)} /></label><button type="submit">Select</button></form><label>LOD <select value={lod} onChange={e => setLod(e.target.value as 'low' | 'detail')}><option value="detail">Detail</option><option value="low">Low</option></select></label>

@@ -1,0 +1,60 @@
+[
+  {
+    "args": [
+      "eval",
+      "(async()=>{const text=await(await fetch('/src/ElementEditor.tsx')).text();const url=text.match(/import \\{ GLTFExporter \\} from \"([^\"]+)\"/)[1];const {GLTFExporter}=await import(url);const old=GLTFExporter.prototype.parseAsync;window.downloads=[];HTMLAnchorElement.prototype.click=function(){window.downloads.push(this.download)};GLTFExporter.prototype.parseAsync=async function(...args){GLTFExporter.prototype.parseAsync=old;window.waiting=true;await new Promise(r=>window.release=r);return old.apply(this,args)};return 'armed actual exporter';})()"
+    ],
+    "exit": 0,
+    "stdout": "\"armed actual exporter\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "Boolean(window.waiting)"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{File.prototype.text=async function(){throw new Error('intentional replacement read failure')};const input=document.querySelector('nav input[type=file]'),dt=new DataTransfer();dt.items.add(new File(['{}'],'failed.json',{type:'application/json'}));input.files=dt.files;input.dispatchEvent(new Event('change',{bubbles:true}));return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.release(); true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.downloads,status:document.querySelector(\"[role=status]\").textContent})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[\\\"morphloom-project.glb\\\",\\\"morphloom-source.json\\\",\\\"morphloom-uv-quality.json\\\"],\\\"status\\\":\\\"Error: intentional replacement read failure\\\"}\"\n",
+    "stderr": ""
+  }
+]

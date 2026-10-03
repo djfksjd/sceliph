@@ -1,0 +1,4 @@
+# Native export intent cancellation — UTC 2026-10-03T22:37 / KST 2026-10-04T07:37
+Baseline d285077b8f641da7576d72f87a163d55be236553. Budget 20 minutes, two diagnosed repair attempts, local/browser only, API calls zero.
+Hypothesis: pending native GLB export checks project object but ignores load/selection intent; a failed replacement read leaves project unchanged and permits stale downloads/error overwrite.
+Acceptance: delay actual GLTFExporter.parseAsync; change selection or replace file with read failure; release export; no previous GLB/source/report downloads, latest read error retained. Unchanged successful project export still returns original source, GLB and UV report. Reuse existing topology/UV/export checks, unchanged byte and 5% bound UV contracts. Handle unmount with existing mounted guard. No schema/generator/normal change. Native normal kit integration remains next phase.
