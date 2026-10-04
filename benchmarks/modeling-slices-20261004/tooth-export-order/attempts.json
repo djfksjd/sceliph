@@ -1,0 +1,45 @@
+[
+  {
+    "hypothesis": "exportTooth raw IR order differs after JSON save",
+    "result": "CLI actual whole GLB FAIL, BIN exact; four red scale/count cases fail",
+    "evidence": "result.json,red.log"
+  },
+  {
+    "change": "reuse prepareElementExportSource for isolated diagnostic sector, preserve full source separately",
+    "result": "four byte cases PASS; negative fixture FAIL",
+    "evidence": "green.log",
+    "cause": "chamfer field not supported in0.3"
+  },
+  {
+    "change": "negative fixture migrated0.5",
+    "result": "negative fixture FAIL",
+    "evidence": "green-supported-fixture.log",
+    "cause": "0.1mm exceeds existing0.05mm maximum; do not loosen gate"
+  },
+  {
+    "change": "existing editPart after migrate0.5 creates validated0.01mm chamfer",
+    "result": "negative refusal PASS; current full852tests PASS",
+    "evidence": "green-valid-chamfer.log,test-final.log"
+  },
+  {
+    "hypothesis": "actual browser diagnostic/full-source save/reopen/reexport",
+    "result": "whole GLB and full sourceJSON exact PASS",
+    "evidence": "browser-result.json"
+  },
+  {
+    "hypothesis": "previous geometry unchanged",
+    "result": "old/new full BIN and parsed full JSON values exact",
+    "evidence": "payload-preservation.json"
+  },
+  {
+    "hypothesis": "cross runtime deterministic full GLB",
+    "result": "FAIL; Float32 BIN exact, derived double points differ about1e-15",
+    "evidence": "cli-browser-input-difference.json",
+    "next": "investigate trig/derived source determinism separately; do not promote PASS"
+  },
+  {
+    "hypothesis": "current diagnostic first Blender import and saved blend reopen",
+    "result": "structure exact PASS; input-normal parity and GLB reexport not-run",
+    "evidence": "blender-reopen-result.json"
+  }
+]

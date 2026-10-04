@@ -1,0 +1,10 @@
+{
+  "originalToCurrentBINExact": true,
+  "originalToCurrentJSONValuesExact": true,
+  "wholeOriginalToCurrentExact": false,
+  "browserFirstReopenedWholeExact": true,
+  "CLIvsBrowserWholeExact": false,
+  "CLIvsBrowserBINExact": true,
+  "browserSHA256": "313faf662e433b5035f84263d594d183c6d0ed12d2422db47251346846b5f98a",
+  "note": "CLI/browser derived point double values differ at about 1e-15; actual Float32 BIN exact. Whole CLI/browser GLB mismatch remains FAIL; same-runtime reopen byte equality only is verified. See cli-browser-input-difference.json."
+}

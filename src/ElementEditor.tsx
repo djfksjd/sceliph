@@ -1,4 +1,4 @@
-import {prepareElementExportSource} from './engine/element-export-source';
+import {prepareElementExportSource,prepareDiagnosticToothExportSource} from './engine/element-export-source';
 import {BoundReferenceUvPanel} from './BoundReferenceUvPanel';
 import { surfaceGearPack } from '../examples/domain-packs/surface-gear-pack';
 import './element-editor.css';
@@ -7,7 +7,7 @@ import { PartInspector } from './PartInspector';
 import { buildWorkspaceScene, type ElementWorkspace } from './engine/element-workspace';
 import { bearingPack } from './engine/bearing-pack';
 import { gearPack } from './engine/gear-pack';
-import { extractToothGeometry, gearProfile, toothIds } from './engine/spur-gear';
+import { gearProfile, toothIds } from './engine/spur-gear';
 import { pickGearTooth } from './engine/gear-picking';
 import { analyzeTopology } from './engine/topology';
 import {LatestUvInspection,type UvInspectionReceipt} from './engine/uv-quality';
@@ -242,9 +242,7 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
     try{
       if(part?.axialChamferMm)throw new Error('Chamfered diagnostic tooth cuts are unsupported; export whole gear or set chamfer to 0');
       if(part?.geometry?.op!=='spur-gear')throw new Error('Select a spur gear');
-      const copy=structuredClone(project),piece=copy.parts.find(p=>p.id===part.id)!;
-      piece.geometry=extractToothGeometry(part.geometry,id);delete piece.assemblyId;delete piece.home;delete piece.axialChamferMm;
-      copy.parts=[piece];copy.regions=[];copy.groups=[];copy.elements=[];copy.assemblies=[];
+      const copy=prepareDiagnosticToothExportSource(project,part.id,id),piece=copy.parts[0];
       built=exportSelectedScene(copy,[piece.id]);const mesh=built.root.getObjectByName(piece.id)!;
       mesh.name=`${part.id}/${id}`;mesh.userData={...mesh.userData,connectedSourceFeatureId:`${part.id}/${id}`,extraction:'diagnostic-sector-cut',detachable:false};
       if(!analyzeTopology(built.root).pass)throw new Error('Diagnostic feature topology failed');

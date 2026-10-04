@@ -1,0 +1,19 @@
+[
+  {
+    "label": "check-final",
+    "command": [
+      "npm",
+      "run",
+      "check"
+    ],
+    "exit": 0
+  },
+  {
+    "label": "test-final",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exit": 0
+  }
+]
