@@ -1,0 +1,33 @@
+{
+  "schema": "morphloom.blender-source-normal-import-receipt/0.1",
+  "sourceSha256": "7008d11cf75023c3c3368d643224eff17a07d8c9d7e3e5885320b08a1a365e67",
+  "blenderVersion": "5.2.1 LTS",
+  "fixedNormalToleranceDeg": 0.01,
+  "import": {
+    "policy": "morphloom.blender-source-normal-import/0.1",
+    "referenceReceipts": [
+      {
+        "mesh": "Mesh_0",
+        "storage": "FLOAT_VECTOR/CORNER",
+        "appliedMaxInputErrorDeg": 0,
+        "corners": 25152
+      },
+      {
+        "mesh": "Mesh_1",
+        "storage": "FLOAT_VECTOR/CORNER",
+        "appliedMaxInputErrorDeg": 0,
+        "corners": 7776
+      }
+    ],
+    "meshCount": 2,
+    "vertices": 26571,
+    "nonNormalPayloadExact": true,
+    "hierarchyTransformsExact": true,
+    "scope": "static explicit source Float32 normals; no normal recalculation, quantization or geometry/UV/PBR/transform changes; no arbitrary DCC edit/IR inverse conversion",
+    "inputSha256": "7008d11cf75023c3c3368d643224eff17a07d8c9d7e3e5885320b08a1a365e67"
+  },
+  "scope": "Explicit static first import/.blend preservation; GLB reexport and general delivery not certified",
+  "currentEditableIRAvailable": false,
+  "sourceSpecState": "before-edit-reference",
+  "blendSha256": "71b24e06b948ac865053a7774641f0b462dc04b4ce80280eb88b1df6c5ad54d9"
+}

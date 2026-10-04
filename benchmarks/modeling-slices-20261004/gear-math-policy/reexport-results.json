@@ -1,0 +1,158 @@
+[
+  {
+    "case": 0,
+    "mesh": "spur_gear",
+    "command": [
+      "node",
+      "node_modules/vite-node/vite-node.mjs",
+      "scripts/compare-native-normal-payload.ts",
+      "work/gear-math-policy-20261004/normal-kit-0/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-0/reexport.glb",
+      "spur_gear",
+      "work/gear-math-policy-20261004/normal-kit-0/reexport-spur_gear-normal.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 0,
+    "mesh": "marker",
+    "command": [
+      "node",
+      "node_modules/vite-node/vite-node.mjs",
+      "scripts/compare-native-normal-payload.ts",
+      "work/gear-math-policy-20261004/normal-kit-0/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-0/reexport.glb",
+      "marker",
+      "work/gear-math-policy-20261004/normal-kit-0/reexport-marker-normal.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 0,
+    "command": [
+      "npm",
+      "run",
+      "gltf:validate",
+      "--",
+      "work/gear-math-policy-20261004/normal-kit-0/reexport.glb"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 1,
+    "mesh": "spur_gear",
+    "command": [
+      "node",
+      "node_modules/vite-node/vite-node.mjs",
+      "scripts/compare-native-normal-payload.ts",
+      "work/gear-math-policy-20261004/normal-kit-1/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-1/reexport.glb",
+      "spur_gear",
+      "work/gear-math-policy-20261004/normal-kit-1/reexport-spur_gear-normal.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 1,
+    "mesh": "marker",
+    "command": [
+      "node",
+      "node_modules/vite-node/vite-node.mjs",
+      "scripts/compare-native-normal-payload.ts",
+      "work/gear-math-policy-20261004/normal-kit-1/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-1/reexport.glb",
+      "marker",
+      "work/gear-math-policy-20261004/normal-kit-1/reexport-marker-normal.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 1,
+    "command": [
+      "npm",
+      "run",
+      "gltf:validate",
+      "--",
+      "work/gear-math-policy-20261004/normal-kit-1/reexport.glb"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 2,
+    "mesh": "spur_gear",
+    "command": [
+      "node",
+      "node_modules/vite-node/vite-node.mjs",
+      "scripts/compare-native-normal-payload.ts",
+      "work/gear-math-policy-20261004/normal-kit-2/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-2/reexport.glb",
+      "spur_gear",
+      "work/gear-math-policy-20261004/normal-kit-2/reexport-spur_gear-normal.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 2,
+    "mesh": "marker",
+    "command": [
+      "node",
+      "node_modules/vite-node/vite-node.mjs",
+      "scripts/compare-native-normal-payload.ts",
+      "work/gear-math-policy-20261004/normal-kit-2/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-2/reexport.glb",
+      "marker",
+      "work/gear-math-policy-20261004/normal-kit-2/reexport-marker-normal.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 2,
+    "command": [
+      "npm",
+      "run",
+      "gltf:validate",
+      "--",
+      "work/gear-math-policy-20261004/normal-kit-2/reexport.glb"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 3,
+    "mesh": "spur_gear",
+    "command": [
+      "node",
+      "node_modules/vite-node/vite-node.mjs",
+      "scripts/compare-native-normal-payload.ts",
+      "work/gear-math-policy-20261004/normal-kit-3/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-3/reexport.glb",
+      "spur_gear",
+      "work/gear-math-policy-20261004/normal-kit-3/reexport-spur_gear-normal.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 3,
+    "mesh": "marker",
+    "command": [
+      "node",
+      "node_modules/vite-node/vite-node.mjs",
+      "scripts/compare-native-normal-payload.ts",
+      "work/gear-math-policy-20261004/normal-kit-3/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-3/reexport.glb",
+      "marker",
+      "work/gear-math-policy-20261004/normal-kit-3/reexport-marker-normal.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 3,
+    "command": [
+      "npm",
+      "run",
+      "gltf:validate",
+      "--",
+      "work/gear-math-policy-20261004/normal-kit-3/reexport.glb"
+    ],
+    "exit": 0
+  }
+]

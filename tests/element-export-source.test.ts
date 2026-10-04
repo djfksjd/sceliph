@@ -13,12 +13,12 @@ async function bytes(project:ElementProject,ids:string[]){
 }
 for(const factor of [.5,1,2])it(`bearing scale${factor}: first/reopened full GLB exact and previous binary unchanged`,async()=>{
  const p=generateBearingProject({boreDiameterMm:20*factor,outerDiameterMm:40*factor,widthMm:12*factor,ballDiameterMm:6*factor});const original=structuredClone(p);p.selection=['ball_0000'];
- const ids=p.parts.map(x=>x.id),prepared=prepareElementExportSource(p),a=await bytes(prepared,ids),b=await bytes(prepareElementExportSource(parseProject(serializeProject(p))),ids);expect(a).toEqual(b);
- const old=await bytes(original,ids);const bin=(v:Uint8Array)=>v.slice(28+new DataView(v.buffer).getUint32(12,true));expect(bin(a)).toEqual(bin(old));expect(p).toEqual({...original,selection:['ball_0000']});expect(prepared.selection).toBeUndefined();expect(prepared).toEqual(original);
+ const ids=p.parts.map(x=>x.id),prepared=prepareElementExportSource(p),a=await bytes(prepared,ids),b=await bytes(prepareElementExportSource(parseProject(serializeProject(p))),ids);expect(Buffer.from(a).equals(Buffer.from(b))).toBe(true);
+ const old=await bytes(original,ids);const bin=(v:Uint8Array)=>v.slice(28+new DataView(v.buffer).getUint32(12,true));expect(Buffer.from(bin(a)).equals(Buffer.from(bin(old)))).toBe(true);expect(p).toEqual({...original,selection:['ball_0000']});expect(prepared.selection).toBeUndefined();expect(prepared).toEqual(original);
 });
 it('gear selected first/reopened GLB exact and explicit selection preserved separately',async()=>{
- const p=generateSpurGearProject({boreDiameterMm:4}),ids=['spur_gear'];expect(await bytes(prepareElementExportSource(p),ids)).toEqual(await bytes(prepareElementExportSource(parseProject(serializeProject({...p,selection:ids}))),ids));
+ const p=generateSpurGearProject({boreDiameterMm:4}),ids=['spur_gear'];expect(Buffer.from(await bytes(prepareElementExportSource(p),ids)).equals(Buffer.from(await bytes(prepareElementExportSource(parseProject(serializeProject({...p,selection:ids}))),ids)))).toBe(true);
 });
 it('legacy0.1 retains existing key order and actual original export bytes',async()=>{
- const p=createBirdProject(),original=structuredClone(p);p.selection=['body'];const prepared=prepareElementExportSource(p);expect(JSON.stringify(prepared)).toBe(JSON.stringify(original));expect(await bytes(prepared,['body'])).toEqual(await bytes(original,['body']));expect(p.selection).toEqual(['body']);
+ const p=createBirdProject(),original=structuredClone(p);p.selection=['body'];const prepared=prepareElementExportSource(p);expect(JSON.stringify(prepared)).toBe(JSON.stringify(original));expect(Buffer.from(await bytes(prepared,['body'])).equals(Buffer.from(await bytes(original,['body'])))).toBe(true);expect(p.selection).toEqual(['body']);
 });

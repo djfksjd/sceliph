@@ -1,0 +1,1242 @@
+[
+  {
+    "args": [
+      "wait",
+      "--text",
+      "SCELIPH \u00b7 ELEMENT EDITOR"
+    ],
+    "exit": 0,
+    "stdout": "SCELIPH \u00b7 ELEMENT EDITOR\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "snapshot",
+      "-i"
+    ],
+    "exit": 0,
+    "stdout": "- generic \"SCELIPH \u00b7 ELEMENT EDITORDomain Pack Loaded project \u00b7 generator association unknownbearing.ball.previ\" [ref=e1] clickable [onclick]\n  - heading \"SCELIPH \u00b7 ELEMENT EDITOR\" [level=1, ref=e2]\n  - combobox \"Domain Pack\" [expanded=false, ref=e15]: morphloom.bird \u00b7 bird \u00b7 experimental\n    - option \"Loaded project \u00b7 generator association unknown\" [disabled, ref=e31]\n    - option \"bearing.ball.preview \u00b7 mechanical-visualization \u00b7 experimental\" [ref=e32]\n    - option \"example.surface-gear.visual \u00b7 mechanical-visualization \u00b7 experimental\" [ref=e33]\n    - option \"mechanical.bearing.visual \u00b7 mechanical-visualization \u00b7 experimental\" [ref=e34]\n    - option \"mechanical.spur-gear.visual \u00b7 mechanical-visualization \u00b7 experimental\" [ref=e35]\n    - option \"morphloom.bird \u00b7 bird \u00b7 experimental\" [selected, ref=e36]\n    - option \"morphloom.fur \u00b7 fur \u00b7 experimental\" [ref=e37]\n  - button \"Generate pack\" [ref=e3]\n  - navigation \"Project actions\" [ref=e4]\n    - button \"Bird example\" [ref=e16]\n    - button \"Fur example\" [ref=e17]\n    - button \"Undo\" [ref=e18]\n    - button \"Redo\" [ref=e19]\n    - button \"Save project JSON\" [ref=e20]\n    - button \"Load JSON (max 2 MB)\" [ref=e29]: \uc120\ud0dd\ub41c \ud30c\uc77c \uc5c6\uc74c\n    - button \"Export selected GLB + source JSON\" [ref=e21]\n    - button \"Export project GLB + source JSON\" [ref=e22]\n    - button \"Export project UV diagnostic GLB + source JSON\" [ref=e23]\n    - button \"BLENDER 5.2 \u00b7 NATIVE NORMAL KIT\" [disabled, ref=e24]\n  - button \"Fit view\" [ref=e5]\n  - textbox \"Select by ID\" [ref=e30]\n  - button \"Select\" [ref=e25]\n  - combobox \"LOD\" [expanded=false, ref=e26]: Detail\n    - option \"Detail\" [selected, ref=e38]\n    - option \"Low\" [ref=e39]\n  - checkbox \"Isolate selection\" [checked=false, ref=e6]\n  - checkbox \"Synthetic UV checker preview\" [checked=false, ref=e7]\n  - button \"Export checker diagnostic GLB\" [ref=e8]\n  - button \"Enable gear math policy (schema 0.8)\" [ref=e9]\n  - button \"Enable UV editing (schema 0.4)\" [ref=e10]\n  - button \"Enable chamfer editing (schema 0.5)\" [ref=e11]\n  - button \"Enable normal weighting (schema 0.7)\" [ref=e12]\n  - button \"Enable surface editing (schema 0.6)\" [ref=e13]\n  - checkbox \"Explode preview\" [checked=false, ref=e14]\n  - heading \"Parts and regions\" [level=2, ref=e27]\n  - button \"body\" [ref=e40]\n  - button \"head\" [ref=e41]\n  - button \"eye_left\" [ref=e42]\n  - button \"eye_right\" [ref=e43]\n  - button \"beak_upper\" [ref=e44]\n  - button \"beak_lower\" [ref=e45]\n  - button \"wing_left\" [ref=e46]\n  - button \"wing_right\" [ref=e47]\n  - button \"tail\" [ref=e48]\n  - button \"leg_left\" [ref=e49]\n  - button \"leg_right\" [ref=e50]\n  - button \"foot_left\" [ref=e51]\n  - button \"foot_right\" [ref=e52]\n  - heading \"Inspector\" [level=2, ref=e28]\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/original-0.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Loaded project"
+    ],
+    "exit": 0,
+    "stdout": "Loaded project\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "fill",
+      "form input",
+      "spur_gear"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "click",
+      "form button[type=submit]"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Enable gear math policy (schema 0.8)"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Gear arithmetic policy"
+    ],
+    "exit": 0,
+    "stdout": "Gear arithmetic policy\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "document.querySelector(`[aria-label=\"Gear math revision\"]`).value"
+    ],
+    "exit": 0,
+    "stdout": "\"legacy\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "select",
+      "select[aria-label=\"Gear math revision\"]",
+      "morphloom.gear-ieee-series/0.1"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Apply part edit"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 4250783
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "download",
+      "button[title^=\"Textureless static native parts only\"]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/normal-kit-0.zip"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Download saved to /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/normal-kit-0.zip\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/original-1.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Loaded project"
+    ],
+    "exit": 0,
+    "stdout": "Loaded project\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "fill",
+      "form input",
+      "spur_gear"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "click",
+      "form button[type=submit]"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Enable gear math policy (schema 0.8)"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Gear arithmetic policy"
+    ],
+    "exit": 0,
+    "stdout": "Gear arithmetic policy\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "document.querySelector(`[aria-label=\"Gear math revision\"]`).value"
+    ],
+    "exit": 0,
+    "stdout": "\"legacy\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "select",
+      "select[aria-label=\"Gear math revision\"]",
+      "morphloom.gear-ieee-series/0.1"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Apply part edit"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 4255447
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "download",
+      "button[title^=\"Textureless static native parts only\"]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/normal-kit-1.zip"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Download saved to /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/normal-kit-1.zip\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Undo"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 4255295
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Redo"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 4255447
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/original-2.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Loaded project"
+    ],
+    "exit": 0,
+    "stdout": "Loaded project\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "fill",
+      "form input",
+      "spur_gear"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "click",
+      "form button[type=submit]"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Enable gear math policy (schema 0.8)"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Gear arithmetic policy"
+    ],
+    "exit": 0,
+    "stdout": "Gear arithmetic policy\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "document.querySelector(`[aria-label=\"Gear math revision\"]`).value"
+    ],
+    "exit": 0,
+    "stdout": "\"legacy\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "select",
+      "select[aria-label=\"Gear math revision\"]",
+      "morphloom.gear-ieee-series/0.1"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Apply part edit"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 4272927
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "download",
+      "button[title^=\"Textureless static native parts only\"]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/normal-kit-2.zip"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Download saved to /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/normal-kit-2.zip\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/original-3.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Loaded project"
+    ],
+    "exit": 0,
+    "stdout": "Loaded project\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "fill",
+      "form input",
+      "spur_gear"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "click",
+      "form button[type=submit]"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Enable gear math policy (schema 0.8)"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Gear arithmetic policy"
+    ],
+    "exit": 0,
+    "stdout": "Gear arithmetic policy\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "document.querySelector(`[aria-label=\"Gear math revision\"]`).value"
+    ],
+    "exit": 0,
+    "stdout": "\"legacy\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "select",
+      "select[aria-label=\"Gear math revision\"]",
+      "morphloom.gear-ieee-series/0.1"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Apply part edit"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 5797391
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "download",
+      "button[title^=\"Textureless static native parts only\"]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/normal-kit-3.zip"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Download saved to /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/normal-kit-3.zip\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "close"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Browser closed\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "open",
+      "http://127.0.0.1:4179/?editor=elements&nativepolicyreopen=1"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Sceliph \u2014 Result Viewer\n  http://127.0.0.1:4179/?editor=elements&nativepolicyreopen=1\n",
+    "stderr": "[agent-browser] launched browser\n"
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "SCELIPH \u00b7 ELEMENT EDITOR"
+    ],
+    "exit": 0,
+    "stdout": "SCELIPH \u00b7 ELEMENT EDITOR\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/browser-policy-1/morphloom-source.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Loaded project"
+    ],
+    "exit": 0,
+    "stdout": "Loaded project\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "fill",
+      "form input",
+      "spur_gear"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "click",
+      "form button[type=submit]"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "document.querySelector(`[aria-label=\"Gear math revision\"]`).value"
+    ],
+    "exit": 0,
+    "stdout": "\"morphloom.gear-ieee-series/0.1\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 4255447
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "spinbutton",
+      "fill",
+      "--name",
+      "Position X",
+      "2"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Apply part edit"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 4255491
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Undo"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 4255447
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "select",
+      "select[aria-label=\"Connected feature ID\"]",
+      "tooth_0003"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export diagnostic tooth cut"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 167256
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "screenshot",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/native-policy-editor.png"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Screenshot saved to /private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-math-policy-20261004/native-policy-editor.png\n",
+    "stderr": ""
+  }
+]

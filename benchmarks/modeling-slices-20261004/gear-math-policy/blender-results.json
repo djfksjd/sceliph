@@ -1,0 +1,74 @@
+[
+  {
+    "case": 0,
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "work/gear-math-policy-20261004/normal-kit-0/tools/blender-source-normal-import.py",
+      "--",
+      "work/gear-math-policy-20261004/normal-kit-0/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-0/output.blend",
+      "work/gear-math-policy-20261004/normal-kit-0/receipt.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 1,
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "work/gear-math-policy-20261004/normal-kit-1/tools/blender-source-normal-import.py",
+      "--",
+      "work/gear-math-policy-20261004/normal-kit-1/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-1/output.blend",
+      "work/gear-math-policy-20261004/normal-kit-1/receipt.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 2,
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "work/gear-math-policy-20261004/normal-kit-2/tools/blender-source-normal-import.py",
+      "--",
+      "work/gear-math-policy-20261004/normal-kit-2/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-2/output.blend",
+      "work/gear-math-policy-20261004/normal-kit-2/receipt.json"
+    ],
+    "exit": 0
+  },
+  {
+    "case": 3,
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--threads",
+      "1",
+      "--python-exit-code",
+      "1",
+      "--python",
+      "work/gear-math-policy-20261004/normal-kit-3/tools/blender-source-normal-import.py",
+      "--",
+      "work/gear-math-policy-20261004/normal-kit-3/model.glb",
+      "work/gear-math-policy-20261004/normal-kit-3/output.blend",
+      "work/gear-math-policy-20261004/normal-kit-3/receipt.json"
+    ],
+    "exit": 0
+  }
+]

@@ -1,11 +1,12 @@
+import {GEAR_DETERMINISTIC_MATH_REVISION} from './engine/gear-deterministic-math';
 import React, { useState } from 'react';
 import type { Part, Vec3 } from './engine/element-project';
 import {gearChamferMaximum} from './engine/gear-chamfer';
 import {projectionUvScalarForTileMm} from './engine/projection-uv-tile';
 import { toothIds } from './engine/spur-gear';
 
-export function PartInspector({part, version2, version4=false, version5=false, version6=false, version7=false, apply, action,featureId='',onFeatureSelect,exportFeature}: {
-  part:Part; version2:boolean; version4?:boolean; version5?:boolean; version6?:boolean; version7?:boolean; apply:(patch:Partial<Part>)=>void; action:(kind:'visibility'|'lock'|'detach')=>void;featureId?:string;onFeatureSelect?:(id:string)=>void;exportFeature?:(id:string)=>void
+export function PartInspector({part, version2, version4=false, version5=false, version6=false, version7=false, version8=false, apply, action,featureId='',onFeatureSelect,exportFeature}: {
+  part:Part; version2:boolean; version4?:boolean; version5?:boolean; version6?:boolean; version7?:boolean; version8?:boolean; apply:(patch:Partial<Part>)=>void; action:(kind:'visibility'|'lock'|'detach')=>void;featureId?:string;onFeatureSelect?:(id:string)=>void;exportFeature?:(id:string)=>void
 }): React.JSX.Element {
   const [draft,setDraft]=useState(()=>structuredClone(part));
   const [tileError,setTileError]=useState('');
@@ -47,6 +48,7 @@ export function PartInspector({part, version2, version4=false, version5=false, v
     </details>}
     {draft.geometry?.op==='extrude' && <p>Declared extrude: {draft.geometry.holes?.length??0} real through holes. Pockets regenerate from the Domain Pack inputs.</p>}
     {version5 && draft.geometry?.op==='spur-gear' && <fieldset><legend>Axial chamfer (mm)</legend>{number('Gear axial chamfer (mm)',draft.axialChamferMm??0,n=>setDraft(p=>({...p,axialChamferMm:n})),0,gearChamferMaximum(draft.geometry),.001)}<p>0 restores sharp geometry. Positive minimum 0.001 mm; maximum {gearChamferMaximum(draft.geometry).toPrecision(4)} mm. Actual topology failure rejects Apply. Source visualization; no manufacturing approval.</p></fieldset>}
+    {version8&&draft.geometry?.op==='spur-gear'&&<fieldset><legend>Gear arithmetic policy</legend><label>Gear math revision<select aria-label="Gear math revision" value={draft.geometry.mathRevision??'legacy'} disabled={part.locked} onChange={e=>{const value=e.currentTarget.value;setDraft(p=>{if(p.geometry?.op!=='spur-gear')return p;const geometry={...p.geometry};if(value==='legacy')delete geometry.mathRevision;else geometry.mathRevision=GEAR_DETERMINISTIC_MATH_REVISION;return {...p,geometry};});}}><option value="legacy">Legacy runtime Math · preserve original policy</option><option value={GEAR_DETERMINISTIC_MATH_REVISION}>Explicit IEEE series 0.1 · bounded gear calculations</option></select></label><p>Schema migration alone preserves legacy math. Apply explicitly changes this part's calculation policy; save the modified source separately. No manufacturing precision certification.</p></fieldset>}
     {draft.geometry?.op==='spur-gear' && <fieldset><legend>Spur gear parameters</legend>
       {(['moduleMm','toothCount','pressureAngleDeg','faceWidthMm','boreDiameterMm'] as const).map(key=><React.Fragment key={key}>{number(`Gear ${key}`,draft.geometry?.op==='spur-gear'?draft.geometry[key]:0,n=>setDraft(p=>p.geometry?.op==='spur-gear'?{...p,geometry:{...p.geometry,[key]:n}}:p),key==='toothCount'?18:key==='pressureAngleDeg'?20:0,key==='toothCount'?64:key==='pressureAngleDeg'?25:key==='moduleMm'?5:300,key==='toothCount'?1:0.1)}</React.Fragment>)}
       <p>Connected tooth features; radial root approximation. Nonstandard local tooth edits are for visualization, not meshing approval.</p>

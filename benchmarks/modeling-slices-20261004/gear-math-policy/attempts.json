@@ -1,0 +1,33 @@
+{
+  "baseline": "ebda45ebe230a7cd1d7bff66db0b822e00c64bec",
+  "startedContractMtimeUTC": "2026-10-04T01:28:38.544608+00:00",
+  "recordedUTC": "2026-10-04T01:48:50.389360+00:00",
+  "wallMinutesIncludingInterruptions": 20.19741253333333,
+  "budget": {
+    "minutes": 20,
+    "diagnosedProductRepairAttempts": 2,
+    "evidenceMiB": 15,
+    "externalModelCalls": 0
+  },
+  "attempts": [
+    {
+      "hypothesis": "Explicit mathRevision preserves old inputs while fixing Node/browser arithmetic variance",
+      "change": "Schema0.8 opt-in only, existing edit/export/history",
+      "result": "initial TypeScript narrowing and polar-wrapper recursion found and corrected; targeted passed",
+      "decision": "run actual native browser files"
+    },
+    {
+      "hypothesis": "Initial full test timeout comes from recursive assertion of large byte arrays",
+      "change": "Buffer.equals exact full payload; no timeout/threshold/skip edits",
+      "result": "final full 863/126 passed",
+      "decision": "preserve initial failure and current success separately"
+    },
+    {
+      "hypothesis": "Source-normal .blend preserves actual payload on reopening and existing DCC normal tolerance on reexport",
+      "change": "verification scripts only; new output files",
+      "result": "4 reopen exact, 8 mesh normal comparisons and4 validations exit0",
+      "decision": "scope to optional source-normal kit; ordinary Blender drift remains"
+    }
+  ],
+  "platformGoalComplete": false
+}
