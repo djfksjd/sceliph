@@ -1,3 +1,4 @@
+import {prepareElementExportSource} from './engine/element-export-source';
 import {BoundReferenceUvPanel} from './BoundReferenceUvPanel';
 import { surfaceGearPack } from '../examples/domain-packs/surface-gear-pack';
 import './element-editor.css';
@@ -212,8 +213,7 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
       const ids = wholeProject ? [...project.parts.map(p=>p.id),...elements.map(e=>e.id)] : group ? elements.filter(e => e.groupId === group.id).map(e => e.id) : selection ? [selection] : [];
       if (!ids.length) throw new Error('Select an element or body part first');
       // Match the saved native JSON representation so reopening cannot reorder GLB metadata.
-      const exportSource=normalKit?parseProject(serializeProject(project)):project;
-      if(normalKit)delete exportSource.selection;
+      const exportSource=prepareElementExportSource(project);
       built = exportSelectedScene(exportSource, ids);
       const legacyDiagnostic=project.schema==='morphloom.elements/0.1'&&(diagnosticChecker||diagnosticUv);
       if (!legacyDiagnostic&&!analyzeTopology(built.root).pass) throw new Error('Export blocked: topology gate failed');

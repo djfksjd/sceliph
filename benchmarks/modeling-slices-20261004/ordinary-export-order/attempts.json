@@ -1,0 +1,39 @@
+[
+  {
+    "hypothesis": "Whole byte difference is native sourceSpec key order",
+    "evidence": "key-order-diagnosis.json",
+    "result": "BIN/source values same; first different byte400, five JSON objects"
+  },
+  {
+    "change": "isolated noncanonical helper and regression tests",
+    "result": "syntax error then4 actual byte failures",
+    "evidence": "red-syntax.log,red.log",
+    "next": "reuse serialize/parse only at UI export boundary"
+  },
+  {
+    "change": "prepareElementExportSource at ordinary/kit export boundary; legacy serializer preserved",
+    "result": "15 targeted tests PASS; final whole suite847 PASS",
+    "evidence": "green.log,test.log"
+  },
+  {
+    "hypothesis": "actual ordinary browser saved source reload byte equality",
+    "result": "first download succeeds; same-session close/open heading timeout",
+    "evidence": "browser.log",
+    "next": "different session name and existing downloaded source"
+  },
+  {
+    "hypothesis": "independent-session ordinary and selected editable GLB whole exact",
+    "result": "PASS",
+    "evidence": "browser-followup.log,browser-result.json"
+  },
+  {
+    "hypothesis": "old geometry preserved and kit unchanged",
+    "result": "actual original BIN/JSON values exact; native ZIP whole exact",
+    "evidence": "previous-payload-preservation.json"
+  },
+  {
+    "hypothesis": "current actual files standard and Blender optional first import",
+    "result": "PASS; reexport not-run",
+    "evidence": "gltf-validation.log,normal-kit/receipt.json"
+  }
+]

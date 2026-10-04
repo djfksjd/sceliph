@@ -1,0 +1,111 @@
+{
+  "wholeGLBByteExact": false,
+  "JSONValuesEqual": true,
+  "firstDifferentByte": 400,
+  "keyOrderDifferences": [
+    {
+      "path": "/nodes/0/extras/sourceSpec",
+      "firstKeys": [
+        "schema",
+        "seed",
+        "units",
+        "coordinates",
+        "parts",
+        "regions",
+        "groups",
+        "elements"
+      ],
+      "reopenedKeys": [
+        "coordinates",
+        "elements",
+        "groups",
+        "parts",
+        "regions",
+        "schema",
+        "seed",
+        "units"
+      ]
+    },
+    {
+      "path": "/nodes/0/extras/sourceSpec/parts/0",
+      "firstKeys": [
+        "id",
+        "name",
+        "shape",
+        "geometry",
+        "position",
+        "rotation",
+        "scale",
+        "color",
+        "material",
+        "creaseAngle",
+        "visible",
+        "locked",
+        "evidence"
+      ],
+      "reopenedKeys": [
+        "color",
+        "creaseAngle",
+        "evidence",
+        "geometry",
+        "id",
+        "locked",
+        "material",
+        "name",
+        "position",
+        "rotation",
+        "scale",
+        "shape",
+        "visible"
+      ]
+    },
+    {
+      "path": "/nodes/0/extras/sourceSpec/parts/0/geometry",
+      "firstKeys": [
+        "op",
+        "moduleMm",
+        "toothCount",
+        "pressureAngleDeg",
+        "faceWidthMm",
+        "boreDiameterMm"
+      ],
+      "reopenedKeys": [
+        "boreDiameterMm",
+        "faceWidthMm",
+        "moduleMm",
+        "op",
+        "pressureAngleDeg",
+        "toothCount"
+      ]
+    },
+    {
+      "path": "/nodes/0/extras/sourceSpec/parts/0/material",
+      "firstKeys": [
+        "roughness",
+        "metalness"
+      ],
+      "reopenedKeys": [
+        "metalness",
+        "roughness"
+      ]
+    },
+    {
+      "path": "/nodes/0/extras/sourceSpec/parts/0/evidence",
+      "firstKeys": [
+        "status",
+        "source"
+      ],
+      "reopenedKeys": [
+        "source",
+        "status"
+      ]
+    }
+  ],
+  "codeBoundaries": {
+    "renderer": "element-renderer.ts structuredClone(project) retains source insertion order",
+    "JSONSave": "element-project.ts serializeProject sorts keys",
+    "translatedSource": "translated-source.ts current contract exact BIN and canonical non-transform scene semantics",
+    "nativeKit": "blender-normal-kit.ts full generated GLB byte equality"
+  },
+  "next": "reproduce source-order variation against both existing strict contracts before changing renderer or gates"
+}
