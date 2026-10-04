@@ -1,0 +1,548 @@
+[
+  {
+    "args": [
+      "open",
+      "http://127.0.0.1:4179/?editor=elements&explicitnumeric=1"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Sceliph \u2014 Result Viewer\n  http://127.0.0.1:4179/?editor=elements&explicitnumeric=1\n",
+    "stderr": "[agent-browser] launched browser\n"
+  },
+  {
+    "args": [
+      "wait",
+      "--load",
+      "networkidle"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/element-numeric-input-20261004/explicit-source.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Individual effective values"
+    ],
+    "exit": 0,
+    "stdout": "Individual effective values\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 1239359
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "spinbutton",
+      "click",
+      "--name",
+      "Position X"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({values:Object.fromEntries([...document.querySelectorAll('aside[aria-label=Inspector] input[type=number]')].map(x=>[x.getAttribute('aria-label'),x.value])),alerts:[...document.querySelectorAll('[role=alert]')].map(x=>x.textContent),saveDisabled:[...document.querySelectorAll('button')].find(x=>x.textContent==='Save project JSON').disabled,exportDisabled:[...document.querySelectorAll('button')].find(x=>x.textContent==='Export project GLB + source JSON').disabled})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"values\\\":{\\\"Position X\\\":\\\"\\\",\\\"Position Y\\\":\\\"65\\\",\\\"Position Z\\\":\\\"0\\\",\\\"Rotation X\\\":\\\"-0.7135903255590683\\\",\\\"Rotation Y\\\":\\\"-0.821648546633603\\\",\\\"Rotation Z\\\":\\\"2.2659805484363584\\\",\\\"length\\\":\\\"16\\\",\\\"width\\\":\\\"1\\\",\\\"thickness\\\":\\\"0.5\\\",\\\"curvature\\\":\\\"0.12\\\",\\\"twist\\\":\\\"0\\\",\\\"roughness\\\":\\\"0.8\\\"},\\\"alerts\\\":[\\\"Incomplete numeric inputs are not applied. Correct them or Cancel incomplete inputs before saving or exporting.\\\",\\\"Position X: enter a finite number or cancel incomplete inputs. Source unchanged by this incomplete value.\\\"],\\\"saveDisabled\\\":true,\\\"exportDisabled\\\":true}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Cancel incomplete inputs"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 1239359
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "spinbutton",
+      "fill",
+      "--name",
+      "Position X",
+      "6"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(()=>{window.originalAnchorClick??=HTMLAnchorElement.prototype.click;window.saved=[];HTMLAnchorElement.prototype.click=function(){const name=this.download;fetch(this.href).then(r=>r.arrayBuffer()).then(b=>{const bytes=new Uint8Array(b);let text='';for(let i=0;i<bytes.length;i+=8192)text+=String.fromCharCode(...bytes.subarray(i,i+8192));window.saved.push({name,base64:btoa(text)})})};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "0\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.saved.length"
+    ],
+    "exit": 0,
+    "stdout": "3\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify(window.saved)"
+    ],
+    "exit": 0,
+    "stdout": {
+      "capturedBytes": 1239375
+    },
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.originalAnchorClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "(async()=>{const text=await(await fetch('/src/ElementEditor.tsx')).text();const {GLTFExporter}=await import(text.match(/import \\{ GLTFExporter \\} from \"([^\"]+)\"/)[1]);const old=GLTFExporter.prototype.parseAsync;window.saved=[];window.oldClick=HTMLAnchorElement.prototype.click;HTMLAnchorElement.prototype.click=function(){window.saved.push(this.download)};GLTFExporter.prototype.parseAsync=async function(...args){const geometry=new Set();args[0].traverse(o=>{if(o.geometry)geometry.add(o.geometry)});window.expectedDisposals=geometry.size;window.disposals=0;for(const g of geometry)g.addEventListener('dispose',()=>window.disposals++);window.exportStarted=true;const data=await old.apply(this,args);await new Promise(resolve=>{window.releaseExport=resolve});return data};return true})()"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Export project GLB + source JSON"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "typeof window.releaseExport"
+    ],
+    "exit": 0,
+    "stdout": "\"undefined\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "typeof window.releaseExport"
+    ],
+    "exit": 0,
+    "stdout": "\"function\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "spinbutton",
+      "click",
+      "--name",
+      "Position X"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({values:Object.fromEntries([...document.querySelectorAll('aside[aria-label=Inspector] input[type=number]')].map(x=>[x.getAttribute('aria-label'),x.value])),alerts:[...document.querySelectorAll('[role=alert]')].map(x=>x.textContent),saveDisabled:[...document.querySelectorAll('button')].find(x=>x.textContent==='Save project JSON').disabled,exportDisabled:[...document.querySelectorAll('button')].find(x=>x.textContent==='Export project GLB + source JSON').disabled})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"values\\\":{\\\"Position X\\\":\\\"\\\",\\\"Position Y\\\":\\\"65\\\",\\\"Position Z\\\":\\\"0\\\",\\\"Rotation X\\\":\\\"-0.7135903255590683\\\",\\\"Rotation Y\\\":\\\"-0.821648546633603\\\",\\\"Rotation Z\\\":\\\"2.2659805484363584\\\",\\\"length\\\":\\\"16\\\",\\\"width\\\":\\\"1\\\",\\\"thickness\\\":\\\"0.5\\\",\\\"curvature\\\":\\\"0.12\\\",\\\"twist\\\":\\\"0\\\",\\\"roughness\\\":\\\"0.8\\\"},\\\"alerts\\\":[\\\"Incomplete numeric inputs are not applied. Correct them or Cancel incomplete inputs before saving or exporting.\\\",\\\"Position X: enter a finite number or cancel incomplete inputs. Source unchanged by this incomplete value.\\\"],\\\"saveDisabled\\\":true,\\\"exportDisabled\\\":true}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "window.releaseExport();true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.saved,disposals:window.disposals,expected:window.expectedDisposals})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"disposals\\\":0,\\\"expected\\\":4}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({downloads:window.saved,disposals:window.disposals,expected:window.expectedDisposals})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"downloads\\\":[],\\\"disposals\\\":4,\\\"expected\\\":4}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({values:Object.fromEntries([...document.querySelectorAll('aside[aria-label=Inspector] input[type=number]')].map(x=>[x.getAttribute('aria-label'),x.value])),alerts:[...document.querySelectorAll('[role=alert]')].map(x=>x.textContent),saveDisabled:[...document.querySelectorAll('button')].find(x=>x.textContent==='Save project JSON').disabled,exportDisabled:[...document.querySelectorAll('button')].find(x=>x.textContent==='Export project GLB + source JSON').disabled})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"values\\\":{\\\"Position X\\\":\\\"\\\",\\\"Position Y\\\":\\\"65\\\",\\\"Position Z\\\":\\\"0\\\",\\\"Rotation X\\\":\\\"-0.7135903255590683\\\",\\\"Rotation Y\\\":\\\"-0.821648546633603\\\",\\\"Rotation Z\\\":\\\"2.2659805484363584\\\",\\\"length\\\":\\\"16\\\",\\\"width\\\":\\\"1\\\",\\\"thickness\\\":\\\"0.5\\\",\\\"curvature\\\":\\\"0.12\\\",\\\"twist\\\":\\\"0\\\",\\\"roughness\\\":\\\"0.8\\\"},\\\"alerts\\\":[\\\"Incomplete numeric inputs are not applied. Correct them or Cancel incomplete inputs before saving or exporting.\\\",\\\"Position X: enter a finite number or cancel incomplete inputs. Source unchanged by this incomplete value.\\\"],\\\"saveDisabled\\\":true,\\\"exportDisabled\\\":true}\"\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "HTMLAnchorElement.prototype.click=window.oldClick;true"
+    ],
+    "exit": 0,
+    "stdout": "true\n",
+    "stderr": ""
+  }
+]

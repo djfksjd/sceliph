@@ -1,0 +1,69 @@
+{
+  "blank": {
+    "values": {
+      "Position X": "",
+      "Position Y": "0",
+      "Position Z": "0",
+      "Rotation X": "0",
+      "Rotation Y": "0",
+      "Rotation Z": "0",
+      "length": "16",
+      "width": "1",
+      "thickness": "0.5",
+      "curvature": "0.12",
+      "twist": "0",
+      "roughness": "0.8"
+    },
+    "alerts": [
+      "Incomplete numeric inputs are not applied. Correct them or Cancel incomplete inputs before saving or exporting.",
+      "Position X: enter a finite number or cancel incomplete inputs. Source unchanged by this incomplete value."
+    ],
+    "saveDisabled": true,
+    "exportDisabled": true
+  },
+  "multipleFields": {
+    "values": {
+      "Position X": "",
+      "Position Y": "0",
+      "Position Z": "0",
+      "Rotation X": "0",
+      "Rotation Y": "",
+      "Rotation Z": "0",
+      "length": "16",
+      "width": "1",
+      "thickness": "0.5",
+      "curvature": "0.12",
+      "twist": "0",
+      "roughness": "0.8"
+    },
+    "alerts": [
+      "Incomplete numeric inputs are not applied. Correct them or Cancel incomplete inputs before saving or exporting.",
+      "Position X: enter a finite number or cancel incomplete inputs. Source unchanged by this incomplete value.",
+      "Rotation Y: enter a finite number or cancel incomplete inputs. Source unchanged by this incomplete value."
+    ],
+    "saveDisabled": true,
+    "exportDisabled": true
+  },
+  "blankGroupCount": {
+    "values": {
+      "Count": "",
+      "length": "16",
+      "width": "1",
+      "thickness": "0.5",
+      "curvature": "0.12",
+      "twist": "0",
+      "roughness": "0.8"
+    },
+    "alerts": [
+      "Incomplete numeric inputs are not applied. Correct them or Cancel incomplete inputs before saving or exporting.",
+      "Count: enter a finite number or cancel incomplete inputs. Source unchanged by this incomplete value."
+    ],
+    "saveDisabled": true,
+    "exportDisabled": true
+  },
+  "cancelGLBExact": true,
+  "undoRedoGLBExact": true,
+  "reopenGLBExact": true,
+  "additionalPositionMm": 7,
+  "lockedInputsDisabled": true
+}

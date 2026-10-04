@@ -1,0 +1,1295 @@
+{
+  "topology": {
+    "meshes": 4,
+    "watertightMeshes": 4,
+    "boundaryEdges": 0,
+    "inconsistentWindingEdges": 0,
+    "orientationConsistent": true,
+    "nonManifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "selfIntersections": 0,
+    "selfIntersectionMeshes": 0,
+    "selfIntersectionCandidatePairs": 3256,
+    "selfIntersectionComplete": true,
+    "triangles": 4416,
+    "edgeTaperMeshes": 0,
+    "verifiedEdgeTaperSegments": 0,
+    "surfaceReliefMeshes": 0,
+    "surfaceReliefSamples": 0,
+    "surfaceAggregateFeatures": 0,
+    "referenceReliefMeshes": 0,
+    "referenceReliefSamples": 0,
+    "maximumReferenceIrregularity": 0,
+    "pass": true,
+    "details": [
+      {
+        "name": "animal_body",
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionComplete": true,
+        "watertight": true
+      },
+      {
+        "name": "body_fur/000000",
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionComplete": true,
+        "watertight": true
+      },
+      {
+        "name": "body_fur/000001",
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionComplete": true,
+        "watertight": true
+      },
+      {
+        "name": "body_fur/000002",
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionComplete": true,
+        "watertight": true
+      }
+    ]
+  },
+  "uv": {
+    "revision": "morphloom.uv-quality/0.3",
+    "geometryFingerprint": "6f95a0c8f2569df5b17b4f9f4be5c7715f748400f4e1b8edfbf044052360a34c",
+    "fingerprintCoverage": "complete",
+    "integrityPass": true,
+    "meshes": [
+      {
+        "texelDensity": {
+          "status": "not-run",
+          "rangeTexelsPerMm": null,
+          "measuredTriangles": 0,
+          "unmeasuredTriangles": 2976,
+          "channel": "metallic-roughness",
+          "features": [],
+          "reason": "No metallic-roughness texture"
+        },
+        "id": "animal_body",
+        "nodeName": "animal_body",
+        "parent": "Morphloom selected baked geometry",
+        "integrityPass": true,
+        "criticalFeatures": "not-run",
+        "features": [],
+        "triangleSamples": [
+          {
+            "index": 2857,
+            "worldAreaM2": 8.141628544803139e-7,
+            "signedUvArea": 0.00032552098855376244,
+            "legacyDegenerate": false,
+            "anisotropy": 8.7703608423411,
+            "uvUnitsPerMeter": 19.99557308488132
+          },
+          {
+            "index": 70,
+            "worldAreaM2": 8.14162854480313e-7,
+            "signedUvArea": 0.0003255207557231188,
+            "legacyDegenerate": false,
+            "anisotropy": 8.770354571423582,
+            "uvUnitsPerMeter": 19.995565933909276
+          },
+          {
+            "index": 118,
+            "worldAreaM2": 8.141628544803123e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.770348300506065,
+            "uvUnitsPerMeter": 19.995558782934673
+          },
+          {
+            "index": 2905,
+            "worldAreaM2": 8.141628544803146e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.770348300506047,
+            "uvUnitsPerMeter": 19.995558782934644
+          },
+          {
+            "index": 12,
+            "worldAreaM2": 8.193621313513583e-7,
+            "signedUvArea": 0.00032552098855376244,
+            "legacyDegenerate": false,
+            "anisotropy": 8.763582633078817,
+            "uvUnitsPerMeter": 19.932030991568464
+          },
+          {
+            "index": 2940,
+            "worldAreaM2": 8.19362131351357e-7,
+            "signedUvArea": 0.00032552098855376244,
+            "legacyDegenerate": false,
+            "anisotropy": 8.763582633078807,
+            "uvUnitsPerMeter": 19.93203099156848
+          },
+          {
+            "index": 11,
+            "worldAreaM2": 8.193621313513574e-7,
+            "signedUvArea": 0.0003255207557231188,
+            "legacyDegenerate": false,
+            "anisotropy": 8.763576257242905,
+            "uvUnitsPerMeter": 19.93202386332084
+          },
+          {
+            "index": 2939,
+            "worldAreaM2": 8.193621313513563e-7,
+            "signedUvArea": 0.0003255207557231188,
+            "legacyDegenerate": false,
+            "anisotropy": 8.763576257242892,
+            "uvUnitsPerMeter": 19.932023863320854
+          },
+          {
+            "index": 35,
+            "worldAreaM2": 8.193621313513567e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.763569881407111,
+            "uvUnitsPerMeter": 19.93201673507066
+          },
+          {
+            "index": 2963,
+            "worldAreaM2": 8.193621313513555e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.763569881407099,
+            "uvUnitsPerMeter": 19.932016735070675
+          },
+          {
+            "index": 36,
+            "worldAreaM2": 8.19362131351359e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.763569881407085,
+            "uvUnitsPerMeter": 19.932016735070633
+          },
+          {
+            "index": 2964,
+            "worldAreaM2": 8.193621313513578e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.763569881407074,
+            "uvUnitsPerMeter": 19.932016735070647
+          },
+          {
+            "index": 116,
+            "worldAreaM2": 8.143634481653525e-7,
+            "signedUvArea": 0.00032552145421504974,
+            "legacyDegenerate": false,
+            "anisotropy": 8.676047220769194,
+            "uvUnitsPerMeter": 19.993124582529216
+          },
+          {
+            "index": 2907,
+            "worldAreaM2": 8.143634481653528e-7,
+            "signedUvArea": 0.00032552145421504974,
+            "legacyDegenerate": false,
+            "anisotropy": 8.676047220769194,
+            "uvUnitsPerMeter": 19.993124582529212
+          },
+          {
+            "index": 68,
+            "worldAreaM2": 8.143634481653525e-7,
+            "signedUvArea": 0.00032552098855376244,
+            "legacyDegenerate": false,
+            "anisotropy": 8.676034832437363,
+            "uvUnitsPerMeter": 19.993110282354312
+          },
+          {
+            "index": 2859,
+            "worldAreaM2": 8.143634481653528e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.676022444105577,
+            "uvUnitsPerMeter": 19.99309598216918
+          },
+          {
+            "index": 72,
+            "worldAreaM2": 8.141628603324138e-7,
+            "signedUvArea": 0.00032552098855376244,
+            "legacyDegenerate": false,
+            "anisotropy": 8.670452952562949,
+            "uvUnitsPerMeter": 19.99557301301849
+          },
+          {
+            "index": 2855,
+            "worldAreaM2": 8.141628603324132e-7,
+            "signedUvArea": 0.0003255207557231188,
+            "legacyDegenerate": false,
+            "anisotropy": 8.670446751200945,
+            "uvUnitsPerMeter": 19.99556586204647
+          },
+          {
+            "index": 2903,
+            "worldAreaM2": 8.141628603324125e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.670440549838943,
+            "uvUnitsPerMeter": 19.995558711071894
+          },
+          {
+            "index": 120,
+            "worldAreaM2": 8.141628603324145e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.670440549838915,
+            "uvUnitsPerMeter": 19.99555871107187
+          },
+          {
+            "index": 37,
+            "worldAreaM2": 8.1938448650721e-7,
+            "signedUvArea": 0.00032552145421504974,
+            "legacyDegenerate": false,
+            "anisotropy": 8.571210396974005,
+            "uvUnitsPerMeter": 19.931773344557463
+          },
+          {
+            "index": 34,
+            "worldAreaM2": 8.1938448650721e-7,
+            "signedUvArea": 0.00032552145421504974,
+            "legacyDegenerate": false,
+            "anisotropy": 8.571210396974001,
+            "uvUnitsPerMeter": 19.931773344557463
+          },
+          {
+            "index": 2962,
+            "worldAreaM2": 8.193844865072089e-7,
+            "signedUvArea": 0.00032552145421504974,
+            "legacyDegenerate": false,
+            "anisotropy": 8.571210396973994,
+            "uvUnitsPerMeter": 19.931773344557477
+          },
+          {
+            "index": 2965,
+            "worldAreaM2": 8.19384486507209e-7,
+            "signedUvArea": 0.00032552145421504974,
+            "legacyDegenerate": false,
+            "anisotropy": 8.571210396973994,
+            "uvUnitsPerMeter": 19.931773344557474
+          },
+          {
+            "index": 10,
+            "worldAreaM2": 8.1938448650721e-7,
+            "signedUvArea": 0.00032552098855376244,
+            "legacyDegenerate": false,
+            "anisotropy": 8.571198152342145,
+            "uvUnitsPerMeter": 19.931759088264315
+          },
+          {
+            "index": 2938,
+            "worldAreaM2": 8.193844865072089e-7,
+            "signedUvArea": 0.00032552098855376244,
+            "legacyDegenerate": false,
+            "anisotropy": 8.571198152342136,
+            "uvUnitsPerMeter": 19.93175908826433
+          },
+          {
+            "index": 13,
+            "worldAreaM2": 8.1938448650721e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.571185907710312,
+            "uvUnitsPerMeter": 19.931744831960973
+          },
+          {
+            "index": 2941,
+            "worldAreaM2": 8.19384486507209e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.571185907710303,
+            "uvUnitsPerMeter": 19.931744831960984
+          },
+          {
+            "index": 2861,
+            "worldAreaM2": 8.147503686773441e-7,
+            "signedUvArea": 0.00032552098855376244,
+            "legacyDegenerate": false,
+            "anisotropy": 8.393943595708794,
+            "uvUnitsPerMeter": 19.988362409019086
+          },
+          {
+            "index": 66,
+            "worldAreaM2": 8.147503686773437e-7,
+            "signedUvArea": 0.0003255207557231188,
+            "legacyDegenerate": false,
+            "anisotropy": 8.393937619110588,
+            "uvUnitsPerMeter": 19.988355260625774
+          },
+          {
+            "index": 2909,
+            "worldAreaM2": 8.147503686773441e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.393931642512413,
+            "uvUnitsPerMeter": 19.988348112229897
+          },
+          {
+            "index": 114,
+            "worldAreaM2": 8.147503686773437e-7,
+            "signedUvArea": 0.00032552052289247513,
+            "legacyDegenerate": false,
+            "anisotropy": 8.393931642512412,
+            "uvUnitsPerMeter": 19.9883481122299
+          }
+        ],
+        "triangleCount": 2976,
+        "eligibleUvTriangles": 2976,
+        "degenerateUvTriangles": 0,
+        "invalidUvVertices": 0,
+        "uvVertices": 1617,
+        "uvAttributeValid": true,
+        "invalidWorldTriangles": 0,
+        "negativeUvTriangles": 0,
+        "zeroUvTriangles": 0,
+        "worldAreaM2": 0.014308704076858237,
+        "uvArea": 0.96875,
+        "maximumAnisotropy": 8.7703608423411,
+        "uvUnitsPerMeterRange": [
+          6.235533614664897,
+          19.99557308488132
+        ],
+        "overlap": {
+          "complete": false,
+          "consideredPairs": 20000,
+          "narrowPhasePairs": 1746,
+          "positiveAreaPairs": 0,
+          "pairSamples": [],
+          "intent": "declared-periodic-mapping",
+          "scope": "within-mesh",
+          "relativeAreaTolerance": 1e-8
+        }
+      },
+      {
+        "texelDensity": {
+          "status": "not-run",
+          "rangeTexelsPerMm": null,
+          "measuredTriangles": 0,
+          "unmeasuredTriangles": 480,
+          "channel": "metallic-roughness",
+          "features": [],
+          "reason": "No metallic-roughness texture"
+        },
+        "id": "body_fur/000000",
+        "nodeName": "body_fur/000000",
+        "parent": "Morphloom selected baked geometry",
+        "integrityPass": true,
+        "criticalFeatures": "not-run",
+        "features": [],
+        "triangleSamples": [
+          {
+            "index": 449,
+            "worldAreaM2": 4.868728830232575e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 103.25390309966743,
+            "uvUnitsPerMeter": 633.3696168984961
+          },
+          {
+            "index": 479,
+            "worldAreaM2": 4.868728830233356e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 103.25390309965108,
+            "uvUnitsPerMeter": 633.3696168984453
+          },
+          {
+            "index": 431,
+            "worldAreaM2": 4.871469268981827e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.96133173027614,
+            "uvUnitsPerMeter": 633.1914412066232
+          },
+          {
+            "index": 463,
+            "worldAreaM2": 4.870457212387516e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.93319053888663,
+            "uvUnitsPerMeter": 633.2572247931495
+          },
+          {
+            "index": 465,
+            "worldAreaM2": 4.870457212387542e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.93319053888608,
+            "uvUnitsPerMeter": 633.2572247931478
+          },
+          {
+            "index": 433,
+            "worldAreaM2": 4.871469269238667e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.92751947325495,
+            "uvUnitsPerMeter": 633.1914411899312
+          },
+          {
+            "index": 447,
+            "worldAreaM2": 4.869689802425389e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.91184262696174,
+            "uvUnitsPerMeter": 633.3071200409281
+          },
+          {
+            "index": 417,
+            "worldAreaM2": 4.869689803037659e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.88464962804257,
+            "uvUnitsPerMeter": 633.307120001115
+          },
+          {
+            "index": 451,
+            "worldAreaM2": 6.399175739389219e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.52422800680094,
+            "uvUnitsPerMeter": 552.4627499853219
+          },
+          {
+            "index": 477,
+            "worldAreaM2": 6.399175739389765e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.52422800679268,
+            "uvUnitsPerMeter": 552.4627499852983
+          },
+          {
+            "index": 461,
+            "worldAreaM2": 6.4002916537031e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.38671665166285,
+            "uvUnitsPerMeter": 552.4145859329159
+          },
+          {
+            "index": 467,
+            "worldAreaM2": 6.400291653703209e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.38671665166066,
+            "uvUnitsPerMeter": 552.4145859329112
+          },
+          {
+            "index": 429,
+            "worldAreaM2": 6.4010599231325035e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.33208152931498,
+            "uvUnitsPerMeter": 552.3814339253544
+          },
+          {
+            "index": 445,
+            "worldAreaM2": 6.399910958606099e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.28490114165815,
+            "uvUnitsPerMeter": 552.4310157237687
+          },
+          {
+            "index": 435,
+            "worldAreaM2": 6.401059923613093e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.2688597623217,
+            "uvUnitsPerMeter": 552.381433904618
+          },
+          {
+            "index": 419,
+            "worldAreaM2": 6.399910958415669e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.23603877228754,
+            "uvUnitsPerMeter": 552.4310157319875
+          },
+          {
+            "index": 475,
+            "worldAreaM2": 8.08319786315598e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.24084906141193,
+            "uvUnitsPerMeter": 491.5564675879044
+          },
+          {
+            "index": 453,
+            "worldAreaM2": 8.083197863156906e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.24084906140124,
+            "uvUnitsPerMeter": 491.5564675878762
+          },
+          {
+            "index": 459,
+            "worldAreaM2": 8.083785780863234e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.14445470007964,
+            "uvUnitsPerMeter": 491.53859229939854
+          },
+          {
+            "index": 469,
+            "worldAreaM2": 8.083785780863563e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.14445470007787,
+            "uvUnitsPerMeter": 491.5385922993885
+          },
+          {
+            "index": 427,
+            "worldAreaM2": 8.08439090273024e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.97173916866218,
+            "uvUnitsPerMeter": 491.5201959650072
+          },
+          {
+            "index": 443,
+            "worldAreaM2": 8.083785474610374e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.939266871432075,
+            "uvUnitsPerMeter": 491.5386016103271
+          },
+          {
+            "index": 437,
+            "worldAreaM2": 8.084390902017775e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.918851457583806,
+            "uvUnitsPerMeter": 491.5201959866656
+          },
+          {
+            "index": 421,
+            "worldAreaM2": 8.083785474502013e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.90340418223094,
+            "uvUnitsPerMeter": 491.53860161362155
+          },
+          {
+            "index": 455,
+            "worldAreaM2": 9.08761743429785e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.39583067219088,
+            "uvUnitsPerMeter": 463.59634304045824
+          },
+          {
+            "index": 473,
+            "worldAreaM2": 9.087617434298217e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.39583067218915,
+            "uvUnitsPerMeter": 463.5963430404489
+          },
+          {
+            "index": 471,
+            "worldAreaM2": 9.087803527936988e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.35728558232298,
+            "uvUnitsPerMeter": 463.59159641648233
+          },
+          {
+            "index": 457,
+            "worldAreaM2": 9.08780352793707e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.35728558232203,
+            "uvUnitsPerMeter": 463.5915964164803
+          },
+          {
+            "index": 425,
+            "worldAreaM2": 9.088337484695473e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.078967577756714,
+            "uvUnitsPerMeter": 463.57797778147705
+          },
+          {
+            "index": 441,
+            "worldAreaM2": 9.088145918837401e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.06226092457069,
+            "uvUnitsPerMeter": 463.5828635549846
+          },
+          {
+            "index": 423,
+            "worldAreaM2": 9.08814591852452e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.05484377952406,
+            "uvUnitsPerMeter": 463.5828635629646
+          },
+          {
+            "index": 439,
+            "worldAreaM2": 9.08833748444781e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.053682563175634,
+            "uvUnitsPerMeter": 463.57797778779343
+          }
+        ],
+        "triangleCount": 480,
+        "eligibleUvTriangles": 480,
+        "degenerateUvTriangles": 0,
+        "invalidUvVertices": 0,
+        "uvVertices": 257,
+        "uvAttributeValid": true,
+        "invalidWorldTriangles": 0,
+        "negativeUvTriangles": 480,
+        "zeroUvTriangles": 0,
+        "worldAreaM2": 0.00001772219276277241,
+        "uvArea": 0.9375,
+        "maximumAnisotropy": 103.25390309966743,
+        "uvUnitsPerMeterRange": [
+          165.1537862448699,
+          633.3696168984961
+        ],
+        "overlap": {
+          "complete": false,
+          "consideredPairs": 20000,
+          "narrowPhasePairs": 3326,
+          "positiveAreaPairs": 0,
+          "pairSamples": [],
+          "intent": "unverified",
+          "scope": "within-mesh",
+          "relativeAreaTolerance": 1e-8
+        }
+      },
+      {
+        "texelDensity": {
+          "status": "not-run",
+          "rangeTexelsPerMm": null,
+          "measuredTriangles": 0,
+          "unmeasuredTriangles": 480,
+          "channel": "metallic-roughness",
+          "features": [],
+          "reason": "No metallic-roughness texture"
+        },
+        "id": "body_fur/000001",
+        "nodeName": "body_fur/000001",
+        "parent": "Morphloom selected baked geometry",
+        "integrityPass": true,
+        "criticalFeatures": "not-run",
+        "features": [],
+        "triangleSamples": [
+          {
+            "index": 449,
+            "worldAreaM2": 4.868728830230756e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 103.25390309970267,
+            "uvUnitsPerMeter": 633.3696168986145
+          },
+          {
+            "index": 479,
+            "worldAreaM2": 4.868728830232763e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 103.25390309966193,
+            "uvUnitsPerMeter": 633.3696168984839
+          },
+          {
+            "index": 431,
+            "worldAreaM2": 4.871469268980019e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.96133173031512,
+            "uvUnitsPerMeter": 633.1914412067407
+          },
+          {
+            "index": 463,
+            "worldAreaM2": 4.870457212385668e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.93319053892417,
+            "uvUnitsPerMeter": 633.2572247932695
+          },
+          {
+            "index": 465,
+            "worldAreaM2": 4.870457212389424e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.93319053884481,
+            "uvUnitsPerMeter": 633.2572247930254
+          },
+          {
+            "index": 433,
+            "worldAreaM2": 4.871469269240587e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.92751947321379,
+            "uvUnitsPerMeter": 633.1914411898064
+          },
+          {
+            "index": 447,
+            "worldAreaM2": 4.869689802424848e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.91184262697453,
+            "uvUnitsPerMeter": 633.3071200409632
+          },
+          {
+            "index": 417,
+            "worldAreaM2": 4.8696898030358905e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.88464962807993,
+            "uvUnitsPerMeter": 633.30712000123
+          },
+          {
+            "index": 477,
+            "worldAreaM2": 6.399175739388707e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.52422800680564,
+            "uvUnitsPerMeter": 552.462749985344
+          },
+          {
+            "index": 451,
+            "worldAreaM2": 6.399175739391321e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.52422800677931,
+            "uvUnitsPerMeter": 552.4627499852311
+          },
+          {
+            "index": 467,
+            "worldAreaM2": 6.400291653702152e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.38671665167307,
+            "uvUnitsPerMeter": 552.4145859329568
+          },
+          {
+            "index": 461,
+            "worldAreaM2": 6.40029165370782e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.38671665160437,
+            "uvUnitsPerMeter": 552.4145859327123
+          },
+          {
+            "index": 429,
+            "worldAreaM2": 6.40105992313724e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.33208152925681,
+            "uvUnitsPerMeter": 552.38143392515
+          },
+          {
+            "index": 445,
+            "worldAreaM2": 6.399910958605072e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.28490114167099,
+            "uvUnitsPerMeter": 552.4310157238131
+          },
+          {
+            "index": 435,
+            "worldAreaM2": 6.401059923612138e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.268859762335,
+            "uvUnitsPerMeter": 552.3814339046592
+          },
+          {
+            "index": 419,
+            "worldAreaM2": 6.399910958417765e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.23603877226135,
+            "uvUnitsPerMeter": 552.4310157318971
+          },
+          {
+            "index": 475,
+            "worldAreaM2": 8.083197863153225e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.24084906143722,
+            "uvUnitsPerMeter": 491.55646758798815
+          },
+          {
+            "index": 453,
+            "worldAreaM2": 8.08319786315583e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.240849061410465,
+            "uvUnitsPerMeter": 491.55646758790897
+          },
+          {
+            "index": 469,
+            "worldAreaM2": 8.083785780861354e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.14445470009354,
+            "uvUnitsPerMeter": 491.5385922994557
+          },
+          {
+            "index": 459,
+            "worldAreaM2": 8.083785780862754e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.14445470008208,
+            "uvUnitsPerMeter": 491.5385922994131
+          },
+          {
+            "index": 427,
+            "worldAreaM2": 8.084390902729825e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.9717391686657,
+            "uvUnitsPerMeter": 491.52019596501975
+          },
+          {
+            "index": 443,
+            "worldAreaM2": 8.08378547460767e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.939266871452645,
+            "uvUnitsPerMeter": 491.5386016104093
+          },
+          {
+            "index": 437,
+            "worldAreaM2": 8.084390902015581e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.91885145760036,
+            "uvUnitsPerMeter": 491.52019598673235
+          },
+          {
+            "index": 421,
+            "worldAreaM2": 8.083785474500967e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.903404182239164,
+            "uvUnitsPerMeter": 491.5386016136533
+          },
+          {
+            "index": 455,
+            "worldAreaM2": 9.087617434296353e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.395830672201534,
+            "uvUnitsPerMeter": 463.59634304049644
+          },
+          {
+            "index": 473,
+            "worldAreaM2": 9.087617434301142e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.39583067216699,
+            "uvUnitsPerMeter": 463.5963430403743
+          },
+          {
+            "index": 457,
+            "worldAreaM2": 9.087803527935178e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.35728558233138,
+            "uvUnitsPerMeter": 463.5915964165285
+          },
+          {
+            "index": 471,
+            "worldAreaM2": 9.08780352793708e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.35728558232239,
+            "uvUnitsPerMeter": 463.59159641648
+          },
+          {
+            "index": 425,
+            "worldAreaM2": 9.08833748469359e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.07896757776812,
+            "uvUnitsPerMeter": 463.5779777815251
+          },
+          {
+            "index": 441,
+            "worldAreaM2": 9.088145918840273e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.06226092455272,
+            "uvUnitsPerMeter": 463.58286355491134
+          },
+          {
+            "index": 423,
+            "worldAreaM2": 9.088145918522985e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.05484377953334,
+            "uvUnitsPerMeter": 463.58286356300374
+          },
+          {
+            "index": 439,
+            "worldAreaM2": 9.08833748444799e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.05368256317486,
+            "uvUnitsPerMeter": 463.5779777877889
+          }
+        ],
+        "triangleCount": 480,
+        "eligibleUvTriangles": 480,
+        "degenerateUvTriangles": 0,
+        "invalidUvVertices": 0,
+        "uvVertices": 257,
+        "uvAttributeValid": true,
+        "invalidWorldTriangles": 0,
+        "negativeUvTriangles": 480,
+        "zeroUvTriangles": 0,
+        "worldAreaM2": 0.000017722192762772342,
+        "uvArea": 0.9375,
+        "maximumAnisotropy": 103.25390309970267,
+        "uvUnitsPerMeterRange": [
+          165.15378624487585,
+          633.3696168986145
+        ],
+        "overlap": {
+          "complete": false,
+          "consideredPairs": 20000,
+          "narrowPhasePairs": 3326,
+          "positiveAreaPairs": 0,
+          "pairSamples": [],
+          "intent": "unverified",
+          "scope": "within-mesh",
+          "relativeAreaTolerance": 1e-8
+        }
+      },
+      {
+        "texelDensity": {
+          "status": "not-run",
+          "rangeTexelsPerMm": null,
+          "measuredTriangles": 0,
+          "unmeasuredTriangles": 480,
+          "channel": "metallic-roughness",
+          "features": [],
+          "reason": "No metallic-roughness texture"
+        },
+        "id": "body_fur/000002",
+        "nodeName": "body_fur/000002",
+        "parent": "Morphloom selected baked geometry",
+        "integrityPass": true,
+        "criticalFeatures": "not-run",
+        "features": [],
+        "triangleSamples": [
+          {
+            "index": 449,
+            "worldAreaM2": 4.86872883023248e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 103.25390309966664,
+            "uvUnitsPerMeter": 633.3696168985023
+          },
+          {
+            "index": 479,
+            "worldAreaM2": 4.8687288302333455e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 103.25390309964769,
+            "uvUnitsPerMeter": 633.369616898446
+          },
+          {
+            "index": 431,
+            "worldAreaM2": 4.871469268981148e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.96133173029007,
+            "uvUnitsPerMeter": 633.1914412066673
+          },
+          {
+            "index": 463,
+            "worldAreaM2": 4.870457212386883e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.93319053889995,
+            "uvUnitsPerMeter": 633.2572247931905
+          },
+          {
+            "index": 465,
+            "worldAreaM2": 4.8704572123882805e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.93319053887033,
+            "uvUnitsPerMeter": 633.2572247930998
+          },
+          {
+            "index": 433,
+            "worldAreaM2": 4.871469269239429e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.9275194732384,
+            "uvUnitsPerMeter": 633.1914411898816
+          },
+          {
+            "index": 447,
+            "worldAreaM2": 4.869689802425366e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.91184262696297,
+            "uvUnitsPerMeter": 633.3071200409296
+          },
+          {
+            "index": 417,
+            "worldAreaM2": 4.869689803037575e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 102.88464962804427,
+            "uvUnitsPerMeter": 633.3071200011204
+          },
+          {
+            "index": 477,
+            "worldAreaM2": 6.3991757393888226e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.52422800681056,
+            "uvUnitsPerMeter": 552.462749985339
+          },
+          {
+            "index": 451,
+            "worldAreaM2": 6.3991757393890906e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.52422800680631,
+            "uvUnitsPerMeter": 552.4627499853274
+          },
+          {
+            "index": 461,
+            "worldAreaM2": 6.400291653702574e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.38671665166918,
+            "uvUnitsPerMeter": 552.4145859329386
+          },
+          {
+            "index": 467,
+            "worldAreaM2": 6.4002916537034685e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.38671665165835,
+            "uvUnitsPerMeter": 552.4145859329
+          },
+          {
+            "index": 429,
+            "worldAreaM2": 6.401059923132028e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.33208152932106,
+            "uvUnitsPerMeter": 552.3814339253748
+          },
+          {
+            "index": 445,
+            "worldAreaM2": 6.399910958605177e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.2849011416698,
+            "uvUnitsPerMeter": 552.4310157238085
+          },
+          {
+            "index": 435,
+            "worldAreaM2": 6.4010599236134255e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.26885976231856,
+            "uvUnitsPerMeter": 552.3814339046037
+          },
+          {
+            "index": 419,
+            "worldAreaM2": 6.399910958415534e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 78.236038772289,
+            "uvUnitsPerMeter": 552.4310157319934
+          },
+          {
+            "index": 453,
+            "worldAreaM2": 8.083197863156286e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.24084906140865,
+            "uvUnitsPerMeter": 491.5564675878951
+          },
+          {
+            "index": 475,
+            "worldAreaM2": 8.083197863156845e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.240849061405136,
+            "uvUnitsPerMeter": 491.5564675878781
+          },
+          {
+            "index": 469,
+            "worldAreaM2": 8.08378578086331e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.14445470007866,
+            "uvUnitsPerMeter": 491.5385922993962
+          },
+          {
+            "index": 459,
+            "worldAreaM2": 8.083785780864508e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 62.14445470006958,
+            "uvUnitsPerMeter": 491.5385922993598
+          },
+          {
+            "index": 427,
+            "worldAreaM2": 8.084390902731513e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.971739168652356,
+            "uvUnitsPerMeter": 491.5201959649685
+          },
+          {
+            "index": 443,
+            "worldAreaM2": 8.083785474611194e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.939266871425055,
+            "uvUnitsPerMeter": 491.5386016103021
+          },
+          {
+            "index": 437,
+            "worldAreaM2": 8.08439090201761e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.91885145758586,
+            "uvUnitsPerMeter": 491.52019598667067
+          },
+          {
+            "index": 421,
+            "worldAreaM2": 8.08378547450134e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 61.903404182235704,
+            "uvUnitsPerMeter": 491.5386016136421
+          },
+          {
+            "index": 473,
+            "worldAreaM2": 9.08761743429819e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.395830672188595,
+            "uvUnitsPerMeter": 463.5963430404496
+          },
+          {
+            "index": 455,
+            "worldAreaM2": 9.087617434298666e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.39583067218621,
+            "uvUnitsPerMeter": 463.59634304043743
+          },
+          {
+            "index": 457,
+            "worldAreaM2": 9.087803527936768e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.357285582321914,
+            "uvUnitsPerMeter": 463.59159641648796
+          },
+          {
+            "index": 471,
+            "worldAreaM2": 9.087803527937461e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.35728558231819,
+            "uvUnitsPerMeter": 463.5915964164703
+          },
+          {
+            "index": 425,
+            "worldAreaM2": 9.088337484695203e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.078967577758455,
+            "uvUnitsPerMeter": 463.5779777814839
+          },
+          {
+            "index": 441,
+            "worldAreaM2": 9.088145918837328e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.06226092457074,
+            "uvUnitsPerMeter": 463.58286355498643
+          },
+          {
+            "index": 423,
+            "worldAreaM2": 9.08814591852528e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.054843779519196,
+            "uvUnitsPerMeter": 463.58286356294514
+          },
+          {
+            "index": 439,
+            "worldAreaM2": 9.088337484448313e-9,
+            "signedUvArea": -0.001953125,
+            "legacyDegenerate": false,
+            "anisotropy": 55.05368256317263,
+            "uvUnitsPerMeter": 463.57797778778064
+          }
+        ],
+        "triangleCount": 480,
+        "eligibleUvTriangles": 480,
+        "degenerateUvTriangles": 0,
+        "invalidUvVertices": 0,
+        "uvVertices": 257,
+        "uvAttributeValid": true,
+        "invalidWorldTriangles": 0,
+        "negativeUvTriangles": 480,
+        "zeroUvTriangles": 0,
+        "worldAreaM2": 0.000017722192762772382,
+        "uvArea": 0.9375,
+        "maximumAnisotropy": 103.25390309966664,
+        "uvUnitsPerMeterRange": [
+          165.1537862448694,
+          633.3696168985023
+        ],
+        "overlap": {
+          "complete": false,
+          "consideredPairs": 20000,
+          "narrowPhasePairs": 3326,
+          "positiveAreaPairs": 0,
+          "pairSamples": [],
+          "intent": "unverified",
+          "scope": "within-mesh",
+          "relativeAreaTolerance": 1e-8
+        }
+      }
+    ],
+    "texelDensity": {
+      "status": "not-run",
+      "reason": "Metallic-roughness image resolution and UV0 transform only; inspect per-mesh omissions. Density is a measurement, not atlas or quality approval"
+    },
+    "atlas": {
+      "status": "not-run",
+      "reason": "Native projections may overlap; no packed atlas, padding, mip bleeding or cross-mesh shared-texture verification"
+    },
+    "cost": {
+      "milliseconds": 14.264166999999986,
+      "overlapPairBudgetPerMesh": 20000
+    }
+  }
+}

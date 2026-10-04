@@ -1,0 +1,20 @@
+{
+  "baseline": "1db95ac6d1731423d0c1a9608a311831eb64e99c",
+  "recordedAtUTC": "2026-10-04T00:31:56.822089+00:00",
+  "sourceSHA256": "01d742ee47713102fd551d2495c737f6c14e44b15c3033aa95b50ed1cd7cec87",
+  "fixtures": {
+    "source.json": "9570becbcd75acded7f57b236a91b71b7dd1a6ab4d54c065d0e0607984c62d50",
+    "explicit-source.json": "8da4c5071f980ad3782cb966656264a8f8ed27a4568aa1dbe3464fac0aff272a"
+  },
+  "checks": "command-results.json",
+  "testFiles": 122,
+  "tests": 842,
+  "actualBrowser": "after-states.json",
+  "pendingExport": "race-result.json",
+  "actualFiles": "file-preservation.json",
+  "gltf": "gltf-validation.log",
+  "scope": "generated owner-local and explicit world coordinates; finite immediate editing; schemas/generation/gates unchanged",
+  "DCC": "not-run: input handling only, generated local BIN payload exact",
+  "qualityProduction": "exit1; competitive strict DCC final infos requirements remain unmet, dominance not-run",
+  "APIAndClaudeCalls": 0
+}
