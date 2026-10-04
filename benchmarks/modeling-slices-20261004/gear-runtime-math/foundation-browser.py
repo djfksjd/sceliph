@@ -1,0 +1,8 @@
+import subprocess,json,base64,hashlib
+from pathlib import Path
+p=Path('work/gear-runtime-math-20261004');expr="""(async()=>{const m=await import('/work/gear-runtime-math-20261004/candidate-export.ts');const cases=await (await fetch('/work/gear-runtime-math-20261004/cases.json')).json();const rows=[];for(let i=0;i<cases.length;i++)for(const tooth of [false,true]){const r=await m.candidateExport(cases[i],tooth);let s='';for(let k=0;k<r.bytes.length;k+=8192)s+=String.fromCharCode(...r.bytes.subarray(k,k+8192));rows.push({i,tooth,base64:btoa(s),topology:r.topology});}return JSON.stringify(rows);})()"""
+r=subprocess.run(['/Users/danny/.nvm/versions/node/v24.13.1/bin/agent-browser','--session','gear-foundation-probe','eval',expr],capture_output=True,text=True);(p/'foundation-browser-stderr.txt').write_text(r.stderr);assert r.returncode==0,r.stderr;rows=json.loads(json.loads(r.stdout));results=[]
+for row in rows:
+ suffix=str(row['i'])+'-'+('tooth' if row['tooth'] else 'whole')+'.glb';data=base64.b64decode(row['base64']);# Bytes are compared directly; identical current output aliases the stored candidate-node file.
+ previous=(p/('candidate-node-'+suffix)).read_bytes();results.append({'file':suffix,'wholeGLBByteExact':data==previous,'nodeSHA256':hashlib.sha256(previous).hexdigest(),'browserSHA256':hashlib.sha256(data).hexdigest(),'browserTopology':row['topology']})
+(p/'foundation-browser-result.json').write_text(json.dumps(results,indent=2));print(json.dumps([{'file':x['file'],'wholeGLBByteExact':x['wholeGLBByteExact'],'topologyPass':x['browserTopology']['pass']} for x in results]))

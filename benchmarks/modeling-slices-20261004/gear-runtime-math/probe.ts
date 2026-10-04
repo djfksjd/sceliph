@@ -1,0 +1,3 @@
+import {gearDimensions,gearProfile,extractToothGeometry,type SpurGearGeometry} from '../../src/engine/spur-gear';
+import {deterministicHalfSinCos} from '../../src/engine/deterministic-rotation';
+export function probe(cases:SpurGearGeometry[]){return {cases:cases.map(g=>({input:g,dimensions:gearDimensions(g),feature:gearProfile(g).features[3],extracted:extractToothGeometry(g,'tooth_0003')})),math:Array.from({length:128},(_,i)=>{const a=2*Math.PI*i/127,t=i/127;return {angle:a,t,sin:Math.sin(a),cos:Math.cos(a),tan:Math.tan(t),atan:Math.atan(t),sqrt:Math.sqrt(t),deterministic:deterministicHalfSinCos(a)};})};}

@@ -1,0 +1,33 @@
+[
+  {
+    "hypothesis": "native transcendental runtime differences originate profile metadata",
+    "result": "128probes native sin/cos/tan/atan differ; existing deterministic sincos exact; four gear profiles differ",
+    "evidence": "boundary-result.json"
+  },
+  {
+    "change": "isolated explicit IEEE arithmetic atan/atan2/acos/hypot plus existing sincos",
+    "result": "four full profiles/extracted/extruded objects exact across Node/Chrome; scalar diagnostic error recorded",
+    "evidence": "candidate-runtime-result.json,candidate-error.json"
+  },
+  {
+    "hypothesis": "whole derived profile through existing editable extrude IR",
+    "result": "FAIL by current256point contract",
+    "evidence": "candidate-files-unsupported-ir.log",
+    "next": "preserve original native IR and use isolated read-only reference for full-gear experiment; do not alter limits"
+  },
+  {
+    "change": "explicit read-only full reference and valid diagnostic sector sources",
+    "result": "eight actual GLBs byte exact and topology pass across runtimes",
+    "evidence": "browser-files-result.json"
+  },
+  {
+    "change": "versioned gear-deterministic-math foundation; default generator not activated",
+    "result": "unit math5/current full855 PASS; current-module regenerated8files exact; fresh browser8 direct byte exact",
+    "evidence": "math-tests.log,test.log,foundation-files-result.json,foundation-browser-result.json"
+  },
+  {
+    "unresolved": "product native source policy, schema migration, default/opt-in UI and current DCC proof",
+    "status": "not-run; not promoted to product feature completion",
+    "next": "explicit versioned opt-in with unchanged legacy replay and unsupported revision failure"
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "mathDifferenceCounts": {
+    "angle": 0,
+    "t": 0,
+    "sin": 3,
+    "cos": 4,
+    "tan": 3,
+    "atan": 4,
+    "sqrt": 0,
+    "deterministic": 0
+  },
+  "cases": [
+    {
+      "input": {
+        "op": "spur-gear",
+        "moduleMm": 0.5,
+        "toothCount": 24,
+        "pressureAngleDeg": 20,
+        "faceWidthMm": 4,
+        "boreDiameterMm": 2
+      },
+      "dimensionsExact": true,
+      "featureExact": false,
+      "extractedExact": false,
+      "pointDifferences": 10
+    },
+    {
+      "input": {
+        "op": "spur-gear",
+        "moduleMm": 1,
+        "toothCount": 24,
+        "pressureAngleDeg": 20,
+        "faceWidthMm": 8,
+        "boreDiameterMm": 4
+      },
+      "dimensionsExact": true,
+      "featureExact": false,
+      "extractedExact": false,
+      "pointDifferences": 10
+    },
+    {
+      "input": {
+        "op": "spur-gear",
+        "moduleMm": 2,
+        "toothCount": 24,
+        "pressureAngleDeg": 25,
+        "faceWidthMm": 16,
+        "boreDiameterMm": 8
+      },
+      "dimensionsExact": true,
+      "featureExact": false,
+      "extractedExact": false,
+      "pointDifferences": 7
+    },
+    {
+      "input": {
+        "op": "spur-gear",
+        "moduleMm": 1,
+        "toothCount": 36,
+        "pressureAngleDeg": 23.5,
+        "faceWidthMm": 8,
+        "boreDiameterMm": 4
+      },
+      "dimensionsExact": true,
+      "featureExact": false,
+      "extractedExact": false,
+      "pointDifferences": 6
+    }
+  ]
+}

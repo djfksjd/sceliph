@@ -1,0 +1,12 @@
+{
+  "previousPhase": "tooth-export-order",
+  "actualComparison": "benchmarks/modeling-slices-20261004/tooth-export-order/cli-browser-input-difference.json",
+  "observed": "derived profile point doubles differ between Node and browser; Float32 BIN exact but full GLB mismatch",
+  "currentCode": [
+    "spur-gear.ts polar uses Math.sin/cos",
+    "gearProfile halfBase uses Math.tan and involute Math.atan",
+    "gearDimensions baseDiameter uses Math.cos",
+    "deterministic-rotation.ts provides explicit IEEE polynomial sin/cos, range +/-2pi"
+  ],
+  "next": "reproduce each boundary with identical source and compare existing deterministic trig error before selecting minimal versioned change; do not round original GLB, weaken byte gates or claim cross-runtime PASS"
+}
