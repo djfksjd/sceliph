@@ -1,0 +1,27 @@
+[
+  {
+    "label": "before",
+    "boreDiameterMm": 6,
+    "glbSHA256": "3b03c7501b975d1cc60e6b34f2ab54aab8eda31b9e4c8c0f91a385e397a76235",
+    "sourceSHA256": "956f303ee00bbf2d3c4c18f77e70e79d9ef5dd9385b7775fbd244c9fc9f3560c",
+    "actualAxisCoveringTriangles": [],
+    "scope": "diagnostic center Z-axis through native untransformed spur gear; not a manufacturing or tolerance approval"
+  },
+  {
+    "label": "cleared-generated",
+    "boreDiameterMm": 0,
+    "glbSHA256": "9363eb24b90e28b902272136bd7c5d4857fd1be319c1a029ea1867161a5fb024",
+    "sourceSHA256": "fb791bea2ebbb48e250b0d331127319398307f7f8f22854236001f15bde973b8",
+    "actualAxisCoveringTriangles": [
+      {
+        "triangle": 1965,
+        "axisIntersectionZM": -0.004000000189989805
+      },
+      {
+        "triangle": 3931,
+        "axisIntersectionZM": 0.004000000189989805
+      }
+    ],
+    "scope": "diagnostic center Z-axis through native untransformed spur gear; not a manufacturing or tolerance approval"
+  }
+]

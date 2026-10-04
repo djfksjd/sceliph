@@ -1,0 +1,365 @@
+{
+  "baseline": "bcc493ceb604e5769e213d97f7a426d85aa4cd94",
+  "sourceSHA256": "b7f28d3d01d1abaa6f2fb4a21235d39265ab143430e68df1cb4baef11b31a3bf",
+  "compiler": "morphloom-compiler/0.41.0",
+  "renderer": "0.12",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "node": "v24.13.1",
+  "files": [
+    {
+      "path": "CONTRACT.md",
+      "bytes": 1309,
+      "sha256": "e53f3e62ea65766ecf5bf6951e33d45fe0e569ccd67fefa0dcebe2a8f327b9a1"
+    },
+    {
+      "path": "after-commands.json",
+      "bytes": 21667,
+      "sha256": "8a18a82c54f4aeced00bf3b049b27206633ad08bc29dc29bc65d90bf20b47c8c"
+    },
+    {
+      "path": "after.log",
+      "bytes": 1158,
+      "sha256": "0aa1dc4ae279e079de4d24166bff14ebd3da55b11280c46784f5de4b0ccef996"
+    },
+    {
+      "path": "after.py",
+      "bytes": 6241,
+      "sha256": "23db9ba5b7781cee619d8128cc5aa393f6357de7e0bb8ed541792910392cee07"
+    },
+    {
+      "path": "bearing-five/morphloom-project.glb",
+      "bytes": 2520348,
+      "sha256": "8a7dde2d8dcd6c9438f12405f4057f9107e560b08aa5481551ad7b960b2d4d82"
+    },
+    {
+      "path": "bearing-five/morphloom-source.json",
+      "bytes": 28330,
+      "sha256": "6a83eb71236ab6a21fd3a54bf974a60f29e5f6a4c2e91d38af06d7137ecf9f91"
+    },
+    {
+      "path": "bearing-five/morphloom-uv-quality.json",
+      "bytes": 7966373,
+      "sha256": "7c1cccdf58217a506970a3abfbf1b41bf79292a5fcb3496280ad58ee7f6b65fe"
+    },
+    {
+      "path": "before/morphloom-source.json",
+      "bytes": 728,
+      "sha256": "956f303ee00bbf2d3c4c18f77e70e79d9ef5dd9385b7775fbd244c9fc9f3560c"
+    },
+    {
+      "path": "before/morphloom-uv-diagnostic.glb",
+      "bytes": 809136,
+      "sha256": "3b03c7501b975d1cc60e6b34f2ab54aab8eda31b9e4c8c0f91a385e397a76235"
+    },
+    {
+      "path": "before/morphloom-uv-quality.json",
+      "bytes": 1746091,
+      "sha256": "837c0432783d708191ad9646d551d2b6288affd17491d2dd2377ae7902cfd7a5"
+    },
+    {
+      "path": "before-commands.json",
+      "bytes": 4959,
+      "sha256": "ce1093ae8ebeb4adc5f1b21ba83849e7191db27e91aef8cc6cd4f0b183df7adb"
+    },
+    {
+      "path": "before.log",
+      "bytes": 70,
+      "sha256": "079b3276696c377b4f963e7a00dea0c253e5557539024ea50d179085bdbcd855"
+    },
+    {
+      "path": "before.py",
+      "bytes": 3046,
+      "sha256": "de8c38198c01eb3ff4ee87b338be1bc837b427eae240807c4fcd2a52947818f4"
+    },
+    {
+      "path": "benchmark.log",
+      "bytes": 11761,
+      "sha256": "88aa28015f2eabb170f5a269ece83fff07da02b01482a7bb7174e9ef91a0efb2"
+    },
+    {
+      "path": "blank-generation-error.png",
+      "bytes": 128975,
+      "sha256": "f2181a63419f869b6cc78b644369089cbfd8a62a15e951b0499103f811f0d957"
+    },
+    {
+      "path": "bore-geometry.json",
+      "bytes": 988,
+      "sha256": "14679a3385e75259964225133f195f753e2b4fec5d0f3d5ca0b0608511770b6c"
+    },
+    {
+      "path": "bore-geometry.log",
+      "bytes": 114,
+      "sha256": "1e46ef4aaaf49c99fc25d21e094d0621c907c80fd635870aac668d7292ba4ca9"
+    },
+    {
+      "path": "bore-geometry.py",
+      "bytes": 2264,
+      "sha256": "6276e7f9a1b2606acc84a8d26792c55ec0c2e4442343242590af5363826781c0"
+    },
+    {
+      "path": "build.log",
+      "bytes": 1956,
+      "sha256": "f7085d203e13a6236a6b85fee4f993c4590dff78fcc257fe91103e3f6c432f10"
+    },
+    {
+      "path": "check-final.log",
+      "bytes": 48,
+      "sha256": "cca208ba9cefd6eccb8bafca50df028774224d8320721f06bf08950b07d0cadb"
+    },
+    {
+      "path": "check.log",
+      "bytes": 48,
+      "sha256": "cca208ba9cefd6eccb8bafca50df028774224d8320721f06bf08950b07d0cadb"
+    },
+    {
+      "path": "cleared-generated/morphloom-source.json",
+      "bytes": 728,
+      "sha256": "fb791bea2ebbb48e250b0d331127319398307f7f8f22854236001f15bde973b8"
+    },
+    {
+      "path": "cleared-generated/morphloom-uv-diagnostic.glb",
+      "bytes": 759600,
+      "sha256": "9363eb24b90e28b902272136bd7c5d4857fd1be319c1a029ea1867161a5fb024"
+    },
+    {
+      "path": "cleared-generated/morphloom-uv-quality.json",
+      "bytes": 1660470,
+      "sha256": "679b5bf50dc54236adcc71ebf6fee0fdf96f2c908599e08828fed8b81b5c9731"
+    },
+    {
+      "path": "command-results.json",
+      "bytes": 534,
+      "sha256": "004ff44ef9bfc1c23fc6d701373a670132ce98bbd59a17257a39cd215916aef8"
+    },
+    {
+      "path": "current-bore-geometry.json",
+      "bytes": 3165,
+      "sha256": "6bfedeff940ae19a426ec0f973fa8ed12e0c054c751b9fadbd909db87fb6cb2a"
+    },
+    {
+      "path": "current-bore-geometry.log",
+      "bytes": 219,
+      "sha256": "e0f529b6b3c3fcd8917b311ff2b33cf91a8c3e5cfb2cad7914557e4f099ed6f3"
+    },
+    {
+      "path": "current-bore-geometry.py",
+      "bytes": 2653,
+      "sha256": "0703500ebae86e9c3d3dfda5f585f24b91083fb290d1a5f45c2e272ac0db53d5"
+    },
+    {
+      "path": "explicit-four/morphloom-source.json",
+      "bytes": 728,
+      "sha256": "bd1bc45538c020e748b044062a4f04cbbb9086b306cc22bef00c7cbed6051470"
+    },
+    {
+      "path": "explicit-four/morphloom-uv-diagnostic.glb",
+      "bytes": 809136,
+      "sha256": "c9764ad0226f9382090b9dd49276255650903079c89345a72873c17377d6f9e3"
+    },
+    {
+      "path": "explicit-four/morphloom-uv-quality.json",
+      "bytes": 1746579,
+      "sha256": "75d2a3ad80768563222e47eeceebc4cdc8c5c641604f6393c523fd6aa51a9813"
+    },
+    {
+      "path": "explicit-zero/morphloom-source.json",
+      "bytes": 728,
+      "sha256": "fb791bea2ebbb48e250b0d331127319398307f7f8f22854236001f15bde973b8"
+    },
+    {
+      "path": "explicit-zero/morphloom-uv-diagnostic.glb",
+      "bytes": 759600,
+      "sha256": "9363eb24b90e28b902272136bd7c5d4857fd1be319c1a029ea1867161a5fb024"
+    },
+    {
+      "path": "explicit-zero/morphloom-uv-quality.json",
+      "bytes": 1660470,
+      "sha256": "8e9cbd616773ce36bc8ded555239e1d58afc1a72b77fba4edf97599991698cc9"
+    },
+    {
+      "path": "followup-commands.json",
+      "bytes": 18758,
+      "sha256": "502f72cd033480475ecfbad54521be0a6164dc5e4510826668dacb56a888b1d3"
+    },
+    {
+      "path": "followup.log",
+      "bytes": 1339,
+      "sha256": "269d5b70bc244635f811b91c7b40e6de32c3743b2aeae550ed540acb92f15996"
+    },
+    {
+      "path": "followup.py",
+      "bytes": 5046,
+      "sha256": "daddb78aa344d0484d74d4dcbebb3725cbb03382be013e2291aad9194cc2aff2"
+    },
+    {
+      "path": "four-native-kit/LICENSE",
+      "bytes": 11352,
+      "sha256": "da61cfa88f95d2e4ee23223f00a02af18e012d565e995c772c182a5203fc94bd"
+    },
+    {
+      "path": "four-native-kit/README.txt",
+      "bytes": 724,
+      "sha256": "00854378fcb1afd825c5dcca5c26b9fa52b6965df3fe371e8167e9313e0e62ec"
+    },
+    {
+      "path": "four-native-kit/manifest.json",
+      "bytes": 1045,
+      "sha256": "b5dc0fc603696b57f0fe7691b2087bb7c3c5860e595d4b34aee590914024fe8d"
+    },
+    {
+      "path": "four-native-kit/model.glb",
+      "bytes": 809148,
+      "sha256": "4df8ac852b33ac0e47ac49aed7c228d18db1203bf27a7052065853d9f275b1df"
+    },
+    {
+      "path": "four-native-kit/output.blend",
+      "bytes": 377467,
+      "sha256": "ecaec519f30c846c62c044b8b63f8f8601a86dd906ec978102e50d10e9f685bd"
+    },
+    {
+      "path": "four-native-kit/receipt.json",
+      "bytes": 1143,
+      "sha256": "e92c7360e80099f1bd982563a703794df4e32cd9379a39b14645450e7fe54d6e"
+    },
+    {
+      "path": "four-native-kit/source.json",
+      "bytes": 1146,
+      "sha256": "89780ce1eddad603184fbe271a61bfeae0760bb93886ae651d545981992f9e60"
+    },
+    {
+      "path": "four-native-kit/tools/__pycache__/blender_source_normal_import.cpython-313.pyc",
+      "bytes": 23879,
+      "sha256": "c4280113b221d0ff76df63b5186ed26ae94cbb46f86075126bcc9badbf5397d4"
+    },
+    {
+      "path": "four-native-kit/tools/blender-source-normal-import.py",
+      "bytes": 2446,
+      "sha256": "26f14e5d068b762bb5e1e4e0f71ac278fb37e22d72413dd01feeefdab397aed0"
+    },
+    {
+      "path": "four-native-kit/tools/blender_source_normal_import.py",
+      "bytes": 8956,
+      "sha256": "17a74e03590cc61cd552793f55145932ddcab31d294f96916ac48885c8848137"
+    },
+    {
+      "path": "four-native-reopened.zip",
+      "bytes": 141897,
+      "sha256": "394744bba5f53ac722ec3def0e0931d442474af07ec9ed32e330cecb931555bb"
+    },
+    {
+      "path": "four-native.zip",
+      "bytes": 141897,
+      "sha256": "394744bba5f53ac722ec3def0e0931d442474af07ec9ed32e330cecb931555bb"
+    },
+    {
+      "path": "gltf-validation.log",
+      "bytes": 4738,
+      "sha256": "14a5d8d07fe6f4f50caf4f1e29c7e6686aa9ba92c6b27b07a397498123a19bff"
+    },
+    {
+      "path": "independent-reopen.json",
+      "bytes": 799,
+      "sha256": "d2aea9287e7b6aa5fcf1c6cbfc25d0717cab20e58cce8eb781cf203034e524fd"
+    },
+    {
+      "path": "independent-reopen.log",
+      "bytes": 42,
+      "sha256": "bf5b3c579ee378a33a3b623d0d5ea678dbf1bfc556361192d28b8eceebdde3df"
+    },
+    {
+      "path": "independent-reopen.mjs",
+      "bytes": 879,
+      "sha256": "664a28ac531a590f4814a78718d35672f360b84028e7a991a6fd46206c28be23"
+    },
+    {
+      "path": "native-first-import.log",
+      "bytes": 1298,
+      "sha256": "25faa7475d975f2c8e3e835b475e207412724d2d2c90dd04eb17ff7801ae0b5f"
+    },
+    {
+      "path": "native-reopen-commands.json",
+      "bytes": 9504,
+      "sha256": "2b6e6b282653e69fa2ddca2cd8ab5e6bc35253f0881e980122c7dc0507555225"
+    },
+    {
+      "path": "native-reopen-result.json",
+      "bytes": 252,
+      "sha256": "7b2ec73af82b292bc8e640f107df97923dc6a9acbf4bd36677de075f6fe14ecb"
+    },
+    {
+      "path": "native-reopen.log",
+      "bytes": 66,
+      "sha256": "cf3c04df92484804ad8395222bef53e695d3be3090a45463cff970a2b4d6acfc"
+    },
+    {
+      "path": "native-reopen.py",
+      "bytes": 3713,
+      "sha256": "ec2be7ee1b2b9109e493377eeb7f5a0fc60dd6893723ce44aa49a7a063c1ed02"
+    },
+    {
+      "path": "ordinary-reopen-diagnosis.json",
+      "bytes": 235,
+      "sha256": "1feb408f5bf31ce7a59aa1ca8c00adc3621058317eb051ad123a2fcbb46e9f27"
+    },
+    {
+      "path": "pending-preserved/morphloom-source.json",
+      "bytes": 728,
+      "sha256": "956f303ee00bbf2d3c4c18f77e70e79d9ef5dd9385b7775fbd244c9fc9f3560c"
+    },
+    {
+      "path": "pending-preserved/morphloom-uv-diagnostic.glb",
+      "bytes": 809136,
+      "sha256": "3b03c7501b975d1cc60e6b34f2ab54aab8eda31b9e4c8c0f91a385e397a76235"
+    },
+    {
+      "path": "pending-preserved/morphloom-uv-quality.json",
+      "bytes": 1746091,
+      "sha256": "9a0b29463e15b2077383bcbc10e6834a22e92971bd3010c9a5eacfd0c91889a9"
+    },
+    {
+      "path": "quality-gate.log",
+      "bytes": 211401,
+      "sha256": "2f438ece6804b75efbfe1a2887516b0892f2b0f0a2928d2c6f584a3e650b5dee"
+    },
+    {
+      "path": "quality-production.log",
+      "bytes": 211511,
+      "sha256": "0f9dd8512ed3717a921756d491dd28cf4f53caaf6c2b9150a310718b7e3af767"
+    },
+    {
+      "path": "reopened/morphloom-source.json",
+      "bytes": 728,
+      "sha256": "bd1bc45538c020e748b044062a4f04cbbb9086b306cc22bef00c7cbed6051470"
+    },
+    {
+      "path": "reopened/morphloom-uv-diagnostic.glb",
+      "bytes": 809136,
+      "sha256": "60038942c144f3954e7c0d46d526db0466ad253b6963ce4a05f7cfd12fec41a8"
+    },
+    {
+      "path": "reopened/morphloom-uv-quality.json",
+      "bytes": 1746579,
+      "sha256": "eba14de6638992465b58b1ea73d50cbdfaa13bece2ef27831371b56360a09bdf"
+    },
+    {
+      "path": "restored/morphloom-source.json",
+      "bytes": 728,
+      "sha256": "956f303ee00bbf2d3c4c18f77e70e79d9ef5dd9385b7775fbd244c9fc9f3560c"
+    },
+    {
+      "path": "restored/morphloom-uv-diagnostic.glb",
+      "bytes": 809136,
+      "sha256": "3b03c7501b975d1cc60e6b34f2ab54aab8eda31b9e4c8c0f91a385e397a76235"
+    },
+    {
+      "path": "restored/morphloom-uv-quality.json",
+      "bytes": 1746091,
+      "sha256": "f52c4ca5f5d327b7998b05bb63143749a38d3f7983c2c9bb44c53169529b7b72"
+    },
+    {
+      "path": "test.log",
+      "bytes": 14472,
+      "sha256": "05c4027ed6ac4ad02d8da1260ed3e671c3393ffc78573c996ab0bda3a5a1c3d0"
+    }
+  ]
+}

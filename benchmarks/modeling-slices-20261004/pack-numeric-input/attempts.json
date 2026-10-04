@@ -1,0 +1,36 @@
+[
+  {
+    "hypothesis": "Number(empty) becomes0 and closes bore",
+    "evidence": "before.log, bore-geometry.json",
+    "result": "reproduced actual cap triangles"
+  },
+  {
+    "change": "valueAsNumber finite and registry bounds; preserve generated IR; block Generate; restore/correct",
+    "evidence": "after-commands.json,pending-preserved,restored,explicit-zero",
+    "result": "pending/restored original GLB exact; explicit0 valid"
+  },
+  {
+    "hypothesis": "ordinary source reload produces whole GLB exact",
+    "result": "FAIL",
+    "cause": "JSON object-key serialization order differs; parsed JSON values and BIN exact",
+    "evidence": "after.log,ordinary-reopen-diagnosis.json",
+    "next": "retain byte failure; separately validate canonical native kit"
+  },
+  {
+    "hypothesis": "bearing/switch and fresh native source reload",
+    "result": "bearing passed; fresh upload harness failed before React mounted",
+    "evidence": "followup.log,followup-commands.json",
+    "next": "wait visible editor heading in new independent session"
+  },
+  {
+    "hypothesis": "fresh native kit repeat whole ZIP exact",
+    "result": "PASS",
+    "evidence": "native-reopen-result.json"
+  },
+  {
+    "hypothesis": "actual file geometry/standard/independent import",
+    "result": "PASS",
+    "evidence": "current-bore-geometry.json,gltf-validation.log,independent-reopen.json,native-first-import.log",
+    "limit": "Blender reexport not-run; ordinary exact byte failure retained"
+  }
+]
