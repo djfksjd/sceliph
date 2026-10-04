@@ -1,0 +1,25 @@
+{
+  "baseline": "7646dc3fb72f41ac0bf0bba80fb35747ae6df9ac",
+  "recordedAtUTC": "2026-10-04T00:13:07.479496+00:00",
+  "sourceSHA256": "60759f1847b04b0b9f2b6bc747b83069841b3b442ca2135029c19c8b3cd482fc",
+  "checks": {
+    "test": "842 tests /122 files PASS",
+    "check": "PASS final",
+    "benchmark": "PASS",
+    "build": "PASS",
+    "quality:gate": "exit1 competitive DCC strict final-delivery conditions",
+    "quality:production": "exit1 preceding gate",
+    "productionDominance": "not-run"
+  },
+  "actualBrowser": "after-states.json",
+  "realBaseline": "before-real-state.json",
+  "actualFiles": "file-preservation.json",
+  "actualGLTF": "gltf-validation.log",
+  "blender": "not-run: input handling only; generated local mesh binary unchanged",
+  "notes": [
+    "Initial empty CLI fill did not deliver React event and is not real-key proof.",
+    "Baseline real deletion restores last finite1mm rather than accepting an incomplete number.",
+    "Temporary baseline component replay restored exact final source bytes; no source change after full checks.",
+    "No UNI_AI/Claude/API calls; no dependencies or schema/gate changes."
+  ]
+}

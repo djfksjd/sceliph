@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/part-numeric-input-20261004/browser.py", line 35, in <module>
+    call('find','role','button','click','--name','Lock');call('wait','--text','Unlock');assert json.loads(call('eval',"JSON.stringify([...document.querySelectorAll('.element-columns input[type=number]')].every(x=>x.disabled))")) is True
+AssertionError

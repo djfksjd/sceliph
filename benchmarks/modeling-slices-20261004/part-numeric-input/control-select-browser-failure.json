@@ -1,0 +1,113 @@
+[
+  {
+    "args": [
+      "open",
+      "http://127.0.0.1:4179/?editor=elements&numericafter=1"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Sceliph \u2014 Result Viewer\n  http://127.0.0.1:4179/?editor=elements&numericafter=1\n",
+    "stderr": "[agent-browser] launched browser\n"
+  },
+  {
+    "args": [
+      "wait",
+      "--load",
+      "networkidle"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "upload",
+      "nav input[type=file]",
+      "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/gear-projection-tile-20261004/final-default-kit/source.json"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "wait",
+      "--text",
+      "Local projection tile (mm)"
+    ],
+    "exit": 0,
+    "stdout": "Local projection tile (mm)\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "spinbutton",
+      "fill",
+      "--name",
+      "Position X",
+      "5"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "find",
+      "role",
+      "spinbutton",
+      "click",
+      "--name",
+      "Local projection tile (mm)"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Control+a"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Backspace"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "stdout": "\u2713 Done\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "eval",
+      "JSON.stringify({values:Object.fromEntries([...document.querySelectorAll('input[type=number]')].map(x=>[x.getAttribute('aria-label'),x.value])),alerts:[...document.querySelectorAll('[role=alert]')].map(x=>x.textContent),applyDisabled:[...document.querySelectorAll('button')].find(x=>x.textContent==='Apply part edit').disabled})"
+    ],
+    "exit": 0,
+    "stdout": "\"{\\\"values\\\":{\\\"Position X\\\":\\\"5\\\",\\\"Position Y\\\":\\\"0\\\",\\\"Position Z\\\":\\\"0\\\",\\\"Scale X\\\":\\\"1\\\",\\\"Scale Y\\\":\\\"1\\\",\\\"Scale Z\\\":\\\"1\\\",\\\"Rotation X\\\":\\\"0\\\",\\\"Rotation Y\\\":\\\"0\\\",\\\"Rotation Z\\\":\\\"0\\\",\\\"Part roughness\\\":\\\"0.32\\\",\\\"Part metalness\\\":\\\"0.9\\\",\\\"UV scalar (dimensionless)\\\":\\\"1000\\\",\\\"Local projection tile (mm)\\\":\\\"1\\\",\\\"Gear moduleMm\\\":\\\"1\\\",\\\"Gear toothCount\\\":\\\"24\\\",\\\"Gear pressureAngleDeg\\\":\\\"20\\\",\\\"Gear faceWidthMm\\\":\\\"8\\\",\\\"Gear boreDiameterMm\\\":\\\"6\\\"},\\\"alerts\\\":[],\\\"applyDisabled\\\":false}\"\n",
+    "stderr": ""
+  }
+]

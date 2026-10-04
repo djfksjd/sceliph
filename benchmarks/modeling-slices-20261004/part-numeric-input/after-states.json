@@ -1,0 +1,82 @@
+{
+  "blankTile": {
+    "values": {
+      "Position X": "5",
+      "Position Y": "0",
+      "Position Z": "0",
+      "Scale X": "1",
+      "Scale Y": "1",
+      "Scale Z": "1",
+      "Rotation X": "0",
+      "Rotation Y": "0",
+      "Rotation Z": "0",
+      "Part roughness": "0.32",
+      "Part metalness": "0.9",
+      "UV scalar (dimensionless)": "1000",
+      "Local projection tile (mm)": "",
+      "Gear moduleMm": "1",
+      "Gear toothCount": "24",
+      "Gear pressureAngleDeg": "20",
+      "Gear faceWidthMm": "8",
+      "Gear boreDiameterMm": "6"
+    },
+    "alerts": [
+      "Local projection tile (mm): enter a finite number before applying."
+    ],
+    "applyDisabled": true
+  },
+  "multipleInvalid": {
+    "values": {
+      "Position X": "5",
+      "Position Y": "",
+      "Position Z": "0",
+      "Scale X": "1",
+      "Scale Y": "1",
+      "Scale Z": "1",
+      "Rotation X": "0",
+      "Rotation Y": "0",
+      "Rotation Z": "0",
+      "Part roughness": "0.32",
+      "Part metalness": "0.9",
+      "UV scalar (dimensionless)": "100",
+      "Local projection tile (mm)": "10",
+      "Gear moduleMm": "1",
+      "Gear toothCount": "24",
+      "Gear pressureAngleDeg": "20",
+      "Gear faceWidthMm": "8",
+      "Gear boreDiameterMm": "6"
+    },
+    "alerts": [
+      "Position Y: enter a finite number before applying."
+    ],
+    "applyDisabled": true
+  },
+  "aliasCorrection": {
+    "values": {
+      "Position X": "0",
+      "Position Y": "0",
+      "Position Z": "0",
+      "Scale X": "1",
+      "Scale Y": "1",
+      "Scale Z": "1",
+      "Rotation X": "0",
+      "Rotation Y": "0",
+      "Rotation Z": "0",
+      "Part roughness": "0.32",
+      "Part metalness": "0.9",
+      "UV scalar (dimensionless)": "50",
+      "Local projection tile (mm)": "20",
+      "Gear moduleMm": "1",
+      "Gear toothCount": "24",
+      "Gear pressureAngleDeg": "20",
+      "Gear faceWidthMm": "8",
+      "Gear boreDiameterMm": "6"
+    },
+    "alerts": [],
+    "applyDisabled": false
+  },
+  "savedIRExactExceptDeclaredPosition": true,
+  "freshLoadGLBExact": true,
+  "additionalEditPositionMm": 6,
+  "lockedNumbersDisabled": true
+}

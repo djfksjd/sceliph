@@ -1,0 +1,82 @@
+
+> sceliph@0.4.0 gltf:validate
+> vite-node scripts/validate-glb.ts work/part-numeric-input-20261004/moved/morphloom-project.glb work/part-numeric-input-20261004/reopened/morphloom-project.glb work/part-numeric-input-20261004/additional-edit/morphloom-project.glb
+
+{
+  "schema": "morphloom.khronos-gltf-validation/0.1",
+  "pass": true,
+  "reports": [
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/part-numeric-input-20261004/moved/morphloom-project.glb",
+      "bytes": 828888,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/part-numeric-input-20261004/reopened/morphloom-project.glb",
+      "bytes": 828888,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/part-numeric-input-20261004/additional-edit/morphloom-project.glb",
+      "bytes": 828888,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 2,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 3,
+        "meshes": 2,
+        "materials": 2,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  ]
+}

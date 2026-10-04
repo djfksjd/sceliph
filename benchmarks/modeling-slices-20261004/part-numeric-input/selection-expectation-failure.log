@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/private/var/folders/z4/_txy7z5d7hb83mc592z_cq540000gn/T/morphloom-publish-w4nfo7ko/repo/work/part-numeric-input-20261004/browser.py", line 32, in <module>
+    fill('Position X','5');call('find','role','button','click','--name','Apply part edit');folder=capture('moved','Export project GLB + source JSON');source=json.loads((folder/'morphloom-source.json').read_text());original=json.loads(fixture.read_text());expected=json.loads(fixture.read_text());expected['parts'][0]['position'][0]=5;assert source==expected
+AssertionError
