@@ -1,3 +1,5 @@
+import { validateSavedSectionChecks } from './saved-section-check-contract';
+import { validateTubeRadiusProfile, applyTubeRadiusProfile, tubeRadiusAt } from './tube-radius-profile';
 import {applyLatheNormalPolicy,validateLatheNormalPolicy} from './lathe-normal-policy';
 import {auditArchitecturalProgram,validateArchitecturalProgram} from './architectural-program';
 import {bladeLoftData,validateBladeSideWinding} from './blade-side-winding';
@@ -202,6 +204,8 @@ export function validateAssemblyIR(value: unknown): asserts value is AssemblyIR 
     }
   };
   inspect(candidate.metadata, 'metadata');
+  inspect(candidate.sectionMeshChecks, 'sectionMeshChecks');
+  validateSavedSectionChecks(candidate.sectionMeshChecks);
   inspect(candidate.fidelity, 'fidelity');
   inspect(candidate.partDecomposition, 'partDecomposition');
   inspect(candidate.visualPlan, 'visualPlan');
@@ -278,6 +282,7 @@ export function validateAssemblyIR(value: unknown): asserts value is AssemblyIR 
         break;
       case 'tube':
         validateTubeQuadraticCurve(component.geometry);
+        validateTubeRadiusProfile(component.geometry);
         if (component.geometry.points.length < 2 || component.geometry.radius <= 0) throw new Error(`Tube path is invalid in ${component.id}.`);
         break;
       case 'surfacePatch': {
@@ -614,12 +619,14 @@ function compileGeometry(geometry: AssemblyGeometryIR, insetChamferMm=0): THREE.
       return result;
     }
     case 'tube': {
+      validateTubeRadiusProfile(geometry);
       const curve = createTubePath(geometry);
       const tubularSegments = geometry.tubularSegments ?? Math.max(48, geometry.points.length * 8);
       const radialSegments = geometry.radialSegments ?? 10;
       const tube = new THREE.TubeGeometry(
         curve, tubularSegments, mm(geometry.radius), radialSegments, Boolean(geometry.closed),
       );
+      try { applyTubeRadiusProfile(tube,geometry); } catch (error) { tube.dispose(); throw error; }
       if (geometry.closed) return tube;
       const sourcePosition = tube.getAttribute('position');
       const sourceNormal = tube.getAttribute('normal');
@@ -662,7 +669,7 @@ function compileGeometry(geometry: AssemblyGeometryIR, insetChamferMm=0): THREE.
           for (let j = 0; j < ring; j += 1) {
             const point = new THREE.Vector3().fromBufferAttribute(sourcePosition, from + j);
             position.set(point.toArray(), (to + j) * 3); normal.set(tangent.toArray(), (to + j) * 3);
-            const delta = point.sub(center), diameter = 2 * mm(geometry.radius);
+            const delta = point.sub(center), diameter = 2 * mm(tubeRadiusAt(geometry,frame / tubularSegments));
             uv.set([THREE.MathUtils.clamp(.5 + delta.dot(basisNormal) / diameter, 0, 1),
               THREE.MathUtils.clamp(.5 + delta.dot(basisBinormal) / diameter, 0, 1)], (to + j) * 2);
           }

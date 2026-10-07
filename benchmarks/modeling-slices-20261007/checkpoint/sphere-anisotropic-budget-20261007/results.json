@@ -1,0 +1,26 @@
+{
+  "scope": "high authored latitude sphere refinement cost at unchanged 0.005 mm contract",
+  "npmTestExit": 0,
+  "testFiles": 148,
+  "tests": 965,
+  "checkExit": 0,
+  "buildExit": 0,
+  "benchmarkExit": 0,
+  "qualityGateExit": 1,
+  "qualityProductionExit": 1,
+  "initialNpmTest": "964 pass/1 timeout; preserved",
+  "isolatedImplicitTest": "8 pass; unchanged 5000 ms limit",
+  "finalNpmTestSeconds": 104.17,
+  "glbFiles": 9,
+  "gltfErrors": 0,
+  "gltfWarnings": 0,
+  "independentReopen": true,
+  "sourceHashes": {
+    "src/engine/sphere-surface-budget.ts": "55beb8c2a6c436270921ae63ef8025ec0c39dcdfbae2e191a2966477bb4c61cc",
+    "tests/sphere-anisotropic-budget.test.ts": "456b67a8c0a2c22bd1c6c49680e46a8ef94ebb419e54546876451a71e12fcdd9"
+  },
+  "browser": "blocked",
+  "blender": "not-run",
+  "push": false,
+  "decision": "code/file gate PASS for bounded refinement; UI and whole production INCOMPLETE"
+}

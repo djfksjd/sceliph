@@ -1,3 +1,4 @@
+import { createBirdPrimaryStudy } from './engine/bird-primary-study';
 import SceliphIcon from './SceliphIcon';
 import { createLatestIntentGate } from './engine/latest-intent';
 import AssemblyComponentEditor from './AssemblyComponentEditor';
@@ -84,6 +85,7 @@ type LocalJob = {
 };
 
 const VIEWER_ASSETS: ViewerAsset[] = [
+  {id:'bird-primary-study',label:'Bird Primary Form Study',caption:'authored continuous body · editable wing sections · contact preservation · no anatomy certification',kind:'product',spec:DEFAULT_PRODUCT_SPEC,assemblyIR:createBirdPrimaryStudy({ preserveContacts: true, taperedBeak: true, shapedWings: true })},
   {
     id: 'implicit-surface', label: 'Implicit Surface Lab', caption: 'smooth union · real socket · manifold refinement', kind: 'product',
     spec: DEFAULT_PRODUCT_SPEC, assemblyIR: IMPLICIT_SURFACE_BENCHMARK_IR,
@@ -837,7 +839,7 @@ export function ViewerApp() {
             </div>
           )}
 
-          {assetKind === 'product' && assemblyIR && <AssemblyComponentEditor ir={assemblyIR} selectedId={selectedPart?.id} onCommit={next=>{importIntent.cancel();setBuildMetrics(undefined);setAssemblyIR(next);setDeliveryAudit(undefined);setDeliveryVerifying(true);setViewerNote('선택 부품 수정 · 기존 납품 검사 재실행');}}/>}
+          {assetKind === 'product' && assemblyIR && <AssemblyComponentEditor sourceCurrent={normalKitSourceCurrent} ir={assemblyIR} selectedId={selectedPart?.id} onCommit={next=>{importIntent.cancel();setBuildMetrics(undefined);setAssemblyIR(next);setDeliveryAudit(undefined);setDeliveryVerifying(true);setViewerNote('선택 부품 수정 · 기존 납품 검사 재실행');}}/>}
 
           {assetKind === 'product' && productMetrics && (
             <div className="surface-audit" aria-label="PBR 표면 검사 결과">

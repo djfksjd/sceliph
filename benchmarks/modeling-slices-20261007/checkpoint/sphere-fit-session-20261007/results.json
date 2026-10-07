@@ -1,0 +1,24 @@
+{
+  "testFiles": 149,
+  "tests": 968,
+  "npmTestExit": 0,
+  "npmTestSeconds": 101.37,
+  "checkExit": 0,
+  "buildExit": 0,
+  "benchmarkExit": 0,
+  "qualityGateExit": 1,
+  "qualityProductionExit": 1,
+  "sourceHashes": {
+    "src/PartInspector.tsx": "5090b9b20798f5247b5762b7cc3b21b0a5f5c907eb89950b3641360fe85398f6",
+    "src/sphere-fit-session.ts": "4a463bed4fdefb4dc419722805464294f5fa83d719c0e47a7679f24b85e27480",
+    "tests/sphere-fit-session.test.ts": "d8eac63de47bfce6d65ef5bc6eb4f43a3a84041c1cca5488a9eac93e9e01f0e8",
+    "docs/ACTIVE_GOAL.ko.md": "9b6e496a56f26a6342dbddc2b581e79128da7ba8fbeebe55e95c56779bdef580",
+    "docs/ENGINE_NEXT_PLAN.ko.md": "dff6d8ebf20bf3ce807bc395b8b7965043cba699ebdc72a722351b7b415e5017"
+  },
+  "scope": "session-only sphere fit failure/stale apply block; no geometry/schema change",
+  "browser": "blocked/not-run",
+  "newGLB": "not-run; unchanged geometry engine, no claim of new browser export proof",
+  "blender": "not-run",
+  "goalToolStatusChanged": false,
+  "push": false
+}

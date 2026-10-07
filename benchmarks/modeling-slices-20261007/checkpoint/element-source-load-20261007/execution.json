@@ -1,0 +1,72 @@
+[
+  {
+    "label": "detector",
+    "command": [
+      "/Users/danny/.agents/skills/impeccable/scripts/impeccable",
+      "detect",
+      "--json",
+      "src/ElementEditor.tsx"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.033815042
+  },
+  {
+    "label": "full-test",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 129.745961916
+  },
+  {
+    "label": "check",
+    "command": [
+      "npm",
+      "run",
+      "check"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 3.6584048329999916
+  },
+  {
+    "label": "build",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 5.9432335420000015
+  },
+  {
+    "label": "benchmark",
+    "command": [
+      "npm",
+      "run",
+      "benchmark"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 4.975708957999984
+  },
+  {
+    "label": "quality-gate",
+    "command": [
+      "npm",
+      "run",
+      "quality:gate"
+    ],
+    "exitCode": 1,
+    "elapsedSeconds": 14.026400375000009
+  },
+  {
+    "label": "quality-production",
+    "command": [
+      "npm",
+      "run",
+      "quality:production"
+    ],
+    "exitCode": 1,
+    "elapsedSeconds": 14.871612041999981
+  }
+]

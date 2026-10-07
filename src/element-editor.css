@@ -11,3 +11,26 @@
 .element-editor h2 { font-size: 17px; }
 .element-editor [role=status] { font: 12px monospace; color: #acccdf; }
 @media (max-width: 800px) { .element-editor .element-columns { grid-template-columns: 1fr !important; height: auto !important; } .element-editor .element-viewport { height: 50vh; } }
+
+/* Compact part inspector: keep the work surface quiet and the edit state visible. */
+.element-editor .part-inspector { min-width: 0; font-size: 13px; line-height: 1.5; }
+.element-editor .part-inspector-heading { margin-bottom: 18px; }
+.element-editor .part-inspector-heading h3 { font-size: 16px; line-height: 1.35; margin: 0 0 6px; overflow-wrap: anywhere; }
+.element-editor .part-inspector-heading code { font-size: 12px; color: #bdcddd; overflow-wrap: anywhere; }
+.element-editor .part-inspector p { color: #c8d1da; margin: 8px 0; }
+.element-editor .part-inspector fieldset { min-width: 0; padding: 12px; margin: 16px 0; border-radius: 5px; }
+.element-editor .part-inspector legend { padding: 0 5px; font-weight: 600; }
+.element-editor .part-number { display: grid; grid-template-columns: minmax(0, 1fr) minmax(90px, 110px); align-items: center; gap: 8px; margin: 6px 0; }
+.element-editor .part-number input[type=number] { box-sizing: border-box; width: 100%; margin: 0; min-height: 36px; font-variant-numeric: tabular-nums; }
+.element-editor .part-number [role=alert] { grid-column: 1 / -1; color: #ffbeb5; }
+.element-editor .part-inspector select { max-width: 100%; margin-top: 6px; white-space: normal; }
+.element-editor .part-inspector input[aria-invalid=true] { border-color: #ffbeb5; }
+.element-editor .part-inspector .part-edit-error { color: #ffbeb5; }
+.element-editor .part-edit-footer { position: sticky; bottom: 0; padding: 12px 0; background: #242b33; border-top: 1px solid #536171; }
+.element-editor .part-edit-actions, .element-editor .part-management-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.element-editor .part-inspector button { min-height: 36px; margin: 0; }
+.element-editor .part-inspector .part-apply:not(:disabled) { background: #b9d9ef; color: #18232e; border-color: #b9d9ef; font-weight: 600; }
+.element-editor .part-inspector button:disabled { opacity: .55; cursor: not-allowed; }
+.element-editor .part-inspector :is(input,select,button,summary):focus-visible { outline: 2px solid #b9d9ef; outline-offset: 2px; }
+.element-editor .part-inspector ::selection { color: #18232e; background: #b9d9ef; }
+@media (max-width: 480px) { .element-editor .part-inspector fieldset { padding: 10px; } .element-editor .part-inspector button { min-height: 44px; } }

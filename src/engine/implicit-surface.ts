@@ -1,3 +1,4 @@
+import { validateEllipsoidSectionShape, shapedEllipsoidField, type EllipsoidSectionShape } from './ellipsoid-section-shape';
 /**
  * Bounded implicit-surface composition and Surface Nets polygonization adapted
  * from img2threejs, Copyright 2026 hoainho, Apache-2.0.
@@ -24,6 +25,7 @@ export interface ImplicitPrimitive {
   height?: number;
   size?: ImplicitVector;
   radii?: ImplicitVector;
+  sectionShape?: EllipsoidSectionShape;
   transform?: ImplicitTransform;
 }
 
@@ -99,6 +101,7 @@ export function validateImplicitSurfaceDescriptor(value: unknown): asserts value
   for (const primitive of descriptor.primitives) {
     if (!VALID_ID.test(primitive.id) || nodes.has(primitive.id)) throw new Error(`Invalid or duplicate implicit primitive id: ${primitive.id}`);
     nodes.add(primitive.id);
+    validateEllipsoidSectionShape(primitive);
     if (!['sphere', 'capsule', 'box', 'cone', 'ellipsoid'].includes(primitive.type)) {
       throw new Error(`Unsupported implicit primitive type: ${primitive.type}`);
     }
@@ -183,7 +186,12 @@ function primitiveDistance(point: THREE.Vector3, primitive: ImplicitPrimitive): 
     case 'capsule': distance = capsuleDistance(local.point, primitive.radius as number, primitive.height!); break;
     case 'box': distance = boxDistance(local.point, primitive.size!); break;
     case 'cone': distance = coneDistance(local.point, primitive.radius as number, primitive.height!); break;
-    case 'ellipsoid': distance = ellipsoidDistance(local.point, primitive.radii ?? primitive.radius as ImplicitVector); break;
+    case 'ellipsoid': {
+      const radii=primitive.radii ?? primitive.radius as ImplicitVector, shape=primitive.sectionShape;
+      // Exact legacy arithmetic for neutral powers, not merely an approximate equivalent formula.
+      distance=shape && (shape.radialPower!==2 || shape.axialPower!==2) ? shapedEllipsoidField(local.point,radii,shape) : ellipsoidDistance(local.point,radii);
+      break;
+    }
   }
   return distance * local.scale;
 }
@@ -289,6 +297,7 @@ function outwardFaceCoverage(positions: number[], normals: number[], indices: nu
 function polygonizeImplicitSurfaceAtResolution(
   descriptor: ImplicitSurfaceDescriptor,
   requestedResolution: number,
+  refinementLimit = MAX_RESOLUTION,
 ): ImplicitSurfaceResult {
   validateImplicitSurfaceDescriptor(descriptor);
   const resolution = descriptor.resolution;
@@ -397,9 +406,9 @@ function polygonizeImplicitSurfaceAtResolution(
     throw new Error(`Implicit surface triangle budget exceeded: ${triangleCount}/${descriptor.triangleBudget}.`);
   }
   const edgeDefects = edgeDefectCounts(indices);
-  const maximumRefinedResolution = Math.min(MAX_RESOLUTION, requestedResolution + 4);
+  const maximumRefinedResolution = Math.min(refinementLimit, requestedResolution + 4);
   if ((edgeDefects.boundaryEdges > 0 || edgeDefects.nonManifoldEdges > 0) && resolution < maximumRefinedResolution) {
-    return polygonizeImplicitSurfaceAtResolution({ ...descriptor, resolution: resolution + 1 }, requestedResolution);
+    return polygonizeImplicitSurfaceAtResolution({ ...descriptor, resolution: resolution + 1 }, requestedResolution, refinementLimit);
   }
   if (edgeDefects.boundaryEdges > 0 || edgeDefects.nonManifoldEdges > 0) {
     throw new Error(`Implicit surface remains topologically invalid after bounded refinement: ${edgeDefects.boundaryEdges} boundary and ${edgeDefects.nonManifoldEdges} non-manifold edges at resolution ${resolution}.`);
@@ -418,7 +427,7 @@ function polygonizeImplicitSurfaceAtResolution(
   }
   const faceCoverage = outwardFaceCoverage(positions, normals, indices);
   if (faceCoverage < 0.995 && resolution < maximumRefinedResolution) {
-    return polygonizeImplicitSurfaceAtResolution({ ...descriptor, resolution: resolution + 1 }, requestedResolution);
+    return polygonizeImplicitSurfaceAtResolution({ ...descriptor, resolution: resolution + 1 }, requestedResolution, refinementLimit);
   }
   if (faceCoverage < 0.995) {
     throw new Error(`Implicit surface face winding disagrees with field normals: ${(faceCoverage * 100).toFixed(3)}% outward at resolution ${resolution}.`);
@@ -445,7 +454,8 @@ function polygonizeImplicitSurfaceAtResolution(
   };
 }
 
-export function polygonizeImplicitSurface(descriptor: ImplicitSurfaceDescriptor): ImplicitSurfaceResult {
+export function polygonizeImplicitSurface(descriptor: ImplicitSurfaceDescriptor, maximumResolution = MAX_RESOLUTION): ImplicitSurfaceResult {
   validateImplicitSurfaceDescriptor(descriptor);
-  return polygonizeImplicitSurfaceAtResolution(descriptor, descriptor.resolution);
+  if (!Number.isInteger(maximumResolution) || maximumResolution < descriptor.resolution || maximumResolution > MAX_RESOLUTION) throw new Error("Invalid implicit refinement resolution ceiling.");
+  return polygonizeImplicitSurfaceAtResolution(descriptor, descriptor.resolution, maximumResolution);
 }

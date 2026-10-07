@@ -84,6 +84,11 @@ async function fingerprint(value: unknown): Promise<string> {
   return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, '0')).join('');
 }
 
+/** Binds local section checks to geometry, scale and units; color/placement do not change local geometry. */
+export async function fingerprintAssemblySectionGeometry(geometry: AssemblyGeometryIR, scale: [number,number,number] | undefined, units: 'mm'): Promise<string> {
+  return fingerprint({geometry,scale:scale??[1,1,1],units});
+}
+
 export async function fingerprintAssemblyIR(ir: AssemblyIR): Promise<string> {
   return fingerprint(ir);
 }

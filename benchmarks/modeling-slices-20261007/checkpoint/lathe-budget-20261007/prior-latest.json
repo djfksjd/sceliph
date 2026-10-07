@@ -1,0 +1,119 @@
+{
+  "morphloom": {
+    "ornateKnife": {
+      "triangles": 18930,
+      "vertices": 14323,
+      "parts": 16,
+      "watertightParts": "16/16",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateTriangles": 0,
+      "surfaces": {
+        "physicalMaterials": 16,
+        "authoredMaterials": 16,
+        "microNormalMaterials": 16,
+        "roughnessMappedMaterials": 16,
+        "anisotropicMaterials": 13,
+        "clearcoatMaterials": 16,
+        "transmissionMaterials": 1,
+        "distinctFinishes": 6,
+        "finishes": ["anodized-metal", "brushed-metal", "leather", "polished-metal", "sapphire", "wood"]
+      },
+      "variableThicknessBlade": true,
+      "editableSharedIR": true
+    },
+    "smartphone": {
+      "triangles": 142480,
+      "vertices": 212988,
+      "parts": 164,
+      "cameraParts": 39,
+      "logicParts": 37,
+      "individualConductors": 28,
+      "watertightParts": "220/220",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateTriangles": 0,
+      "surfaces": {
+        "physicalMaterials": 220,
+        "authoredMaterials": 220,
+        "microNormalMaterials": 219,
+        "roughnessMappedMaterials": 219,
+        "anisotropicMaterials": 111,
+        "clearcoatMaterials": 192,
+        "transmissionMaterials": 57,
+        "distinctFinishes": 13,
+        "finishes": ["anodized-metal", "brushed-metal", "ceramic-glass", "machined-copper", "molded-polymer", "optical-glass", "pcb-soldermask", "polished-metal", "raw", "rubber", "sapphire", "semiconductor", "soft-touch-polymer"]
+      },
+      "connectivity": {
+        "ports": "56/56",
+        "wires": "28/28",
+        "danglingWires": 0,
+        "openRequiredPorts": 0,
+        "portsOnComponents": "56/56",
+        "portOutsideDistanceMaxMm": 0.2193170808759815,
+        "endpointErrorMaxMm": 0.000003735632898865457
+      }
+    },
+    "imageDerivedCoolingAssembly": {
+      "sourceResolution": "2038×1268",
+      "components": 24,
+      "renderedParts": 67,
+      "triangles": 124664,
+      "watertightParts": "153/153",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "degenerateTriangles": 0,
+      "surfaces": {
+        "physicalMaterials": 153,
+        "authoredMaterials": 153,
+        "microNormalMaterials": 153,
+        "roughnessMappedMaterials": 153,
+        "anisotropicMaterials": 99,
+        "clearcoatMaterials": 105,
+        "transmissionMaterials": 2,
+        "distinctFinishes": 9,
+        "finishes": ["brushed-metal", "ceramic-glass", "machined-copper", "molded-polymer", "optical-glass", "pcb-soldermask", "polished-metal", "rubber", "semiconductor"]
+      },
+      "wires": "43/43",
+      "requiredPorts": "86/86",
+      "danglingWires": 0,
+      "portsOnComponents": "86/86",
+      "portOutsideDistanceMaxMm": 4.470348362317633e-7,
+      "endpointErrorMaxMm": 0.000004998623339826834,
+      "inferredHiddenGeometry": true
+    },
+    "spiderManSingleImageHonestyGate": {
+      "source": "https://commons.wikimedia.org/wiki/File:Spider-Man_cosplay.jpg",
+      "sourceResolution": "960×1280",
+      "inputFit": 92,
+      "evidenceScore": 43,
+      "requiredViews": "1/4",
+      "missingViews": ["rear", "left", "right"],
+      "blocked": true,
+      "visualFidelityClaimAllowed": false,
+      "characterBuild": {
+        "skinVertices": 14517,
+        "renderedTriangles": 48156,
+        "namedDetailParts": 139,
+        "watertightParts": "173/173",
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "finishes": ["hex-knit", "molded-polymer", "optical-glass", "soft-touch-polymer"],
+        "pose": "reference-action",
+        "inferredDetailParts": 3
+      },
+      "gamePrevisBaseReady": true,
+      "productionLikenessReady": false
+    }
+  },
+  "comparisonBaseline": {
+    "name": "img2threejs Talon Knife Doppler Ruby v1.4.4",
+    "triangles": 25000,
+    "parts": 5,
+    "variableThicknessBlade": true,
+    "tracedReferenceSilhouette": true,
+    "projectedReferenceTexture": true,
+    "source": "https://img2threejs.io/#/x/talon-doppler-ruby"
+  }
+}

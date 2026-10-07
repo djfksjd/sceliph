@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sceliph.assembly-primary-recipe/0.1",
+  "title": "Sceliph bounded AssemblyIR primary form recipe",
+  "description": "Independent recipe version 0.1. Existing AssemblyIR remains morphloom.assembly/0.1; no IR migration is needed. Future/unknown versions, fields and operations fail atomically. Fingerprint is existing canonical fingerprintAssemblyIR SHA256, not raw file SHA. Local primitive semi-axes use mm, before existing rotation/scale. Mapping, geometry, clipping, topology, connectivity and resource constraints also apply at runtime.",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema", "sourceFingerprint", "steps"],
+  "properties": {
+    "schema": {"const": "sceliph.assembly-primary-recipe/0.1"},
+    "sourceFingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "steps": {"type": "array", "minItems": 1, "maxItems": 4, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["op", "componentId", "primitiveId", "radiiMm"],
+      "properties": {
+        "op": {"const": "ellipsoid-radii"},
+        "componentId": {"type": "string"}, "primitiveId": {"type": "string"},
+        "radiiMm": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number", "minimum": 0.1, "maximum": 100000}}
+      }
+    }}
+  }
+}

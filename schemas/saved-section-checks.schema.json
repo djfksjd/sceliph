@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sceliph.saved-section-checks/0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "entries"
+  ],
+  "properties": {
+    "schema": {
+      "const": "sceliph.saved-section-checks/0.1"
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "componentId",
+          "primitiveId",
+          "geometryFingerprint",
+          "engine",
+          "fit",
+          "budget"
+        ],
+        "properties": {
+          "componentId": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+          },
+          "primitiveId": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+          },
+          "geometryFingerprint": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "engine": {
+            "const": "sceliph.section-mesh-budget-engine/0.1"
+          },
+          "fit": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "schema",
+              "frame",
+              "units",
+              "evidence",
+              "pointsMm"
+            ],
+            "properties": {
+              "schema": {
+                "const": "sceliph.ellipsoid-section-fit/0.1"
+              },
+              "frame": {
+                "const": "primitive-local"
+              },
+              "units": {
+                "const": "mm"
+              },
+              "evidence": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "status",
+                  "sourceId"
+                ],
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "designed",
+                      "measured",
+                      "estimated"
+                    ]
+                  },
+                  "sourceId": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  }
+                }
+              },
+              "pointsMm": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 16,
+                "items": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 3,
+                  "items": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "budget": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "schema",
+              "toleranceMm",
+              "maximumResolution"
+            ],
+            "properties": {
+              "schema": {
+                "const": "sceliph.section-mesh-budget/0.1"
+              },
+              "toleranceMm": {
+                "type": "number",
+                "minimum": 0.0001,
+                "maximum": 10
+              },
+              "maximumResolution": {
+                "type": "integer",
+                "minimum": 8,
+                "maximum": 48
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

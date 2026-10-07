@@ -1,0 +1,26 @@
+{
+  "scope": "explicit native sphere mesh approximation, primitive-local mm; not manufacturing",
+  "testFiles": 147,
+  "tests": 963,
+  "npmTestExit": 0,
+  "checkExit": 0,
+  "buildExit": 0,
+  "benchmarkExit": 0,
+  "qualityGateExit": 1,
+  "qualityProductionExit": 1,
+  "glbFiles": 9,
+  "gltfErrors": 0,
+  "gltfWarnings": 0,
+  "strictReopenCases": 3,
+  "preservedNonTargetParts": 10,
+  "targetTopologyPass": true,
+  "sourceHashes": {
+    "src/engine/sphere-surface-budget.ts": "8cbe20ab3919c3c60184875299bc525d26c4c2e0b256d512a3cd3e4f11d262e0",
+    "src/PartInspector.tsx": "dcf52e9c40f97fa4bca505e385c32d412077103334584d540904e6fa88168123",
+    "tests/sphere-surface-budget.test.ts": "f2950b2b79b6c172836118e353cd9a9f83c62e10e8cd3b720e20456f70314453"
+  },
+  "browser": "blocked",
+  "blenderNeutralRender": "failed exit139; first import not confirmed; reexport not-run",
+  "diagnosticImages": "CPU actual GLB triangles, flat shading/wire, not PBR or Blender render",
+  "push": false
+}
