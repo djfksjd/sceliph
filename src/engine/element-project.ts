@@ -32,7 +32,10 @@ const obj = (v: unknown, path: string, required: string[], optional: string[] = 
   if (proto !== Object.prototype && proto !== null) return fail('type', path);
   const r = v as Record<string, unknown>;
   for (const k of required) if (!own(r, k)) fail('missing', `${path}.${k}`);
-  for (const k of Object.keys(r)) if (![...required, ...optional].includes(k)) fail('unknown', `${path}.${k}`);
+  // Large override dictionaries use their own keys as optional fields. Build
+  // membership once instead of allocating/scanning that list for every slot.
+  const allowed = new Set([...required, ...optional]);
+  for (const k of Object.keys(r)) if (!allowed.has(k)) fail('unknown', `${path}.${k}`);
   return r;
 };
 const arr = (v: unknown, p: string): unknown[] => Array.isArray(v) ? v : fail('type', p);

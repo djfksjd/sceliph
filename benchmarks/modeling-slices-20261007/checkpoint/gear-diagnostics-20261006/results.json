@@ -1,0 +1,25 @@
+{
+  "testFiles": 146,
+  "tests": 960,
+  "npmTestExit": 0,
+  "checkExit": 0,
+  "buildExit": 0,
+  "benchmarkExit": 0,
+  "qualityGateExit": 1,
+  "qualityProductionExit": 1,
+  "parityCases": 557,
+  "exactProfileCases": 12,
+  "currentGLBs": 12,
+  "gltfErrors": 0,
+  "gltfWarnings": 0,
+  "sourceTreeSHA256": "0a031bfff595f0c96306a2cc39bb95e4357b53030117a09e87fa0315301ea181",
+  "sources": {
+    "src/engine/spur-gear.ts": "196946740f9e12e3bf94aef4de8902bbaacc1d56f579a2dd06e914d4e6465a27",
+    "src/engine/gear-edit-preflight.ts": "75221ec9a80675826fba47ed6f55fc74c1d83336da248abe9a223c43e903d298",
+    "tests/gear-validation-diagnostics.test.ts": "1b7ce0f70e2fa4ea41a6d566fd4983fd86826f0c77cc8b1ac6c190ce54df2936"
+  },
+  "packageLockSHA256": "1bd7a53b397e1c134d19665b6bb907bf494d459c6fd771dfc52e4de0e6c4335d",
+  "browser": "blocked",
+  "blender": "not-run",
+  "push": false
+}

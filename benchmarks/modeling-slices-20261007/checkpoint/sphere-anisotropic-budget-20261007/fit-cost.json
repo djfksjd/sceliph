@@ -1,0 +1,22 @@
+{
+  "node": "v24.13.1",
+  "arch": "arm64",
+  "method": "single diagnostic invocation per case, old then new; not warmed/statistical benchmark, not frame-rate evidence",
+  "rows": [
+    {
+      "heightSegments": 80,
+      "oldFitMs": 12.88270799999998,
+      "newFitMs": 13.859125000000006
+    },
+    {
+      "heightSegments": 96,
+      "oldFitMs": 3.8161249999999995,
+      "newFitMs": 7.278916000000038
+    },
+    {
+      "heightSegments": 128,
+      "oldFitMs": 2.740374999999972,
+      "newFitMs": 7.3603330000000255
+    }
+  ]
+}

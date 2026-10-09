@@ -74,3 +74,23 @@ describe('visual-plan provider boundary', () => {
     expect(buildVisualPlanProviderPrompt('four-view industrial floor fan', sources)).toBe(prompt);
   });
 });
+
+it('blocks corrupt source envelopes with a receipt instead of throwing',()=>{
+ for(const invalid of [[null],[{id:'front',kind:'photo',fingerprint:9}], [{id:'front',kind:'photo'}]]){
+  expect(adaptVisualPlanProviderResponse(JSON.stringify(plan()),invalid as unknown as BoundVisualSource[]).pass).toBe(false);
+ }
+});
+it('does not accept a known front ID bound to the rear photo and vice versa',()=>{
+ const candidate=plan();[candidate.sourceViews[0].fingerprint,candidate.sourceViews[1].fingerprint]=[candidate.sourceViews[1].fingerprint,candidate.sourceViews[0].fingerprint];
+ expect(adaptVisualPlanProviderResponse(JSON.stringify(candidate),sources).pass).toBe(false);
+});
+it('blocks malformed semantic fields without throwing or publishing a partial plan',()=>{
+ for(const features of [[null],[{...plan().features[0],label:17}],[{...plan().features[0],observedCounts:null}]]){
+  const r=adaptVisualPlanProviderResponse(JSON.stringify({...plan(),features}),sources);expect(r.pass).toBe(false);expect(r.plan).toBeUndefined();
+ }
+});
+
+it('preserves supported provider aliases that are not authoritative bound IDs',()=>{
+ const candidate=plan();candidate.sourceViews[0].id='view_000';candidate.sourceViews[1].id='view_180';candidate.features[0].sourceViewIds=['view_000','view_180'];candidate.features[0].observedCounts=[{sourceViewId:'view_000',count:3}];
+ expect(adaptVisualPlanProviderResponse(JSON.stringify(candidate),sources).pass).toBe(true);
+});

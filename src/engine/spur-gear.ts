@@ -4,19 +4,38 @@ export type SpurGearGeometry={op:'spur-gear';moduleMm:number;toothCount:number;p
 type Point=[number,number];
 type GearMath=Pick<Math,'sin'|'cos'|'tan'|'atan'|'atan2'|'acos'|'hypot'>;
 const mathFor=(g:SpurGearGeometry):GearMath=>g.mathRevision===stable.GEAR_DETERMINISTIC_MATH_REVISION?stable:Math;
+export type SpurGearIssue = {
+  code: 'parameter-range' | 'integer-teeth' | 'bore-clearance' | 'undercut' | 'math-revision';
+  field: string;
+  minimum?: number;
+  maximum?: number;
+  exclusiveMaximum?: number;
+};
+export class SpurGearValidationError extends Error {
+  constructor(public readonly issue: SpurGearIssue, reason: string) {
+    super(`Invalid spur gear: ${reason}`);
+    this.name = 'SpurGearValidationError';
+  }
+}
 const fail=():never=>{throw new Error('Invalid spur gear: finite bounded parameters, undercut-safe teeth and bore required');};
+const reject=(issue:SpurGearIssue,reason:string):never=>{throw new SpurGearValidationError(issue,reason);};
 const record=(v:unknown):v is Record<string,unknown>=>!!v&&typeof v==='object'&&!Array.isArray(v)&&[Object.prototype,null].includes(Object.getPrototypeOf(v));
 const bounded=(v:unknown,a:number,b:number):v is number=>typeof v==='number'&&Number.isFinite(v)&&v>=a&&v<=b;
 export const toothIds=(g:SpurGearGeometry):string[]=>Number.isInteger(g.toothCount)&&g.toothCount>=18&&g.toothCount<=64
   ? Array.from({length:g.toothCount},(_,i)=>`tooth_${String(i).padStart(4,'0')}`) : [];
 export function validateSpurGear(value:unknown):asserts value is SpurGearGeometry{
-  if(!record(value)||value.op!=='spur-gear'||Object.keys(value).some(k=>!['op','moduleMm','toothCount','pressureAngleDeg','faceWidthMm','boreDiameterMm','toothOverrides','mathRevision'].includes(k))||
-    !bounded(value.moduleMm,0.2,5)||!bounded(value.toothCount,18,64)||!Number.isInteger(value.toothCount)||!bounded(value.pressureAngleDeg,20,25)||
-    !bounded(value.faceWidthMm,0.1,100)||!bounded(value.boreDiameterMm,0,300))fail();
+  if(!record(value)||value.op!=='spur-gear'||Object.keys(value).some(k=>!['op','moduleMm','toothCount','pressureAngleDeg','faceWidthMm','boreDiameterMm','toothOverrides','mathRevision'].includes(k)))return fail();
+  for(const [field,minimum,maximum,unit] of [
+    ['moduleMm',0.2,5,'mm'],['toothCount',18,64,'teeth'],['pressureAngleDeg',20,25,'degrees'],['faceWidthMm',0.1,100,'mm'],['boreDiameterMm',0,300,'mm']
+  ] as const) if(!bounded(value[field],minimum,maximum))reject({code:'parameter-range',field,minimum,maximum},`${field} must be a finite number from ${minimum} to ${maximum} ${unit}.`);
+  if(!Number.isInteger(value.toothCount))reject({code:'integer-teeth',field:'toothCount',minimum:18,maximum:64},'toothCount must be a whole number from 18 to 64.');
   const g=value as unknown as SpurGearGeometry;
-  if(Object.hasOwn(g,'mathRevision')&&g.mathRevision!==stable.GEAR_DETERMINISTIC_MATH_REVISION)fail();
+  if(Object.hasOwn(g,'mathRevision')&&g.mathRevision!==stable.GEAR_DETERMINISTIC_MATH_REVISION)reject({code:'math-revision',field:'mathRevision'},'Unsupported arithmetic revision; preserve the original policy or explicitly select the supported revision.');
   const math=mathFor(g),alpha=g.pressureAngleDeg*Math.PI/180;
-  if(g.toothCount<Math.ceil(2/math.sin(alpha)**2)||g.boreDiameterMm>=g.moduleMm*(g.toothCount-2.5)-g.moduleMm*0.1)fail();
+  const minimumTeeth=Math.ceil(2/math.sin(alpha)**2);
+  if(g.toothCount<minimumTeeth)reject({code:'undercut',field:'toothCount',minimum:minimumTeeth},`toothCount must be at least ${minimumTeeth} for this pressure angle under the existing zero-shift contract.`);
+  const maximumBore=g.moduleMm*(g.toothCount-2.5)-g.moduleMm*0.1;
+  if(g.boreDiameterMm>=maximumBore)reject({code:'bore-clearance',field:'boreDiameterMm',exclusiveMaximum:maximumBore},`boreDiameterMm must be less than ${maximumBore} mm for this module and tooth count; reduce the bore or change those dimensions.`);
   if(g.toothOverrides!==undefined){
     if(!record(g.toothOverrides)||Object.keys(g.toothOverrides).length>g.toothCount)fail();
     const ids=new Set(toothIds(g));

@@ -1,0 +1,81 @@
+{
+  "pass": true,
+  "records": [
+    {
+      "partId": "inner_race",
+      "preserved": true
+    },
+    {
+      "partId": "outer_race",
+      "preserved": true
+    },
+    {
+      "partId": "cage",
+      "preserved": true
+    },
+    {
+      "partId": "ball_0001",
+      "preserved": true
+    },
+    {
+      "partId": "ball_0002",
+      "preserved": true
+    },
+    {
+      "partId": "ball_0003",
+      "preserved": true
+    },
+    {
+      "partId": "ball_0004",
+      "preserved": true
+    },
+    {
+      "partId": "ball_0005",
+      "preserved": true
+    },
+    {
+      "partId": "ball_0006",
+      "preserved": true
+    },
+    {
+      "partId": "ball_0007",
+      "preserved": true
+    }
+  ],
+  "targetTopology": {
+    "meshes": 1,
+    "watertightMeshes": 1,
+    "boundaryEdges": 0,
+    "inconsistentWindingEdges": 0,
+    "orientationConsistent": true,
+    "nonManifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "selfIntersections": 0,
+    "selfIntersectionMeshes": 0,
+    "selfIntersectionCandidatePairs": 6619,
+    "selfIntersectionComplete": true,
+    "triangles": 6240,
+    "edgeTaperMeshes": 0,
+    "verifiedEdgeTaperSegments": 0,
+    "surfaceReliefMeshes": 0,
+    "surfaceReliefSamples": 0,
+    "surfaceAggregateFeatures": 0,
+    "referenceReliefMeshes": 0,
+    "referenceReliefSamples": 0,
+    "maximumReferenceIrregularity": 0,
+    "pass": true,
+    "details": [
+      {
+        "name": "ball_0000",
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionComplete": true,
+        "watertight": true
+      }
+    ]
+  }
+}

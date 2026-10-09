@@ -1,0 +1,15 @@
+import {expect,it}from'vitest';
+import {tracePlanarMask,generatePlanarMaskRelief}from'../src/engine/planar-mask-relief';
+import {exportSelectedScene}from'../src/engine/element-renderer';
+import {analyzeTopology}from'../src/engine/topology';
+it('keeps separate components and a real hole through closed geometry',()=>{const m=new Uint8Array(24*16);for(let y=2;y<12;y++)for(let x=2;x<12;x++)m[y*24+x]=1;for(let y=5;y<8;y++)for(let x=5;x<8;x++)m[y*24+x]=0;for(let y=3;y<9;y++)for(let x=16;x<20;x++)m[y*24+x]=1;const p=tracePlanarMask(m,24,16);expect(p.length).toBe(2);expect(p[0].holes.length).toBe(1);const source=generatePlanarMaskRelief(p,24,16,120,2,'a'.repeat(64)),b=exportSelectedScene(source,source.parts.map(p=>p.id));try{expect(analyzeTopology(b.root).pass).toBe(true);expect(source.parts.map(p=>p.id)).toEqual(['outline_000','outline_001']);}finally{b.dispose();}});
+it('refuses unsafe, empty, invalid provenance and ambiguous boundaries without partial results',()=>{expect(()=>tracePlanarMask(new Uint8Array(16),4,4)).toThrow();expect(()=>tracePlanarMask(new Uint8Array(16).fill(2),4,4)).toThrow();const m=new Uint8Array(16).fill(1);expect(()=>tracePlanarMask(m,4,4,1)).toThrow();expect(()=>generatePlanarMaskRelief(tracePlanarMask(m,4,4),4,4,20,2,'bad')).toThrow();expect(()=>generatePlanarMaskRelief(tracePlanarMask(m,4,4),4,4,20,-2,'a'.repeat(64))).toThrow();const a=new Uint8Array(36);for(const [x,y]of [[1,1],[2,1],[1,2],[3,2],[1,3],[2,3],[3,3]])a[y*6+x]=1;expect(()=>tracePlanarMask(a,6,6)).toThrow();});
+
+it('does not silently simplify an over-budget checkerboard into partial geometry',()=>{const m=new Uint8Array(40*40);for(let y=0;y<40;y++)for(let x=0;x<40;x++)m[y*40+x]=(x+y)%2;expect(()=>tracePlanarMask(m,40,40)).toThrow('component budget');});
+
+it('preserves an actual source wordmark at decimal world scale without degenerate cap triangles',async()=>{
+ const {readFileSync}=await import('node:fs'),{createCanvas,loadImage}=await import('@napi-rs/canvas'),{Box3,Vector3}=await import('three');
+ const image=await loadImage(readFileSync('assets/brand/sceliph-logo-light.png')),canvas=createCanvas(950,100),ctx=canvas.getContext('2d');ctx.drawImage(image,300,720,950,100,0,0,950,100);const rgba=ctx.getImageData(0,0,950,100).data,mask=new Uint8Array(950*100);for(let i=0;i<mask.length;i++)mask[i]=Number(rgba[i*4]<80&&rgba[i*4+1]<80&&rgba[i*4+2]<80&&rgba[i*4+3]>127);
+ const profiles=tracePlanarMask(mask,950,100);expect(profiles.length).toBe(7);expect(profiles.reduce((n,p)=>n+p.holes.length,0)).toBe(1);
+ const source=generatePlanarMaskRelief(profiles,950,100,240,2,'a'.repeat(64)),b=exportSelectedScene(source,source.parts.map(p=>p.id));try{const r=analyzeTopology(b.root);expect(r.degenerateTriangles).toBe(0);expect(r.pass).toBe(true);const box=new Box3().setFromObject(b.root),size=box.getSize(new Vector3()).multiplyScalar(1000);expect(size.z).toBeCloseTo(2,5);const x0=Math.min(...profiles.map(p=>p.bounds[0])),x1=Math.max(...profiles.map(p=>p.bounds[2]));expect(size.x).toBeCloseTo((x1-x0)*240/950,4);}finally{b.dispose();}
+});

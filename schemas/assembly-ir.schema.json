@@ -4,94 +4,580 @@
   "title": "Morphloom AssemblyIR 0.1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema", "name", "units", "components"],
+  "required": [
+    "schema",
+    "name",
+    "units",
+    "components"
+  ],
   "properties": {
-    "schema": { "const": "morphloom.assembly/0.1" },
-    "name": { "type": "string", "minLength": 1, "maxLength": 100 },
-    "units": { "const": "mm" },
-    "metadata": { "type": "object", "additionalProperties": { "type": ["string", "number", "boolean"] } },
-    "electrical": { "$ref": "#/$defs/electricalHarness" },
-    "fidelity": { "$ref": "fidelity-contract.schema.json" },
-    "partDecomposition": { "type": "object" },
-    "visualPlan": { "type": "object" },
-    "planFootprint": { "type": "object" },
-    "architecturalProgram": { "$ref": "#/$defs/architecturalProgram" },
-    "dimensionContracts": { "type": "array", "minItems": 1, "maxItems": 256, "items": { "$ref": "#/$defs/dimensionContract" } },
+    "schema": {
+      "const": "morphloom.assembly/0.1"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "units": {
+      "const": "mm"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean"
+        ]
+      }
+    },
+    "electrical": {
+      "$ref": "#/$defs/electricalHarness"
+    },
+    "fidelity": {
+      "$ref": "fidelity-contract.schema.json"
+    },
+    "partDecomposition": {
+      "type": "object"
+    },
+    "visualPlan": {
+      "type": "object"
+    },
+    "planFootprint": {
+      "type": "object"
+    },
+    "architecturalProgram": {
+      "$ref": "#/$defs/architecturalProgram"
+    },
+    "dimensionContracts": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 256,
+      "items": {
+        "$ref": "#/$defs/dimensionContract"
+      }
+    },
     "components": {
       "type": "array",
       "minItems": 1,
       "maxItems": 500,
-      "items": { "$ref": "#/$defs/component" }
+      "items": {
+        "$ref": "#/$defs/component"
+      }
+    },
+    "sectionMeshChecks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "entries"
+      ],
+      "properties": {
+        "schema": {
+          "const": "sceliph.saved-section-checks/0.1"
+        },
+        "entries": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "componentId",
+              "primitiveId",
+              "geometryFingerprint",
+              "engine",
+              "fit",
+              "budget"
+            ],
+            "properties": {
+              "componentId": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+              },
+              "primitiveId": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+              },
+              "geometryFingerprint": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "engine": {
+                "const": "sceliph.section-mesh-budget-engine/0.1"
+              },
+              "fit": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "schema",
+                  "frame",
+                  "units",
+                  "evidence",
+                  "pointsMm"
+                ],
+                "properties": {
+                  "schema": {
+                    "const": "sceliph.ellipsoid-section-fit/0.1"
+                  },
+                  "frame": {
+                    "const": "primitive-local"
+                  },
+                  "units": {
+                    "const": "mm"
+                  },
+                  "evidence": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "status",
+                      "sourceId"
+                    ],
+                    "properties": {
+                      "status": {
+                        "enum": [
+                          "designed",
+                          "measured",
+                          "estimated"
+                        ]
+                      },
+                      "sourceId": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 128
+                      }
+                    }
+                  },
+                  "pointsMm": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 16,
+                    "items": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              },
+              "budget": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "schema",
+                  "toleranceMm",
+                  "maximumResolution"
+                ],
+                "properties": {
+                  "schema": {
+                    "const": "sceliph.section-mesh-budget/0.1"
+                  },
+                  "toleranceMm": {
+                    "type": "number",
+                    "minimum": 0.0001,
+                    "maximum": 10
+                  },
+                  "maximumResolution": {
+                    "type": "integer",
+                    "minimum": 8,
+                    "maximum": 48
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
-  "allOf": [{"if": {"required": ["architecturalProgram"]}, "then": {"required": ["metadata"], "properties": {"metadata": {"required": ["assetKind", "scope", "ceilingAndRoofIncluded"], "properties": {"assetKind": {"const": "building"}, "scope": {"const": "architectural-shell-only"}, "ceilingAndRoofIncluded": {"const": false}}}}}}],
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "architecturalProgram"
+        ]
+      },
+      "then": {
+        "required": [
+          "metadata"
+        ],
+        "properties": {
+          "metadata": {
+            "required": [
+              "assetKind",
+              "scope",
+              "ceilingAndRoofIncluded"
+            ],
+            "properties": {
+              "assetKind": {
+                "const": "building"
+              },
+              "scope": {
+                "const": "architectural-shell-only"
+              },
+              "ceilingAndRoofIncluded": {
+                "const": false
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
   "$defs": {
-    "architecturalProgram": {"type": "object", "additionalProperties": false, "required": ["schema", "scope", "inventoryIds", "requirements"], "properties": {"schema": {"const": "morphloom.architectural-program/0.1"}, "scope": {"const": "floor-cutaway"}, "inventoryIds": {"type": "array", "minItems": 1, "maxItems": 128, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$"}}, "requirements": {"type": "array", "minItems": 1, "maxItems": 128, "items": {"type": "object", "additionalProperties": false, "required": ["id", "kind", "footprint"], "properties": {"id": {"type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$"}, "kind": {"enum": ["room-floor", "stair-landing"]}, "footprint": {"type": "object", "required": ["schema", "componentIds", "targetRegions", "evidence"], "properties": {"schema": {"const": "morphloom.plan-footprint/0.1"}, "evidence": {"type": "object", "required": ["status", "source", "note"], "properties": {"status": {"const": "authored"}, "source": {"type": "string", "minLength": 1}, "note": {"type": "string", "minLength": 1}}}}}}}}}},
+    "architecturalProgram": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "scope",
+        "inventoryIds",
+        "requirements"
+      ],
+      "properties": {
+        "schema": {
+          "const": "morphloom.architectural-program/0.1"
+        },
+        "scope": {
+          "const": "floor-cutaway"
+        },
+        "inventoryIds": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 128,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+          }
+        },
+        "requirements": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 128,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "kind",
+              "footprint"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+              },
+              "kind": {
+                "enum": [
+                  "room-floor",
+                  "stair-landing"
+                ]
+              },
+              "footprint": {
+                "type": "object",
+                "required": [
+                  "schema",
+                  "componentIds",
+                  "targetRegions",
+                  "evidence"
+                ],
+                "properties": {
+                  "schema": {
+                    "const": "morphloom.plan-footprint/0.1"
+                  },
+                  "evidence": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "source",
+                      "note"
+                    ],
+                    "properties": {
+                      "status": {
+                        "const": "authored"
+                      },
+                      "source": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "note": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "vec3": {
       "type": "array",
-      "prefixItems": [{ "type": "number" }, { "type": "number" }, { "type": "number" }],
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
       "minItems": 3,
       "maxItems": 3
     },
     "vec2": {
       "type": "array",
-      "prefixItems": [{ "type": "number" }, { "type": "number" }],
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
       "minItems": 2,
       "maxItems": 2
     },
     "material": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["color"],
+      "required": [
+        "color"
+      ],
       "properties": {
-        "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
-        "surface": { "enum": ["raw", "concrete", "asphalt", "plaster", "stone", "coated-metal", "brushed-metal", "bead-blasted-metal", "anodized-metal", "polished-metal", "machined-copper", "ceramic-glass", "optical-glass", "sapphire", "pcb-soldermask", "molded-polymer", "soft-touch-polymer", "rubber", "leather", "wood", "skin", "fabric", "hex-knit", "hair", "semiconductor"] },
-        "roughness": { "type": "number", "minimum": 0, "maximum": 1 },
-        "metalness": { "type": "number", "minimum": 0, "maximum": 1 },
-        "transmission": { "type": "number", "minimum": 0, "maximum": 1 },
-        "clearcoat": { "type": "number", "minimum": 0, "maximum": 1 },
-        "clearcoatRoughness": { "type": "number", "minimum": 0, "maximum": 1 },
-        "ior": { "type": "number", "minimum": 1, "maximum": 2.5 },
-        "iridescence": { "type": "number", "minimum": 0, "maximum": 1 },
-        "anisotropy": { "type": "number", "minimum": 0, "maximum": 1 },
-        "anisotropyRotation": { "type": "number", "minimum": -6.2832, "maximum": 6.2832 },
-        "sheen": { "type": "number", "minimum": 0, "maximum": 1 },
-        "sheenRoughness": { "type": "number", "minimum": 0, "maximum": 1 },
-        "specularIntensity": { "type": "number", "minimum": 0, "maximum": 1 },
-        "microNormalStrength": { "type": "number", "minimum": 0, "maximum": 1 },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "surface": {
+          "enum": [
+            "raw",
+            "concrete",
+            "asphalt",
+            "plaster",
+            "stone",
+            "coated-metal",
+            "brushed-metal",
+            "bead-blasted-metal",
+            "anodized-metal",
+            "polished-metal",
+            "machined-copper",
+            "ceramic-glass",
+            "optical-glass",
+            "sapphire",
+            "pcb-soldermask",
+            "molded-polymer",
+            "soft-touch-polymer",
+            "rubber",
+            "leather",
+            "wood",
+            "skin",
+            "fabric",
+            "hex-knit",
+            "hair",
+            "semiconductor"
+          ]
+        },
+        "roughness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "metalness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "transmission": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "clearcoat": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "clearcoatRoughness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "ior": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 2.5
+        },
+        "iridescence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "anisotropy": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "anisotropyRotation": {
+          "type": "number",
+          "minimum": -6.2832,
+          "maximum": 6.2832
+        },
+        "sheen": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "sheenRoughness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "specularIntensity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "microNormalStrength": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
         "textureScale": {
           "type": "array",
-          "prefixItems": [{ "type": "number", "exclusiveMinimum": 0, "maximum": 1024 }, { "type": "number", "exclusiveMinimum": 0, "maximum": 1024 }],
+          "prefixItems": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1024
+            },
+            {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1024
+            }
+          ],
           "minItems": 2,
           "maxItems": 2
         },
-        "thicknessMm": { "type": "number", "minimum": 0, "maximum": 100 },
-        "emissive": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+        "thicknessMm": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "emissive": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
         "referenceProjection": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["uri", "mapping", "crop", "boundsMm"],
+          "required": [
+            "uri",
+            "mapping",
+            "crop",
+            "boundsMm"
+          ],
           "properties": {
-            "uri": { "type": "string", "minLength": 1, "maxLength": 512 },
-            "mapping": { "enum": ["assembly-xy", "assembly-xz"] },
+            "uri": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 512
+            },
+            "mapping": {
+              "enum": [
+                "assembly-xy",
+                "assembly-xz"
+              ]
+            },
             "orientation": {
-              "type": "object", "additionalProperties": false,
-              "required": ["schema", "direction"],
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "schema",
+                "direction"
+              ],
               "properties": {
-                "schema": { "const": "morphloom.reference-projection-orientation/0.1" },
-                "direction": { "enum": ["positive", "negative"] },
-                "flipU": { "type": "boolean" }
+                "schema": {
+                  "const": "morphloom.reference-projection-orientation/0.1"
+                },
+                "direction": {
+                  "enum": [
+                    "positive",
+                    "negative"
+                  ]
+                },
+                "flipU": {
+                  "type": "boolean"
+                }
               }
             },
-            "crop": { "type": "array", "prefixItems": [{ "type": "number" }, { "type": "number" }, { "type": "number" }, { "type": "number" }], "minItems": 4, "maxItems": 4 },
-            "boundsMm": { "type": "array", "prefixItems": [{ "type": "number" }, { "type": "number" }, { "type": "number" }, { "type": "number" }], "minItems": 4, "maxItems": 4 },
-            "fingerprint": { "type": "string", "pattern": "^[a-fA-F0-9]{8,128}$" },
+            "crop": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "minItems": 4,
+              "maxItems": 4
+            },
+            "boundsMm": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "minItems": 4,
+              "maxItems": 4
+            },
+            "fingerprint": {
+              "type": "string",
+              "pattern": "^[a-fA-F0-9]{8,128}$"
+            },
             "relief": {
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "strength": { "type": "number", "minimum": 0, "maximum": 2 },
-                "maxResolution": { "type": "integer", "minimum": 256, "maximum": 2048 }
+                "strength": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                },
+                "maxResolution": {
+                  "type": "integer",
+                  "minimum": 256,
+                  "maximum": 2048
+                }
               }
             }
           }
@@ -101,35 +587,115 @@
     "component": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "name", "category", "materialName", "detail", "geometry", "material"],
+      "required": [
+        "id",
+        "name",
+        "category",
+        "materialName",
+        "detail",
+        "geometry",
+        "material"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "name": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "category": { "enum": ["enclosure", "display", "logic", "power", "camera", "audio", "radio", "mechanical", "interconnect"] },
-        "materialName": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "detail": { "type": "string", "maxLength": 500 },
-        "level": { "type": "string", "minLength": 1, "maxLength": 40 },
-        "position": { "$ref": "#/$defs/vec3" },
-        "rotation": { "$ref": "#/$defs/vec3" },
-        "scale": { "$ref": "#/$defs/vec3" },
-        "dimensionAnchors": { "type": "array", "maxItems": 256, "items": { "$ref": "#/$defs/dimensionAnchor" } },
-        "evidence": { "$ref": "#/$defs/componentEvidence" },
-        "material": { "$ref": "#/$defs/material" },
-        "light": { "$ref": "#/$defs/light" },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "category": {
+          "enum": [
+            "enclosure",
+            "display",
+            "logic",
+            "power",
+            "camera",
+            "audio",
+            "radio",
+            "mechanical",
+            "interconnect"
+          ]
+        },
+        "materialName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "detail": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "level": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "position": {
+          "$ref": "#/$defs/vec3"
+        },
+        "rotation": {
+          "$ref": "#/$defs/vec3"
+        },
+        "scale": {
+          "$ref": "#/$defs/vec3"
+        },
+        "dimensionAnchors": {
+          "type": "array",
+          "maxItems": 256,
+          "items": {
+            "$ref": "#/$defs/dimensionAnchor"
+          }
+        },
+        "evidence": {
+          "$ref": "#/$defs/componentEvidence"
+        },
+        "material": {
+          "$ref": "#/$defs/material"
+        },
+        "light": {
+          "$ref": "#/$defs/light"
+        },
         "geometry": {
           "oneOf": [
-            { "$ref": "#/$defs/roundedBox" },
-            { "$ref": "#/$defs/cylinder" },
-            { "$ref": "#/$defs/sphere" },
-            { "$ref": "#/$defs/torus" },
-            { "$ref": "#/$defs/extrude" },
-            { "$ref": "#/$defs/lathe" },
-            { "$ref": "#/$defs/tube" },
-            { "$ref": "#/$defs/surfacePatch" },
-            { "$ref": "#/$defs/hipRoof" },
-            { "$ref": "#/$defs/bladeLoft" },
-            { "$ref": "#/$defs/visualHull" },
-            { "$ref": "#/$defs/implicitSurface" }
+            {
+              "$ref": "#/$defs/roundedBox"
+            },
+            {
+              "$ref": "#/$defs/cylinder"
+            },
+            {
+              "$ref": "#/$defs/sphere"
+            },
+            {
+              "$ref": "#/$defs/torus"
+            },
+            {
+              "$ref": "#/$defs/extrude"
+            },
+            {
+              "$ref": "#/$defs/lathe"
+            },
+            {
+              "$ref": "#/$defs/tube"
+            },
+            {
+              "$ref": "#/$defs/surfacePatch"
+            },
+            {
+              "$ref": "#/$defs/hipRoof"
+            },
+            {
+              "$ref": "#/$defs/bladeLoft"
+            },
+            {
+              "$ref": "#/$defs/visualHull"
+            },
+            {
+              "$ref": "#/$defs/implicitSurface"
+            }
           ]
         }
       }
@@ -137,61 +703,193 @@
     "componentEvidence": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status"],
+      "required": [
+        "status"
+      ],
       "properties": {
-        "status": { "enum": ["measured", "datasheet", "estimated", "inferred"] },
-        "sourceViewId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "source": { "type": "string", "maxLength": 500 },
-        "notes": { "type": "array", "maxItems": 32, "items": { "type": "string", "maxLength": 500 } }
+        "status": {
+          "enum": [
+            "measured",
+            "datasheet",
+            "estimated",
+            "inferred"
+          ]
+        },
+        "sourceViewId": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "source": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "notes": {
+          "type": "array",
+          "maxItems": 32,
+          "items": {
+            "type": "string",
+            "maxLength": 500
+          }
+        }
       }
     },
     "dimensionAnchor": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "position"],
+      "required": [
+        "id",
+        "position"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "position": { "$ref": "#/$defs/vec3" }
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "position": {
+          "$ref": "#/$defs/vec3"
+        }
       }
     },
     "dimensionContract": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "label", "target", "axis", "measurement", "expectedMm", "toleranceMm", "evidence"],
+      "required": [
+        "id",
+        "label",
+        "target",
+        "axis",
+        "measurement",
+        "expectedMm",
+        "toleranceMm",
+        "evidence"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "label": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "target": { "$ref": "#/$defs/dimensionTarget" },
-        "axis": { "enum": ["x", "y", "z", "spatial"] },
-        "measurement": { "enum": ["size", "min", "max", "center", "distance"] },
-        "space": { "enum": ["world", "component-local"] },
-        "expectedMm": { "type": "number", "minimum": -1000000, "maximum": 1000000 },
-        "toleranceMm": { "type": "number", "minimum": 0, "maximum": 100000 },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "target": {
+          "$ref": "#/$defs/dimensionTarget"
+        },
+        "axis": {
+          "enum": [
+            "x",
+            "y",
+            "z",
+            "spatial"
+          ]
+        },
+        "measurement": {
+          "enum": [
+            "size",
+            "min",
+            "max",
+            "center",
+            "distance"
+          ]
+        },
+        "space": {
+          "enum": [
+            "world",
+            "component-local"
+          ]
+        },
+        "expectedMm": {
+          "type": "number",
+          "minimum": -1000000,
+          "maximum": 1000000
+        },
+        "toleranceMm": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100000
+        },
         "evidence": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["status", "sourceViewId", "source"],
+          "required": [
+            "status",
+            "sourceViewId",
+            "source"
+          ],
           "properties": {
-            "status": { "enum": ["measured", "datasheet"] },
-            "sourceViewId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-            "source": { "type": "string", "minLength": 1, "maxLength": 500 },
-            "note": { "type": "string", "maxLength": 500 }
+            "status": {
+              "enum": [
+                "measured",
+                "datasheet"
+              ]
+            },
+            "sourceViewId": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            },
+            "note": {
+              "type": "string",
+              "maxLength": 500
+            }
           }
         }
       }
     },
     "dimensionTarget": {
       "oneOf": [
-        { "type": "object", "additionalProperties": false, "required": ["kind"], "properties": { "kind": { "const": "assembly" } } },
-        { "type": "object", "additionalProperties": false, "required": ["kind", "componentId"], "properties": { "kind": { "const": "component" }, "componentId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" } } },
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["kind", "from", "to"],
+          "required": [
+            "kind"
+          ],
           "properties": {
-            "kind": { "const": "anchorPair" },
-            "from": { "$ref": "#/$defs/dimensionAnchorRef" },
-            "to": { "$ref": "#/$defs/dimensionAnchorRef" }
+            "kind": {
+              "const": "assembly"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "componentId"
+          ],
+          "properties": {
+            "kind": {
+              "const": "component"
+            },
+            "componentId": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "from",
+            "to"
+          ],
+          "properties": {
+            "kind": {
+              "const": "anchorPair"
+            },
+            "from": {
+              "$ref": "#/$defs/dimensionAnchorRef"
+            },
+            "to": {
+              "$ref": "#/$defs/dimensionAnchorRef"
+            }
           }
         }
       ]
@@ -199,162 +897,881 @@
     "dimensionAnchorRef": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["componentId", "anchorId"],
+      "required": [
+        "componentId",
+        "anchorId"
+      ],
       "properties": {
-        "componentId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "anchorId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" }
+        "componentId": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "anchorId": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        }
       }
     },
     "light": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["color", "intensity", "rangeMm"],
+      "required": [
+        "color",
+        "intensity",
+        "rangeMm"
+      ],
       "properties": {
-        "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
-        "intensity": { "type": "number", "minimum": 0, "maximum": 1000 },
-        "rangeMm": { "type": "number", "exclusiveMinimum": 0, "maximum": 1000000 },
-        "decay": { "type": "number", "minimum": 0, "maximum": 4 }
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "rangeMm": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1000000
+        },
+        "decay": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 4
+        }
       }
     },
     "roundedBox": {
-      "type": "object", "required": ["op", "size", "radius"], "additionalProperties": false,
-      "properties": { "op": { "const": "roundedBox" }, "size": { "$ref": "#/$defs/vec3" }, "radius": { "type": "number", "minimum": 0 }, "segments": { "type": "integer", "minimum": 3, "maximum": 512 } }
+      "type": "object",
+      "required": [
+        "op",
+        "size",
+        "radius"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "roundedBox"
+        },
+        "size": {
+          "$ref": "#/$defs/vec3"
+        },
+        "radius": {
+          "type": "number",
+          "minimum": 0
+        },
+        "segments": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 512
+        }
+      }
     },
     "cylinder": {
-      "type": "object", "required": ["op", "radiusTop", "radiusBottom", "depth"], "additionalProperties": false,
-      "properties": { "op": { "const": "cylinder" }, "radiusTop": { "type": "number", "minimum": 0 }, "radiusBottom": { "type": "number", "minimum": 0 }, "depth": { "type": "number", "exclusiveMinimum": 0 }, "radialSegments": { "type": "integer", "minimum": 3, "maximum": 512 } }
+      "type": "object",
+      "required": [
+        "op",
+        "radiusTop",
+        "radiusBottom",
+        "depth"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "cylinder"
+        },
+        "radiusTop": {
+          "type": "number",
+          "minimum": 0
+        },
+        "radiusBottom": {
+          "type": "number",
+          "minimum": 0
+        },
+        "depth": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "radialSegments": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 512
+        }
+      }
     },
     "sphere": {
-      "type": "object", "required": ["op", "radius"], "additionalProperties": false,
-      "properties": { "op": { "const": "sphere" }, "radius": { "type": "number", "exclusiveMinimum": 0 }, "widthSegments": { "type": "integer", "minimum": 3, "maximum": 512 }, "heightSegments": { "type": "integer", "minimum": 3, "maximum": 512 } }
+      "type": "object",
+      "required": [
+        "op",
+        "radius"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "sphere"
+        },
+        "radius": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "widthSegments": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 512
+        },
+        "heightSegments": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 512
+        }
+      }
     },
     "torus": {
-      "type": "object", "required": ["op", "radius", "tube"], "additionalProperties": false,
-      "properties": { "op": { "const": "torus" }, "radius": { "type": "number", "exclusiveMinimum": 0 }, "tube": { "type": "number", "exclusiveMinimum": 0 }, "radialSegments": { "type": "integer", "minimum": 3, "maximum": 512 }, "tubularSegments": { "type": "integer", "minimum": 3, "maximum": 512 } }
+      "type": "object",
+      "required": [
+        "op",
+        "radius",
+        "tube"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "torus"
+        },
+        "radius": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "tube": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "radialSegments": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 512
+        },
+        "tubularSegments": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 512
+        }
+      }
     },
     "extrude": {
-      "type": "object", "required": ["op", "points", "depth"], "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "op",
+        "points",
+        "depth"
+      ],
+      "additionalProperties": false,
       "properties": {
-        "op": { "const": "extrude" },
-        "points": { "type": "array", "minItems": 3, "maxItems": 4096, "items": { "$ref": "#/$defs/vec2" } },
-        "depth": { "type": "number", "exclusiveMinimum": 0 },
-        "holes": { "type": "array", "maxItems": 128, "items": { "type": "array", "minItems": 3, "maxItems": 4096, "items": { "$ref": "#/$defs/vec2" } } },
-        "ovalHoles": {
-          "type": "array", "maxItems": 128,
+        "op": {
+          "const": "extrude"
+        },
+        "points": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 4096,
           "items": {
-            "type": "object", "additionalProperties": false, "required": ["center", "radii"],
-            "properties": {
-              "center": { "$ref": "#/$defs/vec2" }, "radii": { "$ref": "#/$defs/vec2" },
-              "segments": { "type": "integer", "minimum": 8, "maximum": 256 }
+            "$ref": "#/$defs/vec2"
+          }
+        },
+        "depth": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "holes": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 4096,
+            "items": {
+              "$ref": "#/$defs/vec2"
             }
           }
         },
-        "bevelSize": { "type": "number", "minimum": 0 },
-        "bevelThickness": { "type": "number", "minimum": 0 },
-        "bevelSegments": { "type": "integer", "minimum": 1, "maximum": 512 },
+        "ovalHoles": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "center",
+              "radii"
+            ],
+            "properties": {
+              "center": {
+                "$ref": "#/$defs/vec2"
+              },
+              "radii": {
+                "$ref": "#/$defs/vec2"
+              },
+              "segments": {
+                "type": "integer",
+                "minimum": 8,
+                "maximum": 256
+              }
+            }
+          }
+        },
+        "bevelSize": {
+          "type": "number",
+          "minimum": 0
+        },
+        "bevelThickness": {
+          "type": "number",
+          "minimum": 0
+        },
+        "bevelSegments": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 512
+        },
         "edgeTapers": {
           "type": "array",
           "maxItems": 8,
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["path", "width", "tipThickness"],
+            "required": [
+              "path",
+              "width",
+              "tipThickness"
+            ],
             "properties": {
-              "path": { "type": "array", "minItems": 2, "maxItems": 512, "items": { "$ref": "#/$defs/vec2" } },
-              "width": { "type": "number", "exclusiveMinimum": 0 },
-              "tipThickness": { "type": "number", "exclusiveMinimum": 0 },
-              "curve": { "type": "number", "minimum": 0.25, "maximum": 4 }
+              "path": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 512,
+                "items": {
+                  "$ref": "#/$defs/vec2"
+                }
+              },
+              "width": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "tipThickness": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "curve": {
+                "type": "number",
+                "minimum": 0.25,
+                "maximum": 4
+              }
             }
           }
         }
       }
     },
     "lathe": {
-      "type": "object", "required": ["op", "profile"], "additionalProperties": false,
-      "properties": {"op": {"const": "lathe"}, "profile": {"type": "array", "minItems": 3, "maxItems": 4096, "items": {"$ref": "#/$defs/vec2"}}, "segments": {"type": "integer", "minimum": 3, "maximum": 512}, "normalPolicy": {"oneOf": [{"type": "object", "additionalProperties": false, "required": ["schema", "creaseAngleRad", "weighting"], "properties": {"schema": {"const": "morphloom.lathe-normals/0.1"}, "creaseAngleRad": {"type": "number", "minimum": 0, "maximum": 3.141592653589793}, "weighting": {"const": "corner-angle"}}}, {"type":"object","additionalProperties":false,"required":["schema","weighting"],"properties":{"schema":{"const":"morphloom.lathe-normals/0.2"},"weighting":{"const":"profile-surfaces"}}}]}}
-    },
-    "tube": {"type": "object", "required": ["op", "points", "radius"], "additionalProperties": false, "properties": {"op": {"const": "tube"}, "points": {"type": "array", "minItems": 2, "maxItems": 4096, "items": {"$ref": "#/$defs/vec3"}}, "radius": {"type": "number", "exclusiveMinimum": 0}, "tubularSegments": {"type": "integer", "minimum": 3, "maximum": 512}, "radialSegments": {"type": "integer", "minimum": 3, "maximum": 512}, "closed": {"type": "boolean"}, "curve": {"type": "object", "additionalProperties": false, "required": ["schema", "controlPointMm"], "properties": {"schema": {"const": "morphloom.tube-quadratic-bezier/0.1"}, "controlPointMm": {"$ref": "#/$defs/vec3"}}}, "capWinding": {"const": "outward"}, "capFinish": {"const": "flat-outward"}}, "allOf": [{"if": {"required": ["curve"]}, "then": {"properties": {"points": {"minItems": 2, "maxItems": 2}, "closed": {"const": false}}}}, {"if": {"required": ["capWinding"]}, "then": {"properties": {"closed": {"const": false}}}}, {"if": {"required": ["capFinish"]}, "then": {"properties": {"closed": {"const": false}}}}]},
-    "surfacePatch": {
       "type": "object",
-      "required": ["op", "size", "baseThickness", "segments", "seed", "macroAmplitude", "aggregateAmplitude", "aggregateScale"],
+      "required": [
+        "op",
+        "profile"
+      ],
       "additionalProperties": false,
       "properties": {
-        "op": { "const": "surfacePatch" },
-        "size": { "$ref": "#/$defs/vec2" },
-        "baseThickness": { "type": "number", "exclusiveMinimum": 0 },
-        "segments": { "type": "array", "prefixItems": [{ "type": "integer", "minimum": 2, "maximum": 256 }, { "type": "integer", "minimum": 2, "maximum": 256 }], "minItems": 2, "maxItems": 2 },
-        "seed": { "type": "integer", "minimum": 0, "maximum": 2147483647 },
-        "macroAmplitude": { "type": "number", "minimum": 0 },
-        "aggregateAmplitude": { "type": "number", "minimum": 0 },
-        "aggregateScale": { "type": "number", "exclusiveMinimum": 0 },
+        "op": {
+          "const": "lathe"
+        },
+        "profile": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 4096,
+          "items": {
+            "$ref": "#/$defs/vec2"
+          }
+        },
+        "segments": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 512
+        },
+        "normalPolicy": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "schema",
+                "creaseAngleRad",
+                "weighting"
+              ],
+              "properties": {
+                "schema": {
+                  "const": "morphloom.lathe-normals/0.1"
+                },
+                "creaseAngleRad": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 3.141592653589793
+                },
+                "weighting": {
+                  "const": "corner-angle"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "schema",
+                "weighting"
+              ],
+              "properties": {
+                "schema": {
+                  "const": "morphloom.lathe-normals/0.2"
+                },
+                "weighting": {
+                  "const": "profile-surfaces"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "tube": {
+      "type": "object",
+      "required": [
+        "op",
+        "points",
+        "radius"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "tube"
+        },
+        "points": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4096,
+          "items": {
+            "$ref": "#/$defs/vec3"
+          }
+        },
+        "radius": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "tubularSegments": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 512
+        },
+        "radialSegments": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 512
+        },
+        "closed": {
+          "type": "boolean"
+        },
+        "curve": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema",
+            "controlPointMm"
+          ],
+          "properties": {
+            "schema": {
+              "const": "morphloom.tube-quadratic-bezier/0.1"
+            },
+            "controlPointMm": {
+              "$ref": "#/$defs/vec3"
+            }
+          }
+        },
+        "capWinding": {
+          "const": "outward"
+        },
+        "capFinish": {
+          "const": "flat-outward"
+        },
+        "radiusProfile": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema",
+            "stations"
+          ],
+          "properties": {
+            "schema": {
+              "const": "sceliph.tube-radius-profile/0.1"
+            },
+            "stations": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 16,
+              "items": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "prefixItems": [
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "number",
+                    "minimum": 0.1,
+                    "maximum": 100000
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "curve"
+            ]
+          },
+          "then": {
+            "properties": {
+              "points": {
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "closed": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "capWinding"
+            ]
+          },
+          "then": {
+            "properties": {
+              "closed": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "capFinish"
+            ]
+          },
+          "then": {
+            "properties": {
+              "closed": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "radiusProfile"
+            ]
+          },
+          "then": {
+            "required": [
+              "curve",
+              "capFinish"
+            ],
+            "properties": {
+              "closed": {
+                "const": false
+              },
+              "capFinish": {
+                "const": "flat-outward"
+              },
+              "tubularSegments": {
+                "maximum": 256
+              },
+              "radialSegments": {
+                "maximum": 128
+              }
+            }
+          }
+        }
+      ]
+    },
+    "surfacePatch": {
+      "type": "object",
+      "required": [
+        "op",
+        "size",
+        "baseThickness",
+        "segments",
+        "seed",
+        "macroAmplitude",
+        "aggregateAmplitude",
+        "aggregateScale"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "surfacePatch"
+        },
+        "size": {
+          "$ref": "#/$defs/vec2"
+        },
+        "baseThickness": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "segments": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "integer",
+              "minimum": 2,
+              "maximum": 256
+            },
+            {
+              "type": "integer",
+              "minimum": 2,
+              "maximum": 256
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "macroAmplitude": {
+          "type": "number",
+          "minimum": 0
+        },
+        "aggregateAmplitude": {
+          "type": "number",
+          "minimum": 0
+        },
+        "aggregateScale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
         "referenceRelief": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["method", "width", "height", "samples", "amplitudeMm", "blend", "fingerprint", "irregularity"],
+          "required": [
+            "method",
+            "width",
+            "height",
+            "samples",
+            "amplitudeMm",
+            "blend",
+            "fingerprint",
+            "irregularity"
+          ],
           "properties": {
-            "method": { "enum": ["image-highpass-height-v1", "image-multiscale-height-v2", "image-multiscale-height-v3"] },
-            "width": { "type": "integer", "minimum": 2, "maximum": 128 },
-            "height": { "type": "integer", "minimum": 2, "maximum": 128 },
-            "samples": { "type": "array", "minItems": 4, "maxItems": 16384, "items": { "type": "integer", "minimum": -32767, "maximum": 32767 } },
-            "amplitudeMm": { "type": "number", "exclusiveMinimum": 0, "maximum": 100 },
-            "blend": { "type": "number", "minimum": 0, "maximum": 1 },
-            "fingerprint": { "type": "string", "pattern": "^[a-fA-F0-9]{8,128}$" },
-            "irregularity": { "type": "number", "minimum": 0, "maximum": 1 }
+            "method": {
+              "enum": [
+                "image-highpass-height-v1",
+                "image-multiscale-height-v2",
+                "image-multiscale-height-v3"
+              ]
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 2,
+              "maximum": 128
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 2,
+              "maximum": 128
+            },
+            "samples": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 16384,
+              "items": {
+                "type": "integer",
+                "minimum": -32767,
+                "maximum": 32767
+              }
+            },
+            "amplitudeMm": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 100
+            },
+            "blend": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "fingerprint": {
+              "type": "string",
+              "pattern": "^[a-fA-F0-9]{8,128}$"
+            },
+            "irregularity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
           }
         }
       }
     },
     "hipRoof": {
-      "type": "object", "required": ["op", "width", "depth", "rise", "thickness", "ridgeLength"], "additionalProperties": false,
-      "properties": {
-        "op": { "const": "hipRoof" },
-        "width": { "type": "number", "exclusiveMinimum": 0 },
-        "depth": { "type": "number", "exclusiveMinimum": 0 },
-        "rise": { "type": "number", "exclusiveMinimum": 0 },
-        "thickness": { "type": "number", "exclusiveMinimum": 0 },
-        "ridgeLength": { "type": "number", "minimum": 0 }
-      }
-    },
-    "bladeLoft": {"type": "object", "required": ["op", "sections", "thickness", "apexThickness"], "additionalProperties": false, "properties": {"op": {"const": "bladeLoft"}, "sections": {"type": "array", "minItems": 2, "maxItems": 512, "items": {"$ref": "#/$defs/vec2"}}, "thickness": {"type": "number", "exclusiveMinimum": 0}, "apexThickness": {"type": "number", "exclusiveMinimum": 0}, "grindCurve": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "number", "minimum": 0, "maximum": 1}}, "sideWinding": {"type": "object", "additionalProperties": false, "required": ["schema", "direction"], "properties": {"schema": {"const": "morphloom.blade-side-winding/0.1"}, "direction": {"const": "outward"}}}}, "allOf": [{"if": {"required": ["sideWinding"]}, "then": {"properties": {"sections": {"items": {"type": "array", "prefixItems": [{"type": "number", "minimum": -100000, "maximum": 100000}, {"type": "number", "exclusiveMinimum": 0, "maximum": 100000}], "minItems": 2, "maxItems": 2}}, "thickness": {"maximum": 100000}, "apexThickness": {"maximum": 100000}}}}]},
-
-    "visualHull": {
       "type": "object",
-      "required": ["op", "descriptor"],
+      "required": [
+        "op",
+        "width",
+        "depth",
+        "rise",
+        "thickness",
+        "ridgeLength"
+      ],
       "additionalProperties": false,
       "properties": {
-        "op": { "const": "visualHull" },
+        "op": {
+          "const": "hipRoof"
+        },
+        "width": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "depth": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "rise": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "thickness": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "ridgeLength": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "bladeLoft": {
+      "type": "object",
+      "required": [
+        "op",
+        "sections",
+        "thickness",
+        "apexThickness"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "bladeLoft"
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 512,
+          "items": {
+            "$ref": "#/$defs/vec2"
+          }
+        },
+        "thickness": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "apexThickness": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "grindCurve": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "sideWinding": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema",
+            "direction"
+          ],
+          "properties": {
+            "schema": {
+              "const": "morphloom.blade-side-winding/0.1"
+            },
+            "direction": {
+              "const": "outward"
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "sideWinding"
+            ]
+          },
+          "then": {
+            "properties": {
+              "sections": {
+                "items": {
+                  "type": "array",
+                  "prefixItems": [
+                    {
+                      "type": "number",
+                      "minimum": -100000,
+                      "maximum": 100000
+                    },
+                    {
+                      "type": "number",
+                      "exclusiveMinimum": 0,
+                      "maximum": 100000
+                    }
+                  ],
+                  "minItems": 2,
+                  "maxItems": 2
+                }
+              },
+              "thickness": {
+                "maximum": 100000
+              },
+              "apexThickness": {
+                "maximum": 100000
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualHull": {
+      "type": "object",
+      "required": [
+        "op",
+        "descriptor"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "visualHull"
+        },
         "descriptor": {
           "type": "object",
-          "required": ["projection", "boundsSpace", "bounds", "resolution", "triangleBudget", "views"],
+          "required": [
+            "projection",
+            "boundsSpace",
+            "bounds",
+            "resolution",
+            "triangleBudget",
+            "views"
+          ],
           "additionalProperties": false,
           "properties": {
-            "projection": { "const": "orthographic" },
-            "boundsSpace": { "const": "component-local" },
+            "projection": {
+              "const": "orthographic"
+            },
+            "boundsSpace": {
+              "const": "component-local"
+            },
             "bounds": {
               "type": "object",
-              "required": ["min", "max"],
+              "required": [
+                "min",
+                "max"
+              ],
               "additionalProperties": false,
-              "properties": { "min": { "$ref": "#/$defs/vec3" }, "max": { "$ref": "#/$defs/vec3" } }
+              "properties": {
+                "min": {
+                  "$ref": "#/$defs/vec3"
+                },
+                "max": {
+                  "$ref": "#/$defs/vec3"
+                }
+              }
             },
-            "resolution": { "type": "integer", "minimum": 4, "maximum": 32 },
-            "triangleBudget": { "type": "integer", "minimum": 1, "maximum": 400000 },
-            "silhouetteToleranceVoxels": { "type": "integer", "minimum": 0, "maximum": 2 },
+            "resolution": {
+              "type": "integer",
+              "minimum": 4,
+              "maximum": 32
+            },
+            "triangleBudget": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 400000
+            },
+            "silhouetteToleranceVoxels": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2
+            },
             "views": {
               "type": "array",
               "minItems": 2,
               "maxItems": 3,
               "items": {
                 "type": "object",
-                "required": ["axis", "confidence", "mask"],
+                "required": [
+                  "axis",
+                  "confidence",
+                  "mask"
+                ],
                 "additionalProperties": false,
                 "properties": {
-                  "axis": { "enum": ["front", "side", "top"] },
-                  "confidence": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 },
-                  "mask": { "type": "array", "minItems": 4, "maxItems": 256, "items": { "type": "string", "minLength": 4, "maxLength": 256, "pattern": "^[01]+$" } }
+                  "axis": {
+                    "enum": [
+                      "front",
+                      "side",
+                      "top"
+                    ]
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "exclusiveMinimum": 0,
+                    "maximum": 1
+                  },
+                  "mask": {
+                    "type": "array",
+                    "minItems": 4,
+                    "maxItems": 256,
+                    "items": {
+                      "type": "string",
+                      "minLength": 4,
+                      "maxLength": 256,
+                      "pattern": "^[01]+$"
+                    }
+                  }
                 }
               }
             },
-            "hiddenRegions": { "type": "array", "maxItems": 256, "items": { "type": "string", "minLength": 1, "maxLength": 256 } }
+            "hiddenRegions": {
+              "type": "array",
+              "maxItems": 256,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              }
+            }
           }
         }
       }
@@ -363,14 +1780,27 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "position": { "$ref": "#/$defs/vec3" },
-        "rotation": { "$ref": "#/$defs/vec3" },
+        "position": {
+          "$ref": "#/$defs/vec3"
+        },
+        "rotation": {
+          "$ref": "#/$defs/vec3"
+        },
         "scale": {
           "type": "array",
           "prefixItems": [
-            { "type": "number", "exclusiveMinimum": 0 },
-            { "type": "number", "exclusiveMinimum": 0 },
-            { "type": "number", "exclusiveMinimum": 0 }
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
           ],
           "minItems": 3,
           "maxItems": 3
@@ -379,33 +1809,71 @@
     },
     "implicitPrimitive": {
       "type": "object",
-      "required": ["id", "type"],
+      "required": [
+        "id",
+        "type"
+      ],
       "additionalProperties": false,
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "type": { "enum": ["sphere", "capsule", "box", "cone", "ellipsoid"] },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "type": {
+          "enum": [
+            "sphere",
+            "capsule",
+            "box",
+            "cone",
+            "ellipsoid"
+          ]
+        },
         "radius": {
           "oneOf": [
-            { "type": "number", "exclusiveMinimum": 0 },
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
             {
               "type": "array",
               "prefixItems": [
-                { "type": "number", "exclusiveMinimum": 0 },
-                { "type": "number", "exclusiveMinimum": 0 },
-                { "type": "number", "exclusiveMinimum": 0 }
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
               ],
               "minItems": 3,
               "maxItems": 3
             }
           ]
         },
-        "height": { "type": "number", "exclusiveMinimum": 0 },
+        "height": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
         "size": {
           "type": "array",
           "prefixItems": [
-            { "type": "number", "exclusiveMinimum": 0 },
-            { "type": "number", "exclusiveMinimum": 0 },
-            { "type": "number", "exclusiveMinimum": 0 }
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
           ],
           "minItems": 3,
           "maxItems": 3
@@ -413,50 +1881,168 @@
         "radii": {
           "type": "array",
           "prefixItems": [
-            { "type": "number", "exclusiveMinimum": 0 },
-            { "type": "number", "exclusiveMinimum": 0 },
-            { "type": "number", "exclusiveMinimum": 0 }
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
           ],
           "minItems": 3,
           "maxItems": 3
         },
-        "transform": { "$ref": "#/$defs/implicitTransform" }
-      }
+        "sectionShape": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema",
+            "radialPower",
+            "axialPower"
+          ],
+          "properties": {
+            "schema": {
+              "const": "sceliph.ellipsoid-section-shape/0.1"
+            },
+            "radialPower": {
+              "type": "number",
+              "minimum": 1.5,
+              "maximum": 4
+            },
+            "axialPower": {
+              "type": "number",
+              "minimum": 1.5,
+              "maximum": 4
+            }
+          }
+        },
+        "transform": {
+          "$ref": "#/$defs/implicitTransform"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "sectionShape"
+            ]
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "const": "ellipsoid"
+              }
+            }
+          }
+        }
+      ]
     },
     "implicitOperation": {
       "type": "object",
-      "required": ["id", "type", "left", "right"],
+      "required": [
+        "id",
+        "type",
+        "left",
+        "right"
+      ],
       "additionalProperties": false,
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "type": { "enum": ["smooth-union", "subtract", "intersect"] },
-        "left": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "right": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "radius": { "type": "number", "exclusiveMinimum": 0 }
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "type": {
+          "enum": [
+            "smooth-union",
+            "subtract",
+            "intersect"
+          ]
+        },
+        "left": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "right": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "radius": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
       }
     },
     "implicitSurface": {
       "type": "object",
-      "required": ["op", "descriptor"],
+      "required": [
+        "op",
+        "descriptor"
+      ],
       "additionalProperties": false,
       "properties": {
-        "op": { "const": "implicitSurface" },
+        "op": {
+          "const": "implicitSurface"
+        },
         "descriptor": {
           "type": "object",
-          "required": ["bounds", "resolution", "triangleBudget", "primitives"],
+          "required": [
+            "bounds",
+            "resolution",
+            "triangleBudget",
+            "primitives"
+          ],
           "additionalProperties": false,
           "properties": {
             "bounds": {
               "type": "object",
-              "required": ["min", "max"],
+              "required": [
+                "min",
+                "max"
+              ],
               "additionalProperties": false,
-              "properties": { "min": { "$ref": "#/$defs/vec3" }, "max": { "$ref": "#/$defs/vec3" } }
+              "properties": {
+                "min": {
+                  "$ref": "#/$defs/vec3"
+                },
+                "max": {
+                  "$ref": "#/$defs/vec3"
+                }
+              }
             },
-            "resolution": { "type": "integer", "minimum": 8, "maximum": 64 },
-            "triangleBudget": { "type": "integer", "minimum": 1, "maximum": 400000 },
-            "primitives": { "type": "array", "minItems": 1, "maxItems": 64, "items": { "$ref": "#/$defs/implicitPrimitive" } },
-            "operations": { "type": "array", "maxItems": 128, "items": { "$ref": "#/$defs/implicitOperation" } },
-            "output": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" }
+            "resolution": {
+              "type": "integer",
+              "minimum": 8,
+              "maximum": 64
+            },
+            "triangleBudget": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 400000
+            },
+            "primitives": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 64,
+              "items": {
+                "$ref": "#/$defs/implicitPrimitive"
+              }
+            },
+            "operations": {
+              "type": "array",
+              "maxItems": 128,
+              "items": {
+                "$ref": "#/$defs/implicitOperation"
+              }
+            },
+            "output": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+            }
           }
         }
       }
@@ -464,92 +2050,281 @@
     "electricalHarness": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["ports", "wires"],
+      "required": [
+        "ports",
+        "wires"
+      ],
       "properties": {
-        "endpointToleranceMm": { "type": "number", "exclusiveMinimum": 0, "maximum": 10 },
-        "portToleranceMm": { "type": "number", "exclusiveMinimum": 0, "maximum": 10 },
-        "verificationScope": { "type": "string", "maxLength": 500 },
-        "passiveNodes": { "type": "array", "maxItems": 256, "items": { "$ref": "#/$defs/passiveNode" } },
-        "benchChecks": { "type": "array", "maxItems": 128, "items": { "$ref": "#/$defs/benchCheck" } },
+        "endpointToleranceMm": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 10
+        },
+        "portToleranceMm": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 10
+        },
+        "verificationScope": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "passiveNodes": {
+          "type": "array",
+          "maxItems": 256,
+          "items": {
+            "$ref": "#/$defs/passiveNode"
+          }
+        },
+        "benchChecks": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {
+            "$ref": "#/$defs/benchCheck"
+          }
+        },
         "ports": {
           "type": "array",
           "maxItems": 2000,
-          "items": { "$ref": "#/$defs/electricalPort" }
+          "items": {
+            "$ref": "#/$defs/electricalPort"
+          }
         },
         "wires": {
           "type": "array",
           "maxItems": 2000,
-          "items": { "$ref": "#/$defs/electricalWire" }
+          "items": {
+            "$ref": "#/$defs/electricalWire"
+          }
         }
       }
     },
     "electricalPort": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "componentId", "pin", "signal", "position"],
+      "required": [
+        "id",
+        "componentId",
+        "pin",
+        "signal",
+        "position"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "componentId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "pin": { "type": "string", "minLength": 1, "maxLength": 80 },
-        "physicalPin": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "signal": { "$ref": "#/$defs/electricalSignal" },
-        "position": { "$ref": "#/$defs/vec3" },
-        "direction": { "$ref": "#/$defs/vec3" },
-        "required": { "type": "boolean" },
-        "maxConnections": { "type": "integer", "minimum": 1, "maximum": 64 }
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "componentId": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "pin": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "physicalPin": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "signal": {
+          "$ref": "#/$defs/electricalSignal"
+        },
+        "position": {
+          "$ref": "#/$defs/vec3"
+        },
+        "direction": {
+          "$ref": "#/$defs/vec3"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "maxConnections": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        }
       }
     },
     "electricalWire": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "name", "net", "signal", "from", "to", "diameter", "color"],
+      "required": [
+        "id",
+        "name",
+        "net",
+        "signal",
+        "from",
+        "to",
+        "diameter",
+        "color"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "name": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "net": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "signal": { "$ref": "#/$defs/electricalSignal" },
-        "from": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "to": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "waypoints": { "type": "array", "maxItems": 128, "items": { "$ref": "#/$defs/vec3" } },
-        "diameter": { "type": "number", "exclusiveMinimum": 0, "maximum": 20 },
-        "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
-        "materialName": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "shielded": { "type": "boolean" },
-        "capFinish": {
-          "type": "object", "additionalProperties": false, "required": ["schema", "finish"],
-          "properties": { "schema": { "const": "morphloom.wire-cap-finish/0.1" }, "finish": { "const": "flat-outward" } }
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
         },
-        "gauge": { "type": "string", "pattern": "^(?:[0-9]{1,2}(?:\\.[0-9]+)?[Aa][Ww][Gg]|[0-9]+(?:\\.[0-9]+)?mm2)$" },
-        "verification": { "$ref": "#/$defs/verification" }
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "net": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "signal": {
+          "$ref": "#/$defs/electricalSignal"
+        },
+        "from": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "to": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "waypoints": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {
+            "$ref": "#/$defs/vec3"
+          }
+        },
+        "diameter": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 20
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "materialName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "shielded": {
+          "type": "boolean"
+        },
+        "capFinish": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema",
+            "finish"
+          ],
+          "properties": {
+            "schema": {
+              "const": "morphloom.wire-cap-finish/0.1"
+            },
+            "finish": {
+              "const": "flat-outward"
+            }
+          }
+        },
+        "gauge": {
+          "type": "string",
+          "pattern": "^(?:[0-9]{1,2}(?:\\.[0-9]+)?[Aa][Ww][Gg]|[0-9]+(?:\\.[0-9]+)?mm2)$"
+        },
+        "verification": {
+          "$ref": "#/$defs/verification"
+        }
       },
-      "allOf": [{ "if": { "required": ["capFinish"] }, "then": { "properties": { "diameter": { "minimum": 0.01 } } } }]
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "capFinish"
+            ]
+          },
+          "then": {
+            "properties": {
+              "diameter": {
+                "minimum": 0.01
+              }
+            }
+          }
+        }
+      ]
     },
     "passiveNode": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["ref", "node", "detail", "verification"],
+      "required": [
+        "ref",
+        "node",
+        "detail",
+        "verification"
+      ],
       "properties": {
-        "ref": { "type": "string", "minLength": 1, "maxLength": 120 },
-        "node": { "type": "string", "minLength": 1, "maxLength": 500 },
-        "detail": { "type": "string", "maxLength": 500 },
-        "verification": { "$ref": "#/$defs/verification" }
+        "ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "node": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "detail": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "verification": {
+          "$ref": "#/$defs/verification"
+        }
       }
     },
     "benchCheck": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "instruction", "status"],
+      "required": [
+        "id",
+        "instruction",
+        "status"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,80}$" },
-        "instruction": { "type": "string", "minLength": 1, "maxLength": 500 },
-        "status": { "enum": ["required", "passed", "failed"] }
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+        },
+        "instruction": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "status": {
+          "enum": [
+            "required",
+            "passed",
+            "failed"
+          ]
+        }
       }
     },
     "verification": {
-      "enum": ["datasheet", "design", "bench-required", "bench-verified", "inferred"]
+      "enum": [
+        "datasheet",
+        "design",
+        "bench-required",
+        "bench-verified",
+        "inferred"
+      ]
     },
     "electricalSignal": {
-      "enum": ["power", "ground", "data", "rf", "audio", "sensor", "control"]
+      "enum": [
+        "power",
+        "ground",
+        "data",
+        "rf",
+        "audio",
+        "sensor",
+        "control"
+      ]
     }
   }
 }

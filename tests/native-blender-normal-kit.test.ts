@@ -5,6 +5,7 @@ import {generateBearingProject} from '../src/engine/bearing-pack';
 import {exportSelectedScene} from '../src/engine/element-renderer';
 import {buildNativeBlenderNormalKit} from '../src/engine/blender-normal-kit';
 import {readFileSync} from 'node:fs';
+import {Buffer} from 'node:buffer';
 const scripts={wrapper:readFileSync('scripts/blender-source-normal-import.py','utf8'),helper:readFileSync('scripts/blender_source_normal_import.py','utf8'),license:readFileSync('LICENSE','utf8')};
 async function fixture(){
  vi.stubGlobal('FileReader',class{result:unknown;onloadend?:()=>void;async readAsArrayBuffer(blob:Blob){this.result=await blob.arrayBuffer();this.onloadend?.();}});
@@ -12,8 +13,11 @@ async function fixture(){
  try{return {source:{...project,selection:ids},glb:await new GLTFExporter().parseAsync(built.root,{binary:true}) as ArrayBuffer};}finally{built.dispose();}
 }
 it('packs actual native bearing bytes and editable source without claiming native execution',async()=>{
- try{const f=await fixture(),a=await buildNativeBlenderNormalKit(f.glb,f.source,scripts),b=await buildNativeBlenderNormalKit(f.glb,f.source,scripts);expect(a).toEqual(b);
- const files=unzipSync(a);expect(files['model.glb']).toEqual(new Uint8Array(f.glb));expect(JSON.parse(strFromU8(files['source.json']))).toEqual(f.source);
+ try{const f=await fixture(),a=await buildNativeBlenderNormalKit(f.glb,f.source,scripts),b=await buildNativeBlenderNormalKit(f.glb,f.source,scripts);
+ // Native byte comparison checks every byte and length, without recursively
+ // treating millions of binary entries as object properties. No tolerance.
+ expect(a.constructor).toBe(b.constructor);expect(Buffer.compare(Buffer.from(a),Buffer.from(b))).toBe(0);
+ const files=unzipSync(a);expect(Buffer.compare(Buffer.from(files['model.glb']),Buffer.from(f.glb))).toBe(0);expect(JSON.parse(strFromU8(files['source.json']))).toEqual(f.source);
  const m=JSON.parse(strFromU8(files['manifest.json']));expect(m.schema).toBe('sceliph.blender-normal-kit/0.2');expect(m.nativeImportVerified).toBe(false);expect(m.rendererRevision).toBe('morphloom.element-renderer/0.12');
  }finally{vi.unstubAllGlobals();}
 });

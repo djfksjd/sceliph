@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sceliph.assembly-primary-recipe/0.3",
+  "title": "Sceliph bounded AssemblyIR primary form recipe",
+  "description": "Version 0.3 adds bounded ellipsoid-section-shape edits. 0.1/0.2 retain their operations and reject this new operation. Unknown versions fail atomically. Section exponents are dimensionless; existing semi-axes and transforms remain. Source fingerprint and closed-solid/contact checks required.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "sourceFingerprint",
+    "steps"
+  ],
+  "properties": {
+    "schema": {
+      "const": "sceliph.assembly-primary-recipe/0.3"
+    },
+    "sourceFingerprint": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "componentId",
+              "primitiveId",
+              "radiiMm"
+            ],
+            "properties": {
+              "op": {
+                "const": "ellipsoid-radii"
+              },
+              "componentId": {
+                "type": "string"
+              },
+              "primitiveId": {
+                "type": "string"
+              },
+              "radiiMm": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number",
+                  "minimum": 0.1,
+                  "maximum": 100000
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "componentId",
+              "stations"
+            ],
+            "properties": {
+              "op": {
+                "const": "tube-radius-profile"
+              },
+              "componentId": {
+                "type": "string"
+              },
+              "stations": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 16,
+                "items": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "prefixItems": [
+                    {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    {
+                      "type": "number",
+                      "minimum": 0.1,
+                      "maximum": 100000
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "componentId",
+              "primitiveId",
+              "radialPower",
+              "axialPower"
+            ],
+            "properties": {
+              "op": {
+                "const": "ellipsoid-section-shape"
+              },
+              "componentId": {
+                "type": "string"
+              },
+              "primitiveId": {
+                "type": "string"
+              },
+              "radialPower": {
+                "type": "number",
+                "minimum": 1.5,
+                "maximum": 4
+              },
+              "axialPower": {
+                "type": "number",
+                "minimum": 1.5,
+                "maximum": 4
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

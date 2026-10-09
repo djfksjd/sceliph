@@ -1,0 +1,153 @@
+{
+  "schema": "sceliph.lathe-circumference-evidence/0.1",
+  "node": "v24.13.1",
+  "platform": "darwin",
+  "arch": "arm64",
+  "inputSha256": "8584fb7a0af30f56c0b6017f0f36ac659f61f1a31ca282feb2f93f99525a1dd4",
+  "sourceSha256": "1433a6e5fc2589102ea8abb0e046e47652c700a3fc3357fe16406bd30b2fa8af",
+  "componentId": "bushing",
+  "toleranceMm": 0.03,
+  "before": {
+    "maximumDeviationMm": 0.26900600977974065,
+    "triangles": 64,
+    "rings": [
+      {
+        "profileIndex": 1,
+        "radiusMm": 14,
+        "maximumDeviationMm": 0.26900600977974065
+      },
+      {
+        "profileIndex": 2,
+        "radiusMm": 14,
+        "maximumDeviationMm": 0.26900600977974065
+      }
+    ]
+  },
+  "fitted": {
+    "geometry": {
+      "op": "lathe",
+      "profile": [
+        [
+          0,
+          6
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          14,
+          -6
+        ],
+        [
+          0,
+          -6
+        ]
+      ],
+      "segments": 48,
+      "normalPolicy": {
+        "schema": "morphloom.lathe-normals/0.1",
+        "creaseAngleRad": 0.5235987755982988,
+        "weighting": "corner-angle"
+      }
+    },
+    "measurement": {
+      "maximumDeviationMm": 0.029975443072530084,
+      "triangles": 192,
+      "rings": [
+        {
+          "profileIndex": 1,
+          "radiusMm": 14,
+          "maximumDeviationMm": 0.029975443072530084
+        },
+        {
+          "profileIndex": 2,
+          "radiusMm": 14,
+          "maximumDeviationMm": 0.029975443072530084
+        }
+      ]
+    }
+  },
+  "reports": [
+    {
+      "name": "before",
+      "sha256": "188393f8b275ed9667ec060228cad3fff6dad62fd1f3de905a2477989eb9c65f",
+      "bytes": 73388,
+      "measurement": {
+        "maximumDeviationMm": 0.26900600977974065,
+        "triangles": 64,
+        "rings": [
+          {
+            "profileIndex": 1,
+            "radiusMm": 14,
+            "maximumDeviationMm": 0.26900600977974065
+          },
+          {
+            "profileIndex": 2,
+            "radiusMm": 14,
+            "maximumDeviationMm": 0.26900600977974065
+          }
+        ]
+      },
+      "khronos": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "name": "after",
+      "sha256": "bf3db4b045f8c5e7056c46469c02a4948cc5a96297fa886ec0e40a66353d456d",
+      "bytes": 85680,
+      "measurement": {
+        "maximumDeviationMm": 0.029975443072530084,
+        "triangles": 192,
+        "rings": [
+          {
+            "profileIndex": 1,
+            "radiusMm": 14,
+            "maximumDeviationMm": 0.029975443072530084
+          },
+          {
+            "profileIndex": 2,
+            "radiusMm": 14,
+            "maximumDeviationMm": 0.029975443072530084
+          }
+        ]
+      },
+      "khronos": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "name": "reopened",
+      "sha256": "bf3db4b045f8c5e7056c46469c02a4948cc5a96297fa886ec0e40a66353d456d",
+      "bytes": 85680,
+      "measurement": {
+        "maximumDeviationMm": 0.029975443072530084,
+        "triangles": 192,
+        "rings": [
+          {
+            "profileIndex": 1,
+            "radiusMm": 14,
+            "maximumDeviationMm": 0.029975443072530084
+          },
+          {
+            "profileIndex": 2,
+            "radiusMm": 14,
+            "maximumDeviationMm": 0.029975443072530084
+          }
+        ]
+      },
+      "khronos": {
+        "errors": 0,
+        "warnings": 0
+      }
+    }
+  ],
+  "strictReopenBytes": true,
+  "boundsPreserved": true,
+  "nonTargetBuffersMaterialsHierarchyPreserved": true,
+  "browser": "not-run",
+  "blender": "not-run"
+}

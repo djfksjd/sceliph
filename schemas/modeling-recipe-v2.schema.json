@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sceliph.modeling-recipe/0.2",
+  "title": "Sceliph bounded native modeling recipe",
+  "description": "Version0.2 adds anchor-align. Engine accepts0.1 with its original two operations; no IR migration. Unsupported versions and unsupported0.1 operations fail atomically. Anchor fractions must lie on analytic ellipsoids with opposed normals. Existing angle/row/lock constraints also apply.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "sourceSHA256",
+    "steps"
+  ],
+  "properties": {
+    "schema": {
+      "const": "sceliph.modeling-recipe/0.2"
+    },
+    "sourceSHA256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 16,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "groupId",
+              "direction",
+              "elevationDegrees"
+            ],
+            "properties": {
+              "op": {
+                "const": "surface-flow"
+              },
+              "groupId": {
+                "type": "string"
+              },
+              "direction": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "elevationDegrees": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 85
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "groupId",
+              "direction",
+              "elevationDegrees",
+              "rows",
+              "latitudeDegrees",
+              "azimuthDegrees"
+            ],
+            "properties": {
+              "op": {
+                "const": "surface-rows"
+              },
+              "groupId": {
+                "type": "string"
+              },
+              "direction": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "elevationDegrees": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 85
+              },
+              "rows": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "latitudeDegrees": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": -89,
+                  "maximum": 89
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "azimuthDegrees": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": -360,
+                  "maximum": 360
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "targetId",
+              "targetAnchor",
+              "referenceId",
+              "referenceAnchor"
+            ],
+            "properties": {
+              "op": {
+                "const": "anchor-align"
+              },
+              "targetId": {
+                "type": "string"
+              },
+              "referenceId": {
+                "type": "string"
+              },
+              "targetAnchor": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number",
+                  "minimum": -0.5,
+                  "maximum": 0.5
+                }
+              },
+              "referenceAnchor": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number",
+                  "minimum": -0.5,
+                  "maximum": 0.5
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

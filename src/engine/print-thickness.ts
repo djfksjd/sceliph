@@ -218,6 +218,16 @@ function collectMeshTriangles(
   };
 }
 
+/** Reuses the thickness audit's bounded edge-connected shell collection, without ray sampling. */
+export function auditMeshConnectedShells(mesh: THREE.Mesh, maximumTriangles = 50_000): { complete: boolean; shells: number } {
+  const limit = finitePositiveInteger(maximumTriangles, 50_000, 500_000);
+  const triangleCount = meshTriangleCount(mesh);
+  if (triangleCount < 1 || triangleCount > limit) return { complete: false, shells: 0 };
+  mesh.updateWorldMatrix(true, false);
+  const collected = collectMeshTriangles(mesh, triangleCount, limit * 3, limit * 3);
+  return { complete: Boolean(collected?.componentCollectionComplete && collected.validTriangles.length === triangleCount), shells: collected?.components.length ?? 0 };
+}
+
 function rayTriangleDistance(
   triangles: Float64Array,
   triangle: number,

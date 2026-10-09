@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sceliph.modeling-recipe/0.1",
+  "title": "Sceliph bounded native modeling recipe",
+  "description": "Source hash uses modelingSourceSHA256. Engine additionally requires ascending angle ranges, azimuth span <=360, rows dividing count, nonzero nonparallel flow and unlocked ellipsoid-surface generated members. Unsupported versions fail; no prior recipe version is migrated. Existing IR schemas are unchanged.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "sourceSHA256",
+    "steps"
+  ],
+  "properties": {
+    "schema": {
+      "const": "sceliph.modeling-recipe/0.1"
+    },
+    "sourceSHA256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 16,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "groupId",
+              "direction",
+              "elevationDegrees"
+            ],
+            "properties": {
+              "op": {
+                "const": "surface-flow"
+              },
+              "groupId": {
+                "type": "string"
+              },
+              "direction": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "elevationDegrees": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 85
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "groupId",
+              "direction",
+              "elevationDegrees",
+              "rows",
+              "latitudeDegrees",
+              "azimuthDegrees"
+            ],
+            "properties": {
+              "op": {
+                "const": "surface-rows"
+              },
+              "groupId": {
+                "type": "string"
+              },
+              "direction": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "elevationDegrees": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 85
+              },
+              "rows": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "latitudeDegrees": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": -89,
+                  "maximum": 89
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "azimuthDegrees": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": -360,
+                  "maximum": 360
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

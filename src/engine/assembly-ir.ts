@@ -1,3 +1,5 @@
+import type { SavedSectionChecks } from './saved-section-check-contract';
+import type { TubeRadiusProfileIR } from './tube-radius-profile';
 import type {LatheNormalPolicy} from './lathe-normal-policy';
 import type {ArchitecturalProgramDescriptor} from './architectural-program';
 import type {WireCapFinishIR} from './wire-cap-finish';
@@ -37,7 +39,7 @@ export type AssemblyGeometryIR =
     }>;
   }
   | { op: 'lathe'; profile: Array<[number, number]>; segments?: number; normalPolicy?: LatheNormalPolicy }
-  | { op: 'tube'; points: Array<[number, number, number]>; radius: number; tubularSegments?: number; radialSegments?: number; closed?: boolean; capWinding?: 'outward'; capFinish?: 'flat-outward'; curve?: TubeQuadraticCurveIR }
+  | { op: 'tube'; points: Array<[number, number, number]>; radius: number; tubularSegments?: number; radialSegments?: number; closed?: boolean; capWinding?: 'outward'; capFinish?: 'flat-outward'; curve?: TubeQuadraticCurveIR; radiusProfile?: TubeRadiusProfileIR }
   | {
     op: 'surfacePatch';
     /** Horizontal X×Z size in millimetres. */
@@ -279,5 +281,6 @@ export interface AssemblyIR {
   architecturalProgram?: ArchitecturalProgramDescriptor;
   /** Evidence-bound dimensions re-measured from compiled world-space geometry. */
   dimensionContracts?: DimensionContract[];
+  sectionMeshChecks?: SavedSectionChecks;
   metadata?: Record<string, string | number | boolean>;
 }

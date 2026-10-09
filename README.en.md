@@ -26,7 +26,26 @@ Sceliph is an open-source local tool that turns photographs, drawings, measureme
 
 The supplied hero image is **brand artwork**, not an engine-generated asset or quality-validation result.
 
-Status below reflects the **2026-10-04 checkpoint**, distinguishing the translation workflow from subsequent validation fixes.
+### Latest engine checkpoint · 2026-10-07
+
+The core remains LLM-authored declarative IR executed by a local geometry engine. This update adds primary-form contact witnesses, tapered tubes, ellipsoid section controls, measured surface-error budgets, edit diagnostics and safer native JSON replacement. No dedicated neural 3D generator is added to the default dependencies.
+
+| Scope | Measured improvement | Limits |
+|---|---|---|
+| Sphere refinement | 3mm authored sphere facet deviation: 0.01001→0.00462mm | Primitive-local error, not measured reconstruction accuracy |
+| Lathe refinement | Default bushing circumference deviation: 0.26901→0.02998mm; bounds and unrelated attributes preserved | Explicit CLI, cardinal grids and raw scalar PBR; not CAD/BREP |
+| Local editing | Declarative recipes, contact witnesses, tapered beak and section controls | Authored bird study, no anatomical or physical certification |
+| Edit safety | Failed/stale Fit blocks Apply; unresolved native JSON imports block old-source saving/export | Code tests verified; latest actual browser operations blocked/not-run |
+| Publication checks | 148 files / 957 tests, typecheck, benchmark and build PASS | Fresh macOS arm64/Node24 execution on publication code |
+| Production delivery | **Not achieved** | Global gates and Blender normal drift remain unresolved |
+
+See the [publication checkpoint](./docs/GITHUB_CHECKPOINT_20261007.ko.md) for the freshly isolated publication tests and SHA receipts. The earlier local count of 976 included 19 unrelated thermal tests and is not reused as the published code's test count. Existing 5% UV and strict GLB contracts remain unchanged.
+
+[Sphere error](./docs/SPHERE_SURFACE_BUDGET_STATUS.ko.md) · [Lathe error and CLI](./docs/LATHE_SURFACE_BUDGET_STATUS.ko.md) · [Import safety](./docs/ELEMENT_SOURCE_LOAD_STATUS.ko.md) · [Next steps](./docs/ENGINE_NEXT_PLAN.ko.md)
+
+### Historical checkpoint · 2026-10-04
+
+The following table records its original inputs and revision. It is not new browser or DCC evidence for this update.
 
 | Scope | Evidence | Limits |
 |---|---|---|

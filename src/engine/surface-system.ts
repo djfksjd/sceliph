@@ -234,7 +234,7 @@ function asphaltAggregateSample(x: number, y: number, size: number, seed: number
   return { height: fine.height * 0.64, tone: fine.tone * 0.75 };
 }
 
-const textureCache = new Map<string, { albedo: THREE.Texture; normal: THREE.Texture; roughness: THREE.Texture }>();
+const textureCache = new Map<string, { albedo: THREE.Texture; normal: THREE.Texture; roughness: THREE.Texture; pixelKey: string }>();
 const MAX_SHARED_SURFACE_MAPS = 96;
 export const MAX_SHARED_SURFACE_BYTES = 32 * 1024 * 1024;
 let sharedSurfaceBytes = 0;
@@ -293,58 +293,65 @@ function createMicroSurfaceMaps(
   const key = `${finish}:${pattern}:${scale[0]}:${scale[1]}:${albedoContrast ?? 'preset'}`;
   const cached = textureCache.get(key);
   if (cached) return cached;
+  // Repeat affects the texture transform, not any generated pixel. Reuse an
+  // already retained payload as a read-only source, then allocate independent
+  // textures below. No extra cache or shared overflow ownership is introduced.
+  const pixelKey = `${finish}:${pattern}:${albedoContrast ?? 'preset'}`;
+  const donor = [...textureCache.values()].find(maps => maps.pixelKey === pixelKey);
   const size = pattern === 'aggregate' ? 256 : pattern === 'mineral-flow' ? 128 : 64;
   const allocationBytes = surfaceMapAllocationBytes(size);
-  const albedoData = new Uint8Array(size * size * 4);
-  const normalData = new Uint8Array(size * size * 4);
+  const albedoData: Uint8Array = donor?.albedo.image.data ?? new Uint8Array(size * size * 4);
+  const normalData: Uint8Array = donor?.normal.image.data ?? new Uint8Array(size * size * 4);
   // glTF stores roughness in G and metalness in B of one shared texture.
   // Keeping those channels in one texture avoids GLTFExporter merging one
   // texture per material and preserves each material's scalar metalness.
-  const metallicRoughnessData = new Uint8Array(size * size * 4);
-  const seed = [...finish].reduce((sum, char) => sum + char.charCodeAt(0), 0);
-  const aggregateHeights = pattern === 'aggregate' ? new Float32Array(size * size) : undefined;
-  const aggregateTones = pattern === 'aggregate' ? new Float32Array(size * size) : undefined;
-  if (aggregateHeights && aggregateTones) {
-    for (let y = 0; y < size; y += 1) {
-      for (let x = 0; x < size; x += 1) {
-        const sample = asphaltAggregateSample(x, y, size, seed);
-        const index = y * size + x;
-        aggregateHeights[index] = sample.height;
-        aggregateTones[index] = sample.tone;
+  const metallicRoughnessData: Uint8Array = donor?.roughness.image.data ?? new Uint8Array(size * size * 4);
+  if (!donor) {
+    const seed = [...finish].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+    const aggregateHeights = pattern === 'aggregate' ? new Float32Array(size * size) : undefined;
+    const aggregateTones = pattern === 'aggregate' ? new Float32Array(size * size) : undefined;
+    if (aggregateHeights && aggregateTones) {
+      for (let y = 0; y < size; y += 1) {
+        for (let x = 0; x < size; x += 1) {
+          const sample = asphaltAggregateSample(x, y, size, seed);
+          const index = y * size + x;
+          aggregateHeights[index] = sample.height;
+          aggregateTones[index] = sample.tone;
+        }
       }
     }
-  }
-  const aggregateHeight = (x: number, y: number) => aggregateHeights![wrappedCell(y, size) * size + wrappedCell(x, size)]!;
-  for (let y = 0; y < size; y += 1) {
-    for (let x = 0; x < size; x += 1) {
-      const left = aggregateHeights ? aggregateHeight(x - 1, y) : heightAt((x - 1 + size) % size, y, seed, pattern);
-      const right = aggregateHeights ? aggregateHeight(x + 1, y) : heightAt((x + 1) % size, y, seed, pattern);
-      const down = aggregateHeights ? aggregateHeight(x, y - 1) : heightAt(x, (y - 1 + size) % size, seed, pattern);
-      const up = aggregateHeights ? aggregateHeight(x, y + 1) : heightAt(x, (y + 1) % size, seed, pattern);
-      const normalStrength = aggregateHeights ? 1.35 : 0.46;
-      const normal = new THREE.Vector3((left - right) * normalStrength, (down - up) * normalStrength, 1).normalize();
-      const offset = (y * size + x) * 4;
-      normalData[offset] = Math.round((normal.x * 0.5 + 0.5) * 255);
-      normalData[offset + 1] = Math.round((normal.y * 0.5 + 0.5) * 255);
-      normalData[offset + 2] = Math.round((normal.z * 0.5 + 0.5) * 255);
-      normalData[offset + 3] = 255;
-      const variation = aggregateHeights
-        ? aggregateHeight(x, y) * 1.35 - 0.4 + (aggregateTones?.[y * size + x] ?? 0) * 0.18
-        : heightAt(x, y, seed + 31, pattern);
-      const value = Math.round(THREE.MathUtils.clamp(
-        aggregateHeights ? 0.91 - Math.max(variation, 0) * 0.075 : 0.9 + variation * 0.095,
-        0.76,
-        1,
-      ) * 255);
-      metallicRoughnessData.set([255, value, 255, 255], offset);
-      const fibreContrast = albedoContrast
-        ?? (pattern === 'hex-weave' ? 0.19 : pattern === 'aggregate' ? 0.24 : pattern === 'mineral-flow' ? 0.24 : 0.055);
-      const albedo = Math.round(THREE.MathUtils.clamp(
-        aggregateHeights ? 0.72 + variation * 0.2 : 0.86 + variation * fibreContrast,
-        0.5,
-        1,
-      ) * 255);
-      albedoData.set([albedo, albedo, albedo, 255], offset);
+    const aggregateHeight = (x: number, y: number) => aggregateHeights![wrappedCell(y, size) * size + wrappedCell(x, size)]!;
+    for (let y = 0; y < size; y += 1) {
+      for (let x = 0; x < size; x += 1) {
+        const left = aggregateHeights ? aggregateHeight(x - 1, y) : heightAt((x - 1 + size) % size, y, seed, pattern);
+        const right = aggregateHeights ? aggregateHeight(x + 1, y) : heightAt((x + 1) % size, y, seed, pattern);
+        const down = aggregateHeights ? aggregateHeight(x, y - 1) : heightAt(x, (y - 1 + size) % size, seed, pattern);
+        const up = aggregateHeights ? aggregateHeight(x, y + 1) : heightAt(x, (y + 1) % size, seed, pattern);
+        const normalStrength = aggregateHeights ? 1.35 : 0.46;
+        const normal = new THREE.Vector3((left - right) * normalStrength, (down - up) * normalStrength, 1).normalize();
+        const offset = (y * size + x) * 4;
+        normalData[offset] = Math.round((normal.x * 0.5 + 0.5) * 255);
+        normalData[offset + 1] = Math.round((normal.y * 0.5 + 0.5) * 255);
+        normalData[offset + 2] = Math.round((normal.z * 0.5 + 0.5) * 255);
+        normalData[offset + 3] = 255;
+        const variation = aggregateHeights
+          ? aggregateHeight(x, y) * 1.35 - 0.4 + (aggregateTones?.[y * size + x] ?? 0) * 0.18
+          : heightAt(x, y, seed + 31, pattern);
+        const value = Math.round(THREE.MathUtils.clamp(
+          aggregateHeights ? 0.91 - Math.max(variation, 0) * 0.075 : 0.9 + variation * 0.095,
+          0.76,
+          1,
+        ) * 255);
+        metallicRoughnessData.set([255, value, 255, 255], offset);
+        const fibreContrast = albedoContrast
+          ?? (pattern === 'hex-weave' ? 0.19 : pattern === 'aggregate' ? 0.24 : pattern === 'mineral-flow' ? 0.24 : 0.055);
+        const albedo = Math.round(THREE.MathUtils.clamp(
+          aggregateHeights ? 0.72 + variation * 0.2 : 0.86 + variation * fibreContrast,
+          0.5,
+          1,
+        ) * 255);
+        albedoData.set([albedo, albedo, albedo, 255], offset);
+      }
     }
   }
   const shared = textureCache.size < MAX_SHARED_SURFACE_MAPS
@@ -367,7 +374,7 @@ function createMicroSurfaceMaps(
   setup(roughness, 'metallic_roughness');
   setup(albedo, 'albedo');
   albedo.colorSpace = THREE.SRGBColorSpace;
-  const maps = { albedo, normal, roughness };
+  const maps = { albedo, normal, roughness, pixelKey };
   if (shared) {
     textureCache.set(key, maps);
     sharedSurfaceBytes += allocationBytes;

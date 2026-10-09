@@ -1,0 +1,417 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sceliph.assembly-primary-recipe/0.6",
+  "title": "Sceliph bounded AssemblyIR primary form recipe",
+  "description": "0.6 adds source-bound saved section declarations with no trusted cached PASS. Reopen always recomputes current mesh. Old IR without sectionMeshChecks is unchanged; new optional record uses its own version. Older recipe versions reject record operation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "sourceFingerprint",
+    "steps"
+  ],
+  "properties": {
+    "schema": {
+      "const": "sceliph.assembly-primary-recipe/0.6"
+    },
+    "sourceFingerprint": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "componentId",
+              "primitiveId",
+              "radiiMm"
+            ],
+            "properties": {
+              "op": {
+                "const": "ellipsoid-radii"
+              },
+              "componentId": {
+                "type": "string"
+              },
+              "primitiveId": {
+                "type": "string"
+              },
+              "radiiMm": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number",
+                  "minimum": 0.1,
+                  "maximum": 100000
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "componentId",
+              "stations"
+            ],
+            "properties": {
+              "op": {
+                "const": "tube-radius-profile"
+              },
+              "componentId": {
+                "type": "string"
+              },
+              "stations": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 16,
+                "items": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "prefixItems": [
+                    {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    {
+                      "type": "number",
+                      "minimum": 0.1,
+                      "maximum": 100000
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "componentId",
+              "primitiveId",
+              "radialPower",
+              "axialPower"
+            ],
+            "properties": {
+              "op": {
+                "const": "ellipsoid-section-shape"
+              },
+              "componentId": {
+                "type": "string"
+              },
+              "primitiveId": {
+                "type": "string"
+              },
+              "radialPower": {
+                "type": "number",
+                "minimum": 1.5,
+                "maximum": 4
+              },
+              "axialPower": {
+                "type": "number",
+                "minimum": 1.5,
+                "maximum": 4
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "componentId",
+              "primitiveId",
+              "fit"
+            ],
+            "properties": {
+              "op": {
+                "const": "ellipsoid-section-fit"
+              },
+              "componentId": {
+                "type": "string"
+              },
+              "primitiveId": {
+                "type": "string"
+              },
+              "fit": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "schema",
+                  "frame",
+                  "units",
+                  "evidence",
+                  "pointsMm"
+                ],
+                "properties": {
+                  "schema": {
+                    "const": "sceliph.ellipsoid-section-fit/0.1"
+                  },
+                  "frame": {
+                    "const": "primitive-local"
+                  },
+                  "units": {
+                    "const": "mm"
+                  },
+                  "evidence": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "status",
+                      "sourceId"
+                    ],
+                    "properties": {
+                      "status": {
+                        "enum": [
+                          "designed",
+                          "measured",
+                          "estimated"
+                        ]
+                      },
+                      "sourceId": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 128
+                      }
+                    }
+                  },
+                  "pointsMm": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 16,
+                    "items": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "componentId",
+              "primitiveId",
+              "fit",
+              "budget"
+            ],
+            "properties": {
+              "op": {
+                "const": "ellipsoid-section-fit-budget"
+              },
+              "componentId": {
+                "type": "string"
+              },
+              "primitiveId": {
+                "type": "string"
+              },
+              "fit": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "schema",
+                  "frame",
+                  "units",
+                  "evidence",
+                  "pointsMm"
+                ],
+                "properties": {
+                  "schema": {
+                    "const": "sceliph.ellipsoid-section-fit/0.1"
+                  },
+                  "frame": {
+                    "const": "primitive-local"
+                  },
+                  "units": {
+                    "const": "mm"
+                  },
+                  "evidence": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "status",
+                      "sourceId"
+                    ],
+                    "properties": {
+                      "status": {
+                        "enum": [
+                          "designed",
+                          "measured",
+                          "estimated"
+                        ]
+                      },
+                      "sourceId": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 128
+                      }
+                    }
+                  },
+                  "pointsMm": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 16,
+                    "items": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              },
+              "budget": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "schema",
+                  "toleranceMm",
+                  "maximumResolution"
+                ],
+                "properties": {
+                  "schema": {
+                    "const": "sceliph.section-mesh-budget/0.1"
+                  },
+                  "toleranceMm": {
+                    "type": "number",
+                    "minimum": 0.0001,
+                    "maximum": 10
+                  },
+                  "maximumResolution": {
+                    "type": "integer",
+                    "minimum": 8,
+                    "maximum": 48
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "op",
+              "componentId",
+              "primitiveId",
+              "fit",
+              "budget"
+            ],
+            "properties": {
+              "op": {
+                "const": "ellipsoid-section-fit-record"
+              },
+              "componentId": {
+                "type": "string"
+              },
+              "primitiveId": {
+                "type": "string"
+              },
+              "fit": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "schema",
+                  "frame",
+                  "units",
+                  "evidence",
+                  "pointsMm"
+                ],
+                "properties": {
+                  "schema": {
+                    "const": "sceliph.ellipsoid-section-fit/0.1"
+                  },
+                  "frame": {
+                    "const": "primitive-local"
+                  },
+                  "units": {
+                    "const": "mm"
+                  },
+                  "evidence": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "status",
+                      "sourceId"
+                    ],
+                    "properties": {
+                      "status": {
+                        "enum": [
+                          "designed",
+                          "measured",
+                          "estimated"
+                        ]
+                      },
+                      "sourceId": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 128
+                      }
+                    }
+                  },
+                  "pointsMm": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 16,
+                    "items": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              },
+              "budget": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "schema",
+                  "toleranceMm",
+                  "maximumResolution"
+                ],
+                "properties": {
+                  "schema": {
+                    "const": "sceliph.section-mesh-budget/0.1"
+                  },
+                  "toleranceMm": {
+                    "type": "number",
+                    "minimum": 0.0001,
+                    "maximum": 10
+                  },
+                  "maximumResolution": {
+                    "type": "integer",
+                    "minimum": 8,
+                    "maximum": 48
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

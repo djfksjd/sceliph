@@ -1,0 +1,155 @@
+[
+  {
+    "label": "final-small",
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/fit-lathe-surface.ts",
+      "outputs/lathe-budget-20261007/small.input.json",
+      "bushing",
+      ".03",
+      "outputs/lathe-budget-20261007/final-small"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 1.3607832499999999
+  },
+  {
+    "label": "final-default",
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/fit-lathe-surface.ts",
+      "outputs/lathe-budget-20261007/default.input.json",
+      "bushing",
+      ".03",
+      "outputs/lathe-budget-20261007/final-default"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.697337667
+  },
+  {
+    "label": "final-large",
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/fit-lathe-surface.ts",
+      "outputs/lathe-budget-20261007/large.input.json",
+      "bushing",
+      ".03",
+      "outputs/lathe-budget-20261007/final-large"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.9414265839999998
+  },
+  {
+    "label": "final-solid",
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/fit-lathe-surface.ts",
+      "outputs/lathe-budget-20261007/solid.input.json",
+      "bushing",
+      ".03",
+      "outputs/lathe-budget-20261007/final-solid"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.6140567080000001
+  },
+  {
+    "label": "final-noop",
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/fit-lathe-surface.ts",
+      "outputs/lathe-budget-20261007/final-default/sourceJSON.json",
+      "bushing",
+      ".03",
+      "outputs/lathe-budget-20261007/final-noop"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 0.682045
+  },
+  {
+    "label": "implicit-isolated",
+    "command": [
+      "npx",
+      "vitest",
+      "run",
+      "tests/implicit-section-shape.test.ts"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 6.442935417
+  },
+  {
+    "label": "full-test-final",
+    "command": [
+      "npm",
+      "test"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 128.026996333
+  },
+  {
+    "label": "check",
+    "command": [
+      "npm",
+      "run",
+      "check"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 3.555558334000011
+  },
+  {
+    "label": "build",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 5.538423542000004
+  },
+  {
+    "label": "benchmark",
+    "command": [
+      "npm",
+      "run",
+      "benchmark"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 5.299630000000008
+  },
+  {
+    "label": "quality-gate",
+    "command": [
+      "npm",
+      "run",
+      "quality:gate"
+    ],
+    "exitCode": 1,
+    "elapsedSeconds": 15.390134791999998
+  },
+  {
+    "label": "quality-production",
+    "command": [
+      "npm",
+      "run",
+      "quality:production"
+    ],
+    "exitCode": 1,
+    "elapsedSeconds": 12.552771707999995
+  },
+  {
+    "label": "final-implicit-segments",
+    "exitCode": 0,
+    "command": [
+      "npx",
+      "vite-node",
+      "scripts/fit-lathe-surface.ts",
+      "outputs/lathe-budget-20261007/implicit-segments.input.json",
+      "bushing",
+      ".03",
+      "outputs/lathe-budget-20261007/final-implicit-segments"
+    ]
+  }
+]

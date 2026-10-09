@@ -1,0 +1,69 @@
+{
+  "pass": true,
+  "scope": "WebIO actual GLB accessor reopen and radial facet measurement; not Blender normal drift",
+  "rows": [
+    {
+      "case": "small",
+      "mode": "before",
+      "maximumDeviationMm": 0.005006903139469054,
+      "normalUnitDeviation": 3.8125435031233224e-8,
+      "triangles": 2976
+    },
+    {
+      "case": "small",
+      "mode": "after",
+      "maximumDeviationMm": 0.003607164852693412,
+      "normalUnitDeviation": 3.8125435031233224e-8,
+      "triangles": 3968
+    },
+    {
+      "case": "small",
+      "mode": "reopened",
+      "maximumDeviationMm": 0.003607164852693412,
+      "normalUnitDeviation": 3.8125435031233224e-8,
+      "triangles": 3968
+    },
+    {
+      "case": "default",
+      "mode": "before",
+      "maximumDeviationMm": 0.010013806278938109,
+      "normalUnitDeviation": 3.8125435031233224e-8,
+      "triangles": 2976
+    },
+    {
+      "case": "default",
+      "mode": "after",
+      "maximumDeviationMm": 0.004620519997861283,
+      "normalUnitDeviation": 4.100250650118653e-8,
+      "triangles": 6240
+    },
+    {
+      "case": "default",
+      "mode": "reopened",
+      "maximumDeviationMm": 0.004620519997861283,
+      "normalUnitDeviation": 4.100250650118653e-8,
+      "triangles": 6240
+    },
+    {
+      "case": "large",
+      "mode": "before",
+      "maximumDeviationMm": 0.020027612557876218,
+      "normalUnitDeviation": 3.8125435031233224e-8,
+      "triangles": 2976
+    },
+    {
+      "case": "large",
+      "mode": "after",
+      "maximumDeviationMm": 0.0047179077822763205,
+      "normalUnitDeviation": 3.7712618250473895e-8,
+      "triangles": 12320
+    },
+    {
+      "case": "large",
+      "mode": "reopened",
+      "maximumDeviationMm": 0.0047179077822763205,
+      "normalUnitDeviation": 3.7712618250473895e-8,
+      "triangles": 12320
+    }
+  ]
+}
