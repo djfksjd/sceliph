@@ -11,6 +11,66 @@ export interface ContactWitness {
 }
 export interface ContactWitnessMeasurement { id: string; ownerClearanceMm: number; hostClearanceMm: number }
 
+// Only successful numeric measurements are retained, never meshes or mutable
+// IR. This process-local cache belongs to this implementation revision.
+export const CONTACT_AUDIT_CACHE_REVISION = 'sceliph.contact-audit-cache/0.1';
+const MAX_CACHE_ENTRIES = 16, MAX_CACHE_PAYLOAD_BYTES = 512 * 1024;
+const measurementCache = new Map<string, { text: string; bytes: number }>();
+let cachePayloadBytes = 0;
+export function inspectContactWitnessCache() {
+  return { entries: measurementCache.size, payloadBytes: cachePayloadBytes,
+    maximumEntries: MAX_CACHE_ENTRIES, maximumPayloadBytes: MAX_CACHE_PAYLOAD_BYTES };
+}
+
+/** Exact JSON input binding, including -0. Non-JSON inputs simply bypass the
+ * cache and continue through the original checks; serialization hooks are not
+ * executed. Limits bound key construction independently of the retained cache.
+ */
+function measurementKey(ir: AssemblyIR): string | undefined {
+  const ancestors = new Set<object>(), negativeZeros: number[] = [];
+  let visited = 0, numberIndex = 0;
+  const jsonSafe = (value: unknown, depth: number): boolean => {
+    if (++visited > 10000 || depth > 32) return false;
+    if (typeof value === 'number') {
+      if (Object.is(value, -0)) negativeZeros.push(numberIndex);
+      numberIndex++;
+      return Number.isFinite(value);
+    }
+    if (value === null || typeof value === 'string' || typeof value === 'boolean') return true;
+    if (typeof value !== 'object' || ancestors.has(value)) return false;
+    const array = Array.isArray(value), proto = Object.getPrototypeOf(value);
+    if (array && (proto !== Array.prototype || Reflect.ownKeys(value).length !== value.length + 1
+      || Object.keys(value).some(key => !/^(0|[1-9][0-9]*)$/.test(key)))) return false;
+    if (!array && proto !== Object.prototype && proto !== null) return false;
+    if (proto && Object.getOwnPropertyDescriptor(proto, 'toJSON')) return false;
+    if (Object.getOwnPropertyDescriptor(Object.prototype, 'toJSON')) return false;
+    ancestors.add(value);
+    const descriptors = Object.getOwnPropertyDescriptors(value);
+    for (const key of Reflect.ownKeys(descriptors)) {
+      if (array && key === 'length') continue;
+      const descriptor = descriptors[key as string];
+      if (typeof key !== 'string' || !descriptor.enumerable || !('value' in descriptor)
+        || !jsonSafe(descriptor.value, depth + 1)) { ancestors.delete(value); return false; }
+    }
+    ancestors.delete(value);
+    return true;
+  };
+  if (!jsonSafe(ir, 0)) return undefined;
+  const text = JSON.stringify(ir);
+  if (text.length > 128 * 1024) return undefined;
+  return JSON.stringify([CONTACT_AUDIT_CACHE_REVISION, text, negativeZeros]);
+}
+function storeMeasurements(key: string | undefined, measurements: ContactWitnessMeasurement[]): void {
+  if (key === undefined) return;
+  const text = JSON.stringify(measurements), bytes = (key.length + text.length) * 2;
+  if (bytes > MAX_CACHE_PAYLOAD_BYTES) return;
+  measurementCache.set(key, { text, bytes }); cachePayloadBytes += bytes;
+  while (measurementCache.size > MAX_CACHE_ENTRIES || cachePayloadBytes > MAX_CACHE_PAYLOAD_BYTES) {
+    const oldest = measurementCache.keys().next().value!;
+    cachePayloadBytes -= measurementCache.get(oldest)!.bytes; measurementCache.delete(oldest);
+  }
+}
+
 function object(value: unknown, keys: string[]): Record<string, unknown> {
   if (!value || typeof value !== 'object' || Array.isArray(value)) throw Error('Contact contract requires JSON objects.');
   const v = value as Record<string, unknown>;
@@ -67,6 +127,12 @@ export function auditAssemblyContactWitnesses(ir: AssemblyIR): ContactWitnessMea
   const witnesses = contract(ir);
   if (!witnesses.length) return [];
   validateAssemblyIR(ir);
+  // Never reuse a PASS before validating the current declaration and whole IR.
+  const key = measurementKey(ir), cached = key === undefined ? undefined : measurementCache.get(key);
+  if (cached && key !== undefined) {
+    measurementCache.delete(key); measurementCache.set(key, cached);
+    return JSON.parse(cached.text) as ContactWitnessMeasurement[];
+  }
   const geometries = new Map<string,{geometry: BufferGeometry; matrix: Matrix4}>();
   let triangleCount = 0;
   const material = new MeshBasicMaterial();
@@ -83,7 +149,7 @@ export function auditAssemblyContactWitnesses(ir: AssemblyIR): ContactWitnessMea
       if (!analyzeTopology(new Mesh(geometry,material)).pass) throw Error(`Contact requires a closed manifold component: ${id}.`);
       if (!Number.isFinite(matrix.determinant()) || matrix.determinant() <= 0) throw Error('Contact requires a positive, nonsingular component transform.');
     }
-    return witnesses.map(w => {
+    const measurements = witnesses.map(w => {
       const owner=geometries.get(w.ownerId)!, host=geometries.get(w.hostId)!;
       const point = new Vector3(...w.ownerLocalMm).multiplyScalar(.001).applyMatrix4(owner.matrix);
       const ownerClearanceMm=clearance(owner.geometry,owner.matrix,point), hostClearanceMm=clearance(host.geometry,host.matrix,point);
@@ -91,5 +157,7 @@ export function auditAssemblyContactWitnesses(ir: AssemblyIR): ContactWitnessMea
         throw Error(`Contact ${w.id} failed: owner ${ownerClearanceMm.toFixed(4)} mm, host ${hostClearanceMm.toFixed(4)} mm; requires ${w.minimumClearanceMm} mm interior clearance. Restore dimensions or explicitly revise the authored contact contract.`);
       return {id:w.id,ownerClearanceMm,hostClearanceMm};
     });
+    storeMeasurements(key, measurements);
+    return measurements;
   } finally { for (const {geometry} of geometries.values()) geometry.dispose(); material.dispose(); }
 }

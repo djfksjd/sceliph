@@ -24,11 +24,13 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 
 function safeSources(sources: BoundVisualSource[]): boolean {
   return Array.isArray(sources) && sources.length >= 1 && sources.length <= 24
-    && new Set(sources.map((source) => source.id)).size === sources.length
-    && new Set(sources.map((source) => source.fingerprint.toLowerCase())).size === sources.length
-    && sources.every((source) => /^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,95}$/.test(source.id)
+    && sources.every(source => isRecord(source) && typeof source.id === 'string'
+      && typeof source.kind === 'string' && typeof source.fingerprint === 'string'
+      && /^[a-zA-Z0-9][a-zA-Z0-9_.-]{0,95}$/.test(source.id)
       && ['photo', 'drawing', 'scan', 'datasheet'].includes(source.kind)
-      && SHA256.test(source.fingerprint));
+      && SHA256.test(source.fingerprint))
+    && new Set(sources.map(source => source.id)).size === sources.length
+    && new Set(sources.map(source => source.fingerprint.toLowerCase())).size === sources.length;
 }
 
 /**
@@ -68,6 +70,7 @@ export function adaptVisualPlanProviderResponse(
   };
 
   const byFingerprint = new Map(boundSources.map((source) => [source.fingerprint.toLowerCase(), source]));
+  const knownIds = new Map(boundSources.map(source => [source.id, source.fingerprint.toLowerCase()]));
   const seenFingerprints = new Set<string>();
   for (const sourceView of parsed.sourceViews) {
     if (!isRecord(sourceView) || typeof sourceView.fingerprint !== 'string') {
@@ -79,6 +82,11 @@ export function adaptVisualPlanProviderResponse(
     if (!binding) {
       blockers.push(`visual-plan provider returned an unbound source fingerprint: ${fingerprint.slice(0, 12) || 'missing'}`);
       continue;
+    }
+    // Unknown provider aliases remain supported, but authoritative source IDs
+    // cannot point to another bound image. Never silently swap semantic evidence.
+    if (typeof sourceView.id === 'string' && knownIds.has(sourceView.id) && knownIds.get(sourceView.id) !== fingerprint) {
+      blockers.push(`visual-plan source id/hash mismatch: ${sourceView.id}`);
     }
     if (seenFingerprints.has(fingerprint)) blockers.push(`visual-plan provider duplicated source fingerprint: ${fingerprint.slice(0, 12)}`);
     seenFingerprints.add(fingerprint);
@@ -96,7 +104,12 @@ export function adaptVisualPlanProviderResponse(
   };
 
   const plan = parsed as unknown as VisualPlanningContract;
-  const audit = auditVisualPlan(plan);
+  let audit: ReturnType<typeof auditVisualPlan>;
+  try { audit = auditVisualPlan(plan); } catch (error) {
+    if (!(error instanceof TypeError)) throw error;
+    return { schema: 'morphloom.visual-plan-provider-receipt/0.1', pass: false,
+      corrections, blockers: ['visual-plan provider returned malformed semantic fields'], warnings: [] };
+  }
   return {
     schema: 'morphloom.visual-plan-provider-receipt/0.1',
     pass: audit.pass,

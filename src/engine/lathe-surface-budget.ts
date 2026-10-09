@@ -11,6 +11,39 @@ function validateSource(source:LatheSource):void{
 }
 export type LatheSurfaceMeasurement={maximumDeviationMm:number;triangles:number;rings:Array<{profileIndex:number;radiusMm:number;maximumDeviationMm:number}>};
 
+/** Oriented triangle correspondence, independent of vertex/triangle storage
+ * order or indexed vs non-indexed encoding. Coordinate values remain exact;
+ * this never substitutes for the separate strict GLB byte contract.
+ */
+function triangleCounts(geometry:BufferGeometry):Map<string,number>{
+ const p=geometry.getAttribute('position'),index=geometry.index,count=index?.count??p?.count??0;
+ if(!p||p.itemSize!==3||!Number.isInteger(p.count)||p.count>300000||!Number.isInteger(count)||!count||count%3||count>300000||index&&index.itemSize!==1)throw Error('Invalid or over-budget native lathe triangle/index data.');
+ const vertices:string[]=[];
+ for(let i=0;i<p.count;i++){
+  const values=[p.getX(i),p.getY(i),p.getZ(i)];
+  if(!values.every(Number.isFinite))throw Error('Non-finite native lathe triangle positions.');
+  vertices.push(values.join(','));
+ }
+ const result=new Map<string,number>();
+ for(let i=0;i<count;i+=3){
+  const ids=[0,1,2].map(offset=>index?index.getX(i+offset):i+offset);
+  if(ids.some(id=>!Number.isInteger(id)||id<0||id>=p.count))throw Error('Native lathe index is non-finite, fractional or out of range.');
+  const [a,b,c]=ids.map(id=>vertices[id]);
+  if(a===b||b===c||a===c)throw Error('Degenerate native lathe triangle.');
+  // Cyclic rotations retain winding; reversing the order does not.
+  const key=[`${a};${b};${c}`,`${b};${c};${a}`,`${c};${a};${b}`].sort()[0];
+  result.set(key,(result.get(key)??0)+1);
+ }
+ return result;
+}
+function validateTriangleCorrespondence(source:LatheSource,geometry:BufferGeometry):void{
+ const actual=triangleCounts(geometry),expectedGeometry=compileAssemblyGeometry(source);
+ try{
+  const expected=triangleCounts(expectedGeometry);
+  if(actual.size!==expected.size||[...actual].some(([key,count])=>expected.get(key)!==count))throw Error('Native lathe triangles do not correspond to the declared source (connectivity, winding or face multiplicity differs).');
+ }finally{expectedGeometry.dispose();}
+}
+
 /** Primitive-local millimetres. Circumferential polygon error only, not profile
  * interpolation error, world-scale error, or manufacturing accuracy.
  * Reads actual vertex rings, including normal-split duplicates, rather than
@@ -54,6 +87,7 @@ export function measureLatheCircumference(source:LatheSource,geometry:BufferGeom
   rings.push({profileIndex,radiusMm:radius,maximumDeviationMm});
  }
  if(!rings.length)throw Error('Lathe requires a non-axis ring for circumferential measurement.');
+ validateTriangleCorrespondence(source,geometry);
  return {maximumDeviationMm:Math.max(...rings.map(r=>r.maximumDeviationMm)),triangles:count/3,rings};
 }
 

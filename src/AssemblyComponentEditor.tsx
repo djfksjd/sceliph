@@ -17,7 +17,7 @@ function draftFor(c:AssemblyComponentIR):Draft {
  const recipe=SURFACE_LIBRARY[inferSurfaceFinish(c.materialName,c.material.surface)],orientation=c.material.referenceProjection?.orientation;
  return {implicitRadii:c.geometry.op==='implicitSurface'?Object.fromEntries(c.geometry.descriptor.primitives.filter(p=>p.type==='ellipsoid').map(p=>[p.id,(p.radii??p.radius as [number,number,number]).map(String)])):{},latheNormalMode:c.geometry.op==='lathe'&&c.geometry.normalPolicy?.schema==='morphloom.lathe-normals/0.2'?'profile-surfaces':'corner-angle',chamferMm:'0',latheProfile:c.geometry.op==='lathe'?c.geometry.profile.map(p=>p.map(String)):[],latheSegments:String(c.geometry.op==='lathe'?c.geometry.segments??64:64),lathePolicy:c.geometry.op==='lathe'&&Boolean(c.geometry.normalPolicy),creaseAngleDeg:String(c.geometry.op==='lathe'&&c.geometry.normalPolicy?.schema==='morphloom.lathe-normals/0.1'?c.geometry.normalPolicy.creaseAngleRad*180/Math.PI:30),bladeOutward:c.geometry.op==='bladeLoft'&&Boolean(c.geometry.sideWinding),capFlat:tube?.capFinish==='flat-outward',capOutward:tube?.capWinding==='outward',curveEnabled:Boolean(tube?.curve),controlPoint:control.map(String),position:(c.position??[0,0,0]).map(String),scale:(c.scale??[1,1,1]).map(String),roughness:String(c.material.roughness??recipe.roughness),metalness:String(c.material.metalness??recipe.metalness),direction:orientation?.direction??'legacy',flipU:orientation?.flipU??false};
 }
-export default function AssemblyComponentEditor({ir,selectedId,onCommit,sourceCurrent=true}:{ir:AssemblyIR;selectedId?:string;onCommit:(next:AssemblyIR)=>void;sourceCurrent?:boolean}) {
+export default function AssemblyComponentEditor({ir,selectedId,onCommit,sourceCurrent=true,isSourceCurrent=()=>true}:{ir:AssemblyIR;selectedId?:string;onCommit:(next:AssemblyIR)=>void;sourceCurrent?:boolean;isSourceCurrent?:()=>boolean}) {
  const wire=ir.electrical?.wires.find(w=>w.id===selectedId);
  const component=ir.components.find(c=>c.id===selectedId),latest=useRef(ir),alive=useRef(true),expected=useRef(ir),inFlight=useRef(false),selected=useRef(selectedId),history=useRef<AssemblyIR[]>([ir]),cursor=useRef(0);
  latest.current=ir;selected.current=selectedId;
@@ -31,13 +31,13 @@ export default function AssemblyComponentEditor({ir,selectedId,onCommit,sourceCu
  const [draft,setDraft]=useState<Draft>(),[busy,setBusy]=useState(false),[error,setError]=useState(''),[,refresh]=useState(0);
  useEffect(()=>{alive.current=true;return()=>{alive.current=false;};},[]);
  useEffect(()=>{if(ir!==expected.current){history.current=[ir];cursor.current=0;expected.current=ir;}draftSource.current={ir,id:component?.id??wire?.id};setDraft(component?draftFor(component):undefined);setLathePoint(0);setImplicitPrimitive(component?.geometry.op==='implicitSurface'?component.geometry.descriptor.primitives.find(p=>p.type==='ellipsoid')?.id??'':'');setWireFlat(wire?.capFinish?.finish==='flat-outward');setError('');},[ir,component,wire]);
- const commit=(next:AssemblyIR)=>{expected.current=next;history.current=history.current.slice(0,cursor.current+1);history.current.push(next);if(history.current.length>33)history.current.shift();cursor.current=history.current.length-1;onCommit(next);refresh(n=>n+1);};
- const move=(step:number)=>{const index=cursor.current+step;if(busy||!sourceCurrent||index<0||index>=history.current.length)return;cursor.current=index;expected.current=history.current[index]!;onCommit(expected.current);refresh(n=>n+1);};
+ const commit=(next:AssemblyIR)=>{if(!sourceReady.current||!isSourceCurrent())return;expected.current=next;history.current=history.current.slice(0,cursor.current+1);history.current.push(next);if(history.current.length>33)history.current.shift();cursor.current=history.current.length-1;onCommit(next);refresh(n=>n+1);};
+ const move=(step:number)=>{const index=cursor.current+step;if(busy||!sourceCurrent||!isSourceCurrent()||index<0||index>=history.current.length)return;cursor.current=index;expected.current=history.current[index]!;onCommit(expected.current);refresh(n=>n+1);};
  const apply=async()=>{
-  if(!component||!draft||inFlight.current||!sourceCurrent)return;
+  if(!component||!draft||inFlight.current||!sourceCurrent||!isSourceCurrent())return;
   if(draftSource.current.ir!==ir||draftSource.current.id!==component.id){setError('초안의 원본/선택이 바뀌었습니다. 현재 부품을 다시 확인하세요.');return;}
   inFlight.current=true;const intent=intentGate.begin(),source=ir,initial=draftFor(component);
-  const ownsResult=()=>alive.current&&sourceReady.current&&intentGate.isCurrent(intent)&&latest.current===source&&selected.current===component.id;setBusy(true);setError('');
+  const ownsResult=()=>alive.current&&sourceReady.current&&isSourceCurrent()&&intentGate.isCurrent(intent)&&latest.current===source&&selected.current===component.id;setBusy(true);setError('');
   try{
    const number=(value:string,min:number,max:number)=>{const n=Number(value);if(!value.trim()||!Number.isFinite(n)||n<min||n>max)throw new Error(`숫자는 ${min}..${max} 범위여야 합니다.`);return n;};
    const position=draft.position.map(n=>number(n,-100000,100000)) as [number,number,number],scale=draft.scale.map(n=>number(n,.01,100)) as [number,number,number];
@@ -85,10 +85,10 @@ export default function AssemblyComponentEditor({ir,selectedId,onCommit,sourceCu
   }catch(e){if(ownsResult())setError(e instanceof Error?e.message:'Component edit failed');}finally{inFlight.current=false;if(alive.current)setBusy(false);}
  };
  const applyWire=async()=>{
-  if(!wire||inFlight.current||!sourceCurrent)return;
+  if(!wire||inFlight.current||!sourceCurrent||!isSourceCurrent())return;
   if(draftSource.current.ir!==ir||draftSource.current.id!==wire.id){setError('선택한 배선의 원본이 바뀌었습니다. 다시 확인하세요.');return;}
   inFlight.current=true;const source=ir,intent=intentGate.begin();
-  const ownsResult=()=>alive.current&&sourceReady.current&&intentGate.isCurrent(intent)&&latest.current===source&&selected.current===wire.id;setBusy(true);setError('');
+  const ownsResult=()=>alive.current&&sourceReady.current&&isSourceCurrent()&&intentGate.isCurrent(intent)&&latest.current===source&&selected.current===wire.id;setBusy(true);setError('');
   try{const result=await applyWireCapPatch(source,{schema:'morphloom.wire-cap-patch/0.1',operationId:'ui-wire-cap',wireId:wire.id,expectedInputFingerprint:await fingerprintAssemblyIR(source),action:wireFlat?'set':'clear'});validateAssemblyIR(result.ir);if(ownsResult())commit(result.ir);}
   catch(e){if(ownsResult())setError(e instanceof Error?e.message:'배선 편집 실패');}
   finally{inFlight.current=false;if(alive.current)setBusy(false);}
@@ -110,6 +110,6 @@ export default function AssemblyComponentEditor({ir,selectedId,onCommit,sourceCu
  {component.geometry.op==='lathe'&&<fieldset disabled={busy}><legend>회전체 법선 · 명시적 옵션</legend><label><input aria-label="Enable lathe corner-angle normals" type="checkbox" checked={draft.lathePolicy} onChange={e=>setDraft(d=>d?{...d,lathePolicy:e.target.checked}:d)} />명시적 회전체 법선</label><label>계산 방식<select aria-label="Lathe normal mode" disabled={!draft.lathePolicy} value={draft.latheNormalMode} onChange={e=>setDraft(d=>d?{...d,latheNormalMode:e.target.value as Draft['latheNormalMode']}:d)}><option value="corner-angle">0.1 · 모서리 각도 평균</option><option value="profile-surfaces">0.2 · 단면 면 보존 / 원주 연속</option></select></label><label>Crease angle (°)<input aria-label="Lathe crease angle degrees" type="number" min="0" max="180" step="1" disabled={!draft.lathePolicy||draft.latheNormalMode==='profile-surfaces'} value={draft.creaseAngleDeg} onChange={e=>setDraft(d=>d?{...d,creaseAngleDeg:e.target.value}:d)}/></label><p>0.2는 각 단면 선분의 원추·원통·평면 법선을 분리하며, 원주 방향은 연속으로 계산합니다. 축 위에서는 삼각형별 극한 방향을 사용합니다. 0.1의30°는 직각 끝면을 분리합니다. 형상·UV는 유지되며 GLB에 모서리별 법선을 저장합니다. 해제하면 기존 계산으로 복원됩니다.</p></fieldset>}
  <p>연결 부품/치수 계약은 자동으로 맞추지 않습니다. 적용 후 기존 품질 검사를 다시 확인하세요. Undo는 최대32단계이며 새 IR 로드 시 초기화됩니다.</p>
  <button disabled={busy||!sourceCurrent||!dirty} onClick={()=>void apply()}>Apply component edit</button><button disabled={busy||!dirty} onClick={()=>{setDraft(draftFor(component));setError('');}}>Cancel component edit</button></>}
- {error&&<p role="alert">{error}</p>}<AssemblyPrimaryRecipePanel ir={ir} onCommit={commit} sourceCurrent={sourceCurrent}/></section>;
+ {error&&<p role="alert">{error}</p>}<AssemblyPrimaryRecipePanel ir={ir} onCommit={commit} sourceCurrent={sourceCurrent} isSourceCurrent={isSourceCurrent}/></section>;
 }
 import AssemblyPrimaryRecipePanel from './AssemblyPrimaryRecipePanel';

@@ -140,15 +140,25 @@ export function validateImplicitSurfaceDescriptor(value: unknown): asserts value
   if (!output || !nodes.has(output)) throw new Error('Implicit surface output must reference a declared node.');
 }
 
-function localPoint(point: THREE.Vector3, primitive: ImplicitPrimitive): { point: THREE.Vector3; scale: number } {
+function prepareLocalPoint(primitive: ImplicitPrimitive): (point: THREE.Vector3) => { point: THREE.Vector3; scale: number } {
   const transform = primitive.transform;
   const position = transform?.position ?? [0, 0, 0];
   const rotation = transform?.rotation ?? [0, 0, 0];
   const scale = transform?.scale ?? [1, 1, 1];
-  const local = point.clone().sub(new THREE.Vector3(...position));
-  local.applyQuaternion(new THREE.Quaternion().setFromEuler(new THREE.Euler(...rotation)).invert());
-  local.set(local.x / scale[0], local.y / scale[1], local.z / scale[2]);
-  return { point: local, scale: Math.min(...scale) };
+  // The primitive transform is fixed for this synchronous polygonization.
+  // Retain the exact operation order while computing its inverse only once.
+  const translation = new THREE.Vector3(...position);
+  const inverseRotation = new THREE.Quaternion().setFromEuler(new THREE.Euler(...rotation)).invert();
+  const minimumScale = Math.min(...scale);
+  // Sampling is synchronous and returns a scalar before the next call. Each
+  // primitive owns its scratch vector; callers' points are never mutated.
+  const local = new THREE.Vector3();
+  return point => {
+    local.copy(point).sub(translation);
+    local.applyQuaternion(inverseRotation);
+    local.set(local.x / scale[0], local.y / scale[1], local.z / scale[2]);
+    return { point: local, scale: minimumScale };
+  };
 }
 
 function sphereDistance(point: THREE.Vector3, radius: number): number {
@@ -174,12 +184,13 @@ function coneDistance(point: THREE.Vector3, radius: number, height: number): num
 }
 
 function ellipsoidDistance(point: THREE.Vector3, radii: ImplicitVector): number {
-  const scaled = new THREE.Vector3(point.x / radii[0], point.y / radii[1], point.z / radii[2]);
-  return (scaled.length() - 1) * Math.min(...radii);
+  const x = point.x / radii[0], y = point.y / radii[1], z = point.z / radii[2];
+  // Match Vector3.length's arithmetic exactly (Math.hypot is not equivalent).
+  return (Math.sqrt(x * x + y * y + z * z) - 1) * Math.min(...radii);
 }
 
-function primitiveDistance(point: THREE.Vector3, primitive: ImplicitPrimitive): number {
-  const local = localPoint(point, primitive);
+function primitiveDistance(point: THREE.Vector3, primitive: ImplicitPrimitive, toLocal: ReturnType<typeof prepareLocalPoint>): number {
+  const local = toLocal(point);
   let distance: number;
   switch (primitive.type) {
     case 'sphere': distance = sphereDistance(local.point, primitive.radius as number); break;
@@ -203,7 +214,10 @@ function smoothMinimum(left: number, right: number, radius: number): number {
 
 function buildField(descriptor: ImplicitSurfaceDescriptor): { sample: DistanceField; outputNode: string } {
   const nodes = new Map<string, DistanceField>();
-  for (const primitive of descriptor.primitives) nodes.set(primitive.id, (point) => primitiveDistance(point, primitive));
+  for (const primitive of descriptor.primitives) {
+    const toLocal = prepareLocalPoint(primitive);
+    nodes.set(primitive.id, (point) => primitiveDistance(point, primitive, toLocal));
+  }
   for (const operation of descriptor.operations ?? []) {
     const left = nodes.get(operation.left)!;
     const right = nodes.get(operation.right)!;

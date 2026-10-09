@@ -48,7 +48,9 @@
     "blender:static-audit": "blender --background --python-exit-code 1 --python scripts/blender-static-mesh-audit.py --",
     "quality:gate": "vite-node scripts/quality-gate.ts && vite-node scripts/competitive-benchmark.ts",
     "quality:production": "npm run quality:gate && npm run benchmark:dominance -- --require-claim",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "evaluate:model-response": "vite-node scripts/evaluate-model-response.ts",
+    "evaluate:offline-artifacts": "vite-node scripts/verify-offline-model-artifacts.ts"
   },
   "dependencies": {
     "fflate": "^0.8.3",

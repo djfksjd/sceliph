@@ -45,3 +45,5 @@ it('reloads identical saved IR as a fresh import and permits further native edit
  const edited=editPart(project,'ball_0000',{position:[11,20,30]});expect(edited.parts.find(p=>p.id==='ball_0000')?.position).toEqual([11,20,30]);
  expect(source.parts.find(p=>p.id==='ball_0000')?.position).not.toEqual([11,20,30]);
 });
+
+it('cancels before evaluating a captured requirements decoder when the import intent is discarded',async()=>{const session=new ElementSourceLoadSession(),late=deferred<string>();let decoded=0,published=0;const job=session.load(file(()=>late.promise),()=>true,()=>published++,()=>{},text=>{decoded++;return source;});session.restore();late.resolve(json);await job;expect(decoded).toBe(0);expect(published).toBe(0);});

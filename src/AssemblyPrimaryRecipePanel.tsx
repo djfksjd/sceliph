@@ -5,7 +5,7 @@ import { fingerprintAssemblyIR } from './engine/assembly-edit';
 import { applyAssemblyPrimaryRecipe, ASSEMBLY_PRIMARY_RECIPE_SCHEMA, ASSEMBLY_PRIMARY_RECIPE_V2_SCHEMA, ASSEMBLY_PRIMARY_RECIPE_V3_SCHEMA, ASSEMBLY_PRIMARY_RECIPE_V4_SCHEMA, ASSEMBLY_PRIMARY_RECIPE_V5_SCHEMA, ASSEMBLY_PRIMARY_RECIPE_V6_SCHEMA, type AssemblyPrimaryRecipeReceipt } from './engine/assembly-primary-recipe';
 import { createLatestIntentGate } from './engine/latest-intent';
 
-export default function AssemblyPrimaryRecipePanel({ ir, onCommit, sourceCurrent }: { ir: AssemblyIR; onCommit: (next: AssemblyIR) => void; sourceCurrent: boolean }) {
+export default function AssemblyPrimaryRecipePanel({ ir, onCommit, sourceCurrent, isSourceCurrent = () => true }: { ir: AssemblyIR; onCommit: (next: AssemblyIR) => void; sourceCurrent: boolean; isSourceCurrent?: () => boolean }) {
   const [text, setText] = useState(''), [busy, setBusy] = useState(false), [error, setError] = useState('');
   const [receipt, setReceipt] = useState<{ project: AssemblyIR; value: AssemblyPrimaryRecipeReceipt }>();
   const [savedResult,setSavedResult]=useState<{project:AssemblyIR;items:SavedSectionStatus[]}>(),[savedError,setSavedError]=useState('');
@@ -22,21 +22,21 @@ export default function AssemblyPrimaryRecipePanel({ ir, onCommit, sourceCurrent
   useEffect(() => { alive.current = true; return () => { alive.current = false; gate.cancel(); }; }, [gate]);
   useEffect(()=>{
     let cancelled=false;setSavedResult(undefined);setSavedError('');
-    if(sourceCurrent)void inspectSavedSectionChecks(ir).then(value=>{if(!cancelled&&alive.current&&ready.current&&latest.current===ir)setSavedResult({project:ir,items:value});},e=>{if(!cancelled&&alive.current&&latest.current===ir)setSavedError(e instanceof Error?e.message:'Saved checks failed.');});
+    if(sourceCurrent&&isSourceCurrent())void inspectSavedSectionChecks(ir).then(value=>{if(!cancelled&&alive.current&&ready.current&&isSourceCurrent()&&latest.current===ir)setSavedResult({project:ir,items:value});},e=>{if(!cancelled&&alive.current&&ready.current&&isSourceCurrent()&&latest.current===ir)setSavedError(e instanceof Error?e.message:'Saved checks failed.');});
     return ()=>{cancelled=true;};
   },[ir,sourceCurrent]);
   const refreshSaved=async()=>{
-    if(inFlight.current||!sourceCurrent)return;inFlight.current=true;const source=ir,intent=gate.begin();setBusy(true);setError('');
-    const owns=()=>alive.current&&ready.current&&gate.isCurrent(intent)&&latest.current===source;
+    if(inFlight.current||!sourceCurrent||!isSourceCurrent())return;inFlight.current=true;const source=ir,intent=gate.begin();setBusy(true);setError('');
+    const owns=()=>alive.current&&ready.current&&isSourceCurrent()&&gate.isCurrent(intent)&&latest.current===source;
     try{const next=await refreshSavedSectionChecks(source);if(owns()){if(JSON.stringify(next)!==JSON.stringify(source))onCommit(next);}}
     catch(e){if(owns())setError(e instanceof Error?e.message:'Saved check refresh failed.');}
     finally{inFlight.current=false;if(alive.current)setBusy(false);}
   };
   const run = async (template: boolean, taper = false, section = false, fit = false, budget = false, record = false) => {
-    if (inFlight.current || !sourceCurrent) return;
+    if (inFlight.current || !sourceCurrent || !isSourceCurrent()) return;
     inFlight.current = true;
     const source = ir, inputText = text, intent = gate.begin();
-    const ownsResult = () => alive.current && ready.current && gate.isCurrent(intent) && latest.current === source && latestText.current === inputText;
+    const ownsResult = () => alive.current && ready.current && isSourceCurrent() && gate.isCurrent(intent) && latest.current === source && latestText.current === inputText;
     setBusy(true); setError(''); setReceipt(undefined);
     try {
       if (template) {

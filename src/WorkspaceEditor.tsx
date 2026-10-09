@@ -1,3 +1,5 @@
+import {beveledPlatePack}from'./engine/plate-bevel';
+import { centeredPlatePack } from './engine/centered-plate-pack';
 import { surfaceGearPack } from '../examples/domain-packs/surface-gear-pack';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js';
@@ -12,6 +14,8 @@ import { createWorkspaceEditorSession, parseWorkspaceEditorFile, serializeWorksp
 import { analyzeTopology } from './engine/topology';
 
 const registry=createElementDomainRegistry();registry.register(bearingPack);registry.register(gearPack);registry.register(surfaceGearPack);
+registry.register(centeredPlatePack);
+registry.register(beveledPlatePack);
 const empty=():ElementWorkspace=>({schema:'morphloom.workspace/0.1',units:'mm',coordinates:'right-handed-y-up',assets:[]});
 function initial():ElementWorkspace{
   return appendWorkspaceAsset(empty(),generateWorkspaceAsset(registry,{id:'animal',packId:'morphloom.fur',input:{seed:17},requiredCapabilities:['semantic-part-editing','selected-scene-export'],positionMm:[-100,0,0],rotationRad:[0,0,0]}));

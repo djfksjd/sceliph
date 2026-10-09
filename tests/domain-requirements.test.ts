@@ -1,0 +1,12 @@
+import {expect,it}from'vitest';
+import {createElementDomainRegistry}from'../src/engine/element-domain-packs';
+import {centeredPlatePack}from'../src/engine/centered-plate-pack';
+import {executeRequiredDomainInvocation}from'../src/engine/domain-requirements';
+import {parseEditableElementSource}from'../src/engine/editable-source';
+import {serializeProject}from'../src/engine/element-project';
+const registry=createElementDomainRegistry();registry.register(centeredPlatePack);
+const d={schema:'sceliph.domain-invocation/0.1',packId:centeredPlatePack.metadata.id,units:'mm',coordinates:'right-handed-y-up',input:{widthMm:37,heightMm:17,thicknessMm:2.5,boreDiameterMm:7},requiredCapabilities:['generate']};
+const r={schema:'sceliph.domain-requirements/0.1',packId:d.packId,units:'mm',coordinates:'right-handed-y-up',input:d.input};
+it('blocks valid geometry with the wrong request value before generation, including omitted values',()=>{let calls=0;const reg=createElementDomainRegistry();reg.register({...centeredPlatePack,generate:input=>{calls++;return centeredPlatePack.generate(input);}});for(const input of [{...d.input,widthMm:39},{...d.input,boreDiameterMm:5},{heightMm:17,thicknessMm:2.5,boreDiameterMm:7}])expect(()=>executeRequiredDomainInvocation(reg,JSON.stringify({...d,input}),JSON.stringify(r))).toThrow('Request mismatch');expect(calls).toBe(0);expect(executeRequiredDomainInvocation(reg,JSON.stringify(d),JSON.stringify(r)).project.parts[0].id).toBe('plate_body');expect(calls).toBe(1);});
+it('rejects unsupported requirements without guessing units or repairing constraints',()=>{for(const patch of [{schema:'future'},{units:'cm'},{packId:'missing'},{input:{}},{input:{widthMm:null}},{input:{other:2}},{input:{widthMm:-1}},{extra:true}])expect(()=>executeRequiredDomainInvocation(registry,JSON.stringify(d),JSON.stringify({...r,...patch}))).toThrow();});
+it('uses the same guard in the actual importer and leaves unguarded legacy native imports unchanged',()=>{const project=parseEditableElementSource(registry,JSON.stringify(d),JSON.stringify(r)),saved=serializeProject(project);expect(()=>parseEditableElementSource(registry,JSON.stringify({...d,input:{...d.input,widthMm:39}}),JSON.stringify(r))).toThrow();expect(()=>parseEditableElementSource(registry,saved,JSON.stringify(r))).toThrow('Clear them');expect(serializeProject(parseEditableElementSource(registry,saved))).toBe(saved);});

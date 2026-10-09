@@ -1,12 +1,12 @@
 import { createBirdPrimaryStudy } from './engine/bird-primary-study';
 import SceliphIcon from './SceliphIcon';
 import { createLatestIntentGate } from './engine/latest-intent';
+import { AssemblySourceLoadSession, type AssemblySourceLoadState } from './assembly-source-load';
 import AssemblyComponentEditor from './AssemblyComponentEditor';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { CharacterBuild } from './engine/character';
 import type { ProductBuild } from './engine/product';
 import type { AssemblyIR } from './engine/assembly-ir';
-import { validateAssemblyIR } from './engine/assembly-compiler';
 import { COOLING_ASSEMBLY_IR } from './engine/cooling-assembly';
 import { GALAXY_Z_FOLD8_EXTERIOR_IR } from './engine/galaxy-fold8-exterior';
 import { LAUREL_HOMES_BUILDING_B_IR } from './engine/laurel-homes-building-b';
@@ -188,11 +188,11 @@ export function ViewerApp() {
   const [browserProofReceipts, setBrowserProofReceipts] = useState<Record<string, BrowserRoundTripAssetReceipt>>({});
   const [telemetry, setTelemetry] = useState<LocalBuildTelemetry>();
   const [importedExpiresAt, setImportedExpiresAt] = useState<number>();
-  const [normalKitSourceCurrent, setNormalKitSourceCurrent] = useState(true);
-  const normalKitSourceCurrentRef = useRef(true);
-  const markNormalKitSourceCurrent = (current: boolean) => {
-    normalKitSourceCurrentRef.current = current;
-    setNormalKitSourceCurrent(current);
+  const [sourceCurrent, setSourceCurrent] = useState(true);
+  const sourceCurrentRef = useRef(true);
+  const markSourceCurrent = (current: boolean) => {
+    sourceCurrentRef.current = current;
+    setSourceCurrent(current);
   };
   const [viewerNote, setViewerNote] = useState('CLI/Codex에서 생성한 결과를 검수하는 읽기 전용 화면입니다.');
   const [measurementEnabled, setMeasurementEnabled] = useState(true);
@@ -210,6 +210,8 @@ export function ViewerApp() {
   const irInputRef = useRef<HTMLInputElement>(null);
   const importExpiryTimerRef = useRef<number | undefined>(undefined);
   const [importIntent] = useState(createLatestIntentGate);
+  const [assemblySourceLoad] = useState(() => new AssemblySourceLoadSession(importIntent));
+  const [assemblyLoadState, setAssemblyLoadState] = useState<AssemblySourceLoadState>({status:'ready'});
   const jobSequenceRef = useRef(0);
   const jobsRef = useRef<LocalJob[]>([]);
   const activeJobRef = useRef<LocalJob | undefined>(undefined);
@@ -305,13 +307,13 @@ export function ViewerApp() {
   const baselineAssemblyIR = activePreset?.kind === 'product' ? activePreset.assemblyIR : assemblyIR;
   const layoutEditable = Boolean(selectedPart && assemblyIR && isLayoutEditable(selectedPart.id));
   const editSelectedLayout = useCallback((edit: Parameters<typeof editAssemblyLayout>[2]) => {
-    if (!selectedPart || !assemblyIR) return;
+    if (!selectedPart || !assemblyIR || assemblySourceLoad.blocked) return;
     const next = editAssemblyLayout(assemblyIR, selectedPart.id, edit);
     importIntent.cancel();
     setBuildMetrics(undefined);
     setAssemblyIR(next);
     setViewerNote(`${selectedPart.name} 배치를 모델 데이터에 반영했습니다. 내보내기에도 동일하게 포함됩니다.`);
-  }, [assemblyIR, selectedPart, importIntent]);
+  }, [assemblyIR, selectedPart, importIntent, assemblySourceLoad]);
   const displayedTriangles = buildMetrics && 'renderedTriangles' in buildMetrics
     ? buildMetrics.renderedTriangles
     : buildMetrics?.triangles;
@@ -341,7 +343,7 @@ export function ViewerApp() {
 
   useEffect(() => {
     const definition = BROWSER_PROOF_ASSETS[activeAssetId];
-    if (!definition || !deliveryAudit || deliveryAudit.status === 'running') return;
+    if (!sourceCurrent || !definition || !deliveryAudit || deliveryAudit.status === 'running') return;
     const receipt = createBrowserRoundTripAssetReceipt({
       ...definition, qualityReleaseReady: definition.qualityReleaseReady && observedQualityReleaseReady,
     }, deliveryAudit);
@@ -354,7 +356,7 @@ export function ViewerApp() {
         && previous.qualityReleaseReady === receipt.qualityReleaseReady) return current;
       return { ...current, [definition.id]: receipt };
     });
-  }, [activeAssetId, deliveryAudit, observedQualityReleaseReady]);
+  }, [activeAssetId, deliveryAudit, observedQualityReleaseReady, sourceCurrent]);
 
   const clearMeasurement = useCallback(() => {
     viewportRef.current?.clearMeasurement();
@@ -392,7 +394,8 @@ export function ViewerApp() {
     const next = VIEWER_ASSETS.find((item) => item.id === id);
     if (!next) return;
     importIntent.cancel();
-    markNormalKitSourceCurrent(true);
+    assemblySourceLoad.restore();setAssemblyLoadState({status:'ready'});
+    markSourceCurrent(true);
     setActiveAssetId(next.id);
     setAssetKind(next.kind);
     setSelectedPart(undefined);
@@ -440,6 +443,7 @@ export function ViewerApp() {
     setImportedExpiresAt(expiresAt);
     importExpiryTimerRef.current = window.setTimeout(() => {
       importIntent.cancel();
+      assemblySourceLoad.restore();setAssemblyLoadState({status:'ready'});markSourceCurrent(true);
       importExpiryTimerRef.current = undefined;
       setImportedExpiresAt(undefined);
       const fallback = VIEWER_ASSETS[0];
@@ -461,12 +465,13 @@ export function ViewerApp() {
   };
 
   const runAction = (name: string, action: () => Promise<ExportReceipt | void>) => {
+    if (assemblySourceLoad.blocked) { setViewerNote('선택한 IR을 유효하게 읽거나 파일 선택을 취소한 뒤 저장하세요.'); return; }
     const unfinished = jobsRef.current.filter((job) => job.status === 'queued' || job.status === 'running').length;
     if (unfinished >= 6) {
       setViewerNote('로컬 내보내기 대기열은 최대 6개입니다. 완료 또는 취소 후 다시 시도하세요.');
       return;
     }
-    const job: LocalJob = { id: ++jobSequenceRef.current, name, action, status: 'queued' };
+    const job: LocalJob = { id: ++jobSequenceRef.current, name, action: async () => { assemblySourceLoad.assertReady(); return action(); }, status: 'queued' };
     const retainedUnfinished = jobsRef.current.filter((item) => item.status === 'queued' || item.status === 'running');
     const retainedFinished = jobsRef.current
       .filter((item) => item.status !== 'queued' && item.status !== 'running')
@@ -839,7 +844,7 @@ export function ViewerApp() {
             </div>
           )}
 
-          {assetKind === 'product' && assemblyIR && <AssemblyComponentEditor sourceCurrent={normalKitSourceCurrent} ir={assemblyIR} selectedId={selectedPart?.id} onCommit={next=>{importIntent.cancel();setBuildMetrics(undefined);setAssemblyIR(next);setDeliveryAudit(undefined);setDeliveryVerifying(true);setViewerNote('선택 부품 수정 · 기존 납품 검사 재실행');}}/>}
+          {assetKind === 'product' && assemblyIR && <AssemblyComponentEditor isSourceCurrent={()=>!assemblySourceLoad.blocked} sourceCurrent={sourceCurrent} ir={assemblyIR} selectedId={selectedPart?.id} onCommit={next=>{if(assemblySourceLoad.blocked)return;importIntent.cancel();setBuildMetrics(undefined);setAssemblyIR(next);setDeliveryAudit(undefined);setDeliveryVerifying(true);setViewerNote('선택 부품 수정 · 기존 납품 검사 재실행');}}/>}
 
           {assetKind === 'product' && productMetrics && (
             <div className="surface-audit" aria-label="PBR 표면 검사 결과">
@@ -928,8 +933,9 @@ export function ViewerApp() {
             <div className="browser-proof-progress" aria-label="브라우저 왕복 검증 수집 현황">
               <span><b>ACTUAL BROWSER PROOF</b>{Object.keys(browserProofReceipts).length}/{BROWSER_PROOF_EXPECTED_COUNT} ASSETS</span>
               <button
-                disabled={Object.keys(browserProofReceipts).length === 0}
+                disabled={!sourceCurrent || Object.keys(browserProofReceipts).length === 0}
                 onClick={() => {
+                  if(assemblySourceLoad.blocked)return;
                   const report = createBrowserRoundTripReport(
                     Object.values(browserProofReceipts).map(receipt =>
                       receipt.id === BROWSER_PROOF_ASSETS[activeAssetId]?.id && !observedQualityReleaseReady
@@ -956,7 +962,7 @@ export function ViewerApp() {
           </section>
 
           <div className="export-actions">
-            <button className="export-primary" disabled={!pack || qualityBlocked || deliveryAudit?.status === 'blocked'} onClick={() => runAction('ASSET PACK', () => viewportRef.current!.exportAssetPack({
+            <button className="export-primary" disabled={!pack || !sourceCurrent || qualityBlocked || deliveryAudit?.status === 'blocked'} onClick={() => runAction('ASSET PACK', () => viewportRef.current!.exportAssetPack({
               assetId: activeAssetId,
               assetName: activeName,
               sourceIr: sourcePayload,
@@ -965,15 +971,15 @@ export function ViewerApp() {
             }))}>
               <span><b>SAVE ASSET PACK</b><small>GLB + OBJ/STL/PLY + IR + quality + preview + Figma SVG</small></span><i>↓</i>
             </button>
-            <button className="normal-kit-action" disabled={!pack || !assemblyIR || !normalKitSourceCurrent} title={!normalKitSourceCurrent ? '새로 선택한 IR을 유효하게 읽은 뒤 kit를 저장할 수 있습니다.' : assemblyIR ? 'Blender 5.2용 선택형 원본 법선 도구. GLB 검사 후 texture/rig/animation/morph 입력을 거부합니다.' : '정적 AssemblyIR이 필요합니다. 캐릭터/일반 product spec은 이 경로에서 지원하지 않습니다.'} onClick={() => assemblyIR && runAction('BLENDER NORMAL KIT', async () => { if (!normalKitSourceCurrentRef.current) throw new Error('새로 선택한 IR 검사가 완료되지 않아 이전 kit를 재사용할 수 없습니다.'); return viewportRef.current!.exportBlenderNormalKit(assemblyIR); })}>BLENDER 5.2 · SOURCE NORMAL KIT</button>
+            <button className="normal-kit-action" disabled={!pack || !assemblyIR || !sourceCurrent} title={!sourceCurrent ? '새로 선택한 IR을 유효하게 읽은 뒤 kit를 저장할 수 있습니다.' : assemblyIR ? 'Blender 5.2용 선택형 원본 법선 도구. GLB 검사 후 texture/rig/animation/morph 입력을 거부합니다.' : '정적 AssemblyIR이 필요합니다. 캐릭터/일반 product spec은 이 경로에서 지원하지 않습니다.'} onClick={() => assemblyIR && runAction('BLENDER NORMAL KIT', async () => { if (!sourceCurrentRef.current) throw new Error('새로 선택한 IR 검사가 완료되지 않아 이전 kit를 재사용할 수 없습니다.'); return viewportRef.current!.exportBlenderNormalKit(assemblyIR); })}>BLENDER 5.2 · SOURCE NORMAL KIT</button>
             <small className="normal-kit-description">선택형 도구: ZIP을 풀고 포함된 명령을 직접 실행하세요. 기본 Blender import와 다르며, Blender 메시 수정은 IR에 역반영되지 않습니다.</small>
-            <button disabled={!pack} title="PBR scene exchange for Blender, Unity glTF workflows, Unreal, Godot and web viewers" onClick={() => runAction('GLB', () => viewportRef.current!.exportGlb())}>GLB · BLENDER/UNITY/UNREAL/GODOT</button>
-            <button disabled={!pack} title="Mesh reference only; not STEP/BREP" onClick={() => runAction('OBJ', () => viewportRef.current!.exportObj())}>CAD MESH · OBJ</button>
-            <button disabled={!pack} title="Millimetre-valued print/CAD mesh; not STEP/BREP" onClick={() => runAction('STL', () => viewportRef.current!.exportStl())}>PRINT MESH · STL (MM)</button>
-            <button disabled={!pack} title="Static mesh with positions, normals, vertex colors and UVs; textures are not embedded" onClick={() => runAction('PLY', () => viewportRef.current!.exportPly())}>PLY · MESHLAB/CLOUDCOMPARE</button>
-            <button disabled={!pack} title="Apple AR Quick Look / Reality Composer handoff" onClick={() => runAction('USDZ', () => viewportRef.current!.exportUsdz())}>USDZ · APPLE AR</button>
-            <button disabled={!pack} title="2D inspection sheet; not a 3D Figma object" onClick={() => runAction('FIGMA SVG', () => viewportRef.current!.exportFigmaSvg())}>FIGMA · SVG SHEET</button>
-            <button disabled={!pack} onClick={() => runAction('PNG', () => viewportRef.current!.capturePng())}>CAPTURE PNG</button>
+            <button disabled={!pack || !sourceCurrent} title="PBR scene exchange for Blender, Unity glTF workflows, Unreal, Godot and web viewers" onClick={() => runAction('GLB', () => viewportRef.current!.exportGlb())}>GLB · BLENDER/UNITY/UNREAL/GODOT</button>
+            <button disabled={!pack || !sourceCurrent} title="Mesh reference only; not STEP/BREP" onClick={() => runAction('OBJ', () => viewportRef.current!.exportObj())}>CAD MESH · OBJ</button>
+            <button disabled={!pack || !sourceCurrent} title="Millimetre-valued print/CAD mesh; not STEP/BREP" onClick={() => runAction('STL', () => viewportRef.current!.exportStl())}>PRINT MESH · STL (MM)</button>
+            <button disabled={!pack || !sourceCurrent} title="Static mesh with positions, normals, vertex colors and UVs; textures are not embedded" onClick={() => runAction('PLY', () => viewportRef.current!.exportPly())}>PLY · MESHLAB/CLOUDCOMPARE</button>
+            <button disabled={!pack || !sourceCurrent} title="Apple AR Quick Look / Reality Composer handoff" onClick={() => runAction('USDZ', () => viewportRef.current!.exportUsdz())}>USDZ · APPLE AR</button>
+            <button disabled={!pack || !sourceCurrent} title="2D inspection sheet; not a 3D Figma object" onClick={() => runAction('FIGMA SVG', () => viewportRef.current!.exportFigmaSvg())}>FIGMA · SVG SHEET</button>
+            <button disabled={!pack || !sourceCurrent} onClick={() => runAction('PNG', () => viewportRef.current!.capturePng())}>CAPTURE PNG</button>
             <button onClick={() => irInputRef.current?.click()}>OPEN RESULT</button>
             <input
               ref={irInputRef}
@@ -984,45 +990,32 @@ export function ViewerApp() {
                 const file = event.currentTarget.files?.[0];
                 event.currentTarget.value = '';
                 if (!file) return;
-                markNormalKitSourceCurrent(false);
                 for (const job of jobsRef.current) {
-                  if (job.name === 'BLENDER NORMAL KIT' && (job.status === 'queued' || job.status === 'running')) cancelJob(job.id);
+                  if (job.status === 'queued' || job.status === 'running') cancelJob(job.id);
                 }
-                const intent = importIntent.begin();
-                const isCurrent = () => mountedRef.current && importIntent.isCurrent(intent);
-                if (file.size > 2_000_000) { setViewerNote('AssemblyIR은 최대 2MB입니다.'); return; }
-                void Promise.resolve().then(() => isCurrent() ? file.text() : undefined).then((text) => {
-                  if (text === undefined || !isCurrent()) return;
-                  try {
-                    const value: unknown = JSON.parse(text);
-                    validateAssemblyIR(value);
-                    if (!isCurrent()) return;
-                    markNormalKitSourceCurrent(true);
-                    setAssemblyIR(value);
-                    setAssetKind('product');
-                    setActiveAssetId('imported');
-                    setSelectedPart(undefined);
-                    setMeasurementEnabled(true);
-                    setMeasurementUnit(value.metadata?.assetKind === 'building' ? 'm' : 'mm');
-                    setDeliveryAudit(undefined);
-                    setDeliveryVerifying(true);
-                    setTelemetry(undefined);
-                    scheduleImportedExpiry();
-                    setViewerNote(`AssemblyIR 결과 로드 · ${value.components.length}개 부품`);
-                  } catch (error) {
-                    if (!isCurrent()) return;
-                    setViewerNote(error instanceof Error ? error.message : 'AssemblyIR을 읽지 못했습니다.');
-                  }
-                }).catch((error: unknown) => {
-                  if (!isCurrent()) return;
-                  setViewerNote(error instanceof Error ? error.message : '로컬 파일을 읽지 못했습니다.');
+                viewportRef.current?.cancelExport();
+                void assemblySourceLoad.load(file, () => mountedRef.current, value => {
+                  setAssemblyIR(value);
+                  setAssetKind('product');setActiveAssetId('imported');setSelectedPart(undefined);
+                  setMeasurementEnabled(true);
+                  setMeasurementUnit(value.metadata?.assetKind === 'building' ? 'm' : 'mm');
+                  setDeliveryAudit(undefined);setDeliveryVerifying(true);setTelemetry(undefined);
+                  scheduleImportedExpiry();
+                }, state => {
+                  setAssemblyLoadState(state);markSourceCurrent(state.status === 'ready');
+                  if(state.status === 'reading')setViewerNote('Reading AssemblyIR: '+state.name);
+                  else if(state.status === 'failed')setViewerNote(state.error);
+                  else setViewerNote('AssemblyIR loaded. Save IR preserves the editable source.');
                 });
               }}
             />
-            <button onClick={() => {
+            {!sourceCurrent && <><p role="status">{assemblyLoadState.status === 'reading' ? 'IR 읽는 중: 저장과 편집이 잠겨 있습니다.' : 'IR 로드 실패: 유효한 파일을 다시 열거나 선택을 취소하세요.'}</p><button onClick={() => {assemblySourceLoad.restore();setAssemblyLoadState({status:'ready'});markSourceCurrent(true);setViewerNote('파일 선택을 취소하고 이전 유효한 모델로 돌아왔습니다.');}}>DISCARD FILE SELECTION</button></>}
+            <button disabled={!sourceCurrent} onClick={() => {
+              if(assemblySourceLoad.blocked)return;
               downloadJson(sourcePayload, sourceFileName);
             }}>SAVE IR</button>
-            {assetKind === 'product' && assemblyIR?.electrical && <button onClick={() => {
+            {assetKind === 'product' && assemblyIR?.electrical && <button disabled={!sourceCurrent} onClick={() => {
+              if(assemblySourceLoad.blocked)return;
               downloadJson(buildPhysicalNetlist(assemblyIR), 'morphloom-physical-netlist.json');
               setViewerNote('물리 핀·AWG·검증 상태가 포함된 NETLIST를 저장했습니다.');
             }}>SAVE NETLIST</button>}

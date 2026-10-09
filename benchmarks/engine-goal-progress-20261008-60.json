@@ -1,0 +1,573 @@
+{
+  "schema": "sceliph.goal-progress-rubric/0.1",
+  "assessedAtUtc": "2026-10-07T15:37:05.739692+00:00",
+  "baselineType": "newly-defined acceptance-evidence baseline; earlier40/50 estimates not comparable",
+  "target100": "LLM-only declarative generation -> accurate purpose-specific representative assets -> nondestructive user edits -> preserved delivery, with an extensible local platform. Covers hard-surface and organic/character core plus reference workflows; not every possible future domain, clinical/structural approval or manufacturing CAD/BREP. Each criterion must have all four gates. Final gate requires current actual UI, applicable target-tool and independent purpose/quality evidence for that criterion.",
+  "scoreMeaning": "Weighted acceptance-evidence progress, not model accuracy, prompt success probability, fraction of elapsed development time or release authorization. Weights/staging are an explicit engineering assessment choice, not an independent expert score.",
+  "rubricFrozenBeforeFutureRescoring": true,
+  "historicalReceiptsNotAwardedCurrentUseCredit": true,
+  "scope": "local working tree, not remote GitHub main",
+  "baseHead": "24b541fc3fca9a35f16c34a1ba38c934777b647a",
+  "workingTreeDiffSha": null,
+  "currentVerificationManifestSha": "3c4069d0559e8c7c28a406c4a53f46bfb051bcdaedf5371b2c2b0cd4179512ff",
+  "currentTestCount": 999,
+  "releaseStatus": "incomplete: overall quality/productionFAIL; no actual current UI/Blender delivery; primitive local model conformance only",
+  "progressPercent": 60,
+  "areaScores": {
+    "LLM 해석·결과 품질": {
+      "earned": 12.5,
+      "maximum": 30
+    },
+    "형상 생성·정확도": {
+      "earned": 12.5,
+      "maximum": 20
+    },
+    "비파괴 편집·사용 흐름": {
+      "earned": 15.0,
+      "maximum": 20
+    },
+    "UV·재질·표면": {
+      "earned": 7.5,
+      "maximum": 10
+    },
+    "납품·독립 재열기": {
+      "earned": 5.0,
+      "maximum": 10
+    },
+    "확장 구조": {
+      "earned": 3.75,
+      "maximum": 5
+    },
+    "결정성·성능·실행 안정성": {
+      "earned": 3.75,
+      "maximum": 5
+    }
+  },
+  "criteria": [
+    {
+      "id": "L1",
+      "area": "LLM 해석·결과 품질",
+      "criterion": "요청 → 유효한 선언 IR",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/visual-plan-provider-adapter.ts",
+        "codeSha": "f00e365a8b40a239ab93274e8af9a2743bf247e7bbcc018b81463caee57c1c96",
+        "test": null,
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/goal60-local-20261007/creation-proof3/report.json",
+        "artifactSha": "34d145ae3176eed0ac20645d7c45485d46a42258134ee0ddd275da8042021507",
+        "modelProducerProvenance": "outputs/goal60-local-20261007/model-provenance.json",
+        "runner": "scripts/verify-offline-model-artifacts.ts",
+        "currentSpecificAutomatedProof": "outputs/goal60-local-20261007/creation-proof3/report.json"
+      },
+      "limits": "Two actual model-produced native spheres satisfy exact declared geometry, dimensions, topology, file regeneration. Plate critical dimensions FAIL; whole three-case experiment staysFAIL. Free-generation failures retained; no general prompt accuracy claim."
+    },
+    {
+      "id": "L2",
+      "area": "LLM 해석·결과 품질",
+      "criterion": "구조·부품·중요 특징의 올바른 선언",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": false,
+        "C_current_actual_artifact_evidence": false,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 1.25,
+      "evidence": {
+        "code": "src/engine/part-decomposition.ts",
+        "codeSha": "8e777d8b6e9b6f78b7c2734c20f5f130b14d2c425458ffe92ef87b033883f423",
+        "test": null,
+        "testExecutionLog": null,
+        "artifact": null,
+        "artifactSha": null
+      },
+      "limits": "사람이 작성한 fixture를 LLM 의미 해석 성공으로 세지 않음"
+    },
+    {
+      "id": "L3",
+      "area": "LLM 해석·결과 품질",
+      "criterion": "원자료 비율·실루엣에 맞는 생성",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": false,
+        "C_current_actual_artifact_evidence": false,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 1.25,
+      "evidence": {
+        "code": "src/engine/fidelity-pipeline.ts",
+        "codeSha": "832caaa878631c3b89cfedcc29651a52781ecdd9a385094ebf9a8423cc79bc33",
+        "test": null,
+        "testExecutionLog": null,
+        "artifact": null,
+        "artifactSha": null
+      },
+      "limits": "현재 LLM 생성본의 원자료 비교·holdout 미검증"
+    },
+    {
+      "id": "L4",
+      "area": "LLM 해석·결과 품질",
+      "criterion": "재질·디테일의 목적에 맞는 선택",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": false,
+        "C_current_actual_artifact_evidence": false,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 1.25,
+      "evidence": {
+        "code": "src/engine/generation-policy.ts",
+        "codeSha": "a221972c865433121ced60c26d32193d5c91c929e187e972b96f33ea1188c149",
+        "test": null,
+        "testExecutionLog": null,
+        "artifact": null,
+        "artifactSha": null
+      },
+      "limits": "실제 LLM의 물성·기하 표현 선택 품질 미측정"
+    },
+    {
+      "id": "L5",
+      "area": "LLM 해석·결과 품질",
+      "criterion": "수정 의도를 올바른 대상·연산으로 해석",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/assembly-action-catalogue.ts",
+        "codeSha": "4dce425cd535ff22a07ba53f7dc7715ed833d40a03891befcd3a843698e36c13",
+        "test": "tests/assembly-action-catalogue.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/goal60-local-20261007/edit-ranked-v2-proof/report.json",
+        "artifactSha": "01ccc7835f76e88c5c99e3d43091d82ceea12479df0d727b9e1424a199459c8e",
+        "modelProducerProvenance": "outputs/goal60-local-20261007/model-provenance.json",
+        "runner": "scripts/verify-offline-model-artifacts.ts",
+        "currentSpecificAutomatedProof": "outputs/goal60-local-20261007/edit-ranked-v2-proof/report.json"
+      },
+      "limits": "Two source-bound model-ranked translation intents succeed; catalogue computes declared-radius comparative facts. Free-form edit generation remainsFAIL. No generic comparative/scene/geometry-edit intent or actual UI acceptance."
+    },
+    {
+      "id": "L6",
+      "area": "LLM 해석·결과 품질",
+      "criterion": "새 요청·다중 seed·다분야 holdout 안정성",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": false,
+        "C_current_actual_artifact_evidence": false,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 1.25,
+      "evidence": {
+        "code": "src/engine/model-response-evaluation.ts",
+        "codeSha": "21ab566d71ff2ff59f92370b39bba8b1a8881e55e4de9a6da6432d8feaed4286",
+        "test": null,
+        "testExecutionLog": null,
+        "artifact": null,
+        "artifactSha": null,
+        "runner": "scripts/evaluate-model-response.ts"
+      },
+      "limits": "Local task/response replay foundation implemented. Current actual provider calls/held-out model stability remain unverified; B/C/D unchanged false."
+    },
+    {
+      "id": "G1",
+      "area": "형상 생성·정확도",
+      "criterion": "치수·곡면 근사·개별 특징 검사",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/lathe-surface-budget.ts",
+        "codeSha": "d8c85cc354016333957d3d4457673d462c3bd622a9cfbbf60c99a16aedc250b4",
+        "test": "tests/lathe-surface-budget.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/lathe-index-integrity-20261007/results.json",
+        "artifactSha": "dd8fe3614e9de9ca8dd2ac0425e4d34d34c5eea4cf4eda6fe3c96c2416316f2b"
+      },
+      "limits": "구·회전체 지원 범위; 범용 CAD/BREP 정확도 미지원"
+    },
+    {
+      "id": "G2",
+      "area": "형상 생성·정확도",
+      "criterion": "기계 부품의 실제 구조·검증 가능한 파라미터",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/gear-pack.ts",
+        "codeSha": "fb88ae621fe55796ef4769e8bbc8d3b2cf845b59ca7c04a99ef6d96e470fd396",
+        "test": "tests/spur-gear.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/goal50-20261007/native/report.json",
+        "artifactSha": "f367f7099466b25991fbb420439e3d2e60025e2e53654a2ac39abeee40a6eef0",
+        "artifactRunner": "scripts/native-delivery-slice.ts"
+      },
+      "limits": "기어/베어링의 현재 자동 검증; 현재 실제 사용자/DCC 납품 검증 부족 Current actual three-size native file proof added; actual browser/Blender/independent expert acceptance remains absent."
+    },
+    {
+      "id": "G3",
+      "area": "형상 생성·정확도",
+      "criterion": "유기 형체·캐릭터 변형의 표현과 안전 검사",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/character.ts",
+        "codeSha": "dc2d9c9711064bc27dbc6117e0fd7880b9cf67138eb078f04b50bab4e23b0ed1",
+        "test": "tests/rigged-payload-audit.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/goal60-character-complete-20261007/report.json",
+        "artifactSha": "dec54156774c5be960dfab07e7e67bce452c9cb92fae35926a6facea51c1006f",
+        "artifactRunner": "scripts/extended-artifact-evidence.ts"
+      },
+      "limits": "bird 파일 증거를 인체·극단 포즈·해부학 검증으로 확대하지 않음 Current file evidence added; actual UI, target-tool, extreme-pose/independent quality acceptance remains absent."
+    },
+    {
+      "id": "G4",
+      "area": "형상 생성·정확도",
+      "criterion": "단일/다시점 원자료의 정확한 정렬·형상 대응",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": false,
+        "C_current_actual_artifact_evidence": false,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 1.25,
+      "evidence": {
+        "code": "src/engine/reference-set.ts",
+        "codeSha": "53a24da8ec31acd6fc1f3c2d4c1821609ccb4f19192f55c0584461903d41c964",
+        "test": null,
+        "testExecutionLog": null,
+        "artifact": null,
+        "artifactSha": null
+      },
+      "limits": "합성 silhouette/metadata 검사는 실제 사진 정확도 평가와 분리"
+    },
+    {
+      "id": "E1",
+      "area": "비파괴 편집·사용 흐름",
+      "criterion": "안정 ID·국부 수정·비대상 보존",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/assembly-edit.ts",
+        "codeSha": "8041d3ea404a68bded8d8e787b4a055ec564b7305973851629269d063a36fc02",
+        "test": "tests/assembly-edit.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/assembly-source-load-20261007/non-target-payload.json",
+        "artifactSha": "37cf3b0d4eff38a18981daa105137fcffe9a3ecca2c5fa8e043fec28cb592b13"
+      },
+      "limits": "추가 편집의 실제 GLB 비대상16메시 보존"
+    },
+    {
+      "id": "E2",
+      "area": "비파괴 편집·사용 흐름",
+      "criterion": "undo/redo·취소·실패/지연 결과 안전성",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/assembly-source-load.ts",
+        "codeSha": "eda142ab93bf4a4871afeb7159575d7dab380eb8603006e42b565a7bc4af5d46",
+        "test": "tests/assembly-source-load.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/goal60-history-complete-20261007/report.json",
+        "artifactSha": "88d48fbbf2e875abdafadd2721f3ec417c578b3403cf933fc0ebce46181dffc3",
+        "artifactRunner": "scripts/extended-artifact-evidence.ts",
+        "additionalCode": [
+          "src/engine/element-workspace.ts",
+          "src/engine/workspace-editor-session.ts"
+        ]
+      },
+      "limits": "controller/이력 검증; 현재 실제 브라우저 동작 blocked Current file evidence added; actual UI, target-tool, extreme-pose/independent quality acceptance remains absent."
+    },
+    {
+      "id": "E3",
+      "area": "비파괴 편집·사용 흐름",
+      "criterion": "별도 sourceJSON 저장·새 세션 재읽기·추가 편집",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/assembly-source-load.ts",
+        "codeSha": "eda142ab93bf4a4871afeb7159575d7dab380eb8603006e42b565a7bc4af5d46",
+        "test": "tests/assembly-source-load.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/assembly-source-load-20261007/file-flow.json",
+        "artifactSha": "297dc5d027a84f05737b7f772dae1fdddd4e8d6ea5cdeaa90919eb3729d5ba76"
+      },
+      "limits": "실제 파일/controller 경로이며 브라우저 다운로드는 not-run"
+    },
+    {
+      "id": "E4",
+      "area": "비파괴 편집·사용 흐름",
+      "criterion": "하위 요소 선택·분리·복원·독립 export",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/element-project.ts",
+        "codeSha": "29a88817a6da93c6553ac175f3b438988eda306cb7a7a19ccafb869e0ffaba93",
+        "test": "tests/element-export-source.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/goal50-20261007/native/report.json",
+        "artifactSha": "f367f7099466b25991fbb420439e3d2e60025e2e53654a2ac39abeee40a6eef0",
+        "artifactRunner": "scripts/native-delivery-slice.ts"
+      },
+      "limits": "지원 요소의 자동 검사; 현재 실제 UI/DCC 증거 부족 Current actual three-size native file proof added; actual browser/Blender/independent expert acceptance remains absent."
+    },
+    {
+      "id": "U1",
+      "area": "UV·재질·표면",
+      "criterion": "용도별 UV·normal·특징별 손상 차단",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/uv-quality.ts",
+        "codeSha": "1e6139c73a07cca0af7f338c24b7b4c14210e4f41af7da7ef5512255760a51f2",
+        "test": "tests/bound-reference-uv.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/goal60-uv-complete-20261007/report.json",
+        "artifactSha": "2549dd92916ead4e028b4dcd1e1d2b3699544bbb6b8253378d098f75db2d6b57",
+        "artifactRunner": "scripts/extended-artifact-evidence.ts"
+      },
+      "limits": "5% 톱니 gate 유지; atlas/padding/pole 품질 전반 미완료 Current file evidence added; actual UI, target-tool, extreme-pose/independent quality acceptance remains absent."
+    },
+    {
+      "id": "U2",
+      "area": "UV·재질·표면",
+      "criterion": "PBR·실제 스케일 표면·텍스처 납품 보존",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/surface-system.ts",
+        "codeSha": "22151aea219150cd1574e38acbecfe2c29a1a73755efb207d4095d61f39db2ee",
+        "test": "tests/pbr-reference-audit.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/goal50-20261007/native/report.json",
+        "artifactSha": "f367f7099466b25991fbb420439e3d2e60025e2e53654a2ac39abeee40a6eef0",
+        "artifactRunner": "scripts/native-delivery-slice.ts"
+      },
+      "limits": "raw PBR 파일 성공을 모든 절차 표면/베이크 납품으로 확대하지 않음 Current actual three-size native file proof added; actual browser/Blender/independent expert acceptance remains absent."
+    },
+    {
+      "id": "D1",
+      "area": "납품·독립 재열기",
+      "criterion": "실제 GLB·원본/출력 SHA·독립 parser 검증",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/gltf-standard-validation.ts",
+        "codeSha": "54129f143e99a4ed908cbc149c5c568f1c7fac28ea1943e44a9f8043d749a923",
+        "test": "tests/gltf-standard-validation.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/assembly-source-load-20261007/file-flow.json",
+        "artifactSha": "297dc5d027a84f05737b7f772dae1fdddd4e8d6ea5cdeaa90919eb3729d5ba76"
+      },
+      "limits": "현재3파일 Khronos/WebIO 통과; 대상 앱과 별도"
+    },
+    {
+      "id": "D2",
+      "area": "납품·독립 재열기",
+      "criterion": "Blender에서 편집·normal·재질·계층 납품",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": false,
+        "C_current_actual_artifact_evidence": false,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 1.25,
+      "evidence": {
+        "code": "src/engine/blender-normal-kit.ts",
+        "codeSha": "47362172b50884bd307c3411644e883419a774953f5622f7afe6792bcf737bcc",
+        "test": null,
+        "testExecutionLog": null,
+        "artifact": null,
+        "artifactSha": null
+      },
+      "limits": "첫 import/reexport 현재 not-run; normal drift와 전체 gate 차단 잔존"
+    },
+    {
+      "id": "X1",
+      "area": "확장 구조",
+      "criterion": "Domain Pack·capability·단위/좌표 충돌·오류 격리",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/element-domain-packs.ts",
+        "codeSha": "a537c98b748a673614b50d7d3c21abb1eb9c295687c3735c5f1ec1faed4eb7da",
+        "test": "tests/element-domain-packs.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/goal60-history-complete-20261007/report.json",
+        "artifactSha": "88d48fbbf2e875abdafadd2721f3ec417c578b3403cf933fc0ebce46181dffc3",
+        "artifactRunner": "scripts/extended-artifact-evidence.ts",
+        "additionalCode": [
+          "src/engine/element-workspace.ts",
+          "src/engine/workspace-editor-session.ts"
+        ]
+      },
+      "limits": "pack registry 검증; 상위 route의 고정 domain 분기/비mesh 표현 확대 부족 Current file evidence added; actual UI, target-tool, extreme-pose/independent quality acceptance remains absent."
+    },
+    {
+      "id": "P1",
+      "area": "결정성·성능·실행 안정성",
+      "criterion": "동일 입력 재현·자원 상한·측정된 실행 비용",
+      "weight": 5,
+      "stagePoints": 1.25,
+      "gates": {
+        "A_runnable_foundation": true,
+        "B_current_specific_automated_evidence": true,
+        "C_current_actual_artifact_evidence": true,
+        "D_actual_user_target_tool_independent_purpose_acceptance": false
+      },
+      "earned": 3.75,
+      "evidence": {
+        "code": "src/engine/assembly-contact-witness.ts",
+        "codeSha": "0a4d22aedb39e14e2e3e95a46f1457c7741e8535f28d2041962471edea4c7d25",
+        "test": "tests/contact-witness-cache.test.ts",
+        "testExecutionLog": "outputs/goal60-local-20261007/final-verification/test.log",
+        "artifact": "outputs/contact-cache-20261007/parity-attempt2/parity.json",
+        "artifactSha": "9690babc1f40bddb3ca99b82f18e096c6f8f9ae6302347c73f5343ad150c1745"
+      },
+      "limits": "현재 환경/지원 사례 근거; legacy ARM/x64 및 전체 production 완료 아님"
+    }
+  ],
+  "stageTotals": {
+    "A_runnable_foundation": 20,
+    "B_current_specific_automated_evidence": 14,
+    "C_current_actual_artifact_evidence": 14,
+    "D_actual_user_target_tool_independent_purpose_acceptance": 0
+  },
+  "noTestsOrModelCallsRerunForThisAssessment": false,
+  "previousBaseline": "benchmarks/engine-goal-progress-20261007-55-resume.json",
+  "previousBaselineSha256": "4385b4743e67cf23c80419ed70f57386c84bb1f250e4ae8d9ec487bcde215131",
+  "previousProgressPercent": 55,
+  "changes": [
+    {
+      "id": "L1",
+      "gate": "B",
+      "addedPoints": 1.25
+    },
+    {
+      "id": "L1",
+      "gate": "C",
+      "addedPoints": 1.25
+    },
+    {
+      "id": "L5",
+      "gate": "B",
+      "addedPoints": 1.25
+    },
+    {
+      "id": "L5",
+      "gate": "C",
+      "addedPoints": 1.25
+    }
+  ],
+  "verificationExecution": "outputs/goal60-local-20261007/final-verification/execution.json",
+  "additionalModelProviderCalls": 0,
+  "currentVerificationManifest": "outputs/goal60-local-20261007/manifest.json",
+  "sourceFingerprintSha256": "9e1d657a7f2e088259c558438f80b035a86d25e3067cd3a0c0b9b1c2dc2091e3",
+  "requestedTargetPercent": 60,
+  "targetAchieved": true,
+  "currentLimit": "Bounded existing0.6B local model; only two sphere creations/two model-ranked translation intents verified. Plate and free-form edit failures remain. UI/Blender/production acceptance absent.",
+  "milestoneOnly": true,
+  "localFreeGeneratedResponses": 15,
+  "localRankedActionSelections": 4,
+  "additionalUNI_AIOrClaudeCalls": 0
+}

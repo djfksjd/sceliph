@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {resolve} from 'node:path';
+import {createHash} from 'node:crypto';
+import {evaluateModelResponse,parseModelResponseTask} from '../src/engine/model-response-evaluation';
+if(process.argv.length!==5)throw Error('Usage: vite-node scripts/evaluate-model-response.ts task.json response.json new-output-directory');
+const [taskPath,responsePath,directory]=process.argv.slice(2),taskBytes=readFileSync(taskPath),responseBytes=readFileSync(responsePath);
+const task=parseModelResponseTask(taskBytes.toString()),report=evaluateModelResponse(task,responseBytes.toString());
+const sha=(b:Uint8Array)=>createHash('sha256').update(b).digest('hex'),out=resolve(directory);mkdirSync(out);
+writeFileSync(resolve(out,'task.json'),taskBytes,{flag:'wx'});writeFileSync(resolve(out,'response.source.json'),responseBytes,{flag:'wx'});
+writeFileSync(resolve(out,'evaluation.json'),JSON.stringify({...report,taskSha256:sha(taskBytes),responseSha256:sha(responseBytes),node:process.version,arch:process.arch,scope:'Local replay of supplied declarations; no provider call or authenticated model-run evidence.'},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({output:out,pass:report.pass,modelRunVerified:false}));if(!report.pass)process.exitCode=1;
