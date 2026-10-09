@@ -20,6 +20,21 @@ Sceliph는 사진·도면·실측값·자연어 요구를 선언형 IR로 정리
 
 **현재는 `v0.4 alpha`입니다. 임의 사진의 정확한 3D 복원, 모든 분야의 실무 납품, 제조용 CAD/BREP 정확도를 보장하지 않습니다.** 특정 검사 통과나 많은 폴리곤을 전체 품질의 증거로 취급하지 않습니다.
 
+## 로컬 UI / UX
+
+베어링의 부품 트리와 3D 뷰포트, 개별 볼 선택·isolate, 수치·PBR Inspector와 UV checker를 실제 Chrome 화면으로 확인할 수 있습니다.
+
+**2026-10-09에 캡처한 이전 로컬 빌드 화면**입니다. 최신 판 재생성 패널은 포함하지 않습니다. UI 소개용 사진이며 모델 정확도나 전체 납품 품질의 검증 결과는 아닙니다. [캡처 정보](./assets/screenshots/README.md)
+
+![Sceliph 로컬 편집기의 베어링 조립체, 부품 ID 트리와 Inspector](./assets/screenshots/element-editor-bearing.jpg)
+
+<table>
+  <tr>
+    <td width="50%"><img src="./assets/screenshots/element-editor-part-selection.jpg" alt="ball_0000 개별 볼 isolate와 위치·재질·반지름 Inspector" width="100%" /><br /><strong>개별 부품 선택과 isolate</strong><br />안정적인 ID로 선택하고 mm·rad 단위, PBR 값과 구면 반지름을 확인합니다.</td>
+    <td width="50%"><img src="./assets/screenshots/element-editor-uv-checker.jpg" alt="개별 볼의 합성 UV checker 진단 화면" width="100%" /><br /><strong>UV checker 진단</strong><br />합성 체크 패턴으로 매핑을 살펴봅니다. 체크 패턴은 원본 재질이나 실측 텍스처가 아닙니다.</td>
+  </tr>
+</table>
+
 ## 현재 상태
 
 **Sceliph는 Morphloom의 새 이름입니다.** 기존 `morphloom.*` 스키마·팩 ID와 `npm run morphloom` 명령은 파일 및 작업 호환성을 위해 유지합니다.
