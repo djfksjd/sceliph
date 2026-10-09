@@ -22,9 +22,11 @@ Sceliph는 사진·도면·실측값·자연어 요구를 선언형 IR로 정리
 
 ## 로컬 UI / UX
 
+현재 편집기는 뷰포트 중심 작업 영역, 선택 상태 표시, 접이식 생성·파일·검사 도구와 좁은 화면 배치를 제공합니다. [UI 변경·검증 범위](./docs/EDITOR_UI_STATUS.ko.md)를 확인하세요. 최신 화면의 실제 브라우저 검수는 실행환경 차단으로 미실행입니다.
+
 베어링의 부품 트리와 3D 뷰포트, 개별 볼 선택·isolate, 수치·PBR Inspector와 UV checker를 실제 Chrome 화면으로 확인할 수 있습니다.
 
-**2026-10-09에 캡처한 이전 로컬 빌드 화면**입니다. 최신 판 재생성 패널은 포함하지 않습니다. UI 소개용 사진이며 모델 정확도나 전체 납품 품질의 검증 결과는 아닙니다. [캡처 정보](./assets/screenshots/README.md)
+**2026-10-09에 캡처한 이전 로컬 빌드 화면**입니다. 최신 판 재생성 패널과 새 작업 화면 레이아웃은 포함하지 않습니다. UI 소개용 사진이며 모델 정확도나 전체 납품 품질의 검증 결과는 아닙니다. [캡처 정보](./assets/screenshots/README.md)
 
 ![Sceliph 로컬 편집기의 베어링 조립체, 부품 ID 트리와 Inspector](./assets/screenshots/element-editor-bearing.jpg)
 
