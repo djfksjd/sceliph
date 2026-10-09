@@ -20,6 +20,21 @@ Sceliph is an open-source local tool that turns photographs, drawings, measureme
 
 **This is `v0.4 alpha`. It does not guarantee accurate reconstruction from arbitrary photos, production delivery across all domains, or manufacturing CAD/BREP precision.** Passing a particular check or increasing polygon counts is not proof of overall quality.
 
+## Local UI / UX
+
+Actual Chrome screenshots show the bearing part tree and 3D viewport, individual ball selection and isolation, numeric/PBR inspection, and a UV checker preview.
+
+These were **captured on 2026-10-09 from an earlier local build**. They do not include the latest plate regeneration panel. They illustrate the interface, not model accuracy or production delivery approval. [Capture details](./assets/screenshots/README.md)
+
+![Sceliph local bearing assembly, stable part IDs and Inspector](./assets/screenshots/element-editor-bearing.jpg)
+
+<table>
+  <tr>
+    <td width="50%"><img src="./assets/screenshots/element-editor-part-selection.jpg" alt="Isolated ball_0000 with transform, PBR and radius controls" width="100%" /><br /><strong>Part selection and isolation</strong><br />Select a stable ID and inspect mm/radian values, PBR appearance and sphere radius.</td>
+    <td width="50%"><img src="./assets/screenshots/element-editor-uv-checker.jpg" alt="Synthetic UV checker preview on an isolated bearing ball" width="100%" /><br /><strong>UV checker inspection</strong><br />Inspect mapping with a synthetic pattern. This is not the source material or a measured texture.</td>
+  </tr>
+</table>
+
 ## Current status
 
 **Sceliph is the new name of Morphloom.** Existing `morphloom.*` schemas, pack IDs and `npm run morphloom` remain compatible.
