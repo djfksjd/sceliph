@@ -22,9 +22,11 @@ Sceliph is an open-source local tool that turns photographs, drawings, measureme
 
 ## Local UI / UX
 
+The editor now prioritizes the viewport, highlights selection, groups creation/file/inspection tools in collapsible sections, and adapts the workbench for narrow screens. See [changes and verification scope](./docs/EDITOR_UI_STATUS.ko.md). Current browser verification remains not-run because the local server could not start in this execution environment.
+
 Actual Chrome screenshots show the bearing part tree and 3D viewport, individual ball selection and isolation, numeric/PBR inspection, and a UV checker preview.
 
-These were **captured on 2026-10-09 from an earlier local build**. They do not include the latest plate regeneration panel. They illustrate the interface, not model accuracy or production delivery approval. [Capture details](./assets/screenshots/README.md)
+These were **captured on 2026-10-09 from an earlier local build**. They do not include the latest plate regeneration panel or the new workbench layout. They illustrate the interface, not model accuracy or production delivery approval. [Capture details](./assets/screenshots/README.md)
 
 ![Sceliph local bearing assembly, stable part IDs and Inspector](./assets/screenshots/element-editor-bearing.jpg)
 
