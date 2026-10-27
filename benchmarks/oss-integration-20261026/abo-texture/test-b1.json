@@ -1,0 +1,1168 @@
+{
+ "schema": "sceliph.abo-appearance-eval/0.1",
+ "mode": "ir",
+ "render": {
+  "views": 8,
+  "elevationDeg": 20,
+  "size": 256
+ },
+ "metricsSha256": "a2343a9162b7cdeed35a2f17117c86399f0fef96d2f66ba9b8ee63fccfc4add3",
+ "rendererSha256": "56b4dd1c724b55b401f75e3744beccb3be0f106d34a8a7578a88b26fb052b7bb",
+ "results": [
+  {
+   "modelId": "B07HSCYS4C",
+   "productType": "DESK",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.6259,
+     "deltaE00": 5.9724,
+     "histogram": 0.2675,
+     "detailReference": 0.8461,
+     "detailCandidate": 1.0392,
+     "detailRatio": 1.4473,
+     "detailLog": 0.6524,
+     "spreadReference": 1.5047,
+     "spreadCandidate": 1.411,
+     "spreadLog": 1.2016,
+     "ssimAlbedo": 0.7791,
+     "ssimLit": 0.696
+    },
+    "a1-grey": {
+     "maskIoU": 0.6259,
+     "deltaE00": 21.9758,
+     "histogram": 0.0231,
+     "detailReference": 0.8461,
+     "detailCandidate": 0.0852,
+     "detailRatio": 0.1116,
+     "detailLog": 1.1766,
+     "spreadReference": 1.5047,
+     "spreadCandidate": 0,
+     "spreadLog": 0.8279,
+     "ssimAlbedo": 0.8865,
+     "ssimLit": 0.6856
+    }
+   }
+  },
+  {
+   "modelId": "B071SHBTM5",
+   "productType": "DRESSER",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.9173,
+     "deltaE00": 4.434,
+     "histogram": 0.1804,
+     "detailReference": 1.0102,
+     "detailCandidate": 1.2374,
+     "detailRatio": 1.7817,
+     "detailLog": 0.9714,
+     "spreadReference": 3.8242,
+     "spreadCandidate": 1.7311,
+     "spreadLog": 1.2728,
+     "ssimAlbedo": 0.6326,
+     "ssimLit": 0.7348
+    },
+    "a1-grey": {
+     "maskIoU": 0.9173,
+     "deltaE00": 30.2294,
+     "histogram": 0,
+     "detailReference": 1.0102,
+     "detailCandidate": 0.0563,
+     "detailRatio": 0.0632,
+     "detailLog": 1.2685,
+     "spreadReference": 3.8242,
+     "spreadCandidate": 0,
+     "spreadLog": 1.5488,
+     "ssimAlbedo": 0.6205,
+     "ssimLit": 0.625
+    }
+   }
+  },
+  {
+   "modelId": "B082XCSHKB",
+   "productType": "ELECTRIC_FAN",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.4937,
+     "deltaE00": 7.7502,
+     "histogram": 0.1032,
+     "detailReference": 1.9306,
+     "detailCandidate": 0.0855,
+     "detailRatio": 0.0439,
+     "detailLog": 2.0393,
+     "spreadReference": 15.7798,
+     "spreadCandidate": 0.0441,
+     "spreadLog": 3.4518,
+     "ssimAlbedo": 0.1985,
+     "ssimLit": 0.2398
+    },
+    "a1-grey": {
+     "maskIoU": 0.4937,
+     "deltaE00": 22.7027,
+     "histogram": 0.0178,
+     "detailReference": 1.9306,
+     "detailCandidate": 0.0274,
+     "detailRatio": 0.0144,
+     "detailLog": 2.0393,
+     "spreadReference": 15.7798,
+     "spreadCandidate": 0,
+     "spreadLog": 3.4518,
+     "ssimAlbedo": 0.5129,
+     "ssimLit": 0.0282
+    }
+   }
+  },
+  {
+   "modelId": "B075X2NLKP",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.9197,
+     "deltaE00": 21.4082,
+     "histogram": 0.1897,
+     "detailReference": 0.937,
+     "detailCandidate": 1.2533,
+     "detailRatio": 1.3379,
+     "detailLog": 0.2908,
+     "spreadReference": 19.6788,
+     "spreadCandidate": 3.3011,
+     "spreadLog": 1.7853,
+     "ssimAlbedo": 0.573,
+     "ssimLit": 0.5008
+    },
+    "a1-grey": {
+     "maskIoU": 0.9197,
+     "deltaE00": 19.6365,
+     "histogram": 0,
+     "detailReference": 0.937,
+     "detailCandidate": 0.0711,
+     "detailRatio": 0.0759,
+     "detailLog": 1.3211,
+     "spreadReference": 19.6788,
+     "spreadCandidate": 0,
+     "spreadLog": 3.6727,
+     "ssimAlbedo": 0.7713,
+     "ssimLit": 0.5456
+    }
+   }
+  },
+  {
+   "modelId": "B082JHBD9S",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.7112,
+     "deltaE00": 14.082,
+     "histogram": 0.0473,
+     "detailReference": 2.1198,
+     "detailCandidate": 0.7067,
+     "detailRatio": 0.3453,
+     "detailLog": 1.1258,
+     "spreadReference": 19.0307,
+     "spreadCandidate": 3.1471,
+     "spreadLog": 1.8527,
+     "ssimAlbedo": 0.4696,
+     "ssimLit": 0.3118
+    },
+    "a1-grey": {
+     "maskIoU": 0.7112,
+     "deltaE00": 20.6172,
+     "histogram": 0.0046,
+     "detailReference": 2.1198,
+     "detailCandidate": 0.0217,
+     "detailRatio": 0.011,
+     "detailLog": 2.117,
+     "spreadReference": 19.0307,
+     "spreadCandidate": 0,
+     "spreadLog": 3.6283,
+     "ssimAlbedo": 0.6334,
+     "ssimLit": 0.2362
+    }
+   }
+  },
+  {
+   "modelId": "B07HSMYNYJ",
+   "productType": "SHELF",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.9165,
+     "deltaE00": 4.8611,
+     "histogram": 0.5749,
+     "detailReference": 1.0455,
+     "detailCandidate": 0.7581,
+     "detailRatio": 0.7834,
+     "detailLog": 0.9773,
+     "spreadReference": 3.1191,
+     "spreadCandidate": 1.0254,
+     "spreadLog": 1.2898,
+     "ssimAlbedo": 0.6164,
+     "ssimLit": 0.6297
+    },
+    "a1-grey": {
+     "maskIoU": 0.9165,
+     "deltaE00": 28.0988,
+     "histogram": 0,
+     "detailReference": 1.0455,
+     "detailCandidate": 0.0772,
+     "detailRatio": 0.0758,
+     "detailLog": 1.4272,
+     "spreadReference": 3.1191,
+     "spreadCandidate": 0,
+     "spreadLog": 1.7535,
+     "ssimAlbedo": 0.5266,
+     "ssimLit": 0.5514
+    }
+   }
+  },
+  {
+   "modelId": "B07B4SCM7N",
+   "productType": "STORAGE_BOX",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.9127,
+     "deltaE00": 25.9297,
+     "histogram": 0.02,
+     "detailReference": 0.9518,
+     "detailCandidate": 1.6334,
+     "detailRatio": 1.6729,
+     "detailLog": 0.4574,
+     "spreadReference": 1.9034,
+     "spreadCandidate": 2.3477,
+     "spreadLog": 0.3012,
+     "ssimAlbedo": 0.4827,
+     "ssimLit": 0.3978
+    },
+    "a1-grey": {
+     "maskIoU": 0.9127,
+     "deltaE00": 20.341,
+     "histogram": 0.008,
+     "detailReference": 0.9518,
+     "detailCandidate": 0.0593,
+     "detailRatio": 0.071,
+     "detailLog": 1.2909,
+     "spreadReference": 1.9034,
+     "spreadCandidate": 0,
+     "spreadLog": 1.2996,
+     "ssimAlbedo": 0.7614,
+     "ssimLit": 0.543
+    }
+   }
+  },
+  {
+   "modelId": "B07QVRTT6J",
+   "productType": "TABLE",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.8048,
+     "deltaE00": 20.0386,
+     "histogram": 0.0162,
+     "detailReference": 2.8571,
+     "detailCandidate": 0.7817,
+     "detailRatio": 0.2947,
+     "detailLog": 1.4924,
+     "spreadReference": 8.9932,
+     "spreadCandidate": 1.155,
+     "spreadLog": 2.2241,
+     "ssimAlbedo": 0.4936,
+     "ssimLit": 0.5451
+    },
+    "a1-grey": {
+     "maskIoU": 0.8048,
+     "deltaE00": 12.1698,
+     "histogram": 0.0025,
+     "detailReference": 2.8571,
+     "detailCandidate": 0.0684,
+     "detailRatio": 0.0241,
+     "detailLog": 2.431,
+     "spreadReference": 8.9932,
+     "spreadCandidate": 0,
+     "spreadLog": 2.888,
+     "ssimAlbedo": 0.6422,
+     "ssimLit": 0.6326
+    }
+   }
+  },
+  {
+   "modelId": "B0154WJZH2",
+   "productType": "CABINET",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.9033,
+     "deltaE00": 2.9203,
+     "histogram": 0.02,
+     "detailReference": 0.3617,
+     "detailCandidate": 0.1626,
+     "detailRatio": 0.5031,
+     "detailLog": 0.3474,
+     "spreadReference": 1.9241,
+     "spreadCandidate": 0.0226,
+     "spreadLog": 0.8704,
+     "ssimAlbedo": 0.9541,
+     "ssimLit": 0.858
+    },
+    "a1-grey": {
+     "maskIoU": 0.9033,
+     "deltaE00": 29.4227,
+     "histogram": 0,
+     "detailReference": 0.3617,
+     "detailCandidate": 0.0861,
+     "detailRatio": 0.2738,
+     "detailLog": 0.3845,
+     "spreadReference": 1.9241,
+     "spreadCandidate": 0,
+     "spreadLog": 0.8704,
+     "ssimAlbedo": 0.8267,
+     "ssimLit": 0.7468
+    }
+   }
+  },
+  {
+   "modelId": "B07K6S7QHQ",
+   "productType": "DESK",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.8877,
+     "deltaE00": 7.0022,
+     "histogram": 0.757,
+     "detailReference": 1.3627,
+     "detailCandidate": 2.5313,
+     "detailRatio": 2.1263,
+     "detailLog": 0.9754,
+     "spreadReference": 5.8378,
+     "spreadCandidate": 3.4149,
+     "spreadLog": 0.6944,
+     "ssimAlbedo": 0.4308,
+     "ssimLit": 0.4024
+    },
+    "a1-grey": {
+     "maskIoU": 0.8877,
+     "deltaE00": 28.0105,
+     "histogram": 0.0001,
+     "detailReference": 1.3627,
+     "detailCandidate": 0.0633,
+     "detailRatio": 0.044,
+     "detailLog": 1.6672,
+     "spreadReference": 5.8378,
+     "spreadCandidate": 0,
+     "spreadLog": 2.4528,
+     "ssimAlbedo": 0.7093,
+     "ssimLit": 0.5956
+    }
+   }
+  },
+  {
+   "modelId": "B07B4Y45GY",
+   "productType": "DRESSER",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.9574,
+     "deltaE00": 15.9481,
+     "histogram": 0.2994,
+     "detailReference": 1.2935,
+     "detailCandidate": 0.9034,
+     "detailRatio": 0.653,
+     "detailLog": 0.4886,
+     "spreadReference": 5.5848,
+     "spreadCandidate": 1.2849,
+     "spreadLog": 1.5422,
+     "ssimAlbedo": 0.4176,
+     "ssimLit": 0.4747
+    },
+    "a1-grey": {
+     "maskIoU": 0.9574,
+     "deltaE00": 19.9034,
+     "histogram": 0.0067,
+     "detailReference": 1.2935,
+     "detailCandidate": 0.0758,
+     "detailRatio": 0.0666,
+     "detailLog": 1.6149,
+     "spreadReference": 5.5848,
+     "spreadCandidate": 0,
+     "spreadLog": 2.3682,
+     "ssimAlbedo": 0.6108,
+     "ssimLit": 0.5167
+    }
+   }
+  },
+  {
+   "modelId": "B082JH9VWG",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.3593,
+     "deltaE00": 7.292,
+     "histogram": 0,
+     "detailReference": 1.2017,
+     "detailCandidate": 0.2809,
+     "detailRatio": 0.2524,
+     "detailLog": 1.3809,
+     "spreadReference": 3.7438,
+     "spreadCandidate": 0,
+     "spreadLog": 2.0102,
+     "ssimAlbedo": 0.6235,
+     "ssimLit": 0.3232
+    },
+    "a1-grey": {
+     "maskIoU": 0.3593,
+     "deltaE00": 13.1459,
+     "histogram": 0.1707,
+     "detailReference": 1.2017,
+     "detailCandidate": 0.2121,
+     "detailRatio": 0.1907,
+     "detailLog": 1.514,
+     "spreadReference": 3.7438,
+     "spreadCandidate": 0,
+     "spreadLog": 2.0102,
+     "ssimAlbedo": 0.8943,
+     "ssimLit": 0.3231
+    }
+   }
+  },
+  {
+   "modelId": "B07B4Z9PL9",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.2174,
+     "deltaE00": 4.2101,
+     "histogram": 0.0603,
+     "detailReference": 0.783,
+     "detailCandidate": 0.1529,
+     "detailRatio": 0.5552,
+     "detailLog": 0.7469,
+     "spreadReference": 3.8035,
+     "spreadCandidate": 0,
+     "spreadLog": 1.4071,
+     "ssimAlbedo": 0.045,
+     "ssimLit": 0.2898
+    },
+    "a1-grey": {
+     "maskIoU": 0.2174,
+     "deltaE00": 39.9345,
+     "histogram": 0.0024,
+     "detailReference": 0.783,
+     "detailCandidate": 0.6269,
+     "detailRatio": 2.1918,
+     "detailLog": 0.8647,
+     "spreadReference": 3.8035,
+     "spreadCandidate": 0,
+     "spreadLog": 1.4071,
+     "ssimAlbedo": 0.004,
+     "ssimLit": 0.1615
+    }
+   }
+  },
+  {
+   "modelId": "B07TVYR4SS",
+   "productType": "SHELF",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.8237,
+     "deltaE00": 6.7051,
+     "histogram": 0.8948,
+     "detailReference": 1.2929,
+     "detailCandidate": 3.9541,
+     "detailRatio": 3.1615,
+     "detailLog": 1.1108,
+     "spreadReference": 5.7498,
+     "spreadCandidate": 5.2297,
+     "spreadLog": 0.1114,
+     "ssimAlbedo": 0.2207,
+     "ssimLit": 0.2759
+    },
+    "a1-grey": {
+     "maskIoU": 0.8237,
+     "deltaE00": 23.1776,
+     "histogram": 0,
+     "detailReference": 1.2929,
+     "detailCandidate": 0.0852,
+     "detailRatio": 0.0691,
+     "detailLog": 1.6351,
+     "spreadReference": 5.7498,
+     "spreadCandidate": 0,
+     "spreadLog": 2.4361,
+     "ssimAlbedo": 0.6423,
+     "ssimLit": 0.6109
+    }
+   }
+  },
+  {
+   "modelId": "B07B4W2MFW",
+   "productType": "STORAGE_BOX",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.8768,
+     "deltaE00": 9.6622,
+     "histogram": 0.0524,
+     "detailReference": 1.3165,
+     "detailCandidate": 1.0076,
+     "detailRatio": 0.7576,
+     "detailLog": 0.2828,
+     "spreadReference": 12.8954,
+     "spreadCandidate": 1.5138,
+     "spreadLog": 2.1971,
+     "ssimAlbedo": 0.5207,
+     "ssimLit": 0.4596
+    },
+    "a1-grey": {
+     "maskIoU": 0.8768,
+     "deltaE00": 17.5288,
+     "histogram": 0.0027,
+     "detailReference": 1.3165,
+     "detailCandidate": 0.0615,
+     "detailRatio": 0.0458,
+     "detailLog": 1.6259,
+     "spreadReference": 12.8954,
+     "spreadCandidate": 0,
+     "spreadLog": 3.246,
+     "ssimAlbedo": 0.7113,
+     "ssimLit": 0.4756
+    }
+   }
+  },
+  {
+   "modelId": "B07B78G4QH",
+   "productType": "TABLE",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.698,
+     "deltaE00": 10.8956,
+     "histogram": 0.6686,
+     "detailReference": 1.346,
+     "detailCandidate": 1.0383,
+     "detailRatio": 0.776,
+     "detailLog": 0.414,
+     "spreadReference": 7.5371,
+     "spreadCandidate": 1.5036,
+     "spreadLog": 1.6662,
+     "ssimAlbedo": 0.5537,
+     "ssimLit": 0.5148
+    },
+    "a1-grey": {
+     "maskIoU": 0.698,
+     "deltaE00": 16.0775,
+     "histogram": 0,
+     "detailReference": 1.346,
+     "detailCandidate": 0.1124,
+     "detailRatio": 0.0838,
+     "detailLog": 1.6825,
+     "spreadReference": 7.5371,
+     "spreadCandidate": 0,
+     "spreadLog": 2.7126,
+     "ssimAlbedo": 0.6917,
+     "ssimLit": 0.6068
+    }
+   }
+  },
+  {
+   "modelId": "B07MBMJS1B",
+   "productType": "CABINET",
+   "stratum": "other",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.6667,
+     "deltaE00": 7.3961,
+     "histogram": 0.7172,
+     "detailReference": 2.2442,
+     "detailCandidate": 0.8121,
+     "detailRatio": 0.3642,
+     "detailLog": 1.1408,
+     "spreadReference": 8.9507,
+     "spreadCandidate": 1.093,
+     "spreadLog": 2.241,
+     "ssimAlbedo": 0.5753,
+     "ssimLit": 0.4668
+    },
+    "a1-grey": {
+     "maskIoU": 0.6667,
+     "deltaE00": 33.239,
+     "histogram": 0.0288,
+     "detailReference": 2.2442,
+     "detailCandidate": 0.0719,
+     "detailRatio": 0.0317,
+     "detailLog": 2.1882,
+     "spreadReference": 8.9507,
+     "spreadCandidate": 0,
+     "spreadLog": 2.8825,
+     "ssimAlbedo": 0.4409,
+     "ssimLit": 0.4409
+    }
+   }
+  },
+  {
+   "modelId": "B0742FPL25",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.2981,
+     "deltaE00": 9.8216,
+     "histogram": 0.2513,
+     "detailReference": 1.4311,
+     "detailCandidate": 0.6448,
+     "detailRatio": 0.4805,
+     "detailLog": 0.7679,
+     "spreadReference": 2.1852,
+     "spreadCandidate": 0.7983,
+     "spreadLog": 0.9833,
+     "ssimAlbedo": 0.7472,
+     "ssimLit": 0.4629
+    },
+    "a1-grey": {
+     "maskIoU": 0.2981,
+     "deltaE00": 18.328,
+     "histogram": 0.1404,
+     "detailReference": 1.4311,
+     "detailCandidate": 0.0968,
+     "detailRatio": 0.0697,
+     "detailLog": 1.7103,
+     "spreadReference": 2.1852,
+     "spreadCandidate": 0,
+     "spreadLog": 1.448,
+     "ssimAlbedo": 0.8526,
+     "ssimLit": 0.5493
+    }
+   }
+  },
+  {
+   "modelId": "B0828FB1G7",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.8358,
+     "deltaE00": 1.4644,
+     "histogram": 0.916,
+     "detailReference": 1.4314,
+     "detailCandidate": 0.4676,
+     "detailRatio": 0.3409,
+     "detailLog": 1.0977,
+     "spreadReference": 19.806,
+     "spreadCandidate": 5.5625,
+     "spreadLog": 1.2687,
+     "ssimAlbedo": 0.6797,
+     "ssimLit": 0.3703
+    },
+    "a1-grey": {
+     "maskIoU": 0.8358,
+     "deltaE00": 30.5707,
+     "histogram": 0.2023,
+     "detailReference": 1.4314,
+     "detailCandidate": 0.096,
+     "detailRatio": 0.07,
+     "detailLog": 1.7239,
+     "spreadReference": 19.806,
+     "spreadCandidate": 0,
+     "spreadLog": 3.6779,
+     "ssimAlbedo": 0.6636,
+     "ssimLit": 0.2911
+    }
+   }
+  },
+  {
+   "modelId": "B082MXDF82",
+   "productType": "ELECTRIC_FAN",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.8233,
+     "deltaE00": 3.8363,
+     "histogram": 0.9168,
+     "detailReference": 1.4264,
+     "detailCandidate": 0.0603,
+     "detailRatio": 0.1237,
+     "detailLog": 1.4908,
+     "spreadReference": 6.7593,
+     "spreadCandidate": 0.0037,
+     "spreadLog": 2.1561,
+     "ssimAlbedo": 0.7257,
+     "ssimLit": 0.4527
+    },
+    "a1-grey": {
+     "maskIoU": 0.8233,
+     "deltaE00": 26.5359,
+     "histogram": 0.0234,
+     "detailReference": 1.4264,
+     "detailCandidate": 0.1449,
+     "detailRatio": 0.2859,
+     "detailLog": 1.4908,
+     "spreadReference": 6.7593,
+     "spreadCandidate": 0,
+     "spreadLog": 2.1561,
+     "ssimAlbedo": 0.5664,
+     "ssimLit": 0.3697
+    }
+   }
+  },
+  {
+   "modelId": "B07QC76NM2",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.8341,
+     "deltaE00": 10.2437,
+     "histogram": 0.0032,
+     "detailReference": 0.8229,
+     "detailCandidate": 0.0993,
+     "detailRatio": 0.1187,
+     "detailLog": 1.1752,
+     "spreadReference": 28.6033,
+     "spreadCandidate": 0,
+     "spreadLog": 4.0464,
+     "ssimAlbedo": 0.7608,
+     "ssimLit": 0.5989
+    },
+    "a1-grey": {
+     "maskIoU": 0.8341,
+     "deltaE00": 18.6617,
+     "histogram": 0.0122,
+     "detailReference": 0.8229,
+     "detailCandidate": 0.0494,
+     "detailRatio": 0.0616,
+     "detailLog": 1.1752,
+     "spreadReference": 28.6033,
+     "spreadCandidate": 0,
+     "spreadLog": 4.0464,
+     "ssimAlbedo": 0.7239,
+     "ssimLit": 0.4442
+    }
+   }
+  },
+  {
+   "modelId": "B075X1T4ZS",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.8868,
+     "deltaE00": 8.2196,
+     "histogram": 0.1229,
+     "detailReference": 0.924,
+     "detailCandidate": 2.2954,
+     "detailRatio": 2.4893,
+     "detailLog": 0.9107,
+     "spreadReference": 5.5941,
+     "spreadCandidate": 3.2884,
+     "spreadLog": 0.5311,
+     "ssimAlbedo": 0.3795,
+     "ssimLit": 0.4551
+    },
+    "a1-grey": {
+     "maskIoU": 0.8868,
+     "deltaE00": 16.9906,
+     "histogram": 0.0133,
+     "detailReference": 0.924,
+     "detailCandidate": 0.0979,
+     "detailRatio": 0.1061,
+     "detailLog": 1.3064,
+     "spreadReference": 5.5941,
+     "spreadCandidate": 0,
+     "spreadLog": 2.4147,
+     "ssimAlbedo": 0.8467,
+     "ssimLit": 0.7343
+    }
+   }
+  },
+  {
+   "modelId": "B0824FLNHN",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.5212,
+     "deltaE00": 2.9155,
+     "histogram": 0.0195,
+     "detailReference": 0.6158,
+     "detailCandidate": 2.3116,
+     "detailRatio": 3.919,
+     "detailLog": 1.3456,
+     "spreadReference": 8.5213,
+     "spreadCandidate": 3.0768,
+     "spreadLog": 0.9988,
+     "ssimAlbedo": 0.4428,
+     "ssimLit": 0.5408
+    },
+    "a1-grey": {
+     "maskIoU": 0.5212,
+     "deltaE00": 25.6701,
+     "histogram": 0.1535,
+     "detailReference": 0.6158,
+     "detailCandidate": 0.0622,
+     "detailRatio": 0.1118,
+     "detailLog": 0.8775,
+     "spreadReference": 8.5213,
+     "spreadCandidate": 0,
+     "spreadLog": 2.8137,
+     "ssimAlbedo": 0.8714,
+     "ssimLit": 0.7882
+    }
+   }
+  },
+  {
+   "modelId": "B0828FFDWG",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.7428,
+     "deltaE00": 7.5749,
+     "histogram": 0.0313,
+     "detailReference": 0.6418,
+     "detailCandidate": 0.1955,
+     "detailRatio": 0.3046,
+     "detailLog": 0.9427,
+     "spreadReference": 7.2058,
+     "spreadCandidate": 0,
+     "spreadLog": 2.668,
+     "ssimAlbedo": 0.8385,
+     "ssimLit": 0.3977
+    },
+    "a1-grey": {
+     "maskIoU": 0.7428,
+     "deltaE00": 21.8376,
+     "histogram": 0.0255,
+     "detailReference": 0.6418,
+     "detailCandidate": 0.1305,
+     "detailRatio": 0.2034,
+     "detailLog": 0.9427,
+     "spreadReference": 7.2058,
+     "spreadCandidate": 0,
+     "spreadLog": 2.668,
+     "ssimAlbedo": 0.7905,
+     "ssimLit": 0.4006
+    }
+   }
+  },
+  {
+   "modelId": "B075X2LLWF",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.9474,
+     "deltaE00": 13.2385,
+     "histogram": 0.3808,
+     "detailReference": 0.6179,
+     "detailCandidate": 0.0792,
+     "detailRatio": 0.1285,
+     "detailLog": 0.9042,
+     "spreadReference": 12.3158,
+     "spreadCandidate": 0,
+     "spreadLog": 3.204,
+     "ssimAlbedo": 0.8855,
+     "ssimLit": 0.6882
+    },
+    "a1-grey": {
+     "maskIoU": 0.9474,
+     "deltaE00": 20.7757,
+     "histogram": 0.0105,
+     "detailReference": 0.6179,
+     "detailCandidate": 0.0741,
+     "detailRatio": 0.1202,
+     "detailLog": 0.9042,
+     "spreadReference": 12.3158,
+     "spreadCandidate": 0,
+     "spreadLog": 3.204,
+     "ssimAlbedo": 0.8472,
+     "ssimLit": 0.5739
+    }
+   }
+  },
+  {
+   "modelId": "B07374QGD7",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.8265,
+     "deltaE00": 4.8234,
+     "histogram": 0.616,
+     "detailReference": 0.7635,
+     "detailCandidate": 4.6262,
+     "detailRatio": 6.0631,
+     "detailLog": 1.7988,
+     "spreadReference": 4.8341,
+     "spreadCandidate": 18.971,
+     "spreadLog": 1.3667,
+     "ssimAlbedo": 0.3653,
+     "ssimLit": 0.1544
+    },
+    "a1-grey": {
+     "maskIoU": 0.8265,
+     "deltaE00": 11.4961,
+     "histogram": 0.166,
+     "detailReference": 0.7635,
+     "detailCandidate": 0.3078,
+     "detailRatio": 0.4036,
+     "detailLog": 0.9079,
+     "spreadReference": 4.8341,
+     "spreadCandidate": 0,
+     "spreadLog": 2.2688,
+     "ssimAlbedo": 0.9301,
+     "ssimLit": 0.229
+    }
+   }
+  },
+  {
+   "modelId": "B07B4W2ZRW",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.7433,
+     "deltaE00": 24.0911,
+     "histogram": 0.1134,
+     "detailReference": 1.5275,
+     "detailCandidate": 1.6539,
+     "detailRatio": 1.0837,
+     "detailLog": 0.0788,
+     "spreadReference": 5.1914,
+     "spreadCandidate": 2.0705,
+     "spreadLog": 0.9194,
+     "ssimAlbedo": 0.4918,
+     "ssimLit": 0.5498
+    },
+    "a1-grey": {
+     "maskIoU": 0.7433,
+     "deltaE00": 22.5303,
+     "histogram": 0,
+     "detailReference": 1.5275,
+     "detailCandidate": 0.185,
+     "detailRatio": 0.1211,
+     "detailLog": 1.8097,
+     "spreadReference": 5.1914,
+     "spreadCandidate": 0,
+     "spreadLog": 2.34,
+     "ssimAlbedo": 0.716,
+     "ssimLit": 0.7247
+    }
+   }
+  },
+  {
+   "modelId": "B0828DZ1QL",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.7252,
+     "deltaE00": 1.4532,
+     "histogram": 0.7993,
+     "detailReference": 1.3508,
+     "detailCandidate": 0.4869,
+     "detailRatio": 0.3605,
+     "detailLog": 1.0204,
+     "spreadReference": 21.6251,
+     "spreadCandidate": 2.5319,
+     "spreadLog": 2.1449,
+     "ssimAlbedo": 0.7533,
+     "ssimLit": 0.4428
+    },
+    "a1-grey": {
+     "maskIoU": 0.7252,
+     "deltaE00": 25.2253,
+     "histogram": 0.0048,
+     "detailReference": 1.3508,
+     "detailCandidate": 0.1066,
+     "detailRatio": 0.0789,
+     "detailLog": 1.687,
+     "spreadReference": 21.6251,
+     "spreadCandidate": 0,
+     "spreadLog": 3.767,
+     "ssimAlbedo": 0.6819,
+     "ssimLit": 0.3692
+    }
+   }
+  },
+  {
+   "modelId": "B07HK6MTMC",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.9039,
+     "deltaE00": 0.9803,
+     "histogram": 0.9823,
+     "detailReference": 1.0148,
+     "detailCandidate": 0.2005,
+     "detailRatio": 0.1978,
+     "detailLog": 1.4005,
+     "spreadReference": 7.6763,
+     "spreadCandidate": 0.3239,
+     "spreadLog": 2.7306,
+     "ssimAlbedo": 0.754,
+     "ssimLit": 0.7409
+    },
+    "a1-grey": {
+     "maskIoU": 0.9039,
+     "deltaE00": 38.9292,
+     "histogram": 0.0042,
+     "detailReference": 1.0148,
+     "detailCandidate": 0.0322,
+     "detailRatio": 0.0318,
+     "detailLog": 1.4005,
+     "spreadReference": 7.6763,
+     "spreadCandidate": 0,
+     "spreadLog": 2.7306,
+     "ssimAlbedo": 0.0816,
+     "ssimLit": 0.3632
+    }
+   }
+  },
+  {
+   "modelId": "B0825CLV7M",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.6255,
+     "deltaE00": 8.7201,
+     "histogram": 0.4569,
+     "detailReference": 1.519,
+     "detailCandidate": 2.7527,
+     "detailRatio": 1.8135,
+     "detailLog": 0.5949,
+     "spreadReference": 5.0011,
+     "spreadCandidate": 0.0586,
+     "spreadLog": 2.3023,
+     "ssimAlbedo": 0.4604,
+     "ssimLit": 0.4644
+    },
+    "a1-grey": {
+     "maskIoU": 0.6255,
+     "deltaE00": 30.8909,
+     "histogram": 0.188,
+     "detailReference": 1.519,
+     "detailCandidate": 1.6894,
+     "detailRatio": 1.113,
+     "detailLog": 0.1067,
+     "spreadReference": 5.0011,
+     "spreadCandidate": 0,
+     "spreadLog": 2.3023,
+     "ssimAlbedo": 0.6976,
+     "ssimLit": 0.4053
+    }
+   }
+  },
+  {
+   "modelId": "B075X2XZDD",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.3502,
+     "deltaE00": 10.1905,
+     "histogram": 0.0094,
+     "detailReference": 5.0356,
+     "detailCandidate": 0.5789,
+     "detailRatio": 0.1157,
+     "detailLog": 2.165,
+     "spreadReference": 10.0523,
+     "spreadCandidate": 0,
+     "spreadLog": 2.9998,
+     "ssimAlbedo": 0.3449,
+     "ssimLit": 0.1861
+    },
+    "a1-grey": {
+     "maskIoU": 0.3502,
+     "deltaE00": 12.1073,
+     "histogram": 0.0077,
+     "detailReference": 5.0356,
+     "detailCandidate": 0.4615,
+     "detailRatio": 0.0922,
+     "detailLog": 2.3918,
+     "spreadReference": 10.0523,
+     "spreadCandidate": 0,
+     "spreadLog": 2.9998,
+     "ssimAlbedo": 0.3787,
+     "ssimLit": 0.1829
+    }
+   }
+  },
+  {
+   "modelId": "B08B8SV8DB",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.8179,
+     "deltaE00": 6.0329,
+     "histogram": 0.168,
+     "detailReference": 1.0503,
+     "detailCandidate": 1.5269,
+     "detailRatio": 1.4562,
+     "detailLog": 0.3749,
+     "spreadReference": 13.0124,
+     "spreadCandidate": 4.6613,
+     "spreadLog": 1.0265,
+     "ssimAlbedo": 0.6921,
+     "ssimLit": 0.164
+    },
+    "a1-grey": {
+     "maskIoU": 0.8179,
+     "deltaE00": 14.7274,
+     "histogram": 0.0193,
+     "detailReference": 1.0503,
+     "detailCandidate": 0.1766,
+     "detailRatio": 0.1684,
+     "detailLog": 1.4346,
+     "spreadReference": 13.0124,
+     "spreadCandidate": 0,
+     "spreadLog": 3.259,
+     "ssimAlbedo": 0.8551,
+     "ssimLit": 0.1432
+    }
+   }
+  },
+  {
+   "modelId": "B07B4VYKPR",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "scores": {
+    "a1": {
+     "maskIoU": 0.9507,
+     "deltaE00": 3.8608,
+     "histogram": 0.4885,
+     "detailReference": 0.4878,
+     "detailCandidate": 2.2161,
+     "detailRatio": 4.5429,
+     "detailLog": 1.5135,
+     "spreadReference": 12.0146,
+     "spreadCandidate": 2.9948,
+     "spreadLog": 1.3893,
+     "ssimAlbedo": 0.4728,
+     "ssimLit": 0.554
+    },
+    "a1-grey": {
+     "maskIoU": 0.9507,
+     "deltaE00": 22.4741,
+     "histogram": 0.0011,
+     "detailReference": 0.4878,
+     "detailCandidate": 0.0357,
+     "detailRatio": 0.0732,
+     "detailLog": 0.6685,
+     "spreadReference": 12.0146,
+     "spreadCandidate": 0,
+     "spreadLog": 3.1793,
+     "ssimAlbedo": 0.8794,
+     "ssimLit": 0.7977
+    }
+   }
+  }
+ ]
+}

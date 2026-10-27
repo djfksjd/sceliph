@@ -1,0 +1,18 @@
+{
+ "schema": "sceliph.abo-texture-protocol/0.1",
+ "registered": "2026-10-27, after dev (9b dev, 10 items, 2 settings tried: fine and coarse textureScale) and before any test run",
+ "arms": {
+  "B0": "LLM-written IR as is (slice-9b test r1, arm a1, 33 items)",
+  "B1": "same IR; components whose materialName matches scripts/abo-procedural-albedo.ts rules get material.surface and the opt-in albedoVariation with the coarse textureScale (frozen script sha in preregistration-hashes.txt)"
+ },
+ "metric": "appearance protocol v2 (benchmarks/oss-integration-20261026/abo-appearance/protocol-v2.json); 8 views, 256 px; detailLog and spreadLog exclude part boundaries",
+ "strata": "textured = reference detailReference >= 1.0 in the B0 run (decided before running)",
+ "criteria": [
+  "P1 textured: median paired (B1 - B0) detailLog < 0 and bootstrap 95% CI upper bound < 0",
+  "P2 textured: median paired (B1 - B0) spreadLog < 0",
+  "P3 all items: median paired (B1 - B0) deltaE00 <= +0.5 (non-inferiority)",
+  "P4 untextured (descriptive): share of items whose detailLog worsens by more than 0.3"
+ ],
+ "bootstrap": "items, 10000 resamples, seed 20261027",
+ "limits": "W4 (statistics vs placement) failed as registered; spreadLog validity rests on the post-hoc corrected shuffle control. Test items were measured (not tuned) in slice 10."
+}

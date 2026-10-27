@@ -1,0 +1,176 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Matte Black Cone Base Table Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Cone base",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Turned cone base with a short chamfered foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      60,
+      0
+     ],
+     [
+      77,
+      32
+     ],
+     [
+      11,
+      207
+     ],
+     [
+      0,
+      207
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck rod",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Narrow stem rising from the cone into the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 330,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    365,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "black fabric",
+   "detail": "Cylindrical drum shade, 348 mm diameter",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 174,
+    "radiusBottom": 174,
+    "depth": 313,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    427.5,
+    0
+   ],
+   "material": {
+    "color": "#0d0d0d",
+    "roughness": 0.95,
+    "metalness": 0,
+    "surface": "fabric",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "id": "chain",
+   "name": "Pull chain",
+   "category": "mechanical",
+   "materialName": "metal chain",
+   "detail": "Thin pull chain hanging from the socket",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 1,
+    "radiusBottom": 1,
+    "depth": 30,
+    "radialSegments": 8
+   },
+   "position": [
+    18,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "pull",
+   "name": "Chain pull",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Small pull handle at the end of the chain",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3.5,
+    "radiusBottom": 3.5,
+    "depth": 22,
+    "radialSegments": 16
+   },
+   "position": [
+    18,
+    224,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Brass harp fitting",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Small brass fitting at the top of the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 8,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    572,
+    0
+   ],
+   "material": {
+    "color": "#b59a4a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

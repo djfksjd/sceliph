@@ -1,5 +1,6 @@
 import type { AssetKind } from '../types';
 import type { AssemblyIR } from './assembly-ir';
+import { adviseDepthView, type DepthViewAdvice, type ProductShapeClass, type ViewAngleEstimate } from './depth-view-advice';
 import {
   buildReferenceManifest,
   inferReferenceCapabilities,
@@ -57,6 +58,9 @@ export interface SemiProfessionalEvidenceOptions {
   cameraCalibrations?: CameraCalibrationObservation[];
   sourceAudits?: SourceAuditObservation[];
   expectedComponentIds?: string[];
+  /** Estimated camera azimuth per photo (e.g. the model's view reply); enables depth-view advice. */
+  viewAngles?: ViewAngleEstimate[];
+  shapeClass?: ProductShapeClass;
 }
 
 export interface EvidenceConflict {
@@ -88,6 +92,8 @@ export interface SemiProfessionalReadinessReport {
   blockers: string[];
   warnings: string[];
   nextActions: string[];
+  /** Present when view angles were supplied: whether one more side photo is worth asking for. */
+  depthViewAdvice?: DepthViewAdvice;
 }
 
 export interface SemiProfessionalEvidencePack {
@@ -434,6 +440,10 @@ export function evaluateSemiProfessionalReadiness(
     + (meanInputFit / 100) * 10 + componentScore * 10;
   const score = Math.round(Math.max(0, Math.min(blockers.length > 0 ? 59 : deliveryReady ? 100 : 84, rawScore)));
 
+  const depthViewAdvice = options.viewAngles ? adviseDepthView(scopedViews, options.viewAngles, options.shapeClass) : undefined;
+  if (depthViewAdvice?.requestSidePhoto && depthViewAdvice.request) {
+    nextActions.unshift(`깊이 근거 요청: ${depthViewAdvice.request}${depthViewAdvice.evidence ? ` (${depthViewAdvice.evidence})` : ''}`);
+  }
   if (deliveryReady) nextActions.push('근거 팩을 잠그고 동일 시점 비교·토폴로지·표면·내보내기 게이트 실행');
   else if (buildReady) nextActions.push('현재 자료로 초벌 IR은 가능하지만 준실무 납품 표시는 보류');
 
@@ -458,6 +468,7 @@ export function evaluateSemiProfessionalReadiness(
     blockers,
     warnings,
     nextActions,
+    ...(depthViewAdvice ? { depthViewAdvice } : {}),
   };
 }
 

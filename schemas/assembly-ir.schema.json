@@ -453,6 +453,7 @@
           "minimum": 0,
           "maximum": 1
         },
+        "albedoVariation": {"type": "number", "minimum": 0, "maximum": 0.5, "description": "Opt-in colour variation from the finish pattern; mean colour preserved."},
         "textureScale": {
           "type": "array",
           "prefixItems": [

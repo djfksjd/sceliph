@@ -1,0 +1,433 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Seven-drawer wood dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1530,
+     30,
+     500
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    899,
+    0
+   ],
+   "material": {
+    "color": "#c08e58",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Main case",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1460,
+     774,
+     460
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    497,
+    0
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.65,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "base",
+   "name": "Base molding",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Lower plinth molding",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1500,
+     40,
+     490
+    ],
+    "radius": 10
+   },
+   "position": [
+    0,
+    130,
+    0
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.65,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 22,
+    "depth": 110,
+    "radialSegments": 24
+   },
+   "position": [
+    -670,
+    55,
+    200
+   ],
+   "material": {
+    "color": "#b0793f",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 22,
+    "depth": 110,
+    "radialSegments": 24
+   },
+   "position": [
+    670,
+    55,
+    200
+   ],
+   "material": {
+    "color": "#b0793f",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 22,
+    "depth": 110,
+    "radialSegments": 24
+   },
+   "position": [
+    -670,
+    55,
+    -200
+   ],
+   "material": {
+    "color": "#b0793f",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 22,
+    "depth": 110,
+    "radialSegments": 24
+   },
+   "position": [
+    670,
+    55,
+    -200
+   ],
+   "material": {
+    "color": "#b0793f",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "d_top_l",
+   "name": "Top left drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front with knob area",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     370,
+     170,
+     22
+    ],
+    "radius": 5
+   },
+   "position": [
+    -515,
+    780,
+    240
+   ],
+   "material": {
+    "color": "#c4915a",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "d_top_c",
+   "name": "Top center drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     620,
+     170,
+     22
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    780,
+    240
+   ],
+   "material": {
+    "color": "#c4915a",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "d_top_r",
+   "name": "Top right drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     370,
+     170,
+     22
+    ],
+    "radius": 5
+   },
+   "position": [
+    515,
+    780,
+    240
+   ],
+   "material": {
+    "color": "#c4915a",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "d_mid_l",
+   "name": "Middle left drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     690,
+     280,
+     22
+    ],
+    "radius": 5
+   },
+   "position": [
+    -350,
+    535,
+    240
+   ],
+   "material": {
+    "color": "#c4915a",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "d_mid_r",
+   "name": "Middle right drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     690,
+     280,
+     22
+    ],
+    "radius": 5
+   },
+   "position": [
+    350,
+    535,
+    240
+   ],
+   "material": {
+    "color": "#c4915a",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "d_bot_l",
+   "name": "Bottom left drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     690,
+     250,
+     22
+    ],
+    "radius": 5
+   },
+   "position": [
+    -350,
+    255,
+    240
+   ],
+   "material": {
+    "color": "#c4915a",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "d_bot_r",
+   "name": "Bottom right drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     690,
+     250,
+     22
+    ],
+    "radius": 5
+   },
+   "position": [
+    350,
+    255,
+    240
+   ],
+   "material": {
+    "color": "#c4915a",
+    "roughness": 0.6,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Flush-mount ceiling light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Top mounting disc",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Flat disc against the ceiling",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 170,
+    "radiusBottom": 170,
+    "depth": 10,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    125,
+    0
+   ],
+   "material": {
+    "color": "#b8babc",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "ring",
+   "name": "Outer decorative ring",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Floating band ring around the fixture",
+   "geometry": {
+    "op": "torus",
+    "radius": 170,
+    "tube": 5
+   },
+   "position": [
+    0,
+    100,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#c0c2c4",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Shade collar",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Metal band holding the glass",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 150,
+    "radiusBottom": 148,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    105,
+    0
+   ],
+   "material": {
+    "color": "#b4b6b8",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Frosted glass bowl",
+   "category": "mechanical",
+   "materialName": "frosted glass",
+   "detail": "Dome shaped white glass shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -50
+     ],
+     [
+      60,
+      -47
+     ],
+     [
+      110,
+      -32
+     ],
+     [
+      140,
+      -10
+     ],
+     [
+      148,
+      10
+     ],
+     [
+      148,
+      20
+     ],
+     [
+      0,
+      20
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    90,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Bottom finial",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Small cap nut at the bottom of the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 14,
+    "depth": 14,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    37,
+    0
+   ],
+   "material": {
+    "color": "#b8babc",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "finial_tip",
+   "name": "Finial tip",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Small knob below the cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 10,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    25,
+    0
+   ],
+   "material": {
+    "color": "#c0c2c4",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

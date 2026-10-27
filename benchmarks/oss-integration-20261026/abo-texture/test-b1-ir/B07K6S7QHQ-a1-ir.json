@@ -1,0 +1,347 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mobile computer desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desk top",
+   "category": "enclosure",
+   "materialName": "Oak laminate",
+   "detail": "Top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     22,
+     500
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    759,
+    0
+   ],
+   "material": {
+    "color": "#d9bb8c",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "sideL",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Oak laminate",
+   "detail": "Left end panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     703,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    -391,
+    396.5,
+    0
+   ],
+   "material": {
+    "color": "#d9bb8c",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "sideR",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Oak laminate",
+   "detail": "Right end panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     703,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    391,
+    396.5,
+    0
+   ],
+   "material": {
+    "color": "#d9bb8c",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "base",
+   "name": "Bottom shelf",
+   "category": "enclosure",
+   "materialName": "Oak laminate",
+   "detail": "Lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     764,
+     18,
+     460
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    79,
+    0
+   ],
+   "material": {
+    "color": "#d9bb8c",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "divider",
+   "name": "Vertical divider",
+   "category": "enclosure",
+   "materialName": "Oak laminate",
+   "detail": "Central upright",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     660,
+     460
+    ],
+    "radius": 2
+   },
+   "position": [
+    100,
+    418,
+    0
+   ],
+   "material": {
+    "color": "#d9bb8c",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "midshelf",
+   "name": "Middle shelf",
+   "category": "enclosure",
+   "materialName": "Oak laminate",
+   "detail": "Pull-out CPU shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     470,
+     18,
+     440
+    ],
+    "radius": 2
+   },
+   "position": [
+    -146,
+    380,
+    10
+   ],
+   "material": {
+    "color": "#d9bb8c",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "kbtray",
+   "name": "Keyboard tray",
+   "category": "enclosure",
+   "materialName": "Oak laminate",
+   "detail": "Sliding keyboard tray",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     765,
+     18,
+     440
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    690,
+    12
+   ],
+   "material": {
+    "color": "#d4b484",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "rshelf",
+   "name": "Right shelf",
+   "category": "enclosure",
+   "materialName": "Oak laminate",
+   "detail": "Small right shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     273,
+     18,
+     460
+    ],
+    "radius": 2
+   },
+   "position": [
+    245,
+    400,
+    0
+   ],
+   "material": {
+    "color": "#d9bb8c",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "c1",
+   "name": "Caster front left",
+   "category": "mechanical",
+   "materialName": "Black plastic",
+   "detail": "Caster",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 22,
+    "radiusBottom": 22,
+    "depth": 45,
+    "radialSegments": 24
+   },
+   "position": [
+    -360,
+    22.5,
+    200
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "c2",
+   "name": "Caster front right",
+   "category": "mechanical",
+   "materialName": "Black plastic",
+   "detail": "Caster",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 22,
+    "radiusBottom": 22,
+    "depth": 45,
+    "radialSegments": 24
+   },
+   "position": [
+    360,
+    22.5,
+    200
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "c3",
+   "name": "Caster back left",
+   "category": "mechanical",
+   "materialName": "Black plastic",
+   "detail": "Caster",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 22,
+    "radiusBottom": 22,
+    "depth": 45,
+    "radialSegments": 24
+   },
+   "position": [
+    -360,
+    22.5,
+    -200
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "c4",
+   "name": "Caster back right",
+   "category": "mechanical",
+   "materialName": "Black plastic",
+   "detail": "Caster",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 22,
+    "radiusBottom": 22,
+    "depth": 45,
+    "radialSegments": 24
+   },
+   "position": [
+    360,
+    22.5,
+    -200
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6
+   }
+  }
+ ]
+}

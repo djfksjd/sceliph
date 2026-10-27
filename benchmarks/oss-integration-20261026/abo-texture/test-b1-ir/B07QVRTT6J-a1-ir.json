@@ -1,0 +1,323 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Martin boekenkast",
+ "units": "mm",
+ "components": [
+  {
+   "id": "post_fl",
+   "name": "Front left post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "square tube post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     780,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -542,
+    390,
+    167
+   ],
+   "material": {
+    "color": "#4a4a4c",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_bl",
+   "name": "Back left post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "square tube post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     780,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -542,
+    390,
+    -167
+   ],
+   "material": {
+    "color": "#4a4a4c",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_fr",
+   "name": "Front right post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "square tube post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     780,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    542,
+    390,
+    167
+   ],
+   "material": {
+    "color": "#4a4a4c",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_br",
+   "name": "Back right post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "square tube post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     780,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    542,
+    390,
+    -167
+   ],
+   "material": {
+    "color": "#4a4a4c",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_mf",
+   "name": "Front middle post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "square tube post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     780,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -150,
+    390,
+    167
+   ],
+   "material": {
+    "color": "#4a4a4c",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_mb",
+   "name": "Back middle post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "square tube post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     780,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -150,
+    390,
+    -167
+   ],
+   "material": {
+    "color": "#4a4a4c",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shelf_top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "top board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     18,
+     350
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    771,
+    0
+   ],
+   "material": {
+    "color": "#c9a374",
+    "roughness": 0.7,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "shelf_bottom",
+   "name": "Bottom shelf",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "full width bottom board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     18,
+     350
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    90,
+    0
+   ],
+   "material": {
+    "color": "#c9a374",
+    "roughness": 0.7,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "shelf_low_r",
+   "name": "Lower right shelf",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "right shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     18,
+     350
+    ],
+    "radius": 2
+   },
+   "position": [
+    190,
+    310,
+    0
+   ],
+   "material": {
+    "color": "#c9a374",
+    "roughness": 0.7,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "shelf_up_r",
+   "name": "Upper right shelf",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "right shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     18,
+     350
+    ],
+    "radius": 2
+   },
+   "position": [
+    190,
+    550,
+    0
+   ],
+   "material": {
+    "color": "#c9a374",
+    "roughness": 0.7,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "shelf_left",
+   "name": "Left small shelf",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "left shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     18,
+     350
+    ],
+    "radius": 2
+   },
+   "position": [
+    -342,
+    390,
+    0
+   ],
+   "material": {
+    "color": "#c9a374",
+    "roughness": 0.7,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  }
+ ]
+}

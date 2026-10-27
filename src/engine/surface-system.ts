@@ -122,6 +122,10 @@ export function inferSurfaceFinish(materialName: string, explicit?: SurfaceFinis
   return 'raw';
 }
 
+function srgbChannelToLinear(value: number): number {
+  return value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4;
+}
+
 function hash(x: number, y: number, seed: number): number {
   const value = Math.sin(x * 127.1 + y * 311.7 + seed * 71.9) * 43758.5453123;
   return value - Math.floor(value);
@@ -453,6 +457,19 @@ export function createSurfaceMaterial(source: AssemblyMaterialIR, context: Surfa
     material.roughnessMap = maps.roughness;
     material.metalnessMap = maps.roughness;
     if (finish === 'hex-knit' || finish === 'asphalt') material.map = maps.albedo;
+  }
+  const albedoVariation = source.albedoVariation ?? 0;
+  if (context.mode === 'beauty' && albedoVariation > 0 && effectivePattern !== 'none') {
+    const pattern = context.periodicDirectional && effectivePattern === 'directional' ? 'directional-periodic' : effectivePattern;
+    const varied = createMicroSurfaceMaps(finish, source.textureScale ?? preset.textureScale, pattern, albedoVariation);
+    material.map = varied.albedo;
+    // The map only darkens (values ≤ 1); lift the base colour by its mean so the
+    // average appearance stays the colour the IR declares.
+    const data = varied.albedo.image.data as Uint8Array;
+    let sum = 0;
+    for (let i = 0; i < data.length; i += 4) sum += srgbChannelToLinear(data[i]! / 255);
+    const mean = sum / (data.length / 4);
+    if (mean > 0) material.color.multiplyScalar(1 / mean).setRGB(Math.min(1, material.color.r), Math.min(1, material.color.g), Math.min(1, material.color.b));
   }
   material.name = `${context.materialName} [${finish}]`;
   material.userData.morphloomSurface = {

@@ -1,0 +1,26 @@
+{
+ "schema": "sceliph.abo-appearance-protocol/0.1",
+ "registered": "2026-10-27, after a 2-item smoke test (slice-8 dev items B07GFLG5MM, B07B4SB2D9) and before any other run",
+ "render": "src/eval/appearance-render.ts: 8 azimuths at 20° elevation, 256 px, compareMeshShapes placement; albedo pass (unlit map×colour, no tone mapping) and lit pass (fixed neutral studio light)",
+ "metrics": "src/eval/appearance-metrics.ts: deltaE00 (CIEDE2000 median on the shared mask), histogram (Lab 8x8x8 intersection on each own mask), detailRatio (candidate/reference mean Sobel L* in eroded masks), ssimAlbedo, ssimLit, maskIoU; per item = mean over views",
+ "phaseA": {
+  "purpose": "metric validity on identical geometry with controlled appearance damage",
+  "items": "slice-8 dev split (10 items, benchmarks/oss-integration-20261026/abo-photo/selection.json)",
+  "controls": "self (reference vs itself), flat (each view's mean visible colour, linear-light), hue (a*,b* negated), grey (#808080 materials rendered)",
+  "criteria": [
+   "V1 determinism: self deltaE00 = 0 and detailRatio = 1 on every item",
+   "V2 detail axis: flat detailRatio <= 0.1 on >= 9/10 items, and hue detailRatio within [0.9, 1.1] on >= 9/10 items",
+   "V3 colour axis: grey deltaE00 > flat deltaE00 on >= 9/10 items"
+  ],
+  "note": "hue changes deltaE00 little on near-achromatic items; it is a detail-axis control, not a colour-axis criterion"
+ },
+ "phaseB": {
+  "purpose": "appearance gap of LLM-written IRs, the baseline for texture work",
+  "items": "slice-9b test, repeat r1 (benchmarks/oss-integration-20261026/abo-multiview/test-sonnet-r1), arms a1 and a2; same items also scored with the phase-A controls for reference",
+  "comparisons": "each IR vs the same IR painted #808080 (isolates the model's colour choices from its shape)",
+  "criteria": [
+   "B1 colour choice helps: median paired (IR - grey IR) deltaE00 < 0 with bootstrap 95% CI upper bound < 0 (items, 10k resamples, seed 20261027), for a2",
+   "B2 descriptive: report IR detailRatio median and the flat-control deltaE00 median as the untextured ceiling"
+  ]
+ }
+}

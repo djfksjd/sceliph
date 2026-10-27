@@ -1,0 +1,146 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Semiflush frosted glass ceiling light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Frosted glass shade",
+   "category": "enclosure",
+   "materialName": "frosted opal glass",
+   "detail": "Bowl-shaped shade with a flat top and a rounded profile",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      12
+     ],
+     [
+      30,
+      13
+     ],
+     [
+      80,
+      22
+     ],
+     [
+      120,
+      45
+     ],
+     [
+      148,
+      80
+     ],
+     [
+      158,
+      115
+     ],
+     [
+      160,
+      150
+     ],
+     [
+      150,
+      166
+     ],
+     [
+      100,
+      171
+     ],
+     [
+      60,
+      173
+     ],
+     [
+      0,
+      173
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round mounting canopy at the top",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 62,
+    "radiusBottom": 62,
+    "depth": 38,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    191,
+    0
+   ],
+   "material": {
+    "color": "#8d8b87",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Bottom cap",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Nickel cap at the bottom of the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 22,
+    "radiusBottom": 30,
+    "depth": 14,
+    "radialSegments": 40
+   },
+   "position": [
+    0,
+    18,
+    0
+   ],
+   "material": {
+    "color": "#8d8b87",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Finial knob",
+   "category": "mechanical",
+   "materialName": "satin nickel",
+   "detail": "Small stepped knob at the lowest point",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 11,
+    "radiusBottom": 15,
+    "depth": 12,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    6,
+    0
+   ],
+   "material": {
+    "color": "#a9a7a2",
+    "roughness": 0.5,
+    "metalness": 0.8
+   }
+  }
+ ]
+}
