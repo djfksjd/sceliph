@@ -1,3 +1,7 @@
+# Current continuation · 2026-10-10
+
+See [the practical workflow checkpoint](PRACTICAL_WORKFLOW_20261010.ko.md): atomic source-bound multi-part replacement, opt-in cap diagonal repair, actual browser and Blender acceptance, new UI captures. Whole production and cross-runtime descriptor equality remain incomplete.
+
 # Current work — final target UV checked before regeneration applies
 
 See PART_REGENERATION_FINAL_UV.ko.md. Reproduced normal generator UV with preserved uvScale0.001 turning into2100/2112 degenerate final UV triangles, previously returned as success. Now the actual patched target passes existing topology/budget and editable-mesh UV policy before return; failure leaves source/history intact. Existing5% threshold unchanged.162files/1033tests/check/benchmark/buildPASS; current gate results and source/file hashes in outputs/part-regeneration-final-uv-20261009. All18 normal source/GLB files remain byte-exact with previous results. No whole-engine completion/percent or Goal-tool resume claim. ActualUI/Blender remains blocked/not-run and is the next acceptance task. Previous records follow.

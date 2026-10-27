@@ -19,3 +19,10 @@ export function generateBeveledPlateProject(input:Readonly<Record<string,unknown
 }
 
 export const beveledPlatePack:DomainPack={metadata:{...centeredPlatePack.metadata,id:'product.beveled-plate',parameters:{...centeredPlatePack.metadata.parameters,dimensions:{...centeredPlatePack.metadata.parameters.dimensions,edgeBevelMm:{min:0,max:100,default:.4}}},parameterNotes:[...(centeredPlatePack.metadata.parameterNotes??[]),'Three-segment mesh bevel. Overall dimensions and polygonal bore land retained; not a CAD fillet.','Bevel must fit thickness and remaining wall clearance; zero preserves the original plate. Generate creates a new project; save current edits first.']},generate:generateBeveledPlateProject};
+
+/** Separate opt-in generator: legacy pack output and source remain unchanged. */
+export const qualityBeveledPlatePack:DomainPack={metadata:{...beveledPlatePack.metadata,id:'product.quality-beveled-plate',parameterNotes:[...(beveledPlatePack.metadata.parameterNotes??[]),'Explicit quality-diagonal-v1 cap policy: bounded planar edge flips preserve boundary vertices, walls and surface area; ordinary topology/UV gates still apply.']},generate:input=>{
+ const project=generateBeveledPlateProject(input),part=project.parts[0];
+ if(part.geometry?.op!=='extrude')throw Error('Plate extrusion expected');
+ return editPart(project,part.id,{geometry:{...part.geometry,capTriangulation:'quality-diagonal-v1'}});
+}};

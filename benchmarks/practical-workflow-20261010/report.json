@@ -1,0 +1,1470 @@
+{
+  "pass": true,
+  "cases": [
+    {
+      "scale": 0.5,
+      "receipt": {
+        "schema": "sceliph.part-regeneration-plan/0.1",
+        "sourceSha256": "538b1f6b1b73756cfa1876985fbd01502d4991576776ca1a8661ddad0e81b467",
+        "planSha256": "6158d76077582424772c49f8c21291a1c720ee4b4a53685cb71d4f89a7f20af9",
+        "outputSha256": "341c9020f3638ce765ed4ec500278af7a47dde44820d77cb1b89d7deb30acbe6",
+        "steps": [
+          {
+            "schema": "sceliph.part-regeneration/0.1",
+            "targetId": "panel_user",
+            "packId": "product.quality-beveled-plate",
+            "sourceSha256": "538b1f6b1b73756cfa1876985fbd01502d4991576776ca1a8661ddad0e81b467",
+            "declarationSha256": "d3299031486043a3a27031d76952e6a41e96fc2365705a5e52ab52fa074ed1ed",
+            "outputSha256": "8cebacc10d700bf45dac15c4d94adbc66cf6efae5b83e1991d1c45842ff866e5",
+            "preserved": "Target ID/name/transform/material and non-target source; target geometry/UV/normals regenerated",
+            "scope": "Authored static mesh only; no CAD/reference/assembly/rig certification"
+          },
+          {
+            "schema": "sceliph.part-regeneration/0.1",
+            "targetId": "brace_user",
+            "packId": "product.quality-beveled-plate",
+            "sourceSha256": "8cebacc10d700bf45dac15c4d94adbc66cf6efae5b83e1991d1c45842ff866e5",
+            "declarationSha256": "1ff2e6aba0ef7bae67b93a58b4fc572283a9750e009e20a6c5f332f093801b11",
+            "outputSha256": "341c9020f3638ce765ed4ec500278af7a47dde44820d77cb1b89d7deb30acbe6",
+            "preserved": "Target ID/name/transform/material and non-target source; target geometry/UV/normals regenerated",
+            "scope": "Authored static mesh only; no CAD/reference/assembly/rig certification"
+          }
+        ],
+        "scope": "Atomic authored static extrusion replacement; topology and editable-mesh UV checked, no reference fidelity or whole delivery approval"
+      },
+      "files": [
+        {
+          "name": "before-0.5",
+          "sourceSha256": "538b1f6b1b73756cfa1876985fbd01502d4991576776ca1a8661ddad0e81b467",
+          "glbSha256": "ebc3fe491a37f65cacee180fb7818371883b60d7eeec52cf47347f8a5c2dbbe7",
+          "topology": {
+            "meshes": 3,
+            "watertightMeshes": 3,
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionMeshes": 0,
+            "selfIntersectionCandidatePairs": 7956,
+            "selfIntersectionComplete": true,
+            "triangles": 1584,
+            "edgeTaperMeshes": 0,
+            "verifiedEdgeTaperSegments": 0,
+            "surfaceReliefMeshes": 0,
+            "surfaceReliefSamples": 0,
+            "surfaceAggregateFeatures": 0,
+            "referenceReliefMeshes": 0,
+            "referenceReliefSamples": 0,
+            "maximumReferenceIrregularity": 0,
+            "pass": true,
+            "details": [
+              {
+                "name": "panel_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "brace_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "untouched",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              }
+            ]
+          },
+          "standard": {
+            "status": "pass",
+            "validator": "Khronos glTF Validator",
+            "validatorVersion": "2.0.0-dev.3.10",
+            "errors": 0,
+            "warnings": 0,
+            "infos": 3,
+            "hints": 0,
+            "truncated": false,
+            "issueCodes": [
+              "UNUSED_OBJECT"
+            ],
+            "independentRead": {
+              "status": "pass",
+              "parser": "glTF Transform WebIO",
+              "nodes": 4,
+              "meshes": 3,
+              "materials": 3,
+              "skins": 0,
+              "animations": 0
+            }
+          },
+          "uv": {
+            "schema": "morphloom.uv-inspection-receipt/0.1",
+            "fingerprintCoverage": "complete",
+            "integrityPass": true,
+            "meshExport": {
+              "schema": "morphloom.mesh-export-decision/0.1",
+              "scope": "static edited mesh; not atlas, manufacturing or production approval",
+              "uv": {
+                "allowed": true,
+                "purpose": "editable-mesh",
+                "productionApproved": false,
+                "issues": []
+              },
+              "standard": {
+                "status": "pass",
+                "validator": "Khronos glTF Validator",
+                "validatorVersion": "2.0.0-dev.3.10",
+                "errors": 0,
+                "warnings": 0,
+                "infos": 3,
+                "hints": 0,
+                "truncated": false,
+                "issueCodes": [
+                  "UNUSED_OBJECT"
+                ],
+                "independentRead": {
+                  "status": "pass",
+                  "parser": "glTF Transform WebIO",
+                  "nodes": 4,
+                  "meshes": 3,
+                  "materials": 3,
+                  "skins": 0,
+                  "animations": 0
+                }
+              }
+            },
+            "meshes": [
+              {
+                "id": "panel_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              },
+              {
+                "id": "brace_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              },
+              {
+                "id": "untouched",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              }
+            ]
+          },
+          "triangles": 1584
+        },
+        {
+          "name": "after-0.5",
+          "sourceSha256": "341c9020f3638ce765ed4ec500278af7a47dde44820d77cb1b89d7deb30acbe6",
+          "glbSha256": "ccff5ad878094112ceab45a26a0c90b9cfb0a0fe3af4c9a77b0b5e3b3d239bfa",
+          "topology": {
+            "meshes": 3,
+            "watertightMeshes": 3,
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionMeshes": 0,
+            "selfIntersectionCandidatePairs": 10760,
+            "selfIntersectionComplete": true,
+            "triangles": 4752,
+            "edgeTaperMeshes": 0,
+            "verifiedEdgeTaperSegments": 0,
+            "surfaceReliefMeshes": 0,
+            "surfaceReliefSamples": 0,
+            "surfaceAggregateFeatures": 0,
+            "referenceReliefMeshes": 0,
+            "referenceReliefSamples": 0,
+            "maximumReferenceIrregularity": 0,
+            "pass": true,
+            "details": [
+              {
+                "name": "panel_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "brace_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "untouched",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              }
+            ]
+          },
+          "standard": {
+            "status": "pass",
+            "validator": "Khronos glTF Validator",
+            "validatorVersion": "2.0.0-dev.3.10",
+            "errors": 0,
+            "warnings": 0,
+            "infos": 3,
+            "hints": 0,
+            "truncated": false,
+            "issueCodes": [
+              "UNUSED_OBJECT"
+            ],
+            "independentRead": {
+              "status": "pass",
+              "parser": "glTF Transform WebIO",
+              "nodes": 4,
+              "meshes": 3,
+              "materials": 3,
+              "skins": 0,
+              "animations": 0
+            }
+          },
+          "uv": {
+            "schema": "morphloom.uv-inspection-receipt/0.1",
+            "fingerprintCoverage": "complete",
+            "integrityPass": true,
+            "meshExport": {
+              "schema": "morphloom.mesh-export-decision/0.1",
+              "scope": "static edited mesh; not atlas, manufacturing or production approval",
+              "uv": {
+                "allowed": true,
+                "purpose": "editable-mesh",
+                "productionApproved": false,
+                "issues": []
+              },
+              "standard": {
+                "status": "pass",
+                "validator": "Khronos glTF Validator",
+                "validatorVersion": "2.0.0-dev.3.10",
+                "errors": 0,
+                "warnings": 0,
+                "infos": 3,
+                "hints": 0,
+                "truncated": false,
+                "issueCodes": [
+                  "UNUSED_OBJECT"
+                ],
+                "independentRead": {
+                  "status": "pass",
+                  "parser": "glTF Transform WebIO",
+                  "nodes": 4,
+                  "meshes": 3,
+                  "materials": 3,
+                  "skins": 0,
+                  "animations": 0
+                }
+              }
+            },
+            "meshes": [
+              {
+                "id": "panel_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "brace_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "untouched",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              }
+            ]
+          },
+          "triangles": 4752
+        },
+        {
+          "name": "reopened-0.5",
+          "sourceSha256": "341c9020f3638ce765ed4ec500278af7a47dde44820d77cb1b89d7deb30acbe6",
+          "glbSha256": "ccff5ad878094112ceab45a26a0c90b9cfb0a0fe3af4c9a77b0b5e3b3d239bfa",
+          "topology": {
+            "meshes": 3,
+            "watertightMeshes": 3,
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionMeshes": 0,
+            "selfIntersectionCandidatePairs": 10760,
+            "selfIntersectionComplete": true,
+            "triangles": 4752,
+            "edgeTaperMeshes": 0,
+            "verifiedEdgeTaperSegments": 0,
+            "surfaceReliefMeshes": 0,
+            "surfaceReliefSamples": 0,
+            "surfaceAggregateFeatures": 0,
+            "referenceReliefMeshes": 0,
+            "referenceReliefSamples": 0,
+            "maximumReferenceIrregularity": 0,
+            "pass": true,
+            "details": [
+              {
+                "name": "panel_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "brace_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "untouched",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              }
+            ]
+          },
+          "standard": {
+            "status": "pass",
+            "validator": "Khronos glTF Validator",
+            "validatorVersion": "2.0.0-dev.3.10",
+            "errors": 0,
+            "warnings": 0,
+            "infos": 3,
+            "hints": 0,
+            "truncated": false,
+            "issueCodes": [
+              "UNUSED_OBJECT"
+            ],
+            "independentRead": {
+              "status": "pass",
+              "parser": "glTF Transform WebIO",
+              "nodes": 4,
+              "meshes": 3,
+              "materials": 3,
+              "skins": 0,
+              "animations": 0
+            }
+          },
+          "uv": {
+            "schema": "morphloom.uv-inspection-receipt/0.1",
+            "fingerprintCoverage": "complete",
+            "integrityPass": true,
+            "meshExport": {
+              "schema": "morphloom.mesh-export-decision/0.1",
+              "scope": "static edited mesh; not atlas, manufacturing or production approval",
+              "uv": {
+                "allowed": true,
+                "purpose": "editable-mesh",
+                "productionApproved": false,
+                "issues": []
+              },
+              "standard": {
+                "status": "pass",
+                "validator": "Khronos glTF Validator",
+                "validatorVersion": "2.0.0-dev.3.10",
+                "errors": 0,
+                "warnings": 0,
+                "infos": 3,
+                "hints": 0,
+                "truncated": false,
+                "issueCodes": [
+                  "UNUSED_OBJECT"
+                ],
+                "independentRead": {
+                  "status": "pass",
+                  "parser": "glTF Transform WebIO",
+                  "nodes": 4,
+                  "meshes": 3,
+                  "materials": 3,
+                  "skins": 0,
+                  "animations": 0
+                }
+              }
+            },
+            "meshes": [
+              {
+                "id": "panel_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "brace_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "untouched",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              }
+            ]
+          },
+          "triangles": 4752
+        }
+      ],
+      "nonTargetExact": true,
+      "targetPoseAndPbrPreserved": true,
+      "reopenedGlbExact": true
+    },
+    {
+      "scale": 1,
+      "receipt": {
+        "schema": "sceliph.part-regeneration-plan/0.1",
+        "sourceSha256": "104ff541bdb7714cdfe339037b4d8b08f49b1b4941cdcb3e7462607da0fdb081",
+        "planSha256": "171c9b8ac7b2ea4bdcdb3005acdbae8ee2cc350d3c3d6806a2c40fae77c96769",
+        "outputSha256": "5252ba237a002e69e4311b9b2d0ac54c8fd38a8c154788638a0472c5e35c1ed8",
+        "steps": [
+          {
+            "schema": "sceliph.part-regeneration/0.1",
+            "targetId": "panel_user",
+            "packId": "product.quality-beveled-plate",
+            "sourceSha256": "104ff541bdb7714cdfe339037b4d8b08f49b1b4941cdcb3e7462607da0fdb081",
+            "declarationSha256": "1c065d4168289581e172f9ab4d99468b42d88341e6bf54adc69cd49900b58de6",
+            "outputSha256": "aa04055f277ddc049040c71dcfb61d7a0b258646147594b3fc161bd2a4b916fe",
+            "preserved": "Target ID/name/transform/material and non-target source; target geometry/UV/normals regenerated",
+            "scope": "Authored static mesh only; no CAD/reference/assembly/rig certification"
+          },
+          {
+            "schema": "sceliph.part-regeneration/0.1",
+            "targetId": "brace_user",
+            "packId": "product.quality-beveled-plate",
+            "sourceSha256": "aa04055f277ddc049040c71dcfb61d7a0b258646147594b3fc161bd2a4b916fe",
+            "declarationSha256": "9e53c14d86e316b50dea8d60cd4941802c0fba9d7c207ad30c62ae4a72cc0d95",
+            "outputSha256": "5252ba237a002e69e4311b9b2d0ac54c8fd38a8c154788638a0472c5e35c1ed8",
+            "preserved": "Target ID/name/transform/material and non-target source; target geometry/UV/normals regenerated",
+            "scope": "Authored static mesh only; no CAD/reference/assembly/rig certification"
+          }
+        ],
+        "scope": "Atomic authored static extrusion replacement; topology and editable-mesh UV checked, no reference fidelity or whole delivery approval"
+      },
+      "files": [
+        {
+          "name": "before-1",
+          "sourceSha256": "104ff541bdb7714cdfe339037b4d8b08f49b1b4941cdcb3e7462607da0fdb081",
+          "glbSha256": "7f2173949506ceb7e6264f1149538ed4f4dd9f07f026ee0124acdde11c8c81d5",
+          "topology": {
+            "meshes": 3,
+            "watertightMeshes": 3,
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionMeshes": 0,
+            "selfIntersectionCandidatePairs": 7956,
+            "selfIntersectionComplete": true,
+            "triangles": 1584,
+            "edgeTaperMeshes": 0,
+            "verifiedEdgeTaperSegments": 0,
+            "surfaceReliefMeshes": 0,
+            "surfaceReliefSamples": 0,
+            "surfaceAggregateFeatures": 0,
+            "referenceReliefMeshes": 0,
+            "referenceReliefSamples": 0,
+            "maximumReferenceIrregularity": 0,
+            "pass": true,
+            "details": [
+              {
+                "name": "panel_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "brace_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "untouched",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              }
+            ]
+          },
+          "standard": {
+            "status": "pass",
+            "validator": "Khronos glTF Validator",
+            "validatorVersion": "2.0.0-dev.3.10",
+            "errors": 0,
+            "warnings": 0,
+            "infos": 3,
+            "hints": 0,
+            "truncated": false,
+            "issueCodes": [
+              "UNUSED_OBJECT"
+            ],
+            "independentRead": {
+              "status": "pass",
+              "parser": "glTF Transform WebIO",
+              "nodes": 4,
+              "meshes": 3,
+              "materials": 3,
+              "skins": 0,
+              "animations": 0
+            }
+          },
+          "uv": {
+            "schema": "morphloom.uv-inspection-receipt/0.1",
+            "fingerprintCoverage": "complete",
+            "integrityPass": true,
+            "meshExport": {
+              "schema": "morphloom.mesh-export-decision/0.1",
+              "scope": "static edited mesh; not atlas, manufacturing or production approval",
+              "uv": {
+                "allowed": true,
+                "purpose": "editable-mesh",
+                "productionApproved": false,
+                "issues": []
+              },
+              "standard": {
+                "status": "pass",
+                "validator": "Khronos glTF Validator",
+                "validatorVersion": "2.0.0-dev.3.10",
+                "errors": 0,
+                "warnings": 0,
+                "infos": 3,
+                "hints": 0,
+                "truncated": false,
+                "issueCodes": [
+                  "UNUSED_OBJECT"
+                ],
+                "independentRead": {
+                  "status": "pass",
+                  "parser": "glTF Transform WebIO",
+                  "nodes": 4,
+                  "meshes": 3,
+                  "materials": 3,
+                  "skins": 0,
+                  "animations": 0
+                }
+              }
+            },
+            "meshes": [
+              {
+                "id": "panel_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              },
+              {
+                "id": "brace_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              },
+              {
+                "id": "untouched",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              }
+            ]
+          },
+          "triangles": 1584
+        },
+        {
+          "name": "after-1",
+          "sourceSha256": "5252ba237a002e69e4311b9b2d0ac54c8fd38a8c154788638a0472c5e35c1ed8",
+          "glbSha256": "1f02733064a0cba84c5aa7c73830254f8218e3fbf402d919d865b07aeb672d65",
+          "topology": {
+            "meshes": 3,
+            "watertightMeshes": 3,
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionMeshes": 0,
+            "selfIntersectionCandidatePairs": 10762,
+            "selfIntersectionComplete": true,
+            "triangles": 4752,
+            "edgeTaperMeshes": 0,
+            "verifiedEdgeTaperSegments": 0,
+            "surfaceReliefMeshes": 0,
+            "surfaceReliefSamples": 0,
+            "surfaceAggregateFeatures": 0,
+            "referenceReliefMeshes": 0,
+            "referenceReliefSamples": 0,
+            "maximumReferenceIrregularity": 0,
+            "pass": true,
+            "details": [
+              {
+                "name": "panel_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "brace_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "untouched",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              }
+            ]
+          },
+          "standard": {
+            "status": "pass",
+            "validator": "Khronos glTF Validator",
+            "validatorVersion": "2.0.0-dev.3.10",
+            "errors": 0,
+            "warnings": 0,
+            "infos": 3,
+            "hints": 0,
+            "truncated": false,
+            "issueCodes": [
+              "UNUSED_OBJECT"
+            ],
+            "independentRead": {
+              "status": "pass",
+              "parser": "glTF Transform WebIO",
+              "nodes": 4,
+              "meshes": 3,
+              "materials": 3,
+              "skins": 0,
+              "animations": 0
+            }
+          },
+          "uv": {
+            "schema": "morphloom.uv-inspection-receipt/0.1",
+            "fingerprintCoverage": "complete",
+            "integrityPass": true,
+            "meshExport": {
+              "schema": "morphloom.mesh-export-decision/0.1",
+              "scope": "static edited mesh; not atlas, manufacturing or production approval",
+              "uv": {
+                "allowed": true,
+                "purpose": "editable-mesh",
+                "productionApproved": false,
+                "issues": []
+              },
+              "standard": {
+                "status": "pass",
+                "validator": "Khronos glTF Validator",
+                "validatorVersion": "2.0.0-dev.3.10",
+                "errors": 0,
+                "warnings": 0,
+                "infos": 3,
+                "hints": 0,
+                "truncated": false,
+                "issueCodes": [
+                  "UNUSED_OBJECT"
+                ],
+                "independentRead": {
+                  "status": "pass",
+                  "parser": "glTF Transform WebIO",
+                  "nodes": 4,
+                  "meshes": 3,
+                  "materials": 3,
+                  "skins": 0,
+                  "animations": 0
+                }
+              }
+            },
+            "meshes": [
+              {
+                "id": "panel_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "brace_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "untouched",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              }
+            ]
+          },
+          "triangles": 4752
+        },
+        {
+          "name": "reopened-1",
+          "sourceSha256": "5252ba237a002e69e4311b9b2d0ac54c8fd38a8c154788638a0472c5e35c1ed8",
+          "glbSha256": "1f02733064a0cba84c5aa7c73830254f8218e3fbf402d919d865b07aeb672d65",
+          "topology": {
+            "meshes": 3,
+            "watertightMeshes": 3,
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionMeshes": 0,
+            "selfIntersectionCandidatePairs": 10762,
+            "selfIntersectionComplete": true,
+            "triangles": 4752,
+            "edgeTaperMeshes": 0,
+            "verifiedEdgeTaperSegments": 0,
+            "surfaceReliefMeshes": 0,
+            "surfaceReliefSamples": 0,
+            "surfaceAggregateFeatures": 0,
+            "referenceReliefMeshes": 0,
+            "referenceReliefSamples": 0,
+            "maximumReferenceIrregularity": 0,
+            "pass": true,
+            "details": [
+              {
+                "name": "panel_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "brace_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "untouched",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              }
+            ]
+          },
+          "standard": {
+            "status": "pass",
+            "validator": "Khronos glTF Validator",
+            "validatorVersion": "2.0.0-dev.3.10",
+            "errors": 0,
+            "warnings": 0,
+            "infos": 3,
+            "hints": 0,
+            "truncated": false,
+            "issueCodes": [
+              "UNUSED_OBJECT"
+            ],
+            "independentRead": {
+              "status": "pass",
+              "parser": "glTF Transform WebIO",
+              "nodes": 4,
+              "meshes": 3,
+              "materials": 3,
+              "skins": 0,
+              "animations": 0
+            }
+          },
+          "uv": {
+            "schema": "morphloom.uv-inspection-receipt/0.1",
+            "fingerprintCoverage": "complete",
+            "integrityPass": true,
+            "meshExport": {
+              "schema": "morphloom.mesh-export-decision/0.1",
+              "scope": "static edited mesh; not atlas, manufacturing or production approval",
+              "uv": {
+                "allowed": true,
+                "purpose": "editable-mesh",
+                "productionApproved": false,
+                "issues": []
+              },
+              "standard": {
+                "status": "pass",
+                "validator": "Khronos glTF Validator",
+                "validatorVersion": "2.0.0-dev.3.10",
+                "errors": 0,
+                "warnings": 0,
+                "infos": 3,
+                "hints": 0,
+                "truncated": false,
+                "issueCodes": [
+                  "UNUSED_OBJECT"
+                ],
+                "independentRead": {
+                  "status": "pass",
+                  "parser": "glTF Transform WebIO",
+                  "nodes": 4,
+                  "meshes": 3,
+                  "materials": 3,
+                  "skins": 0,
+                  "animations": 0
+                }
+              }
+            },
+            "meshes": [
+              {
+                "id": "panel_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "brace_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "untouched",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              }
+            ]
+          },
+          "triangles": 4752
+        }
+      ],
+      "nonTargetExact": true,
+      "targetPoseAndPbrPreserved": true,
+      "reopenedGlbExact": true
+    },
+    {
+      "scale": 2,
+      "receipt": {
+        "schema": "sceliph.part-regeneration-plan/0.1",
+        "sourceSha256": "b07566c587d305bbb640b404fe5488d4ee16f84363da0f27f60584e47f966fff",
+        "planSha256": "1a1a34fb190d359482330f99ce4182de96ed719361b909a209bf54913f3c6a27",
+        "outputSha256": "6f184023bffe3e3160e7e1b6dac1ec187e9a0ff29b4feb483caa627e8a5d1ef1",
+        "steps": [
+          {
+            "schema": "sceliph.part-regeneration/0.1",
+            "targetId": "panel_user",
+            "packId": "product.quality-beveled-plate",
+            "sourceSha256": "b07566c587d305bbb640b404fe5488d4ee16f84363da0f27f60584e47f966fff",
+            "declarationSha256": "398652bdf3ecc5d1d80a3a48a52c20b9bbc4127ac45340638630788cd523eceb",
+            "outputSha256": "3ac087ef6c9dc417ffcd35a09948d740b363fce87e5eb79d61d676f9894a6f54",
+            "preserved": "Target ID/name/transform/material and non-target source; target geometry/UV/normals regenerated",
+            "scope": "Authored static mesh only; no CAD/reference/assembly/rig certification"
+          },
+          {
+            "schema": "sceliph.part-regeneration/0.1",
+            "targetId": "brace_user",
+            "packId": "product.quality-beveled-plate",
+            "sourceSha256": "3ac087ef6c9dc417ffcd35a09948d740b363fce87e5eb79d61d676f9894a6f54",
+            "declarationSha256": "537207ebc7b68b68a42e56b983840cb9a5a81e8ad071f68c2608d1609722a4a0",
+            "outputSha256": "6f184023bffe3e3160e7e1b6dac1ec187e9a0ff29b4feb483caa627e8a5d1ef1",
+            "preserved": "Target ID/name/transform/material and non-target source; target geometry/UV/normals regenerated",
+            "scope": "Authored static mesh only; no CAD/reference/assembly/rig certification"
+          }
+        ],
+        "scope": "Atomic authored static extrusion replacement; topology and editable-mesh UV checked, no reference fidelity or whole delivery approval"
+      },
+      "files": [
+        {
+          "name": "before-2",
+          "sourceSha256": "b07566c587d305bbb640b404fe5488d4ee16f84363da0f27f60584e47f966fff",
+          "glbSha256": "78b1854c31d8502dec0d63df51d04cb1591e3eff87df89eb3bbf2ac2504ab844",
+          "topology": {
+            "meshes": 3,
+            "watertightMeshes": 3,
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionMeshes": 0,
+            "selfIntersectionCandidatePairs": 7956,
+            "selfIntersectionComplete": true,
+            "triangles": 1584,
+            "edgeTaperMeshes": 0,
+            "verifiedEdgeTaperSegments": 0,
+            "surfaceReliefMeshes": 0,
+            "surfaceReliefSamples": 0,
+            "surfaceAggregateFeatures": 0,
+            "referenceReliefMeshes": 0,
+            "referenceReliefSamples": 0,
+            "maximumReferenceIrregularity": 0,
+            "pass": true,
+            "details": [
+              {
+                "name": "panel_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "brace_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "untouched",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              }
+            ]
+          },
+          "standard": {
+            "status": "pass",
+            "validator": "Khronos glTF Validator",
+            "validatorVersion": "2.0.0-dev.3.10",
+            "errors": 0,
+            "warnings": 0,
+            "infos": 3,
+            "hints": 0,
+            "truncated": false,
+            "issueCodes": [
+              "UNUSED_OBJECT"
+            ],
+            "independentRead": {
+              "status": "pass",
+              "parser": "glTF Transform WebIO",
+              "nodes": 4,
+              "meshes": 3,
+              "materials": 3,
+              "skins": 0,
+              "animations": 0
+            }
+          },
+          "uv": {
+            "schema": "morphloom.uv-inspection-receipt/0.1",
+            "fingerprintCoverage": "complete",
+            "integrityPass": true,
+            "meshExport": {
+              "schema": "morphloom.mesh-export-decision/0.1",
+              "scope": "static edited mesh; not atlas, manufacturing or production approval",
+              "uv": {
+                "allowed": true,
+                "purpose": "editable-mesh",
+                "productionApproved": false,
+                "issues": []
+              },
+              "standard": {
+                "status": "pass",
+                "validator": "Khronos glTF Validator",
+                "validatorVersion": "2.0.0-dev.3.10",
+                "errors": 0,
+                "warnings": 0,
+                "infos": 3,
+                "hints": 0,
+                "truncated": false,
+                "issueCodes": [
+                  "UNUSED_OBJECT"
+                ],
+                "independentRead": {
+                  "status": "pass",
+                  "parser": "glTF Transform WebIO",
+                  "nodes": 4,
+                  "meshes": 3,
+                  "materials": 3,
+                  "skins": 0,
+                  "animations": 0
+                }
+              }
+            },
+            "meshes": [
+              {
+                "id": "panel_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              },
+              {
+                "id": "brace_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              },
+              {
+                "id": "untouched",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              }
+            ]
+          },
+          "triangles": 1584
+        },
+        {
+          "name": "after-2",
+          "sourceSha256": "6f184023bffe3e3160e7e1b6dac1ec187e9a0ff29b4feb483caa627e8a5d1ef1",
+          "glbSha256": "4303c61ec5e0f939926009cc550498c04862d03a6d802091204f80ba7a602ee9",
+          "topology": {
+            "meshes": 3,
+            "watertightMeshes": 3,
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionMeshes": 0,
+            "selfIntersectionCandidatePairs": 10760,
+            "selfIntersectionComplete": true,
+            "triangles": 4752,
+            "edgeTaperMeshes": 0,
+            "verifiedEdgeTaperSegments": 0,
+            "surfaceReliefMeshes": 0,
+            "surfaceReliefSamples": 0,
+            "surfaceAggregateFeatures": 0,
+            "referenceReliefMeshes": 0,
+            "referenceReliefSamples": 0,
+            "maximumReferenceIrregularity": 0,
+            "pass": true,
+            "details": [
+              {
+                "name": "panel_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "brace_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "untouched",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              }
+            ]
+          },
+          "standard": {
+            "status": "pass",
+            "validator": "Khronos glTF Validator",
+            "validatorVersion": "2.0.0-dev.3.10",
+            "errors": 0,
+            "warnings": 0,
+            "infos": 3,
+            "hints": 0,
+            "truncated": false,
+            "issueCodes": [
+              "UNUSED_OBJECT"
+            ],
+            "independentRead": {
+              "status": "pass",
+              "parser": "glTF Transform WebIO",
+              "nodes": 4,
+              "meshes": 3,
+              "materials": 3,
+              "skins": 0,
+              "animations": 0
+            }
+          },
+          "uv": {
+            "schema": "morphloom.uv-inspection-receipt/0.1",
+            "fingerprintCoverage": "complete",
+            "integrityPass": true,
+            "meshExport": {
+              "schema": "morphloom.mesh-export-decision/0.1",
+              "scope": "static edited mesh; not atlas, manufacturing or production approval",
+              "uv": {
+                "allowed": true,
+                "purpose": "editable-mesh",
+                "productionApproved": false,
+                "issues": []
+              },
+              "standard": {
+                "status": "pass",
+                "validator": "Khronos glTF Validator",
+                "validatorVersion": "2.0.0-dev.3.10",
+                "errors": 0,
+                "warnings": 0,
+                "infos": 3,
+                "hints": 0,
+                "truncated": false,
+                "issueCodes": [
+                  "UNUSED_OBJECT"
+                ],
+                "independentRead": {
+                  "status": "pass",
+                  "parser": "glTF Transform WebIO",
+                  "nodes": 4,
+                  "meshes": 3,
+                  "materials": 3,
+                  "skins": 0,
+                  "animations": 0
+                }
+              }
+            },
+            "meshes": [
+              {
+                "id": "panel_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "brace_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "untouched",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              }
+            ]
+          },
+          "triangles": 4752
+        },
+        {
+          "name": "reopened-2",
+          "sourceSha256": "6f184023bffe3e3160e7e1b6dac1ec187e9a0ff29b4feb483caa627e8a5d1ef1",
+          "glbSha256": "4303c61ec5e0f939926009cc550498c04862d03a6d802091204f80ba7a602ee9",
+          "topology": {
+            "meshes": 3,
+            "watertightMeshes": 3,
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionMeshes": 0,
+            "selfIntersectionCandidatePairs": 10760,
+            "selfIntersectionComplete": true,
+            "triangles": 4752,
+            "edgeTaperMeshes": 0,
+            "verifiedEdgeTaperSegments": 0,
+            "surfaceReliefMeshes": 0,
+            "surfaceReliefSamples": 0,
+            "surfaceAggregateFeatures": 0,
+            "referenceReliefMeshes": 0,
+            "referenceReliefSamples": 0,
+            "maximumReferenceIrregularity": 0,
+            "pass": true,
+            "details": [
+              {
+                "name": "panel_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "brace_user",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              },
+              {
+                "name": "untouched",
+                "boundaryEdges": 0,
+                "inconsistentWindingEdges": 0,
+                "orientationConsistent": true,
+                "nonManifoldEdges": 0,
+                "degenerateTriangles": 0,
+                "selfIntersections": 0,
+                "selfIntersectionComplete": true,
+                "watertight": true
+              }
+            ]
+          },
+          "standard": {
+            "status": "pass",
+            "validator": "Khronos glTF Validator",
+            "validatorVersion": "2.0.0-dev.3.10",
+            "errors": 0,
+            "warnings": 0,
+            "infos": 3,
+            "hints": 0,
+            "truncated": false,
+            "issueCodes": [
+              "UNUSED_OBJECT"
+            ],
+            "independentRead": {
+              "status": "pass",
+              "parser": "glTF Transform WebIO",
+              "nodes": 4,
+              "meshes": 3,
+              "materials": 3,
+              "skins": 0,
+              "animations": 0
+            }
+          },
+          "uv": {
+            "schema": "morphloom.uv-inspection-receipt/0.1",
+            "fingerprintCoverage": "complete",
+            "integrityPass": true,
+            "meshExport": {
+              "schema": "morphloom.mesh-export-decision/0.1",
+              "scope": "static edited mesh; not atlas, manufacturing or production approval",
+              "uv": {
+                "allowed": true,
+                "purpose": "editable-mesh",
+                "productionApproved": false,
+                "issues": []
+              },
+              "standard": {
+                "status": "pass",
+                "validator": "Khronos glTF Validator",
+                "validatorVersion": "2.0.0-dev.3.10",
+                "errors": 0,
+                "warnings": 0,
+                "infos": 3,
+                "hints": 0,
+                "truncated": false,
+                "issueCodes": [
+                  "UNUSED_OBJECT"
+                ],
+                "independentRead": {
+                  "status": "pass",
+                  "parser": "glTF Transform WebIO",
+                  "nodes": 4,
+                  "meshes": 3,
+                  "materials": 3,
+                  "skins": 0,
+                  "animations": 0
+                }
+              }
+            },
+            "meshes": [
+              {
+                "id": "panel_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "brace_user",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 2112
+              },
+              {
+                "id": "untouched",
+                "integrityPass": true,
+                "blocked": null,
+                "degenerateUvTriangles": 0,
+                "zeroUvTriangles": 0,
+                "eligibleUvTriangles": 528
+              }
+            ]
+          },
+          "triangles": 4752
+        }
+      ],
+      "nonTargetExact": true,
+      "targetPoseAndPbrPreserved": true,
+      "reopenedGlbExact": true
+    }
+  ],
+  "maximumWorkload": {
+    "steps": 8,
+    "elapsedMs": 359.854458,
+    "sourceBytes": 46545,
+    "scope": "Eight representative 2112-triangle parts; observed host timing, not a latency SLA or worst-case 100k-triangle measurement"
+  },
+  "scope": "Three authored scales, two replacements each. No photo fidelity / whole production approval.",
+  "fullEvidence": {
+    "path": "report.full.json.gz",
+    "decodedSha256": "6a90f54d8a215d08855a22f791684cc2e4d6027ea114bbe92cc5404d6a9602d2",
+    "encoding": "gzip",
+    "note": "Full raw report preserved losslessly; report.json is its compact viewing summary."
+  }
+}

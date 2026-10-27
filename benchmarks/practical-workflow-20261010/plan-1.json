@@ -1,0 +1,44 @@
+{
+  "schema": "sceliph.part-regeneration-plan/0.1",
+  "sourceSha256": "104ff541bdb7714cdfe339037b4d8b08f49b1b4941cdcb3e7462607da0fdb081",
+  "steps": [
+    {
+      "targetId": "panel_user",
+      "declaration": {
+        "schema": "sceliph.domain-invocation/0.1",
+        "units": "mm",
+        "coordinates": "right-handed-y-up",
+        "packId": "product.quality-beveled-plate",
+        "input": {
+          "widthMm": 32,
+          "heightMm": 14,
+          "thicknessMm": 5,
+          "boreDiameterMm": 4,
+          "edgeBevelMm": 0.6
+        },
+        "requiredCapabilities": [
+          "authored-single-extrusion"
+        ]
+      }
+    },
+    {
+      "targetId": "brace_user",
+      "declaration": {
+        "schema": "sceliph.domain-invocation/0.1",
+        "units": "mm",
+        "coordinates": "right-handed-y-up",
+        "packId": "product.quality-beveled-plate",
+        "input": {
+          "widthMm": 24,
+          "heightMm": 14,
+          "thicknessMm": 5,
+          "boreDiameterMm": 4,
+          "edgeBevelMm": 0.6
+        },
+        "requiredCapabilities": [
+          "authored-single-extrusion"
+        ]
+      }
+    }
+  ]
+}

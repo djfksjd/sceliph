@@ -34,7 +34,7 @@ function inside(p:Point, loop:Point[]): boolean {
   return result;
 }
 function loopsIntersect(a:Point[],b:Point[]): boolean { return a.some((p,i)=>b.some((q,j)=>intersects(p,a[(i+1)%a.length],q,b[(j+1)%b.length]))); }
-export function validatePartGeometry(value: unknown, allowGear=false,allowGearMath=false): asserts value is PartGeometry {
+export function validatePartGeometry(value: unknown, allowGear=false,allowGearMath=false,allowCapPolicy=true): asserts value is PartGeometry {
   const fail=():never=>{throw new Error('Invalid declarative part geometry');};
   if(!plain(value)) return fail();
   if(value.op==='spur-gear'){if(!allowGear||Object.hasOwn(value,'mathRevision')&&!allowGearMath)return fail();validateSpurGear(value);return;}
@@ -48,7 +48,8 @@ export function validatePartGeometry(value: unknown, allowGear=false,allowGearMa
       JSON.stringify(value.profile[0])!==JSON.stringify(value.profile[value.profile.length-1]) || !polygon(value.profile.slice(0,-1)) ||
       (value.segments!==undefined && (!segment(value.segments,16) || (value.segments as number)%4!==0))) fail();
   } else if(value.op==='extrude') {
-    if(!keys(value,['op','points','depth'],['holes','bevelSize','bevelThickness','bevelSegments']) || !polygon(value.points) || !finite(value.depth,0.01,10_000) ||
+    if(!keys(value,['op','points','depth'],['holes','bevelSize','bevelThickness','bevelSegments','capTriangulation']) || !polygon(value.points) || !finite(value.depth,0.01,10_000) ||
+      (Object.hasOwn(value,'capTriangulation') && (!allowCapPolicy || value.capTriangulation!=='quality-diagonal-v1')) ||
       (value.bevelSize!==undefined && !finite(value.bevelSize,0,10_000)) || (value.bevelThickness!==undefined && !finite(value.bevelThickness,0,10_000)) ||
       (value.bevelSegments!==undefined && !segment(value.bevelSegments,0,8))) fail();
     const outer=value.points as Point[],holes=value.holes;

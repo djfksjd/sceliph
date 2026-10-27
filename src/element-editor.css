@@ -82,7 +82,8 @@
 .element-editor .editor-view-controls label { display: inline-flex; align-items: center; gap: 6px; }
 .element-editor .editor-view-controls input:not([type=checkbox]) { width: 150px; max-width: 100%; }
 .element-editor .editor-runtime-status { margin: 8px 0 12px; font: 12px/1.5 ui-monospace, monospace; }
-.element-editor .element-columns { display: grid; grid-template-columns: minmax(200px,240px) minmax(0,1fr) minmax(280px,320px); grid-template-areas: 'tree viewport inspector'; gap: 1px; background: var(--editor-line); height: max(440px,calc(100dvh - 230px)); min-width: 0; }
+.element-editor .editor-runtime-details { margin: 4px 0 8px; color: var(--editor-muted); font-size: 12px; }
+.element-editor .element-columns { display: grid; grid-template-columns: minmax(200px,240px) minmax(0,1fr) minmax(280px,320px); grid-template-areas: 'tree viewport inspector'; gap: 1px; background: var(--editor-line); height: max(440px,calc(100dvh - 310px)); min-width: 0; }
 .element-editor .element-viewport { grid-area: viewport; background: #1f252b; }
 .element-editor .element-tree { grid-area: tree; }
 .element-editor .element-inspector { grid-area: inspector; }
@@ -125,3 +126,9 @@
   .element-editor .editor-source-kind { max-width: 110px; }
 }
 @media (prefers-reduced-motion: reduce) { .element-editor button { transition: none; } }
+
+.element-editor .regeneration-plan textarea { box-sizing: border-box; font: 12px/1.6 ui-monospace, monospace; tab-size: 2; }
+.element-editor .plan-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.element-editor .plan-apply:not(:disabled) { color: #18232e; background: var(--editor-accent); border-color: var(--editor-accent); font-weight: 600; }
+.element-editor .plan-result { padding: 12px 0; border-top: 1px solid var(--editor-line); }
+.element-editor .plan-result ul { padding-left: 20px; }

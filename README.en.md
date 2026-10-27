@@ -22,20 +22,16 @@ Sceliph is an open-source local tool that turns photographs, drawings, measureme
 
 ## Local UI / UX
 
-The editor now prioritizes the viewport, highlights selection, groups creation/file/inspection tools in collapsible sections, and adapts the workbench for narrow screens. See [changes and verification scope](./docs/EDITOR_UI_STATUS.ko.md). Current browser verification remains not-run because the local server could not start in this execution environment.
+Actual Chrome captures of the current workbench on **2026-10-10**, based on `78bec7e` plus this local refinement. The viewport uses local studio reflections so metal roughness is readable; the source materials and exported GLB are preserved. Scene diagnostics remain available in a disclosure. [Capture provenance](./assets/screenshots/README.md)
 
-Actual Chrome screenshots show the bearing part tree and 3D viewport, individual ball selection and isolation, numeric/PBR inspection, and a UV checker preview.
+![Sceliph workbench with studio-lit bearing, stable component IDs and Inspector](./assets/screenshots/workbench-20261010-desktop.jpg)
 
-These were **captured on 2026-10-09 from an earlier local build**. They do not include the latest plate regeneration panel or the new workbench layout. They illustrate the interface, not model accuracy or production delivery approval. [Capture details](./assets/screenshots/README.md)
+<table><tr>
+<td width="72%"><img src="./assets/screenshots/replacement-plan-20261010.jpg" alt="Two source-bound part replacements checked before Apply" width="100%" /><br /><strong>Review an LLM-authored JSON plan</strong><br />Check every replacement, then apply one reversible edit.</td>
+<td width="28%"><img src="./assets/screenshots/workbench-20261010-mobile.jpg" alt="390-pixel mobile layout with folded scene diagnostics" width="100%" /><br /><strong>Mobile layout</strong><br />Scroll from the viewport to the part tree and Inspector.</td>
+</tr></table>
 
-![Sceliph local bearing assembly, stable part IDs and Inspector](./assets/screenshots/element-editor-bearing.jpg)
-
-<table>
-  <tr>
-    <td width="50%"><img src="./assets/screenshots/element-editor-part-selection.jpg" alt="Isolated ball_0000 with transform, PBR and radius controls" width="100%" /><br /><strong>Part selection and isolation</strong><br />Select a stable ID and inspect mm/radian values, PBR appearance and sphere radius.</td>
-    <td width="50%"><img src="./assets/screenshots/element-editor-uv-checker.jpg" alt="Synthetic UV checker preview on an isolated bearing ball" width="100%" /><br /><strong>UV checker inspection</strong><br />Inspect mapping with a synthetic pattern. This is not the source material or a measured texture.</td>
-  </tr>
-</table>
+These are authored demonstration assets. Screenshots do not certify photograph reconstruction, bearing tolerances or whole production delivery. Previous captures remain in the repository with their original provenance.
 
 ## Current status
 
@@ -43,7 +39,20 @@ These were **captured on 2026-10-09 from an earlier local build**. They do not i
 
 The supplied hero image is **brand artwork**, not an engine-generated asset or quality-validation result.
 
-### Latest engine checkpoint · 2026-10-07
+### Practical workflow checkpoint · 2026-10-10
+
+Final **164 files / 1040 tests**, benchmark, build and 13 focused contract tests passed.
+
+A source-bound JSON plan now replaces up to eight distinct authored extrusion parts atomically. Review first; a failed target prevents every replacement. IDs, placement, PBR and unrelated parts are preserved, and one Undo restores the complete operation. This is native `0.6` static mesh editing; assembly attachments, rigging and arbitrary photo reconstruction remain outside this path.
+
+The opt-in `product.quality-beveled-plate` pack fixes near-tangent cap slivers with `quality-diagonal-v1`, retaining boundary vertices, wall attributes and surface area. The old pack and no-option meshes retain their behavior and bytes. Three scales / nine actual GLBs, browser save/reopen/edit and Blender import/edit checks are recorded in [the current status](./docs/PRACTICAL_WORKFLOW_20261010.ko.md). Whole `quality:production` still fails; this is not 100% engine completion.
+
+1. Open `/?editor=elements` and load an authored static extrusion source.
+2. Expand **Replace parts from a JSON plan** → **Prepare replacement template**.
+3. Have the LLM edit `steps`, preserving `sourceSha256` and real `targetId`s. [Schema](./schemas/part-regeneration-plan.schema.json)
+4. **Check replacement plan** → review → **Apply checked replacements**. Save native JSON for further editing.
+
+### Previous engine checkpoint · 2026-10-07
 
 The core remains LLM-authored declarative IR executed by a local geometry engine. This update adds primary-form contact witnesses, tapered tubes, ellipsoid section controls, measured surface-error budgets, edit diagnostics and safer native JSON replacement. No dedicated neural 3D generator is added to the default dependencies.
 

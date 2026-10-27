@@ -30,6 +30,8 @@ export type AssemblyGeometryIR =
     bevelSize?: number;
     bevelThickness?: number;
     bevelSegments?: number;
+    /** Explicit planar cap diagonal quality policy; omitted preserves legacy bytes. */
+    capTriangulation?: 'quality-diagonal-v1';
     /** Real wedge thinning along one or more cutting-edge paths, in profile XY millimetres. */
     edgeTapers?: Array<{
       path: Array<[number, number]>;

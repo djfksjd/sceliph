@@ -8,6 +8,7 @@ import {validateReferenceProjectionOrientation} from './reference-projection-ori
 import {validateSpurGear,gearExtrude,type SpurGearGeometry} from './spur-gear';
 import * as THREE from 'three';
 import { stableExtrudeUV } from './extrude-uv';
+import {CAP_DIAGONAL_POLICY, improveExtrudeCapDiagonals} from './extrude-cap-diagonals';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import type { ViewMode } from '../types';
 import type { ProductBuild, ProductPartInfo } from './product';
@@ -248,6 +249,7 @@ export function validateAssemblyIR(value: unknown): asserts value is AssemblyIR 
         }
         break;
       case 'extrude':
+        if (component.geometry.capTriangulation !== undefined && component.geometry.capTriangulation !== CAP_DIAGONAL_POLICY) throw new Error(`Invalid cap triangulation policy in ${component.id}.`);
         if (component.geometry.bevelSegments !== undefined && (!Number.isInteger(component.geometry.bevelSegments)
           || component.geometry.bevelSegments < 0 || component.geometry.bevelSegments > 512)) {
           throw new Error(`Extrude bevel segments are invalid in ${component.id}: expected integer 0..512 (0 only with bevel disabled).`);
@@ -578,6 +580,7 @@ function compileGeometry(geometry: AssemblyGeometryIR, insetChamferMm=0): THREE.
         bevelOffset: -mm(insetChamferMm),
       });
       result.translate(0, 0, -depth * 0.5);
+      if (geometry.capTriangulation === CAP_DIAGONAL_POLICY) improveExtrudeCapDiagonals(result);
       if (geometry.edgeTapers?.length) applyExtrudeEdgeTapers(result, geometry.edgeTapers);
       return result;
     }
