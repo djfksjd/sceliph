@@ -1,0 +1,21 @@
+{
+ "request": "Photo: a table lamp: a round base, a thin vertical pole and a conical shade.\nThe round base is 160 mm in diameter.\nThe camera's horizontal field of view is 50 degrees.\nModel it with exactly these components: \"base\" (the round base), \"pole\" (the vertical pole), \"shade\" (the lamp shade (a truncated cone)).",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00104792,
+   "durationMs": 9473,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":15,\"elevationDeg\":20},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"table lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"base\",\"category\":\"mechanical\",\"materialName\":\"black painted metal\",\"detail\":\"Round flat base, 160 mm diameter.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":80,\"radiusBottom\":80,\"depth\":25,\"radialSegments\":32},\"position\":[0,12.5,0],\"material\":{\"color\":\"#222222\",\"roughness\":0.5,\"metalness\":0.2}},{\"id\":\"pole\",\"name\":\"pole\",\"category\":\"mechanical\",\"materialName\":\"brushed metal rod\",\"detail\":\"Thin vertical pole rising from the base to the shade.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5.5,\"radiusBottom\":5.5,\"depth\":265,\"radialSegments\":32},\"position\":[0,157.5,0],\"material\":{\"color\":\"#aaaaaa\",\"roughness\":0.4,\"metalness\":0.6}},{\"id\":\"shade\",\"name\":\"shade\",\"category\":\"enclosure\",\"materialName\":\"fabric lamp shade\",\"detail\":\"Conical lampshade, wider at the bottom, with a truncated top.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":55,\"radiusBottom\":110,\"depth\":160,\"radialSegments\":32},\"position\":[0,370,0],\"material\":{\"color\":\"#e8e0c8\",\"roughness\":0.9,\"metalness\":0}}]}}",
+   "stage": "pass",
+   "issues": []
+  }
+ ]
+}

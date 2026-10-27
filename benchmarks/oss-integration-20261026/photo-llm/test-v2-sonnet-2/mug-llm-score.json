@@ -1,0 +1,115 @@
+{
+ "schema": "sceliph.assembly-truth-compare/0.1",
+ "yawDeg": 0,
+ "extentMm": 125.99999830126762,
+ "items": [
+  {
+   "componentId": "body",
+   "candidateId": "body",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 84,
+   "candidateMm": 70,
+   "relativeError": 0.1667
+  },
+  {
+   "componentId": "body",
+   "candidateId": "body",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 95,
+   "candidateMm": 95,
+   "relativeError": 0
+  },
+  {
+   "componentId": "body",
+   "candidateId": "body",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 84,
+   "candidateMm": 70,
+   "relativeError": 0.1667
+  },
+  {
+   "componentId": "body",
+   "candidateId": "body",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 64,
+   "candidateMm": 50,
+   "relativeError": 0.2187
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 64,
+   "candidateMm": 50,
+   "relativeError": 0.2188
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 12,
+   "candidateMm": 9.75,
+   "relativeError": 0.1876
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 52,
+   "candidateMm": 46,
+   "relativeError": 0.0476
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": 2.5,
+   "candidateMm": 4.5,
+   "relativeError": 0.0159
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 18,
+   "candidateMm": 27,
+   "relativeError": 0.0714
+  }
+ ],
+ "missingComponentIds": [],
+ "summary": {
+  "medianSizeError": 0.1771,
+  "maxSizeError": 0.2188,
+  "medianPlacementError": 0.0159,
+  "maxPlacementError": 0.0714,
+  "within5": 0.4545,
+  "within10": 0.5455
+ }
+}

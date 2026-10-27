@@ -1,0 +1,33 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Contemporary Outdoor Wall Sconce, 11.62\"H, Matte Black.\nThe product listing gives its overall height as 296 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00221462,
+   "durationMs": 22302,
+   "isError": false
+  },
+  {
+   "round": 1,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00222042,
+   "durationMs": 18379,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Amazon Basics Stone & Beam Contemporary Outdoor Wall Sconce, Matte Black\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Dome shade\",\"category\":\"enclosure\",\"materialName\":\"Matte black powder-coated steel\",\"detail\":\"Hemispherical dome shade with a flared bottom lip, open at the base.\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[128,0],[128,6],[124,10],[118,25],[104,60],[84,95],[60,128],[36,155],[16,172],[0,180]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.45,\"metalness\":0.3}},{\"id\":\"rim\",\"name\":\"Shade bottom rim\",\"category\":\"mechanical\",\"materialName\":\"Matte black steel\",\"detail\":\"Rolled bead around the shade opening.\",\"geometry\":{\"op\":\"torus\",\"radius\":127,\"tube\":4},\"position\":[0,4,0],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.4,\"metalness\":0.3}},{\"id\":\"mount_plate\",\"name\":\"Wall mounting plate\",\"category\":\"mechanical\",\"materialName\":\"Matte black steel\",\"detail\":\"Round back plate fixed to the wall, facing the viewer.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":52,\"radiusBottom\":52,\"depth\":12,\"radialSegments\":32},\"position\":[0,200,-100],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.5,\"metalness\":0.25}},{\"id\":\"gooseneck_arm\",\"name\":\"Gooseneck arm\",\"category\":\"interconnect\",\"materialName\":\"Matte black steel tube\",\"detail\":\"Curved arm rising from the back plate and arching over to carry the shade.\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-25,0],[0,0,0],[0,15,0],[0,23,6]],\"radius\":5},\"position\":[0,273,-100],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.4,\"metalness\":0.3}}]}}",
+   "stage": "requirements"
+  },
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Amazon Brand Stone & Beam Contemporary Outdoor Wall Sconce, Matte Black\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Dome shade\",\"category\":\"enclosure\",\"materialName\":\"Matte black powder-coated steel\",\"detail\":\"Closed hemispherical-style dome shade with a flat bottom face and flared lip.\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[128,0],[128,6],[124,12],[116,30],[100,60],[78,90],[54,118],[30,142],[12,154],[0,160]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.45,\"metalness\":0.3}},{\"id\":\"rim\",\"name\":\"Shade bottom rim\",\"category\":\"mechanical\",\"materialName\":\"Matte black steel\",\"detail\":\"Rolled bead around the shade opening.\",\"geometry\":{\"op\":\"torus\",\"radius\":127,\"tube\":4},\"position\":[0,4,0],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.4,\"metalness\":0.3}},{\"id\":\"mount_plate\",\"name\":\"Wall mounting plate\",\"category\":\"mechanical\",\"materialName\":\"Matte black steel\",\"detail\":\"Round back plate fixed to the wall, facing the viewer.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":40,\"radiusBottom\":40,\"depth\":12,\"radialSegments\":32},\"position\":[0,190,-54],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.5,\"metalness\":0.25}},{\"id\":\"gooseneck_arm\",\"name\":\"Gooseneck arm\",\"category\":\"interconnect\",\"materialName\":\"Matte black steel tube\",\"detail\":\"Curved arm rising from the back plate, arching over and down to carry the shade.\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,195,-54],[0,262,-50],[0,291,-28],[0,284,-6],[0,230,0],[0,163,0]],\"radius\":5},\"position\":[0,0,0],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.4,\"metalness\":0.3}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

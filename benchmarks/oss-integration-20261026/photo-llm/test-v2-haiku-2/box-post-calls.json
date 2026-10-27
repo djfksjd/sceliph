@@ -1,0 +1,21 @@
+{
+ "request": "Photo: a box with a cylindrical post standing on top of it.\nThe box is 300 mm wide (its longest horizontal edge).\nThe camera's horizontal field of view is 50 degrees.\nModel it with exactly these components: \"box\" (the box), \"post\" (the cylinder on top).",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.0013998699999999999,
+   "durationMs": 14627,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-35,\"elevationDeg\":20},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"box_with_post\",\"units\":\"mm\",\"components\":[{\"id\":\"box\",\"name\":\"box\",\"category\":\"enclosure\",\"materialName\":\"painted box\",\"detail\":\"Rectangular box, longest edge along X, resting on the floor.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,140,100],\"radius\":3},\"position\":[0,70,0],\"material\":{\"color\":\"#9a4a33\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"post\",\"name\":\"post\",\"category\":\"mechanical\",\"materialName\":\"painted post\",\"detail\":\"Cylindrical post standing on the top face of the box, set toward the back-right.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":40,\"radiusBottom\":40,\"depth\":160,\"radialSegments\":32},\"position\":[59,220,-15],\"material\":{\"color\":\"#3d6fb0\",\"roughness\":0.5,\"metalness\":0.0}}]}}",
+   "stage": "pass",
+   "issues": []
+  }
+ ]
+}

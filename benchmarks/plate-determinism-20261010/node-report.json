@@ -1,0 +1,481 @@
+{
+  "revision": "sceliph.plate-ieee-series/0.1",
+  "pass": true,
+  "cases": [
+    {
+      "id": "case-0",
+      "input": {
+        "widthMm": 12,
+        "heightMm": 7,
+        "thicknessMm": 2.5,
+        "boreDiameterMm": 2,
+        "edgeBevelMm": 0.3
+      },
+      "sourceSha256": "6748a077a8f20064fbf9143427fd05e013bf667cf9ef80b64d8dfa0d13cd01fb",
+      "glbSha256": "42168829b406ef97b9961c939565320549ebe8d0b53bcd34477c2b8cc5062baa",
+      "declarationSha256": "686b68d3debb18ede8e7edcfd0ac456d038eb4545cc52f29b2ca1cae23498281",
+      "bytes": 210540,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 3810,
+        "selfIntersectionComplete": true,
+        "triangles": 2112,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "plate_body",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      },
+      "standard": {
+        "status": "pass",
+        "validator": "Khronos glTF Validator",
+        "validatorVersion": "2.0.0-dev.3.10",
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1,
+        "hints": 0,
+        "truncated": false,
+        "issueCodes": [
+          "UNUSED_OBJECT"
+        ],
+        "independentRead": {
+          "status": "pass",
+          "parser": "glTF Transform WebIO",
+          "nodes": 2,
+          "meshes": 1,
+          "materials": 1,
+          "skins": 0,
+          "animations": 0
+        }
+      },
+      "uv": {
+        "allowed": true,
+        "integrityPass": true,
+        "fingerprintCoverage": "complete"
+      },
+      "reopenedExact": true
+    },
+    {
+      "id": "case-1",
+      "input": {
+        "widthMm": 24,
+        "heightMm": 14,
+        "thicknessMm": 5,
+        "boreDiameterMm": 4,
+        "edgeBevelMm": 0.6
+      },
+      "sourceSha256": "4d47e82f7580fcdb1812443d7d0c2f8c99fd26f98f5d42768a266f4991156e69",
+      "glbSha256": "81a2dc6ead24a76cf43dbcc691be849c17c59e5bb181d14e9730695a31901bbc",
+      "declarationSha256": "1d00a3d826b8f788a359dcd6500e4f1cebfba4f79cc3659e4abb3aee0ec1d724",
+      "bytes": 210468,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 3787,
+        "selfIntersectionComplete": true,
+        "triangles": 2112,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "plate_body",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      },
+      "standard": {
+        "status": "pass",
+        "validator": "Khronos glTF Validator",
+        "validatorVersion": "2.0.0-dev.3.10",
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1,
+        "hints": 0,
+        "truncated": false,
+        "issueCodes": [
+          "UNUSED_OBJECT"
+        ],
+        "independentRead": {
+          "status": "pass",
+          "parser": "glTF Transform WebIO",
+          "nodes": 2,
+          "meshes": 1,
+          "materials": 1,
+          "skins": 0,
+          "animations": 0
+        }
+      },
+      "uv": {
+        "allowed": true,
+        "integrityPass": true,
+        "fingerprintCoverage": "complete"
+      },
+      "reopenedExact": true
+    },
+    {
+      "id": "case-2",
+      "input": {
+        "widthMm": 48,
+        "heightMm": 28,
+        "thicknessMm": 10,
+        "boreDiameterMm": 8,
+        "edgeBevelMm": 1.2
+      },
+      "sourceSha256": "d16edcb12e63a45f25bdaa6d72c72a7a910ed2e82c9d2f097d9520bc016c3eda",
+      "glbSha256": "075fef13a1eb70d447d404af7e1b4fa40572e14370a0ce6beda1f0845acb99a4",
+      "declarationSha256": "6535d5012d3779f3cfb5688b7dbf7e977f55dae003c4332d5f375427aed598bc",
+      "bytes": 210380,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 3798,
+        "selfIntersectionComplete": true,
+        "triangles": 2112,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "plate_body",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      },
+      "standard": {
+        "status": "pass",
+        "validator": "Khronos glTF Validator",
+        "validatorVersion": "2.0.0-dev.3.10",
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1,
+        "hints": 0,
+        "truncated": false,
+        "issueCodes": [
+          "UNUSED_OBJECT"
+        ],
+        "independentRead": {
+          "status": "pass",
+          "parser": "glTF Transform WebIO",
+          "nodes": 2,
+          "meshes": 1,
+          "materials": 1,
+          "skins": 0,
+          "animations": 0
+        }
+      },
+      "uv": {
+        "allowed": true,
+        "integrityPass": true,
+        "fingerprintCoverage": "complete"
+      },
+      "reopenedExact": true
+    },
+    {
+      "id": "case-3",
+      "input": {
+        "widthMm": 35,
+        "heightMm": 12,
+        "thicknessMm": 3,
+        "boreDiameterMm": 0,
+        "edgeBevelMm": 0.5
+      },
+      "sourceSha256": "f80320afb8dcc8059638023a574f7a999ce9560254b3ed42f735a3accdb06731",
+      "glbSha256": "de95cb751438e7e1f6ad843b0c49f77b9ef23b8cc69870e997f10cb1256056a5",
+      "declarationSha256": "9052970a5d13e1208ded7ac98f894de1d24b256812657132a17b8f2d3d030c81",
+      "bytes": 8332,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 80,
+        "selfIntersectionComplete": true,
+        "triangles": 60,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "plate_body",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      },
+      "standard": {
+        "status": "pass",
+        "validator": "Khronos glTF Validator",
+        "validatorVersion": "2.0.0-dev.3.10",
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1,
+        "hints": 0,
+        "truncated": false,
+        "issueCodes": [
+          "UNUSED_OBJECT"
+        ],
+        "independentRead": {
+          "status": "pass",
+          "parser": "glTF Transform WebIO",
+          "nodes": 2,
+          "meshes": 1,
+          "materials": 1,
+          "skins": 0,
+          "animations": 0
+        }
+      },
+      "uv": {
+        "allowed": true,
+        "integrityPass": true,
+        "fingerprintCoverage": "complete"
+      },
+      "reopenedExact": true
+    },
+    {
+      "id": "case-4",
+      "input": {
+        "widthMm": 32,
+        "heightMm": 14,
+        "thicknessMm": 5,
+        "boreDiameterMm": 4,
+        "edgeBevelMm": 0
+      },
+      "sourceSha256": "cb43876e4f7ef50805f8b2709e1876cbfd28732ad2dc1a2e132300e8034fcf68",
+      "glbSha256": "7d4077e05563c722468c734bcc7c3be9b8e3629df8f5697f13c4e47ca3bd7ff2",
+      "declarationSha256": "37ae36fe7c9820c36c5c2ada6b429b25d035ca96e11a40f60d38ff58b38dca04",
+      "bytes": 58136,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 2988,
+        "selfIntersectionComplete": true,
+        "triangles": 528,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "plate_body",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      },
+      "standard": {
+        "status": "pass",
+        "validator": "Khronos glTF Validator",
+        "validatorVersion": "2.0.0-dev.3.10",
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1,
+        "hints": 0,
+        "truncated": false,
+        "issueCodes": [
+          "UNUSED_OBJECT"
+        ],
+        "independentRead": {
+          "status": "pass",
+          "parser": "glTF Transform WebIO",
+          "nodes": 2,
+          "meshes": 1,
+          "materials": 1,
+          "skins": 0,
+          "animations": 0
+        }
+      },
+      "uv": {
+        "allowed": true,
+        "integrityPass": true,
+        "fingerprintCoverage": "complete"
+      },
+      "reopenedExact": true
+    },
+    {
+      "id": "case-5",
+      "input": {
+        "widthMm": 64,
+        "heightMm": 12,
+        "thicknessMm": 3,
+        "boreDiameterMm": 2,
+        "edgeBevelMm": 0.3
+      },
+      "sourceSha256": "7bf4788a3ebbed03db7b4097943840058ec3e5c750a830e9f92c96eaa2684b4d",
+      "glbSha256": "e77f2d4ae68b035ac72a8adf4610f506a98a1c947d07fb3901ac755f3b780808",
+      "declarationSha256": "3dd12c37214d6fbfb390cd8909c4588bbb7b0db6cd823b3d9b32e30fa7eb5b3f",
+      "bytes": 210532,
+      "topology": {
+        "meshes": 1,
+        "watertightMeshes": 1,
+        "boundaryEdges": 0,
+        "inconsistentWindingEdges": 0,
+        "orientationConsistent": true,
+        "nonManifoldEdges": 0,
+        "degenerateTriangles": 0,
+        "selfIntersections": 0,
+        "selfIntersectionMeshes": 0,
+        "selfIntersectionCandidatePairs": 5614,
+        "selfIntersectionComplete": true,
+        "triangles": 2112,
+        "edgeTaperMeshes": 0,
+        "verifiedEdgeTaperSegments": 0,
+        "surfaceReliefMeshes": 0,
+        "surfaceReliefSamples": 0,
+        "surfaceAggregateFeatures": 0,
+        "referenceReliefMeshes": 0,
+        "referenceReliefSamples": 0,
+        "maximumReferenceIrregularity": 0,
+        "pass": true,
+        "details": [
+          {
+            "name": "plate_body",
+            "boundaryEdges": 0,
+            "inconsistentWindingEdges": 0,
+            "orientationConsistent": true,
+            "nonManifoldEdges": 0,
+            "degenerateTriangles": 0,
+            "selfIntersections": 0,
+            "selfIntersectionComplete": true,
+            "watertight": true
+          }
+        ]
+      },
+      "standard": {
+        "status": "pass",
+        "validator": "Khronos glTF Validator",
+        "validatorVersion": "2.0.0-dev.3.10",
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1,
+        "hints": 0,
+        "truncated": false,
+        "issueCodes": [
+          "UNUSED_OBJECT"
+        ],
+        "independentRead": {
+          "status": "pass",
+          "parser": "glTF Transform WebIO",
+          "nodes": 2,
+          "meshes": 1,
+          "materials": 1,
+          "skins": 0,
+          "animations": 0
+        }
+      },
+      "uv": {
+        "allowed": true,
+        "integrityPass": true,
+        "fingerprintCoverage": "complete"
+      },
+      "reopenedExact": true
+    }
+  ],
+  "maximumWorkload": {
+    "steps": 8,
+    "elapsedMs": 385.42491599999994,
+    "sourceBytes": 46065,
+    "scope": "Warm Node24 process after six examples, eight 2112-triangle replacements; not a worst-case latency SLA"
+  },
+  "scope": "Six registered authored input cases; no photo/CAD/whole production approval"
+}

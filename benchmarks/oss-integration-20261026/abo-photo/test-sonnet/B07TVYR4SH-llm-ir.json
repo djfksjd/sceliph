@@ -1,0 +1,189 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Three-tier shelf unit",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "15 mm side panel, full height",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     15,
+     882,
+     290
+    ],
+    "radius": 1
+   },
+   "position": [
+    -142.5,
+    441,
+    0
+   ],
+   "material": {
+    "color": "#d9b88a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "15 mm side panel, full height",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     15,
+     882,
+     290
+    ],
+    "radius": 1
+   },
+   "position": [
+    142.5,
+    441,
+    0
+   ],
+   "material": {
+    "color": "#d9b88a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "Top panel between sides",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     270,
+     15,
+     290
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    874.5,
+    0
+   ],
+   "material": {
+    "color": "#f0f0f0",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "Bottom panel slightly raised",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     270,
+     15,
+     290
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    30,
+    0
+   ],
+   "material": {
+    "color": "#f0f0f0",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_low",
+   "name": "Lower shelf",
+   "category": "mechanical",
+   "materialName": "white laminate",
+   "detail": "Adjustable shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     270,
+     15,
+     280
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    320,
+    5
+   ],
+   "material": {
+    "color": "#f0f0f0",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_high",
+   "name": "Upper shelf",
+   "category": "mechanical",
+   "materialName": "white laminate",
+   "detail": "Adjustable shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     270,
+     15,
+     280
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    600,
+    5
+   ],
+   "material": {
+    "color": "#f0f0f0",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "white hardboard",
+   "detail": "Thin back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     270,
+     840,
+     5
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    452,
+    -142
+   ],
+   "material": {
+    "color": "#e8e8e8",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,183 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base disc",
+   "category": "enclosure",
+   "materialName": "brushed steel",
+   "detail": "round weighted base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 125,
+    "radiusBottom": 125,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#a8a7a3",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "foot",
+   "name": "Base underside",
+   "category": "enclosure",
+   "materialName": "black rubber",
+   "detail": "dark pad under base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 120,
+    "radiusBottom": 120,
+    "depth": 6,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    3,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Main pole",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "vertical stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 1130,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    595,
+    0
+   ],
+   "material": {
+    "color": "#9c9b97",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Curved arm",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "thin arm bending over to the head",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      40,
+      0
+     ],
+     [
+      10,
+      60,
+      0
+     ],
+     [
+      40,
+      65,
+      0
+     ],
+     [
+      120,
+      65,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    1165,
+    0
+   ],
+   "material": {
+    "color": "#9c9b97",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "head",
+   "name": "Lamp head",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "short drum light head",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 50,
+    "depth": 40,
+    "radialSegments": 48
+   },
+   "position": [
+    160,
+    1210,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0.12
+   ],
+   "material": {
+    "color": "#b0afab",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "diffuser",
+   "name": "Diffuser",
+   "category": "mechanical",
+   "materialName": "frosted diffuser",
+   "detail": "glowing underside",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 46,
+    "radiusBottom": 46,
+    "depth": 3,
+    "radialSegments": 48
+   },
+   "position": [
+    160,
+    1189,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0.12
+   ],
+   "material": {
+    "color": "#f5efd8",
+    "roughness": 0.6
+   }
+  }
+ ]
+}

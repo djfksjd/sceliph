@@ -1,3 +1,22 @@
+# Deterministic plan capture · 2026-10-10
+
+- `deterministic-plan-20261010.jpg`: actual1440×1000 Chrome154 view of two checked `product.deterministic-beveled-plate` replacements.
+- `deterministic-plan-mobile-20261010.jpg`: same checked operation at390×844; no horizontal overflow observed.
+
+JPEG90, no retouching/compositing. Base `aa44f80` plus the current deterministic generator change; code/artifact SHA manifest: `../../benchmarks/plate-determinism-20261010/verification.json`. New source/GLB byte equality comes from actual file comparisons, not screenshots. Prior captures and their provenance remain below.
+
+# Current Sceliph UI captures · 2026-10-10
+
+Actual Playwright Chrome154 screenshots of the running source at `http://127.0.0.1:4173/?editor=elements`. Base GitHub main: `78bec7e0ff31a0e5f602dbc43fbfc3e14b33dba5`, plus this branch's source-bound plan, cap policy and viewport refinement. Source SHA manifest: `../../benchmarks/practical-workflow-20261010/verification.json`.
+
+- `workbench-20261010-desktop.jpg`: 1440×1000; authored bearing, inner-race selection, stable IDs, studio-lighting preview and Inspector.
+- `workbench-20261010-mobile.jpg`: 390×844; the same project with scrollable mobile layout. No horizontal overflow observed; the viewport and editing sections continue below the first screen.
+- `replacement-plan-20261010.jpg`: 1440×1000; two checked extrusion replacements; project unchanged until Apply.
+
+JPEG90 screenshots with no retouching, compositing or generated mockups. Studio lighting is authored inspection lighting, not calibrated reference capture, and it is not exported into the asset. No photograph/model fidelity or whole-engine production claim. See `SHA256SUMS` and the current status document for behavior evidence.
+
+## Historical 2026-10-09 captures
+
 # Sceliph local UI captures
 
 Captured on 2026-10-09 through the Chrome browser screenshot API. The images are actual application views, with no generated mockup, retouching, or compositing. Browser toolbar and unrelated tabs are not included.

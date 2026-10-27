@@ -1,0 +1,99 @@
+{
+ "summary": {
+  "id": "chair",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.021440300000000002,
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.021440300000000002,
+   "durationMs": 16196,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Chair\",\"units\":\"mm\",\"components\":[{\"id\":\"seat\",\"name\":\"Seat\",\"category\":\"enclosure\",\"materialName\":\"Oak wood\",\"detail\":\"450 x 40 x 450 mm seat, top surface at 450 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[450,40,450],\"radius\":5},\"position\":[0,430,0],\"material\":{\"color\":\"#b98a5a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_fl\",\"name\":\"Front left leg\",\"category\":\"mechanical\",\"materialName\":\"Oak wood\",\"detail\":\"30 mm dia vertical leg, 410 mm tall\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[-195,205,195],\"material\":{\"color\":\"#a37748\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_fr\",\"name\":\"Front right leg\",\"category\":\"mechanical\",\"materialName\":\"Oak wood\",\"detail\":\"30 mm dia vertical leg, 410 mm tall\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[195,205,195],\"material\":{\"color\":\"#a37748\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_bl\",\"name\":\"Back left leg\",\"category\":\"mechanical\",\"materialName\":\"Oak wood\",\"detail\":\"30 mm dia vertical leg, 410 mm tall\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[-195,205,-195],\"material\":{\"color\":\"#a37748\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_br\",\"name\":\"Back right leg\",\"category\":\"mechanical\",\"materialName\":\"Oak wood\",\"detail\":\"30 mm dia vertical leg, 410 mm tall\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[195,205,-195],\"material\":{\"color\":\"#a37748\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"backrest\",\"name\":\"Backrest\",\"category\":\"enclosure\",\"materialName\":\"Oak wood\",\"detail\":\"450 x 500 x 30 mm backrest tilted back 10 degrees, bottom front edge on rear edge of seat top\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[450,500,30],\"radius\":5},\"position\":[0,693.6,-283.18],\"rotation\":[-0.17453,0,0],\"material\":{\"color\":\"#b98a5a\",\"roughness\":0.7,\"metalness\":0}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 2712,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      450,
+      942.407,
+      566.363
+     ],
+     "dimensionChecks": [
+      {
+       "id": "seat-top",
+       "expectedMm": 450,
+       "actualMm": 449.99999955296516,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "seat-t",
+       "expectedMm": 40,
+       "actualMm": 39.99999910593033,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "leg",
+       "expectedMm": 410,
+       "actualMm": 409.99999642372126,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "back-y",
+       "expectedMm": 497.61,
+       "actualMm": 497.6134892725477,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "back-z",
+       "expectedMm": 116.37,
+       "actualMm": 116.36689562209432,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0.0000017881393310492655,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

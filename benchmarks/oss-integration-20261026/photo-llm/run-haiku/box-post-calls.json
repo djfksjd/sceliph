@@ -1,0 +1,21 @@
+{
+ "request": "Photo: a box with a cylindrical post standing on top of it.\nThe box is 300 mm wide (its longest horizontal edge).\nThe camera's horizontal field of view is 50 degrees.\nModel it with exactly these components: \"box\" (the box), \"post\" (the cylinder on top).",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00104892,
+   "durationMs": 10589,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-20,\"elevationDeg\":25},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"box with cylindrical post\",\"units\":\"mm\",\"components\":[{\"id\":\"box\",\"name\":\"box\",\"category\":\"enclosure\",\"materialName\":\"painted brick red\",\"detail\":\"Rectangular box, 300 mm long edge along X, estimated 200 mm deep and 150 mm tall, with slightly rounded edges.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,150,200],\"radius\":6},\"position\":[0,75,0],\"material\":{\"color\":\"#9c4a2e\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"post\",\"name\":\"post\",\"category\":\"mechanical\",\"materialName\":\"painted blue\",\"detail\":\"Vertical cylindrical post standing on the top face of the box, estimated 80 mm diameter and 180 mm tall, set toward the back of the top face.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":40,\"radiusBottom\":40,\"depth\":180,\"radialSegments\":32},\"position\":[20,240,-30],\"material\":{\"color\":\"#3c6aa8\",\"roughness\":0.5,\"metalness\":0.0}}]}}",
+   "stage": "pass",
+   "issues": []
+  }
+ ]
+}

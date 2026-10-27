@@ -1,0 +1,19 @@
+{
+ "schema": "sceliph.photo-llm-task/0.1",
+ "id": "mug",
+ "object": "a coffee mug with a ring-shaped handle",
+ "components": [
+  {
+   "id": "body",
+   "description": "the mug body (a cylinder, possibly slightly tapered)"
+  },
+  {
+   "id": "handle",
+   "description": "the handle (a torus)"
+  }
+ ],
+ "referenceComponentId": "body",
+ "known": "The mug is 95 mm tall.",
+ "knownDimensionMm": 95,
+ "fovXDegrees": 45
+}

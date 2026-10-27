@@ -1,0 +1,187 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Concrete Dome Pendant Light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 55,
+    "radiusBottom": 55,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    752,
+    0
+   ],
+   "material": {
+    "color": "#b8a77c",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Cord",
+   "category": "interconnect",
+   "materialName": "black fabric cord",
+   "detail": "Suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -268,
+      0
+     ],
+     [
+      0,
+      268,
+      0
+     ]
+    ],
+    "radius": 2.5
+   },
+   "position": [
+    0,
+    474,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Shade cap",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Small brass fitting atop shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 10,
+    "depth": 26,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    193,
+    0
+   ],
+   "material": {
+    "color": "#b8a77c",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Concrete dome shade",
+   "category": "enclosure",
+   "materialName": "concrete",
+   "detail": "Dome shade, open bottom",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      180
+     ],
+     [
+      25,
+      178
+     ],
+     [
+      55,
+      166
+     ],
+     [
+      80,
+      135
+     ],
+     [
+      94,
+      85
+     ],
+     [
+      100,
+      30
+     ],
+     [
+      100,
+      0
+     ],
+     [
+      96,
+      0
+     ],
+     [
+      92,
+      30
+     ],
+     [
+      86,
+      85
+     ],
+     [
+      72,
+      130
+     ],
+     [
+      48,
+      160
+     ],
+     [
+      0,
+      170
+     ]
+    ],
+    "segments": 56
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#6b6d5c",
+    "roughness": 0.95,
+    "metalness": 0.05
+   }
+  },
+  {
+   "id": "diffuser",
+   "name": "Bulb glow diffuser",
+   "category": "power",
+   "materialName": "warm glass",
+   "detail": "Warm light seen inside the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 93,
+    "radiusBottom": 93,
+    "depth": 4,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    8,
+    0
+   ],
+   "material": {
+    "color": "#f3e6b8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  }
+ ]
+}

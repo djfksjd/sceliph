@@ -1,0 +1,376 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Kensington 6-Drawer Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "weathered pine",
+   "detail": "Overhanging top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1294.498668834286,
+     40,
+     480
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    719.8107552575632,
+    0
+   ],
+   "material": {
+    "color": "#a89268",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "weathered pine",
+   "detail": "Main case body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1515.7311993316707,
+     730,
+     440
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    596,
+    0
+   ],
+   "material": {
+    "color": "#9c8860",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "base",
+   "name": "Base molding",
+   "category": "enclosure",
+   "materialName": "weathered pine",
+   "detail": "Plinth molding",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1590.323066848399,
+     40,
+     460
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    102.18237357981445,
+    0
+   ],
+   "material": {
+    "color": "#a89268",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Tapered turned leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 38,
+    "radiusBottom": 24,
+    "depth": 206.94105363297803,
+    "radialSegments": 24
+   },
+   "position": [
+    -700,
+    48.55053139964048,
+    185
+   ],
+   "material": {
+    "color": "#a08a60",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Tapered turned leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 38,
+    "radiusBottom": 24,
+    "depth": 206.94105363297803,
+    "radialSegments": 24
+   },
+   "position": [
+    700,
+    48.55053139964048,
+    185
+   ],
+   "material": {
+    "color": "#a08a60",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Tapered turned leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 38,
+    "radiusBottom": 24,
+    "depth": 206.94105363297803,
+    "radialSegments": 24
+   },
+   "position": [
+    -700,
+    48.55053139964048,
+    -185
+   ],
+   "material": {
+    "color": "#a08a60",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Tapered turned leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 38,
+    "radiusBottom": 24,
+    "depth": 206.94105363297803,
+    "radialSegments": 24
+   },
+   "position": [
+    700,
+    48.55053139964048,
+    -185
+   ],
+   "material": {
+    "color": "#a08a60",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "drawer_tl",
+   "name": "Top left drawer",
+   "category": "mechanical",
+   "materialName": "weathered pine",
+   "detail": "Top left drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     200,
+     24
+    ],
+    "radius": 6
+   },
+   "position": [
+    -368.22779058046376,
+    778.5049078960784,
+    227
+   ],
+   "material": {
+    "color": "#b09c78",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "drawer_tr",
+   "name": "Top right drawer",
+   "category": "mechanical",
+   "materialName": "weathered pine",
+   "detail": "Top right drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     200,
+     24
+    ],
+    "radius": 6
+   },
+   "position": [
+    368.22779058046376,
+    778.5049078960784,
+    227
+   ],
+   "material": {
+    "color": "#b09c78",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "drawer_ml",
+   "name": "Middle left drawer",
+   "category": "mechanical",
+   "materialName": "weathered pine",
+   "detail": "Middle left drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     708.3610678283981,
+     215,
+     24
+    ],
+    "radius": 6
+   },
+   "position": [
+    -388.3800987297112,
+    635,
+    227
+   ],
+   "material": {
+    "color": "#aa9672",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "drawer_mr",
+   "name": "Middle right drawer",
+   "category": "mechanical",
+   "materialName": "weathered pine",
+   "detail": "Middle right drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     708.3610678283981,
+     215,
+     24
+    ],
+    "radius": 6
+   },
+   "position": [
+    388.3800987297112,
+    635,
+    227
+   ],
+   "material": {
+    "color": "#aa9672",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "drawer_bl",
+   "name": "Bottom left drawer",
+   "category": "mechanical",
+   "materialName": "weathered pine",
+   "detail": "Bottom left drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     708.3610678283981,
+     215,
+     24
+    ],
+    "radius": 6
+   },
+   "position": [
+    -388.3800987297112,
+    410,
+    227
+   ],
+   "material": {
+    "color": "#aa9672",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "drawer_br",
+   "name": "Bottom right drawer",
+   "category": "mechanical",
+   "materialName": "weathered pine",
+   "detail": "Bottom right drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     708.3610678283981,
+     215,
+     24
+    ],
+    "radius": 6
+   },
+   "position": [
+    388.3800987297112,
+    410,
+    227
+   ],
+   "material": {
+    "color": "#aa9672",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "pull_ml",
+   "name": "Middle left pull",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Drawer pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     50,
+     14,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    -280,
+    635,
+    244
+   ],
+   "material": {
+    "color": "#b8934a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "pull_mr",
+   "name": "Middle right pull",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Drawer pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     50,
+     14,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    490,
+    635,
+    244
+   ],
+   "material": {
+    "color": "#b8934a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

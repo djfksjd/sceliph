@@ -1,0 +1,1462 @@
+{
+ "spec": {
+  "schema": "sceliph.photo-fit-spec/0.1",
+  "referenceComponentId": "mattress",
+  "viewHint": {
+   "azimuthDeg": 40,
+   "elevationDeg": 18,
+   "sigmaDeg": 20
+  },
+  "knownExtent": {
+   "axis": 1,
+   "mm": 969.9999990105999,
+   "sigmaMm": 9.699999990105999
+  },
+  "parameters": [
+   {
+    "componentId": "headboard",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "headboard",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 485,
+    "max": 1940
+   },
+   {
+    "componentId": "headboard",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 830,
+    "max": 3320
+   },
+   {
+    "componentId": "headboard",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -2069.999999552965,
+    "max": 29.999999552965164
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1000,
+    "max": 4000
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 50,
+    "max": 200
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 780,
+    "max": 3120
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1019.9999995529652,
+    "max": 1079.9999995529652
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -999.9999995529652,
+    "max": 1099.9999995529652
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1030,
+    "max": 4120,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 100,
+    "max": 400,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1019.9999995529652,
+    "max": 1079.9999995529652,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -849.9999995529652,
+    "max": 1249.9999995529652,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -1839.9999995529652,
+    "max": 259.99999955296516,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": -1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 100,
+    "max": 400
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 830,
+    "max": 3320
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -9.999999552965164,
+    "max": 2089.999999552965
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -849.9999995529652,
+    "max": 1249.9999995529652
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1000,
+    "max": 4000
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 15,
+    "max": 60
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 780,
+    "max": 3120
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1019.9999995529652,
+    "max": 1079.9999995529652
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -764.9999995529652,
+    "max": 1334.9999995529652
+   },
+   {
+    "componentId": "mattress",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1000,
+    "max": 4000
+   },
+   {
+    "componentId": "mattress",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 100,
+    "max": 400
+   },
+   {
+    "componentId": "mattress",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 790,
+    "max": 3160
+   }
+  ]
+ },
+ "derived": {
+  "parameters": [
+   {
+    "componentId": "headboard",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "headboard",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 485,
+    "max": 1940
+   },
+   {
+    "componentId": "headboard",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 830,
+    "max": 3320
+   },
+   {
+    "componentId": "headboard",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -2069.999999552965,
+    "max": 29.999999552965164
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1000,
+    "max": 4000
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 50,
+    "max": 200
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 780,
+    "max": 3120
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1019.9999995529652,
+    "max": 1079.9999995529652
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -999.9999995529652,
+    "max": 1099.9999995529652
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1030,
+    "max": 4120,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 100,
+    "max": 400,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1019.9999995529652,
+    "max": 1079.9999995529652,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -849.9999995529652,
+    "max": 1249.9999995529652,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -1839.9999995529652,
+    "max": 259.99999955296516,
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": -1
+     }
+    ]
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 100,
+    "max": 400
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 830,
+    "max": 3320
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -9.999999552965164,
+    "max": 2089.999999552965
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -849.9999995529652,
+    "max": 1249.9999995529652
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1000,
+    "max": 4000
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 15,
+    "max": 60
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 780,
+    "max": 3120
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1019.9999995529652,
+    "max": 1079.9999995529652
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -764.9999995529652,
+    "max": 1334.9999995529652
+   },
+   {
+    "componentId": "mattress",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1000,
+    "max": 4000
+   },
+   {
+    "componentId": "mattress",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 100,
+    "max": 400
+   },
+   {
+    "componentId": "mattress",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 790,
+    "max": 3160
+   }
+  ],
+  "locked": [],
+  "groups": [
+   [
+    "rail_left",
+    "rail_right"
+   ]
+  ],
+  "aligned": [
+   {
+    "componentId": "headboard",
+    "axis": 1
+   },
+   {
+    "componentId": "headboard",
+    "axis": 2
+   },
+   {
+    "componentId": "plinth",
+    "axis": 2
+   },
+   {
+    "componentId": "rail_foot",
+    "axis": 2
+   },
+   {
+    "componentId": "deck",
+    "axis": 2
+   }
+  ],
+  "skipped": []
+ },
+ "anchor": {
+  "estimatedMm": 1332.205891609192,
+  "knownMm": 969.9999990105999,
+  "scaleCorrection": 0.728115680256392
+ },
+ "raster": {
+  "width": 160,
+  "height": 95,
+  "crop": {
+   "x": 0,
+   "y": 0,
+   "width": 640,
+   "height": 379
+  }
+ },
+ "cameraOnly": {
+  "loss": 0.05285262110897794,
+  "view": {
+   "id": "photo",
+   "iou": 0.9253528311511647,
+   "meanBoundaryDistancePx": 0.11667662337350457,
+   "depthResidual": 0.030676988872330946
+  }
+ },
+ "receipt": {
+  "schema": "sceliph.silhouette-parameter-fit/0.2",
+  "provenance": "inferred",
+  "seed": 1,
+  "parameters": [
+   {
+    "componentId": "headboard",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 20,
+    "max": 80,
+    "before": 40,
+    "after": 40,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0001517319035675771,
+    "frozen": true
+   },
+   {
+    "componentId": "headboard",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 485,
+    "max": 1940,
+    "before": 970,
+    "after": 970.0937111969575,
+    "spread": 0.8825802286911539,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.56717740614284,
+    "frozen": false
+   },
+   {
+    "componentId": "headboard",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 830,
+    "max": 3320,
+    "before": 1660,
+    "after": 1920.9480028086189,
+    "spread": 19.93392397543448,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.007722002291083864,
+    "frozen": false
+   },
+   {
+    "componentId": "headboard",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -2069.999999552965,
+    "max": 29.999999552965164,
+    "before": -1020,
+    "after": -725.9774032076698,
+    "spread": 88.48874786401734,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.009602968865292806,
+    "frozen": false
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1000,
+    "max": 4000,
+    "before": 2000,
+    "after": 2333.1773988904333,
+    "spread": 203.6673374804891,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.003939883115812261,
+    "frozen": false
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 50,
+    "max": 200,
+    "before": 100,
+    "after": 50.49036216948665,
+    "spread": 0.06483339255847653,
+    "identified": false,
+    "atBound": true,
+    "sensitivity": 0.0022098582872801947,
+    "frozen": false
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 780,
+    "max": 3120,
+    "before": 1560,
+    "after": 1192.38029479115,
+    "spread": 547.1079545719697,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0034856872192791932,
+    "frozen": false
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1019.9999995529652,
+    "max": 1079.9999995529652,
+    "before": 30,
+    "after": 201.2418477856313,
+    "spread": 402.9191101101824,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.005907209992868888,
+    "frozen": false
+   },
+   {
+    "componentId": "plinth",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -999.9999995529652,
+    "max": 1099.9999995529652,
+    "before": 50,
+    "after": 255.20263405333844,
+    "spread": 123.07510254235467,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 1.200791565910054,
+    "frozen": false
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 1030,
+    "max": 4120,
+    "before": 2060,
+    "after": 2060,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.001153056908761975,
+    "frozen": true
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 100,
+    "max": 400,
+    "before": 200,
+    "after": 200,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000006167270911981715,
+    "frozen": true
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 20,
+    "max": 80,
+    "before": 40,
+    "after": 40,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 7.45420242011241e-7,
+    "frozen": true
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "position",
+     0
+    ],
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": -1019.9999995529652,
+    "max": 1079.9999995529652,
+    "before": 30,
+    "after": 30,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0017540267649642782,
+    "frozen": true
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "position",
+     1
+    ],
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": -849.9999995529652,
+    "max": 1249.9999995529652,
+    "before": 200,
+    "after": 180.69184073245947,
+    "spread": 70.24487722057052,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.007009557189826855,
+    "frozen": false
+   },
+   {
+    "componentId": "rail_left",
+    "path": [
+     "position",
+     2
+    ],
+    "links": [
+     {
+      "componentId": "rail_right",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": -1
+     }
+    ],
+    "min": -1839.9999995529652,
+    "max": 259.99999955296516,
+    "before": -790,
+    "after": -790,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0008594099357460902,
+    "frozen": true
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 20,
+    "max": 80,
+    "before": 40,
+    "after": 40,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0000444343044687448,
+    "frozen": true
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 100,
+    "max": 400,
+    "before": 200,
+    "after": 200,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00009885003134710996,
+    "frozen": true
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 830,
+    "max": 3320,
+    "before": 1660,
+    "after": 1660,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0012735443551653639,
+    "frozen": true
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -9.999999552965164,
+    "max": 2089.999999552965,
+    "before": 1040,
+    "after": 1040,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000600844926102885,
+    "frozen": true
+   },
+   {
+    "componentId": "rail_foot",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -849.9999995529652,
+    "max": 1249.9999995529652,
+    "before": 200,
+    "after": 239.07741222185382,
+    "spread": 18.964037741875927,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.006544773011936546,
+    "frozen": false
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1000,
+    "max": 4000,
+    "before": 2000,
+    "after": 2000,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00008455933689990175,
+    "frozen": true
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 15,
+    "max": 60,
+    "before": 30,
+    "after": 30,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 5.989340690071288e-10,
+    "frozen": true
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 780,
+    "max": 3120,
+    "before": 1560,
+    "after": 1560,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00004099340778446897,
+    "frozen": true
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1019.9999995529652,
+    "max": 1079.9999995529652,
+    "before": 30,
+    "after": 30,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00011954846961156895,
+    "frozen": true
+   },
+   {
+    "componentId": "deck",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -764.9999995529652,
+    "max": 1334.9999995529652,
+    "before": 285,
+    "after": 285,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0,
+    "frozen": true
+   },
+   {
+    "componentId": "mattress",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 1000,
+    "max": 4000,
+    "before": 2000,
+    "after": 2000,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0010036546193109772,
+    "frozen": true
+   },
+   {
+    "componentId": "mattress",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 100,
+    "max": 400,
+    "before": 200,
+    "after": 200,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0008731193791218159,
+    "frozen": true
+   },
+   {
+    "componentId": "mattress",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 790,
+    "max": 3160,
+    "before": 1580,
+    "after": 1580,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.001695446310784686,
+    "frozen": true
+   }
+  ],
+  "cameraParameters": [
+   {
+    "viewId": "photo",
+    "field": "azimuthDeg",
+    "prior": {
+     "mean": 40,
+     "sigma": 20
+    },
+    "min": -10,
+    "max": 90,
+    "before": 52.761848699545695,
+    "after": 50.61418904484338,
+    "spread": 2.093002086818629,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "elevationDeg",
+    "prior": {
+     "mean": 18,
+     "sigma": 20
+    },
+    "min": -32,
+    "max": 68,
+    "before": 11.27673532664447,
+    "after": 14.45129624315009,
+    "spread": 0.725767578773862,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "distanceMm",
+    "prior": {
+     "mean": 6500.0971885809395,
+     "sigma": 1625.0242971452349
+    },
+    "min": 3250.0485942904697,
+    "max": 13000.194377161879,
+    "before": 6959.993580255401,
+    "after": 5860.315545953345,
+    "spread": 262.6118235064996,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetX",
+    "min": -1994.7062066905785,
+    "max": 2205.2937915212824,
+    "before": 1353.6853073692362,
+    "after": 2205.2937915212824,
+    "spread": 372.40092719550944,
+    "identified": false,
+    "atBound": true
+   },
+   {
+    "viewId": "photo",
+    "field": "targetY",
+    "min": -1639.3264047218177,
+    "max": 2560.673593490043,
+    "before": 707.000003513851,
+    "after": 1112.5684855274912,
+    "spread": 161.43977536849889,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetZ",
+    "min": -2169.6428784462755,
+    "max": 2030.3571197655854,
+    "before": 966.5708567019301,
+    "after": 1734.8379982332967,
+    "spread": 376.75882768298106,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "rollDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 4
+    },
+    "min": -15,
+    "max": 15,
+    "before": -1.4260209050688744,
+    "after": -1.8606697487197987,
+    "spread": 0.1612362868332795,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "focalScale",
+    "prior": {
+     "mean": 1,
+     "sigma": 0.15
+    },
+    "min": 0.6,
+    "max": 1.6,
+    "before": 1.0090396867763483,
+    "after": 1.0452692972996185,
+    "spread": 0.0339096133058312,
+    "identified": false,
+    "atBound": false
+   }
+  ],
+  "orbits": [
+   {
+    "viewId": "photo",
+    "orbit": {
+     "width": 640,
+     "height": 379,
+     "fx": 1613.5853644333226,
+     "fy": 1613.5853644333229,
+     "cx": 320,
+     "cy": 189.5,
+     "target": [
+      2205.2937915212824,
+      1112.5684855274912,
+      1734.8379982332967
+     ],
+     "azimuthDeg": 50.61418904484338,
+     "elevationDeg": 14.45129624315009,
+     "distanceMm": 5860.315545953345,
+     "rollDeg": -1.8606697487197987,
+     "focalScale": 1.0452692972996185
+    }
+   }
+  ],
+  "restarts": 2,
+  "before": {
+   "loss": 0.19237926729855379,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.5083912037037037,
+     "meanBoundaryDistancePx": 2.4002556520310714,
+     "depthResidual": 0.03631490527195082
+    }
+   ]
+  },
+  "after": {
+   "loss": 0.03121317005908388,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.9639455782312926,
+     "meanBoundaryDistancePx": 0.021646248520112116,
+     "depthResidual": 0.01709896038304755
+    }
+   ]
+  },
+  "evaluations": 16062,
+  "stopReason": "maxEvaluations",
+  "compiledGeometries": 24042
+ },
+ "lowConfidenceReasons": [
+  "Object silhouette IoU 0.964 < 0.97.",
+  "headboard.position.0 is not identified by equally good restarts.",
+  "plinth.geometry.size.0 is not identified by equally good restarts.",
+  "plinth.geometry.size.1 ended at a bound.",
+  "plinth.geometry.size.2 is not identified by equally good restarts.",
+  "plinth.position.0 is not identified by equally good restarts.",
+  "plinth.position.1 is not identified by equally good restarts.",
+  "rail_left.position.1 is not identified by equally good restarts.",
+  "camera.azimuthDeg is not identified by equally good restarts.",
+  "camera.distanceMm is not identified by equally good restarts.",
+  "camera.targetX ended at a bound.",
+  "camera.targetY is not identified by equally good restarts.",
+  "camera.targetZ is not identified by equally good restarts.",
+  "camera.focalScale is not identified by equally good restarts."
+ ],
+ "acceptance": {
+  "accept": false,
+  "relativeLossGain": 0.40943004520580384,
+  "freeParameters": 10,
+  "iou": 0.9639455782312926,
+  "reasons": [
+   "10 free parameters removed 4.1% each (< 5.0%)."
+  ]
+ }
+}

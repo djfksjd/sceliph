@@ -1,0 +1,163 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian 2-Compartment MDF Cube Bookcase, Light Oak",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_left",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "Full-height side panel, 18 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     576.7973914223948,
+     321.1418699025387
+    ],
+    "radius": 2
+   },
+   "position": [
+    -197.5,
+    296,
+    0
+   ],
+   "material": {
+    "color": "#d9b98a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_right",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "Full-height side panel, 18 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     576.7973914223948,
+     321.1418699025387
+    ],
+    "radius": 2
+   },
+   "position": [
+    184.99241444006276,
+    296,
+    0
+   ],
+   "material": {
+    "color": "#d9b98a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top_panel",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "Top panel spanning between the sides, 18 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     377,
+     18,
+     289
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    590.5827930646537,
+    0
+   ],
+   "material": {
+    "color": "#d9b98a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom_panel",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "Base panel spanning between the sides, 18 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     377,
+     18,
+     289
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    16.515579793403845,
+    0
+   ],
+   "material": {
+    "color": "#d9b98a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "middle_shelf",
+   "name": "Middle shelf",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "Adjustable-height fixed shelf dividing the two lockers, at roughly 48% of the height",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     377,
+     18,
+     283
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    578.8231380154829,
+    3
+   ],
+   "material": {
+    "color": "#d9b98a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back_panel",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "Light oak MDF back board",
+   "detail": "Thin rear panel closing the back of the cube, set in behind the shelf and top/bottom",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     416.2067599686495,
+     534.3818269104322,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    296,
+    -62.04044107620433
+   ],
+   "material": {
+    "color": "#c9a677",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

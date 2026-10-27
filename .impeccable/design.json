@@ -1,0 +1,793 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T06:50:54+00:00",
+  "title": "Design System: Sceliph Result Viewer",
+  "extensions": {
+    "colorMeta": {
+      "select-cyan": {
+        "role": "primary",
+        "displayName": "Selection Cyan",
+        "canonical": "oklch(67.1% 0.119 220)",
+        "tonalRamp": [
+          "#000f2d",
+          "#002d4b",
+          "#004b6a",
+          "#006b8b",
+          "#008dae",
+          "#26afd1",
+          "#5ad6f9",
+          "#a8ecfa"
+        ]
+      },
+      "select-ink": {
+        "role": "primary",
+        "displayName": "Select Ink (cyan text on dark)",
+        "canonical": "#8fdcee",
+        "tonalRamp": [
+          "#000f2d",
+          "#002d4b",
+          "#004b6a",
+          "#006b8b",
+          "#008dae",
+          "#26afd1",
+          "#5ad6f9",
+          "#a8ecfa"
+        ]
+      },
+      "select-ink-light": {
+        "role": "primary",
+        "displayName": "Select Ink (cyan text on light)",
+        "canonical": "#0a6f88",
+        "tonalRamp": [
+          "#000f2d",
+          "#002d4b",
+          "#004b6a",
+          "#006b8b",
+          "#008dae",
+          "#26afd1",
+          "#5ad6f9",
+          "#a8ecfa"
+        ]
+      },
+      "checker-green": {
+        "role": "secondary",
+        "displayName": "Checker Green: measured / pass",
+        "canonical": "oklch(59.9% 0.134 144)",
+        "tonalRamp": [
+          "#001500",
+          "#003200",
+          "#005000",
+          "#1e7026",
+          "#439146",
+          "#66b467",
+          "#8bdb8c",
+          "#c4f0c4"
+        ]
+      },
+      "checker-blue": {
+        "role": "secondary",
+        "displayName": "Checker Purplish Blue: datasheet",
+        "canonical": "oklch(49.9% 0.119 275)",
+        "tonalRamp": [
+          "#08003c",
+          "#18165c",
+          "#2f367d",
+          "#4b55a0",
+          "#6976c4",
+          "#8998e8",
+          "#adbeff",
+          "#d7e9ff"
+        ]
+      },
+      "checker-orange": {
+        "role": "secondary",
+        "displayName": "Checker Orange-Yellow: estimated / warn",
+        "canonical": "oklch(75.5% 0.143 79)",
+        "tonalRamp": [
+          "#270000",
+          "#460f00",
+          "#663000",
+          "#884f00",
+          "#aa7000",
+          "#ce920d",
+          "#f6b848",
+          "#ffe485"
+        ]
+      },
+      "checker-orange-ink": {
+        "role": "secondary",
+        "displayName": "Orange Ink",
+        "canonical": "#2a1f05",
+        "tonalRamp": [
+          "#270000",
+          "#460f00",
+          "#663000",
+          "#884f00",
+          "#aa7000",
+          "#ce920d",
+          "#f6b848",
+          "#ffe485"
+        ]
+      },
+      "checker-magenta": {
+        "role": "secondary",
+        "displayName": "Checker Magenta: inferred",
+        "canonical": "oklch(59.8% 0.149 344)",
+        "tonalRamp": [
+          "#2c0019",
+          "#4e0035",
+          "#700a52",
+          "#943272",
+          "#b85392",
+          "#dd75b5",
+          "#ff9bdb",
+          "#ffcbff"
+        ]
+      },
+      "checker-neutral": {
+        "role": "secondary",
+        "displayName": "Checker Neutral 5: undocumented",
+        "canonical": "oklch(57.9% 0.002 106)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242423",
+          "#40403f",
+          "#5e5e5d",
+          "#7d7d7c",
+          "#9e9e9d",
+          "#c4c4c3",
+          "#eeeeed"
+        ]
+      },
+      "checker-red": {
+        "role": "secondary",
+        "displayName": "Checker Red: blocked",
+        "canonical": "oklch(55.5% 0.163 21)",
+        "tonalRamp": [
+          "#370000",
+          "#5c0000",
+          "#800015",
+          "#a62633",
+          "#cc4b52",
+          "#f36e72",
+          "#ff9596",
+          "#ffcbc9"
+        ]
+      },
+      "charcoal-0": {
+        "role": "neutral",
+        "displayName": "Charcoal Deep",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "charcoal-chrome": {
+        "role": "neutral",
+        "displayName": "Charcoal Chrome",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "charcoal-bg": {
+        "role": "neutral",
+        "displayName": "Charcoal Grey Card",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "charcoal-panel": {
+        "role": "neutral",
+        "displayName": "Charcoal Panel",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "charcoal-raised": {
+        "role": "neutral",
+        "displayName": "Charcoal Raised",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "charcoal-line": {
+        "role": "neutral",
+        "displayName": "Charcoal Line",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "charcoal-line-strong": {
+        "role": "neutral",
+        "displayName": "Charcoal Strong Line",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "grey-hover-line": {
+        "role": "neutral",
+        "displayName": "Hover Line Grey",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "grey-mid": {
+        "role": "neutral",
+        "displayName": "Ghost Grey",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink Secondary",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink Tertiary",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "#121315",
+          "#1d1e20",
+          "#2a2b2e",
+          "#4a4c50",
+          "#8a8b8d",
+          "#b7b8ba",
+          "#e6e6e4",
+          "#f5f5f3"
+        ]
+      },
+      "cove-top": {
+        "role": "neutral",
+        "displayName": "Cove Highlight",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#232426",
+          "#3f4041",
+          "#5d5e5f",
+          "#7c7d7f",
+          "#9d9ea0",
+          "#c3c4c6",
+          "#edeef0"
+        ]
+      },
+      "cove-mid": {
+        "role": "neutral",
+        "displayName": "Cove 18% Grey",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#232426",
+          "#3f4041",
+          "#5d5e5f",
+          "#7c7d7f",
+          "#9d9ea0",
+          "#c3c4c6",
+          "#edeef0"
+        ]
+      },
+      "cove-foot": {
+        "role": "neutral",
+        "displayName": "Cove Foot",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#232426",
+          "#3f4041",
+          "#5d5e5f",
+          "#7c7d7f",
+          "#9d9ea0",
+          "#c3c4c6",
+          "#edeef0"
+        ]
+      },
+      "cove-ink": {
+        "role": "neutral",
+        "displayName": "Cove Ink",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#232426",
+          "#3f4041",
+          "#5d5e5f",
+          "#7c7d7f",
+          "#9d9ea0",
+          "#c3c4c6",
+          "#edeef0"
+        ]
+      },
+      "light-bg": {
+        "role": "neutral",
+        "displayName": "Light Grey Card",
+        "tonalRamp": [
+          "#1d1e20",
+          "#45474b",
+          "#6b6d71",
+          "#c4c4c1",
+          "#d6d6d3",
+          "#e3e3e1",
+          "#ececea",
+          "#f3f3f1"
+        ]
+      },
+      "light-chrome": {
+        "role": "neutral",
+        "displayName": "Light Chrome",
+        "tonalRamp": [
+          "#1d1e20",
+          "#45474b",
+          "#6b6d71",
+          "#c4c4c1",
+          "#d6d6d3",
+          "#e3e3e1",
+          "#ececea",
+          "#f3f3f1"
+        ]
+      },
+      "light-panel": {
+        "role": "neutral",
+        "displayName": "Light Panel",
+        "tonalRamp": [
+          "#1d1e20",
+          "#45474b",
+          "#6b6d71",
+          "#c4c4c1",
+          "#d6d6d3",
+          "#e3e3e1",
+          "#ececea",
+          "#f3f3f1"
+        ]
+      },
+      "light-raised": {
+        "role": "neutral",
+        "displayName": "Light Raised",
+        "tonalRamp": [
+          "#1d1e20",
+          "#45474b",
+          "#6b6d71",
+          "#c4c4c1",
+          "#d6d6d3",
+          "#e3e3e1",
+          "#ececea",
+          "#f3f3f1"
+        ]
+      },
+      "light-line": {
+        "role": "neutral",
+        "displayName": "Light Line",
+        "tonalRamp": [
+          "#1d1e20",
+          "#45474b",
+          "#6b6d71",
+          "#c4c4c1",
+          "#d6d6d3",
+          "#e3e3e1",
+          "#ececea",
+          "#f3f3f1"
+        ]
+      },
+      "light-line-strong": {
+        "role": "neutral",
+        "displayName": "Light Strong Line",
+        "tonalRamp": [
+          "#1d1e20",
+          "#45474b",
+          "#6b6d71",
+          "#c4c4c1",
+          "#d6d6d3",
+          "#e3e3e1",
+          "#ececea",
+          "#f3f3f1"
+        ]
+      },
+      "light-ink-2": {
+        "role": "neutral",
+        "displayName": "Light Ink Secondary",
+        "tonalRamp": [
+          "#1d1e20",
+          "#45474b",
+          "#6b6d71",
+          "#c4c4c1",
+          "#d6d6d3",
+          "#e3e3e1",
+          "#ececea",
+          "#f3f3f1"
+        ]
+      },
+      "light-ink-3": {
+        "role": "neutral",
+        "displayName": "Light Ink Tertiary",
+        "tonalRamp": [
+          "#1d1e20",
+          "#45474b",
+          "#6b6d71",
+          "#c4c4c1",
+          "#d6d6d3",
+          "#e3e3e1",
+          "#ececea",
+          "#f3f3f1"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Quality score numeral only."
+      },
+      "readout": {
+        "displayName": "Readout",
+        "purpose": "Live two-point measure value."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Selected part name in the Inspector."
+      },
+      "panel-title": {
+        "displayName": "Panel Title",
+        "purpose": "Panel heads (dialogs at 15px)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, rows, kv values."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Buttons, segments, chips, toolbar labels."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, metric terms, footnotes; sentence case, untracked."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Every count, dimension, ID, op tag, timestamp, kbd."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "SCELIPH brand lockup only; the one tracked text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float",
+        "value": "0 8px 24px rgba(0, 0, 0, 0.28)",
+        "purpose": "Glass overlays, evidence strip, command pill, hovered library cells, overlay right panel. Light theme: rgba(20, 20, 20, 0.12)."
+      },
+      {
+        "name": "lifted",
+        "value": "0 18px 48px rgba(0, 0, 0, 0.36)",
+        "purpose": "Open command panel."
+      },
+      {
+        "name": "modal",
+        "value": "0 24px 60px rgba(0, 0, 0, 0.45)",
+        "purpose": "Dialogs, over rgba(10, 10, 12, 0.5) scrim with 2px blur."
+      },
+      {
+        "name": "sheet",
+        "value": "0 -12px 32px rgba(0, 0, 0, 0.3)",
+        "purpose": "Mobile bottom sheet."
+      },
+      {
+        "name": "glass",
+        "value": "background: rgba(24, 25, 27, 0.72); backdrop-filter: blur(12px) saturate(1.1); border: 1px solid rgba(255, 255, 255, 0.1)",
+        "purpose": "The ply: viewport overlays only. Light: rgba(243, 243, 241, 0.78), hairline rgba(0, 0, 0, 0.08)."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid #12a6c8; outline-offset: 2px",
+        "purpose": "Every focusable element."
+      },
+      {
+        "name": "active-cell-ring",
+        "value": "0 0 0 2px #12a6c8, 0 0 0 4px color-mix(in srgb, #12a6c8 30%, transparent)",
+        "purpose": "Active library cell."
+      },
+      {
+        "name": "shadow-catcher",
+        "value": "ShadowMaterial #1d1e20 at 0.28 on a 2.55-radius disc",
+        "purpose": "Grounds the asset on the cove without a visible floor."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All state and panel transitions (expo-out)."
+      },
+      {
+        "name": "t-fast",
+        "value": "140ms",
+        "purpose": "Hover, on-state, lift, fade."
+      },
+      {
+        "name": "t-panel",
+        "value": "200ms",
+        "purpose": "Panel collapse, command panel and dialog rise (8px)."
+      },
+      {
+        "name": "note",
+        "value": "5s fade in / hold / fade out",
+        "purpose": "Transient viewport notes."
+      },
+      {
+        "name": "shimmer",
+        "value": "1.4s linear infinite",
+        "purpose": "Skeleton loading bars."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "prefers-reduced-motion collapses all animation and transition."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "1180px"
+      },
+      {
+        "name": "mobile",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Default matte action on charcoal; lifts 1px on hover.",
+      "html": "<button class=\"ds-btn\">Save asset pack</button>",
+      "css": ".ds-btn { display:inline-flex; align-items:center; gap:8px; min-height:32px; padding:6px 12px; border:1px solid #34363a; border-radius:10px; background:#2a2b2e; color:#e6e6e4; font:560 13px/1.45 -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", sans-serif; cursor:pointer; transition:border-color 140ms cubic-bezier(0.16,1,0.3,1), transform 140ms cubic-bezier(0.16,1,0.3,1); } .ds-btn:hover { border-color:#4a4c50; transform:translateY(-1px); } .ds-btn:focus-visible { outline:2px solid #12a6c8; outline-offset:2px; } .ds-btn:disabled { opacity:.38; filter:saturate(.2); transform:none; }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Paper on charcoal; the one primary per region (Export).",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><polyline points=\"7 10 12 15 17 10\"/><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"3\"/></svg>Export</button>",
+      "css": ".ds-btn-primary { display:inline-flex; align-items:center; gap:8px; min-height:32px; padding:6px 12px; border:1px solid transparent; border-radius:10px; background:#f5f5f3; color:#1d1e20; font:560 13px/1.45 -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", sans-serif; cursor:pointer; transition:filter 140ms cubic-bezier(0.16,1,0.3,1), transform 140ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary:hover { filter:brightness(.94); transform:translateY(-1px); } .ds-btn-primary:focus-visible { outline:2px solid #12a6c8; outline-offset:2px; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "nav",
+      "refersTo": "segment",
+      "description": "Display modes, filters, chat/edit; on-segment is paper.",
+      "html": "<div class=\"ds-seg\"><button class=\"is-on\">Beauty</button><button>Clay</button><button>Wire</button><button>X-Ray</button></div>",
+      "css": ".ds-seg { display:inline-flex; gap:2px; padding:3px; border-radius:10px; background:#18191b; border:1px solid #2f3034; } .ds-seg button { border:0; border-radius:7px; padding:5px 10px; background:transparent; color:#b9babb; font:560 12px/1.45 -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", sans-serif; cursor:pointer; transition:background 140ms, color 140ms; } .ds-seg button:hover { color:#e6e6e4; } .ds-seg button.is-on { background:#f5f5f3; color:#1d1e20; } .ds-seg button:focus-visible { outline:2px solid #12a6c8; outline-offset:2px; }"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Outliner search; border turns cyan on focus.",
+      "html": "<label class=\"ds-search\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"/></svg><input placeholder=\"Search parts by name or ID\"></label>",
+      "css": ".ds-search { display:flex; align-items:center; gap:8px; height:32px; padding:0 10px; border-radius:8px; background:#18191b; border:1px solid #2f3034; color:#8f9093; } .ds-search:focus-within { border-color:#12a6c8; } .ds-search input { flex:1; min-width:0; border:0; background:transparent; outline:none; color:#e6e6e4; font:13px/1.45 -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", sans-serif; } .ds-search input::placeholder { color:#8f9093; }"
+    },
+    {
+      "name": "Evidence Filter Chips",
+      "kind": "chip",
+      "refersTo": "filter-chip",
+      "description": "Pills with checker swatch and mono count; every filter states its total.",
+      "html": "<div class=\"ds-chips\"><button class=\"is-on\">All <span class=\"n\">322</span></button><button><i style=\"background:#469449\"></i>Measured <span class=\"n\">2</span></button><button><i style=\"background:#505ba6\"></i>Datasheet <span class=\"n\">11</span></button><button><i style=\"background:#e0a32e\"></i>Estimated <span class=\"n\">48</span></button><button><i style=\"background:#bb5695\"></i>Inferred <span class=\"n\">36</span></button></div>",
+      "css": ".ds-chips { display:flex; flex-wrap:wrap; gap:4px; } .ds-chips button { display:inline-flex; align-items:center; gap:6px; height:24px; padding:0 8px; border-radius:999px; border:1px solid #2f3034; background:transparent; color:#b9babb; font:560 11px/1 -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", sans-serif; cursor:pointer; } .ds-chips button:hover { color:#e6e6e4; } .ds-chips button.is-on { background:#2a2b2e; color:#e6e6e4; border-color:#34363a; } .ds-chips button:focus-visible { outline:2px solid #12a6c8; outline-offset:2px; } .ds-chips i { width:10px; height:10px; border-radius:3px; } .ds-chips .n { font:10.5px \"SF Mono\", ui-monospace, Menlo, monospace; font-variant-numeric:tabular-nums; color:#8f9093; }"
+    },
+    {
+      "name": "Outliner Row",
+      "kind": "custom",
+      "refersTo": "outliner-row",
+      "description": "Volume-scaled size dot, evidence swatch, name, mono op; selected gets the cyan wash.",
+      "html": "<div class=\"ds-rows\"><div class=\"ds-row\"><span class=\"dot\" style=\"width:7px;height:7px\"></span><i style=\"background:#505ba6\"></i><span class=\"nm\">TEC1-12706 A</span><span class=\"op\">roundedBox</span></div><div class=\"ds-row is-selected\"><span class=\"dot\" style=\"width:7px;height:7px\"></span><i style=\"background:#505ba6\"></i><span class=\"nm\">TEC1-12706 B</span><span class=\"op\">roundedBox</span></div><div class=\"ds-row\"><span class=\"dot\" style=\"width:4px;height:4px\"></span><i style=\"background:#bb5695\"></i><span class=\"nm\">120 mm slim fan housing</span><span class=\"op\">torus</span></div></div>",
+      "css": ".ds-rows { display:grid; gap:0; width:260px; background:#232427; padding:4px; font:13px/1.45 -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", sans-serif; } .ds-row { height:30px; display:flex; align-items:center; gap:8px; padding:0 6px 0 8px; border-radius:8px; color:#b9babb; transition:background 140ms; } .ds-row:hover { background:#2a2b2e; color:#e6e6e4; } .ds-row.is-selected { background:rgba(18,166,200,.16); color:#e6e6e4; box-shadow:inset 0 0 0 1px rgba(18,166,200,.55); } .ds-row .dot { flex:none; border-radius:50%; background:#8a8b8d; } .ds-row.is-selected .dot { background:#8fdcee; } .ds-row i { flex:none; width:10px; height:10px; border-radius:3px; } .ds-row .nm { flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; } .ds-row .op { color:#8f9093; font:10.5px \"SF Mono\", ui-monospace, Menlo, monospace; }"
+    },
+    {
+      "name": "Evidence Strip",
+      "kind": "custom",
+      "refersTo": "evidence-patch",
+      "description": "Signature: color-checker card held in frame; click a patch to solo that evidence class.",
+      "html": "<div class=\"ds-strip\"><button class=\"ds-patch\" style=\"--ev:#469449\" disabled><span>Measured</span><b>0</b></button><button class=\"ds-patch\" style=\"--ev:#505ba6\"><span>Datasheet</span><b>5</b></button><button class=\"ds-patch est\" style=\"--ev:#e0a32e\"><span>Estimated</span><b>40</b></button><button class=\"ds-patch is-on\" style=\"--ev:#bb5695\"><span>Inferred</span><b>3</b></button><button class=\"ds-patch\" style=\"--ev:#7a7a79\"><span>Undocumented</span><b>0</b></button><button class=\"ds-hatch\"><i></i>Hatch inferred</button></div>",
+      "css": ".ds-strip { display:inline-flex; gap:3px; padding:5px; border-radius:12px; background:rgba(18,19,21,.78); box-shadow:0 8px 24px rgba(0,0,0,.28); font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", sans-serif; } .ds-patch { display:grid; align-content:space-between; width:72px; height:44px; padding:5px 7px; border:0; border-radius:6px; background:var(--ev); color:#fff; text-align:left; font-size:10.5px; font-weight:600; cursor:pointer; transition:transform 140ms cubic-bezier(0.16,1,0.3,1), opacity 140ms; } .ds-patch span { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; letter-spacing:-0.01em; } .ds-patch b { font-size:14px; } .ds-patch.est { color:#2a1f05; } .ds-patch:hover:not(:disabled) { transform:translateY(-2px); } .ds-patch.is-on { box-shadow:0 0 0 2px #f2f2f0; } .ds-patch:focus-visible { outline:2px solid #12a6c8; outline-offset:2px; } .ds-patch:disabled { cursor:not-allowed; background:color-mix(in srgb, var(--ev) 26%, #1d1e20); color:#e6e6e4; } .ds-hatch { display:grid; place-items:center; gap:4px; width:72px; border:1px solid rgba(255,255,255,.14); border-radius:6px; background:transparent; color:#d8d8d6; font-size:10px; font-weight:600; cursor:pointer; } .ds-hatch i { width:22px; height:12px; border-radius:3px; background:repeating-linear-gradient(135deg, #bb5695 0 2px, transparent 2px 6px); } .ds-hatch:hover { border-color:#bb5695; color:#fff; }"
+    },
+    {
+      "name": "Library Cell",
+      "kind": "card",
+      "refersTo": "library-cell",
+      "description": "Numbered cove-filled square; active ringed cyan, seen ticked; unopened results show the empty cove.",
+      "html": "<div class=\"ds-lib\"><button class=\"ds-cell\"><span class=\"no\">07</span><span class=\"lb\">HABS Measured Cabin</span></button><button class=\"ds-cell is-active\"><span class=\"no\">08</span><span class=\"lb\">Galaxy Z Fold8</span></button></div>",
+      "css": ".ds-lib { display:grid; grid-template-columns:repeat(2,120px); gap:8px; font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", sans-serif; } .ds-cell { position:relative; aspect-ratio:1/1; border:0; border-radius:12px; overflow:hidden; background:radial-gradient(110% 90% at 50% 15%, #c9cacb 0%, #a3a4a6 55%, #7d7e80 100%); cursor:pointer; transition:transform 140ms cubic-bezier(0.16,1,0.3,1), box-shadow 140ms; } .ds-cell:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.28); } .ds-cell.is-active { box-shadow:0 0 0 2px #12a6c8, 0 0 0 4px rgba(18,166,200,.3); } .ds-cell:focus-visible { outline:2px solid #12a6c8; outline-offset:2px; } .ds-cell .no { position:absolute; top:7px; left:8px; padding:2px 6px; border-radius:6px; background:rgba(18,19,21,.62); color:#f0f0ee; font:10.5px \"SF Mono\", ui-monospace, Menlo, monospace; } .ds-cell .lb { position:absolute; left:0; right:0; bottom:0; padding:18px 8px 7px; background:linear-gradient(transparent, rgba(16,17,19,.82)); color:#f2f2f0; font-size:11px; font-weight:560; text-align:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }"
+    },
+    {
+      "name": "Command Pill",
+      "kind": "custom",
+      "refersTo": "command-pill",
+      "description": "Collapsed ⌘K bar: glass ply at the foot of the viewport.",
+      "html": "<div class=\"ds-cove\"><button class=\"ds-cmd\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9.94 14.06 4 20M12 2l1.9 5.8L20 10l-6.1 2.2L12 18l-1.9-5.8L4 10l6.1-2.2z\"/></svg><span class=\"chip\">TEC1-12706 B</span><span class=\"tx\">Ask about the model or edit a part</span><kbd>⌘K</kbd></button></div>",
+      "css": ".ds-cove { padding:24px; background:radial-gradient(120% 90% at 50% 15%, #cfd0d1 0%, #a9aaac 50%, #7d7e80 100%); } .ds-cmd { display:flex; align-items:center; gap:10px; width:440px; height:44px; padding:0 8px 0 14px; border-radius:14px; border:1px solid rgba(255,255,255,.1); background:rgba(24,25,27,.72); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); box-shadow:0 8px 24px rgba(0,0,0,.28); color:#8f9093; font:13px/1.45 -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", sans-serif; text-align:left; cursor:pointer; transition:transform 140ms cubic-bezier(0.16,1,0.3,1), border-color 140ms; } .ds-cmd:hover { transform:translateY(-1px); border-color:#34363a; color:#b9babb; } .ds-cmd:focus-visible { outline:2px solid #12a6c8; outline-offset:2px; } .ds-cmd svg { color:#8fdcee; flex:none; } .ds-cmd .chip { padding:3px 8px; border-radius:7px; background:rgba(18,166,200,.16); color:#8fdcee; font-size:12px; font-weight:600; } .ds-cmd .tx { flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; } .ds-cmd kbd { font:11px/1 \"SF Mono\", ui-monospace, Menlo, monospace; padding:3px 6px; border-radius:6px; background:#2a2b2e; color:#b9babb; border:1px solid #2f3034; }"
+    },
+    {
+      "name": "Gate Cards",
+      "kind": "card",
+      "refersTo": "gate-card",
+      "description": "Delivery gates: status tints the border and ink-mixed word, never the fill.",
+      "html": "<div class=\"ds-gates\"><div class=\"ds-gate pass\"><span>GLB export</span><b>Ready</b></div><div class=\"ds-gate blocked\"><span>Asset pack</span><b>Blocked</b><small>Quality checks still on hold.</small></div></div>",
+      "css": ".ds-gates { display:grid; grid-template-columns:1fr 1fr; gap:8px; width:280px; padding:12px; background:#232427; font-family:-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", sans-serif; } .ds-gate { display:grid; gap:2px; padding:12px; border-radius:10px; background:#18191b; border:1px solid #2f3034; } .ds-gate span { font-size:11px; font-weight:600; color:#8f9093; } .ds-gate b { font-size:15px; font-weight:650; } .ds-gate small { color:#b9babb; font-size:11px; line-height:1.4; } .ds-gate.pass { border-color:color-mix(in srgb, #469449 60%, #2f3034); } .ds-gate.pass b { color:color-mix(in srgb, #469449 70%, #e6e6e4); } .ds-gate.blocked { border-color:color-mix(in srgb, #c04048 60%, #2f3034); } .ds-gate.blocked b { color:color-mix(in srgb, #c04048 75%, #e6e6e4); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Studio Cove and Color Target",
+    "overview": "**Creative North Star: \"The Studio Cove and Color Target\"**\n\nThe result stands on a seamless mid-grey photographic sweep, as at a product shoot, so material colour is judged against 18% grey and nothing else. Around it sits charcoal grey-card chrome: quiet, matte, tonal, the colour of a photographer's card held just out of frame. The world's only hues come from a color-checker target, and each one has a job. Evidence state (measured, datasheet, estimated, inferred, undocumented), gate state (pass, warn, blocked) and the user's own hand (cyan) are the only things that get colour.\n\nDensity is that of a working DCC tool. Body text is 13px, controls are 32px, rows are 30px, and every list states its total with right-aligned tabular numerals. The viewport takes the centre, and everything that floats over it is a thin translucent ply. The signature is the evidence strip, a checker card held in frame at the lower left of the cove. Clicking a patch leaves only those parts solid and ghosts the rest to 12%.\n\nThe light theme is the same world with the shell turned to the light side of the grey card. The cove, the checker hues and the cove-side overlays stay put.\n\nThe direction rejects two things: the near-black DCC workspace with a single neon accent, and the white SaaS dashboard.",
+    "keyCharacteristics": [
+      "Neutral grey cove (radial, light at top centre falling to mid grey) behind every product result; a shadow catcher on the floor, never a visible floor plane.",
+      "Charcoal tonal chrome with no decorative colour; depth comes from four tonal steps and 1px lines.",
+      "Seven checker hues, each bound to one meaning; cyan belongs to selection, focus, scope and pending edits.",
+      "System sans for the UI; mono tabular numerals for every count, measure, ID and op tag.",
+      "Gentle rounding (8 / 10 / 14px), lucide line icons, short 140ms state transitions on an expo-out curve."
+    ],
+    "rules": [
+      {
+        "name": "The Hue Has a Job Rule",
+        "body": "No colour may appear in the interface without a meaning. Any chromatic pixel of chrome or overlay is either a checker patch (evidence or gate state) or cyan (the user's hand). Decorative tints, gradients and brand colour washes do not exist in this world. The scene's photographic lighting (a warm key, a cool edge, a warm strip) is part of the shoot, not the palette.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cyan Is the Hand Rule",
+        "body": "Cyan marks what the user is touching or about to change: selection, focus, scope, edited parts, pending `update` diffs, switch-on, drop target, and actionable links. It never signals evidence or quality. (The direction contract named #0885a1 and \"selection and focus only\". The build ships `select-cyan` with this wider set of jobs, and the build is the record.)",
+        "section": "colors"
+      },
+      {
+        "name": "The Grey Card Rule",
+        "body": "The cove is neutral grey so that material colour can be judged on it. Do not tint the cove, add a coloured floor, or put a vignette in a hue on it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Every List Counts Rule",
+        "body": "Every list and filter states its total in mono tabular numerals, and measures are right-aligned so the digits stack.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Tracking Rule",
+        "body": "UI text uses 0 letter-spacing, and headings use −0.01em. The only tracked text is the SCELIPH wordmark (0.14em), which is a brand lockup. Labels stay in sentence case at 11px. No uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Keep-All Rule",
+        "body": "In Korean, lines break between words, never inside one (`word-break: keep-all`). Japanese and Chinese keep their native breaking.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ply Rule",
+        "body": "Only overlays floating on the viewport are translucent: toolbar, view chip, zoom, compare labels, measure chip and command bar, all glass at 72% with a 12px blur and a 10% white hairline. Panels, cards and dialogs are always opaque.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Cove-Side Ink Rule",
+        "body": "Overlays that print directly on the cove (the evidence strip, hover label, transient notes, dimension readout, cell labels) use fixed dark ink (`charcoal-0` at 62–86%) with near-white text in both themes, because the cove does not change with the theme.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Solo Ghost Rule",
+        "body": "Soloing or filtering by evidence turns every other part into a flat mid-grey ghost at 12% opacity without depth writes. Hidden and ghosted outliner rows drop to 45% opacity to match.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** judge every product result on the neutral radial cove (`cove-top` → `cove-mid` → `cove-foot`), with fog in `cove-mid` and only a shadow catcher on the floor.",
+      "**Do** bind every hue to its checker meaning. Measured and pass are green, datasheet is purplish blue, estimated and warn are orange-yellow, inferred is magenta, undocumented is neutral 5, blocked is red.",
+      "**Do** reserve cyan for selection, focus, scope, pending edits, switch-on and drop targets, using `select-ink` for cyan text.",
+      "**Do** put dark ink (`checker-orange-ink`) on every orange-yellow fill.",
+      "**Do** make only viewport overlays translucent (glass at 72%, 12px blur, 10% hairline) and keep panels, cards and dialogs opaque.",
+      "**Do** state every list's total and right-align measures in mono tabular numerals.",
+      "**Do** use lucide line icons at 13–16px for every control glyph.",
+      "**Do** mute a zero-count patch's fill, never its text.",
+      "**Do** keep state transitions at 140ms and panel moves at 200ms on `cubic-bezier(0.16, 1, 0.3, 1)`, and honour reduced motion."
+    ],
+    "donts": [
+      "**Don't** tint the cove, add a visible floor plane, or replace the cove with a near-black void for product results. The night lighting of architectural shells is the one sanctioned exception.",
+      "**Don't** use cyan for evidence or quality status, decoration or brand emphasis.",
+      "**Don't** introduce any UI hue outside the checker set and cyan, including for charts, badges or hover states. The scene's warm key and cool edge light tints are lighting, not UI colour, and stay.",
+      "**Don't** use solid status-colour panels. Status tints the border, a 10–22% wash, or ink-mixed text.",
+      "**Don't** add letter-spacing or uppercase to labels. The wordmark is the only tracked text.",
+      "**Don't** put white text on an orange-yellow fill.",
+      "**Don't** make a side panel, card or dialog translucent.",
+      "**Don't** use hard offset shadows. Every shadow is a soft, ambient, black-based blur.",
+      "**Don't** show a duplicated title in place of a missing thumbnail. An empty cove is the honest placeholder."
+    ]
+  }
+}

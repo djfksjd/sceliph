@@ -1,0 +1,79 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "table_lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "base",
+   "category": "mechanical",
+   "materialName": "black painted metal",
+   "detail": "Round flat base disc, 160 mm diameter, about 20 mm thick, standing on the floor.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 80,
+    "radiusBottom": 80,
+    "depth": 20,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    10,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "pole",
+   "name": "pole",
+   "category": "mechanical",
+   "materialName": "brushed grey metal",
+   "detail": "Thin vertical pole, about 10 mm diameter, rising from the base into the shade.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 240,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    140,
+    0
+   ],
+   "material": {
+    "color": "#9a9a9a",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "shade",
+   "category": "enclosure",
+   "materialName": "cream fabric",
+   "detail": "Conical lamp shade, a truncated cone about 200 mm across at the bottom, about 120 mm across at the top and 160 mm tall, open at both ends.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 60,
+    "radiusBottom": 100,
+    "depth": 160,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    330,
+    0
+   ],
+   "material": {
+    "color": "#e8e0c8",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Concrete table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "ring",
+   "name": "Brass base ring",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "polished brass band at base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 45,
+    "radiusBottom": 45,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    10,
+    0
+   ],
+   "material": {
+    "color": "#b08d3c",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "body",
+   "name": "Concrete base",
+   "category": "enclosure",
+   "materialName": "concrete",
+   "detail": "cylindrical concrete body",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 44,
+    "radiusBottom": 44,
+    "depth": 148,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    94,
+    0
+   ],
+   "material": {
+    "color": "#9d9c9b",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Brass neck",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "small brass socket neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 10,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    173,
+    0
+   ],
+   "material": {
+    "color": "#8a6a2a",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Linen drum shade",
+   "category": "enclosure",
+   "materialName": "linen",
+   "detail": "open-ended white linen drum shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      109,
+      -105.5
+     ],
+     [
+      111,
+      -105.5
+     ],
+     [
+      111,
+      105.5
+     ],
+     [
+      109,
+      105.5
+     ],
+     [
+      109,
+      -105.5
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    275.5,
+    0
+   ],
+   "material": {
+    "color": "#e4e3e0",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  }
+ ]
+}

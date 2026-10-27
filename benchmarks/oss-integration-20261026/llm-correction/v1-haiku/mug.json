@@ -1,0 +1,92 @@
+{
+ "summary": {
+  "id": "mug",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.00075305,
+  "modelIds": [
+   "claude-haiku-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00075305,
+   "durationMs": 7543,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Coffee mug\",\"units\":\"mm\",\"components\":[{\"id\":\"body\",\"name\":\"Mug body\",\"category\":\"enclosure\",\"materialName\":\"Glazed ceramic\",\"detail\":\"Cylindrical mug body, 82 mm diameter, 95 mm tall, standing on the floor.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":41,\"radiusBottom\":41,\"depth\":95,\"radialSegments\":32},\"position\":[0,47.5,0],\"material\":{\"color\":\"#f5f5f0\",\"roughness\":0.3,\"metalness\":0}},{\"id\":\"handle\",\"name\":\"Mug handle\",\"category\":\"mechanical\",\"materialName\":\"Glazed ceramic\",\"detail\":\"Upright torus handle in the XY plane on the +x side, centred at mid-height. Ring radius 25 mm, tube radius 5 mm. Outer edge sits 30 mm beyond the body surface (x = 71 mm from the mug axis).\",\"geometry\":{\"op\":\"torus\",\"radius\":25,\"tube\":5},\"position\":[41,47.5,0],\"material\":{\"color\":\"#f5f5f0\",\"roughness\":0.3,\"metalness\":0}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 1984,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      112,
+      95,
+      82
+     ],
+     "dimensionChecks": [
+      {
+       "id": "bd",
+       "expectedMm": 82,
+       "actualMm": 82.0000022649765,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "bh",
+       "expectedMm": 95,
+       "actualMm": 94.9999988079071,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "hh",
+       "expectedMm": 60,
+       "actualMm": 59.99999865889549,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "total-x",
+       "expectedMm": 112,
+       "actualMm": 112.00000046193601,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 5.960464483090178e-7,
+       "toleranceMm": 1,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

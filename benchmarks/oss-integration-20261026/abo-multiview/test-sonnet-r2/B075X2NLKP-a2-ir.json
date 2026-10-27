@@ -1,0 +1,110 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Ceramic table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Ceramic base",
+   "category": "enclosure",
+   "materialName": "textured blue ceramic",
+   "detail": "Capsule-shaped ribbed ceramic body",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      50,
+      0
+     ],
+     [
+      64,
+      6
+     ],
+     [
+      70,
+      30
+     ],
+     [
+      70,
+      290
+     ],
+     [
+      64,
+      314
+     ],
+     [
+      50,
+      320
+     ],
+     [
+      0,
+      320
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1b2a4a",
+    "roughness": 0.4,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Socket neck",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "Small neck between base and shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 16,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    324,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Fabric shade",
+   "category": "enclosure",
+   "materialName": "cream linen",
+   "detail": "Tapered drum shade with brown trim",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 161,
+    "radiusBottom": 182,
+    "depth": 294,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    475,
+    0
+   ],
+   "material": {
+    "color": "#f3c58e",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

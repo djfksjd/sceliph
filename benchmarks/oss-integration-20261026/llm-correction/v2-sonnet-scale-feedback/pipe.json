@@ -1,0 +1,200 @@
+{
+ "summary": {
+  "id": "pipe",
+  "firstTryPass": false,
+  "finalPass": true,
+  "passRound": 1,
+  "roundsUsed": 2,
+  "scores": [
+   0.8400000000000001,
+   1
+  ],
+  "stages": [
+   "requirements",
+   "pass"
+  ],
+  "issueCounts": [
+   2,
+   0
+  ],
+  "costUsd": 0.028423000000000004,
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.011076500000000003,
+   "durationMs": 6601,
+   "isError": false
+  },
+  {
+   "round": 1,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0173465,
+   "durationMs": 13186,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"L-shaped pipe on floor flange\",\"units\":\"mm\",\"components\":[{\"id\":\"flange\",\"name\":\"Floor flange\",\"category\":\"mechanical\",\"materialName\":\"Painted steel\",\"detail\":\"Circular floor flange, 120 mm diameter and 20 mm tall, resting on the floor and centred on the origin.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":60,\"radiusBottom\":60,\"depth\":20,\"radialSegments\":48},\"position\":[0,10,0],\"material\":{\"color\":\"#6b7078\",\"roughness\":0.5,\"metalness\":0.8}},{\"id\":\"pipe_vertical\",\"name\":\"Vertical pipe\",\"category\":\"mechanical\",\"materialName\":\"Steel pipe\",\"detail\":\"Straight vertical tube of radius 25 mm, centreline from (0,0,0) to (0,800,0).\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,0,0],[0,800,0]],\"radius\":25},\"material\":{\"color\":\"#9aa0a8\",\"roughness\":0.4,\"metalness\":0.85}},{\"id\":\"pipe_horizontal\",\"name\":\"Horizontal pipe\",\"category\":\"mechanical\",\"materialName\":\"Steel pipe\",\"detail\":\"Straight horizontal tube of radius 25 mm, centreline from (0,800,0) to (600,800,0).\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,800,0],[600,800,0]],\"radius\":25},\"material\":{\"color\":\"#9aa0a8\",\"roughness\":0.4,\"metalness\":0.85}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "requirements",
+    "pass": false,
+    "score": 0.8400000000000001,
+    "issues": [
+     {
+      "code": "dimension",
+      "message": "pv-x (Vertical pipe diameter): measured 47.553 mm along x, required 50 ± 1.5 mm.",
+      "fix": "scale components[1] (pipe_vertical) geometry along x by 1.051 so its compiled size becomes 50 mm"
+     },
+     {
+      "code": "dimension",
+      "message": "ph-y (Horizontal pipe diameter): measured 47.553 mm along y, required 50 ± 1.5 mm.",
+      "fix": "scale components[2] (pipe_horizontal) geometry along y by 1.051 so its compiled size becomes 50 mm"
+     }
+    ],
+    "measured": {
+     "triangles": 2248,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      660,
+      823.776,
+      120
+     ],
+     "dimensionChecks": [
+      {
+       "id": "fl",
+       "expectedMm": 20,
+       "actualMm": 19.999999552965168,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "pv-y",
+       "expectedMm": 800,
+       "actualMm": 800.000011920929,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "pv-x",
+       "expectedMm": 50,
+       "actualMm": 47.55282402038574,
+       "toleranceMm": 1.5,
+       "pass": false
+      },
+      {
+       "id": "ph-x",
+       "expectedMm": 600,
+       "actualMm": 600.0000238418579,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "ph-y",
+       "expectedMm": 50,
+       "actualMm": 47.55282402038574,
+       "toleranceMm": 1.5,
+       "pass": false
+      },
+      {
+       "id": "span",
+       "expectedMm": 660,
+       "actualMm": 660.0000225007534,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "round": 1,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"L-shaped pipe on floor flange\",\"units\":\"mm\",\"components\":[{\"id\":\"flange\",\"name\":\"Floor flange\",\"category\":\"mechanical\",\"materialName\":\"Painted steel\",\"detail\":\"Circular floor flange, 120 mm diameter and 20 mm tall, resting on the floor and centred on the origin.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":60,\"radiusBottom\":60,\"depth\":20,\"radialSegments\":48},\"position\":[0,10,0],\"material\":{\"color\":\"#6b7078\",\"roughness\":0.5,\"metalness\":0.8}},{\"id\":\"pipe_vertical\",\"name\":\"Vertical pipe\",\"category\":\"mechanical\",\"materialName\":\"Steel pipe\",\"detail\":\"Straight vertical tube, nominal radius 25 mm (radius compensated for faceting), centreline from (0,0,0) to (0,800,0).\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,0,0],[0,800,0]],\"radius\":26.275},\"material\":{\"color\":\"#9aa0a8\",\"roughness\":0.4,\"metalness\":0.85}},{\"id\":\"pipe_horizontal\",\"name\":\"Horizontal pipe\",\"category\":\"mechanical\",\"materialName\":\"Steel pipe\",\"detail\":\"Straight horizontal tube, nominal radius 25 mm (radius compensated for faceting), centreline from (0,800,0) to (600,800,0).\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,800,0],[600,800,0]],\"radius\":26.275},\"material\":{\"color\":\"#9aa0a8\",\"roughness\":0.4,\"metalness\":0.85}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 2248,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      660,
+      824.989,
+      120
+     ],
+     "dimensionChecks": [
+      {
+       "id": "fl",
+       "expectedMm": 20,
+       "actualMm": 19.999999552965168,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "pv-y",
+       "expectedMm": 800,
+       "actualMm": 800.000011920929,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "pv-x",
+       "expectedMm": 50,
+       "actualMm": 49.978021532297134,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "ph-x",
+       "expectedMm": 600,
+       "actualMm": 600.0000238418579,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "ph-y",
+       "expectedMm": 50,
+       "actualMm": 49.978017807006836,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "span",
+       "expectedMm": 660,
+       "actualMm": 660.0000225007534,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

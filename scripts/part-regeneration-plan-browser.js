@@ -1,0 +1,78 @@
+// Run with playwright-cli run-code --filename=./scripts/part-regeneration-plan-browser.js
+// Requires npm run dev and the committed benchmark source fixture.
+async page => {
+  const base = 'http://127.0.0.1:4173';
+  const errors = []; page.on('pageerror', error => errors.push(String(error)));
+  const assert = (pass, message) => {if (!pass) throw Error(message);};
+  const save = async name => {
+    const event = page.waitForEvent('download');
+    await page.getByRole('button', {name: 'Save project JSON', exact: true}).click();
+    await (await event).saveAs('output/playwright/' + name + '.json');
+    const response = await page.request.get(base + '/output/playwright/' + name + '.json');
+    assert(response.ok(), 'Saved source unavailable'); return JSON.parse(await response.text());
+  };
+  const openLoad = async () => {
+    const details = page.locator('.editor-delivery');
+    if (!await details.evaluate(el => el.open)) await details.locator('summary').click();
+  };
+  await page.goto(base + '/?editor=elements');
+  await openLoad();
+  await page.getByLabel('Load source / Domain declaration JSON').setInputFiles('benchmarks/practical-workflow-20261010/before-1.source.json');
+  await page.getByRole('button', {name: 'Mounting panel', exact: true}).waitFor();
+  const before = await save('browser-before');
+  const section = page.locator('.regeneration-plan'); await section.locator('summary').click();
+  await page.getByRole('button', {name: 'Prepare replacement template'}).click();
+  const input = page.getByRole('textbox', {name: 'Replacement plan JSON'});
+  await input.waitFor();
+  await page.waitForFunction(() => document.querySelector('[aria-label="Replacement plan JSON"]').value.length > 0);
+  const request = JSON.parse(await input.inputValue());
+  request.steps.push({...structuredClone(request.steps[0]), targetId: 'brace_user'});
+  request.steps[1].declaration.input.widthMm = 24;
+  const validText = JSON.stringify(request, null, 2);
+  await input.fill(JSON.stringify({...request, sourceSha256: '0'.repeat(64)}));
+  await page.getByRole('button', {name: 'Check replacement plan', exact: true}).click();
+  await section.getByRole('alert').waitFor();
+  assert((await section.getByRole('alert').innerText()).includes('Stale'), 'Stale plan error missing');
+  assert(await page.getByRole('button', {name: 'Apply checked replacements'}).isDisabled(), 'Invalid plan enabled Apply');
+  await input.fill(validText);
+  await page.getByRole('button', {name: 'Check replacement plan', exact: true}).click();
+  await section.getByRole('status').waitFor();
+  assert((await section.getByRole('status').innerText()).includes('2 replacement(s)'), 'Two-part review missing');
+  assert(JSON.stringify(await save('browser-preview-unchanged')) === JSON.stringify(before), 'Preview mutated project');
+  // A changed plan must invalidate its previous passing result.
+  await input.fill(validText + ' ');
+  assert(await page.getByRole('button', {name: 'Apply checked replacements'}).isDisabled(), 'Edited plan retained approval');
+  await page.getByRole('button', {name: 'Check replacement plan', exact: true}).click();
+  await section.getByRole('status').waitFor();
+  const receiptEvent = page.waitForEvent('download'); await page.getByRole('button', {name: 'Save check receipt'}).click();
+  await (await receiptEvent).saveAs('output/playwright/browser-check-receipt.json');
+  await page.getByRole('button', {name: 'Apply checked replacements'}).click();
+  const after = await save('browser-after');
+  assert(after.parts[0].geometry.depth !== before.parts[0].geometry.depth, 'Target did not change');
+  assert(JSON.stringify(after.parts[2]) === JSON.stringify(before.parts[2]), 'Non-target changed');
+  for (let i = 0; i < 2; i++) {
+    for (const key of ['id', 'name', 'position', 'rotation', 'scale', 'material'])
+      assert(JSON.stringify(after.parts[i][key]) === JSON.stringify(before.parts[i][key]), 'Lost target ' + key);
+  }
+  await page.getByRole('button', {name: 'Undo', exact: true}).click();
+  assert(JSON.stringify(await save('browser-undo')) === JSON.stringify(before), 'One Undo did not restore all parts');
+  await page.getByRole('button', {name: 'Redo', exact: true}).click();
+  assert(JSON.stringify(await save('browser-redo')) === JSON.stringify(after), 'Redo mismatch');
+  await page.reload(); await openLoad();
+  await page.getByLabel('Load source / Domain declaration JSON').setInputFiles('output/playwright/browser-after.json');
+  await page.getByRole('button', {name: 'Mounting panel', exact: true}).waitFor();
+  assert(JSON.stringify(await save('browser-reopened')) === JSON.stringify(after), 'Fresh session mismatch');
+  const glb = page.waitForEvent('download', {predicate: d => d.suggestedFilename().endsWith('.glb')});
+  const source = page.waitForEvent('download', {predicate: d => d.suggestedFilename().endsWith('.json')});
+  await page.getByRole('button', {name: 'Export project GLB + source JSON', exact: true}).click();
+  await (await glb).saveAs('output/playwright/browser-reopened.glb');
+  await (await source).saveAs('output/playwright/browser-export-source.json');
+  await page.getByRole('button', {name: 'Mounting panel', exact: true}).click();
+  await page.getByRole('spinbutton', {name: 'Position X', exact: true}).fill('6');
+  await page.getByRole('button', {name: 'Apply part edit', exact: true}).click();
+  const edited = await save('browser-further-edit'); assert(edited.parts[0].position[0] === 6, 'Reopened source not editable');
+  assert(JSON.stringify(edited.parts[2]) === JSON.stringify(before.parts[2]), 'Further edit changed neighbor');
+  assert(errors.length === 0, 'Browser errors: ' + errors.join('; '));
+  return {pass: true, replacements: 2, staleBlocked: true, editedPreviewBlocked: true, previewUnchanged: true, oneStepUndoRedo: true,
+    freshReopen: true, furtherEdit: true, actualGlbDownloaded: true, browserErrors: errors, userAgent: await page.evaluate(() => navigator.userAgent)};
+}

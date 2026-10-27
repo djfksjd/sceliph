@@ -1,0 +1,103 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Rustic Reclaimed Fir Side End Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "lower_body",
+   "name": "Lower twisted block",
+   "category": "enclosure",
+   "materialName": "Reclaimed fir",
+   "detail": "Square reclaimed fir pedestal base, 400 x 330 x 400 mm, lower third of the 600 mm height.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     330,
+     400
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    165,
+    0
+   ],
+   "material": {
+    "color": "#8b5a3c",
+    "roughness": 0.75,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "upper_body",
+   "name": "Upper twisted block",
+   "category": "enclosure",
+   "materialName": "Reclaimed fir",
+   "detail": "Upper block of the pedestal, 400 x 270 x 400 mm, rotated about the vertical axis to suggest the twist in the photo.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     270,
+     400
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    465,
+    0
+   ],
+   "rotation": [
+    0,
+    0.25,
+    0
+   ],
+   "material": {
+    "color": "#8b5a3c",
+    "roughness": 0.75,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "diagonal_panel",
+   "name": "Diagonal plank panel",
+   "category": "mechanical",
+   "materialName": "Reclaimed fir plank",
+   "detail": "Lighter diagonal plank band across the front face, running from lower left to upper right, adding the faceted grain look.",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      -195,
+      -290
+     ],
+     [
+      -140,
+      -290
+     ],
+     [
+      195,
+      250
+     ],
+     [
+      140,
+      250
+     ]
+    ],
+    "depth": 14
+   },
+   "position": [
+    0,
+    300,
+    215
+   ],
+   "material": {
+    "color": "#a0683f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

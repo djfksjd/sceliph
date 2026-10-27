@@ -1,0 +1,869 @@
+{
+ "spec": {
+  "schema": "sceliph.photo-fit-spec/0.1",
+  "referenceComponentId": "carcass",
+  "viewHint": {
+   "azimuthDeg": 0,
+   "elevationDeg": 2,
+   "sigmaDeg": 20
+  },
+  "knownExtent": {
+   "axis": 1,
+   "mm": 1399.9999985719999,
+   "sigmaMm": 13.999999985719999
+  },
+  "parameters": [
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 148,
+    "max": 592
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 698,
+    "max": 2792
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 131,
+    "max": 524
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 149,
+    "max": 596
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 347.5,
+    "max": 1390
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 352.5000023841858,
+    "max": 1752.4999976158142
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -561.9999976158142,
+    "max": 837.9999976158142
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 149,
+    "max": 596
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 345,
+    "max": 1380
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -354.9999976158142,
+    "max": 1044.9999976158142
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -561.9999976158142,
+    "max": 837.9999976158142
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 130,
+    "max": 520
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 8,
+    "max": 32
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -547.9999976158142,
+    "max": 851.9999976158142
+   }
+  ]
+ },
+ "derived": {
+  "parameters": [
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 148,
+    "max": 592
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 698,
+    "max": 2792
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 131,
+    "max": 524
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 149,
+    "max": 596
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 347.5,
+    "max": 1390
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 352.5000023841858,
+    "max": 1752.4999976158142
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -561.9999976158142,
+    "max": 837.9999976158142
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 149,
+    "max": 596
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 345,
+    "max": 1380
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -354.9999976158142,
+    "max": 1044.9999976158142
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -561.9999976158142,
+    "max": 837.9999976158142
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 130,
+    "max": 520
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 8,
+    "max": 32
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -547.9999976158142,
+    "max": 851.9999976158142
+   }
+  ],
+  "locked": [],
+  "groups": [],
+  "aligned": [
+   {
+    "componentId": "door_upper",
+    "axis": 0
+   },
+   {
+    "componentId": "door_lower",
+    "axis": 0
+   },
+   {
+    "componentId": "handle_strip",
+    "axis": 0
+   },
+   {
+    "componentId": "handle_strip",
+    "axis": 1
+   }
+  ],
+  "skipped": []
+ },
+ "anchor": {
+  "estimatedMm": 3245.7205057144165,
+  "knownMm": 1399.9999985719999,
+  "scaleCorrection": 0.43133720112596247
+ },
+ "raster": {
+  "width": 70,
+  "height": 160,
+  "crop": {
+   "x": 20,
+   "y": 0,
+   "width": 281,
+   "height": 640
+  }
+ },
+ "cameraOnly": {
+  "loss": 0.0011489893405104141,
+  "view": {
+   "id": "photo",
+   "iou": 0.9987742093650405,
+   "meanBoundaryDistancePx": 0.0006132561536834002,
+   "depthResidual": 0.0008242093746127459
+  }
+ },
+ "receipt": {
+  "schema": "sceliph.silhouette-parameter-fit/0.2",
+  "provenance": "inferred",
+  "seed": 1,
+  "parameters": [
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 148,
+    "max": 592,
+    "before": 296,
+    "after": 303.67720369783785,
+    "spread": 1.0706206357994006,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.010558306706604997,
+    "frozen": false
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 698,
+    "max": 2792,
+    "before": 1396,
+    "after": 1395.4693619629259,
+    "spread": 179.25404282483964,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.5395133701888196,
+    "frozen": false
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 131,
+    "max": 524,
+    "before": 262,
+    "after": 262,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 3.556625361800583e-8,
+    "frozen": true
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 149,
+    "max": 596,
+    "before": 298,
+    "after": 155.5966961728817,
+    "spread": 48.098651637541366,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.01077260763286202,
+    "frozen": false
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 347.5,
+    "max": 1390,
+    "before": 695,
+    "after": 994.0666301950861,
+    "spread": 635.5938510991207,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.04180465513876805,
+    "frozen": false
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 7,
+    "max": 28,
+    "before": 14,
+    "after": 14,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0000030281204890382062,
+    "frozen": true
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 352.5000023841858,
+    "max": 1752.4999976158142,
+    "before": 1052.5,
+    "after": 756.8588163248885,
+    "spread": 555.7155850152167,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.26701848521776006,
+    "frozen": false
+   },
+   {
+    "componentId": "door_upper",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -561.9999976158142,
+    "max": 837.9999976158142,
+    "before": 138,
+    "after": -96.47647785541488,
+    "spread": 168.96693292910783,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.005530379219122411,
+    "frozen": false
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 149,
+    "max": 596,
+    "before": 298,
+    "after": 282.5468104865853,
+    "spread": 20.142235525764193,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.010490178346099133,
+    "frozen": false
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 345,
+    "max": 1380,
+    "before": 690,
+    "after": 581.6610320994118,
+    "spread": 336.007281642815,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.04107160427005763,
+    "frozen": false
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 7,
+    "max": 28,
+    "before": 14,
+    "after": 14,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000004163769805722809,
+    "frozen": true
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -354.9999976158142,
+    "max": 1044.9999976158142,
+    "before": 345,
+    "after": 288.8992241578586,
+    "spread": 735.4265313032766,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.2665482684312252,
+    "frozen": false
+   },
+   {
+    "componentId": "door_lower",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -561.9999976158142,
+    "max": 837.9999976158142,
+    "before": 138,
+    "after": 110.25982554032339,
+    "spread": 14.106980385120437,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.0054597643800919655,
+    "frozen": false
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 130,
+    "max": 520,
+    "before": 260,
+    "after": 260,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 5.617044605875712e-7,
+    "frozen": true
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 8,
+    "max": 32,
+    "before": 16,
+    "after": 16,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000003017214893039251,
+    "frozen": true
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 6,
+    "max": 24,
+    "before": 12,
+    "after": 12,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 2.2740818323482154e-7,
+    "frozen": true
+   },
+   {
+    "componentId": "handle_strip",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -547.9999976158142,
+    "max": 851.9999976158142,
+    "before": 152,
+    "after": 152,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0000737904622609704,
+    "frozen": true
+   }
+  ],
+  "cameraParameters": [
+   {
+    "viewId": "photo",
+    "field": "azimuthDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 20
+    },
+    "min": -50,
+    "max": 50,
+    "before": 2.0848615035870353,
+    "after": -0.3584988100139981,
+    "spread": 0.400624890740346,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "elevationDeg",
+    "prior": {
+     "mean": 2,
+     "sigma": 20
+    },
+    "min": -48,
+    "max": 52,
+    "before": 3.4805816974999146,
+    "after": 3.297252998451903,
+    "spread": 0.1623493717318496,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "distanceMm",
+    "prior": {
+     "mean": 8435.67006203046,
+     "sigma": 2108.917515507615
+    },
+    "min": 4217.83503101523,
+    "max": 16871.34012406092,
+    "before": 8518.970685431756,
+    "after": 8197.567928755538,
+    "spread": 485.7426998590363,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetX",
+    "min": -1399.428590895823,
+    "max": 1400.571399567434,
+    "before": -18.92317967009126,
+    "after": 0.4546565841328629,
+    "spread": 1.1051884766754938,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetY",
+    "min": -698.9631291246866,
+    "max": 2101.0368613385704,
+    "before": 671.4260179322854,
+    "after": 704.2052163026086,
+    "spread": 46.298593478982184,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetZ",
+    "min": -1386.5362020385876,
+    "max": 1413.4637884246692,
+    "before": -374.76945646193417,
+    "after": 139.14959676981357,
+    "spread": 744.9016170131547,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "rollDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 4
+    },
+    "min": -15,
+    "max": 15,
+    "before": -0.062397223008629155,
+    "after": 0.06220664627655026,
+    "spread": 0.07060698195679826,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "focalScale",
+    "prior": {
+     "mean": 1,
+     "sigma": 0.15
+    },
+    "min": 0.6,
+    "max": 1.6,
+    "before": 0.9956930067746241,
+    "after": 1.0115203290108286,
+    "spread": 0.0203831415745257,
+    "identified": false,
+    "atBound": false
+   }
+  ],
+  "orbits": [
+   {
+    "viewId": "photo",
+    "orbit": {
+     "width": 321,
+     "height": 640,
+     "fx": 3147.13025665947,
+     "fy": 3147.1302566594704,
+     "cx": 160.5,
+     "cy": 320,
+     "target": [
+      0.4546565841328629,
+      704.2052163026086,
+      139.14959676981357
+     ],
+     "azimuthDeg": -0.3584988100139981,
+     "elevationDeg": 3.297252998451903,
+     "distanceMm": 8197.567928755538,
+     "rollDeg": 0.06220664627655026,
+     "focalScale": 1.0115203290108286
+    }
+   }
+  ],
+  "restarts": 2,
+  "before": {
+   "loss": 0.029670224577355093,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.9136408243375859,
+     "meanBoundaryDistancePx": 0.04671595033424267,
+     "depthResidual": 0.0011920016580883395
+    }
+   ]
+  },
+  "after": {
+   "loss": 0.0006769444049418619,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 1,
+     "meanBoundaryDistancePx": 0,
+     "depthResidual": 0.000655638601738143
+    }
+   ]
+  },
+  "evaluations": 16040,
+  "stopReason": "maxEvaluations",
+  "compiledGeometries": 36028
+ },
+ "lowConfidenceReasons": [
+  "carcass.geometry.size.1 is not identified by equally good restarts.",
+  "door_upper.geometry.size.0 is not identified by equally good restarts.",
+  "door_upper.geometry.size.1 is not identified by equally good restarts.",
+  "door_upper.position.1 is not identified by equally good restarts.",
+  "door_upper.position.2 is not identified by equally good restarts.",
+  "door_lower.geometry.size.0 is not identified by equally good restarts.",
+  "door_lower.geometry.size.1 is not identified by equally good restarts.",
+  "door_lower.position.1 is not identified by equally good restarts.",
+  "camera.distanceMm is not identified by equally good restarts.",
+  "camera.targetZ is not identified by equally good restarts.",
+  "camera.focalScale is not identified by equally good restarts."
+ ],
+ "acceptance": {
+  "accept": false,
+  "relativeLossGain": 0.41083491284510637,
+  "freeParameters": 10,
+  "iou": 1,
+  "reasons": [
+   "10 free parameters removed 4.1% each (< 5.0%)."
+  ]
+ }
+}

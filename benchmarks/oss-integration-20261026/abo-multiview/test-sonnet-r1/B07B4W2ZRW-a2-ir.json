@@ -1,0 +1,178 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Tripod table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Linen shade",
+   "category": "enclosure",
+   "materialName": "linen",
+   "detail": "Tapered drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 121,
+    "radiusBottom": 140,
+    "depth": 237,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    389.5,
+    0
+   ],
+   "material": {
+    "color": "#b87b45",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Neck rod",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Short rod to shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 40,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    255,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "hub",
+   "name": "Hub",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Leg joint hub",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 20,
+    "depth": 26,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    238,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg1",
+   "name": "Front leg",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "Wood leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      115,
+      -45
+     ],
+     [
+      0,
+      -115,
+      45
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    0,
+    120,
+    55
+   ],
+   "material": {
+    "color": "#6b4a3a",
+    "roughness": 0.85,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg2",
+   "name": "Right leg",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "Wood leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -39,
+      115,
+      22.5
+     ],
+     [
+      39,
+      -115,
+      -22.5
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    48,
+    120,
+    -27.5
+   ],
+   "material": {
+    "color": "#6b4a3a",
+    "roughness": 0.85,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg3",
+   "name": "Left leg",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "Wood leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      39,
+      115,
+      22.5
+     ],
+     [
+      -39,
+      -115,
+      -22.5
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    -48,
+    120,
+    -27.5
+   ],
+   "material": {
+    "color": "#6b4a3a",
+    "roughness": 0.85,
+    "metalness": 0
+   }
+  }
+ ]
+}

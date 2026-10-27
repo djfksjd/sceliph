@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Rivet Concrete Dome Ceiling Hanging Pendant Chandelier Light Fixture - ches, Concrete and Metal.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 762 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0186748,
+   "durationMs": 15145,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Concrete dome pendant light\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"Brushed brass\",\"detail\":\"Round ceiling plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":55,\"radiusBottom\":55,\"depth\":30,\"radialSegments\":48},\"position\":[0,747,0],\"material\":{\"color\":\"#b5a37c\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"cord\",\"name\":\"Cord\",\"category\":\"interconnect\",\"materialName\":\"Black fabric cord\",\"detail\":\"Hanging cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-263,0],[0,263,0]],\"radius\":3},\"position\":[0,467,0],\"material\":{\"color\":\"#111111\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"connector\",\"name\":\"Shade connector\",\"category\":\"mechanical\",\"materialName\":\"Brushed brass\",\"detail\":\"Cap above the shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5,\"radiusBottom\":10,\"depth\":42,\"radialSegments\":32},\"position\":[0,183,0],\"material\":{\"color\":\"#b5a37c\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"shade\",\"name\":\"Concrete shade\",\"category\":\"enclosure\",\"materialName\":\"Concrete\",\"detail\":\"Egg-shaped dome shade, open at the bottom\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[93,0],[97,0],[97,12],[93,45],[82,80],[62,115],[38,142],[18,158],[10,164],[8,164],[16,156],[36,139],[60,112],[79,78],[90,45],[94,12],[93,0]],\"segments\":64},\"position\":[0,0,0],\"material\":{\"color\":\"#6b6d5a\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"diffuser\",\"name\":\"Diffuser\",\"category\":\"enclosure\",\"materialName\":\"Frosted glow disc\",\"detail\":\"Lit diffuser inside the shade opening\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":92,\"radiusBottom\":92,\"depth\":3,\"radialSegments\":48},\"position\":[0,8,0],\"material\":{\"color\":\"#f1e6bd\",\"roughness\":0.6,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

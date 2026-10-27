@@ -1,0 +1,293 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Martin boekenkast",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "oak veneer board",
+   "detail": "Top wooden panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     16,
+     350
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    772,
+    0
+   ],
+   "material": {
+    "color": "#c9a577",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shBot",
+   "name": "Bottom shelf",
+   "category": "enclosure",
+   "materialName": "oak veneer board",
+   "detail": "Lowest shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1060,
+     16,
+     330
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    100,
+    0
+   ],
+   "material": {
+    "color": "#c9a577",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shLow",
+   "name": "Lower right shelf",
+   "category": "enclosure",
+   "materialName": "oak veneer board",
+   "detail": "Right-hand lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     780,
+     16,
+     330
+    ],
+    "radius": 2
+   },
+   "position": [
+    150,
+    330,
+    0
+   ],
+   "material": {
+    "color": "#c9a577",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shUp",
+   "name": "Upper right shelf",
+   "category": "enclosure",
+   "materialName": "oak veneer board",
+   "detail": "Right-hand upper shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     780,
+     16,
+     330
+    ],
+    "radius": 2
+   },
+   "position": [
+    150,
+    560,
+    0
+   ],
+   "material": {
+    "color": "#c9a577",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shLeft",
+   "name": "Left small shelf",
+   "category": "enclosure",
+   "materialName": "oak veneer board",
+   "detail": "Small left shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     16,
+     330
+    ],
+    "radius": 2
+   },
+   "position": [
+    -390,
+    400,
+    0
+   ],
+   "material": {
+    "color": "#c9a577",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pFL",
+   "name": "Front left post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "Corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     764,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -540,
+    382,
+    165
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "pBL",
+   "name": "Back left post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "Corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     764,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -540,
+    382,
+    -165
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "pFR",
+   "name": "Front right post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "Corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     764,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    540,
+    382,
+    165
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "pBR",
+   "name": "Back right post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "Corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     764,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    540,
+    382,
+    -165
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "pMid",
+   "name": "Inner post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "Inner full-height post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     764,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -230,
+    382,
+    -165
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "pLow",
+   "name": "Lower mid post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "Short post supporting the lower shelves",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     330,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    90,
+    165,
+    165
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

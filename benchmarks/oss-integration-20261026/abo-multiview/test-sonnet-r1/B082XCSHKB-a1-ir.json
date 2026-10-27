@@ -1,0 +1,258 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "5-Blade Ceiling Fan with Light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Canopy",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Ceiling canopy cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 22,
+    "radiusBottom": 38,
+    "depth": 36,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    338,
+    0
+   ],
+   "material": {
+    "color": "#a8987a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Downrod",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Downrod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 170,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    245,
+    0
+   ],
+   "material": {
+    "color": "#a8987a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "motor",
+   "name": "Motor housing",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Motor housing",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 85,
+    "radiusBottom": 115,
+    "depth": 90,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    115,
+    0
+   ],
+   "material": {
+    "color": "#a8987a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "light",
+   "name": "Light bowl",
+   "category": "mechanical",
+   "materialName": "frosted glass",
+   "detail": "Frosted light bowl",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 120,
+    "radiusBottom": 75,
+    "depth": 70,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    35,
+    0
+   ],
+   "material": {
+    "color": "#f0ece4",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade1",
+   "name": "Blade 1",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     570,
+     12,
+     120
+    ],
+    "radius": 5
+   },
+   "position": [
+    -375,
+    125,
+    0
+   ],
+   "rotation": [
+    0,
+    -3.1416,
+    0
+   ],
+   "material": {
+    "color": "#4a2c2e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade2",
+   "name": "Blade 2",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     570,
+     12,
+     120
+    ],
+    "radius": 5
+   },
+   "position": [
+    -115.9,
+    125,
+    -356.6
+   ],
+   "rotation": [
+    0,
+    -4.398,
+    0
+   ],
+   "material": {
+    "color": "#4a2c2e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade3",
+   "name": "Blade 3",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     570,
+     12,
+     120
+    ],
+    "radius": 5
+   },
+   "position": [
+    303.4,
+    125,
+    -220.4
+   ],
+   "rotation": [
+    0,
+    -5.655,
+    0
+   ],
+   "material": {
+    "color": "#4a2c2e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade4",
+   "name": "Blade 4",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     570,
+     12,
+     120
+    ],
+    "radius": 5
+   },
+   "position": [
+    303.4,
+    125,
+    220.4
+   ],
+   "rotation": [
+    0,
+    -0.628,
+    0
+   ],
+   "material": {
+    "color": "#4a2c2e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade5",
+   "name": "Blade 5",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     570,
+     12,
+     120
+    ],
+    "radius": 5
+   },
+   "position": [
+    -115.9,
+    125,
+    356.6
+   ],
+   "rotation": [
+    0,
+    -1.885,
+    0
+   ],
+   "material": {
+    "color": "#4a2c2e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

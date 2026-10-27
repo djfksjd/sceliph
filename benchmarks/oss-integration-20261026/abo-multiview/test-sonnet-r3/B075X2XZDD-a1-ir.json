@@ -1,0 +1,204 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Brushed nickel floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round weighted disc base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 116,
+    "radiusBottom": 118,
+    "depth": 22,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#a9a9a6",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "pad",
+   "name": "Base pad",
+   "category": "mechanical",
+   "materialName": "black rubber",
+   "detail": "Thin dark pad under base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 110,
+    "radiusBottom": 110,
+    "depth": 4,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    2,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Lower pole",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Slim stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 1040,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    546,
+    0
+   ],
+   "material": {
+    "color": "#a9a9a6",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "sleeve",
+   "name": "Upper sleeve",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Thicker upper tube section",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 620,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    750,
+    0
+   ],
+   "material": {
+    "color": "#a9a9a6",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Bent arm carrying the head",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      160,
+      0
+     ],
+     [
+      10,
+      174,
+      0
+     ],
+     [
+      110,
+      176,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    1060,
+    0
+   ],
+   "material": {
+    "color": "#a9a9a6",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "head",
+   "name": "Lamp head",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Cylindrical LED head",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 68,
+    "radiusBottom": 68,
+    "depth": 48,
+    "radialSegments": 48
+   },
+   "position": [
+    165,
+    1205,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    -0.08
+   ],
+   "material": {
+    "color": "#b0b0ad",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "lens",
+   "name": "Diffuser",
+   "category": "mechanical",
+   "materialName": "frosted diffuser",
+   "detail": "Light-emitting underside",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 60,
+    "radiusBottom": 60,
+    "depth": 4,
+    "radialSegments": 48
+   },
+   "position": [
+    165,
+    1181,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    -0.08
+   ],
+   "material": {
+    "color": "#f5efe0",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  }
+ ]
+}

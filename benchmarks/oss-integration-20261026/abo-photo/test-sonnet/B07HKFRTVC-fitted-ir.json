@@ -1,0 +1,403 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "6 Globe Flush Mount Chandelier",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 60,
+    "radiusBottom": 60,
+    "depth": 12,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    105.95759999387934,
+    0
+   ],
+   "material": {
+    "color": "#3a2f2c",
+    "roughness": 0.6,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Center stem",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Short vertical stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 42,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    32.42147649318201,
+    0
+   ],
+   "material": {
+    "color": "#3a2f2c",
+    "roughness": 0.6,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "hub",
+   "name": "Central hub",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Round hub disc where arms attach",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 45,
+    "radiusBottom": 45,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    148,
+    0
+   ],
+   "material": {
+    "color": "#3a2f2c",
+    "roughness": 0.6,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "arm1",
+   "name": "Arm 1",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Radial arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      30
+     ],
+     [
+      0,
+      0,
+      230
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#3a2f2c",
+    "roughness": 0.6,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "arm2",
+   "name": "Arm 2",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Radial arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      26,
+      0,
+      15
+     ],
+     [
+      199,
+      0,
+      115
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#3a2f2c",
+    "roughness": 0.6,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "arm3",
+   "name": "Arm 3",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Radial arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      26,
+      0,
+      -15
+     ],
+     [
+      199,
+      0,
+      -115
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#3a2f2c",
+    "roughness": 0.6,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "arm4",
+   "name": "Arm 4",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Radial arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -30
+     ],
+     [
+      0,
+      0,
+      -230
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#3a2f2c",
+    "roughness": 0.6,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "arm5",
+   "name": "Arm 5",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Radial arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -26,
+      0,
+      -15
+     ],
+     [
+      -199,
+      0,
+      -115
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#3a2f2c",
+    "roughness": 0.6,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "arm6",
+   "name": "Arm 6",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Radial arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -26,
+      0,
+      15
+     ],
+     [
+      -199,
+      0,
+      115
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#3a2f2c",
+    "roughness": 0.6,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "globe1",
+   "name": "Globe 1",
+   "category": "enclosure",
+   "materialName": "opal glass",
+   "detail": "Frosted white globe shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 100.05064550898604
+   },
+   "position": [
+    0,
+    70,
+    230
+   ],
+   "material": {
+    "color": "#f6ead8",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe2",
+   "name": "Globe 2",
+   "category": "enclosure",
+   "materialName": "opal glass",
+   "detail": "Frosted white globe shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 100.05064550898604
+   },
+   "position": [
+    199,
+    70,
+    115
+   ],
+   "material": {
+    "color": "#f6ead8",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe3",
+   "name": "Globe 3",
+   "category": "enclosure",
+   "materialName": "opal glass",
+   "detail": "Frosted white globe shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 100.05064550898604
+   },
+   "position": [
+    199,
+    70,
+    -115
+   ],
+   "material": {
+    "color": "#f6ead8",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe4",
+   "name": "Globe 4",
+   "category": "enclosure",
+   "materialName": "opal glass",
+   "detail": "Frosted white globe shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 100.05064550898604
+   },
+   "position": [
+    0,
+    70,
+    -230
+   ],
+   "material": {
+    "color": "#f6ead8",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe5",
+   "name": "Globe 5",
+   "category": "enclosure",
+   "materialName": "opal glass",
+   "detail": "Frosted white globe shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 100.05064550898604
+   },
+   "position": [
+    -199,
+    70,
+    -115
+   ],
+   "material": {
+    "color": "#f6ead8",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe6",
+   "name": "Globe 6",
+   "category": "enclosure",
+   "materialName": "opal glass",
+   "detail": "Frosted white globe shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 100.05064550898604
+   },
+   "position": [
+    -411.76921837240656,
+    70,
+    115
+   ],
+   "material": {
+    "color": "#f6ead8",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  }
+ ]
+}

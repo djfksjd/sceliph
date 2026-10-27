@@ -1,0 +1,203 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Round farmhouse dining table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Tabletop",
+   "category": "mechanical",
+   "materialName": "birch veneer",
+   "detail": "Round parquet-pattern top",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 550,
+    "radiusBottom": 550,
+    "depth": 45,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    740,
+    0
+   ],
+   "material": {
+    "color": "#b98d5d",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "apron",
+   "name": "Apron ring",
+   "category": "mechanical",
+   "materialName": "birch",
+   "detail": "Round apron under top",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 490,
+    "radiusBottom": 490,
+    "depth": 52,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    691,
+    0
+   ],
+   "material": {
+    "color": "#8d6a45",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "birch",
+   "detail": "Square tapered leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     665,
+     70
+    ],
+    "radius": 4
+   },
+   "position": [
+    -330,
+    332,
+    330
+   ],
+   "material": {
+    "color": "#8d6a45",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "birch",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     665,
+     70
+    ],
+    "radius": 4
+   },
+   "position": [
+    330,
+    332,
+    330
+   ],
+   "material": {
+    "color": "#8d6a45",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "birch",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     665,
+     70
+    ],
+    "radius": 4
+   },
+   "position": [
+    -330,
+    332,
+    -330
+   ],
+   "material": {
+    "color": "#8d6a45",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "birch",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     665,
+     70
+    ],
+    "radius": 4
+   },
+   "position": [
+    330,
+    332,
+    -330
+   ],
+   "material": {
+    "color": "#8d6a45",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "stretcher_x",
+   "name": "Stretcher along X",
+   "category": "mechanical",
+   "materialName": "birch",
+   "detail": "Cross stretcher",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     660,
+     70,
+     40
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    220,
+    0
+   ],
+   "material": {
+    "color": "#8d6a45",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "stretcher_z",
+   "name": "Stretcher along Z",
+   "category": "mechanical",
+   "materialName": "birch",
+   "detail": "Cross stretcher",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     70,
+     660
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    220,
+    0
+   ],
+   "material": {
+    "color": "#8d6a45",
+    "roughness": 0.7
+   }
+  }
+ ]
+}

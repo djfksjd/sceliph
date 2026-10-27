@@ -1,0 +1,163 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian 2-compartment modular MDF bookcase",
+ "units": "mm",
+ "components": [
+  {
+   "id": "left_side",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Oak-veneer MDF",
+   "detail": "Full-height left side panel, 18 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     594,
+     200
+    ],
+    "radius": 2
+   },
+   "position": [
+    -136,
+    297,
+    0
+   ],
+   "material": {
+    "color": "#c9a27a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "right_side",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Oak-veneer MDF",
+   "detail": "Full-height right side panel, 18 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     594,
+     200
+    ],
+    "radius": 2
+   },
+   "position": [
+    136,
+    297,
+    0
+   ],
+   "material": {
+    "color": "#c9a27a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top_panel",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "Oak-veneer MDF",
+   "detail": "Top panel spanning the full width, 18 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     290,
+     18,
+     200
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    585,
+    0
+   ],
+   "material": {
+    "color": "#c9a27a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom_panel",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "White-coated MDF",
+   "detail": "Bottom panel forming the lower compartment floor, 18 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     290,
+     18,
+     200
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    9,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f2",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back_panel",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "Thin MDF backboard",
+   "detail": "Thin rear backboard, 6 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     254,
+     582,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    297,
+    -97
+   ],
+   "material": {
+    "color": "#d8b48c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "middle_shelf",
+   "name": "Middle shelf",
+   "category": "mechanical",
+   "materialName": "White-coated MDF",
+   "detail": "Fixed shelf dividing the two open compartments, 18 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     254,
+     18,
+     194
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    280,
+    -3
+   ],
+   "material": {
+    "color": "#f2f2f2",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

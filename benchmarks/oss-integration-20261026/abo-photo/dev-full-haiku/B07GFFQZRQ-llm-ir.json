@@ -1,0 +1,196 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Amazon Basics Movian Inari 1-Drawer Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desk top",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Flat rectangular desktop, 900 x 500 x 25 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     900,
+     25,
+     500
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    717.5,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f5",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_left",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Full-height left leg panel, 25 mm thick, reaches the floor",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     705,
+     500
+    ],
+    "radius": 1
+   },
+   "position": [
+    -437.5,
+    352.5,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f5",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_right",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Full-height right leg panel, 25 mm thick, reaches the floor",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     705,
+     500
+    ],
+    "radius": 1
+   },
+   "position": [
+    437.5,
+    352.5,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f5",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back_panel",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Thin rear panel spanning between the side panels",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     850,
+     705,
+     12
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    352.5,
+    -244
+   ],
+   "material": {
+    "color": "#f5f5f5",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_body",
+   "name": "Drawer box",
+   "category": "mechanical",
+   "materialName": "White laminate",
+   "detail": "Single drawer unit mounted under the right half of the top, 375 x 140 x 437 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     375,
+     140,
+     437
+    ],
+    "radius": 2
+   },
+   "position": [
+    237.5,
+    635,
+    -18.5
+   ],
+   "material": {
+    "color": "#f0f0f0",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_front",
+   "name": "Drawer front",
+   "category": "mechanical",
+   "materialName": "White laminate",
+   "detail": "Flush drawer front panel at the front of the drawer box",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     370,
+     125,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    237.5,
+    635,
+    210
+   ],
+   "material": {
+    "color": "#f5f5f5",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_handle",
+   "name": "Drawer handle",
+   "category": "mechanical",
+   "materialName": "Brushed metal bar pull",
+   "detail": "Horizontal bar handle centred on the drawer front",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -95,
+      0,
+      0
+     ],
+     [
+      95,
+      0,
+      0
+     ]
+    ],
+    "radius": 7
+   },
+   "position": [
+    237.5,
+    655,
+    232
+   ],
+   "material": {
+    "color": "#c0c0c0",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

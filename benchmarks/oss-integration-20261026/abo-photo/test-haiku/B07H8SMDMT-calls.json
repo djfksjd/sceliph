@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand - Movian Saale King Size Bed Frame with Headboard, 160 x 200cm, Light Brown Oak-Effect.\nThe product listing gives its overall height as 970 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00203942,
+   "durationMs": 18610,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":40,\"elevationDeg\":18},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian Saale King Size Bed Frame with Headboard 160x200 Light Brown Oak-Effect\",\"units\":\"mm\",\"components\":[{\"id\":\"headboard\",\"name\":\"Headboard panel\",\"category\":\"enclosure\",\"materialName\":\"oak-effect laminate\",\"detail\":\"Tall rear panel with horizontal grooves, full 970 mm height\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[40,970,1660],\"radius\":4},\"position\":[-1020,485,0],\"material\":{\"color\":\"#d9c6b4\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"plinth\",\"name\":\"Lower base plinth\",\"category\":\"enclosure\",\"materialName\":\"oak-effect laminate\",\"detail\":\"Recessed lower slab under the frame\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[2000,100,1560],\"radius\":8},\"position\":[30,50,0],\"material\":{\"color\":\"#d2bca9\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"rail_left\",\"name\":\"Left side rail\",\"category\":\"enclosure\",\"materialName\":\"oak-effect laminate\",\"detail\":\"Long side rail along the left edge of the frame\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[2060,200,40],\"radius\":5},\"position\":[30,200,-790],\"material\":{\"color\":\"#d9c6b4\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"rail_right\",\"name\":\"Right side rail\",\"category\":\"enclosure\",\"materialName\":\"oak-effect laminate\",\"detail\":\"Long side rail along the right edge of the frame\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[2060,200,40],\"radius\":5},\"position\":[30,200,790],\"material\":{\"color\":\"#d9c6b4\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"rail_foot\",\"name\":\"Foot rail\",\"category\":\"enclosure\",\"materialName\":\"oak-effect laminate\",\"detail\":\"Low rail closing the foot end of the frame\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[40,200,1660],\"radius\":5},\"position\":[1040,200,0],\"material\":{\"color\":\"#d9c6b4\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"deck\",\"name\":\"Support deck\",\"category\":\"mechanical\",\"materialName\":\"oak-effect laminate\",\"detail\":\"Flat support deck inside the rails under the mattress\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[2000,30,1560],\"radius\":5},\"position\":[30,285,0],\"material\":{\"color\":\"#c9b29e\",\"roughness\":0.7,\"metalness\":0.0}},{\"id\":\"mattress\",\"name\":\"Mattress\",\"category\":\"mechanical\",\"materialName\":\"white fabric mattress\",\"detail\":\"Mattress resting on the frame, 200 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[2000,200,1580],\"radius\":15},\"position\":[40,400,0],\"material\":{\"color\":\"#f2f2f2\",\"roughness\":0.9,\"metalness\":0.0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

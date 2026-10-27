@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Rivet Modern Glass Globe Living Room Table Desk Lamp With LED Light Bulb - ches, Brass Finish.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 254 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0153506,
+   "durationMs": 12631,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":10},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Brass Globe Table Lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Cylindrical base\",\"category\":\"enclosure\",\"materialName\":\"brushed brass\",\"detail\":\"Solid brushed antique brass cylinder base\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":54.5,\"radiusBottom\":54.5,\"depth\":105,\"radialSegments\":48},\"position\":[0,52.5,0],\"material\":{\"color\":\"#9a8049\",\"roughness\":0.5,\"metalness\":0.8}},{\"id\":\"cup\",\"name\":\"Globe cup\",\"category\":\"mechanical\",\"materialName\":\"brass\",\"detail\":\"Tapered brass cup holding the glass globe\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":30,\"radiusBottom\":16,\"depth\":14,\"radialSegments\":32},\"position\":[-20,112,-8],\"material\":{\"color\":\"#8a7040\",\"roughness\":0.45,\"metalness\":0.8}},{\"id\":\"globe\",\"name\":\"Glass globe\",\"category\":\"display\",\"materialName\":\"opal glass\",\"detail\":\"Frosted white opal glass globe shade\",\"geometry\":{\"op\":\"sphere\",\"radius\":70},\"position\":[-20,184,-8],\"material\":{\"color\":\"#fff3dc\",\"roughness\":0.3,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

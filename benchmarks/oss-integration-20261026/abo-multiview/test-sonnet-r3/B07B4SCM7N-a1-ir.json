@@ -1,0 +1,457 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Casual Wood Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Overhanging top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1560,
+     34,
+     500
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    897,
+    0
+   ],
+   "material": {
+    "color": "#c28f55",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1480,
+     780,
+     460
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    490,
+    0
+   ],
+   "material": {
+    "color": "#c08c52",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "base",
+   "name": "Base molding",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Bottom skirt",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1520,
+     40,
+     480
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    110,
+    0
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "d1",
+   "name": "Top left drawer",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     375,
+     200,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -527,
+    765,
+    240
+   ],
+   "material": {
+    "color": "#c9965c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d2",
+   "name": "Top center drawer",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     650,
+     200,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -5,
+    765,
+    240
+   ],
+   "material": {
+    "color": "#c9965c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d3",
+   "name": "Top right drawer",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     385,
+     200,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    522,
+    765,
+    240
+   ],
+   "material": {
+    "color": "#c9965c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d4",
+   "name": "Middle left drawer",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     705,
+     215,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -362,
+    547,
+    240
+   ],
+   "material": {
+    "color": "#c9965c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d5",
+   "name": "Middle right drawer",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     715,
+     215,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    357,
+    547,
+    240
+   ],
+   "material": {
+    "color": "#c9965c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d6",
+   "name": "Bottom left drawer",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     705,
+     205,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -362,
+    327,
+    240
+   ],
+   "material": {
+    "color": "#c9965c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d7",
+   "name": "Bottom right drawer",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     715,
+     205,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    357,
+    327,
+    240
+   ],
+   "material": {
+    "color": "#c9965c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      28,
+      20
+     ],
+     [
+      22,
+      45
+     ],
+     [
+      30,
+      75
+     ],
+     [
+      34,
+      90
+     ],
+     [
+      0,
+      90
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    -690,
+    0,
+    190
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      28,
+      20
+     ],
+     [
+      22,
+      45
+     ],
+     [
+      30,
+      75
+     ],
+     [
+      34,
+      90
+     ],
+     [
+      0,
+      90
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    690,
+    0,
+    190
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      28,
+      20
+     ],
+     [
+      22,
+      45
+     ],
+     [
+      30,
+      75
+     ],
+     [
+      34,
+      90
+     ],
+     [
+      0,
+      90
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    -690,
+    0,
+    -190
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      28,
+      20
+     ],
+     [
+      22,
+      45
+     ],
+     [
+      30,
+      75
+     ],
+     [
+      34,
+      90
+     ],
+     [
+      0,
+      90
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    690,
+    0,
+    -190
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.6
+   }
+  }
+ ]
+}

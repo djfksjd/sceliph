@@ -695,6 +695,9 @@
             },
             {
               "$ref": "#/$defs/implicitSurface"
+            },
+            {
+              "$ref": "#/$defs/booleanCSG"
             }
           ]
         }
@@ -1127,6 +1130,11 @@
         "bevelThickness": {
           "type": "number",
           "minimum": 0
+        },
+        "capTriangulation": {
+          "enum": [
+            "quality-diagonal-v1"
+          ]
         },
         "bevelSegments": {
           "type": "integer",
@@ -2325,6 +2333,100 @@
         "sensor",
         "control"
       ]
+    },
+    "booleanCSG": {
+      "type": "object",
+      "required": [
+        "op",
+        "operation",
+        "operands"
+      ],
+      "additionalProperties": false,
+      "description": "Exact mesh boolean of compiled operands through the vendored Manifold runtime. difference subtracts every later operand from the first. Operands may nest booleanCSG up to depth 2; the compiler requires initManifold() before compiling.",
+      "properties": {
+        "op": {
+          "const": "booleanCSG"
+        },
+        "operation": {
+          "enum": [
+            "union",
+            "difference",
+            "intersection"
+          ]
+        },
+        "operands": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "required": [
+              "geometry"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "geometry": {
+                "oneOf": [
+                  {
+                    "$ref": "#/$defs/roundedBox"
+                  },
+                  {
+                    "$ref": "#/$defs/cylinder"
+                  },
+                  {
+                    "$ref": "#/$defs/sphere"
+                  },
+                  {
+                    "$ref": "#/$defs/torus"
+                  },
+                  {
+                    "$ref": "#/$defs/extrude"
+                  },
+                  {
+                    "$ref": "#/$defs/lathe"
+                  },
+                  {
+                    "$ref": "#/$defs/tube"
+                  },
+                  {
+                    "$ref": "#/$defs/hipRoof"
+                  },
+                  {
+                    "$ref": "#/$defs/bladeLoft"
+                  },
+                  {
+                    "$ref": "#/$defs/booleanCSG"
+                  }
+                ]
+              },
+              "position": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number"
+                }
+              },
+              "rotation": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number"
+                }
+              },
+              "scale": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

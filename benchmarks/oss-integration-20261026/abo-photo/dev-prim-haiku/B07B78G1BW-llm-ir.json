@@ -1,0 +1,443 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-Century Wood Buffet Credenza",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top slab",
+   "category": "enclosure",
+   "materialName": "Solid wood",
+   "detail": "Flat solid-wood top with slight overhang on all sides",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1220,
+     30,
+     440
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    798,
+    0
+   ],
+   "material": {
+    "color": "#a86a35",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Cabinet body",
+   "category": "enclosure",
+   "materialName": "Solid wood",
+   "detail": "Main storage carcass with horizontal board-style face",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1180,
+     393,
+     420
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    586,
+    0
+   ],
+   "material": {
+    "color": "#9a5f2e",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door1",
+   "name": "Door left outer",
+   "category": "enclosure",
+   "materialName": "Solid wood",
+   "detail": "Left outer door front with horizontal plank grain",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     288,
+     370,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -441,
+    585,
+    219
+   ],
+   "material": {
+    "color": "#a06430",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door2",
+   "name": "Door left inner",
+   "category": "enclosure",
+   "materialName": "Solid wood",
+   "detail": "Left inner door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     288,
+     370,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -147,
+    585,
+    219
+   ],
+   "material": {
+    "color": "#a06430",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door3",
+   "name": "Door right inner",
+   "category": "enclosure",
+   "materialName": "Solid wood",
+   "detail": "Right inner door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     288,
+     370,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    147,
+    585,
+    219
+   ],
+   "material": {
+    "color": "#a06430",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door4",
+   "name": "Door right outer",
+   "category": "enclosure",
+   "materialName": "Solid wood",
+   "detail": "Right outer door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     288,
+     370,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    441,
+    585,
+    219
+   ],
+   "material": {
+    "color": "#a06430",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle outer left",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Vertical bar pull on left outer door",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -75,
+      0
+     ],
+     [
+      0,
+      75,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    -305,
+    585,
+    236
+   ],
+   "material": {
+    "color": "#3a2a22",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle inner left",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Vertical bar pull on left inner door",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -75,
+      0
+     ],
+     [
+      0,
+      75,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    -15,
+    585,
+    236
+   ],
+   "material": {
+    "color": "#3a2a22",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle inner right",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Vertical bar pull on right inner door",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -75,
+      0
+     ],
+     [
+      0,
+      75,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    15,
+    585,
+    236
+   ],
+   "material": {
+    "color": "#3a2a22",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle outer right",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Vertical bar pull on right outer door",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -75,
+      0
+     ],
+     [
+      0,
+      75,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    305,
+    585,
+    236
+   ],
+   "material": {
+    "color": "#3a2a22",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Leg front left",
+   "category": "mechanical",
+   "materialName": "Solid wood",
+   "detail": "Tapered wooden leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 11,
+    "depth": 390,
+    "radialSegments": 32
+   },
+   "position": [
+    -560,
+    195,
+    170
+   ],
+   "material": {
+    "color": "#8f5a2c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Leg front right",
+   "category": "mechanical",
+   "materialName": "Solid wood",
+   "detail": "Tapered wooden leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 11,
+    "depth": 390,
+    "radialSegments": 32
+   },
+   "position": [
+    560,
+    195,
+    170
+   ],
+   "material": {
+    "color": "#8f5a2c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Leg back left",
+   "category": "mechanical",
+   "materialName": "Solid wood",
+   "detail": "Tapered wooden leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 11,
+    "depth": 390,
+    "radialSegments": 32
+   },
+   "position": [
+    -560,
+    195,
+    -170
+   ],
+   "material": {
+    "color": "#8f5a2c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Leg back right",
+   "category": "mechanical",
+   "materialName": "Solid wood",
+   "detail": "Tapered wooden leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 11,
+    "depth": 390,
+    "radialSegments": 32
+   },
+   "position": [
+    560,
+    195,
+    -170
+   ],
+   "material": {
+    "color": "#8f5a2c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_frame",
+   "name": "Lower shelf frame",
+   "category": "mechanical",
+   "materialName": "Solid wood",
+   "detail": "Wooden frame for the lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1120,
+     20,
+     400
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    225,
+    0
+   ],
+   "material": {
+    "color": "#9a5f2e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_slats",
+   "name": "Lower shelf slats",
+   "category": "mechanical",
+   "materialName": "Brushed metal",
+   "detail": "Slatted metal rack surface on the lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1060,
+     6,
+     360
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    238,
+    0
+   ],
+   "material": {
+    "color": "#8c8c8c",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

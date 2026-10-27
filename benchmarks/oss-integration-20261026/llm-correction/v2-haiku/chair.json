@@ -1,0 +1,99 @@
+{
+ "summary": {
+  "id": "chair",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.0013472299999999998,
+  "modelIds": [
+   "claude-haiku-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.0013472299999999998,
+   "durationMs": 11968,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Chair\",\"units\":\"mm\",\"components\":[{\"id\":\"seat\",\"name\":\"Seat\",\"category\":\"mechanical\",\"materialName\":\"Wood\",\"detail\":\"Rounded seat box, 450 mm wide (x), 40 mm thick, 450 mm deep (z), top surface at 450 mm above floor\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[450,40,450],\"radius\":5},\"position\":[0,430,0],\"rotation\":[0,0,0],\"material\":{\"color\":\"#8b5a2b\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_fl\",\"name\":\"Front Left Leg\",\"category\":\"mechanical\",\"materialName\":\"Steel\",\"detail\":\"Vertical cylinder, 30 mm diameter, floor to underside of seat, front-left corner (-x, +z)\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[-195,205,195],\"rotation\":[0,0,0],\"material\":{\"color\":\"#7a7a7a\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"leg_fr\",\"name\":\"Front Right Leg\",\"category\":\"mechanical\",\"materialName\":\"Steel\",\"detail\":\"Vertical cylinder, 30 mm diameter, floor to underside of seat, front-right corner (+x, +z)\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[195,205,195],\"rotation\":[0,0,0],\"material\":{\"color\":\"#7a7a7a\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"leg_bl\",\"name\":\"Back Left Leg\",\"category\":\"mechanical\",\"materialName\":\"Steel\",\"detail\":\"Vertical cylinder, 30 mm diameter, floor to underside of seat, back-left corner (-x, -z)\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[-195,205,-195],\"rotation\":[0,0,0],\"material\":{\"color\":\"#7a7a7a\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"leg_br\",\"name\":\"Back Right Leg\",\"category\":\"mechanical\",\"materialName\":\"Steel\",\"detail\":\"Vertical cylinder, 30 mm diameter, floor to underside of seat, back-right corner (+x, -z)\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[195,205,-195],\"rotation\":[0,0,0],\"material\":{\"color\":\"#7a7a7a\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"backrest\",\"name\":\"Backrest\",\"category\":\"mechanical\",\"materialName\":\"Wood\",\"detail\":\"Rounded backrest box, 450 mm wide, 500 mm tall, 30 mm thick, tilted 10 degrees backward (top toward -z) about x axis, bottom edge on rear edge of seat top\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[450,500,30],\"radius\":5},\"position\":[0,696.2,-268.41],\"rotation\":[-0.174533,0,0],\"material\":{\"color\":\"#8b5a2b\",\"roughness\":0.7,\"metalness\":0}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 2712,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      450,
+      945.007,
+      551.594
+     ],
+     "dimensionChecks": [
+      {
+       "id": "seat-top",
+       "expectedMm": 450,
+       "actualMm": 449.99999955296516,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "seat-t",
+       "expectedMm": 40,
+       "actualMm": 39.99999910593033,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "leg",
+       "expectedMm": 410,
+       "actualMm": 409.99999642372126,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "back-y",
+       "expectedMm": 497.61,
+       "actualMm": 497.61331743510453,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "back-z",
+       "expectedMm": 116.37,
+       "actualMm": 116.36835720588576,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0.0000017881393310492655,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

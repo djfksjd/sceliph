@@ -1,0 +1,21 @@
+{
+ "request": "Photo: an open bookshelf with two side panels, four horizontal shelves (the top one closes the top) and a thin back panel.\nThe side panels are 900 mm tall.\nThe camera's horizontal field of view is 55 degrees.\nModel it with exactly these components: \"side-left\" (the left side panel), \"side-right\" (the right side panel), \"shelf-1\" (the lowest shelf), \"shelf-2\" (the second shelf), \"shelf-3\" (the third shelf), \"shelf-4\" (the top shelf), \"back\" (the back panel).",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.0018047999999999999,
+   "durationMs": 18313,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":25,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"open-bookshelf\",\"units\":\"mm\",\"components\":[{\"id\":\"side-left\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"pine board\",\"detail\":\"Left vertical side panel, full height 900 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,900,300],\"radius\":1},\"position\":[-351,450,0],\"material\":{\"color\":\"#c9a677\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"side-right\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"pine board\",\"detail\":\"Right vertical side panel, full height 900 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,900,300],\"radius\":1},\"position\":[351,450,0],\"material\":{\"color\":\"#c9a677\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"shelf-1\",\"name\":\"Lowest shelf\",\"category\":\"enclosure\",\"materialName\":\"pine board\",\"detail\":\"Bottom shelf spanning between the side panels\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[684,18,300],\"radius\":1},\"position\":[0,155,0],\"material\":{\"color\":\"#c9a677\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"shelf-2\",\"name\":\"Second shelf\",\"category\":\"enclosure\",\"materialName\":\"pine board\",\"detail\":\"Second shelf from the bottom\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[684,18,300],\"radius\":1},\"position\":[0,395,0],\"material\":{\"color\":\"#c9a677\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"shelf-3\",\"name\":\"Third shelf\",\"category\":\"enclosure\",\"materialName\":\"pine board\",\"detail\":\"Third shelf from the bottom\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[684,18,300],\"radius\":1},\"position\":[0,644,0],\"material\":{\"color\":\"#c9a677\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"shelf-4\",\"name\":\"Top shelf\",\"category\":\"enclosure\",\"materialName\":\"pine board\",\"detail\":\"Top shelf closing the top of the unit\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[684,18,300],\"radius\":1},\"position\":[0,891,0],\"material\":{\"color\":\"#c9a677\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"back\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"thin board\",\"detail\":\"Thin back panel behind the shelves\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[720,900,6],\"radius\":1},\"position\":[0,450,-147],\"material\":{\"color\":\"#8f6b43\",\"roughness\":0.9,\"metalness\":0}}]}}",
+   "stage": "pass",
+   "issues": []
+  }
+ ]
+}

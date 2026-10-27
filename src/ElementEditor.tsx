@@ -1,6 +1,7 @@
 import {PartRegenerationPanel}from'./PartRegenerationPanel';
+import {PartRegenerationPlanPanel} from './PartRegenerationPlanPanel';
 import {bindRequiredParameters,declarationTextSha256}from'./engine/parameter-binding';
-import {beveledPlatePack}from'./engine/plate-bevel';
+import {beveledPlatePack, qualityBeveledPlatePack, deterministicBeveledPlatePack}from'./engine/plate-bevel';
 import {parseEditableElementSource} from './engine/editable-source';
 import { centeredPlatePack } from './engine/centered-plate-pack';
 import {ElementSourceLoadSession,type ElementSourceLoadState} from './element-source-load';
@@ -23,6 +24,7 @@ import { fitPerspectiveCameraToBounds } from './engine/camera-framing';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js';
 import { createBirdProject } from './engine/bird-element-demo.js';
 import { applyEllipsoidSurfaceFlow } from './engine/element-surface-flow.js';
@@ -40,6 +42,8 @@ domainRegistry.register(gearPack);
 domainRegistry.register(surfaceGearPack);
 domainRegistry.register(centeredPlatePack);
 domainRegistry.register(beveledPlatePack);
+domainRegistry.register(qualityBeveledPlatePack);
+domainRegistry.register(deterministicBeveledPlatePack);
 
 function download(blob: Blob, name: string): void {
   const url = URL.createObjectURL(blob);
@@ -118,6 +122,7 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
     const el = host.current; if (!el) return;
     if (resetPose.current) { pose.current = null; resetPose.current = false; }
     let renderer: THREE.WebGLRenderer | undefined, controls: OrbitControls | undefined, frame = 0, observer: ResizeObserver | undefined;
+    let previewEnvironment: THREE.WebGLRenderTarget | undefined;
     const scene = new THREE.Scene(); scene.background = new THREE.Color('#20252b');
     const camera = new THREE.PerspectiveCamera(45, 1, 0.001, 100);
     scene.add(new THREE.HemisphereLight(0xffffff, 0x535e6c, 2));
@@ -152,6 +157,11 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
       if(checker)restoreChecker=attachUvChecker(built.root);
       scene.add(built.root); sceneRef.current = built;
       renderer = new THREE.WebGLRenderer({ antialias: true }); renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+      const room = new RoomEnvironment(), pmrem = new THREE.PMREMGenerator(renderer);
+      try {
+        previewEnvironment = pmrem.fromScene(room, 0.04, 0.1, 100, {size: 128});
+        scene.environment = previewEnvironment.texture; scene.environmentIntensity = 0.8;
+      } finally {room.dispose(); pmrem.dispose();}
       el.appendChild(renderer.domElement);
       controls = new OrbitControls(camera, renderer.domElement); controls.enableDamping = true;
       const box = new THREE.Box3().setFromObject(built.root);
@@ -184,7 +194,7 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
       setMetrics(`${built.stats.visibleElements}/${built.stats.elements} elements · ${built.stats.triangles} triangles · ${built.stats.geometryBytes} geometry-buffer bytes · ${built.stats.generationMs.toFixed(1)} ms build · ${built.stats.drawCallsEstimate} estimated calls`);
       setError('');
     } catch (e) { setError(String(e)); built?.dispose(); }
-    return () => { if (!resetPose.current) pose.current = controls ? { position: camera.position.clone(), target: controls.target.clone() } : null; cancelAnimationFrame(frame); observer?.disconnect(); controls?.dispose(); if (renderer) { renderer.domElement.removeEventListener('pointerdown', pointerDown); renderer.domElement.removeEventListener('pointerup', pointer); renderer.forceContextLoss(); renderer.dispose(); renderer.domElement.remove(); } restoreChecker?.(); built?.dispose(); if (sceneRef.current === built) sceneRef.current = null; };
+    return () => { if (!resetPose.current) pose.current = controls ? { position: camera.position.clone(), target: controls.target.clone() } : null; cancelAnimationFrame(frame); observer?.disconnect(); controls?.dispose(); previewEnvironment?.dispose(); if (renderer) { renderer.domElement.removeEventListener('pointerdown', pointerDown); renderer.domElement.removeEventListener('pointerup', pointer); renderer.forceContextLoss(); renderer.dispose(); renderer.domElement.remove(); } restoreChecker?.(); built?.dispose(); if (sceneRef.current === built) sceneRef.current = null; };
   }, [project, workspace, activeAsset, lod, isolate, explode, isolate ? selection : '', cameraRevision,checker]);
   useEffect(() => {
     const root = sceneRef.current?.root;
@@ -307,7 +317,7 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
 <div className="editor-view-controls" role="group" aria-label="Viewport controls">    {button('Fit view', () => { resetPose.current = true; setCameraRevision(n => n + 1); })}<form onSubmit={e => { e.preventDefault(); if (project.parts.some(p => p.id === targetId) || project.groups.some(g => g.id === targetId) || elements.some(x => x.id === targetId)) { select(targetId); setError(''); } else setError(`Unknown element ID: ${targetId}`); }}><label>Select by ID <input value={targetId} onChange={e => setTargetId(e.target.value)} /></label><button type="submit">Select</button></form><label>LOD <select value={lod} onChange={e => setLod(e.target.value as 'low' | 'detail')}><option value="detail">Detail</option><option value="low">Low</option></select></label>
     <label><input type="checkbox" disabled={!!workspace&&!selection} title={workspace&&!selection?'Select a part, element or group to isolate':undefined} checked={isolate} onChange={e => setIsolate(e.target.checked)} /> Isolate selection</label>
     <label><input type="checkbox" checked={checker} onChange={e=>setChecker(e.target.checked)}/> Synthetic UV checker preview</label></div>
-    <p className="editor-runtime-status" role={error?'alert':'status'}>{error || `${metrics} · ${actualCalls} measured render calls · ${pickMs.toFixed(1)} ms last pick · ${glbBytes} bytes last GLB · ${sceneRef.current ? 'viewport ready' : 'viewport unavailable'}`}</p>
+    <details className="editor-runtime-details" open={Boolean(error)}><summary>{error ? 'Scene error' : `${sceneRef.current ? 'Viewport ready' : 'Preparing viewport'} · Studio lighting · Scene details`}</summary><p className="editor-runtime-status" role={error?'alert':'status'}>{error || `${metrics} · ${actualCalls} measured render calls · ${pickMs.toFixed(1)} ms last pick · ${glbBytes} bytes last GLB · ${sceneRef.current ? 'viewport ready' : 'viewport unavailable'}`}</p></details>
     <div className="element-columns">
       <div className="element-viewport" ref={host} aria-label="3D viewport; click to select" style={{ minWidth: 0, minHeight: 200 }} />
       <aside className="element-tree" aria-label="Element tree"><h2>Parts and regions</h2>{project.assemblies?.map(a=><details key={a.id} open><summary>{a.name} · {a.id}</summary><p>Rotation axis [{a.axis.join(", ")}] · identity datum</p>{project.parts.filter(p=>p.assemblyId===a.id).map(p=><button key={p.id} aria-pressed={selection===p.id} onClick={()=>select(p.id)}>{p.id}</button>)}</details>)}{project.parts.map(p => <details key={p.id}><summary><button aria-pressed={selection===p.id} onClick={() => select(p.id)}>{p.name}</button></summary>{project.regions.filter(r => r.partId === p.id).map(r => <details key={r.id}><summary>{r.name}</summary>{project.groups.filter(g => g.regionId === r.id).map(g => <details key={g.id}><summary><button aria-pressed={selection===g.id} onClick={() => select(g.id)}>{g.id} ({g.count})</button></summary><p>First 100 shown</p>{elements.filter(x => x.groupId === g.id).slice(0, 100).map(x => <div key={x.id}><button aria-pressed={selection===x.id} onClick={() => select(x.id)}>{x.id}</button></div>)}</details>)}</details>)}{project.elements.filter(e => e.partId === p.id && !e.groupId).slice(0, 100).map(e => <div key={e.id}><button aria-pressed={selection===e.id} onClick={() => select(e.id)}>{e.id}</button></div>)}</details>)}</aside>
@@ -339,6 +349,7 @@ export default function ElementEditor({initialProject,workspace,activeAsset,onAs
         <button type="button" onClick={()=>{if(sourceLoad.current.blocked)return;download(new Blob([JSON.stringify(uvReceipt,null,2)],{type:'application/json'}),'morphloom-current-uv-summary.json');}}>Save current UV summary</button></>}
     </details>
 
+    <PartRegenerationPlanPanel registry={domainRegistry} project={project} targetId={selection} disabled={actionsBlocked||hasPackInputError} onApply={next=>run(()=>next)} captureIntent={()=>{const ticket=loadTicket.current,captured=project;return()=>mounted.current&&loadTicket.current===ticket&&currentProject.current===captured&&!sourceLoad.current.blocked;}} />
     <details><summary>Declarative modeling recipe · local only</summary><p>Supports surface-flow, surface-rows and analytic ellipsoid anchor-align. The recipe must match the current source SHA256; a failed step prevents every change. No scripts or external models are executed.</p><button type="button" disabled={actionsBlocked||project.groups.length===0} onClick={async()=>{const ticket=++loadTicket.current,captured=project;setRecipeReceipt(null);try{const sourceSHA256=await modelingSourceSHA256(captured);if(!mounted.current||loadTicket.current!==ticket||currentProject.current!==captured)return;setRecipeText(JSON.stringify({schema:MODELING_RECIPE_VERSION,sourceSHA256,steps:[{op:'surface-flow',groupId:group?.id??captured.groups[0].id,direction:flowDirection,elevationDegrees:flowElevation}]},null,2));setError('');}catch(e){if(mounted.current&&loadTicket.current===ticket)setError(String(e));}}}>Prepare recipe template</button><label>Modeling recipe JSON<textarea aria-label="Modeling recipe JSON" maxLength={65536} rows={8} value={recipeText} onChange={e=>{setRecipeText(e.target.value);setRecipeReceipt(null);}} /></label><button type="button" disabled={actionsBlocked||!recipeText} onClick={async()=>{const ticket=++loadTicket.current,captured=project,text=recipeText;setRecipeReceipt(null);try{const result=await applyModelingRecipe(captured,text);if(!mounted.current||loadTicket.current!==ticket||currentProject.current!==captured)return;run(()=>result.project);setRecipeReceipt(result);}catch(e){if(mounted.current&&loadTicket.current===ticket&&currentProject.current===captured)setError(String(e));}}}>Apply modeling recipe</button>{!loadBlocked&&recipeReceipt?.project===project&&<><p>Applied {recipeReceipt.receipt.steps} steps · source {recipeReceipt.receipt.sourceSHA256} · output {recipeReceipt.receipt.outputSHA256}</p><button type="button" onClick={()=>download(new Blob([JSON.stringify(recipeReceipt.receipt,null,2)],{type:'application/json'}),'sceliph-modeling-receipt.json')}>Save modeling receipt</button></>}</details>
 <details className="editor-section"><summary>Advanced preview &amp; source options</summary><p>64px / 8 cells per UV tile. Diagnostic appearance; normal exports retain source PBR.</p>
     {button('Export checker diagnostic GLB',()=>{void exportGlb(true,true);},actionsBlocked)}

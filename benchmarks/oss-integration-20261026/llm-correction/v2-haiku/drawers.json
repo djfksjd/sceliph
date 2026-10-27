@@ -1,0 +1,106 @@
+{
+ "summary": {
+  "id": "drawers",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.00111189,
+  "modelIds": [
+   "claude-haiku-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00111189,
+   "durationMs": 12584,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"three-drawer-cabinet\",\"units\":\"mm\",\"components\":[{\"id\":\"carcass\",\"name\":\"Cabinet carcass\",\"category\":\"enclosure\",\"materialName\":\"Wood\",\"detail\":\"Rounded box carcass, 600 x 900 x 500 mm, standing on the floor and centred on x and z.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,900,500],\"radius\":10},\"position\":[0,450,0],\"material\":{\"color\":\"#8b5a2b\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"drawer_1\",\"name\":\"Drawer front 1 (bottom)\",\"category\":\"mechanical\",\"materialName\":\"Wood\",\"detail\":\"Drawer front board, 580 x 280 x 20 mm, bottom drawer, 15 mm gap below.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[580,280,20],\"radius\":3},\"position\":[0,155,260],\"material\":{\"color\":\"#c8a275\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"drawer_2\",\"name\":\"Drawer front 2 (middle)\",\"category\":\"mechanical\",\"materialName\":\"Wood\",\"detail\":\"Drawer front board, 580 x 280 x 20 mm, middle drawer, 15 mm gaps above and below.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[580,280,20],\"radius\":3},\"position\":[0,450,260],\"material\":{\"color\":\"#c8a275\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"drawer_3\",\"name\":\"Drawer front 3 (top)\",\"category\":\"mechanical\",\"materialName\":\"Wood\",\"detail\":\"Drawer front board, 580 x 280 x 20 mm, top drawer, 15 mm gap above.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[580,280,20],\"radius\":3},\"position\":[0,745,260],\"material\":{\"color\":\"#c8a275\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"handle_1\",\"name\":\"Handle 1\",\"category\":\"mechanical\",\"materialName\":\"Steel\",\"detail\":\"Horizontal cylindrical handle, 12 mm diameter, 200 mm long along x, axis 30 mm in front of drawer_1 front surface.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":200,\"radialSegments\":32},\"position\":[0,155,300],\"rotation\":[0,0,1.5708],\"material\":{\"color\":\"#444444\",\"roughness\":0.3,\"metalness\":0.8}},{\"id\":\"handle_2\",\"name\":\"Handle 2\",\"category\":\"mechanical\",\"materialName\":\"Steel\",\"detail\":\"Horizontal cylindrical handle, 12 mm diameter, 200 mm long along x, axis 30 mm in front of drawer_2 front surface.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":200,\"radialSegments\":32},\"position\":[0,450,300],\"rotation\":[0,0,1.5708],\"material\":{\"color\":\"#444444\",\"roughness\":0.3,\"metalness\":0.8}},{\"id\":\"handle_3\",\"name\":\"Handle 3\",\"category\":\"mechanical\",\"materialName\":\"Steel\",\"detail\":\"Horizontal cylindrical handle, 12 mm diameter, 200 mm long along x, axis 30 mm in front of drawer_3 front surface.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":200,\"radialSegments\":32},\"position\":[0,745,300],\"rotation\":[0,0,1.5708],\"material\":{\"color\":\"#444444\",\"roughness\":0.3,\"metalness\":0.8}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 4464,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      600,
+      900,
+      556
+     ],
+     "dimensionChecks": [
+      {
+       "id": "d3-top",
+       "expectedMm": 885,
+       "actualMm": 885.0000005960464,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "d1-bot",
+       "expectedMm": 15,
+       "actualMm": 14.99999940395355,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "h2-x",
+       "expectedMm": 200,
+       "actualMm": 200.0000470573446,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "h2-y",
+       "expectedMm": 12,
+       "actualMm": 12.00073474525874,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "h1-front",
+       "expectedMm": 306,
+       "actualMm": 306.00000005215406,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "depth",
+       "expectedMm": 556,
+       "actualMm": 556.0000000521541,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0.000011920928966180355,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

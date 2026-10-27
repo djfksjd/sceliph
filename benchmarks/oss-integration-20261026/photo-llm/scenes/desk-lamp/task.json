@@ -1,0 +1,23 @@
+{
+ "schema": "sceliph.photo-llm-task/0.1",
+ "id": "desk-lamp",
+ "object": "a table lamp: a round base, a thin vertical pole and a conical shade",
+ "components": [
+  {
+   "id": "base",
+   "description": "the round base"
+  },
+  {
+   "id": "pole",
+   "description": "the vertical pole"
+  },
+  {
+   "id": "shade",
+   "description": "the lamp shade (a truncated cone)"
+  }
+ ],
+ "referenceComponentId": "base",
+ "known": "The round base is 160 mm in diameter.",
+ "knownDimensionMm": 160,
+ "fovXDegrees": 50
+}

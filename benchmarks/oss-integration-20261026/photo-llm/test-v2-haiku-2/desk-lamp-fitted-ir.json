@@ -1,0 +1,79 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "base",
+   "category": "mechanical",
+   "materialName": "black painted metal",
+   "detail": "Round flat base, 160 mm diameter, 30 mm thick.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 80,
+    "radiusBottom": 80,
+    "depth": 37.381312029541206,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "pole",
+   "name": "pole",
+   "category": "mechanical",
+   "materialName": "brushed metal rod",
+   "detail": "Thin vertical pole, about 10 mm diameter, rising from the base into the shade.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 331.8482334739589,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    190.03537595082298,
+    0
+   ],
+   "material": {
+    "color": "#aaaaaa",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "shade",
+   "category": "enclosure",
+   "materialName": "fabric lampshade",
+   "detail": "Truncated conical shade, about 190 mm bottom diameter, 90 mm top diameter, 150 mm tall.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 49.20994896288714,
+    "radiusBottom": 98.09025199374494,
+    "depth": 130.54335297654086,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    449.47900441091474,
+    0
+   ],
+   "material": {
+    "color": "#e8e0c8",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  }
+ ]
+}

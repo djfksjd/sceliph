@@ -1,0 +1,46 @@
+{
+  "schema": "morphloom.blender-component-edit-audit/0.2",
+  "application": "Blender",
+  "version": "5.2.1 LTS",
+  "input": {
+    "path": "/Users/danny/sceliph-engine-20261010/output/playwright/browser-reopened.glb",
+    "bytes": 478040,
+    "sha256": "0fec880d3c0e88c097f2d13d435075eace8c762df2259ead2432175197b43664"
+  },
+  "output": {
+    "path": "/Users/danny/sceliph-engine-20261010/outputs/part-plan-20261010-delivery/browser-blender-edited.glb",
+    "bytes": 493680,
+    "sha256": "3862b3e52a9d010ddbdf67ce6fdcb35b6efaeb4ae4c8734bd6aa046602ba22d5"
+  },
+  "stabilityOutput": {
+    "path": "/Users/danny/sceliph-engine-20261010/outputs/part-plan-20261010-delivery/browser-blender-edited-stability.glb",
+    "bytes": 493680,
+    "sha256": "50d66840bf73153d66388c5a062c192db698928046d2ccaff5b13cdf731de8f4"
+  },
+  "edit": {
+    "component": "panel_user",
+    "kind": "translation",
+    "translationMm": [
+      3.0,
+      0.0,
+      0.0
+    ]
+  },
+  "meshCount": 3,
+  "unchangedMeshes": 2,
+  "maximumUnchangedCenterDriftMm": 0.0,
+  "maximumUnchangedSizeDriftMm": 0.0,
+  "topologyChanges": [],
+  "topologyInterpretation": "Polygon counts, canonical face geometry, UVs, PBR factors, hierarchy, and modifier bindings are blocking. A one-time seam vertex/edge re-index is reported only when those semantic invariants remain stable.",
+  "runtime": {
+    "armatures": 0,
+    "actions": 0,
+    "preserved": true
+  },
+  "skinnedSemanticDeferrals": [],
+  "stabilityChanges": [],
+  "warnings": [],
+  "pass": true,
+  "blockers": [],
+  "limitation": "This proves one requested object transform or bounded local-relief edit, canonical face/UV/PBR-slot/hierarchy preservation, bounded non-target drift, and armature/action inventory preservation through two Blender round trips. Vertex/edge indices at UV or normal seams are not promised to remain identical. It does not prove artistic usability, native CAD feature history, bone-weight editing, shader-node parity beyond exported PBR factors, or every possible edit operation."
+}

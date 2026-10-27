@@ -1,0 +1,239 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Brass floor lamp with linen shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base_low",
+   "name": "Base lower disc",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "wide lower disc of the base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 56,
+    "radiusBottom": 56,
+    "depth": 14,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    7,
+    0
+   ],
+   "material": {
+    "color": "#b8812f",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "base_mid",
+   "name": "Base middle step",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "narrower middle step",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 50,
+    "depth": 14,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    21,
+    0
+   ],
+   "material": {
+    "color": "#b8812f",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "base_top",
+   "name": "Base top tray",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "upper tray with raised rim",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 56,
+    "radiusBottom": 52,
+    "depth": 16,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    36,
+    0
+   ],
+   "material": {
+    "color": "#c08a35",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "slender brass stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 610,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    345,
+    0
+   ],
+   "material": {
+    "color": "#b8812f",
+    "roughness": 0.3,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Collar",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "collar below shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 11,
+    "radiusBottom": 11,
+    "depth": 14,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    530,
+    0
+   ],
+   "material": {
+    "color": "#b8812f",
+    "roughness": 0.3,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "knob_stem",
+   "name": "Knob stem",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "short stem to knob",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      -14,
+      0,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    -8,
+    547,
+    0
+   ],
+   "material": {
+    "color": "#b8812f",
+    "roughness": 0.3,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Knob",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "round switch knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 14,
+    "depth": 8,
+    "radialSegments": 32
+   },
+   "position": [
+    -24,
+    547,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#b8812f",
+    "roughness": 0.3,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Linen shade",
+   "category": "enclosure",
+   "materialName": "linen",
+   "detail": "tapered drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 82,
+    "radiusBottom": 89,
+    "depth": 138,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    642,
+    0
+   ],
+   "material": {
+    "color": "#f1efe8",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cord_switch",
+   "name": "Cord switch",
+   "category": "interconnect",
+   "materialName": "black plastic",
+   "detail": "small inline switch near base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     6,
+     22,
+     6
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    70,
+    9
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Brass Globe Table Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Cylinder base",
+   "category": "enclosure",
+   "materialName": "brushed brass",
+   "detail": "Solid brushed brass cylinder base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 54.5,
+    "radiusBottom": 54.5,
+    "depth": 121,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    60.5,
+    0
+   ],
+   "material": {
+    "color": "#9a7d46",
+    "roughness": 0.5,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "cup",
+   "name": "Socket cup",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Small brass cup holding the globe",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 14,
+    "depth": 14,
+    "radialSegments": 32
+   },
+   "position": [
+    -21,
+    124,
+    12
+   ],
+   "material": {
+    "color": "#7d6535",
+    "roughness": 0.45,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "globe",
+   "name": "Glass globe",
+   "category": "display",
+   "materialName": "opal glass",
+   "detail": "Frosted opal glass globe diffuser",
+   "geometry": {
+    "op": "sphere",
+    "radius": 70
+   },
+   "position": [
+    -21,
+    184,
+    12
+   ],
+   "material": {
+    "color": "#fff1cf",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  }
+ ]
+}

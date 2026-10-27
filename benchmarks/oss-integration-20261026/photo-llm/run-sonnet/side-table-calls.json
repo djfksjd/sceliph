@@ -1,0 +1,21 @@
+{
+ "request": "Photo: a small side table with a rectangular top and four round legs.\nThe table top is 600 mm wide (its longer side).\nThe camera's horizontal field of view is 50 degrees.\nModel it with exactly these components: \"top\" (the table top), \"leg-1\" (a leg), \"leg-2\" (a leg), \"leg-3\" (a leg), \"leg-4\" (a leg).",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0119252,
+   "durationMs": 5847,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":25,\"elevationDeg\":25},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Side table\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Table top\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Rectangular table top, 600 x 30 x 430 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,430],\"radius\":4},\"position\":[0,455,0],\"material\":{\"color\":\"#c27d4a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg-1\",\"name\":\"Leg 1\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Round leg, front left\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":16,\"radiusBottom\":16,\"depth\":440,\"radialSegments\":32},\"position\":[-265,220,185],\"material\":{\"color\":\"#7a4a28\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg-2\",\"name\":\"Leg 2\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Round leg, front right\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":16,\"radiusBottom\":16,\"depth\":440,\"radialSegments\":32},\"position\":[265,220,185],\"material\":{\"color\":\"#7a4a28\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg-3\",\"name\":\"Leg 3\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Round leg, back left\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":16,\"radiusBottom\":16,\"depth\":440,\"radialSegments\":32},\"position\":[-265,220,-185],\"material\":{\"color\":\"#7a4a28\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg-4\",\"name\":\"Leg 4\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Round leg, back right\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":16,\"radiusBottom\":16,\"depth\":440,\"radialSegments\":32},\"position\":[265,220,-185],\"material\":{\"color\":\"#7a4a28\",\"roughness\":0.7,\"metalness\":0}}]}}",
+   "stage": "pass",
+   "issues": []
+  }
+ ]
+}

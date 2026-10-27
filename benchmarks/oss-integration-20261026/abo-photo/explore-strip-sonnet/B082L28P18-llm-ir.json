@@ -1,0 +1,184 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "2-Drawer File Cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plinth",
+   "name": "Base plinth",
+   "category": "enclosure",
+   "materialName": "painted MDF",
+   "detail": "Raised base trim",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     470,
+     40,
+     560
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    20,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "body",
+   "name": "Cabinet body",
+   "category": "enclosure",
+   "materialName": "painted wood",
+   "detail": "Main carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     440,
+     624,
+     530
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    352,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "painted wood",
+   "detail": "Overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     480,
+     28,
+     570
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    710,
+    0
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.55
+   }
+  },
+  {
+   "id": "drawer_top",
+   "name": "Upper drawer front",
+   "category": "mechanical",
+   "materialName": "painted wood",
+   "detail": "Upper drawer panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     390,
+     290,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    505,
+    270
+   ],
+   "material": {
+    "color": "#fafaf8",
+    "roughness": 0.55
+   }
+  },
+  {
+   "id": "drawer_bottom",
+   "name": "Lower drawer front",
+   "category": "mechanical",
+   "materialName": "painted wood",
+   "detail": "Lower drawer panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     390,
+     290,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    200,
+    270
+   ],
+   "material": {
+    "color": "#fafaf8",
+    "roughness": 0.55
+   }
+  },
+  {
+   "id": "handle_top",
+   "name": "Upper handle",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Recessed pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     28,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    505,
+    281
+   ],
+   "material": {
+    "color": "#c4a982",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle_bottom",
+   "name": "Lower handle",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Recessed pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     28,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    200,
+    281
+   ],
+   "material": {
+    "color": "#c4a982",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

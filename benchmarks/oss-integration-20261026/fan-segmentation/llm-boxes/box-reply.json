@@ -1,0 +1,96 @@
+{
+ "schema": "sceliph.part-box-response/0.1",
+ "imageSha256": "39cd73c6179abf618bf801cf83b739caff050d2b0ef3a70f54758a457576265e",
+ "width": 640,
+ "height": 640,
+ "parts": [
+  {
+   "id": "guard_ring",
+   "boxes": [
+    [
+     112,
+     78,
+     504,
+     508
+    ]
+   ],
+   "note": "whole wire guard; the rim is its outer edge"
+  },
+  {
+   "id": "stand",
+   "boxes": [
+    [
+     95,
+     292,
+     140,
+     580
+    ],
+    [
+     128,
+     500,
+     500,
+     578
+    ],
+    [
+     492,
+     280,
+     552,
+     535
+    ]
+   ],
+   "note": "left arm, floor base, right arm"
+  },
+  {
+   "id": "hub",
+   "boxes": [
+    [
+     308,
+     248,
+     368,
+     306
+    ]
+   ]
+  },
+  {
+   "id": "knobs",
+   "boxes": [
+    [
+     84,
+     286,
+     113,
+     318
+    ],
+    [
+     487,
+     280,
+     522,
+     306
+    ]
+   ]
+  },
+  {
+   "id": "feet",
+   "boxes": [
+    [
+     175,
+     512,
+     200,
+     532
+    ],
+    [
+     322,
+     508,
+     345,
+     522
+    ],
+    [
+     472,
+     520,
+     500,
+     538
+    ]
+   ],
+   "note": "low confidence: feet are small and partly hidden by the base"
+  }
+ ]
+}

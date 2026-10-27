@@ -1,0 +1,2809 @@
+{
+ "spec": {
+  "schema": "sceliph.photo-fit-spec/0.1",
+  "referenceComponentId": "carcass",
+  "viewHint": {
+   "azimuthDeg": -35,
+   "elevationDeg": 10,
+   "sigmaDeg": 20
+  },
+  "knownExtent": {
+   "axis": 1,
+   "mm": 1320.8,
+   "sigmaMm": 13.208
+  },
+  "parameters": [
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 482.5,
+    "max": 1930
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 25,
+    "max": 100
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 245,
+    "max": 980
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 635.4999989196658,
+    "max": 1956.5000010803342
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 465,
+    "max": 1860
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 590,
+    "max": 2360
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 225,
+    "max": 900
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 15,
+    "max": 60,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 9,
+    "max": 36,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 45,
+    "max": 180,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1070.5000010803342,
+    "max": 250.5000010803342,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": -1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": -1
+     }
+    ]
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -615.5000010803342,
+    "max": 705.5000010803342,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -470.5000010803342,
+    "max": 850.5000010803342,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": -1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": -1
+     }
+    ]
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 400,
+    "max": 1600,
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 104,
+    "max": 416,
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 12,
+    "max": 48,
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -446.5000010803342,
+    "max": 874.5000010803342
+   },
+   {
+    "componentId": "drawer2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -218.5000010803342,
+    "max": 1102.5000010803342
+   },
+   {
+    "componentId": "drawer3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 9.499998919665813,
+    "max": 1330.5000010803342
+   },
+   {
+    "componentId": "drawer4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 237.4999989196658,
+    "max": 1558.5000010803342
+   },
+   {
+    "componentId": "drawer5",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 465.4999989196658,
+    "max": 1786.5000010803342
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -428.5000010803342,
+    "max": 892.5000010803342,
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 8,
+    "max": 32,
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob1",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob2",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 14,
+    "max": 56,
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -330.5000010803342,
+    "max": 990.5000010803342,
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -434.5000010803342,
+    "max": 886.5000010803342
+   },
+   {
+    "componentId": "knob2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -206.5000010803342,
+    "max": 1114.5000010803342
+   },
+   {
+    "componentId": "knob3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 21.499998919665813,
+    "max": 1342.5000010803342
+   },
+   {
+    "componentId": "knob4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 249.4999989196658,
+    "max": 1570.5000010803342
+   },
+   {
+    "componentId": "knob5",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 477.4999989196658,
+    "max": 1798.5000010803342
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -404.5000010803342,
+    "max": 916.5000010803342,
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   }
+  ]
+ },
+ "derived": {
+  "parameters": [
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 482.5,
+    "max": 1930
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 25,
+    "max": 100
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 245,
+    "max": 980
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 635.4999989196658,
+    "max": 1956.5000010803342
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 465,
+    "max": 1860
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 590,
+    "max": 2360
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 225,
+    "max": 900
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 15,
+    "max": 60,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 9,
+    "max": 36,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 45,
+    "max": 180,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1070.5000010803342,
+    "max": 250.5000010803342,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": -1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": -1
+     }
+    ]
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -615.5000010803342,
+    "max": 705.5000010803342,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -470.5000010803342,
+    "max": 850.5000010803342,
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": -1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": -1
+     }
+    ]
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 400,
+    "max": 1600,
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 104,
+    "max": 416,
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 12,
+    "max": 48,
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -446.5000010803342,
+    "max": 874.5000010803342
+   },
+   {
+    "componentId": "drawer2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -218.5000010803342,
+    "max": 1102.5000010803342
+   },
+   {
+    "componentId": "drawer3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 9.499998919665813,
+    "max": 1330.5000010803342
+   },
+   {
+    "componentId": "drawer4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 237.4999989196658,
+    "max": 1558.5000010803342
+   },
+   {
+    "componentId": "drawer5",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 465.4999989196658,
+    "max": 1786.5000010803342
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -428.5000010803342,
+    "max": 892.5000010803342,
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 8,
+    "max": 32,
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob1",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob2",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 14,
+    "max": 56,
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -330.5000010803342,
+    "max": 990.5000010803342,
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -434.5000010803342,
+    "max": 886.5000010803342
+   },
+   {
+    "componentId": "knob2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -206.5000010803342,
+    "max": 1114.5000010803342
+   },
+   {
+    "componentId": "knob3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 21.499998919665813,
+    "max": 1342.5000010803342
+   },
+   {
+    "componentId": "knob4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 249.4999989196658,
+    "max": 1570.5000010803342
+   },
+   {
+    "componentId": "knob5",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 477.4999989196658,
+    "max": 1798.5000010803342
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -404.5000010803342,
+    "max": 916.5000010803342,
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   }
+  ],
+  "locked": [],
+  "groups": [
+   [
+    "leg_fl",
+    "leg_fr",
+    "leg_bl",
+    "leg_br"
+   ],
+   [
+    "drawer1",
+    "drawer2",
+    "drawer3",
+    "drawer4",
+    "drawer5"
+   ],
+   [
+    "knob1",
+    "knob2",
+    "knob3",
+    "knob4",
+    "knob5"
+   ]
+  ],
+  "aligned": [
+   {
+    "componentId": "top",
+    "axis": 0
+   },
+   {
+    "componentId": "top",
+    "axis": 2
+   },
+   {
+    "componentId": "drawer1",
+    "axis": 0
+   },
+   {
+    "componentId": "drawer2",
+    "axis": 0
+   },
+   {
+    "componentId": "drawer3",
+    "axis": 0
+   },
+   {
+    "componentId": "drawer4",
+    "axis": 0
+   },
+   {
+    "componentId": "drawer5",
+    "axis": 0
+   }
+  ],
+  "skipped": []
+ },
+ "anchor": {
+  "estimatedMm": 1580.9561014175415,
+  "knownMm": 1320.8,
+  "scaleCorrection": 0.8354438170773519
+ },
+ "raster": {
+  "width": 124,
+  "height": 160,
+  "crop": {
+   "x": 0,
+   "y": 0,
+   "width": 497,
+   "height": 640
+  }
+ },
+ "cameraOnly": {
+  "loss": 0.015689201212320716,
+  "view": {
+   "id": "photo",
+   "iou": 0.9633206343581111,
+   "meanBoundaryDistancePx": 0.027826271174753205,
+   "depthResidual": 0.003310944809675759
+  }
+ },
+ "receipt": {
+  "schema": "sceliph.silhouette-parameter-fit/0.2",
+  "provenance": "inferred",
+  "seed": 1,
+  "parameters": [
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 482.5,
+    "max": 1930,
+    "before": 965,
+    "after": 965,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0011165109671242845,
+    "frozen": true
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 25,
+    "max": 100,
+    "before": 50,
+    "after": 50,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0007703853828436476,
+    "frozen": true
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 245,
+    "max": 980,
+    "before": 490,
+    "after": 490,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0005031018845248411,
+    "frozen": true
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 635.4999989196658,
+    "max": 1956.5000010803342,
+    "before": 1296,
+    "after": 796.4698678703198,
+    "spread": 533.3874073184988,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.2771815497552012,
+    "frozen": false
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 465,
+    "max": 1860,
+    "before": 930,
+    "after": 966.2389928747732,
+    "spread": 73.95533268018403,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.01883608418423105,
+    "frozen": false
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 590,
+    "max": 2360,
+    "before": 1180,
+    "after": 1249.096586564102,
+    "spread": 42.92972249638751,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.006978800678481927,
+    "frozen": false
+   },
+   {
+    "componentId": "carcass",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 225,
+    "max": 900,
+    "before": 450,
+    "after": 494.2915141269309,
+    "spread": 34.12074780778664,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.004396174837423557,
+    "frozen": false
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 15,
+    "max": 60,
+    "before": 30,
+    "after": 30,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0000843624759309311,
+    "frozen": true
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 9,
+    "max": 36,
+    "before": 18,
+    "after": 18,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00008514992461360754,
+    "frozen": true
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 45,
+    "max": 180,
+    "before": 90,
+    "after": 90,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0009022302666735968,
+    "frozen": true
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "position",
+     0
+    ],
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": -1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": -1
+     }
+    ],
+    "min": -1070.5000010803342,
+    "max": 250.5000010803342,
+    "before": -410,
+    "after": -410,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0014705957593563294,
+    "frozen": true
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "position",
+     1
+    ],
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "position",
+       1
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": -615.5000010803342,
+    "max": 705.5000010803342,
+    "before": 45,
+    "after": 408.2319279782198,
+    "spread": 327.5712631260327,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.25353965183373167,
+    "frozen": false
+   },
+   {
+    "componentId": "leg_fl",
+    "path": [
+     "position",
+     2
+    ],
+    "links": [
+     {
+      "componentId": "leg_fr",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "leg_bl",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": -1
+     },
+     {
+      "componentId": "leg_br",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": -1
+     }
+    ],
+    "min": -470.5000010803342,
+    "max": 850.5000010803342,
+    "before": 190,
+    "after": 190,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0004023293440950093,
+    "frozen": true
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 400,
+    "max": 1600,
+    "before": 800,
+    "after": 800,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00008521220438550102,
+    "frozen": true
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 104,
+    "max": 416,
+    "before": 208,
+    "after": 208,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00007086023317805744,
+    "frozen": true
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 12,
+    "max": 48,
+    "before": 24,
+    "after": 24,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000006068834129957512,
+    "frozen": true
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -446.5000010803342,
+    "max": 874.5000010803342,
+    "before": 214,
+    "after": 87.50079476680071,
+    "spread": 186.7612845782669,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.008147143229496782,
+    "frozen": false
+   },
+   {
+    "componentId": "drawer2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -218.5000010803342,
+    "max": 1102.5000010803342,
+    "before": 442,
+    "after": 442,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000015840407937652012,
+    "frozen": true
+   },
+   {
+    "componentId": "drawer3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 9.499998919665813,
+    "max": 1330.5000010803342,
+    "before": 670,
+    "after": 670,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00004599230322119979,
+    "frozen": true
+   },
+   {
+    "componentId": "drawer4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 237.4999989196658,
+    "max": 1558.5000010803342,
+    "before": 898,
+    "after": 898,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00007433813463324224,
+    "frozen": true
+   },
+   {
+    "componentId": "drawer5",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 465.4999989196658,
+    "max": 1786.5000010803342,
+    "before": 1126,
+    "after": 1126,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00007536053594594042,
+    "frozen": true
+   },
+   {
+    "componentId": "drawer1",
+    "path": [
+     "position",
+     2
+    ],
+    "links": [
+     {
+      "componentId": "drawer2",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer3",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer4",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "drawer5",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": -428.5000010803342,
+    "max": 892.5000010803342,
+    "before": 232,
+    "after": -171.91893031241125,
+    "spread": 413.2896985621104,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.005031057704220059,
+    "frozen": false
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "geometry",
+       "radiusTop"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob1",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob2",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 8,
+    "max": 32,
+    "before": 16,
+    "after": 16,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0000016465466582578359,
+    "frozen": true
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "geometry",
+       "depth"
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 14,
+    "max": 56,
+    "before": 28,
+    "after": 28,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 4.026616314128928e-7,
+    "frozen": true
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "position",
+     0
+    ],
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "position",
+       0
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": -330.5000010803342,
+    "max": 990.5000010803342,
+    "before": 330,
+    "after": 330,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0000054342002016594115,
+    "frozen": true
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -434.5000010803342,
+    "max": 886.5000010803342,
+    "before": 226,
+    "after": 226,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 3.183968401397619e-7,
+    "frozen": true
+   },
+   {
+    "componentId": "knob2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -206.5000010803342,
+    "max": 1114.5000010803342,
+    "before": 454,
+    "after": 454,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 2.2039235011636626e-7,
+    "frozen": true
+   },
+   {
+    "componentId": "knob3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 21.499998919665813,
+    "max": 1342.5000010803342,
+    "before": 682,
+    "after": 682,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 1.6592179690605446e-7,
+    "frozen": true
+   },
+   {
+    "componentId": "knob4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 249.4999989196658,
+    "max": 1570.5000010803342,
+    "before": 910,
+    "after": 910,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0000015657569998224485,
+    "frozen": true
+   },
+   {
+    "componentId": "knob5",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 477.4999989196658,
+    "max": 1798.5000010803342,
+    "before": 1138,
+    "after": 1138,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 2.8812010429909996e-7,
+    "frozen": true
+   },
+   {
+    "componentId": "knob1",
+    "path": [
+     "position",
+     2
+    ],
+    "links": [
+     {
+      "componentId": "knob2",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob3",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob4",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     },
+     {
+      "componentId": "knob5",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": -404.5000010803342,
+    "max": 916.5000010803342,
+    "before": 256,
+    "after": 256,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00005105391748654042,
+    "frozen": true
+   }
+  ],
+  "cameraParameters": [
+   {
+    "viewId": "photo",
+    "field": "azimuthDeg",
+    "prior": {
+     "mean": -35,
+     "sigma": 20
+    },
+    "min": -85,
+    "max": 15,
+    "before": -29.241943810468463,
+    "after": -30.296395636466592,
+    "spread": 2.0600899279867093,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "elevationDeg",
+    "prior": {
+     "mean": 10,
+     "sigma": 20
+    },
+    "min": -40,
+    "max": 60,
+    "before": 12.21122032803386,
+    "after": 12.339457247516066,
+    "spread": 3.3570618296060672,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "distanceMm",
+    "prior": {
+     "mean": 5217.781495807862,
+     "sigma": 1304.4453739519654
+    },
+    "min": 2608.890747903931,
+    "max": 10435.562991615723,
+    "before": 5420.6738820773535,
+    "after": 5505.202293190121,
+    "spread": 188.47545038209682,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetX",
+    "min": -1321.6882444714481,
+    "max": 1320.3117598498886,
+    "before": 229.0194923489355,
+    "after": 199.7840835972961,
+    "spread": 194.68189416766404,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetY",
+    "min": -746.2978269134022,
+    "max": 1895.7021774079344,
+    "before": 512.3278392387562,
+    "after": 486.1402187241548,
+    "spread": 89.94596597515533,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetZ",
+    "min": -1290.513434109953,
+    "max": 1351.4865702113837,
+    "before": -392.5621510317143,
+    "after": -333.84903750163596,
+    "spread": 324.34568905817935,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "rollDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 4
+    },
+    "min": -15,
+    "max": 15,
+    "before": -0.11247139242315463,
+    "after": 0.2743316699859619,
+    "spread": 0.33604404029010304,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "focalScale",
+    "prior": {
+     "mean": 1,
+     "sigma": 0.15
+    },
+    "min": 0.6,
+    "max": 1.6,
+    "before": 1.0037908256314265,
+    "after": 0.9955122246674549,
+    "spread": 0.002082326499211473,
+    "identified": true,
+    "atBound": false
+   }
+  ],
+  "orbits": [
+   {
+    "viewId": "photo",
+    "orbit": {
+     "width": 497,
+     "height": 640,
+     "fx": 1794.8571933360818,
+     "fy": 1794.8571933360818,
+     "cx": 248.5,
+     "cy": 320,
+     "target": [
+      199.7840835972961,
+      486.1402187241548,
+      -333.84903750163596
+     ],
+     "azimuthDeg": -30.296395636466592,
+     "elevationDeg": 12.339457247516066,
+     "distanceMm": 5505.202293190121,
+     "rollDeg": 0.2743316699859619,
+     "focalScale": 0.9955122246674549
+    }
+   }
+  ],
+  "restarts": 2,
+  "before": {
+   "loss": 0.04728884248643814,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.871482683982684,
+     "meanBoundaryDistancePx": 0.1877715159769024,
+     "depthResidual": 0.006207361813826146
+    }
+   ]
+  },
+  "after": {
+   "loss": 0.009854412984373173,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.9781179648806844,
+     "meanBoundaryDistancePx": 0.03443362998042358,
+     "depthResidual": 0.0019031721957236151
+    }
+   ]
+  },
+  "evaluations": 16068,
+  "stopReason": "maxEvaluations",
+  "compiledGeometries": 12033
+ },
+ "lowConfidenceReasons": [
+  "top.position.1 is not identified by equally good restarts.",
+  "carcass.geometry.size.0 is not identified by equally good restarts.",
+  "carcass.geometry.size.1 is not identified by equally good restarts.",
+  "carcass.geometry.size.2 is not identified by equally good restarts.",
+  "leg_fl.position.1 is not identified by equally good restarts.",
+  "drawer1.position.1 is not identified by equally good restarts.",
+  "drawer1.position.2 is not identified by equally good restarts.",
+  "camera.azimuthDeg is not identified by equally good restarts.",
+  "camera.elevationDeg is not identified by equally good restarts.",
+  "camera.distanceMm is not identified by equally good restarts.",
+  "camera.targetX is not identified by equally good restarts.",
+  "camera.targetY is not identified by equally good restarts.",
+  "camera.targetZ is not identified by equally good restarts."
+ ],
+ "acceptance": {
+  "accept": true,
+  "relativeLossGain": 0.37189836174485985,
+  "freeParameters": 7,
+  "iou": 0.9781179648806844,
+  "reasons": []
+ }
+}

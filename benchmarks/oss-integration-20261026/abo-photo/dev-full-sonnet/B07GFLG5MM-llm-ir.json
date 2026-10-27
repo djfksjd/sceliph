@@ -1,0 +1,345 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Idro 4-Door Shoe Cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "dark grey laminated board",
+   "detail": "Full-height left side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1630,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    -251,
+    815,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "dark grey laminated board",
+   "detail": "Full-height right side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1630,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    251,
+    815,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "dark grey laminated board",
+   "detail": "Top board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     18,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1621,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "base",
+   "name": "Base plinth",
+   "category": "enclosure",
+   "materialName": "dark grey laminated board",
+   "detail": "Recessed bottom board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     30,
+     230
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    15,
+    -8
+   ],
+   "material": {
+    "color": "#2e2e30",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "fibreboard",
+   "detail": "Thin back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     1590,
+     8
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    825,
+    -121
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door1",
+   "name": "Bottom flap door",
+   "category": "mechanical",
+   "materialName": "dark grey woodgrain laminate",
+   "detail": "Tilt-out flap door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     391,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    227.5,
+    116
+   ],
+   "material": {
+    "color": "#46464a",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door2",
+   "name": "Second flap door",
+   "category": "mechanical",
+   "materialName": "dark grey woodgrain laminate",
+   "detail": "Tilt-out flap door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     391,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    622.5,
+    116
+   ],
+   "material": {
+    "color": "#46464a",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door3",
+   "name": "Third flap door",
+   "category": "mechanical",
+   "materialName": "dark grey woodgrain laminate",
+   "detail": "Tilt-out flap door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     391,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1017.5,
+    116
+   ],
+   "material": {
+    "color": "#46464a",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door4",
+   "name": "Top flap door",
+   "category": "mechanical",
+   "materialName": "dark grey woodgrain laminate",
+   "detail": "Tilt-out flap door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     391,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1412.5,
+    116
+   ],
+   "material": {
+    "color": "#46464a",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Slim handle bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     6,
+     6
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    412,
+    127
+   ],
+   "material": {
+    "color": "#b8b8bc",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Slim handle bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     6,
+     6
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    807,
+    127
+   ],
+   "material": {
+    "color": "#b8b8bc",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Slim handle bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     6,
+     6
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1202,
+    127
+   ],
+   "material": {
+    "color": "#b8b8bc",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Slim handle bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     6,
+     6
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1597,
+    127
+   ],
+   "material": {
+    "color": "#b8b8bc",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

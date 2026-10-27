@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sceliph.part-regeneration-plan/0.1",
+  "title": "Source-bound atomic authored part replacement plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "sourceSha256", "steps"],
+  "properties": {
+    "schema": {"const": "sceliph.part-regeneration-plan/0.1"},
+    "sourceSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "steps": {
+      "type": "array", "minItems": 1, "maxItems": 8,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["targetId", "declaration"],
+        "properties": {
+          "targetId": {"type": "string", "pattern": "^[A-Za-z0-9_-]{1,128}$"},
+          "declaration": {
+            "type": "object", "additionalProperties": false,
+            "required": ["schema", "units", "coordinates", "packId", "input", "requiredCapabilities"],
+            "properties": {
+              "schema": {"const": "sceliph.domain-invocation/0.1"},
+              "units": {"const": "mm"},
+              "coordinates": {"const": "right-handed-y-up"},
+              "packId": {"type": "string", "minLength": 1, "maxLength": 128},
+              "input": {"type": "object"},
+              "requiredCapabilities": {"type": "array", "maxItems": 32, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+              "materials": {"type": "array", "maxItems": 0}
+            }
+          }
+        }
+      }
+    }
+  },
+  "$comment": "Runtime additionally requires unique targetIds, source SHA identity, unlocked static native0.6 authored extrusions, a registered single-extrusion generator and final topology/UV gates. Maximum UTF-8 plan size 64 KiB."
+}

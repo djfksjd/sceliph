@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Stone & Beam Lámpara de mesa de trípode industrial moderna con foco de luz – pulgadas, pino con pantalla de lino.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 508 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0213618,
+   "durationMs": 15386,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":4},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Tripod table lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Linen shade\",\"category\":\"enclosure\",\"materialName\":\"linen\",\"detail\":\"Tapered drum shade in tan linen\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":121,\"radiusBottom\":141,\"depth\":238,\"radialSegments\":48},\"position\":[0,389,0],\"material\":{\"color\":\"#b87b45\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"stem\",\"name\":\"Stem\",\"category\":\"mechanical\",\"materialName\":\"black metal\",\"detail\":\"Central rod\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4,\"radiusBottom\":4,\"depth\":70,\"radialSegments\":16},\"position\":[0,262,0],\"material\":{\"color\":\"#1c1c1c\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"hub\",\"name\":\"Hub\",\"category\":\"mechanical\",\"materialName\":\"black metal\",\"detail\":\"Leg joint hub\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":18,\"radiusBottom\":24,\"depth\":28,\"radialSegments\":24},\"position\":[0,228,0],\"material\":{\"color\":\"#1f1f1f\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"leg_front\",\"name\":\"Front leg\",\"category\":\"mechanical\",\"materialName\":\"stained pine\",\"detail\":\"Wooden leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,225,15],[0,0,95]],\"radius\":10},\"position\":[0,0,0],\"material\":{\"color\":\"#6b4a3a\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"leg_left\",\"name\":\"Left leg\",\"category\":\"mechanical\",\"materialName\":\"stained pine\",\"detail\":\"Wooden leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[-13,225,-7.5],[-82,0,-48]],\"radius\":10},\"position\":[0,0,0],\"material\":{\"color\":\"#6b4a3a\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"leg_right\",\"name\":\"Right leg\",\"category\":\"mechanical\",\"materialName\":\"stained pine\",\"detail\":\"Wooden leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[13,225,-7.5],[82,0,-48]],\"radius\":10},\"position\":[0,0,0],\"material\":{\"color\":\"#6b4a3a\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"brace_a\",\"name\":\"Brace front-left\",\"category\":\"mechanical\",\"materialName\":\"black metal\",\"detail\":\"Thin brace rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,90,63],[-55,90,-31.5]],\"radius\":2},\"position\":[0,0,0],\"material\":{\"color\":\"#1c1c1c\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"brace_b\",\"name\":\"Brace front-right\",\"category\":\"mechanical\",\"materialName\":\"black metal\",\"detail\":\"Thin brace rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,90,63],[55,90,-31.5]],\"radius\":2},\"position\":[0,0,0],\"material\":{\"color\":\"#1c1c1c\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"brace_c\",\"name\":\"Brace back\",\"category\":\"mechanical\",\"materialName\":\"black metal\",\"detail\":\"Thin brace rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[-55,90,-31.5],[55,90,-31.5]],\"radius\":2},\"position\":[0,0,0],\"material\":{\"color\":\"#1c1c1c\",\"roughness\":0.5,\"metalness\":0.6}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

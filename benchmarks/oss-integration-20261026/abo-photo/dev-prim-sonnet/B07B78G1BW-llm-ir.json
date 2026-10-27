@@ -1,0 +1,407 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-century buffet credenza",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "wood",
+   "detail": "Top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1390,
+     30,
+     430
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    798,
+    0
+   ],
+   "material": {
+    "color": "#b87a3d",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "body",
+   "name": "Cabinet body",
+   "category": "enclosure",
+   "materialName": "wood",
+   "detail": "Cabinet carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1350,
+     374,
+     400
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    596,
+    0
+   ],
+   "material": {
+    "color": "#a96b32",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "doorl",
+   "name": "Left doors",
+   "category": "enclosure",
+   "materialName": "wood",
+   "detail": "Left door pair",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     665,
+     350,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    -336,
+    596,
+    204
+   ],
+   "material": {
+    "color": "#b5762f",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "doorr",
+   "name": "Right doors",
+   "category": "enclosure",
+   "materialName": "wood",
+   "detail": "Right door pair",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     665,
+     350,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    336,
+    596,
+    204
+   ],
+   "material": {
+    "color": "#b5762f",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "h1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Vertical handle",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -125,
+      0
+     ],
+     [
+      0,
+      125,
+      0
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    -335,
+    596,
+    225
+   ],
+   "material": {
+    "color": "#4a2c1a",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "h2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Vertical handle",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -125,
+      0
+     ],
+     [
+      0,
+      125,
+      0
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    -290,
+    596,
+    225
+   ],
+   "material": {
+    "color": "#4a2c1a",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "h3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Vertical handle",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -125,
+      0
+     ],
+     [
+      0,
+      125,
+      0
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    290,
+    596,
+    225
+   ],
+   "material": {
+    "color": "#4a2c1a",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "h4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Vertical handle",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -125,
+      0
+     ],
+     [
+      0,
+      125,
+      0
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    335,
+    596,
+    225
+   ],
+   "material": {
+    "color": "#4a2c1a",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "legfl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 16,
+    "depth": 410,
+    "radialSegments": 24
+   },
+   "position": [
+    -600,
+    205,
+    150
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#a96b32",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "legfr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 16,
+    "depth": 410,
+    "radialSegments": 24
+   },
+   "position": [
+    600,
+    205,
+    150
+   ],
+   "material": {
+    "color": "#a96b32",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "legbl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 16,
+    "depth": 410,
+    "radialSegments": 24
+   },
+   "position": [
+    -600,
+    205,
+    -150
+   ],
+   "material": {
+    "color": "#a96b32",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "legbr",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 16,
+    "depth": 410,
+    "radialSegments": 24
+   },
+   "position": [
+    600,
+    205,
+    -150
+   ],
+   "material": {
+    "color": "#a96b32",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "railf",
+   "name": "Front shelf rail",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Shelf frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1200,
+     30,
+     22
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    200,
+    150
+   ],
+   "material": {
+    "color": "#a96b32",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "railb",
+   "name": "Back shelf rail",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Shelf frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1200,
+     30,
+     22
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    200,
+    -150
+   ],
+   "material": {
+    "color": "#a96b32",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "slats",
+   "name": "Shelf slats",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Slatted lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1190,
+     12,
+     280
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    196,
+    0
+   ],
+   "material": {
+    "color": "#6e4224",
+    "roughness": 0.7
+   }
+  }
+ ]
+}

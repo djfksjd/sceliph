@@ -1,0 +1,33 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand - Ravenna Home 2-Light Flush-Mount Ceiling Light with White Frosted Glass Shade, Brushed Steel.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 130 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0250292,
+   "durationMs": 15311,
+   "isError": false
+  },
+  {
+   "round": 1,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0301612,
+   "durationMs": 16159,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":25},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Flush-mount ceiling light\",\"units\":\"mm\",\"components\":[{\"id\":\"finial\",\"name\":\"Finial\",\"category\":\"mechanical\",\"materialName\":\"brushed steel\",\"detail\":\"small bottom knob\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4,\"radiusBottom\":5,\"depth\":14,\"radialSegments\":32},\"position\":[0,7,0],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"cap\",\"name\":\"Finial cap\",\"category\":\"mechanical\",\"materialName\":\"brushed steel\",\"detail\":\"cone under the glass\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":16,\"depth\":10,\"radialSegments\":32},\"position\":[0,19,0],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"shade\",\"name\":\"Glass shade\",\"category\":\"enclosure\",\"materialName\":\"frosted glass\",\"detail\":\"white dome bowl\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[20,1],[80,12],[130,40],[160,75],[168,100],[168,104]],\"segments\":64},\"position\":[0,14,0],\"material\":{\"color\":\"#f2f3f4\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"rim\",\"name\":\"Shade rim\",\"category\":\"enclosure\",\"materialName\":\"brushed steel\",\"detail\":\"collar around the glass\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[165,-6],[178,-6],[178,6],[165,6]],\"segments\":64},\"position\":[0,118,0],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"outer_ring\",\"name\":\"Outer ring\",\"category\":\"mechanical\",\"materialName\":\"brushed steel\",\"detail\":\"decorative outer band\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[192,-8],[196,-8],[196,8],[192,8]],\"segments\":64},\"position\":[0,122,0],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"peg_a\",\"name\":\"Ring peg right\",\"category\":\"mechanical\",\"materialName\":\"brushed steel\",\"detail\":\"connects ring to rim\",\"geometry\":{\"op\":\"tube\",\"points\":[[-12,0,0],[12,0,0]],\"radius\":3},\"position\":[186,122,0],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"peg_b\",\"name\":\"Ring peg back\",\"category\":\"mechanical\",\"materialName\":\"brushed steel\",\"detail\":\"connects ring to rim\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,0,-12],[0,0,12]],\"radius\":3},\"position\":[0,122,-186],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}}]}}",
+   "stage": "requirements"
+  },
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":25},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Flush-mount ceiling light\",\"units\":\"mm\",\"components\":[{\"id\":\"finial\",\"name\":\"Finial\",\"category\":\"mechanical\",\"materialName\":\"brushed steel\",\"detail\":\"small bottom knob\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4,\"radiusBottom\":5,\"depth\":14,\"radialSegments\":32},\"position\":[0,7,0],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"cap\",\"name\":\"Finial cap\",\"category\":\"mechanical\",\"materialName\":\"brushed steel\",\"detail\":\"cone under the glass\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":16,\"depth\":10,\"radialSegments\":32},\"position\":[0,19,0],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"shade\",\"name\":\"Glass shade\",\"category\":\"enclosure\",\"materialName\":\"frosted glass\",\"detail\":\"white dome bowl\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[20,1],[80,12],[130,40],[160,75],[168,100],[168,104],[0,104]],\"segments\":64},\"position\":[0,14,0],\"material\":{\"color\":\"#f2f3f4\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"rim\",\"name\":\"Shade rim\",\"category\":\"enclosure\",\"materialName\":\"brushed steel\",\"detail\":\"collar around the glass\",\"geometry\":{\"op\":\"torus\",\"radius\":172,\"tube\":6},\"position\":[0,118,0],\"rotation\":[1.5707963,0,0],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"outer_ring\",\"name\":\"Outer ring\",\"category\":\"mechanical\",\"materialName\":\"brushed steel\",\"detail\":\"decorative outer band\",\"geometry\":{\"op\":\"torus\",\"radius\":188,\"tube\":6},\"position\":[0,124,0],\"rotation\":[1.5707963,0,0],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"peg_a\",\"name\":\"Ring peg right\",\"category\":\"mechanical\",\"materialName\":\"brushed steel\",\"detail\":\"connects ring to rim\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":3,\"radiusBottom\":3,\"depth\":24,\"radialSegments\":16},\"position\":[180,121,0],\"rotation\":[0,0,1.5707963],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"peg_b\",\"name\":\"Ring peg back\",\"category\":\"mechanical\",\"materialName\":\"brushed steel\",\"detail\":\"connects ring to rim\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":3,\"radiusBottom\":3,\"depth\":24,\"radialSegments\":16},\"position\":[0,121,-180],\"rotation\":[1.5707963,0,0],\"material\":{\"color\":\"#b8babc\",\"roughness\":0.4,\"metalness\":0.9}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

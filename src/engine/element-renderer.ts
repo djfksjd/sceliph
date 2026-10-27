@@ -8,6 +8,7 @@ import { resolveElements, validateProject, type ElementProject, type ResolvedEle
 
 import { compileAssemblyGeometry,compileDerivedGearGeometry } from './assembly-compiler';
 import { creasePartNormals } from './part-geometry';
+import {CAP_DIAGONAL_POLICY, improveExtrudeCapDiagonals} from './extrude-cap-diagonals';
 import { toothIds } from './spur-gear';
 export const ELEMENT_RENDERER_REVISION = 'morphloom.element-renderer/0.12';
 
@@ -24,13 +25,18 @@ function declareNativeUvMapping(mesh:THREE.Mesh,p:Part):void{
 function rawPartGeometry(part: Part, lod: Lod): THREE.BufferGeometry {
   if (part.geometry) {
     const g = structuredClone(part.geometry);
+    // Calculate the authored crease normals before changing cap adjacency.
+    // Uniform weighting depends on triangle incidence; repairing first would
+    // change unrelated wall normals despite keeping all wall vertices fixed.
+    const improveCaps = g.op === 'extrude' && g.capTriangulation === CAP_DIAGONAL_POLICY;
+    if (g.op === 'extrude' && improveCaps) delete g.capTriangulation;
     if (lod === 'low') {
       if (g.op === 'sphere') { g.widthSegments = Math.min(g.widthSegments ?? 48,16); g.heightSegments = Math.min(g.heightSegments ?? 32,12); }
       if (g.op === 'lathe') g.segments = Math.min(g.segments ?? 64,32);
     }
     const raw = g.op==='spur-gear'&&part.axialChamferMm!==undefined?compileGearChamfer(g,part.axialChamferMm):g.op==='spur-gear'?compileDerivedGearGeometry(g):compileAssemblyGeometry(g);
     if (g.op !== 'sphere') {
-      try { const result = creasePartNormals(raw,part.creaseAngle ?? Math.PI/6,part.normalWeighting); if (result !== raw) raw.dispose(); return result; }
+      try { const result = creasePartNormals(raw,part.creaseAngle ?? Math.PI/6,part.normalWeighting); if (improveCaps) improveExtrudeCapDiagonals(result); if (result !== raw) raw.dispose(); return result; }
       catch (error) { raw.dispose(); throw error; }
     }
     return raw;

@@ -1,0 +1,113 @@
+{
+ "summary": {
+  "id": "spiral_stair",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.031776,
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.031776,
+   "durationMs": 16220,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Spiral staircase\",\"units\":\"mm\",\"components\":[\n{\"id\":\"column\",\"name\":\"Central column\",\"category\":\"mechanical\",\"materialName\":\"Steel\",\"detail\":\"Vertical column, 100 mm diameter, 2400 mm tall\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":50,\"radiusBottom\":50,\"depth\":2400,\"radialSegments\":48},\"position\":[0,1200,0],\"material\":{\"color\":\"#8a8f98\",\"roughness\":0.4,\"metalness\":0.8}},\n{\"id\":\"step_1\",\"name\":\"Step 1\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 0 deg, top at 200 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[350,185,0],\"rotation\":[0,0,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_2\",\"name\":\"Step 2\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 30 deg, top at 400 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[303.109,385,-175],\"rotation\":[0,0.523599,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_3\",\"name\":\"Step 3\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 60 deg, top at 600 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[175,585,-303.109],\"rotation\":[0,1.047198,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_4\",\"name\":\"Step 4\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 90 deg, top at 800 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[0,785,-350],\"rotation\":[0,1.570796,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_5\",\"name\":\"Step 5\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 120 deg, top at 1000 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[-175,985,-303.109],\"rotation\":[0,2.094395,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_6\",\"name\":\"Step 6\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 150 deg, top at 1200 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[-303.109,1185,-175],\"rotation\":[0,2.617994,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_7\",\"name\":\"Step 7\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 180 deg, top at 1400 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[-350,1385,0],\"rotation\":[0,3.141593,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_8\",\"name\":\"Step 8\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 210 deg, top at 1600 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[-303.109,1585,175],\"rotation\":[0,3.665191,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_9\",\"name\":\"Step 9\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 240 deg, top at 1800 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[-175,1785,303.109],\"rotation\":[0,4.18879,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_10\",\"name\":\"Step 10\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 270 deg, top at 2000 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[0,1985,350],\"rotation\":[0,4.712389,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_11\",\"name\":\"Step 11\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 300 deg, top at 2200 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[175,2185,303.109],\"rotation\":[0,5.235988,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}},\n{\"id\":\"step_12\",\"name\":\"Step 12\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Step at angle 330 deg, top at 2400 mm\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[303.109,2385,175],\"rotation\":[0,5.759587,0],\"material\":{\"color\":\"#a67c52\",\"roughness\":0.7,\"metalness\":0}}\n]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 11952,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      1300,
+      2400,
+      1300
+     ],
+     "dimensionChecks": [
+      {
+       "id": "col",
+       "expectedMm": 2400,
+       "actualMm": 2400.0000953674316,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s1-top",
+       "expectedMm": 200,
+       "actualMm": 199.99999966472387,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s12-top",
+       "expectedMm": 2400,
+       "actualMm": 2399.999999664724,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s2-x",
+       "expectedMm": 644.62,
+       "actualMm": 644.615244182182,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s2-z",
+       "expectedMm": 516.51,
+       "actualMm": 516.5064514193618,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s4-x",
+       "expectedMm": 250,
+       "actualMm": 250.00019607693247,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s4-z",
+       "expectedMm": 600,
+       "actualMm": 600.00010554055,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": -0.00004768371586472142,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,263 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Torchiere floor lamp with reading light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Floor base",
+   "category": "mechanical",
+   "materialName": "Brushed silver metal",
+   "detail": "Flat round weighted base disc resting on the floor",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 122.30996352394925,
+    "radiusBottom": 122.30996352394925,
+    "depth": 40,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    20.75319514890498,
+    0
+   ],
+   "material": {
+    "color": "#a9aeb5",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Main pole",
+   "category": "mechanical",
+   "materialName": "Brushed silver metal",
+   "detail": "Slender vertical upright rising from the base to the top shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8.30170985485928,
+    "radiusBottom": 8.30170985485928,
+    "depth": 1394.3621254313066,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    771.6197729338248,
+    0
+   ],
+   "material": {
+    "color": "#b8bcc2",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Top socket collar",
+   "category": "mechanical",
+   "materialName": "Brushed silver metal",
+   "detail": "Short collar joining the pole to the underside of the torchiere bowl",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 20,
+    "radiusBottom": 20,
+    "depth": 40,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    1610,
+    0
+   ],
+   "material": {
+    "color": "#b8bcc2",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "top_shade",
+   "name": "Torchiere uplight bowl",
+   "category": "enclosure",
+   "materialName": "White frosted plastic",
+   "detail": "Wide upturned bowl shade at the top that throws light up toward the ceiling",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      1600
+     ],
+     [
+      40,
+      1610
+     ],
+     [
+      90,
+      1640
+     ],
+     [
+      125,
+      1690
+     ],
+     [
+      143,
+      1745
+     ],
+     [
+      148,
+      1800
+     ],
+     [
+      146,
+      1822
+     ],
+     [
+      138,
+      1829
+     ],
+     [
+      128,
+      1829
+     ],
+     [
+      134,
+      1818
+     ],
+     [
+      136,
+      1795
+     ],
+     [
+      130,
+      1745
+     ],
+     [
+      113,
+      1700
+     ],
+     [
+      84,
+      1664
+     ],
+     [
+      46,
+      1636
+     ],
+     [
+      0,
+      1622
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "reading_arm",
+   "name": "Gooseneck reading arm",
+   "category": "mechanical",
+   "materialName": "Brushed silver metal",
+   "detail": "Curved flexible arm branching off the pole to carry the reading head",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      45,
+      -80,
+      0
+     ],
+     [
+      15,
+      0,
+      0
+     ],
+     [
+      -40,
+      80,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    -45,
+    683.2335440577214,
+    0
+   ],
+   "material": {
+    "color": "#b8bcc2",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "reading_shade",
+   "name": "Reading light shade",
+   "category": "enclosure",
+   "materialName": "White frosted plastic",
+   "detail": "Small dome shade at the end of the arm that directs task light downward",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      1250
+     ],
+     [
+      20,
+      1248
+     ],
+     [
+      38,
+      1235
+     ],
+     [
+      46,
+      1210
+     ],
+     [
+      46,
+      1186
+     ],
+     [
+      38,
+      1186
+     ],
+     [
+      38,
+      1208
+     ],
+     [
+      28,
+      1222
+     ],
+     [
+      0,
+      1226
+     ]
+    ],
+    "segments": 40
+   },
+   "position": [
+    -191.585497079491,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

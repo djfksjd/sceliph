@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Stone & Beam Jon Casual Farmhouse Wood Dining Table, -, Birch Finish.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 762 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.020699699999999998,
+   "durationMs": 17376,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":18},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Round farmhouse dining table\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Tabletop\",\"category\":\"mechanical\",\"materialName\":\"birch veneer\",\"detail\":\"Round parquet top\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":530,\"radiusBottom\":530,\"depth\":40,\"radialSegments\":64},\"position\":[0,742,0],\"material\":{\"color\":\"#b88a5a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"apron\",\"name\":\"Apron ring\",\"category\":\"mechanical\",\"materialName\":\"birch\",\"detail\":\"Round apron under top\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":465,\"radiusBottom\":465,\"depth\":55,\"radialSegments\":64},\"position\":[0,694,0],\"material\":{\"color\":\"#8c6a46\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"leg_front\",\"name\":\"Front leg\",\"category\":\"mechanical\",\"materialName\":\"birch\",\"detail\":\"Square leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[80,667,80],\"radius\":4},\"position\":[0,333,380],\"material\":{\"color\":\"#8c6a46\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"leg_back\",\"name\":\"Back leg\",\"category\":\"mechanical\",\"materialName\":\"birch\",\"detail\":\"Square leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[80,667,80],\"radius\":4},\"position\":[0,333,-380],\"material\":{\"color\":\"#8c6a46\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"leg_left\",\"name\":\"Left leg\",\"category\":\"mechanical\",\"materialName\":\"birch\",\"detail\":\"Square leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[80,667,80],\"radius\":4},\"position\":[-380,333,0],\"material\":{\"color\":\"#8c6a46\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"leg_right\",\"name\":\"Right leg\",\"category\":\"mechanical\",\"materialName\":\"birch\",\"detail\":\"Square leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[80,667,80],\"radius\":4},\"position\":[380,333,0],\"material\":{\"color\":\"#8c6a46\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"stretcher_x\",\"name\":\"Stretcher X\",\"category\":\"mechanical\",\"materialName\":\"birch\",\"detail\":\"Cross stretcher along X\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[680,70,50],\"radius\":4},\"position\":[0,215,0],\"material\":{\"color\":\"#8c6a46\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"stretcher_z\",\"name\":\"Stretcher Z\",\"category\":\"mechanical\",\"materialName\":\"birch\",\"detail\":\"Cross stretcher along Z\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[50,70,680],\"radius\":4},\"position\":[0,200,0],\"material\":{\"color\":\"#8c6a46\",\"roughness\":0.75,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

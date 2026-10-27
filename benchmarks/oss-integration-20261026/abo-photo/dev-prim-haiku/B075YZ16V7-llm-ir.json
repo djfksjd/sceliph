@@ -1,0 +1,453 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Amazon Basics Rivet Mid-Century 6-Drawer Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "Warm espresso pine",
+   "detail": "Solid pine case, 1549 x 643 x 432 mm, sitting on the metal base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1549,
+     643,
+     432
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    491.5,
+    0
+   ],
+   "material": {
+    "color": "#8a4a22",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_top_left",
+   "name": "Top left drawer front",
+   "category": "mechanical",
+   "materialName": "Pine drawer front",
+   "detail": "Drawer front, 740 x 200 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     200,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    -386,
+    704,
+    225
+   ],
+   "material": {
+    "color": "#a4521f",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_top_right",
+   "name": "Top right drawer front",
+   "category": "mechanical",
+   "materialName": "Pine drawer front",
+   "detail": "Drawer front, 740 x 200 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     200,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    386,
+    704,
+    225
+   ],
+   "material": {
+    "color": "#a4521f",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_mid_left",
+   "name": "Middle left drawer front",
+   "category": "mechanical",
+   "materialName": "Pine drawer front",
+   "detail": "Drawer front, 740 x 200 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     200,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    -386,
+    492,
+    225
+   ],
+   "material": {
+    "color": "#a4521f",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_mid_right",
+   "name": "Middle right drawer front",
+   "category": "mechanical",
+   "materialName": "Pine drawer front",
+   "detail": "Drawer front, 740 x 200 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     200,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    386,
+    492,
+    225
+   ],
+   "material": {
+    "color": "#a4521f",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_bot_left",
+   "name": "Bottom left drawer front",
+   "category": "mechanical",
+   "materialName": "Pine drawer front",
+   "detail": "Drawer front, 740 x 200 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     200,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    -386,
+    280,
+    225
+   ],
+   "material": {
+    "color": "#a4521f",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_bot_right",
+   "name": "Bottom right drawer front",
+   "category": "mechanical",
+   "materialName": "Pine drawer front",
+   "detail": "Drawer front, 740 x 200 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     200,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    386,
+    280,
+    225
+   ],
+   "material": {
+    "color": "#a4521f",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rail_front",
+   "name": "Front base rail",
+   "category": "mechanical",
+   "materialName": "Black steel",
+   "detail": "Floor-level front rail of the open metal base frame",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -730,
+      0,
+      0
+     ],
+     [
+      730,
+      0,
+      0
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    0,
+    12,
+    200
+   ],
+   "material": {
+    "color": "#1e1e1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "rail_back",
+   "name": "Back base rail",
+   "category": "mechanical",
+   "materialName": "Black steel",
+   "detail": "Floor-level back rail of the open metal base frame",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -730,
+      0,
+      0
+     ],
+     [
+      730,
+      0,
+      0
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    0,
+    12,
+    -200
+   ],
+   "material": {
+    "color": "#1e1e1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bar_left",
+   "name": "Left end cross bar",
+   "category": "mechanical",
+   "materialName": "Black steel",
+   "detail": "Cross bar joining the front and back rails at the left end",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -200
+     ],
+     [
+      0,
+      0,
+      200
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    -730,
+    12,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bar_right",
+   "name": "Right end cross bar",
+   "category": "mechanical",
+   "materialName": "Black steel",
+   "detail": "Cross bar joining the front and back rails at the right end",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -200
+     ],
+     [
+      0,
+      0,
+      200
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    730,
+    12,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left upright",
+   "category": "mechanical",
+   "materialName": "Black steel",
+   "detail": "Vertical upright at the front left corner of the base",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -79,
+      0
+     ],
+     [
+      0,
+      79,
+      0
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    -730,
+    91,
+    200
+   ],
+   "material": {
+    "color": "#1e1e1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right upright",
+   "category": "mechanical",
+   "materialName": "Black steel",
+   "detail": "Vertical upright at the front right corner of the base",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -79,
+      0
+     ],
+     [
+      0,
+      79,
+      0
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    730,
+    91,
+    200
+   ],
+   "material": {
+    "color": "#1e1e1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left upright",
+   "category": "mechanical",
+   "materialName": "Black steel",
+   "detail": "Vertical upright at the back left corner of the base",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -79,
+      0
+     ],
+     [
+      0,
+      79,
+      0
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    -730,
+    91,
+    -200
+   ],
+   "material": {
+    "color": "#1e1e1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right upright",
+   "category": "mechanical",
+   "materialName": "Black steel",
+   "detail": "Vertical upright at the back right corner of the base",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -79,
+      0
+     ],
+     [
+      0,
+      79,
+      0
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    730,
+    91,
+    -200
+   ],
+   "material": {
+    "color": "#1e1e1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

@@ -1,0 +1,421 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "5-Globe Pendant Chandelier",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "enclosure",
+   "materialName": "black metal",
+   "detail": "round flat canopy plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 175,
+    "radiusBottom": 175,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1209,
+    0
+   ],
+   "material": {
+    "color": "#1c1612",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "g1",
+   "name": "Globe 1",
+   "category": "display",
+   "materialName": "frosted glass",
+   "detail": "lowest front globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 98
+   },
+   "position": [
+    0,
+    98,
+    100
+   ],
+   "material": {
+    "color": "#fbf0d6",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "g2",
+   "name": "Globe 2",
+   "category": "display",
+   "materialName": "frosted glass",
+   "detail": "upper right back globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 98
+   },
+   "position": [
+    125,
+    551,
+    -80
+   ],
+   "material": {
+    "color": "#fbf0d6",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "g3",
+   "name": "Globe 3",
+   "category": "display",
+   "materialName": "frosted glass",
+   "detail": "mid right globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 98
+   },
+   "position": [
+    93,
+    329,
+    80
+   ],
+   "material": {
+    "color": "#fbf0d6",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "g4",
+   "name": "Globe 4",
+   "category": "display",
+   "materialName": "frosted glass",
+   "detail": "left front globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 98
+   },
+   "position": [
+    -125,
+    403,
+    60
+   ],
+   "material": {
+    "color": "#fbf0d6",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "g5",
+   "name": "Globe 5",
+   "category": "display",
+   "materialName": "frosted glass",
+   "detail": "back left globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 98
+   },
+   "position": [
+    -68,
+    489,
+    -100
+   ],
+   "material": {
+    "color": "#fbf0d6",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap1",
+   "name": "Cap 1",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 30,
+    "depth": 14,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    196,
+    100
+   ],
+   "material": {
+    "color": "#1c1612",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cap2",
+   "name": "Cap 2",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 30,
+    "depth": 14,
+    "radialSegments": 24
+   },
+   "position": [
+    125,
+    649,
+    -80
+   ],
+   "material": {
+    "color": "#1c1612",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cap3",
+   "name": "Cap 3",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 30,
+    "depth": 14,
+    "radialSegments": 24
+   },
+   "position": [
+    93,
+    427,
+    80
+   ],
+   "material": {
+    "color": "#1c1612",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cap4",
+   "name": "Cap 4",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 30,
+    "depth": 14,
+    "radialSegments": 24
+   },
+   "position": [
+    -125,
+    501,
+    60
+   ],
+   "material": {
+    "color": "#1c1612",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cap5",
+   "name": "Cap 5",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 30,
+    "depth": 14,
+    "radialSegments": 24
+   },
+   "position": [
+    -68,
+    587,
+    -100
+   ],
+   "material": {
+    "color": "#1c1612",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cord1",
+   "name": "Cord 1",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "hanging cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      997,
+      -50
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    202,
+    100
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cord2",
+   "name": "Cord 2",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "hanging cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      -62,
+      544,
+      40
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    125,
+    655,
+    -80
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cord3",
+   "name": "Cord 3",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "hanging cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      -46,
+      766,
+      -40
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    93,
+    433,
+    80
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cord4",
+   "name": "Cord 4",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "hanging cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      62,
+      692,
+      -30
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    -125,
+    507,
+    60
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cord5",
+   "name": "Cord 5",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "hanging cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      34,
+      606,
+      50
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    -68,
+    593,
+    -100
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

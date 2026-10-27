@@ -1,0 +1,59 @@
+{
+ "schema": "sceliph.photo-llm-eval/0.1",
+ "protocolSha256": "6c6d1983fd372b4c6563d0a75fdbc8e9af7aea40ce5f500a4830e854c80a8979",
+ "sceneImageSha256": {
+  "bookshelf": "0468551cecf87d43105d93e37e206dc4d7c51972bd80adf272e830f2814561ca"
+ },
+ "modelAlias": "replay",
+ "totalCostUsd": 0,
+ "results": [
+  {
+   "id": "bookshelf",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 35,
+    "elevationDeg": 17
+   },
+   "llm": {
+    "medianSizeError": 0.15,
+    "maxSizeError": 0.15,
+    "medianPlacementError": 0.0053,
+    "maxPlacementError": 0.0791,
+    "within5": 0.5,
+    "within10": 0.587
+   },
+   "fit": {
+    "medianSizeError": 0.0257,
+    "maxSizeError": 0.5579,
+    "medianPlacementError": 0.0284,
+    "maxPlacementError": 0.2552,
+    "within5": 0.587,
+    "within10": 0.7826,
+    "parameters": 20,
+    "locked": 1,
+    "groups": [
+     [
+      "side-left",
+      "side-right"
+     ],
+     [
+      "shelf-1",
+      "shelf-2",
+      "shelf-3",
+      "shelf-4"
+     ]
+    ],
+    "iouBefore": 0.8295,
+    "iouAfter": 0.9642,
+    "lowConfidenceReasons": 3,
+    "fitMs": 112175
+   }
+  }
+ ]
+}

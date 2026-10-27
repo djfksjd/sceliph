@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Chase Casual Wood Bedroom Dresser, Natural.\nThe product listing gives its overall height as 1321 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.028375199999999996,
+   "durationMs": 18640,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-35,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Five drawer dresser\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Top\",\"category\":\"enclosure\",\"materialName\":\"oak veneer\",\"detail\":\"Overhanging top panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[930,31,500],\"radius\":8},\"position\":[0,1305.5,0],\"material\":{\"color\":\"#b98d5e\",\"roughness\":0.6}},{\"id\":\"carcass\",\"name\":\"Carcass\",\"category\":\"enclosure\",\"materialName\":\"wood\",\"detail\":\"Main cabinet body\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[880,1200,460],\"radius\":10},\"position\":[0,690,0],\"material\":{\"color\":\"#b48659\",\"roughness\":0.65}},{\"id\":\"leg_fl\",\"name\":\"Front left leg\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Turned tapered leg\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":28,\"radiusBottom\":18,\"depth\":90,\"radialSegments\":24},\"position\":[-400,45,195],\"material\":{\"color\":\"#a87c50\",\"roughness\":0.65}},{\"id\":\"leg_fr\",\"name\":\"Front right leg\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Turned tapered leg\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":28,\"radiusBottom\":18,\"depth\":90,\"radialSegments\":24},\"position\":[400,45,195],\"material\":{\"color\":\"#a87c50\",\"roughness\":0.65}},{\"id\":\"leg_bl\",\"name\":\"Back left leg\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Turned tapered leg\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":28,\"radiusBottom\":18,\"depth\":90,\"radialSegments\":24},\"position\":[-400,45,-195],\"material\":{\"color\":\"#a87c50\",\"roughness\":0.65}},{\"id\":\"leg_br\",\"name\":\"Back right leg\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Turned tapered leg\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":28,\"radiusBottom\":18,\"depth\":90,\"radialSegments\":24},\"position\":[400,45,-195],\"material\":{\"color\":\"#a87c50\",\"roughness\":0.65}},{\"id\":\"drawer1\",\"name\":\"Drawer 1\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Top drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[800,200,18],\"radius\":5},\"position\":[0,1160,236],\"material\":{\"color\":\"#bb9060\",\"roughness\":0.6}},{\"id\":\"drawer2\",\"name\":\"Drawer 2\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[800,200,18],\"radius\":5},\"position\":[0,940,236],\"material\":{\"color\":\"#bb9060\",\"roughness\":0.6}},{\"id\":\"drawer3\",\"name\":\"Drawer 3\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[800,200,18],\"radius\":5},\"position\":[0,720,236],\"material\":{\"color\":\"#bb9060\",\"roughness\":0.6}},{\"id\":\"drawer4\",\"name\":\"Drawer 4\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[800,200,18],\"radius\":5},\"position\":[0,500,236],\"material\":{\"color\":\"#bb9060\",\"roughness\":0.6}},{\"id\":\"drawer5\",\"name\":\"Drawer 5\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Bottom drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[800,200,18],\"radius\":5},\"position\":[0,280,236],\"material\":{\"color\":\"#bb9060\",\"roughness\":0.6}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

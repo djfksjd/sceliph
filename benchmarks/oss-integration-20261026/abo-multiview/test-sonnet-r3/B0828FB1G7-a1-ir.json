@@ -1,0 +1,138 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Semiflush ceiling light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round mounting canopy",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 63,
+    "radiusBottom": 63,
+    "depth": 26,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    197,
+    0
+   ],
+   "material": {
+    "color": "#8c8c88",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Frosted glass shade",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "Shallow bowl shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -82
+     ],
+     [
+      40,
+      -79
+     ],
+     [
+      90,
+      -65
+     ],
+     [
+      130,
+      -40
+     ],
+     [
+      155,
+      -5
+     ],
+     [
+      165,
+      40
+     ],
+     [
+      163,
+      70
+     ],
+     [
+      150,
+      84
+     ],
+     [
+      0,
+      84
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    101,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f6",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "ring",
+   "name": "Finial ring",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Bottom finial collar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 20,
+    "radiusBottom": 28,
+    "depth": 16,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    18,
+    0
+   ],
+   "material": {
+    "color": "#8c8c88",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Finial knob",
+   "category": "mechanical",
+   "materialName": "satin nickel",
+   "detail": "Small stepped knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 16,
+    "depth": 12,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    6,
+    0
+   ],
+   "material": {
+    "color": "#b5b3ac",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

@@ -1,0 +1,301 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Eclipse 5-Globe Pendant",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "Black powder-coated steel",
+   "detail": "Round black ceiling canopy plate that the five cables hang from.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 140,
+    "radiusBottom": 140,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1209,
+    0
+   ],
+   "material": {
+    "color": "#2b2420",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "cable_center",
+   "name": "Centre cable",
+   "category": "interconnect",
+   "materialName": "Black braided cord",
+   "detail": "Central suspension cord running from the canopy down to the bottom globe.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      504.5,
+      0
+     ],
+     [
+      0,
+      -504.5,
+      0
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    694.5,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cable_upper_right",
+   "name": "Upper-right cable",
+   "category": "interconnect",
+   "materialName": "Black braided cord",
+   "detail": "Suspension cord for the upper-right globe.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      272,
+      0
+     ],
+     [
+      0,
+      -272,
+      0
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    110,
+    927,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cable_mid_right",
+   "name": "Middle-right cable",
+   "category": "interconnect",
+   "materialName": "Black braided cord",
+   "detail": "Suspension cord for the middle-right globe.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      343.5,
+      0
+     ],
+     [
+      0,
+      -343.5,
+      0
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    99,
+    855.5,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cable_front_left",
+   "name": "Front-left cable",
+   "category": "interconnect",
+   "materialName": "Black braided cord",
+   "detail": "Suspension cord for the front-left globe.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      327,
+      0
+     ],
+     [
+      0,
+      -327,
+      0
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    -92,
+    872,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cable_back_left",
+   "name": "Back-left cable",
+   "category": "interconnect",
+   "materialName": "Black braided cord",
+   "detail": "Suspension cord for the back-left globe.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      308,
+      0
+     ],
+     [
+      0,
+      -308,
+      0
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    -55,
+    891,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_bottom",
+   "name": "Bottom globe",
+   "category": "enclosure",
+   "materialName": "Frosted opal glass",
+   "detail": "Lowest frosted glass globe, centred over the middle of the fixture.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 95
+   },
+   "position": [
+    11,
+    95,
+    0
+   ],
+   "material": {
+    "color": "#f4efe3",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_mid_right",
+   "name": "Middle-right globe",
+   "category": "enclosure",
+   "materialName": "Frosted opal glass",
+   "detail": "Frosted glass globe on the right side, below the upper-right globe.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 95
+   },
+   "position": [
+    99,
+    417,
+    0
+   ],
+   "material": {
+    "color": "#f4efe3",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_upper_right",
+   "name": "Upper-right globe",
+   "category": "enclosure",
+   "materialName": "Frosted opal glass",
+   "detail": "Highest frosted glass globe, on the right side.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 95
+   },
+   "position": [
+    110,
+    560,
+    0
+   ],
+   "material": {
+    "color": "#f4efe3",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_front_left",
+   "name": "Front-left globe",
+   "category": "enclosure",
+   "materialName": "Frosted opal glass",
+   "detail": "Frosted glass globe on the front left.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 95
+   },
+   "position": [
+    -92,
+    450,
+    0
+   ],
+   "material": {
+    "color": "#f4efe3",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_back_left",
+   "name": "Back-left globe",
+   "category": "enclosure",
+   "materialName": "Frosted opal glass",
+   "detail": "Frosted glass globe partly behind the front-left globe.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 95
+   },
+   "position": [
+    -55,
+    488,
+    0
+   ],
+   "material": {
+    "color": "#f4efe3",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  }
+ ]
+}

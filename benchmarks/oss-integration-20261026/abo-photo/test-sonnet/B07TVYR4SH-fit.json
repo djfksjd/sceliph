@@ -1,0 +1,1335 @@
+{
+ "spec": {
+  "schema": "sceliph.photo-fit-spec/0.1",
+  "referenceComponentId": "side_l",
+  "viewHint": {
+   "azimuthDeg": -35,
+   "elevationDeg": 12,
+   "sigmaDeg": 20
+  },
+  "knownExtent": {
+   "axis": 1,
+   "mm": 881.9999991003599,
+   "sigmaMm": 8.819999991003598
+  },
+  "parameters": [
+   {
+    "componentId": "side_l",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 7.5,
+    "max": 30,
+    "links": [
+     {
+      "componentId": "side_r",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "side_l",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 441,
+    "max": 1764,
+    "links": [
+     {
+      "componentId": "side_r",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "side_l",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 145,
+    "max": 580,
+    "links": [
+     {
+      "componentId": "side_r",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "side_r",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -298.5000145435333,
+    "max": 583.5000145435333
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 135,
+    "max": 540,
+    "links": [
+     {
+      "componentId": "bottom",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7.5,
+    "max": 30,
+    "links": [
+     {
+      "componentId": "bottom",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 145,
+    "max": 580,
+    "links": [
+     {
+      "componentId": "bottom",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 433.4999854564667,
+    "max": 1315.5000145435333
+   },
+   {
+    "componentId": "bottom",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -411.0000145435333,
+    "max": 471.0000145435333
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 135,
+    "max": 540,
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7.5,
+    "max": 30,
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 140,
+    "max": 560,
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -121.00001454353333,
+    "max": 761.0000145435333
+   },
+   {
+    "componentId": "shelf_high",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 158.99998545646667,
+    "max": 1041.0000145435333
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -436.0000145435333,
+    "max": 446.0000145435333,
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 135,
+    "max": 540
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 420,
+    "max": 1680
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 2.5,
+    "max": 10
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 10.999985456466675,
+    "max": 893.0000145435333
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -583.0000145435333,
+    "max": 299.0000145435333
+   }
+  ]
+ },
+ "derived": {
+  "parameters": [
+   {
+    "componentId": "side_l",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 7.5,
+    "max": 30,
+    "links": [
+     {
+      "componentId": "side_r",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "side_l",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 441,
+    "max": 1764,
+    "links": [
+     {
+      "componentId": "side_r",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "side_l",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 145,
+    "max": 580,
+    "links": [
+     {
+      "componentId": "side_r",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "side_r",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -298.5000145435333,
+    "max": 583.5000145435333
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 135,
+    "max": 540,
+    "links": [
+     {
+      "componentId": "bottom",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7.5,
+    "max": 30,
+    "links": [
+     {
+      "componentId": "bottom",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 145,
+    "max": 580,
+    "links": [
+     {
+      "componentId": "bottom",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 433.4999854564667,
+    "max": 1315.5000145435333
+   },
+   {
+    "componentId": "bottom",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -411.0000145435333,
+    "max": 471.0000145435333
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 135,
+    "max": 540,
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7.5,
+    "max": 30,
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 140,
+    "max": 560,
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -121.00001454353333,
+    "max": 761.0000145435333
+   },
+   {
+    "componentId": "shelf_high",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 158.99998545646667,
+    "max": 1041.0000145435333
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -436.0000145435333,
+    "max": 446.0000145435333,
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 135,
+    "max": 540
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 420,
+    "max": 1680
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 2.5,
+    "max": 10
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 10.999985456466675,
+    "max": 893.0000145435333
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -583.0000145435333,
+    "max": 299.0000145435333
+   }
+  ],
+  "locked": [],
+  "groups": [
+   [
+    "side_l",
+    "side_r"
+   ],
+   [
+    "top",
+    "bottom"
+   ],
+   [
+    "shelf_low",
+    "shelf_high"
+   ]
+  ],
+  "aligned": [
+   {
+    "componentId": "side_r",
+    "axis": 1
+   },
+   {
+    "componentId": "side_r",
+    "axis": 2
+   },
+   {
+    "componentId": "top",
+    "axis": 0
+   },
+   {
+    "componentId": "bottom",
+    "axis": 0
+   },
+   {
+    "componentId": "top",
+    "axis": 2
+   },
+   {
+    "componentId": "bottom",
+    "axis": 2
+   },
+   {
+    "componentId": "shelf_low",
+    "axis": 0
+   },
+   {
+    "componentId": "shelf_high",
+    "axis": 0
+   },
+   {
+    "componentId": "back",
+    "axis": 0
+   }
+  ],
+  "skipped": []
+ },
+ "anchor": {
+  "estimatedMm": 2069.169044494629,
+  "knownMm": 881.9999991003599,
+  "scaleCorrection": 0.4262580679172003
+ },
+ "raster": {
+  "width": 83,
+  "height": 160,
+  "crop": {
+   "x": 0,
+   "y": 0,
+   "width": 333,
+   "height": 640
+  }
+ },
+ "cameraOnly": {
+  "loss": 0.017691270749488203,
+  "view": {
+   "id": "photo",
+   "iou": 0.9864919085194597,
+   "meanBoundaryDistancePx": 0.007472914963258246,
+   "depthResidual": 0.01737631547282526
+  }
+ },
+ "receipt": {
+  "schema": "sceliph.silhouette-parameter-fit/0.2",
+  "provenance": "inferred",
+  "seed": 1,
+  "parameters": [
+   {
+    "componentId": "side_l",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "links": [
+     {
+      "componentId": "side_r",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 7.5,
+    "max": 30,
+    "before": 15,
+    "after": 15,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0011695213549482789,
+    "frozen": true
+   },
+   {
+    "componentId": "side_l",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "links": [
+     {
+      "componentId": "side_r",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 441,
+    "max": 1764,
+    "before": 882,
+    "after": 882,
+    "spread": 198.0149564229148,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.5747073837798036,
+    "frozen": false
+   },
+   {
+    "componentId": "side_l",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "links": [
+     {
+      "componentId": "side_r",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 145,
+    "max": 580,
+    "before": 290,
+    "after": 290,
+    "spread": 28.773174108447847,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.009132580709434547,
+    "frozen": false
+   },
+   {
+    "componentId": "side_r",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -298.5000145435333,
+    "max": 583.5000145435333,
+    "before": 142.5,
+    "after": 142.5,
+    "spread": 451.96122765674204,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.04572051730182104,
+    "frozen": false
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "links": [
+     {
+      "componentId": "bottom",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 135,
+    "max": 540,
+    "before": 270,
+    "after": 270,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000006024426035908248,
+    "frozen": true
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "links": [
+     {
+      "componentId": "bottom",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 7.5,
+    "max": 30,
+    "before": 15,
+    "after": 15,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0003448488941928951,
+    "frozen": true
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "links": [
+     {
+      "componentId": "bottom",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 145,
+    "max": 580,
+    "before": 290,
+    "after": 290,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0008689925568469564,
+    "frozen": true
+   },
+   {
+    "componentId": "top",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 433.4999854564667,
+    "max": 1315.5000145435333,
+    "before": 874.5,
+    "after": 874.5,
+    "spread": 53.58308155769032,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.26138956744519726,
+    "frozen": false
+   },
+   {
+    "componentId": "bottom",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -411.0000145435333,
+    "max": 471.0000145435333,
+    "before": 30,
+    "after": 30,
+    "spread": 47.161130690943025,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0690980804161856,
+    "frozen": false
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "geometry",
+       "size",
+       0
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 135,
+    "max": 540,
+    "before": 270,
+    "after": 270,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000003988277328725864,
+    "frozen": true
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "geometry",
+       "size",
+       1
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 7.5,
+    "max": 30,
+    "before": 15,
+    "after": 15,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00003964913505841855,
+    "frozen": true
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "geometry",
+       "size",
+       2
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 140,
+    "max": 560,
+    "before": 280,
+    "after": 280,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00017922801493228113,
+    "frozen": true
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -121.00001454353333,
+    "max": 761.0000145435333,
+    "before": 320,
+    "after": 320,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0015728637740441247,
+    "frozen": true
+   },
+   {
+    "componentId": "shelf_high",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 158.99998545646667,
+    "max": 1041.0000145435333,
+    "before": 600,
+    "after": 600,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0006425274208098283,
+    "frozen": true
+   },
+   {
+    "componentId": "shelf_low",
+    "path": [
+     "position",
+     2
+    ],
+    "links": [
+     {
+      "componentId": "shelf_high",
+      "path": [
+       "position",
+       2
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": -436.0000145435333,
+    "max": 446.0000145435333,
+    "before": 5,
+    "after": 5,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.001158727418017088,
+    "frozen": true
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 135,
+    "max": 540,
+    "before": 270,
+    "after": 270,
+    "spread": 159.067038064178,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0021884549841342457,
+    "frozen": false
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 420,
+    "max": 1680,
+    "before": 840,
+    "after": 840,
+    "spread": 336.98979417443627,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.06124989554811763,
+    "frozen": false
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 2.5,
+    "max": 10,
+    "before": 5,
+    "after": 5,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000008906400341679443,
+    "frozen": true
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 10.999985456466675,
+    "max": 893.0000145435333,
+    "before": 452,
+    "after": 452,
+    "spread": 94.92598447514365,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.15652214193695907,
+    "frozen": false
+   },
+   {
+    "componentId": "back",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -583.0000145435333,
+    "max": 299.0000145435333,
+    "before": -142,
+    "after": -142,
+    "spread": 137.4040144522511,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.014559897088103492,
+    "frozen": false
+   }
+  ],
+  "cameraParameters": [
+   {
+    "viewId": "photo",
+    "field": "azimuthDeg",
+    "prior": {
+     "mean": -35,
+     "sigma": 20
+    },
+    "min": -85,
+    "max": 15,
+    "before": -30.124942595964633,
+    "after": -30.124942595964633,
+    "spread": 6.992683524241748,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "elevationDeg",
+    "prior": {
+     "mean": 12,
+     "sigma": 20
+    },
+    "min": -38,
+    "max": 62,
+    "before": 7.642243481952342,
+    "after": 7.642243481952342,
+    "spread": 3.421866229419102,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "distanceMm",
+    "prior": {
+     "mean": 2745.656091466543,
+     "sigma": 686.4140228666357
+    },
+    "min": 1372.8280457332714,
+    "max": 5491.312182933086,
+    "before": 2763.8421388464417,
+    "after": 2763.8421388464417,
+    "spread": 21.065679644763804,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetX",
+    "min": -886.1097056323645,
+    "max": 877.8903525417688,
+    "before": 9.348435675768997,
+    "after": 9.348435675768997,
+    "spread": 56.841865900867674,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetY",
+    "min": -453.6249503679373,
+    "max": 1310.375107806196,
+    "before": 425.4888543067207,
+    "after": 425.4888543067207,
+    "spread": 41.93139979526558,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetZ",
+    "min": -881.6016925551679,
+    "max": 882.3983656189654,
+    "before": -15.431697856968867,
+    "after": -15.431697856968867,
+    "spread": 3.829169964379389,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "rollDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 4
+    },
+    "min": -15,
+    "max": 15,
+    "before": -0.014842569318885168,
+    "after": -0.014842569318885168,
+    "spread": 0.41348872957824945,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "focalScale",
+    "prior": {
+     "mean": 1,
+     "sigma": 0.15
+    },
+    "min": 0.6,
+    "max": 1.6,
+    "before": 1.0340232500871063,
+    "after": 1.0340232500871063,
+    "spread": 0.026436736394102933,
+    "identified": false,
+    "atBound": false
+   }
+  ],
+  "orbits": [
+   {
+    "viewId": "photo",
+    "orbit": {
+     "width": 333,
+     "height": 640,
+     "fx": 1519.3937293795318,
+     "fy": 1519.3937293795318,
+     "cx": 166.5,
+     "cy": 320,
+     "target": [
+      9.348435675768997,
+      425.4888543067207,
+      -15.431697856968867
+     ],
+     "azimuthDeg": -30.124942595964633,
+     "elevationDeg": 7.642243481952342,
+     "distanceMm": 2763.8421388464417,
+     "rollDeg": -0.014842569318885168,
+     "focalScale": 1.0340232500871063
+    }
+   }
+  ],
+  "restarts": 2,
+  "before": {
+   "loss": 0.03409173728231317,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.941681190508111,
+     "meanBoundaryDistancePx": 0.05097257841969501,
+     "depthResidual": 0.021836804750443185
+    }
+   ]
+  },
+  "after": {
+   "loss": 0.017691270749488203,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.9864919085194597,
+     "meanBoundaryDistancePx": 0.007472914963258246,
+     "depthResidual": 0.01737631547282526
+    }
+   ]
+  },
+  "evaluations": 16046,
+  "stopReason": "maxEvaluations",
+  "compiledGeometries": 24028
+ },
+ "lowConfidenceReasons": [
+  "side_l.geometry.size.1 is not identified by equally good restarts.",
+  "side_l.geometry.size.2 is not identified by equally good restarts.",
+  "side_r.position.0 is not identified by equally good restarts.",
+  "top.position.1 is not identified by equally good restarts.",
+  "bottom.position.1 is not identified by equally good restarts.",
+  "back.geometry.size.0 is not identified by equally good restarts.",
+  "back.geometry.size.1 is not identified by equally good restarts.",
+  "back.position.1 is not identified by equally good restarts.",
+  "back.position.2 is not identified by equally good restarts.",
+  "camera.azimuthDeg is not identified by equally good restarts.",
+  "camera.elevationDeg is not identified by equally good restarts.",
+  "camera.targetX is not identified by equally good restarts.",
+  "camera.targetY is not identified by equally good restarts.",
+  "camera.focalScale is not identified by equally good restarts."
+ ],
+ "acceptance": {
+  "accept": false,
+  "relativeLossGain": 0,
+  "freeParameters": 9,
+  "iou": 0.9864919085194597,
+  "reasons": [
+   "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+   "9 free parameters removed 0.0% each (< 5.0%)."
+  ]
+ }
+}

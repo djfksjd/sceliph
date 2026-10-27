@@ -1,0 +1,428 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Stevens 2-Drawer Bookcase",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Gray wood veneer",
+   "detail": "Left side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1379,
+     330
+    ],
+    "radius": 2
+   },
+   "position": [
+    -346,
+    859.5,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Gray wood veneer",
+   "detail": "Right side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1379,
+     330
+    ],
+    "radius": 2
+   },
+   "position": [
+    346,
+    859.5,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "Gray wood veneer",
+   "detail": "Top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     710,
+     18,
+     330
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1540,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "Gray wood veneer",
+   "detail": "Base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     674,
+     18,
+     330
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    179,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "Dark board",
+   "detail": "Back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     674,
+     1343,
+     8
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    859.5,
+    -160
+   ],
+   "material": {
+    "color": "#2b2623",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "shelf_high",
+   "name": "Upper shelf",
+   "category": "mechanical",
+   "materialName": "Gray wood veneer",
+   "detail": "Shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     674,
+     18,
+     320
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1210,
+    -5
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "shelf_mid",
+   "name": "Middle shelf",
+   "category": "mechanical",
+   "materialName": "Gray wood veneer",
+   "detail": "Shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     674,
+     18,
+     320
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    907,
+    -5
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "shelf_low",
+   "name": "Lower shelf",
+   "category": "mechanical",
+   "materialName": "Gray wood veneer",
+   "detail": "Shelf above drawers",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     674,
+     18,
+     320
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    610,
+    -5
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "div_top",
+   "name": "Top divider",
+   "category": "mechanical",
+   "materialName": "Gray wood veneer",
+   "detail": "Vertical divider",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     303,
+     320
+    ],
+    "radius": 2
+   },
+   "position": [
+    180,
+    1369,
+    -5
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "div_mid",
+   "name": "Middle divider",
+   "category": "mechanical",
+   "materialName": "Gray wood veneer",
+   "detail": "Vertical divider",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     289,
+     320
+    ],
+    "radius": 2
+   },
+   "position": [
+    -60,
+    1058.5,
+    -5
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "div_low",
+   "name": "Lower divider",
+   "category": "mechanical",
+   "materialName": "Gray wood veneer",
+   "detail": "Vertical divider",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     289,
+     320
+    ],
+    "radius": 2
+   },
+   "position": [
+    180,
+    758.5,
+    -5
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "drawer_top",
+   "name": "Upper drawer front",
+   "category": "mechanical",
+   "materialName": "Grooved gray veneer",
+   "detail": "Drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     650,
+     200,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    505,
+    165
+   ],
+   "material": {
+    "color": "#51463e",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer_bot",
+   "name": "Lower drawer front",
+   "category": "mechanical",
+   "materialName": "Grooved gray veneer",
+   "detail": "Drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     650,
+     200,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    292,
+    165
+   ],
+   "material": {
+    "color": "#51463e",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 170,
+    "radialSegments": 24
+   },
+   "position": [
+    -300,
+    85,
+    135
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 170,
+    "radialSegments": 24
+   },
+   "position": [
+    300,
+    85,
+    135
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 170,
+    "radialSegments": 24
+   },
+   "position": [
+    -300,
+    85,
+    -135
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 170,
+    "radialSegments": 24
+   },
+   "position": [
+    300,
+    85,
+    -135
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

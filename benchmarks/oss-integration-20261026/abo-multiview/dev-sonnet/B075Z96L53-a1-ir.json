@@ -1,0 +1,439 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Coastal Breeze Accent End Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Tabletop",
+   "category": "mechanical",
+   "materialName": "Natural wood",
+   "detail": "Parquet-style wood top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     660,
+     40,
+     610
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    488,
+    0
+   ],
+   "material": {
+    "color": "#a67c4e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Square post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     55,
+     468,
+     55
+    ],
+    "radius": 3
+   },
+   "position": [
+    -275,
+    234,
+    250
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Square post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     55,
+     468,
+     55
+    ],
+    "radius": 3
+   },
+   "position": [
+    275,
+    234,
+    250
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Square post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     55,
+     468,
+     55
+    ],
+    "radius": 3
+   },
+   "position": [
+    -275,
+    234,
+    -250
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Square post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     55,
+     468,
+     55
+    ],
+    "radius": 3
+   },
+   "position": [
+    275,
+    234,
+    -250
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rail_front",
+   "name": "Front lower rail",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Bottom rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     496,
+     40,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    70,
+    250
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rail_back",
+   "name": "Back lower rail",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Bottom rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     496,
+     40,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    70,
+    -250
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rail_left",
+   "name": "Left lower rail",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Bottom rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     40,
+     446
+    ],
+    "radius": 2
+   },
+   "position": [
+    -275,
+    70,
+    0
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rail_right",
+   "name": "Right lower rail",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Bottom rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     40,
+     446
+    ],
+    "radius": 2
+   },
+   "position": [
+    275,
+    70,
+    0
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "brace_f1",
+   "name": "Front brace A",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Diagonal brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -245,
+      170,
+      0
+     ],
+     [
+      0,
+      -170,
+      0
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    0,
+    260,
+    250
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "brace_f2",
+   "name": "Front brace B",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Diagonal brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      245,
+      170,
+      0
+     ],
+     [
+      0,
+      -170,
+      0
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    0,
+    260,
+    250
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "brace_b1",
+   "name": "Back brace A",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Diagonal brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -245,
+      170,
+      0
+     ],
+     [
+      0,
+      -170,
+      0
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    0,
+    260,
+    -250
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "brace_b2",
+   "name": "Back brace B",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Diagonal brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      245,
+      170,
+      0
+     ],
+     [
+      0,
+      -170,
+      0
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    0,
+    260,
+    -250
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "brace_l",
+   "name": "Left brace",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Diagonal brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      170,
+      -215
+     ],
+     [
+      0,
+      -170,
+      215
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    -275,
+    260,
+    0
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "brace_r",
+   "name": "Right brace",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Diagonal brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      170,
+      215
+     ],
+     [
+      0,
+      -170,
+      -215
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    275,
+    260,
+    0
+   ],
+   "material": {
+    "color": "#f3f2ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

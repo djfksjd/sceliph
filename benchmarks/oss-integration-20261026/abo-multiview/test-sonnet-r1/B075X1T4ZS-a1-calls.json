@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Stone & Beam Iluminación de granja clásico, Table Lamp, Blanco gastado.\nThe product listing gives its overall height as 508 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0161012,
+   "durationMs": 12027,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Turned wood table lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Turned wood base\",\"category\":\"mechanical\",\"materialName\":\"weathered wood\",\"detail\":\"Lathe-turned baluster body with stepped foot and round ball\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[68,0],[68,26],[58,30],[52,34],[52,44],[42,46],[40,52],[40,64],[26,72],[22,80],[22,88],[34,93],[34,98],[43,110],[43,134],[36,148],[24,154],[24,158],[36,164],[38,172],[30,178],[20,184],[20,205],[26,212],[30,220],[30,230],[18,233],[0,233]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#a98d78\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"shade\",\"name\":\"Fabric shade\",\"category\":\"enclosure\",\"materialName\":\"linen fabric\",\"detail\":\"Tapered drum shade, open top and bottom\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":111,\"radiusBottom\":137,\"depth\":269,\"radialSegments\":48},\"position\":[0,368.5,0],\"material\":{\"color\":\"#d9d7d0\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"finial\",\"name\":\"Wood finial\",\"category\":\"mechanical\",\"materialName\":\"weathered wood\",\"detail\":\"Small ball finial at the top\",\"geometry\":{\"op\":\"sphere\",\"radius\":12},\"position\":[0,496,0],\"material\":{\"color\":\"#a98d78\",\"roughness\":0.8,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

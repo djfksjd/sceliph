@@ -1,0 +1,189 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Inari 1-Drawer Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "white laminate board",
+   "detail": "25 mm desktop panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     900,
+     25,
+     500
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    717.5,
+    0
+   ],
+   "material": {
+    "color": "#f1f2f3",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "white laminate board",
+   "detail": "Solid left side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     705,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    -432,
+    352.5,
+    0
+   ],
+   "material": {
+    "color": "#eceeef",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "white laminate board",
+   "detail": "Solid right side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     705,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    432,
+    352.5,
+    0
+   ],
+   "material": {
+    "color": "#eceeef",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back modesty panel",
+   "category": "enclosure",
+   "materialName": "white laminate board",
+   "detail": "Upper rear panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     846,
+     150,
+     16
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    630,
+    -232
+   ],
+   "material": {
+    "color": "#e8eaeb",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_body",
+   "name": "Drawer box",
+   "category": "mechanical",
+   "materialName": "white laminate board",
+   "detail": "Drawer body under desktop",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     210,
+     120,
+     400
+    ],
+    "radius": 2
+   },
+   "position": [
+    300,
+    630,
+    30
+   ],
+   "material": {
+    "color": "#e6e8e9",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_front",
+   "name": "Drawer front",
+   "category": "mechanical",
+   "materialName": "white laminate board",
+   "detail": "Drawer front panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     230,
+     140,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    300,
+    625,
+    240
+   ],
+   "material": {
+    "color": "#f2f3f4",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Drawer handle",
+   "category": "mechanical",
+   "materialName": "brushed aluminium",
+   "detail": "Bar handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     150,
+     10,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    300,
+    650,
+    257
+   ],
+   "material": {
+    "color": "#c4c7ca",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

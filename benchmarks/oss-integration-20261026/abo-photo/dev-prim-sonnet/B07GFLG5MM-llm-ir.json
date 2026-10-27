@@ -1,0 +1,371 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "4-Door Shoe Cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "dark grey wood grain board",
+   "detail": "Left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1610,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    -251,
+    825,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "dark grey wood grain board",
+   "detail": "Right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1610,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    251,
+    825,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "dark grey wood grain board",
+   "detail": "Top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     520,
+     18,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1621,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "dark grey wood grain board",
+   "detail": "Bottom panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     18,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    29,
+    0
+   ],
+   "material": {
+    "color": "#343436",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "dark fibreboard",
+   "detail": "Back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     1580,
+     8
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    825,
+    -121
+   ],
+   "material": {
+    "color": "#2c2c2e",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Plinth feet",
+   "category": "mechanical",
+   "materialName": "dark plastic",
+   "detail": "Recessed base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     470,
+     20,
+     220
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    10,
+    -5
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door1",
+   "name": "Bottom flap door",
+   "category": "mechanical",
+   "materialName": "dark grey wood grain board",
+   "detail": "Tilting door 1",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     392,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    228,
+    116
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door2",
+   "name": "Second flap door",
+   "category": "mechanical",
+   "materialName": "dark grey wood grain board",
+   "detail": "Tilting door 2",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     392,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    623,
+    116
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door3",
+   "name": "Third flap door",
+   "category": "mechanical",
+   "materialName": "dark grey wood grain board",
+   "detail": "Tilting door 3",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     392,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1019,
+    116
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door4",
+   "name": "Top flap door",
+   "category": "mechanical",
+   "materialName": "dark grey wood grain board",
+   "detail": "Tilting door 4",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     392,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1414,
+    116
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Handle slot bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     8,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    410,
+    129
+   ],
+   "material": {
+    "color": "#b5b8bc",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Handle slot bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     8,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    805,
+    129
+   ],
+   "material": {
+    "color": "#b5b8bc",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Handle slot bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     8,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1201,
+    129
+   ],
+   "material": {
+    "color": "#b5b8bc",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Handle slot bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     8,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1596,
+    129
+   ],
+   "material": {
+    "color": "#b5b8bc",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

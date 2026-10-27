@@ -1,0 +1,96 @@
+{
+ "schema": "sceliph.photo-fit-spec/0.1",
+ "referenceComponentId": "box",
+ "viewHint": {
+  "azimuthDeg": -5,
+  "elevationDeg": 25,
+  "sigmaDeg": 25
+ },
+ "anchor": {
+  "from": [
+   216.14038467407227,
+   304.7386693954468
+  ],
+  "to": [
+   479.82730865478516,
+   243.9060115814209
+  ],
+  "knownMm": 260
+ },
+ "parameters": [
+  {
+   "componentId": "box",
+   "path": [
+    "geometry",
+    "size",
+    1
+   ],
+   "min": 60,
+   "max": 300
+  },
+  {
+   "componentId": "box",
+   "path": [
+    "geometry",
+    "size",
+    2
+   ],
+   "min": 60,
+   "max": 400
+  },
+  {
+   "componentId": "post",
+   "path": [
+    "geometry",
+    "radiusTop"
+   ],
+   "min": 10,
+   "max": 80
+  },
+  {
+   "componentId": "post",
+   "path": [
+    "geometry",
+    "radiusBottom"
+   ],
+   "min": 10,
+   "max": 80
+  },
+  {
+   "componentId": "post",
+   "path": [
+    "geometry",
+    "depth"
+   ],
+   "min": 60,
+   "max": 300
+  },
+  {
+   "componentId": "post",
+   "path": [
+    "position",
+    0
+   ],
+   "min": -150,
+   "max": 150
+  },
+  {
+   "componentId": "post",
+   "path": [
+    "position",
+    1
+   ],
+   "min": 100,
+   "max": 450
+  },
+  {
+   "componentId": "post",
+   "path": [
+    "position",
+    2
+   ],
+   "min": -150,
+   "max": 150
+  }
+ ]
+}

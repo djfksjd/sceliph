@@ -1,0 +1,57 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Box with post",
+ "units": "mm",
+ "components": [
+  {
+   "id": "box",
+   "name": "Box",
+   "category": "enclosure",
+   "materialName": "painted block",
+   "detail": "Rust-red rectangular box",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     150,
+     200
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    75,
+    0
+   ],
+   "material": {
+    "color": "#964a2e",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "post",
+   "name": "Post",
+   "category": "mechanical",
+   "materialName": "blue plastic",
+   "detail": "Cylindrical post standing on top of the box",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 40,
+    "radiusBottom": 40,
+    "depth": 190,
+    "radialSegments": 32
+   },
+   "position": [
+    40,
+    245,
+    -35
+   ],
+   "material": {
+    "color": "#3a6aa8",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

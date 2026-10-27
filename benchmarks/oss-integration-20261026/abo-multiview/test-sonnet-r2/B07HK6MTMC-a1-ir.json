@@ -1,0 +1,212 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Matte Black Table Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Cone base",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Conical turned base with chamfered foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      64,
+      0
+     ],
+     [
+      78,
+      16
+     ],
+     [
+      6,
+      205
+     ],
+     [
+      0,
+      205
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck rod",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Stem rising into the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 190,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    300,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "black fabric",
+   "detail": "Cylindrical fabric drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 174,
+    "radiusBottom": 174,
+    "depth": 313,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    427,
+    0
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Brass socket",
+   "category": "power",
+   "materialName": "brass",
+   "detail": "Socket and spider at the shade top",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 14,
+    "depth": 30,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    550,
+    0
+   ],
+   "material": {
+    "color": "#b59a4a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "spider",
+   "name": "Shade spider",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Thin harp arm across shade top",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -150,
+      0,
+      0
+     ],
+     [
+      150,
+      0,
+      0
+     ]
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    572,
+    0
+   ],
+   "material": {
+    "color": "#b59a4a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "chain",
+   "name": "Pull chain",
+   "category": "mechanical",
+   "materialName": "metal chain",
+   "detail": "Pull chain hanging beside the neck",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -40,
+      0
+     ]
+    ],
+    "radius": 1.2
+   },
+   "position": [
+    18,
+    280,
+    0
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "pull",
+   "name": "Pull handle",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Pull chain handle",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 26,
+    "radialSegments": 16
+   },
+   "position": [
+    18,
+    225,
+    0
+   ],
+   "material": {
+    "color": "#101010",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  }
+ ]
+}

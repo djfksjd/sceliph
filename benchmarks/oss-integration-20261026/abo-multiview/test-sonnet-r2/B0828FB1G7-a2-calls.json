@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand - Ravenna Home 2-Light Semiflush-Mount Ceiling Light with Frosted Glass Shade, Brushed Nickel.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 210 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0175663,
+   "durationMs": 15214,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Semiflush frosted glass ceiling light\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Round mounting plate at the top\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":62,\"radiusBottom\":62,\"depth\":27,\"radialSegments\":48},\"position\":[0,196.5,0],\"material\":{\"color\":\"#8c8c88\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"shade\",\"name\":\"Frosted glass shade\",\"category\":\"enclosure\",\"materialName\":\"frosted opal glass\",\"detail\":\"Shallow bowl shade, widest in its upper half\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,-83],[40,-82],[90,-72],[130,-48],[155,-15],[162,15],[155,45],[130,68],[90,80],[62,83],[0,83]],\"segments\":64},\"position\":[0,101,0],\"material\":{\"color\":\"#f6f6f6\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"finial_ring\",\"name\":\"Finial collar\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Nickel collar holding the shade at the bottom\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":28,\"radiusBottom\":35,\"depth\":12,\"radialSegments\":40},\"position\":[0,14,0],\"material\":{\"color\":\"#8c8c88\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"finial_knob\",\"name\":\"Finial knob\",\"category\":\"mechanical\",\"materialName\":\"satin nickel\",\"detail\":\"Small stepped knob at the bottom centre\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":14,\"radiusBottom\":19,\"depth\":10,\"radialSegments\":32},\"position\":[0,5,0],\"material\":{\"color\":\"#b8b8b2\",\"roughness\":0.5,\"metalness\":0.6}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

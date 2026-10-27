@@ -1,0 +1,735 @@
+{
+ "schema": "sceliph.llm-correction-tasks/0.1",
+ "registeredAt": "2026-10-26",
+ "guide": "You write Sceliph AssemblyIR JSON. Output exactly one JSON object and nothing else.\nFormat: {\"schema\":\"morphloom.assembly/0.1\",\"name\":string,\"units\":\"mm\",\"components\":[component,...]}\ncomponent: {\"id\":string,\"name\":string,\"category\":one of \"enclosure\",\"display\",\"logic\",\"power\",\"camera\",\"audio\",\"radio\",\"mechanical\",\"interconnect\",\"materialName\":string,\"detail\":string,\"geometry\":geometry,\"position\":[x,y,z] (optional, mm, centre of the part),\"rotation\":[rx,ry,rz] (optional, radians, XYZ Euler),\"material\":{\"color\":\"#rrggbb\",\"roughness\":0..1 (optional),\"metalness\":0..1 (optional)}}\nWorld: millimetres, Y is up, the floor is y = 0. Each geometry is centred on the component position.\ngeometry options:\n- {\"op\":\"roundedBox\",\"size\":[x,y,z],\"radius\":r}  (r at most 0.4 x the smallest size)\n- {\"op\":\"cylinder\",\"radiusTop\":r1,\"radiusBottom\":r2,\"depth\":h,\"radialSegments\":32}  (axis along Y, height h)\n- {\"op\":\"sphere\",\"radius\":r}\n- {\"op\":\"torus\",\"radius\":R,\"tube\":t}  (ring lies in the XY plane; its axis is Z; outer diameter 2(R+t))\n- {\"op\":\"tube\",\"points\":[[x,y,z],...],\"radius\":r}  (swept circle through the points, relative to the component position)\nUse exactly the component ids the request names.",
+ "protocol": {
+  "models": [
+   "haiku",
+   "sonnet"
+  ],
+  "maxRounds": 3,
+  "runsPerTask": 1,
+  "note": "Fixed before any model call. No retries outside the loop; failures are kept."
+ },
+ "tasks": [
+  {
+   "id": "stool",
+   "request": "A three-legged stool standing on the floor. Component ids: seat, leg_1, leg_2, leg_3. The seat is a disc 350 mm in diameter and 30 mm thick whose top surface is 450 mm above the floor. Each leg is a vertical cylinder 30 mm in diameter running from the floor to the underside of the seat, placed 120 mm from the centre, 120 degrees apart.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "seat",
+     "leg_1",
+     "leg_2",
+     "leg_3"
+    ],
+    "dimensions": [
+     {
+      "id": "height",
+      "label": "Overall height",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 450,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "seat-d",
+      "label": "Seat diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "seat"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 350,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "seat-t",
+      "label": "Seat thickness",
+      "target": {
+       "kind": "component",
+       "componentId": "seat"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 30,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "leg-h",
+      "label": "Leg length",
+      "target": {
+       "kind": "component",
+       "componentId": "leg_1"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 420,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "leg-d",
+      "label": "Leg diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "leg_2"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 30,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     }
+    ],
+    "maxTriangles": 100000
+   }
+  },
+  {
+   "id": "router",
+   "request": "A Wi-Fi router lying flat on the floor. Component ids: body, antenna_left, antenna_right. The body is a rounded box 220 mm wide (x), 35 mm tall (y) and 150 mm deep (z). Two vertical antennas, each a cylinder 10 mm in diameter and 160 mm long, stand on the top surface 20 mm in from the left and right rear corners.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "body",
+     "antenna_left",
+     "antenna_right"
+    ],
+    "dimensions": [
+     {
+      "id": "w",
+      "label": "Body width",
+      "target": {
+       "kind": "component",
+       "componentId": "body"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 220,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "h",
+      "label": "Body height",
+      "target": {
+       "kind": "component",
+       "componentId": "body"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 35,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "d",
+      "label": "Body depth",
+      "target": {
+       "kind": "component",
+       "componentId": "body"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 150,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "ant",
+      "label": "Antenna length",
+      "target": {
+       "kind": "component",
+       "componentId": "antenna_left"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 160,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "ant-d",
+      "label": "Antenna diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "antenna_right"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 10,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "total",
+      "label": "Overall height",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 195,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     }
+    ],
+    "maxTriangles": 100000
+   }
+  },
+  {
+   "id": "mug",
+   "request": "A coffee mug standing on the floor. Component ids: body, handle. The body is a cylinder 82 mm in diameter and 95 mm tall. The handle is a torus ring with ring radius 25 mm and tube radius 5 mm, standing upright in the XY plane on the +x side, centred at mid-height, so that its outer edge is 30 mm beyond the body surface.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "body",
+     "handle"
+    ],
+    "dimensions": [
+     {
+      "id": "bd",
+      "label": "Body diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "body"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 82,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "bh",
+      "label": "Body height",
+      "target": {
+       "kind": "component",
+       "componentId": "body"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 95,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "hh",
+      "label": "Handle height",
+      "target": {
+       "kind": "component",
+       "componentId": "handle"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 60,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "total-x",
+      "label": "Overall width including handle",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 112,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     }
+    ],
+    "maxTriangles": 100000
+   }
+  },
+  {
+   "id": "shelf",
+   "request": "A bookshelf standing on the floor, 800 mm wide (x), 1800 mm tall (y) and 300 mm deep (z) overall. Component ids: left_side, right_side, shelf_1, shelf_2, shelf_3, shelf_4. The two side panels are 18 mm thick boards spanning the full height and depth. The four shelves are 18 mm thick boards spanning exactly between the side panels and the full depth, with shelf_1 resting on the floor and the others evenly spaced up to shelf_4 at the very top.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "left_side",
+     "right_side",
+     "shelf_1",
+     "shelf_2",
+     "shelf_3",
+     "shelf_4"
+    ],
+    "dimensions": [
+     {
+      "id": "w",
+      "label": "Overall width",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 800,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "h",
+      "label": "Overall height",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 1800,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "d",
+      "label": "Overall depth",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 300,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "side",
+      "label": "Side panel height",
+      "target": {
+       "kind": "component",
+       "componentId": "left_side"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 1800,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "shelf-w",
+      "label": "Shelf width",
+      "target": {
+       "kind": "component",
+       "componentId": "shelf_2"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 764,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "shelf-t",
+      "label": "Shelf thickness",
+      "target": {
+       "kind": "component",
+       "componentId": "shelf_3"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 18,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "top",
+      "label": "Top shelf top surface",
+      "target": {
+       "kind": "component",
+       "componentId": "shelf_4"
+      },
+      "axis": "y",
+      "measurement": "max",
+      "expectedMm": 1800,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     }
+    ],
+    "maxTriangles": 100000
+   }
+  },
+  {
+   "id": "lamp",
+   "request": "A floor-standing table lamp. Component ids: base, pole, shade. The base is a cylinder 180 mm in diameter and 25 mm tall resting on the floor. The pole is a cylinder 16 mm in diameter and 380 mm tall standing on top of the base at its centre. The shade is a truncated cone (cylinder with different top and bottom radii): bottom diameter 240 mm, top diameter 140 mm, 160 mm tall, whose bottom edge is at 300 mm above the floor.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "base",
+     "pole",
+     "shade"
+    ],
+    "dimensions": [
+     {
+      "id": "base-d",
+      "label": "Base diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "base"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 180,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "pole-h",
+      "label": "Pole height",
+      "target": {
+       "kind": "component",
+       "componentId": "pole"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 380,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "shade-d",
+      "label": "Shade bottom diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "shade"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 240,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "shade-h",
+      "label": "Shade height",
+      "target": {
+       "kind": "component",
+       "componentId": "shade"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 160,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "total",
+      "label": "Overall height",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 460,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "pole-top",
+      "label": "Pole top",
+      "target": {
+       "kind": "component",
+       "componentId": "pole"
+      },
+      "axis": "y",
+      "measurement": "max",
+      "expectedMm": 405,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     }
+    ],
+    "maxTriangles": 100000
+   }
+  },
+  {
+   "id": "speaker",
+   "request": "A bookshelf speaker standing on the floor, facing +z. Component ids: cabinet, woofer, tweeter. The cabinet is a rounded box 200 mm wide (x), 320 mm tall (y) and 240 mm deep (z). The woofer is a disc 160 mm in diameter and 20 mm thick whose flat faces point along z, centred 110 mm above the floor and protruding 10 mm beyond the front face of the cabinet. The tweeter is a disc 50 mm in diameter and 15 mm thick, also facing +z, centred 250 mm above the floor and protruding 10 mm beyond the front face.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "cabinet",
+     "woofer",
+     "tweeter"
+    ],
+    "dimensions": [
+     {
+      "id": "cw",
+      "label": "Cabinet width",
+      "target": {
+       "kind": "component",
+       "componentId": "cabinet"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 200,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "ch",
+      "label": "Cabinet height",
+      "target": {
+       "kind": "component",
+       "componentId": "cabinet"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 320,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "wd",
+      "label": "Woofer diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "woofer"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 160,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "wt",
+      "label": "Woofer thickness",
+      "target": {
+       "kind": "component",
+       "componentId": "woofer"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 20,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "tt",
+      "label": "Tweeter thickness",
+      "target": {
+       "kind": "component",
+       "componentId": "tweeter"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 15,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "depth",
+      "label": "Overall depth",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 250,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.0,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification"
+      }
+     }
+    ],
+    "maxTriangles": 100000
+   }
+  }
+ ]
+}

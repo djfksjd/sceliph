@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand - Ravenna Home Single-Light Flush-Mount Ceiling Light with Frosted Glass Shade, Bronze.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 135 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.018915699999999997,
+   "durationMs": 14594,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":20},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Flush-mount ceiling light\",\"units\":\"mm\",\"components\":[{\"id\":\"rim\",\"name\":\"Bronze rim\",\"category\":\"enclosure\",\"materialName\":\"bronze painted metal\",\"detail\":\"Stepped round rim and canopy at the top\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[118,96],[134,98],[148,106],[150,118],[140,128],[120,135],[0,135],[0,100],[118,96]],\"segments\":64},\"position\":[0,0,0],\"material\":{\"color\":\"#4a3a33\",\"roughness\":0.45,\"metalness\":0.6}},{\"id\":\"glass\",\"name\":\"Frosted glass bowl\",\"category\":\"enclosure\",\"materialName\":\"frosted glass\",\"detail\":\"Hemispherical opal glass shade\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,18],[30,20],[70,30],[100,52],[118,80],[124,106],[0,106]],\"segments\":64},\"position\":[0,0,0],\"material\":{\"color\":\"#f6f6f4\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"cap\",\"name\":\"Finial cap\",\"category\":\"mechanical\",\"materialName\":\"bronze painted metal\",\"detail\":\"Conical cap under the bowl\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":16,\"depth\":8,\"radialSegments\":32},\"position\":[0,22,0],\"material\":{\"color\":\"#4a3a33\",\"roughness\":0.45,\"metalness\":0.6}},{\"id\":\"stem\",\"name\":\"Finial stem\",\"category\":\"mechanical\",\"materialName\":\"bronze painted metal\",\"detail\":\"Short stem\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5,\"radiusBottom\":5,\"depth\":14,\"radialSegments\":24},\"position\":[0,14,0],\"material\":{\"color\":\"#4a3a33\",\"roughness\":0.45,\"metalness\":0.6}},{\"id\":\"knob\",\"name\":\"Finial knob\",\"category\":\"mechanical\",\"materialName\":\"bronze painted metal\",\"detail\":\"Rounded tip\",\"geometry\":{\"op\":\"sphere\",\"radius\":7},\"position\":[0,7,0],\"material\":{\"color\":\"#4a3a33\",\"roughness\":0.45,\"metalness\":0.6}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

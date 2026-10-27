@@ -1,0 +1,39 @@
+{
+ "schema": "sceliph.photo-llm-task/0.1",
+ "id": "bookshelf",
+ "object": "an open bookshelf with two side panels, four horizontal shelves (the top one closes the top) and a thin back panel",
+ "components": [
+  {
+   "id": "side-left",
+   "description": "the left side panel"
+  },
+  {
+   "id": "side-right",
+   "description": "the right side panel"
+  },
+  {
+   "id": "shelf-1",
+   "description": "the lowest shelf"
+  },
+  {
+   "id": "shelf-2",
+   "description": "the second shelf"
+  },
+  {
+   "id": "shelf-3",
+   "description": "the third shelf"
+  },
+  {
+   "id": "shelf-4",
+   "description": "the top shelf"
+  },
+  {
+   "id": "back",
+   "description": "the back panel"
+  }
+ ],
+ "referenceComponentId": "side-left",
+ "known": "The side panels are 900 mm tall.",
+ "knownDimensionMm": 900,
+ "fovXDegrees": 55
+}

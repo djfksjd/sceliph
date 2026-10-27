@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Ravenna Home Amber Rustic Farmhouse Shelf Coffee Table, 44\"W, Natural and White.\nThe product listing gives its overall height as 457 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00192872,
+   "durationMs": 20607,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":25,\"elevationDeg\":20},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Ravenna Home Amber Rustic Farmhouse Shelf Coffee Table\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Tabletop\",\"category\":\"mechanical\",\"materialName\":\"Natural wood top\",\"detail\":\"Rustic natural wood planked tabletop, 44in x 22in, 30 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1118,30,560],\"radius\":4},\"position\":[0,442,0],\"material\":{\"color\":\"#b8895a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"apron\",\"name\":\"Under-top apron\",\"category\":\"mechanical\",\"materialName\":\"White painted apron\",\"detail\":\"Painted frame rail beneath the tabletop joining the legs\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1020,50,460],\"radius\":3},\"position\":[0,402,0],\"material\":{\"color\":\"#f2f2ee\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"shelf\",\"name\":\"Lower shelf\",\"category\":\"mechanical\",\"materialName\":\"White painted shelf\",\"detail\":\"Lower display shelf board, 20 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1040,20,480],\"radius\":3},\"position\":[0,110,0],\"material\":{\"color\":\"#f2f2ee\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"leg-1\",\"name\":\"Front-left turned leg\",\"category\":\"mechanical\",\"materialName\":\"White painted turned leg\",\"detail\":\"Turned spindle leg with bead details, runs floor to underside of top\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,-213.5],[20,-213.5],[22,-196],[15,-180],[15,-120],[21,-100],[15,-80],[15,-40],[20,-20],[15,0],[15,205],[18,213.5],[0,213.5]],\"segments\":48},\"position\":[-510,213.5,220],\"material\":{\"color\":\"#f2f2ee\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"leg-2\",\"name\":\"Front-right turned leg\",\"category\":\"mechanical\",\"materialName\":\"White painted turned leg\",\"detail\":\"Turned spindle leg with bead details, runs floor to underside of top\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,-213.5],[20,-213.5],[22,-196],[15,-180],[15,-120],[21,-100],[15,-80],[15,-40],[20,-20],[15,0],[15,205],[18,213.5],[0,213.5]],\"segments\":48},\"position\":[510,213.5,220],\"material\":{\"color\":\"#f2f2ee\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"leg-3\",\"name\":\"Back-left turned leg\",\"category\":\"mechanical\",\"materialName\":\"White painted turned leg\",\"detail\":\"Turned spindle leg with bead details, runs floor to underside of top\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,-213.5],[20,-213.5],[22,-196],[15,-180],[15,-120],[21,-100],[15,-80],[15,-40],[20,-20],[15,0],[15,205],[18,213.5],[0,213.5]],\"segments\":48},\"position\":[-510,213.5,-220],\"material\":{\"color\":\"#f2f2ee\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"leg-4\",\"name\":\"Back-right turned leg\",\"category\":\"mechanical\",\"materialName\":\"White painted turned leg\",\"detail\":\"Turned spindle leg with bead details, runs floor to underside of top\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,-213.5],[20,-213.5],[22,-196],[15,-180],[15,-120],[21,-100],[15,-80],[15,-40],[20,-20],[15,0],[15,205],[18,213.5],[0,213.5]],\"segments\":48},\"position\":[510,213.5,-220],\"material\":{\"color\":\"#f2f2ee\",\"roughness\":0.5,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

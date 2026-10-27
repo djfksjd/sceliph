@@ -1,0 +1,304 @@
+{
+ "schema": "sceliph.assembly-truth-compare/0.1",
+ "yawDeg": 0,
+ "extentMm": 600.0000238418579,
+ "items": [
+  {
+   "componentId": "top",
+   "candidateId": "top",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 600,
+   "candidateMm": 600,
+   "relativeError": 0
+  },
+  {
+   "componentId": "top",
+   "candidateId": "top",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 30,
+   "candidateMm": 20,
+   "relativeError": 0.3333
+  },
+  {
+   "componentId": "top",
+   "candidateId": "top",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 400,
+   "candidateMm": 420,
+   "relativeError": 0.05
+  },
+  {
+   "componentId": "top",
+   "candidateId": "top",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 420,
+   "candidateMm": 410,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-3",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 40,
+   "candidateMm": 30,
+   "relativeError": 0.25
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-3",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 420,
+   "candidateMm": 410,
+   "relativeError": 0.0238
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-3",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 40,
+   "candidateMm": 30,
+   "relativeError": 0.25
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-3",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": -260,
+   "candidateMm": -270,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-3",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": -225,
+   "candidateMm": -215,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-3",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 160,
+   "candidateMm": 170,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-3",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-4",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 40,
+   "candidateMm": 30,
+   "relativeError": 0.25
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-4",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 420,
+   "candidateMm": 410,
+   "relativeError": 0.0238
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-4",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 40,
+   "candidateMm": 30,
+   "relativeError": 0.25
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-4",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 260,
+   "candidateMm": 270,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-4",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": -225,
+   "candidateMm": -215,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-4",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 160,
+   "candidateMm": 170,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-4",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-2",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 40,
+   "candidateMm": 30,
+   "relativeError": 0.25
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-2",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 420,
+   "candidateMm": 410,
+   "relativeError": 0.0238
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-2",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 40,
+   "candidateMm": 30,
+   "relativeError": 0.25
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-2",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 260,
+   "candidateMm": 270,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-2",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": -225,
+   "candidateMm": -215,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-2",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": -160,
+   "candidateMm": -170,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-2",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-1",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 40,
+   "candidateMm": 30,
+   "relativeError": 0.25
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-1",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 420,
+   "candidateMm": 410,
+   "relativeError": 0.0238
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-1",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 40,
+   "candidateMm": 30,
+   "relativeError": 0.25
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-1",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": -260,
+   "candidateMm": -270,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-1",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": -225,
+   "candidateMm": -215,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-1",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": -160,
+   "candidateMm": -170,
+   "relativeError": 0.0167
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-1",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  }
+ ],
+ "missingComponentIds": [],
+ "summary": {
+  "medianSizeError": 0.25,
+  "maxSizeError": 0.3333,
+  "medianPlacementError": 0.0167,
+  "maxPlacementError": 0.0167,
+  "within5": 0.7188,
+  "within10": 0.7188
+ }
+}

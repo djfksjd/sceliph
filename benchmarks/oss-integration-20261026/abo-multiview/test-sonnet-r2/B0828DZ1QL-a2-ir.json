@@ -1,0 +1,186 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Flush-mount ceiling light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "rim",
+   "name": "Bronze rim",
+   "category": "enclosure",
+   "materialName": "bronze painted metal",
+   "detail": "Stepped round rim and canopy at the top",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      118,
+      96
+     ],
+     [
+      134,
+      98
+     ],
+     [
+      148,
+      106
+     ],
+     [
+      150,
+      118
+     ],
+     [
+      140,
+      128
+     ],
+     [
+      120,
+      135
+     ],
+     [
+      0,
+      135
+     ],
+     [
+      0,
+      100
+     ],
+     [
+      118,
+      96
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#4a3a33",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "glass",
+   "name": "Frosted glass bowl",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "Hemispherical opal glass shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      18
+     ],
+     [
+      30,
+      20
+     ],
+     [
+      70,
+      30
+     ],
+     [
+      100,
+      52
+     ],
+     [
+      118,
+      80
+     ],
+     [
+      124,
+      106
+     ],
+     [
+      0,
+      106
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Finial cap",
+   "category": "mechanical",
+   "materialName": "bronze painted metal",
+   "detail": "Conical cap under the bowl",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 16,
+    "depth": 8,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    22,
+    0
+   ],
+   "material": {
+    "color": "#4a3a33",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Finial stem",
+   "category": "mechanical",
+   "materialName": "bronze painted metal",
+   "detail": "Short stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 14,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    14,
+    0
+   ],
+   "material": {
+    "color": "#4a3a33",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Finial knob",
+   "category": "mechanical",
+   "materialName": "bronze painted metal",
+   "detail": "Rounded tip",
+   "geometry": {
+    "op": "sphere",
+    "radius": 7
+   },
+   "position": [
+    0,
+    7,
+    0
+   ],
+   "material": {
+    "color": "#4a3a33",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

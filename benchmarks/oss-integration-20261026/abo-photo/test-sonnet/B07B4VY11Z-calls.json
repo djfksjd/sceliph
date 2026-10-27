@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Bishop Modern Wood King Bed, 79\"W, Weathered Oak.\nThe product listing gives its overall height as 1372 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.024519200000000005,
+   "durationMs": 15937,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-45,\"elevationDeg\":20},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Bishop Modern Wood King Bed\",\"units\":\"mm\",\"components\":[{\"id\":\"headboard\",\"name\":\"Headboard\",\"category\":\"enclosure\",\"materialName\":\"weathered oak\",\"detail\":\"Tall panel headboard\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[2007,1372,50],\"radius\":8},\"position\":[0,686,-1040],\"material\":{\"color\":\"#a89478\",\"roughness\":0.8}},{\"id\":\"footboard\",\"name\":\"Footboard\",\"category\":\"enclosure\",\"materialName\":\"weathered oak\",\"detail\":\"Low panel footboard\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[2007,380,50],\"radius\":8},\"position\":[0,290,1040],\"material\":{\"color\":\"#a89478\",\"roughness\":0.8}},{\"id\":\"foot_leg_l\",\"name\":\"Footboard post left\",\"category\":\"mechanical\",\"materialName\":\"weathered oak\",\"detail\":\"Short foot post\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[60,100,60],\"radius\":6},\"position\":[-973,50,1040],\"material\":{\"color\":\"#a08c70\",\"roughness\":0.8}},{\"id\":\"foot_leg_r\",\"name\":\"Footboard post right\",\"category\":\"mechanical\",\"materialName\":\"weathered oak\",\"detail\":\"Short foot post\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[60,100,60],\"radius\":6},\"position\":[973,50,1040],\"material\":{\"color\":\"#a08c70\",\"roughness\":0.8}},{\"id\":\"rail_l\",\"name\":\"Side rail left\",\"category\":\"enclosure\",\"materialName\":\"weathered oak\",\"detail\":\"Long side rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[35,250,2030],\"radius\":6},\"position\":[-985,275,0],\"material\":{\"color\":\"#a89478\",\"roughness\":0.8}},{\"id\":\"rail_r\",\"name\":\"Side rail right\",\"category\":\"enclosure\",\"materialName\":\"weathered oak\",\"detail\":\"Long side rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[35,250,2030],\"radius\":6},\"position\":[985,275,0],\"material\":{\"color\":\"#a89478\",\"roughness\":0.8}},{\"id\":\"platform\",\"name\":\"Slat platform\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Support deck\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1930,40,2000],\"radius\":6},\"position\":[0,200,5],\"material\":{\"color\":\"#8f7d62\",\"roughness\":0.9}},{\"id\":\"mattress\",\"name\":\"Mattress\",\"category\":\"mechanical\",\"materialName\":\"white fabric\",\"detail\":\"King mattress\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1930,300,2000],\"radius\":40},\"position\":[0,370,5],\"material\":{\"color\":\"#f6f6f6\",\"roughness\":0.95}},{\"id\":\"pillow_l\",\"name\":\"Pillow left\",\"category\":\"mechanical\",\"materialName\":\"white fabric\",\"detail\":\"Pillow\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[700,130,480],\"radius\":55},\"position\":[-480,585,-760],\"rotation\":[0,0.1,0],\"material\":{\"color\":\"#ffffff\",\"roughness\":0.95}},{\"id\":\"pillow_r\",\"name\":\"Pillow right\",\"category\":\"mechanical\",\"materialName\":\"white fabric\",\"detail\":\"Pillow\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[700,130,480],\"radius\":55},\"position\":[480,585,-760],\"rotation\":[0,-0.1,0],\"material\":{\"color\":\"#ffffff\",\"roughness\":0.95}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Rivet Lámpara de mesa de hormigón moderno, con foco, color gris.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 381 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.014324400000000001,
+   "durationMs": 10615,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Concrete table lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"ring\",\"name\":\"Brass base ring\",\"category\":\"mechanical\",\"materialName\":\"brass\",\"detail\":\"polished brass band at base\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":45,\"radiusBottom\":45,\"depth\":20,\"radialSegments\":48},\"position\":[0,10,0],\"material\":{\"color\":\"#b08d3c\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"body\",\"name\":\"Concrete base\",\"category\":\"enclosure\",\"materialName\":\"concrete\",\"detail\":\"cylindrical concrete body\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":44,\"radiusBottom\":44,\"depth\":148,\"radialSegments\":48},\"position\":[0,94,0],\"material\":{\"color\":\"#9d9c9b\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"neck\",\"name\":\"Brass neck\",\"category\":\"mechanical\",\"materialName\":\"brass\",\"detail\":\"small brass socket neck\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":10,\"radialSegments\":24},\"position\":[0,173,0],\"material\":{\"color\":\"#8a6a2a\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"shade\",\"name\":\"Linen drum shade\",\"category\":\"enclosure\",\"materialName\":\"linen\",\"detail\":\"open-ended white linen drum shade\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[109,-105.5],[111,-105.5],[111,105.5],[109,105.5],[109,-105.5]],\"segments\":64},\"position\":[0,275.5,0],\"material\":{\"color\":\"#e4e3e0\",\"roughness\":0.95,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

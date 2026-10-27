@@ -1,0 +1,408 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Two-light cage vanity",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Backplate",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "round wall plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 54,
+    "radiusBottom": 54,
+    "depth": 8,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    200,
+    4
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#9a9c9e",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "rod from plate to bar",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -48
+     ],
+     [
+      0,
+      0,
+      48
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    200,
+    56
+   ],
+   "material": {
+    "color": "#a5a7a9",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "bar",
+   "name": "Crossbar",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "horizontal bar",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -206,
+      0,
+      0
+     ],
+     [
+      206,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    202,
+    104
+   ],
+   "material": {
+    "color": "#a5a7a9",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "sock_l",
+   "name": "Socket left",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "socket body",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 17,
+    "radiusBottom": 17,
+    "depth": 45,
+    "radialSegments": 32
+   },
+   "position": [
+    -143,
+    163,
+    104
+   ],
+   "material": {
+    "color": "#8d8f91",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "sock_r",
+   "name": "Socket right",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "socket body",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 17,
+    "radiusBottom": 17,
+    "depth": 45,
+    "radialSegments": 32
+   },
+   "position": [
+    143,
+    163,
+    104
+   ],
+   "material": {
+    "color": "#8d8f91",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "collar_l",
+   "name": "Cage collar left",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "cage top collar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 38,
+    "depth": 12,
+    "radialSegments": 32
+   },
+   "position": [
+    -143,
+    140,
+    104
+   ],
+   "material": {
+    "color": "#b0b2b4",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "collar_r",
+   "name": "Cage collar right",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "cage top collar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 38,
+    "depth": 12,
+    "radialSegments": 32
+   },
+   "position": [
+    143,
+    140,
+    104
+   ],
+   "material": {
+    "color": "#b0b2b4",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "mid_l",
+   "name": "Cage mid ring left",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "wire ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 50,
+    "tube": 1.8
+   },
+   "position": [
+    -143,
+    72,
+    104
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b0b2b4",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "mid_r",
+   "name": "Cage mid ring right",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "wire ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 50,
+    "tube": 1.8
+   },
+   "position": [
+    143,
+    72,
+    104
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b0b2b4",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "base_l",
+   "name": "Cage base ring left",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "wire ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 48,
+    "tube": 1.8
+   },
+   "position": [
+    -143,
+    3,
+    104
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b0b2b4",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "base_r",
+   "name": "Cage base ring right",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "wire ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 48,
+    "tube": 1.8
+   },
+   "position": [
+    143,
+    3,
+    104
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b0b2b4",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "bulb_l",
+   "name": "Bulb left",
+   "category": "mechanical",
+   "materialName": "glass",
+   "detail": "Edison bulb",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      18,
+      15
+     ],
+     [
+      22,
+      40
+     ],
+     [
+      16,
+      65
+     ],
+     [
+      9,
+      80
+     ],
+     [
+      0,
+      83
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    -143,
+    20,
+    104
+   ],
+   "material": {
+    "color": "#dfe6ea",
+    "roughness": 0.1,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "bulb_r",
+   "name": "Bulb right",
+   "category": "mechanical",
+   "materialName": "glass",
+   "detail": "Edison bulb",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      18,
+      15
+     ],
+     [
+      22,
+      40
+     ],
+     [
+      16,
+      65
+     ],
+     [
+      9,
+      80
+     ],
+     [
+      0,
+      83
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    143,
+    20,
+    104
+   ],
+   "material": {
+    "color": "#dfe6ea",
+    "roughness": 0.1,
+    "metalness": 0.1
+   }
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Modern Traditional Living Room Table Desk Lamp With Light Bulb - 7 x 7 x 28 Inches, Brass with Linen Shade.\nThe product listing gives its overall height as 711 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.016393,
+   "durationMs": 8647,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Brass floor lamp with linen shade\",\"units\":\"mm\",\"components\":[{\"id\":\"base_lower\",\"name\":\"Base lower disc\",\"category\":\"mechanical\",\"materialName\":\"brass\",\"detail\":\"Wide lower base ring\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":88,\"radiusBottom\":90,\"depth\":12,\"radialSegments\":48},\"position\":[0,6,0],\"material\":{\"color\":\"#b8832e\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"base_upper\",\"name\":\"Base upper dish\",\"category\":\"mechanical\",\"materialName\":\"brass\",\"detail\":\"Upper base disc\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":80,\"radiusBottom\":86,\"depth\":14,\"radialSegments\":48},\"position\":[0,19,0],\"material\":{\"color\":\"#c08a34\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"base_rim\",\"name\":\"Base rim\",\"category\":\"mechanical\",\"materialName\":\"brass\",\"detail\":\"Raised rim ring\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":76,\"radiusBottom\":78,\"depth\":8,\"radialSegments\":48},\"position\":[0,30,0],\"material\":{\"color\":\"#b8832e\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"pole\",\"name\":\"Pole\",\"category\":\"mechanical\",\"materialName\":\"brass\",\"detail\":\"Main brass stem\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":8,\"radiusBottom\":8,\"depth\":520,\"radialSegments\":24},\"position\":[0,285,0],\"material\":{\"color\":\"#b8832e\",\"roughness\":0.3,\"metalness\":0.95}},{\"id\":\"collar\",\"name\":\"Collar\",\"category\":\"mechanical\",\"materialName\":\"brass\",\"detail\":\"Collar below shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":12,\"radiusBottom\":12,\"depth\":16,\"radialSegments\":24},\"position\":[0,515,0],\"material\":{\"color\":\"#c08a34\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"knob_stem\",\"name\":\"Knob stem\",\"category\":\"mechanical\",\"materialName\":\"brass\",\"detail\":\"Short stem for knob\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,0,0],[-22,0,0]],\"radius\":4},\"position\":[-8,530,0],\"material\":{\"color\":\"#b8832e\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"knob\",\"name\":\"Knob\",\"category\":\"mechanical\",\"materialName\":\"brass\",\"detail\":\"Adjustment knob\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":12,\"radiusBottom\":12,\"depth\":8,\"radialSegments\":24},\"position\":[-32,530,0],\"rotation\":[0,0,1.5708],\"material\":{\"color\":\"#c08a34\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"switch\",\"name\":\"Cord switch\",\"category\":\"interconnect\",\"materialName\":\"black plastic\",\"detail\":\"Small black switch near base\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[6,26,6],\"radius\":2},\"position\":[0,70,7],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.6,\"metalness\":0.1}},{\"id\":\"shade\",\"name\":\"Linen shade\",\"category\":\"mechanical\",\"materialName\":\"linen\",\"detail\":\"Tapered drum shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":95,\"radiusBottom\":115,\"depth\":150,\"radialSegments\":48},\"position\":[0,636,0],\"material\":{\"color\":\"#f2efe8\",\"roughness\":0.95,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

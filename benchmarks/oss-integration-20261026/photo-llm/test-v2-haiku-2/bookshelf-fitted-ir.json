@@ -1,0 +1,189 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "open-bookshelf",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side-left",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "pine plywood",
+   "detail": "Left vertical side panel, 900 mm tall",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     900,
+     345.9467225636616
+    ],
+    "radius": 2
+   },
+   "position": [
+    -391,
+    450,
+    0
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side-right",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "pine plywood",
+   "detail": "Right vertical side panel, 900 mm tall",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     900,
+     345.9467225636616
+    ],
+    "radius": 2
+   },
+   "position": [
+    428.78445234359566,
+    450,
+    0
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "thin back board",
+   "detail": "Thin back panel set between the side panels",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     756.1214436785388,
+     873.4131720798985,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    450,
+    -147.83942358197436
+   ],
+   "material": {
+    "color": "#6b5238",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-1",
+   "name": "Lowest shelf",
+   "category": "mechanical",
+   "materialName": "pine plywood",
+   "detail": "Lowest horizontal shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     838.5804771997147,
+     23.035945421760033,
+     318.1852370565298
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    7.840293233325724,
+    -2.230756114065514
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-2",
+   "name": "Second shelf",
+   "category": "mechanical",
+   "materialName": "pine plywood",
+   "detail": "Second horizontal shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     838.5804771997147,
+     23.035945421760033,
+     318.1852370565298
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    305.14276168898124,
+    -2.230756114065514
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-3",
+   "name": "Third shelf",
+   "category": "mechanical",
+   "materialName": "pine plywood",
+   "detail": "Third horizontal shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     838.5804771997147,
+     23.035945421760033,
+     318.1852370565298
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    601.1449405816322,
+    -2.230756114065514
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-4",
+   "name": "Top shelf",
+   "category": "mechanical",
+   "materialName": "pine plywood",
+   "detail": "Top horizontal shelf that closes the top of the unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     838.5804771997147,
+     23.035945421760033,
+     318.1852370565298
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    885.8139326398589,
+    -2.230756114065514
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

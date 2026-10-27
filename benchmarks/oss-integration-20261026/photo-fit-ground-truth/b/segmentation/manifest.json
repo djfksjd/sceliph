@@ -1,0 +1,69 @@
+{
+  "schema": "sceliph.part-segmentation/0.1",
+  "provenance": "estimated",
+  "writesAssemblyIR": false,
+  "detector": {
+    "id": "onnx-community/grounding-dino-tiny-ONNX",
+    "revision": "ff690b0a8050566c290287545bd059350f3e9096"
+  },
+  "segmenter": {
+    "id": "onnx-community/sam2.1-hiera-tiny-ONNX",
+    "revision": "814a066640debee5a91e70aa401fb8e17e030503"
+  },
+  "input": {
+    "sha256": "02558b88f185ec293b26d997bf83e5982408f8c39d630224dd041649e8248cd3",
+    "width": 640,
+    "height": 480,
+    "maxSide": 640
+  },
+  "threshold": 0.25,
+  "parts": [
+    {
+      "id": "box",
+      "text": "a box.",
+      "componentIds": [
+        "box"
+      ],
+      "status": "segmented",
+      "detectionScore": 0.734556257724762,
+      "box": [
+        127,
+        139,
+        503,
+        408
+      ],
+      "maskIouScore": 0.9821566343307495,
+      "pixels": 60370,
+      "file": "box.png",
+      "sha256": "15befd7a83b2600eaf37acb7b66fa4e90ae5c41862bdc83d2606ef43816cfdd1"
+    },
+    {
+      "id": "post",
+      "text": "a cylinder.",
+      "componentIds": [
+        "post"
+      ],
+      "status": "segmented",
+      "detectionScore": 0.5957687497138977,
+      "box": [
+        326,
+        0,
+        420,
+        200
+      ],
+      "maskIouScore": 0.9947646856307983,
+      "pixels": 15696,
+      "file": "post.png",
+      "sha256": "930d7710af1c4894e691784f7d9550bed0f7f9d4a611e70777eb5d4596827cd2"
+    }
+  ],
+  "object": {
+    "file": "object.png",
+    "sha256": "689e3292db99225e66dd12981296315e8943878ebf9943354c5f21b8a54c9490",
+    "pixels": 76066
+  },
+  "limitations": [
+    "Masks are model estimates of visible regions; occluded portions are absent.",
+    "One detection per prompt (highest score); duplicates of the same part are not separated."
+  ]
+}

@@ -8,8 +8,10 @@ import {validateReferenceProjectionOrientation} from './reference-projection-ori
 import {validateSpurGear,gearExtrude,type SpurGearGeometry} from './spur-gear';
 import * as THREE from 'three';
 import { stableExtrudeUV } from './extrude-uv';
+import {CAP_DIAGONAL_POLICY, improveExtrudeCapDiagonals} from './extrude-cap-diagonals';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import type { ViewMode } from '../types';
+import { compileBooleanCsg, MAX_BOOLEAN_DEPTH, MAX_BOOLEAN_OPERANDS } from './boolean-csg';
 import type { ProductBuild, ProductPartInfo } from './product';
 import type { AssemblyComponentIR, AssemblyGeometryIR, AssemblyIR } from './assembly-ir';
 import { compileElectricalHarness, validateElectricalHarness } from './connectivity';
@@ -162,7 +164,9 @@ export function validateAssemblyIR(value: unknown): asserts value is AssemblyIR 
     throw new Error('AssemblyIR must contain 1–500 components.');
   }
   const ids = new Set<string>();
-  const allowedOps = new Set(['roundedBox', 'cylinder', 'sphere', 'torus', 'extrude', 'lathe', 'tube', 'surfacePatch', 'hipRoof', 'bladeLoft', 'visualHull', 'implicitSurface']);
+  const allowedOps = new Set(['roundedBox', 'cylinder', 'sphere', 'torus', 'extrude', 'lathe', 'tube', 'surfacePatch', 'hipRoof', 'bladeLoft', 'visualHull', 'implicitSurface', 'booleanCSG']);
+  // Operands are compiled meshes; image-carved or sampled surfaces stay top-level only.
+  const booleanOperandOps = new Set(['roundedBox', 'cylinder', 'sphere', 'torus', 'extrude', 'lathe', 'tube', 'hipRoof', 'bladeLoft', 'booleanCSG']);
   const allowedSurfaces = new Set([
     'raw', 'concrete', 'asphalt', 'plaster', 'stone', 'coated-metal', 'brushed-metal', 'bead-blasted-metal', 'anodized-metal', 'polished-metal',
     'machined-copper', 'ceramic-glass', 'optical-glass', 'sapphire', 'pcb-soldermask',
@@ -222,110 +226,139 @@ export function validateAssemblyIR(value: unknown): asserts value is AssemblyIR 
       || typeof component.detail !== 'string' || component.detail.length > 500) {
       throw new Error(`Invalid component text metadata in ${component.id}.`);
     }
-    validateLatheNormalPolicy(component.geometry);
-    if (component.geometry.op !== 'tube' && ('capWinding' in component.geometry || 'capFinish' in component.geometry)) throw new Error('Cap winding declaration requires a tube.');
-    if (component.geometry.op !== 'bladeLoft' && 'sideWinding' in component.geometry) throw new Error('Blade winding requires bladeLoft.');
     inspect(component.geometry, `${component.id}.geometry`);
-    switch (component.geometry.op) {
-      case 'roundedBox': {
-        const minDimension = Math.min(...component.geometry.size);
-        if (minDimension <= 0) throw new Error(`Rounded box dimensions must be positive in ${component.id}.`);
-        if (component.geometry.radius < 0 || component.geometry.radius > minDimension * 0.49) {
-          throw new Error(`Rounded box radius exceeds the safe half-dimension limit in ${component.id}.`);
-        }
-        break;
-      }
-      case 'cylinder':
-        if (component.geometry.depth <= 0 || component.geometry.radiusTop < 0 || component.geometry.radiusBottom < 0
-          || component.geometry.radiusTop + component.geometry.radiusBottom <= 0) throw new Error(`Cylinder dimensions must be positive in ${component.id}.`);
-        break;
-      case 'sphere':
-        if (component.geometry.radius <= 0) throw new Error(`Sphere radius must be positive in ${component.id}.`);
-        break;
-      case 'torus':
-        if (component.geometry.radius <= 0 || component.geometry.tube <= 0 || component.geometry.tube >= component.geometry.radius) {
-          throw new Error(`Torus radii are invalid in ${component.id}.`);
-        }
-        break;
-      case 'extrude':
-        if (component.geometry.bevelSegments !== undefined && (!Number.isInteger(component.geometry.bevelSegments)
-          || component.geometry.bevelSegments < 0 || component.geometry.bevelSegments > 512)) {
-          throw new Error(`Extrude bevel segments are invalid in ${component.id}: expected integer 0..512 (0 only with bevel disabled).`);
-        }
-        if (component.geometry.points.length < 3 || component.geometry.depth <= 0) throw new Error(`Extrude profile is invalid in ${component.id}.`);
-        if (component.geometry.holes?.some((loop) => loop.length < 3)) throw new Error(`Extrude hole loop is invalid in ${component.id}.`);
-        if (component.geometry.ovalHoles?.some((hole) => hole.radii.some((radius) => radius <= 0)
-          || (hole.segments !== undefined && (hole.segments < 8 || hole.segments > 256)))) {
-          throw new Error(`Extrude oval hole is invalid in ${component.id}.`);
-        }
-        if (((component.geometry.bevelSize ?? 0) > 0 || (component.geometry.bevelThickness ?? 0) > 0)
-          && (component.geometry.bevelSegments ?? 3) < 1) throw new Error(`Extrude bevel segments are invalid in ${component.id}.`);
-        {
-          const extrudeDepth = component.geometry.depth;
-          if (component.geometry.edgeTapers && (component.geometry.edgeTapers.length > 8
-          || component.geometry.edgeTapers.some((taper) => taper.path.length < 2
-            || taper.path.length > 512
-            || taper.width <= 0
-            || taper.tipThickness <= 0
-            || taper.tipThickness >= extrudeDepth
-            || (taper.curve !== undefined && (taper.curve < 0.25 || taper.curve > 4))))) {
-            throw new Error(`Extrude edge taper is invalid in ${component.id}.`);
+    const validateGeometry = (geometry: AssemblyGeometryIR, ownerId: string, depth: number): void => {
+      if (!geometry || typeof geometry !== 'object' || !allowedOps.has(geometry.op)) throw new Error(`Unsupported geometry op in ${ownerId}.`);
+      validateLatheNormalPolicy(geometry);
+      if (geometry.op !== 'tube' && ('capWinding' in geometry || 'capFinish' in geometry)) throw new Error('Cap winding declaration requires a tube.');
+      if (geometry.op !== 'bladeLoft' && 'sideWinding' in geometry) throw new Error('Blade winding requires bladeLoft.');
+      switch (geometry.op) {
+        case 'roundedBox': {
+          const minDimension = Math.min(...geometry.size);
+          if (minDimension <= 0) throw new Error(`Rounded box dimensions must be positive in ${ownerId}.`);
+          if (geometry.radius < 0 || geometry.radius > minDimension * 0.49) {
+            throw new Error(`Rounded box radius exceeds the safe half-dimension limit in ${ownerId}.`);
           }
+          break;
         }
-        break;
-      case 'lathe':
-        if (component.geometry.profile.length < 2 || component.geometry.profile.some(([radius]) => radius < 0)) throw new Error(`Lathe profile is invalid in ${component.id}.`);
-        if (component.geometry.segments !== undefined && (!Number.isInteger(component.geometry.segments)
-          || component.geometry.segments < 3 || component.geometry.segments > 512)) {
-          throw new Error(`Lathe segments must be an integer from 3 to 512 in ${component.id}.`);
+        case 'cylinder':
+          if (geometry.depth <= 0 || geometry.radiusTop < 0 || geometry.radiusBottom < 0
+            || geometry.radiusTop + geometry.radiusBottom <= 0) throw new Error(`Cylinder dimensions must be positive in ${ownerId}.`);
+          break;
+        case 'sphere':
+          if (geometry.radius <= 0) throw new Error(`Sphere radius must be positive in ${ownerId}.`);
+          break;
+        case 'torus':
+          if (geometry.radius <= 0 || geometry.tube <= 0 || geometry.tube >= geometry.radius) {
+            throw new Error(`Torus radii are invalid in ${ownerId}.`);
+          }
+          break;
+        case 'extrude':
+          if (geometry.capTriangulation !== undefined && geometry.capTriangulation !== CAP_DIAGONAL_POLICY) throw new Error(`Invalid cap triangulation policy in ${ownerId}.`);
+          if (geometry.bevelSegments !== undefined && (!Number.isInteger(geometry.bevelSegments)
+            || geometry.bevelSegments < 0 || geometry.bevelSegments > 512)) {
+            throw new Error(`Extrude bevel segments are invalid in ${ownerId}: expected integer 0..512 (0 only with bevel disabled).`);
+          }
+          if (geometry.points.length < 3 || geometry.depth <= 0) throw new Error(`Extrude profile is invalid in ${ownerId}.`);
+          if (geometry.holes?.some((loop) => loop.length < 3)) throw new Error(`Extrude hole loop is invalid in ${ownerId}.`);
+          if (geometry.ovalHoles?.some((hole) => hole.radii.some((radius) => radius <= 0)
+            || (hole.segments !== undefined && (hole.segments < 8 || hole.segments > 256)))) {
+            throw new Error(`Extrude oval hole is invalid in ${ownerId}.`);
+          }
+          if (((geometry.bevelSize ?? 0) > 0 || (geometry.bevelThickness ?? 0) > 0)
+            && (geometry.bevelSegments ?? 3) < 1) throw new Error(`Extrude bevel segments are invalid in ${ownerId}.`);
+          {
+            const extrudeDepth = geometry.depth;
+            if (geometry.edgeTapers && (geometry.edgeTapers.length > 8
+            || geometry.edgeTapers.some((taper) => taper.path.length < 2
+              || taper.path.length > 512
+              || taper.width <= 0
+              || taper.tipThickness <= 0
+              || taper.tipThickness >= extrudeDepth
+              || (taper.curve !== undefined && (taper.curve < 0.25 || taper.curve > 4))))) {
+              throw new Error(`Extrude edge taper is invalid in ${ownerId}.`);
+            }
+          }
+          break;
+        case 'lathe':
+          if (geometry.profile.length < 2 || geometry.profile.some(([radius]) => radius < 0)) throw new Error(`Lathe profile is invalid in ${ownerId}.`);
+          if (geometry.segments !== undefined && (!Number.isInteger(geometry.segments)
+            || geometry.segments < 3 || geometry.segments > 512)) {
+            throw new Error(`Lathe segments must be an integer from 3 to 512 in ${ownerId}.`);
+          }
+          break;
+        case 'tube':
+          validateTubeQuadraticCurve(geometry);
+          validateTubeRadiusProfile(geometry);
+          if (geometry.points.length < 2 || geometry.radius <= 0) throw new Error(`Tube path is invalid in ${ownerId}.`);
+          break;
+        case 'surfacePatch': {
+          const [segmentsX, segmentsZ] = geometry.segments;
+          const gridVertices = (segmentsX + 1) * (segmentsZ + 1) * 2;
+          const reference = geometry.referenceRelief;
+          if (reference) validateReferenceRelief(reference, ownerId);
+          if (geometry.size.some((value) => value <= 0)
+            || geometry.baseThickness <= 0
+            || !Number.isInteger(segmentsX) || !Number.isInteger(segmentsZ)
+            || segmentsX < 2 || segmentsZ < 2 || segmentsX > 256 || segmentsZ > 256
+            || gridVertices > 80_000
+            || !Number.isInteger(geometry.seed)
+            || geometry.seed < 0 || geometry.seed > 0x7fff_ffff
+            || geometry.macroAmplitude < 0
+            || geometry.aggregateAmplitude < 0
+            || geometry.aggregateScale <= 0
+            || geometry.macroAmplitude + geometry.aggregateAmplitude + (reference?.amplitudeMm ?? 0)
+              >= geometry.baseThickness * 0.45) {
+            throw new Error(`Surface patch is invalid in ${ownerId}.`);
+          }
+          break;
         }
-        break;
-      case 'tube':
-        validateTubeQuadraticCurve(component.geometry);
-        validateTubeRadiusProfile(component.geometry);
-        if (component.geometry.points.length < 2 || component.geometry.radius <= 0) throw new Error(`Tube path is invalid in ${component.id}.`);
-        break;
-      case 'surfacePatch': {
-        const [segmentsX, segmentsZ] = component.geometry.segments;
-        const gridVertices = (segmentsX + 1) * (segmentsZ + 1) * 2;
-        const reference = component.geometry.referenceRelief;
-        if (reference) validateReferenceRelief(reference, component.id);
-        if (component.geometry.size.some((value) => value <= 0)
-          || component.geometry.baseThickness <= 0
-          || !Number.isInteger(segmentsX) || !Number.isInteger(segmentsZ)
-          || segmentsX < 2 || segmentsZ < 2 || segmentsX > 256 || segmentsZ > 256
-          || gridVertices > 80_000
-          || !Number.isInteger(component.geometry.seed)
-          || component.geometry.seed < 0 || component.geometry.seed > 0x7fff_ffff
-          || component.geometry.macroAmplitude < 0
-          || component.geometry.aggregateAmplitude < 0
-          || component.geometry.aggregateScale <= 0
-          || component.geometry.macroAmplitude + component.geometry.aggregateAmplitude + (reference?.amplitudeMm ?? 0)
-            >= component.geometry.baseThickness * 0.45) {
-          throw new Error(`Surface patch is invalid in ${component.id}.`);
+        case 'hipRoof':
+          if (geometry.width <= 0 || geometry.depth <= 0 || geometry.rise <= 0
+            || geometry.thickness <= 0 || geometry.ridgeLength < 0
+            || geometry.ridgeLength >= geometry.width) {
+            throw new Error(`Hip roof dimensions are invalid in ${ownerId}.`);
+          }
+          break;
+        case 'bladeLoft':
+          validateBladeSideWinding(geometry);
+          if (geometry.sections.length < 2 || geometry.thickness <= 0 || geometry.apexThickness < 0) {
+            throw new Error(`Blade loft is invalid in ${ownerId}.`);
+          }
+          break;
+        case 'visualHull':
+          validateVisualHullDescriptor(geometry.descriptor);
+          break;
+        case 'implicitSurface':
+          validateImplicitSurfaceDescriptor(geometry.descriptor);
+          break;
+        case 'booleanCSG': {
+          if (depth >= MAX_BOOLEAN_DEPTH) throw new Error(`Boolean nesting exceeds depth ${MAX_BOOLEAN_DEPTH} in ${ownerId}.`);
+          if (!['union', 'difference', 'intersection'].includes(geometry.operation)) throw new Error(`Unsupported boolean operation in ${ownerId}.`);
+          if (!Array.isArray(geometry.operands) || geometry.operands.length < 2 || geometry.operands.length > MAX_BOOLEAN_OPERANDS) {
+            throw new Error(`Boolean ${ownerId} needs 2–${MAX_BOOLEAN_OPERANDS} operands.`);
+          }
+          geometry.operands.forEach((operand, index) => {
+            const label = `${ownerId}.operands[${index}]`;
+            if (!operand || typeof operand !== 'object' || !operand.geometry || !booleanOperandOps.has(operand.geometry.op)) {
+              throw new Error(`Unsupported boolean operand geometry in ${label}.`);
+            }
+            for (const key of Object.keys(operand)) {
+              if (!['geometry', 'position', 'rotation', 'scale'].includes(key)) throw new Error(`Unknown boolean operand field ${key} in ${label}.`);
+            }
+            for (const vector of [operand.position, operand.rotation, operand.scale]) {
+              if (vector !== undefined && (!Array.isArray(vector) || vector.length !== 3 || !vector.every(Number.isFinite))) {
+                throw new Error(`Boolean operand transform must be finite 3-vectors in ${label}.`);
+              }
+            }
+            if (operand.scale && operand.scale.some((value) => value === 0)) throw new Error(`Boolean operand scale must be non-zero in ${label}.`);
+            validateGeometry(operand.geometry, label, depth + 1);
+          });
+          break;
         }
-        break;
       }
-      case 'hipRoof':
-        if (component.geometry.width <= 0 || component.geometry.depth <= 0 || component.geometry.rise <= 0
-          || component.geometry.thickness <= 0 || component.geometry.ridgeLength < 0
-          || component.geometry.ridgeLength >= component.geometry.width) {
-          throw new Error(`Hip roof dimensions are invalid in ${component.id}.`);
-        }
-        break;
-      case 'bladeLoft':
-        validateBladeSideWinding(component.geometry);
-        if (component.geometry.sections.length < 2 || component.geometry.thickness <= 0 || component.geometry.apexThickness < 0) {
-          throw new Error(`Blade loft is invalid in ${component.id}.`);
-        }
-        break;
-      case 'visualHull':
-        validateVisualHullDescriptor(component.geometry.descriptor);
-        break;
-      case 'implicitSurface':
-        validateImplicitSurfaceDescriptor(component.geometry.descriptor);
-        break;
-    }
+    };
+    validateGeometry(component.geometry, component.id, 0);
     inspect(component.position, `${component.id}.position`);
     inspect(component.rotation, `${component.id}.rotation`);
     inspect(component.scale, `${component.id}.scale`);
@@ -578,6 +611,7 @@ function compileGeometry(geometry: AssemblyGeometryIR, insetChamferMm=0): THREE.
         bevelOffset: -mm(insetChamferMm),
       });
       result.translate(0, 0, -depth * 0.5);
+      if (geometry.capTriangulation === CAP_DIAGONAL_POLICY) improveExtrudeCapDiagonals(result);
       if (geometry.edgeTapers?.length) applyExtrudeEdgeTapers(result, geometry.edgeTapers);
       return result;
     }
@@ -761,6 +795,8 @@ function compileGeometry(geometry: AssemblyGeometryIR, insetChamferMm=0): THREE.
       result.scale(0.001, 0.001, 0.001);
       return result;
     }
+    case 'booleanCSG':
+      return compileBooleanCsg(geometry, (operand) => compileGeometry(operand));
   }
 }
 

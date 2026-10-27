@@ -1,0 +1,191 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Farmhouse table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Turned wood base",
+   "category": "mechanical",
+   "materialName": "weathered wood",
+   "detail": "Lathe-turned stepped foot, bulb and collars",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      66,
+      0
+     ],
+     [
+      68,
+      5
+     ],
+     [
+      68,
+      13
+     ],
+     [
+      54,
+      16
+     ],
+     [
+      54,
+      22
+     ],
+     [
+      44,
+      26
+     ],
+     [
+      40,
+      30
+     ],
+     [
+      30,
+      36
+     ],
+     [
+      28,
+      42
+     ],
+     [
+      34,
+      46
+     ],
+     [
+      36,
+      50
+     ],
+     [
+      28,
+      54
+     ],
+     [
+      26,
+      60
+     ],
+     [
+      28,
+      92
+     ],
+     [
+      34,
+      105
+     ],
+     [
+      36,
+      127
+     ],
+     [
+      34,
+      148
+     ],
+     [
+      26,
+      158
+     ],
+     [
+      18,
+      164
+     ],
+     [
+      22,
+      172
+     ],
+     [
+      24,
+      180
+     ],
+     [
+      16,
+      186
+     ],
+     [
+      14,
+      196
+     ],
+     [
+      18,
+      206
+     ],
+     [
+      20,
+      212
+     ],
+     [
+      15,
+      220
+     ],
+     [
+      12,
+      234
+     ],
+     [
+      0,
+      234
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#a98a78",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Linen shade",
+   "category": "enclosure",
+   "materialName": "linen fabric",
+   "detail": "Tapered drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 112,
+    "radiusBottom": 136,
+    "depth": 265,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    367.5,
+    0
+   ],
+   "material": {
+    "color": "#d9d8d3",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Finial",
+   "category": "mechanical",
+   "materialName": "weathered wood",
+   "detail": "Small ball finial",
+   "geometry": {
+    "op": "sphere",
+    "radius": 11
+   },
+   "position": [
+    0,
+    497,
+    0
+   ],
+   "material": {
+    "color": "#a98a78",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  }
+ ]
+}

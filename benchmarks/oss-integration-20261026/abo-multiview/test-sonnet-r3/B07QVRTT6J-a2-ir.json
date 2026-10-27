@@ -1,0 +1,345 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Martin bookcase",
+ "units": "mm",
+ "components": [
+  {
+   "id": "legFL",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "Dark steel tube",
+   "detail": "Square tube corner leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     760,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -492,
+    380,
+    142
+   ],
+   "material": {
+    "color": "#3a3c3e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legFR",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "Dark steel tube",
+   "detail": "Square tube corner leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     760,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    492,
+    380,
+    142
+   ],
+   "material": {
+    "color": "#3a3c3e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legBL",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "Dark steel tube",
+   "detail": "Square tube corner leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     760,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -492,
+    380,
+    -142
+   ],
+   "material": {
+    "color": "#3a3c3e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legBR",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "Dark steel tube",
+   "detail": "Square tube corner leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     760,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    492,
+    380,
+    -142
+   ],
+   "material": {
+    "color": "#3a3c3e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legMF",
+   "name": "Front middle leg",
+   "category": "mechanical",
+   "materialName": "Dark steel tube",
+   "detail": "Middle support post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     380,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    190,
+    142
+   ],
+   "material": {
+    "color": "#3a3c3e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legMB",
+   "name": "Back middle leg",
+   "category": "mechanical",
+   "materialName": "Dark steel tube",
+   "detail": "Middle support post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     380,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    190,
+    -142
+   ],
+   "material": {
+    "color": "#3a3c3e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top shelf",
+   "category": "enclosure",
+   "materialName": "Light oak board",
+   "detail": "Top board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1000,
+     20,
+     300
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    770,
+    0
+   ],
+   "material": {
+    "color": "#cfa97a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom shelf",
+   "category": "enclosure",
+   "materialName": "Light oak board",
+   "detail": "Bottom shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     984,
+     18,
+     284
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    90,
+    0
+   ],
+   "material": {
+    "color": "#cfa97a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfLow",
+   "name": "Lower right shelf",
+   "category": "enclosure",
+   "materialName": "Light oak board",
+   "detail": "Stepped shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     742,
+     18,
+     284
+    ],
+    "radius": 2
+   },
+   "position": [
+    121,
+    375,
+    0
+   ],
+   "material": {
+    "color": "#cfa97a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfHigh",
+   "name": "Upper right shelf",
+   "category": "enclosure",
+   "materialName": "Light oak board",
+   "detail": "Stepped shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     742,
+     18,
+     284
+    ],
+    "radius": 2
+   },
+   "position": [
+    121,
+    580,
+    0
+   ],
+   "material": {
+    "color": "#cfa97a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfLeft",
+   "name": "Left small shelf",
+   "category": "enclosure",
+   "materialName": "Light oak board",
+   "detail": "Small left shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     240,
+     18,
+     284
+    ],
+    "radius": 2
+   },
+   "position": [
+    -370,
+    440,
+    0
+   ],
+   "material": {
+    "color": "#cfa97a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "stepF",
+   "name": "Front step post",
+   "category": "mechanical",
+   "materialName": "Dark steel tube",
+   "detail": "Post joining stepped shelves",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     220,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -250,
+    478,
+    142
+   ],
+   "material": {
+    "color": "#3a3c3e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "stepB",
+   "name": "Back step post",
+   "category": "mechanical",
+   "materialName": "Dark steel tube",
+   "detail": "Post joining stepped shelves",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     220,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -250,
+    478,
+    -142
+   ],
+   "material": {
+    "color": "#3a3c3e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

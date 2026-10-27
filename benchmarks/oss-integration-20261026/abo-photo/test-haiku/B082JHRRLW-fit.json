@@ -1,0 +1,555 @@
+{
+ "spec": {
+  "schema": "sceliph.photo-fit-spec/0.1",
+  "referenceComponentId": "shade",
+  "viewHint": {
+   "azimuthDeg": 0,
+   "elevationDeg": 5,
+   "sigmaDeg": 20
+  },
+  "knownExtent": {
+   "axis": 1,
+   "mm": 296.164,
+   "sigmaMm": 2.96164
+  },
+  "parameters": [
+   {
+    "componentId": "rim",
+    "path": [
+     "geometry",
+     "radius"
+    ],
+    "min": 63.5,
+    "max": 254
+   },
+   {
+    "componentId": "rim",
+    "path": [
+     "geometry",
+     "tube"
+    ],
+    "min": 2,
+    "max": 8
+   },
+   {
+    "componentId": "rim",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -144.2093334197998,
+    "max": 152.2093334197998
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 20,
+    "max": 80,
+    "links": [
+     {
+      "componentId": "mount_plate",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 41.790666580200195,
+    "max": 338.2093334197998
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -202.2093334197998,
+    "max": 94.2093334197998
+   },
+   {
+    "componentId": "gooseneck_arm",
+    "path": [
+     "geometry",
+     "radius"
+    ],
+    "min": 2.5,
+    "max": 10
+   }
+  ]
+ },
+ "derived": {
+  "parameters": [
+   {
+    "componentId": "rim",
+    "path": [
+     "geometry",
+     "radius"
+    ],
+    "min": 63.5,
+    "max": 254
+   },
+   {
+    "componentId": "rim",
+    "path": [
+     "geometry",
+     "tube"
+    ],
+    "min": 2,
+    "max": 8
+   },
+   {
+    "componentId": "rim",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -144.2093334197998,
+    "max": 152.2093334197998
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 20,
+    "max": 80,
+    "links": [
+     {
+      "componentId": "mount_plate",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 41.790666580200195,
+    "max": 338.2093334197998
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -202.2093334197998,
+    "max": 94.2093334197998
+   },
+   {
+    "componentId": "gooseneck_arm",
+    "path": [
+     "geometry",
+     "radius"
+    ],
+    "min": 2.5,
+    "max": 10
+   }
+  ],
+  "locked": [],
+  "groups": [],
+  "aligned": [
+   {
+    "componentId": "rim",
+    "axis": 0
+   },
+   {
+    "componentId": "rim",
+    "axis": 2
+   },
+   {
+    "componentId": "mount_plate",
+    "axis": 0
+   },
+   {
+    "componentId": "gooseneck_arm",
+    "axis": 0
+   },
+   {
+    "componentId": "gooseneck_arm",
+    "axis": 1
+   },
+   {
+    "componentId": "gooseneck_arm",
+    "axis": 2
+   }
+  ],
+  "skipped": [
+   "shade: lathe sizes are not fitted"
+  ]
+ },
+ "anchor": {
+  "estimatedMm": 834.2796862125397,
+  "knownMm": 296.164,
+  "scaleCorrection": 0.35499366087232015
+ },
+ "raster": {
+  "width": 141,
+  "height": 160,
+  "crop": {
+   "x": 210,
+   "y": 17,
+   "width": 221,
+   "height": 250
+  }
+ },
+ "cameraOnly": {
+  "loss": 0.06881618142835269,
+  "view": {
+   "id": "photo",
+   "iou": 0.8323045267489712,
+   "meanBoundaryDistancePx": 0.43040226157074296,
+   "depthResidual": 0.009018455998837304
+  }
+ },
+ "receipt": {
+  "schema": "sceliph.silhouette-parameter-fit/0.2",
+  "provenance": "inferred",
+  "seed": 1,
+  "parameters": [
+   {
+    "componentId": "rim",
+    "path": [
+     "geometry",
+     "radius"
+    ],
+    "min": 63.5,
+    "max": 254,
+    "before": 127,
+    "after": 117.27915695569203,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.0030412081262613244,
+    "frozen": false
+   },
+   {
+    "componentId": "rim",
+    "path": [
+     "geometry",
+     "tube"
+    ],
+    "min": 2,
+    "max": 8,
+    "before": 4,
+    "after": 4,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0005165226193493272,
+    "frozen": true
+   },
+   {
+    "componentId": "rim",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -144.2093334197998,
+    "max": 152.2093334197998,
+    "before": 4,
+    "after": 18.612377101637748,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.2661970424485166,
+    "frozen": false
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "links": [
+     {
+      "componentId": "mount_plate",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 20,
+    "max": 80,
+    "before": 40,
+    "after": 53.29522698107168,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.0052433430386498725,
+    "frozen": false
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 6,
+    "max": 24,
+    "before": 12,
+    "after": 12,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00008211919640122023,
+    "frozen": true
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "position",
+     1
+    ],
+    "min": 41.790666580200195,
+    "max": 338.2093334197998,
+    "before": 190,
+    "after": 102.01311177937802,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.0025018025322853243,
+    "frozen": false
+   },
+   {
+    "componentId": "mount_plate",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -202.2093334197998,
+    "max": 94.2093334197998,
+    "before": -54,
+    "after": -54,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000605246077473115,
+    "frozen": true
+   },
+   {
+    "componentId": "gooseneck_arm",
+    "path": [
+     "geometry",
+     "radius"
+    ],
+    "min": 2.5,
+    "max": 10,
+    "before": 5,
+    "after": 5,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0009399229887779026,
+    "frozen": true
+   }
+  ],
+  "cameraParameters": [
+   {
+    "viewId": "photo",
+    "field": "azimuthDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 20
+    },
+    "min": -50,
+    "max": 50,
+    "before": 1.4454116227092157,
+    "after": -0.799935913595192,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "elevationDeg",
+    "prior": {
+     "mean": 5,
+     "sigma": 20
+    },
+    "min": -45,
+    "max": 55,
+    "before": 10.228170432893918,
+    "after": 7.382317357589393,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "distanceMm",
+    "prior": {
+     "mean": 2173.629602219497,
+     "sigma": 543.4074005548742
+    },
+    "min": 1086.8148011097485,
+    "max": 4347.259204438994,
+    "before": 1824.0716302119458,
+    "after": 1927.1527683703607,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetX",
+    "min": -296.61136776864424,
+    "max": 296.225965910555,
+    "before": -1.7193815694424188,
+    "after": 2.4052734589214992,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetY",
+    "min": -66.06431846578607,
+    "max": 526.7730152134131,
+    "before": 112.5268914668313,
+    "after": 92.51559705243801,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetZ",
+    "min": -303.6054244132433,
+    "max": 289.2319092659559,
+    "before": -33.3880112451331,
+    "after": -227.99433453866845,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "rollDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 4
+    },
+    "min": -15,
+    "max": 15,
+    "before": -0.06771499160731587,
+    "after": -0.11945782090320023,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "focalScale",
+    "prior": {
+     "mean": 1,
+     "sigma": 0.15
+    },
+    "min": 0.6,
+    "max": 1.6,
+    "before": 1.0537140317218794,
+    "after": 1.0054259292380752,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   }
+  ],
+  "orbits": [
+   {
+    "viewId": "photo",
+    "orbit": {
+     "width": 640,
+     "height": 284,
+     "fx": 1120.3962153937136,
+     "fy": 1120.3962153937136,
+     "cx": 320,
+     "cy": 142,
+     "target": [
+      2.4052734589214992,
+      92.51559705243801,
+      -227.99433453866845
+     ],
+     "azimuthDeg": -0.799935913595192,
+     "elevationDeg": 7.382317357589393,
+     "distanceMm": 1927.1527683703607,
+     "rollDeg": -0.11945782090320023,
+     "focalScale": 1.0054259292380752
+    }
+   }
+  ],
+  "restarts": 2,
+  "before": {
+   "loss": 0.24898329150896686,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.3016023900054318,
+     "meanBoundaryDistancePx": 5.332884357866495,
+     "depthResidual": 0.011662137507112149
+    }
+   ]
+  },
+  "after": {
+   "loss": 0.027835017148533536,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.9401217305477875,
+     "meanBoundaryDistancePx": 0.07835415661562006,
+     "depthResidual": 0.00816297222731737
+    }
+   ]
+  },
+  "evaluations": 16034,
+  "stopReason": "maxEvaluations",
+  "compiledGeometries": 24037
+ },
+ "lowConfidenceReasons": [
+  "Object silhouette IoU 0.940 < 0.97."
+ ],
+ "acceptance": {
+  "accept": true,
+  "relativeLossGain": 0.595516394970074,
+  "freeParameters": 4,
+  "iou": 0.9401217305477875,
+  "reasons": []
+ }
+}

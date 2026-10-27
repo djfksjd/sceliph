@@ -1,3 +1,7 @@
+# Actual current UI verification · 2026-10-10
+
+Latest local source was executed in Chrome154, desktop/mobile captured and the replacement/save/reopen path exercised. See [current scope and evidence](PRACTICAL_WORKFLOW_20261010.ko.md). Previous blocked records below are historical.
+
 # 뷰포트 중심 편집기 정리 · 2026-10-09
 
 사용자가 선택한 방향은 뷰포트 중심의 정돈된 작업 화면이다. Impeccable의 Operate/layout 기준으로 기존 어두운 작업 화면, 원래 기능·입력 계약·검사 한계를 유지했다. 새 UI 라이브러리나 외부 모델은 추가하지 않았다.

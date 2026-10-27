@@ -1,0 +1,357 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rolling Kitchen Cart",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Wood top",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Butcher block style work surface",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     680,
+     20,
+     430
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    917,
+    0
+   ],
+   "material": {
+    "color": "#d2b985",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legfl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     857,
+     40
+    ],
+    "radius": 3
+   },
+   "position": [
+    -310,
+    478.5,
+    185
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legfr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     857,
+     40
+    ],
+    "radius": 3
+   },
+   "position": [
+    310,
+    478.5,
+    185
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legbl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     857,
+     40
+    ],
+    "radius": 3
+   },
+   "position": [
+    -310,
+    478.5,
+    -185
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legbr",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     857,
+     40
+    ],
+    "radius": 3
+   },
+   "position": [
+    310,
+    478.5,
+    -185
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer",
+   "name": "Drawer front",
+   "category": "enclosure",
+   "materialName": "white paint",
+   "detail": "Drawer under the top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     580,
+     85,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    850,
+    200
+   ],
+   "material": {
+    "color": "#f7f7f5",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Drawer handle",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     10,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    855,
+    218
+   ],
+   "material": {
+    "color": "#c4c6c8",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shelf_mid",
+   "name": "Middle slatted shelf",
+   "category": "enclosure",
+   "materialName": "white paint",
+   "detail": "Slatted shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     25,
+     370
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    420,
+    0
+   ],
+   "material": {
+    "color": "#f1f1ef",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_low",
+   "name": "Lower slatted shelf",
+   "category": "enclosure",
+   "materialName": "white paint",
+   "detail": "Slatted shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     25,
+     370
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    160,
+    0
+   ],
+   "material": {
+    "color": "#f1f1ef",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Towel rod",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Short side peg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 50,
+    "radialSegments": 24
+   },
+   "position": [
+    355,
+    870,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheelfl",
+   "name": "Front left caster",
+   "category": "mechanical",
+   "materialName": "rubber",
+   "detail": "Black wheel",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 25,
+    "radiusBottom": 25,
+    "depth": 18,
+    "radialSegments": 32
+   },
+   "position": [
+    -310,
+    25,
+    185
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheelfr",
+   "name": "Front right caster",
+   "category": "mechanical",
+   "materialName": "rubber",
+   "detail": "Black wheel",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 25,
+    "radiusBottom": 25,
+    "depth": 18,
+    "radialSegments": 32
+   },
+   "position": [
+    310,
+    25,
+    185
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheelbl",
+   "name": "Back left caster",
+   "category": "mechanical",
+   "materialName": "rubber",
+   "detail": "Black wheel",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 25,
+    "radiusBottom": 25,
+    "depth": 18,
+    "radialSegments": 32
+   },
+   "position": [
+    -310,
+    25,
+    -185
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "guide": "You write Sceliph AssemblyIR JSON. Output exactly one JSON object and nothing else: {\"view\":{\"azimuthDeg\":number,\"elevationDeg\":number},\"assembly\":AssemblyIR}.\nAssemblyIR: {\"schema\":\"morphloom.assembly/0.1\",\"name\":string,\"units\":\"mm\",\"components\":[component,...]}\ncomponent: {\"id\":string,\"name\":string,\"category\":one of \"enclosure\",\"display\",\"logic\",\"power\",\"camera\",\"audio\",\"radio\",\"mechanical\",\"interconnect\",\"materialName\":string,\"detail\":string,\"geometry\":geometry,\"position\":[x,y,z] (optional, mm, centre of the part),\"rotation\":[rx,ry,rz] (optional, radians, XYZ Euler),\"material\":{\"color\":\"#rrggbb\",\"roughness\":0..1 (optional),\"metalness\":0..1 (optional)}}\nWorld: millimetres, Y is up, the floor is y = 0. Each geometry is centred on the component position.\ngeometry options:\n- {\"op\":\"roundedBox\",\"size\":[x,y,z],\"radius\":r}  (r at most 0.4 x the smallest size)\n- {\"op\":\"cylinder\",\"radiusTop\":r1,\"radiusBottom\":r2,\"depth\":h,\"radialSegments\":32}  (axis along Y, height h)\n- {\"op\":\"sphere\",\"radius\":r}\n- {\"op\":\"torus\",\"radius\":R,\"tube\":t}  (ring lies in the XY plane; its axis is Z; outer diameter 2(R+t); rotate it for other planes)\n- {\"op\":\"tube\",\"points\":[[x,y,z],...],\"radius\":r}  (swept circle along a smooth curve through the points, relative to the component position; a straight rod or brace needs exactly two points, otherwise the curve bends)\n- {\"op\":\"lathe\",\"profile\":[[r,y],...],\"segments\":48}  (profile radius r >= 0 at height y, relative to the component position, revolved about the vertical Y axis; for vases, lamp bases, turned legs, shades)\n- {\"op\":\"extrude\",\"points\":[[x,y],...],\"depth\":d}  (closed outline in the X-Y plane relative to the component position, extruded along Z by d and centred on it; for shaped panels, brackets, cut-out legs)\nChoose the components yourself: 2 to 16 meaningful rigid parts (top, legs, drawer fronts, shade, base, ...), each with a short unique id.\nYou are modelling the product in a catalog photograph whose background has been removed. The user states the overall height from the product listing; make the model exactly that tall and derive every other size and placement from the photo in proportion to it.\nPut the object on the floor (lowest point at y = 0) and model only the object, not the floor or background.\n\"view\" is your estimate of where the photo was taken from, relative to your own model: azimuthDeg 0 means the camera looks at the model's +Z side (from +Z toward -Z); positive azimuth moves the camera toward +X (azimuth 90 = camera on the +X side). elevationDeg is the camera height angle above the horizontal (0 = level, 90 = straight down).\nGive every component an explicit \"position\".",
+ "requests": {
+  "a1": [
+   "Catalog photo (background removed) of: {name}.",
+   "The product listing gives its overall height as {height} mm.",
+   "Decide the components yourself."
+  ],
+  "a2": [
+   "Two catalog photos (background removed) of: {name}.",
+   "The second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.",
+   "The product listing gives its overall height as {height} mm.",
+   "Decide the components yourself."
+  ]
+ },
+ "maxRounds": 3,
+ "padShare": 0.08,
+ "maxSide": 640,
+ "backgroundThreshold": 235,
+ "exclusions": {
+  "minMaskShare": 0.02,
+  "maxMaskShare": 0.9
+ },
+ "frames": {
+  "front": 0,
+  "side": 18
+ },
+ "compare": {
+  "views": 8,
+  "elevationDeg": 20,
+  "raster": 320,
+  "yawStepDeg": 5,
+  "surfaceSamples": 8000,
+  "seed": 1
+ },
+ "note": "9b test protocol. Identical to protocol-dev.json except note and preregistration; frozen after the 10-item dev pass and before any test item was run or viewed.",
+ "preregistration": {
+  "registered": "2026-10-27, after dev-sonnet (10 slice-8 dev items, 1 repeat) and before any test call",
+  "selection": "benchmarks/oss-integration-20261026/abo-multiview/selection.json (continued seeded order after the 55 slice-8 items; strata thin = LAMP, LIGHT_FIXTURE, ELECTRIC_FAN; test 24 thin + 12 other)",
+  "replacements": {
+   "rule": "a test item whose product is a colour or size variant of a slice-8 item (same product line and design, decided from names and mesh metadata only, before any image) is replaced by the next reserve item of the same stratum",
+   "replaced": {
+    "B07GFLD8VP": "B07HSCYS4C (Inari desk colour variant of slice-8 dev B07GFFQZRQ)",
+    "B082XLMW6G": "B082JH9VWG (Rivet fan colour variant of slice-8 test B082XMF2RV)",
+    "B082XMRGZG": "B0825D147R (Rivet fan, same 52in body as B082XMF2RV)",
+    "B07XGQ9QJF": "B0828FFDWG (4-inch variant of slice-8 reserve 6-inch table fan B07XJB28C7)"
+   }
+  },
+  "items": [
+   "B07HSCYS4C",
+   "B071SHBTM5",
+   "B082XCSHKB",
+   "B075X2NLKP",
+   "B082JHBD9S",
+   "B07HSMYNYJ",
+   "B07B4SCM7N",
+   "B07QVRTT6J",
+   "B0154WJZH2",
+   "B07K6S7QHQ",
+   "B07B4Y45GY",
+   "B082JH9VWG",
+   "B07B4Z9PL9",
+   "B0825DBY38",
+   "B07TVYR4SS",
+   "B07B4W2MFW",
+   "B07B78G4QH",
+   "B07MBMJS1B",
+   "B0825D147R",
+   "B0742FPL25",
+   "B0828FB1G7",
+   "B082MXDF82",
+   "B0825DWB31",
+   "B07QC76NM2",
+   "B075X1T4ZS",
+   "B0824FLNHN",
+   "B0828FFDWG",
+   "B075X2LLWF",
+   "B07374QGD7",
+   "B07B4W2ZRW",
+   "B0828DZ1QL",
+   "B07HK6MTMC",
+   "B0825CLV7M",
+   "B075X2XZDD",
+   "B08B8SV8DB",
+   "B07B4VYKPR"
+  ],
+  "primaryModel": "sonnet",
+  "repeats": 3,
+  "secondaryModel": "none",
+  "analysis": "scripts/abo-multiview-summary.ts (items averaged over repeats; bootstrap over items, seed 20261027)",
+  "criteria": [
+   "footprint-gain: thin, median paired (a2 - a1) footprint error < 0 and 95% CI upper < 0",
+   "no-shape-loss: thin, median paired (a2 - a1) Chamfer/diag <= +0.001",
+   "beats-hull: all, median paired (a2 - b2) Chamfer/diag < 0 and 95% CI upper < 0",
+   "absolute-footprint: thin, a2 footprint error median <= 10%"
+  ],
+  "devObservation": "dev (mostly 3/4 views, 1 repeat): a2 footprint better on 3, worse on 6 of 10, mostly by small amounts; prediction: footprint-gain likely fails"
+ }
+}

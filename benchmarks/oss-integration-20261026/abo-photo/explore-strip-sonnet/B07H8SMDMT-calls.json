@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand - Movian Saale King Size Bed Frame with Headboard, Light Brown Oak-Effect.\nThe product listing gives its overall height as 970 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.013609200000000002,
+   "durationMs": 7309,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":35,\"elevationDeg\":22},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian Saale King Size Bed\",\"units\":\"mm\",\"components\":[{\"id\":\"headboard\",\"name\":\"Headboard\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Tall headboard panel at the head end\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1740,600,25],\"radius\":4},\"position\":[0,670,-1030],\"material\":{\"color\":\"#c9b8a8\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"hb_strip_upper\",\"name\":\"Headboard upper strip\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Raised horizontal strip\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1600,110,18],\"radius\":3},\"position\":[0,860,-1008],\"material\":{\"color\":\"#bfae9d\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"hb_strip_lower\",\"name\":\"Headboard lower strip\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Raised horizontal strip\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1600,110,18],\"radius\":3},\"position\":[0,700,-1008],\"material\":{\"color\":\"#bfae9d\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"plinth\",\"name\":\"Plinth\",\"category\":\"mechanical\",\"materialName\":\"oak-effect board\",\"detail\":\"Recessed base\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1560,100,1900],\"radius\":4},\"position\":[0,50,-60],\"material\":{\"color\":\"#a89b8d\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"frame\",\"name\":\"Bed frame\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Main side rails and footboard box\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1700,260,2000],\"radius\":8},\"position\":[0,230,-10],\"material\":{\"color\":\"#cdbcab\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"rail_strip\",\"name\":\"Side rail strip\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Raised strip along the frame\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1730,70,2020],\"radius\":5},\"position\":[0,200,-10],\"material\":{\"color\":\"#bba998\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"mattress\",\"name\":\"Mattress\",\"category\":\"enclosure\",\"materialName\":\"white fabric\",\"detail\":\"White mattress\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1600,200,1980],\"radius\":20},\"position\":[0,455,10],\"material\":{\"color\":\"#f4f4f4\",\"roughness\":0.95,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

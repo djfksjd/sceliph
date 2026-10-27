@@ -1,0 +1,374 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-century buffet credenza",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "pine veneer",
+   "detail": "Table top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1420,
+     25,
+     420
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    800.5,
+    0
+   ],
+   "material": {
+    "color": "#b5712f",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "pine",
+   "detail": "Cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1400,
+     433,
+     390
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    571.5,
+    0
+   ],
+   "material": {
+    "color": "#a9672b",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "door1",
+   "name": "Door 1",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     344,
+     415,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    -525,
+    571.5,
+    198
+   ],
+   "material": {
+    "color": "#b87433",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "door2",
+   "name": "Door 2",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     344,
+     415,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    -175,
+    571.5,
+    198
+   ],
+   "material": {
+    "color": "#b87433",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "door3",
+   "name": "Door 3",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     344,
+     415,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    175,
+    571.5,
+    198
+   ],
+   "material": {
+    "color": "#b87433",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "door4",
+   "name": "Door 4",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     344,
+     415,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    525,
+    571.5,
+    198
+   ],
+   "material": {
+    "color": "#b87433",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "handleL",
+   "name": "Left handles",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Vertical pulls",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     36,
+     200,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    -350,
+    590,
+    216
+   ],
+   "material": {
+    "color": "#4a2a18",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "handleR",
+   "name": "Right handles",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Vertical pulls",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     36,
+     200,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    350,
+    590,
+    216
+   ],
+   "material": {
+    "color": "#4a2a18",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "legFL",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 14,
+    "depth": 355,
+    "radialSegments": 24
+   },
+   "position": [
+    -620,
+    177.5,
+    140
+   ],
+   "material": {
+    "color": "#a9672b",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "legFR",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 14,
+    "depth": 355,
+    "radialSegments": 24
+   },
+   "position": [
+    620,
+    177.5,
+    140
+   ],
+   "material": {
+    "color": "#a9672b",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "legBL",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 14,
+    "depth": 355,
+    "radialSegments": 24
+   },
+   "position": [
+    -620,
+    177.5,
+    -140
+   ],
+   "material": {
+    "color": "#a9672b",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "legBR",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 14,
+    "depth": 355,
+    "radialSegments": 24
+   },
+   "position": [
+    620,
+    177.5,
+    -140
+   ],
+   "material": {
+    "color": "#a9672b",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "railF",
+   "name": "Front shelf rail",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Shelf frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1240,
+     35,
+     22
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    195,
+    140
+   ],
+   "material": {
+    "color": "#a9672b",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "railB",
+   "name": "Back shelf rail",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "Shelf frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1240,
+     35,
+     22
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    195,
+    -140
+   ],
+   "material": {
+    "color": "#a9672b",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "slats",
+   "name": "Shelf slats",
+   "category": "mechanical",
+   "materialName": "dark pine",
+   "detail": "Slatted shelf approximated as slab",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1200,
+     14,
+     260
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    190,
+    0
+   ],
+   "material": {
+    "color": "#6e4020",
+    "roughness": 0.7
+   }
+  }
+ ]
+}

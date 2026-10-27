@@ -1,0 +1,320 @@
+{
+ "schema": "sceliph.photo-llm-eval/0.1",
+ "protocolSha256": "1b8c2472e31162bc49852a2707b7d7435a1b128da62a6a1740dff5e1a5c5e382",
+ "sceneImageSha256": {
+  "bookshelf": "0468551cecf87d43105d93e37e206dc4d7c51972bd80adf272e830f2814561ca",
+  "box-post": "d3db98f1aaf8f953d754992bfe85485ad91b65046ce6a6f9b079ff0535b9a3ac",
+  "desk-lamp": "611bb0d4ad7f595ebb1937de63f492df7376227b397236aac3841ba82508acf9",
+  "mug": "2ef6f842b4b6bd69d3b5a1edd73523ce9e1482e095673eb7e38f5dc96aaf04ea",
+  "side-table": "d1f50fb0d60e396371d57e4ed6f38e3b9be0c24acd08feea987f33d6c8d951fd"
+ },
+ "modelAlias": "sonnet",
+ "totalCostUsd": 0.0674,
+ "results": [
+  {
+   "id": "bookshelf",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0.0228,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "view": {
+    "azimuthDeg": 30,
+    "elevationDeg": 20
+   },
+   "llm": {
+    "medianSizeError": 0.0053,
+    "maxSizeError": 0.1136,
+    "medianPlacementError": 0.0011,
+    "maxPlacementError": 0.1,
+    "within5": 0.7609,
+    "within10": 0.8696
+   },
+   "fit": {
+    "medianSizeError": 0.0918,
+    "maxSizeError": 0.1796,
+    "medianPlacementError": 0.0011,
+    "maxPlacementError": 0.3668,
+    "within5": 0.4348,
+    "within10": 0.6739,
+    "parameters": 15,
+    "locked": 1,
+    "groups": [
+     [
+      "side-left",
+      "side-right"
+     ],
+     [
+      "shelf-1",
+      "shelf-2",
+      "shelf-3",
+      "shelf-4"
+     ]
+    ],
+    "iouBefore": 0.8757,
+    "iouCameraOnly": 0.9145,
+    "iouAfter": 0.9621,
+    "lossCameraOnly": 0.09276,
+    "lossAfter": 0.05381,
+    "lowConfidenceReasons": 2,
+    "aligned": 11,
+    "frozen": 2,
+    "fitMs": 106602
+   },
+   "acceptance": {
+    "accept": false,
+    "relativeLossGain": 0.4199,
+    "freeParameters": 13,
+    "iou": 0.9621,
+    "reasons": [
+     "13 free parameters removed 3.2% each (< 5.0%)."
+    ]
+   },
+   "final": {
+    "medianSizeError": 0.0053,
+    "maxSizeError": 0.1136,
+    "medianPlacementError": 0.0011,
+    "maxPlacementError": 0.1,
+    "within5": 0.7609,
+    "within10": 0.8696
+   }
+  },
+  {
+   "id": "box-post",
+   "conventionIoU": 0.9999,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0.0091,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "view": {
+    "azimuthDeg": -15,
+    "elevationDeg": 28
+   },
+   "llm": {
+    "medianSizeError": 0,
+    "maxSizeError": 0.0556,
+    "medianPlacementError": 0.0152,
+    "maxPlacementError": 0.0606,
+    "within5": 0.8182,
+    "within10": 1
+   },
+   "fit": {
+    "medianSizeError": 0.0523,
+    "maxSizeError": 0.0917,
+    "medianPlacementError": 0.0373,
+    "maxPlacementError": 0.0683,
+    "within5": 0.5455,
+    "within10": 1,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.5965,
+    "iouCameraOnly": 0.8959,
+    "iouAfter": 0.9876,
+    "lossCameraOnly": 0.07017,
+    "lossAfter": 0.01057,
+    "lowConfidenceReasons": 0,
+    "aligned": 0,
+    "frozen": 0,
+    "fitMs": 53654
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.8493,
+    "freeParameters": 7,
+    "iou": 0.9876,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0523,
+    "maxSizeError": 0.0917,
+    "medianPlacementError": 0.0373,
+    "maxPlacementError": 0.0683,
+    "within5": 0.5455,
+    "within10": 1
+   }
+  },
+  {
+   "id": "desk-lamp",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0.0109,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 30
+   },
+   "llm": {
+    "medianSizeError": 0.0714,
+    "maxSizeError": 0.4167,
+    "medianPlacementError": 0,
+    "maxPlacementError": 0.1094,
+    "within5": 0.6111,
+    "within10": 0.7222
+   },
+   "fit": {
+    "medianSizeError": 0.0483,
+    "maxSizeError": 0.4481,
+    "medianPlacementError": 0.0041,
+    "maxPlacementError": 0.0694,
+    "within5": 0.7222,
+    "within10": 0.7778,
+    "parameters": 8,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.6124,
+    "iouCameraOnly": 0.8543,
+    "iouAfter": 0.984,
+    "lossCameraOnly": 0.10198,
+    "lossAfter": 0.01509,
+    "lowConfidenceReasons": 0,
+    "aligned": 4,
+    "frozen": 0,
+    "fitMs": 25055
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.852,
+    "freeParameters": 8,
+    "iou": 0.984,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0483,
+    "maxSizeError": 0.4481,
+    "medianPlacementError": 0.0041,
+    "maxPlacementError": 0.0694,
+    "within5": 0.7222,
+    "within10": 0.7778
+   }
+  },
+  {
+   "id": "mug",
+   "conventionIoU": 0.9994,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0.011,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 15
+   },
+   "llm": {
+    "medianSizeError": 0.0463,
+    "maxSizeError": 0.2201,
+    "medianPlacementError": 0,
+    "maxPlacementError": 0.0175,
+    "within5": 0.7273,
+    "within10": 0.9091
+   },
+   "fit": {
+    "medianSizeError": 0.0868,
+    "maxSizeError": 0.0976,
+    "medianPlacementError": 0.0515,
+    "maxPlacementError": 0.0735,
+    "within5": 0.3636,
+    "within10": 1,
+    "parameters": 6,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.6699,
+    "iouCameraOnly": 0.8475,
+    "iouAfter": 0.9441,
+    "lossCameraOnly": 0.15212,
+    "lossAfter": 0.08611,
+    "lowConfidenceReasons": 3,
+    "aligned": 1,
+    "frozen": 0,
+    "fitMs": 59289
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.4339,
+    "freeParameters": 6,
+    "iou": 0.9441,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0868,
+    "maxSizeError": 0.0976,
+    "medianPlacementError": 0.0515,
+    "maxPlacementError": 0.0735,
+    "within5": 0.3636,
+    "within10": 1
+   }
+  },
+  {
+   "id": "side-table",
+   "conventionIoU": 0.9996,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0.0136,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "view": {
+    "azimuthDeg": 30,
+    "elevationDeg": 25
+   },
+   "llm": {
+    "medianSizeError": 0.25,
+    "maxSizeError": 0.3333,
+    "medianPlacementError": 0.0167,
+    "maxPlacementError": 0.0167,
+    "within5": 0.7188,
+    "within10": 0.7188
+   },
+   "fit": {
+    "medianSizeError": 0.0149,
+    "maxSizeError": 0.2616,
+    "medianPlacementError": 0.0143,
+    "maxPlacementError": 0.0185,
+    "within5": 0.8438,
+    "within10": 0.9688,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [
+     [
+      "leg-1",
+      "leg-2",
+      "leg-3",
+      "leg-4"
+     ]
+    ],
+    "iouBefore": 0.1693,
+    "iouCameraOnly": 0.8515,
+    "iouAfter": 0.9774,
+    "lossCameraOnly": 0.11441,
+    "lossAfter": 0.0241,
+    "lowConfidenceReasons": 0,
+    "aligned": 0,
+    "frozen": 0,
+    "fitMs": 39912
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.7894,
+    "freeParameters": 7,
+    "iou": 0.9774,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0149,
+    "maxSizeError": 0.2616,
+    "medianPlacementError": 0.0143,
+    "maxPlacementError": 0.0185,
+    "within5": 0.8438,
+    "within10": 0.9688
+   }
+  }
+ ]
+}

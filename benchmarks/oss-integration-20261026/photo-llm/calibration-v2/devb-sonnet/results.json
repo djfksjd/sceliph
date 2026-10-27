@@ -1,0 +1,313 @@
+{
+ "schema": "sceliph.photo-llm-eval/0.1",
+ "protocolSha256": "5e4c93af3cb7586363b42ffc366a272b10c9989d3262813d9468f80387c8880d",
+ "sceneImageSha256": {
+  "bookshelf": "0468551cecf87d43105d93e37e206dc4d7c51972bd80adf272e830f2814561ca",
+  "box-post": "d3db98f1aaf8f953d754992bfe85485ad91b65046ce6a6f9b079ff0535b9a3ac",
+  "desk-lamp": "611bb0d4ad7f595ebb1937de63f492df7376227b397236aac3841ba82508acf9",
+  "mug": "2ef6f842b4b6bd69d3b5a1edd73523ce9e1482e095673eb7e38f5dc96aaf04ea",
+  "side-table": "d1f50fb0d60e396371d57e4ed6f38e3b9be0c24acd08feea987f33d6c8d951fd"
+ },
+ "modelAlias": "replay",
+ "totalCostUsd": 0,
+ "results": [
+  {
+   "id": "bookshelf",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 30,
+    "elevationDeg": 14
+   },
+   "llm": {
+    "medianSizeError": 0.0333,
+    "maxSizeError": 0.1,
+    "medianPlacementError": 0.0022,
+    "maxPlacementError": 0.0778,
+    "within5": 0.8261,
+    "within10": 0.913
+   },
+   "fit": {
+    "medianSizeError": 0.1429,
+    "maxSizeError": 0.3662,
+    "medianPlacementError": 0.0306,
+    "maxPlacementError": 0.103,
+    "within5": 0.5435,
+    "within10": 0.6087,
+    "parameters": 16,
+    "locked": 1,
+    "groups": [
+     [
+      "side-left",
+      "side-right"
+     ],
+     [
+      "shelf-1",
+      "shelf-2",
+      "shelf-3",
+      "shelf-4"
+     ]
+    ],
+    "iouBefore": 0.9125,
+    "iouCameraOnly": 0.9513,
+    "iouAfter": 0.9734,
+    "lossCameraOnly": 0.06606,
+    "lossAfter": 0.04553,
+    "lowConfidenceReasons": 1,
+    "aligned": 7,
+    "frozen": 2,
+    "fitMs": 91793
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.3107,
+    "iou": 0.9734,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.1429,
+    "maxSizeError": 0.3662,
+    "medianPlacementError": 0.0306,
+    "maxPlacementError": 0.103,
+    "within5": 0.5435,
+    "within10": 0.6087
+   }
+  },
+  {
+   "id": "box-post",
+   "conventionIoU": 0.9999,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": -22,
+    "elevationDeg": 27
+   },
+   "llm": {
+    "medianSizeError": 0.0958,
+    "maxSizeError": 0.2222,
+    "medianPlacementError": 0.0606,
+    "maxPlacementError": 0.0909,
+    "within5": 0.3636,
+    "within10": 0.7273
+   },
+   "fit": {
+    "medianSizeError": 0.0107,
+    "maxSizeError": 1.1347,
+    "medianPlacementError": 0.0126,
+    "maxPlacementError": 0.6078,
+    "within5": 0.7273,
+    "within10": 0.7273,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.5225,
+    "iouCameraOnly": 0.8521,
+    "iouAfter": 0.9952,
+    "lossCameraOnly": 0.12378,
+    "lossAfter": 0.00744,
+    "lowConfidenceReasons": 8,
+    "aligned": 0,
+    "frozen": 0,
+    "fitMs": 49523
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.9399,
+    "iou": 0.9952,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0107,
+    "maxSizeError": 1.1347,
+    "medianPlacementError": 0.0126,
+    "maxPlacementError": 0.6078,
+    "within5": 0.7273,
+    "within10": 0.7273
+   }
+  },
+  {
+   "id": "desk-lamp",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 30
+   },
+   "llm": {
+    "medianSizeError": 0.1053,
+    "maxSizeError": 0.375,
+    "medianPlacementError": 0,
+    "maxPlacementError": 0.0208,
+    "within5": 0.7222,
+    "within10": 0.7222
+   },
+   "fit": {
+    "medianSizeError": 0.0322,
+    "maxSizeError": 0.375,
+    "medianPlacementError": 0.0006,
+    "maxPlacementError": 0.0258,
+    "within5": 0.7778,
+    "within10": 0.7778,
+    "parameters": 8,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.6249,
+    "iouCameraOnly": 0.8343,
+    "iouAfter": 0.9725,
+    "lossCameraOnly": 0.14177,
+    "lossAfter": 0.05764,
+    "lowConfidenceReasons": 1,
+    "aligned": 4,
+    "frozen": 1,
+    "fitMs": 23488
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.5934,
+    "iou": 0.9725,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0322,
+    "maxSizeError": 0.375,
+    "medianPlacementError": 0.0006,
+    "maxPlacementError": 0.0258,
+    "within5": 0.7778,
+    "within10": 0.7778
+   }
+  },
+  {
+   "id": "mug",
+   "conventionIoU": 0.9994,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 14
+   },
+   "llm": {
+    "medianSizeError": 0.1667,
+    "maxSizeError": 0.2188,
+    "medianPlacementError": 0.0238,
+    "maxPlacementError": 0.0476,
+    "within5": 0.5455,
+    "within10": 0.5455
+   },
+   "fit": {
+    "medianSizeError": 0.0182,
+    "maxSizeError": 0.0248,
+    "medianPlacementError": 0.0182,
+    "maxPlacementError": 0.0281,
+    "within5": 1,
+    "within10": 1,
+    "parameters": 5,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.6555,
+    "iouCameraOnly": 0.8871,
+    "iouAfter": 0.9816,
+    "lossCameraOnly": 0.1274,
+    "lossAfter": 0.05838,
+    "lowConfidenceReasons": 5,
+    "aligned": 2,
+    "frozen": 0,
+    "fitMs": 58746
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.5417,
+    "iou": 0.9816,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0182,
+    "maxSizeError": 0.0248,
+    "medianPlacementError": 0.0182,
+    "maxPlacementError": 0.0281,
+    "within5": 1,
+    "within10": 1
+   }
+  },
+  {
+   "id": "side-table",
+   "conventionIoU": 0.9996,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 25,
+    "elevationDeg": 25
+   },
+   "llm": {
+    "medianSizeError": 0.2,
+    "maxSizeError": 0.2,
+    "medianPlacementError": 0.0167,
+    "maxPlacementError": 0.0417,
+    "within5": 0.7188,
+    "within10": 0.75
+   },
+   "fit": {
+    "medianSizeError": 0.0214,
+    "maxSizeError": 0.6612,
+    "medianPlacementError": 0.0133,
+    "maxPlacementError": 0.0355,
+    "within5": 0.9375,
+    "within10": 0.9375,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [
+     [
+      "leg-1",
+      "leg-2",
+      "leg-3",
+      "leg-4"
+     ]
+    ],
+    "iouBefore": 0.126,
+    "iouCameraOnly": 0.8843,
+    "iouAfter": 0.9696,
+    "lossCameraOnly": 0.09251,
+    "lossAfter": 0.0376,
+    "lowConfidenceReasons": 1,
+    "aligned": 0,
+    "frozen": 0,
+    "fitMs": 41190
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.5936,
+    "iou": 0.9696,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0214,
+    "maxSizeError": 0.6612,
+    "medianPlacementError": 0.0133,
+    "maxPlacementError": 0.0355,
+    "within5": 0.9375,
+    "within10": 0.9375
+   }
+  }
+ ]
+}

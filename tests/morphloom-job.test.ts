@@ -113,6 +113,26 @@ describe('standard Morphloom job runner', () => {
     expect(result.glbSha256).toBe(result.repeatGlbSha256);
   });
 
+  it('exports a booleanCSG part through the job runner as a valid deterministic GLB', async () => {
+    const drilled = job('review');
+    drilled.assembly.components[0]!.geometry = {
+      op: 'booleanCSG',
+      operation: 'difference',
+      operands: [
+        { geometry: { op: 'roundedBox', size: [80, 50, 12], radius: 2, segments: 3 } },
+        { geometry: { op: 'cylinder', radiusTop: 4, radiusBottom: 4, depth: 20, radialSegments: 32 }, position: [-28, 0, 0], rotation: [Math.PI / 2, 0, 0] },
+        { geometry: { op: 'cylinder', radiusTop: 4, radiusBottom: 4, depth: 20, radialSegments: 32 }, position: [28, 0, 0], rotation: [Math.PI / 2, 0, 0] },
+      ],
+    };
+    const result = await runMorphloomJob(drilled);
+    expect(result).toMatchObject({
+      status: 'review-pass',
+      byteDeterministic: true,
+      validation: { status: 'pass', errors: 0, independentRead: { status: 'pass', meshes: 1 } },
+    });
+    expect(result.glbSha256).toBe(result.repeatGlbSha256);
+  }, 20_000);
+
   it('does not relabel a review asset as delivery-ready without locked detail contracts', async () => {
     const result = await runMorphloomJob(job('delivery'));
     expect(result.status).toBe('blocked');

@@ -847,6 +847,7 @@
               "minimum": 0,
               "maximum": 10000
             },
+            "capTriangulation": {"enum": ["quality-diagonal-v1"]},
             "bevelSegments": {
               "type": "integer",
               "minimum": 0,

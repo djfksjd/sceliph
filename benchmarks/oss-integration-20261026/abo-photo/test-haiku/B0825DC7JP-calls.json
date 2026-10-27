@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Rivet Mid-Century Modern Single-Light Marble Pendant with Exposed Bulb and Satin Brass Accents, LED Bulb Included, 66\"H, White.\nThe product listing gives its overall height as 1676 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.0019123200000000001,
+   "durationMs": 17534,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Rivet Mid-Century Modern Single-Light Marble Pendant\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"Satin brass\",\"detail\":\"Round brass ceiling mounting plate at the top of the cord\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":55,\"radiusBottom\":55,\"depth\":24,\"radialSegments\":32},\"position\":[0,1664,0],\"material\":{\"color\":\"#c9a24a\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"cord\",\"name\":\"Suspension cord\",\"category\":\"interconnect\",\"materialName\":\"Braided cord\",\"detail\":\"Thin straight suspension cord from canopy down to the shade\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,681,0],[0,-681,0]],\"radius\":1.5},\"position\":[0,971,0],\"material\":{\"color\":\"#d8d2c4\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"shade\",\"name\":\"Marble shade\",\"category\":\"enclosure\",\"materialName\":\"White marble\",\"detail\":\"Flat drum-shaped white marble shade with bevelled edges\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[38,0],[44,8],[44,82],[38,90],[0,90]],\"segments\":48},\"position\":[0,185,0],\"material\":{\"color\":\"#f2f0ec\",\"roughness\":0.3,\"metalness\":0.0}},{\"id\":\"top_cap\",\"name\":\"Brass top cap\",\"category\":\"mechanical\",\"materialName\":\"Satin brass\",\"detail\":\"Small brass cap where the cord enters the shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":12,\"radiusBottom\":12,\"depth\":20,\"radialSegments\":32},\"position\":[0,285,0],\"material\":{\"color\":\"#c9a24a\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"brass_collar\",\"name\":\"Brass lower collar\",\"category\":\"mechanical\",\"materialName\":\"Satin brass\",\"detail\":\"Brass collar between the shade and the bulb socket\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":16,\"radiusBottom\":16,\"depth\":30,\"radialSegments\":32},\"position\":[0,150,0],\"material\":{\"color\":\"#c9a24a\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"bulb\",\"name\":\"Exposed LED bulb\",\"category\":\"power\",\"materialName\":\"Clear glass\",\"detail\":\"Exposed filament-style LED bulb hanging below the collar\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[7,8],[13,30],[16,60],[16,100],[12,125],[0,135]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#e8eef2\",\"roughness\":0.1,\"metalness\":0.0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

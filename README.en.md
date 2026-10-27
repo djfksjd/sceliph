@@ -22,20 +22,21 @@ Sceliph is an open-source local tool that turns photographs, drawings, measureme
 
 ## Local UI / UX
 
-The editor now prioritizes the viewport, highlights selection, groups creation/file/inspection tools in collapsible sections, and adapts the workbench for narrow screens. See [changes and verification scope](./docs/EDITOR_UI_STATUS.ko.md). Current browser verification remains not-run because the local server could not start in this execution environment.
+**Recordings of the redesigned result viewer, 2026-10-27.** Orbit drags and wheel zoom are shown as they happen; only loading and the Claude CLI response wait are cut. Click a clip for the full-quality MP4. [Recording provenance](./assets/demos/README.md)
 
-Actual Chrome screenshots show the bearing part tree and 3D viewport, individual ball selection and isolation, numeric/PBR inspection, and a UV checker preview.
+<a href="./assets/demos/demo-command.mp4"><img src="./assets/demos/demo-command.webp" alt="Asking the ⌘K command bar to widen a selected blade by 20%, reviewing the diff and applying it" width="100%" /></a>
 
-These were **captured on 2026-10-09 from an earlier local build**. They do not include the latest plate regeneration panel or the new workbench layout. They illustrate the interface, not model accuracy or production delivery approval. [Capture details](./assets/screenshots/README.md)
+**⌘K command bar**: scope the parts you selected, then ask in plain language. The request goes to your own Claude Code CLI, together with the current IR and a view snapshot. The answer appears as a per-part diff and is applied only when you approve it. Applied parts are marked edited, with revert.
 
-![Sceliph local bearing assembly, stable part IDs and Inspector](./assets/screenshots/element-editor-bearing.jpg)
+<table><tr>
+<td width="50%"><a href="./assets/demos/demo-library-compare.mp4"><img src="./assets/demos/demo-library-compare.webp" alt="Switching results in the library and comparing one-photo and two-photo results side by side" width="100%" /></a><br /><strong>Library · side-by-side compare</strong><br />Opened IR files and folders collect as numbered results; any two can be compared in split viewports.</td>
+<td width="50%"><a href="./assets/demos/demo-evidence.mp4"><img src="./assets/demos/demo-evidence.webp" alt="Evidence color-target patches keeping only estimated or inferred parts solid, with inferred hatching" width="100%" /></a><br /><strong>Evidence color target</strong><br />Measured, datasheet, estimated, inferred and undocumented patches keep only those parts solid. Inferred parts can be hatched.</td>
+</tr><tr>
+<td width="50%"><a href="./assets/demos/demo-parts.mp4"><img src="./assets/demos/demo-parts.webp" alt="Part selection, solo, exploded view, view presets and zoom" width="100%" /></a><br /><strong>Parts · explode · views</strong><br />Select, hide, lock or solo parts; exploded view, Front/Top/ISO and wheel zoom.</td>
+<td width="50%"><strong>Also</strong><br />Korean, English, Japanese and Chinese UI; dark and light themes; mobile layout. Single-GLB export and asset-pack save are separate gates, each with its blocking reason. The checklist covers GLB reopen, bounds drift, named nodes and the Khronos validator.<br /><br />The command bar works in viewers started with <code>npm run dev</code> or <code>npm run preview</code>; a static build reports that no bridge is present.</td>
+</tr></table>
 
-<table>
-  <tr>
-    <td width="50%"><img src="./assets/screenshots/element-editor-part-selection.jpg" alt="Isolated ball_0000 with transform, PBR and radius controls" width="100%" /><br /><strong>Part selection and isolation</strong><br />Select a stable ID and inspect mm/radian values, PBR appearance and sphere radius.</td>
-    <td width="50%"><img src="./assets/screenshots/element-editor-uv-checker.jpg" alt="Synthetic UV checker preview on an isolated bearing ball" width="100%" /><br /><strong>UV checker inspection</strong><br />Inspect mapping with a synthetic pattern. This is not the source material or a measured texture.</td>
-  </tr>
-</table>
+The fan and lamps on screen are LLM-written IRs from ABO photos. The recordings show viewer behavior only; they do not certify reconstruction accuracy or production delivery. Earlier captures remain with their [original provenance](./assets/screenshots/README.md).
 
 ## Current status
 
@@ -43,7 +44,26 @@ These were **captured on 2026-10-09 from an earlier local build**. They do not i
 
 The supplied hero image is **brand artwork**, not an engine-generated asset or quality-validation result.
 
-### Latest engine checkpoint · 2026-10-07
+### Deterministic generation checkpoint · 2026-10-10
+
+The new opt-in `product.deterministic-beveled-plate` pack fixes native sin/cos drift in generated source coordinates. Six actual Node24/Chrome154 declaration imports produce **byte-identical complete source JSON and GLB**, including metadata; fresh browser reopen/export and a two-part replacement plan also match.54 captured source hashes from previous generators are unchanged.
+
+The editor prepares new replacement templates with this pack. Existing declarations and native files keep their original policy. An independent140-digit Decimal oracle verifies coordinate arithmetic; these numerical results are separate from Float32 mesh, photo and manufacturing accuracy. [Current evidence and remaining gates](./docs/PLATE_DETERMINISM_20261010.ko.md)
+
+### Practical workflow checkpoint · 2026-10-10
+
+Latest **165 files / 1044 tests**, benchmark, build and 19 focused contract tests passed.
+
+A source-bound JSON plan now replaces up to eight distinct authored extrusion parts atomically. Review first; a failed target prevents every replacement. IDs, placement, PBR and unrelated parts are preserved, and one Undo restores the complete operation. This is native `0.6` static mesh editing; assembly attachments, rigging and arbitrary photo reconstruction remain outside this path.
+
+The opt-in `product.quality-beveled-plate` pack fixes near-tangent cap slivers with `quality-diagonal-v1`, retaining boundary vertices, wall attributes and surface area. The old pack and no-option meshes retain their behavior and bytes. Three scales / nine actual GLBs, browser save/reopen/edit and Blender import/edit checks are recorded in [the current status](./docs/PRACTICAL_WORKFLOW_20261010.ko.md). Whole `quality:production` still fails; this is not 100% engine completion.
+
+1. Open `/?editor=elements` and load an authored static extrusion source.
+2. Expand **Replace parts from a JSON plan** → **Prepare replacement template**.
+3. Have the LLM edit `steps`, preserving `sourceSha256` and real `targetId`s. [Schema](./schemas/part-regeneration-plan.schema.json)
+4. **Check replacement plan** → review → **Apply checked replacements**. Save native JSON for further editing.
+
+### Previous engine checkpoint · 2026-10-07
 
 The core remains LLM-authored declarative IR executed by a local geometry engine. This update adds primary-form contact witnesses, tapered tubes, ellipsoid section controls, measured surface-error budgets, edit diagnostics and safer native JSON replacement. No dedicated neural 3D generator is added to the default dependencies.
 

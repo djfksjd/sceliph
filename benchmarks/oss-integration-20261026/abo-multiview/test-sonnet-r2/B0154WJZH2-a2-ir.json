@@ -1,0 +1,311 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Loue Sideboard",
+ "units": "mm",
+ "components": [
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1450,
+     840,
+     380
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    440,
+    -10
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1450,
+     25,
+     400
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    887,
+    0
+   ],
+   "material": {
+    "color": "#f7f7f5",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_l",
+   "name": "Left door",
+   "category": "mechanical",
+   "materialName": "white laminate",
+   "detail": "left door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     466,
+     830,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -490,
+    440,
+    191
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_r",
+   "name": "Right door",
+   "category": "mechanical",
+   "materialName": "white laminate",
+   "detail": "right door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     436,
+     830,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    505,
+    440,
+    191
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_top",
+   "name": "Upper drawer front",
+   "category": "mechanical",
+   "materialName": "white laminate",
+   "detail": "white band above wood insert",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     536,
+     220,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    15,
+    760,
+    191
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_wood",
+   "name": "Oak-effect drawer front",
+   "category": "mechanical",
+   "materialName": "light oak effect",
+   "detail": "wood-effect insert",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     536,
+     160,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    15,
+    565,
+    191
+   ],
+   "material": {
+    "color": "#b49a80",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_mid",
+   "name": "Middle drawer front",
+   "category": "mechanical",
+   "materialName": "white laminate",
+   "detail": "drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     536,
+     215,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    15,
+    370,
+    191
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_low",
+   "name": "Lower drawer front",
+   "category": "mechanical",
+   "materialName": "white laminate",
+   "detail": "drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     536,
+     200,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    15,
+    140,
+    191
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_fl",
+   "name": "Front left foot",
+   "category": "mechanical",
+   "materialName": "plastic",
+   "detail": "foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 12,
+    "radiusBottom": 12,
+    "depth": 20,
+    "radialSegments": 16
+   },
+   "position": [
+    -690,
+    10,
+    150
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_fr",
+   "name": "Front right foot",
+   "category": "mechanical",
+   "materialName": "plastic",
+   "detail": "foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 12,
+    "radiusBottom": 12,
+    "depth": 20,
+    "radialSegments": 16
+   },
+   "position": [
+    690,
+    10,
+    150
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_bl",
+   "name": "Back left foot",
+   "category": "mechanical",
+   "materialName": "plastic",
+   "detail": "foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 12,
+    "radiusBottom": 12,
+    "depth": 20,
+    "radialSegments": 16
+   },
+   "position": [
+    -690,
+    10,
+    -170
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_br",
+   "name": "Back right foot",
+   "category": "mechanical",
+   "materialName": "plastic",
+   "detail": "foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 12,
+    "radiusBottom": 12,
+    "depth": 20,
+    "radialSegments": 16
+   },
+   "position": [
+    690,
+    10,
+    -170
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

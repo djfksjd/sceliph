@@ -1,0 +1,181 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Black LED floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Round weighted base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 105,
+    "radiusBottom": 108,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Lower pole",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Thick lower pole",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 1022,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    541,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Upper rod",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Thin upper rod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 190,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    1147,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "elbow",
+   "name": "Elbow",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Bend joint",
+   "geometry": {
+    "op": "sphere",
+    "radius": 5
+   },
+   "position": [
+    0,
+    1240,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Horizontal arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      160,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    1240,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "head",
+   "name": "Lamp head",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Round LED head",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 65,
+    "radiusBottom": 65,
+    "depth": 40,
+    "radialSegments": 48
+   },
+   "position": [
+    158,
+    1205,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "diffuser",
+   "name": "LED diffuser",
+   "category": "mechanical",
+   "materialName": "warm white diffuser",
+   "detail": "Light panel underside",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 58,
+    "radiusBottom": 58,
+    "depth": 3,
+    "radialSegments": 48
+   },
+   "position": [
+    158,
+    1184,
+    0
+   ],
+   "material": {
+    "color": "#f2e8c8",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  }
+ ]
+}

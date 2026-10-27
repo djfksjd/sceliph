@@ -1,0 +1,183 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Miramar Elm Cutout Coffee Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base ring",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Thick round plinth at the bottom",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 500,
+    "radiusBottom": 500,
+    "depth": 70,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    35,
+    0
+   ],
+   "material": {
+    "color": "#a9764f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Lower shelf",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Recessed round lower shelf",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 490,
+    "radiusBottom": 490,
+    "depth": 40,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    80,
+    0
+   ],
+   "material": {
+    "color": "#94643f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top slab",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Thick round tabletop with deep apron",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 500,
+    "radiusBottom": 500,
+    "depth": 140,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    364,
+    0
+   ],
+   "material": {
+    "color": "#b0805a",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pillar_front",
+   "name": "Front pillar",
+   "category": "mechanical",
+   "materialName": "elm wood",
+   "detail": "Support between cutouts",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     260,
+     200,
+     200
+    ],
+    "radius": 40
+   },
+   "position": [
+    0,
+    197,
+    400
+   ],
+   "material": {
+    "color": "#a9764f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pillar_back",
+   "name": "Back pillar",
+   "category": "mechanical",
+   "materialName": "elm wood",
+   "detail": "Support between cutouts",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     260,
+     200,
+     200
+    ],
+    "radius": 40
+   },
+   "position": [
+    0,
+    197,
+    -400
+   ],
+   "material": {
+    "color": "#a9764f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pillar_right",
+   "name": "Right pillar",
+   "category": "mechanical",
+   "materialName": "elm wood",
+   "detail": "Support between cutouts",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     200,
+     200,
+     260
+    ],
+    "radius": 40
+   },
+   "position": [
+    400,
+    197,
+    0
+   ],
+   "material": {
+    "color": "#a9764f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pillar_left",
+   "name": "Left pillar",
+   "category": "mechanical",
+   "materialName": "elm wood",
+   "detail": "Support between cutouts",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     200,
+     200,
+     260
+    ],
+    "radius": 40
+   },
+   "position": [
+    -400,
+    197,
+    0
+   ],
+   "material": {
+    "color": "#a9764f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

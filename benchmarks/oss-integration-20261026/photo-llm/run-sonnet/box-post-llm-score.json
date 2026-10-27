@@ -1,0 +1,115 @@
+{
+ "schema": "sceliph.assembly-truth-compare/0.1",
+ "yawDeg": 0,
+ "extentMm": 330.00001609325415,
+ "items": [
+  {
+   "componentId": "box",
+   "candidateId": "box",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 300,
+   "candidateMm": 300,
+   "relativeError": 0
+  },
+  {
+   "componentId": "box",
+   "candidateId": "box",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 150,
+   "candidateMm": 160,
+   "relativeError": 0.0667
+  },
+  {
+   "componentId": "box",
+   "candidateId": "box",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 200,
+   "candidateMm": 200,
+   "relativeError": 0
+  },
+  {
+   "componentId": "box",
+   "candidateId": "box",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "post",
+   "candidateId": "post",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 80,
+   "candidateMm": 70,
+   "relativeError": 0.125
+  },
+  {
+   "componentId": "post",
+   "candidateId": "post",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 180,
+   "candidateMm": 220,
+   "relativeError": 0.2222
+  },
+  {
+   "componentId": "post",
+   "candidateId": "post",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 80,
+   "candidateMm": 70,
+   "relativeError": 0.125
+  },
+  {
+   "componentId": "post",
+   "candidateId": "post",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 60,
+   "candidateMm": 30,
+   "relativeError": 0.0909
+  },
+  {
+   "componentId": "post",
+   "candidateId": "post",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": 165,
+   "candidateMm": 190,
+   "relativeError": 0.0758
+  },
+  {
+   "componentId": "post",
+   "candidateId": "post",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": -20,
+   "candidateMm": -40,
+   "relativeError": 0.0606
+  },
+  {
+   "componentId": "post",
+   "candidateId": "post",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 150,
+   "candidateMm": 160,
+   "relativeError": 0.0303
+  }
+ ],
+ "missingComponentIds": [],
+ "summary": {
+  "medianSizeError": 0.0958,
+  "maxSizeError": 0.2222,
+  "medianPlacementError": 0.0606,
+  "maxPlacementError": 0.0909,
+  "within5": 0.3636,
+  "within10": 0.7273
+ }
+}

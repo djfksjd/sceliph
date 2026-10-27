@@ -1,0 +1,113 @@
+{
+ "summary": {
+  "id": "spiral_stair",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.00200215,
+  "modelIds": [
+   "claude-haiku-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00200215,
+   "durationMs": 15395,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Spiral Staircase\",\"units\":\"mm\",\"components\":[{\"id\":\"column\",\"name\":\"Central column\",\"category\":\"mechanical\",\"materialName\":\"Steel\",\"detail\":\"Vertical central column, 100 mm diameter, standing on the floor to 2400 mm.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":50,\"radiusBottom\":50,\"depth\":2400,\"radialSegments\":32},\"position\":[0,1200,0],\"material\":{\"color\":\"#808080\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"step_1\",\"name\":\"Step 1\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 1, top surface at 200 mm, points along +x.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[350,185,0],\"rotation\":[0,0,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_2\",\"name\":\"Step 2\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 2, top surface at 400 mm, rotated 30 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[303.109,385,-175],\"rotation\":[0,0.5236,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_3\",\"name\":\"Step 3\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 3, top surface at 600 mm, rotated 60 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[175,585,-303.109],\"rotation\":[0,1.0472,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_4\",\"name\":\"Step 4\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 4, top surface at 800 mm, rotated 90 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[0,785,-350],\"rotation\":[0,1.5708,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_5\",\"name\":\"Step 5\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 5, top surface at 1000 mm, rotated 120 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[-175,985,-303.109],\"rotation\":[0,2.0944,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_6\",\"name\":\"Step 6\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 6, top surface at 1200 mm, rotated 150 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[-303.109,1185,-175],\"rotation\":[0,2.618,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_7\",\"name\":\"Step 7\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 7, top surface at 1400 mm, rotated 180 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[-350,1385,0],\"rotation\":[0,3.1416,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_8\",\"name\":\"Step 8\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 8, top surface at 1600 mm, rotated 210 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[-303.109,1585,175],\"rotation\":[0,3.6652,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_9\",\"name\":\"Step 9\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 9, top surface at 1800 mm, rotated 240 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[-175,1785,303.109],\"rotation\":[0,4.1888,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_10\",\"name\":\"Step 10\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 10, top surface at 2000 mm, rotated 270 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[0,1985,350],\"rotation\":[0,4.7124,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_11\",\"name\":\"Step 11\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 11, top surface at 2200 mm, rotated 300 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[175,2185,303.109],\"rotation\":[0,5.236,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"step_12\",\"name\":\"Step 12\",\"category\":\"mechanical\",\"materialName\":\"Oak\",\"detail\":\"Spiral step 12, top surface at 2400 mm, rotated 330 degrees about the vertical axis.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,250],\"radius\":5},\"position\":[303.109,2385,175],\"rotation\":[0,5.7596,0],\"material\":{\"color\":\"#b08050\",\"roughness\":0.7,\"metalness\":0}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 11856,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      1300.001,
+      2400,
+      1300.002
+     ],
+     "dimensionChecks": [
+      {
+       "id": "col",
+       "expectedMm": 2400,
+       "actualMm": 2400.0000953674316,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s1-top",
+       "expectedMm": 200,
+       "actualMm": 199.99999966472387,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s12-top",
+       "expectedMm": 2400,
+       "actualMm": 2399.999999664724,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s2-x",
+       "expectedMm": 644.62,
+       "actualMm": 644.6151606880542,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s2-z",
+       "expectedMm": 516.51,
+       "actualMm": 516.5068460342507,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s4-x",
+       "expectedMm": 250,
+       "actualMm": 250.00220392146295,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "s4-z",
+       "expectedMm": 600,
+       "actualMm": 600.000942139086,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": -0.00004768371586472142,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

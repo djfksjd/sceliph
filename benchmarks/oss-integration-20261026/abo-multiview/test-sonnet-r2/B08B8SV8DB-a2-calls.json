@@ -1,0 +1,33 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Basics Poly Globe Pendant Light - x x , Brushed Nickel.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 762 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.016272400000000003,
+   "durationMs": 12560,
+   "isError": false
+  },
+  {
+   "round": 1,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0212052,
+   "durationMs": 9895,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":0},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Globe Pendant Light\",\"units\":\"mm\",\"components\":[{\"id\":\"globe\",\"name\":\"Concrete-look globe shade\",\"category\":\"enclosure\",\"materialName\":\"poly concrete\",\"detail\":\"Grey globe shade with bottom opening\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[36,0],[55,8],[68,30],[74,70],[72,110],[60,148],[30,168],[10,175],[0,175]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#6b6b6b\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"bore\",\"name\":\"Bottom socket recess\",\"category\":\"mechanical\",\"materialName\":\"dark bronze\",\"detail\":\"Dark recessed disc in the bottom opening\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":35,\"radiusBottom\":35,\"depth\":4,\"radialSegments\":32},\"position\":[0,6,0],\"material\":{\"color\":\"#3a2c18\",\"roughness\":0.6,\"metalness\":0.3}},{\"id\":\"collar\",\"name\":\"Nickel cord grip\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Small metal cord grip on top of the globe\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4,\"radiusBottom\":8,\"depth\":16,\"radialSegments\":24},\"position\":[0,181,0],\"material\":{\"color\":\"#c4c4c4\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"cord\",\"name\":\"Black cord\",\"category\":\"interconnect\",\"materialName\":\"fabric cord\",\"detail\":\"Thin black suspension cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-288,0],[0,288,0]],\"radius\":2},\"position\":[0,466,0],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Round flat ceiling canopy\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":53,\"radiusBottom\":53,\"depth\":16,\"radialSegments\":48},\"position\":[0,754,0],\"material\":{\"color\":\"#b8b8b8\",\"roughness\":0.4,\"metalness\":0.9}}]}}",
+   "stage": "requirements"
+  },
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":0},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Globe Pendant Light\",\"units\":\"mm\",\"components\":[{\"id\":\"globe\",\"name\":\"Concrete-look globe shade\",\"category\":\"enclosure\",\"materialName\":\"poly concrete\",\"detail\":\"Grey globe shade with recessed bottom\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,6],[34,6],[36,0],[55,8],[68,30],[74,70],[72,110],[60,148],[30,168],[10,175],[0,175]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#6b6b6b\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"bore\",\"name\":\"Bottom socket recess\",\"category\":\"mechanical\",\"materialName\":\"dark bronze\",\"detail\":\"Dark disc in the bottom recess\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":33,\"radiusBottom\":33,\"depth\":1,\"radialSegments\":32},\"position\":[0,6.5,0],\"material\":{\"color\":\"#3a2c18\",\"roughness\":0.6,\"metalness\":0.3}},{\"id\":\"collar\",\"name\":\"Nickel cord grip\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Small metal cord grip on top of the globe\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4,\"radiusBottom\":8,\"depth\":16,\"radialSegments\":24},\"position\":[0,181,0],\"material\":{\"color\":\"#c4c4c4\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"cord\",\"name\":\"Black cord\",\"category\":\"interconnect\",\"materialName\":\"fabric cord\",\"detail\":\"Thin black suspension cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-288,0],[0,288,0]],\"radius\":2},\"position\":[0,466,0],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Round flat ceiling canopy\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":53,\"radiusBottom\":53,\"depth\":16,\"radialSegments\":48},\"position\":[0,754,0],\"material\":{\"color\":\"#b8b8b8\",\"roughness\":0.4,\"metalness\":0.9}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

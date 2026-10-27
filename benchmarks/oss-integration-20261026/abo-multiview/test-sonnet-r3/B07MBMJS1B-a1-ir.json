@@ -1,0 +1,393 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rolling Kitchen Cart",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Butcher block top",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Natural wood work surface",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     25,
+     460
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    914.5,
+    0
+   ],
+   "material": {
+    "color": "#d2b58a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     847,
+     40
+    ],
+    "radius": 2
+   },
+   "position": [
+    -345,
+    478.5,
+    195
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     847,
+     40
+    ],
+    "radius": 2
+   },
+   "position": [
+    345,
+    478.5,
+    195
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     847,
+     40
+    ],
+    "radius": 2
+   },
+   "position": [
+    -345,
+    478.5,
+    -195
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     847,
+     40
+    ],
+    "radius": 2
+   },
+   "position": [
+    345,
+    478.5,
+    -195
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer",
+   "name": "Drawer front",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Drawer under the top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     650,
+     80,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    855,
+    200
+   ],
+   "material": {
+    "color": "#f7f7f5",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Drawer handle",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -60,
+      0,
+      0
+     ],
+     [
+      60,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    855,
+    222
+   ],
+   "material": {
+    "color": "#c4c6c8",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shelf_mid",
+   "name": "Middle slatted shelf",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Slatted shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     650,
+     25,
+     350
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    350,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_low",
+   "name": "Lower slatted shelf",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Slatted shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     650,
+     25,
+     350
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    140,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Towel rod stub",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Small side peg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 40,
+    "radialSegments": 24
+   },
+   "position": [
+    385,
+    880,
+    190
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheel_fl",
+   "name": "Front left caster",
+   "category": "mechanical",
+   "materialName": "black rubber",
+   "detail": "Caster wheel",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 27,
+    "radiusBottom": 27,
+    "depth": 20,
+    "radialSegments": 32
+   },
+   "position": [
+    -345,
+    27,
+    195
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheel_fr",
+   "name": "Front right caster",
+   "category": "mechanical",
+   "materialName": "black rubber",
+   "detail": "Caster wheel",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 27,
+    "radiusBottom": 27,
+    "depth": 20,
+    "radialSegments": 32
+   },
+   "position": [
+    345,
+    27,
+    195
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheel_bl",
+   "name": "Back left caster",
+   "category": "mechanical",
+   "materialName": "black rubber",
+   "detail": "Caster wheel",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 27,
+    "radiusBottom": 27,
+    "depth": 20,
+    "radialSegments": 32
+   },
+   "position": [
+    -345,
+    27,
+    -195
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheel_br",
+   "name": "Back right caster",
+   "category": "mechanical",
+   "materialName": "black rubber",
+   "detail": "Caster wheel",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 27,
+    "radiusBottom": 27,
+    "depth": 20,
+    "radialSegments": 32
+   },
+   "position": [
+    345,
+    27,
+    -195
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -13,6 +13,7 @@ import type { PlanFootprintDescriptor } from './plan-footprint';
 import type { DimensionContract } from './dimension-contract';
 import type { PartDecompositionContract } from './part-decomposition';
 import type { VisualPlanningContract } from './visual-plan-audit';
+import type { BooleanCsgIR } from './boolean-csg';
 
 export type AssemblyGeometryIR =
   | { op: 'roundedBox'; size: [number, number, number]; radius: number; segments?: number }
@@ -30,6 +31,8 @@ export type AssemblyGeometryIR =
     bevelSize?: number;
     bevelThickness?: number;
     bevelSegments?: number;
+    /** Explicit planar cap diagonal quality policy; omitted preserves legacy bytes. */
+    capTriangulation?: 'quality-diagonal-v1';
     /** Real wedge thinning along one or more cutting-edge paths, in profile XY millimetres. */
     edgeTapers?: Array<{
       path: Array<[number, number]>;
@@ -56,7 +59,9 @@ export type AssemblyGeometryIR =
   | { op: 'hipRoof'; width: number; depth: number; rise: number; thickness: number; ridgeLength: number }
   | { op: 'bladeLoft'; sections: Array<[number, number]>; thickness: number; apexThickness: number; grindCurve?: number[]; sideWinding?: BladeSideWindingIR }
   | { op: 'visualHull'; descriptor: VisualHullDescriptor }
-  | { op: 'implicitSurface'; descriptor: ImplicitSurfaceDescriptor };
+  | { op: 'implicitSurface'; descriptor: ImplicitSurfaceDescriptor }
+  /** Exact mesh boolean of compiled operands (Manifold); requires initManifold() before compiling. */
+  | BooleanCsgIR;
 
 export interface AssemblyMaterialIR {
   color: string;

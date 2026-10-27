@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Rivet Rustic Reclaimed Fir Wood Side End Table, 16.5\"W, Natural.\nThe product listing gives its overall height as 600 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0090032,
+   "durationMs": 5398,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":20,\"elevationDeg\":15},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Twisted reclaimed fir side table\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Lower block\",\"category\":\"enclosure\",\"materialName\":\"reclaimed fir\",\"detail\":\"Lower section of the faceted pedestal\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,200,300],\"radius\":2},\"position\":[0,100,0],\"material\":{\"color\":\"#8a5a36\",\"roughness\":0.85,\"metalness\":0}},{\"id\":\"mid\",\"name\":\"Middle section\",\"category\":\"enclosure\",\"materialName\":\"reclaimed fir\",\"detail\":\"Middle section, slightly twisted\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[310,200,310],\"radius\":2},\"position\":[0,300,0],\"rotation\":[0,0.12,0],\"material\":{\"color\":\"#966240\",\"roughness\":0.85,\"metalness\":0}},{\"id\":\"upper\",\"name\":\"Upper section\",\"category\":\"enclosure\",\"materialName\":\"reclaimed fir\",\"detail\":\"Upper section, twisted further\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[320,200,320],\"radius\":2},\"position\":[0,500,0],\"rotation\":[0,0.24,0],\"material\":{\"color\":\"#7c4e2e\",\"roughness\":0.85,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

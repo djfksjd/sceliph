@@ -1,0 +1,71 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "AmazonBasics Foldable Storage Cube, Navy",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Fabric cube body",
+   "category": "enclosure",
+   "materialName": "Navy non-woven fabric",
+   "detail": "Foldable fabric storage cube, 279 mm on each side, with a rounded-corner shell and an open top.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     279,
+     279,
+     279
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    139.5,
+    0
+   ],
+   "material": {
+    "color": "#1c2a6e",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Front pull handle",
+   "category": "mechanical",
+   "materialName": "Navy fabric strap",
+   "detail": "Fabric pull handle sewn onto the front face, arched outward from the panel.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -50,
+      0,
+      0
+     ],
+     [
+      0,
+      5,
+      6
+     ],
+     [
+      50,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    218,
+    144
+   ],
+   "material": {
+    "color": "#1c2a6e",
+    "roughness": 0.85,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,312 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Severn mobile desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "San Remo oak laminate",
+   "detail": "Top panel with slight overhang",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     20,
+     500
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    760,
+    0
+   ],
+   "material": {
+    "color": "#d9b887",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "San Remo oak laminate",
+   "detail": "Left upright",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     710,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    -385,
+    395,
+    0
+   ],
+   "material": {
+    "color": "#d9b887",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "San Remo oak laminate",
+   "detail": "Right upright",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     710,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    385,
+    395,
+    0
+   ],
+   "material": {
+    "color": "#d9b887",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "divider",
+   "name": "Middle divider",
+   "category": "enclosure",
+   "materialName": "San Remo oak laminate",
+   "detail": "Vertical divider",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     710,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    90,
+    395,
+    0
+   ],
+   "material": {
+    "color": "#d9b887",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "shelf_bottom",
+   "name": "Bottom shelf",
+   "category": "enclosure",
+   "materialName": "San Remo oak laminate",
+   "detail": "Fixed bottom shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     752,
+     18,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    49,
+    0
+   ],
+   "material": {
+    "color": "#d9b887",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "kb_tray",
+   "name": "Keyboard tray",
+   "category": "mechanical",
+   "materialName": "San Remo oak laminate",
+   "detail": "Pull-out keyboard tray",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     752,
+     15,
+     440
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    688,
+    25
+   ],
+   "material": {
+    "color": "#d9b887",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "cpu_shelf",
+   "name": "Middle shelf",
+   "category": "mechanical",
+   "materialName": "San Remo oak laminate",
+   "detail": "Pull-out shelf on the left bay",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     457,
+     16,
+     440
+    ],
+    "radius": 2
+   },
+   "position": [
+    -147,
+    350,
+    20
+   ],
+   "material": {
+    "color": "#d9b887",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "shelf_r",
+   "name": "Right shelf",
+   "category": "enclosure",
+   "materialName": "San Remo oak laminate",
+   "detail": "Small shelf in right bay",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     277,
+     18,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    237,
+    330,
+    0
+   ],
+   "material": {
+    "color": "#d9b887",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "back_r",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "San Remo oak laminate",
+   "detail": "Thin back panel behind right bay",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     277,
+     710,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    237,
+    395,
+    -237
+   ],
+   "material": {
+    "color": "#cfae7e",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "caster_fl",
+   "name": "Caster front left",
+   "category": "mechanical",
+   "materialName": "Black plastic",
+   "detail": "Swivel caster",
+   "geometry": {
+    "op": "sphere",
+    "radius": 20
+   },
+   "position": [
+    -385,
+    20,
+    210
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "caster_fr",
+   "name": "Caster front right",
+   "category": "mechanical",
+   "materialName": "Black plastic",
+   "detail": "Swivel caster",
+   "geometry": {
+    "op": "sphere",
+    "radius": 20
+   },
+   "position": [
+    385,
+    20,
+    210
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "caster_bl",
+   "name": "Caster back left",
+   "category": "mechanical",
+   "materialName": "Black plastic",
+   "detail": "Swivel caster",
+   "geometry": {
+    "op": "sphere",
+    "radius": 20
+   },
+   "position": [
+    -385,
+    20,
+    -210
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "caster_br",
+   "name": "Caster back right",
+   "category": "mechanical",
+   "materialName": "Black plastic",
+   "detail": "Swivel caster",
+   "geometry": {
+    "op": "sphere",
+    "radius": 20
+   },
+   "position": [
+    385,
+    20,
+    -210
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5
+   }
+  }
+ ]
+}

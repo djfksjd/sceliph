@@ -12,6 +12,7 @@ import {
   type AssemblyEditReceipt,
 } from '../../src/engine/assembly-edit';
 import { compileAssemblyIR, validateAssemblyIR, waitForReferenceProjections } from '../../src/engine/assembly-compiler';
+import { prepareAssemblyRuntime } from '../../src/engine/boolean-csg';
 import { attachEvidenceReadinessToAssembly, type SemiProfessionalEvidencePack } from '../../src/engine/evidence-readiness';
 import { auditAssemblyEvidenceClaims, type EvidenceClaimAudit } from '../../src/engine/evidence-claim-audit';
 import { auditAssemblyDetail, type AssemblyDetailAudit } from '../../src/engine/generation-policy';
@@ -247,11 +248,12 @@ function disposeRoot(root: THREE.Object3D): void {
   });
 }
 
-async function exportAssembly(assembly: AssemblyIR): Promise<{
+export async function exportAssembly(assembly: AssemblyIR): Promise<{
   bytes: Uint8Array;
   metrics: MorphloomJobResult['metrics'];
 }> {
   installNodeExporterRuntime();
+  await prepareAssemblyRuntime(assembly);
   const build = compileAssemblyIR(assembly, 'beauty');
   try {
     await waitForReferenceProjections(build.root);

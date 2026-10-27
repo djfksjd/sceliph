@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Movian 2-voudig modulair MDF boekenkast, beige/wit, 20 x 29 x 60 cm.\nThe product listing gives its overall height as 594 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00122852,
+   "durationMs": 10767,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-30,\"elevationDeg\":10},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian 2-voudig modulair MDF boekenkast\",\"units\":\"mm\",\"components\":[{\"id\":\"left_side\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"Oak-veneer MDF\",\"detail\":\"Outer left carcass side, full height\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,594,290],\"radius\":2},\"position\":[-91,297,0],\"material\":{\"color\":\"#d8b98a\",\"roughness\":0.6}},{\"id\":\"right_side\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"Oak-veneer MDF\",\"detail\":\"Outer right carcass side, full height\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,594,290],\"radius\":2},\"position\":[91,297,0],\"material\":{\"color\":\"#d8b98a\",\"roughness\":0.6}},{\"id\":\"top_panel\",\"name\":\"Top panel\",\"category\":\"enclosure\",\"materialName\":\"Oak-veneer MDF\",\"detail\":\"Top cap spanning between side panels\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[200,18,290],\"radius\":2},\"position\":[0,585,0],\"material\":{\"color\":\"#d8b98a\",\"roughness\":0.6}},{\"id\":\"bottom_panel\",\"name\":\"Bottom panel\",\"category\":\"enclosure\",\"materialName\":\"White-coated MDF\",\"detail\":\"Base panel between side panels\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[164,18,290],\"radius\":2},\"position\":[0,9,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.7}},{\"id\":\"middle_shelf\",\"name\":\"Middle shelf\",\"category\":\"mechanical\",\"materialName\":\"White-coated MDF\",\"detail\":\"Fixed divider shelf creating two open compartments\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[164,18,286],\"radius\":2},\"position\":[0,297,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.7}},{\"id\":\"back_panel\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"MDF back board\",\"detail\":\"Thin rear panel closing the carcass\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[164,558,6],\"radius\":1},\"position\":[0,297,-142],\"material\":{\"color\":\"#e8d2ae\",\"roughness\":0.8}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

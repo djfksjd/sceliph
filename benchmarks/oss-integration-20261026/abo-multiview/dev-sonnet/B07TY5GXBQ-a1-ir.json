@@ -1,0 +1,163 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian 2-tier modular bookcase",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Oak-effect MDF",
+   "detail": "18 mm side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     594,
+     300
+    ],
+    "radius": 1
+   },
+   "position": [
+    -91,
+    297,
+    0
+   ],
+   "material": {
+    "color": "#d2a67a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Oak-effect MDF",
+   "detail": "18 mm side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     594,
+     300
+    ],
+    "radius": 1
+   },
+   "position": [
+    91,
+    297,
+    0
+   ],
+   "material": {
+    "color": "#d2a67a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "White MDF",
+   "detail": "White top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     164,
+     18,
+     300
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    585,
+    0
+   ],
+   "material": {
+    "color": "#f4f6f8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "White MDF",
+   "detail": "White bottom panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     164,
+     18,
+     300
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    9,
+    0
+   ],
+   "material": {
+    "color": "#f4f6f8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Middle shelf",
+   "category": "enclosure",
+   "materialName": "White MDF",
+   "detail": "Fixed middle shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     164,
+     18,
+     288
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    305,
+    6
+   ],
+   "material": {
+    "color": "#f4f6f8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "Oak-effect MDF",
+   "detail": "Thin back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     164,
+     558,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    297,
+    -147
+   ],
+   "material": {
+    "color": "#c99d72",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

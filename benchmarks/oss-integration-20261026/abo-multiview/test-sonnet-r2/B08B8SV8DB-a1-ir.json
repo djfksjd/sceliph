@@ -1,0 +1,199 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Globe Pendant Light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 60,
+    "radiusBottom": 64,
+    "depth": 14,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    755,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Canopy neck",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "small cap below canopy",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 10,
+    "depth": 12,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    742,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Cord",
+   "category": "interconnect",
+   "materialName": "black fabric cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      250,
+      0
+     ],
+     [
+      0,
+      -250,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    486,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Shade collar",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "small nickel fitting atop shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 14,
+    "depth": 28,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    222,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Concrete globe shade",
+   "category": "enclosure",
+   "materialName": "grey concrete",
+   "detail": "closed globe shade body",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      205
+     ],
+     [
+      40,
+      200
+     ],
+     [
+      85,
+      165
+     ],
+     [
+      105,
+      110
+     ],
+     [
+      108,
+      70
+     ],
+     [
+      95,
+      25
+     ],
+     [
+      70,
+      0
+     ],
+     [
+      58,
+      0
+     ],
+     [
+      58,
+      6
+     ],
+     [
+      0,
+      6
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#666666",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bulbglow",
+   "name": "Inner socket",
+   "category": "logic",
+   "materialName": "dark bronze",
+   "detail": "dark recessed disc visible at opening",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 55,
+    "radiusBottom": 55,
+    "depth": 6,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    3,
+    0
+   ],
+   "material": {
+    "color": "#4a3a22",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  }
+ ]
+}

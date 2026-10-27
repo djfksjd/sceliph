@@ -22,20 +22,21 @@ Sceliph는 사진·도면·실측값·자연어 요구를 선언형 IR로 정리
 
 ## 로컬 UI / UX
 
-현재 편집기는 뷰포트 중심 작업 영역, 선택 상태 표시, 접이식 생성·파일·검사 도구와 좁은 화면 배치를 제공합니다. [UI 변경·검증 범위](./docs/EDITOR_UI_STATUS.ko.md)를 확인하세요. 최신 화면의 실제 브라우저 검수는 실행환경 차단으로 미실행입니다.
+**2026-10-27에 개편한 결과 뷰어의 실제 동작 녹화**입니다. 마우스로 돌리고 휠로 확대·축소하는 장면이 그대로 들어 있습니다. 로딩과 Claude CLI 응답 대기 시간만 잘랐습니다. 클립을 누르면 고화질 MP4가 열립니다. [녹화 출처](./assets/demos/README.md)
 
-베어링의 부품 트리와 3D 뷰포트, 개별 볼 선택·isolate, 수치·PBR Inspector와 UV checker를 실제 Chrome 화면으로 확인할 수 있습니다.
+<a href="./assets/demos/demo-command.mp4"><img src="./assets/demos/demo-command.webp" alt="⌘K 명령 바에서 선택한 블레이드를 20% 넓히도록 요청하고 diff를 확인한 뒤 적용하는 장면" width="100%" /></a>
 
-**2026-10-09에 캡처한 이전 로컬 빌드 화면**입니다. 최신 판 재생성 패널과 새 작업 화면 레이아웃은 포함하지 않습니다. UI 소개용 사진이며 모델 정확도나 전체 납품 품질의 검증 결과는 아닙니다. [캡처 정보](./assets/screenshots/README.md)
+**⌘K 명령 바**: 부품을 범위로 지정하고 자연어로 수정을 요청합니다. 요청은 내 Claude Code CLI로 가고, 현재 IR과 화면 스냅샷이 함께 전송됩니다. 응답은 부품 단위 diff로 미리 보이고, 승인해야 적용됩니다. 적용한 부품에는 '수정됨' 표시와 되돌리기가 붙습니다.
 
-![Sceliph 로컬 편집기의 베어링 조립체, 부품 ID 트리와 Inspector](./assets/screenshots/element-editor-bearing.jpg)
+<table><tr>
+<td width="50%"><a href="./assets/demos/demo-library-compare.mp4"><img src="./assets/demos/demo-library-compare.webp" alt="라이브러리에 쌓인 결과를 넘기고 같은 선풍기의 1장·2장 결과를 나란히 비교하는 장면" width="100%" /></a><br /><strong>라이브러리 · 나란히 비교</strong><br />여러 IR 파일과 폴더를 열면 번호가 붙어 쌓이고, 두 결과를 뷰포트 두 개로 나눠 비교합니다.</td>
+<td width="50%"><a href="./assets/demos/demo-evidence.mp4"><img src="./assets/demos/demo-evidence.webp" alt="근거 컬러 타깃 패치로 추정·추론 부품만 남기고 추론 해칭을 켜는 장면" width="100%" /></a><br /><strong>근거 컬러 타깃</strong><br />실측·데이터시트·추정·추론·미기록 패치를 누르면 해당 부품만 선명하게 남습니다. 추론 부품에는 빗금을 켤 수 있습니다.</td>
+</tr><tr>
+<td width="50%"><a href="./assets/demos/demo-parts.mp4"><img src="./assets/demos/demo-parts.webp" alt="부품 선택과 격리, 분해 보기, 시점 전환, 확대·축소 장면" width="100%" /></a><br /><strong>부품 · 분해 · 시점</strong><br />부품을 선택·숨기기·잠그기·격리하고, 분해 보기와 Front/Top/ISO 시점, 휠 확대·축소를 씁니다.</td>
+<td width="50%"><strong>그 밖에</strong><br />한국어·영어·일본어·중국어 전환, 다크·라이트 테마, 모바일 배치를 지원합니다. GLB 단일 내보내기와 에셋 팩 저장은 따로 판정하고, 막혔으면 이유를 보여 줍니다. 검증 체크리스트에는 GLB 재열기, 포락 오차, 이름 있는 노드 비율, Khronos 검증기 결과가 나옵니다.<br /><br />명령 바는 <code>npm run dev</code>나 <code>npm run preview</code>로 띄운 뷰어에서 동작합니다. 정적 빌드에서는 브리지가 없다고 표시합니다.</td>
+</tr></table>
 
-<table>
-  <tr>
-    <td width="50%"><img src="./assets/screenshots/element-editor-part-selection.jpg" alt="ball_0000 개별 볼 isolate와 위치·재질·반지름 Inspector" width="100%" /><br /><strong>개별 부품 선택과 isolate</strong><br />안정적인 ID로 선택하고 mm·rad 단위, PBR 값과 구면 반지름을 확인합니다.</td>
-    <td width="50%"><img src="./assets/screenshots/element-editor-uv-checker.jpg" alt="개별 볼의 합성 UV checker 진단 화면" width="100%" /><br /><strong>UV checker 진단</strong><br />합성 체크 패턴으로 매핑을 살펴봅니다. 체크 패턴은 원본 재질이나 실측 텍스처가 아닙니다.</td>
-  </tr>
-</table>
+화면 속 선풍기와 조명은 ABO 사진을 보고 LLM이 쓴 IR입니다. 녹화는 뷰어 동작을 보여 줄 뿐이며, 복원 정확도나 실무 납품 품질을 인증하지 않습니다. 이전 캡처는 [기존 출처 설명](./assets/screenshots/README.md)과 함께 저장소에 남아 있습니다.
 
 ## 현재 상태
 
@@ -43,7 +44,26 @@ Sceliph는 사진·도면·실측값·자연어 요구를 선언형 IR로 정리
 
 상단 이미지는 제공된 **브랜드 비주얼**이며, 현재 엔진이 생성한 모델이나 품질 검증 결과가 아닙니다.
 
-### 최신 엔진 체크포인트 · 2026-10-07
+### 결정적인 생성 체크포인트 · 2026-10-10
+
+새 선택형 `product.deterministic-beveled-plate` 팩은 native sin/cos로 생성한 원본 좌표의 환경별 차이를 해결합니다. 실제 Node24/Chrome154에서6개 선언을 생성해 **metadata를 포함한 source JSON·GLB 전체 바이트가 일치**했습니다. 브라우저 새 세션의 재열기·내보내기와 두 부품 교체 계획도 일치합니다. 이전 생성기의54 source SHA는 보존했습니다.
+
+편집기는 새 replacement template에 이 팩을 사용합니다. 기존 선언과 native 파일은 원래 계산 정책을 유지합니다. 독립적인140자리 Decimal oracle로 좌표 계산을 검증했으며 Float32 메시·사진·제조 정확도와 구분합니다. [현재 증거와 남은 게이트](./docs/PLATE_DETERMINISM_20261010.ko.md)
+
+### 실무 흐름 체크포인트 · 2026-10-10
+
+최신 **165파일·1044테스트**, benchmark·build와 별도 계약 테스트19개가 통과했습니다.
+
+현재 원본 SHA에 결합된 JSON 계획으로 최대 8개 창작 extrusion 부품을 한 번에 교체합니다. 검사·검토 후 적용하며, 한 대상이라도 실패하면 전체 교체를 거부합니다. ID·배치·PBR·비대상 부품을 보존하고 한 번의 Undo로 복구합니다. native `0.6` 정적 메시 대상이며 조립 종속·리깅·임의 사진 복원은 이 경로의 범위가 아닙니다.
+
+선택형 `product.quality-beveled-plate` 팩은 `quality-diagonal-v1`로 보어 주변 캡의 퇴화 삼각형을 수정합니다. 경계 정점·벽면 속성·표면적은 유지하고 기존 팩·옵션 없는 출력은 보존합니다. 세 크기 / 실제 GLB 9개와 브라우저 저장·재열기·추가 편집, Blender import·편집 증거는 [현재 작업 상태](./docs/PRACTICAL_WORKFLOW_20261010.ko.md)에 기록합니다. 전체 `quality:production` 실패는 남아 있으며 **전체 엔진 100% 완료가 아닙니다.**
+
+1. `/?editor=elements`에서 창작 extrusion 정적 원본을 엽니다.
+2. **Replace parts from a JSON plan** → **Prepare replacement template**를 누릅니다.
+3. LLM이 `steps`를 작성합니다. `sourceSha256`과 실제 부품 `targetId`를 유지합니다. [스키마](./schemas/part-regeneration-plan.schema.json)
+4. **Check replacement plan** → 결과 검토 → **Apply checked replacements**. native JSON을 저장해 후속 편집합니다.
+
+### 이전 엔진 체크포인트 · 2026-10-07
 
 LLM이 선언한 IR을 로컬 엔진에서 생성·편집하는 방향을 유지합니다. 이번 변경은 새 primary form의 접촉·테이퍼·단면 제어, 실제 곡면 오차 예산, 부품 편집 오류 표시와 파일 교체 안전성을 추가합니다. 외부 3D 생성 모델을 기본 의존성으로 추가하지 않습니다.
 

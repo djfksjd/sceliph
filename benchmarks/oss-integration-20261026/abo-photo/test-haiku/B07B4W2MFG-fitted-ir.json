@@ -1,0 +1,163 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Stone & Beam Bishop Modern Wood Underbed Storage",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plinth",
+   "name": "Recessed plinth base",
+   "category": "enclosure",
+   "materialName": "Light oak veneer",
+   "detail": "Low recessed base band running the full length beneath the carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     2021.2775541723067,
+     28,
+     433.3060020658722
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    -26.051545130939076,
+    0
+   ],
+   "material": {
+    "color": "#b8a58a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Storage carcass",
+   "category": "enclosure",
+   "materialName": "Weathered oak veneer",
+   "detail": "Main box body housing the three drawers",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     2061.372503013258,
+     205,
+     470
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    130.5,
+    0
+   ],
+   "material": {
+    "color": "#d8c4a4",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "Taupe engineered top",
+   "detail": "Thick top slab with slight overhang, darker stone-look finish",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1888.859563795792,
+     40.33635605655573,
+     435.8022199053979
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    -11.254578910623763,
+    0
+   ],
+   "material": {
+    "color": "#6f625a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_left",
+   "name": "Left drawer front",
+   "category": "mechanical",
+   "materialName": "Weathered oak veneer",
+   "detail": "Left drawer front, flush with carcass face",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     660,
+     170,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -408.8697693297777,
+    130.5,
+    73.45389588202215
+   ],
+   "material": {
+    "color": "#d4bc98",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_center",
+   "name": "Centre drawer front",
+   "category": "mechanical",
+   "materialName": "Weathered oak veneer",
+   "detail": "Centre drawer front, flush with carcass face",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     660,
+     170,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    130.5,
+    73.45389588202215
+   ],
+   "material": {
+    "color": "#d4bc98",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_right",
+   "name": "Right drawer front",
+   "category": "mechanical",
+   "materialName": "Weathered oak veneer",
+   "detail": "Right drawer front, flush with carcass face",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     660,
+     170,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    623.0872872802073,
+    130.5,
+    73.45389588202215
+   ],
+   "material": {
+    "color": "#d4bc98",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  }
+ ]
+}

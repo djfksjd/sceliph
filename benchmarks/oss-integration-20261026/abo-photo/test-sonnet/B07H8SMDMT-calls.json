@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand - Movian Saale King Size Bed Frame with Headboard, 160 x 200cm, Light Brown Oak-Effect.\nThe product listing gives its overall height as 970 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.025501199999999998,
+   "durationMs": 17990,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":35,\"elevationDeg\":20},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Saale King Bed\",\"units\":\"mm\",\"components\":[{\"id\":\"headboard\",\"name\":\"Headboard\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Tall headboard panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[30,800,1700],\"radius\":4},\"position\":[-1020,570,0],\"material\":{\"color\":\"#c9b8a8\",\"roughness\":0.8}},{\"id\":\"hb_strip_top\",\"name\":\"Headboard strip top\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Raised horizontal strip\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[16,130,1560],\"radius\":3},\"position\":[-1000,830,0],\"material\":{\"color\":\"#cdbdad\",\"roughness\":0.8}},{\"id\":\"hb_strip_mid\",\"name\":\"Headboard strip middle\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Raised horizontal strip\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[16,130,1560],\"radius\":3},\"position\":[-1000,650,0],\"material\":{\"color\":\"#cdbdad\",\"roughness\":0.8}},{\"id\":\"hb_leg\",\"name\":\"Headboard lower part\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Headboard lower extension\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[30,200,1700],\"radius\":4},\"position\":[-1020,100,0],\"material\":{\"color\":\"#bfae9e\",\"roughness\":0.8}},{\"id\":\"plinth\",\"name\":\"Plinth\",\"category\":\"mechanical\",\"materialName\":\"oak-effect board\",\"detail\":\"Recessed base\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1900,100,1500],\"radius\":6},\"position\":[-20,50,0],\"material\":{\"color\":\"#b4a393\",\"roughness\":0.85}},{\"id\":\"rail_front\",\"name\":\"Side rail front\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Long side rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[2000,250,30],\"radius\":4},\"position\":[0,225,815],\"material\":{\"color\":\"#c4b3a3\",\"roughness\":0.8}},{\"id\":\"rail_back\",\"name\":\"Side rail back\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Long side rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[2000,250,30],\"radius\":4},\"position\":[0,225,-815],\"material\":{\"color\":\"#c4b3a3\",\"roughness\":0.8}},{\"id\":\"rail_foot\",\"name\":\"Foot rail\",\"category\":\"enclosure\",\"materialName\":\"oak-effect board\",\"detail\":\"Foot end rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[30,250,1600],\"radius\":4},\"position\":[985,225,0],\"material\":{\"color\":\"#c4b3a3\",\"roughness\":0.8}},{\"id\":\"deck\",\"name\":\"Slat deck\",\"category\":\"mechanical\",\"materialName\":\"board\",\"detail\":\"Support deck\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1940,20,1600],\"radius\":3},\"position\":[-5,330,0],\"material\":{\"color\":\"#b8a898\",\"roughness\":0.9}},{\"id\":\"mattress\",\"name\":\"Mattress\",\"category\":\"mechanical\",\"materialName\":\"white fabric\",\"detail\":\"Mattress 160x200\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1960,180,1590],\"radius\":30},\"position\":[-5,430,0],\"material\":{\"color\":\"#f5f5f6\",\"roughness\":0.95}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

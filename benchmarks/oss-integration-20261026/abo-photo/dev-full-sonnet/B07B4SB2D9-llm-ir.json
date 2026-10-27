@@ -1,0 +1,214 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Brass floor lamp with linen shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "enclosure",
+   "materialName": "brass",
+   "detail": "Round base tray",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 90,
+    "radiusBottom": 95,
+    "depth": 28,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    14,
+    0
+   ],
+   "material": {
+    "color": "#b8832f",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "rim",
+   "name": "Base rim",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Raised ring on base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 75,
+    "radiusBottom": 80,
+    "depth": 14,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    35,
+    0
+   ],
+   "material": {
+    "color": "#c08c36",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Vertical stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 520,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    290,
+    0
+   ],
+   "material": {
+    "color": "#b8832f",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "switch",
+   "name": "Switch",
+   "category": "interconnect",
+   "materialName": "black plastic",
+   "detail": "Inline switch near base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     6,
+     30,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    -8,
+    75,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Collar",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Height adjust collar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 13,
+    "radiusBottom": 13,
+    "depth": 16,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    505,
+    0
+   ],
+   "material": {
+    "color": "#b8832f",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Knob",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Adjustment knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 16,
+    "depth": 8,
+    "radialSegments": 32
+   },
+   "position": [
+    -30,
+    520,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8832f",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "knobstem",
+   "name": "Knob stem",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Knob screw",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      24,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    -24,
+    520,
+    0
+   ],
+   "material": {
+    "color": "#b8832f",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Shade",
+   "category": "enclosure",
+   "materialName": "linen",
+   "detail": "Tapered drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 100,
+    "radiusBottom": 120,
+    "depth": 170,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    626,
+    0
+   ],
+   "material": {
+    "color": "#f2efe8",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  }
+ ]
+}

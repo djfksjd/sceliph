@@ -1,0 +1,189 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Amazon Brand Stone & Beam Modern 2-Drawer File Cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "carcass",
+   "name": "Cabinet body",
+   "category": "enclosure",
+   "materialName": "White painted wood",
+   "detail": "Main white carcass box with two drawer openings",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     386.04565420415076,
+     723.9522391122886,
+     471.89081329566756
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    377,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "White painted wood",
+   "detail": "Flat top slab that overhangs the carcass slightly",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     450,
+     30,
+     400
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    607.761039571564,
+    0
+   ],
+   "material": {
+    "color": "#f7f7f4",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Base plinth",
+   "category": "enclosure",
+   "materialName": "White painted wood",
+   "detail": "Recessed toe base under the carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     402,
+     60,
+     362
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    164.23426166889135,
+    0
+   ],
+   "material": {
+    "color": "#eeeeea",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_top",
+   "name": "Top drawer front",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Upper drawer front panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     396,
+     280,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    500,
+    221.4944265225377
+   ],
+   "material": {
+    "color": "#fafaf8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_bottom",
+   "name": "Bottom drawer front",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Lower drawer front panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     456.89429290517256,
+     268,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    216,
+    129.90428226882187
+   ],
+   "material": {
+    "color": "#fafaf8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle_top",
+   "name": "Top drawer recessed handle",
+   "category": "mechanical",
+   "materialName": "Brushed brass",
+   "detail": "Recessed gold pull on the top drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     26,
+     10
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    506,
+    202
+   ],
+   "material": {
+    "color": "#c9a96e",
+    "roughness": 0.35,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle_bottom",
+   "name": "Bottom drawer recessed handle",
+   "category": "mechanical",
+   "materialName": "Brushed brass",
+   "detail": "Recessed gold pull on the bottom drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     26,
+     10
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    228,
+    202
+   ],
+   "material": {
+    "color": "#c9a96e",
+    "roughness": 0.35,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

@@ -1,0 +1,347 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rylee Modern Acacia 3-Drawer Sideboard",
+ "units": "mm",
+ "components": [
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "Gray-wash acacia",
+   "detail": "Main box body of the sideboard, 1600 mm wide, 450 mm deep, sitting on the legs.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1600,
+     620,
+     450
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    460,
+    0
+   ],
+   "material": {
+    "color": "#c8a27a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "Gray-wash acacia",
+   "detail": "Solid top slab that slightly overhangs the carcass.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1620,
+     30,
+     470
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    785,
+    0
+   ],
+   "material": {
+    "color": "#c8a27a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_left",
+   "name": "Drawer front left",
+   "category": "mechanical",
+   "materialName": "Gray-wash acacia",
+   "detail": "Left top drawer front, flush with carcass front.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     510,
+     115,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -520,
+    712,
+    236
+   ],
+   "material": {
+    "color": "#b89470",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_center",
+   "name": "Drawer front centre",
+   "category": "mechanical",
+   "materialName": "Gray-wash acacia",
+   "detail": "Centre top drawer front.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     510,
+     115,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    712,
+    236
+   ],
+   "material": {
+    "color": "#b89470",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_right",
+   "name": "Drawer front right",
+   "category": "mechanical",
+   "materialName": "Gray-wash acacia",
+   "detail": "Right top drawer front.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     510,
+     115,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    520,
+    712,
+    236
+   ],
+   "material": {
+    "color": "#b89470",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_left",
+   "name": "Door left",
+   "category": "mechanical",
+   "materialName": "Gray-wash acacia",
+   "detail": "Left lower cabinet door.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     510,
+     490,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -520,
+    400,
+    236
+   ],
+   "material": {
+    "color": "#b89470",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_center",
+   "name": "Door centre",
+   "category": "mechanical",
+   "materialName": "Gray-wash acacia",
+   "detail": "Centre lower cabinet door.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     510,
+     490,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    400,
+    236
+   ],
+   "material": {
+    "color": "#b89470",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_right",
+   "name": "Door right",
+   "category": "mechanical",
+   "materialName": "Gray-wash acacia",
+   "detail": "Right lower cabinet door.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     510,
+     490,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    520,
+    400,
+    236
+   ],
+   "material": {
+    "color": "#b89470",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_front_left",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "Solid acacia",
+   "detail": "Splayed tapered-look round leg, front left, from carcass underside to floor.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      20,
+      75,
+      -30
+     ],
+     [
+      -20,
+      -75,
+      30
+     ]
+    ],
+    "radius": 20
+   },
+   "position": [
+    -720,
+    75,
+    200
+   ],
+   "material": {
+    "color": "#a9825a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_front_right",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "Solid acacia",
+   "detail": "Splayed round leg, front right, from carcass underside to floor.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -20,
+      75,
+      -30
+     ],
+     [
+      20,
+      -75,
+      30
+     ]
+    ],
+    "radius": 20
+   },
+   "position": [
+    720,
+    75,
+    200
+   ],
+   "material": {
+    "color": "#a9825a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_back_left",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "Solid acacia",
+   "detail": "Splayed round leg, back left, from carcass underside to floor.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      20,
+      75,
+      30
+     ],
+     [
+      -20,
+      -75,
+      -30
+     ]
+    ],
+    "radius": 20
+   },
+   "position": [
+    -720,
+    75,
+    -200
+   ],
+   "material": {
+    "color": "#a9825a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_back_right",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "Solid acacia",
+   "detail": "Splayed round leg, back right, from carcass underside to floor.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -20,
+      75,
+      30
+     ],
+     [
+      20,
+      -75,
+      -30
+     ]
+    ],
+    "radius": 20
+   },
+   "position": [
+    720,
+    75,
+    -200
+   ],
+   "material": {
+    "color": "#a9825a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

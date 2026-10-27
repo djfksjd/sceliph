@@ -1,3 +1,28 @@
+# Current continuation · OSS integration slices 3–5 · 2026-10-26
+
+- 2026-10-27 (9차): 반대 검토(Opus) 후 9a: 지표 재점검. 320px에서도 가는 구조 IoU 불변 → 실제 형상 오류. yaw 무관 footprint로 8차 크기 오차 정정(사진만 9.1%/19.3%). 9b: 사진 2장(spin 0+18) 사전 등록 검증(새 36건, 3회 반복). 가는 구조 층 footprint 10.3%→5.2%, IoU +0.035, 기준 4/4 통과. 가구는 효과 없음. 다음: 깊이 미해결 시 측면 사진 요청 규칙, 가는 구조 형상, 겉보기 지표. 상세: `docs/OSS_INTEGRATION_20261026.ko.md` 9차.
+- 2026-10-27 (8차): 반대 검토(Opus, Fable) 후 ABO 실제 카탈로그 사진 30건 사전 등록 검증. LLM IR이 새 시점 IoU 0.87, F@5% 0.99, 가로·깊이 오차 1.7%(상품명 치수 제거 시 5.6%)로 상자·실루엣 기준선을 크게 이김. 사진 한 장 피팅은 실사진에서 오히려 나빠짐(0.74) → 기본으로 끔. 다음: 가는 구조 어휘, 다중 시점(spin 18번 프레임), 겉보기 지표, 블라인드 비교. 상세: `docs/OSS_INTEGRATION_20261026.ko.md` 8차.
+- 2026-10-27 (7차): 피팅 수락 기준 사전 등록 검증(새 응답 20건). 크기 오차 중앙값 8.1%→5.0%, 10% 이내 76%→89%. 하지만 '2%p 넘게 악화 2건 이하' 기준은 실패(5건). 사진 한 장 피팅의 약 5% 오차 바닥 때문이다 → 다음: LLM 값 중심 형상 사전분포(MAP), 새로 사전 등록 검증. 상세: `docs/OSS_INTEGRATION_20261026.ko.md` 7차.
+- 2026-10-27: 사진→LLM IR→피팅 평가(Blender 정답 5장면). 피팅은 모델 IR이 10% 이상 틀린 6건 중 5건을 1~7%로 줄였지만, 이미 맞는 IR은 악화시켰다 → 다음 할 일: 피팅 결과 수락 기준을 미리 고정, 실사진, 반복 실행. 상세: `docs/OSS_INTEGRATION_20261026.ko.md` 6차.
+
+See [OSS integration status §3–5](OSS_INTEGRATION_20261026.ko.md): EXIF FOV evidence, LLM/VLM part-box contract, AssemblyIR execution-feedback loop measured with the user's Claude plan (v2: haiku/sonnet first try 5/6, 6/6 after feedback; an earlier scale-style fix let both models inflate a tube radius and is recorded as a false pass, replaced by tessellation diagnosis), and vendored Manifold `booleanCSG` (additive AssemblyIR 0.1 op, deterministic, Khronos-valid job export). Next: ambiguous/photo-based LLM tasks, human template (Anny), replicad BREP evaluation.
+
+# Current continuation · OSS integration slice 2 · 2026-10-26
+
+See [OSS integration status §2](OSS_INTEGRATION_20261026.ko.md): one-photo camera pose + shape joint fit (orbit camera, occlusion-aware id/depth buffer, monocular depth-shape term, gauge-fixed reference part, low-confidence reasons) and Grounding DINO + SAM 2.1 part masks (hash-pinned, offline, suspect whole-object masks excluded). Blender ground truth: SAM IoU 0.974–0.993; with known FOV camera error 5.7–25 mm and box dims ≤1.6% on two scenes, third scene flagged low-confidence; with estimated FOV one scene was wrong without a warning. Real fan photo: text prompts for guard/stand returned the whole object (flagged), given boxes worked. Next: VLM box prompts, EXIF/GeoCalib focal, real-photo ground truth.
+
+# Current continuation · open-source integration slice 1 · 2026-10-26
+
+See [OSS integration status](OSS_INTEGRATION_20261026.ko.md): MoGe-2 ONNX post-processing port (estimated camera/depth evidence, never writes IR), public-domain CMA-ES port, exact distance transform, mesh silhouette raster and bounded silhouette parameter fit with multi-start identifiability. Synthetic ground truth: learned metric scale +291–347%, one anchor → independent probe +5–9%. 168 files/1062 tests, check/benchmark/build PASS; quality/production unchanged FAIL. Next: camera pose + shape joint fit on real photos, SAM 2.1 part masks, Manifold CSG.
+
+# Current continuation · deterministic descriptors · 2026-10-10
+
+See [current determinism proof](PLATE_DETERMINISM_20261010.ko.md): new opt-in pack produces whole source/GLB equality in6 actual Node/Chrome cases and a two-part plan, legacy54SHA preserved. Overall production still fails; next resolve UV-preserving strict delivery and current target-app evidence. Prior checkpoints follow.
+
+# Current continuation · 2026-10-10
+
+See [the practical workflow checkpoint](PRACTICAL_WORKFLOW_20261010.ko.md): atomic source-bound multi-part replacement, opt-in cap diagonal repair, actual browser and Blender acceptance, new UI captures. Whole production and cross-runtime descriptor equality remain incomplete.
+
 # Current work — final target UV checked before regeneration applies
 
 See PART_REGENERATION_FINAL_UV.ko.md. Reproduced normal generator UV with preserved uvScale0.001 turning into2100/2112 degenerate final UV triangles, previously returned as success. Now the actual patched target passes existing topology/budget and editable-mesh UV policy before return; failure leaves source/history intact. Existing5% threshold unchanged.162files/1033tests/check/benchmark/buildPASS; current gate results and source/file hashes in outputs/part-regeneration-final-uv-20261009. All18 normal source/GLB files remain byte-exact with previous results. No whole-engine completion/percent or Goal-tool resume claim. ActualUI/Blender remains blocked/not-run and is the next acceptance task. Previous records follow.

@@ -1,0 +1,150 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Brass Floor Lamp with Linen Drum Shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Round base",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Heavy round floor base with a flat top",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 60,
+    "radiusBottom": 60,
+    "depth": 30,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#b5893f",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "base_rim",
+   "name": "Base rim",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Raised decorative ring on top of the base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 52,
+    "radiusBottom": 52,
+    "depth": 12,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    36,
+    0
+   ],
+   "material": {
+    "color": "#b5893f",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Lamp pole",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Slender vertical brass stem rising from the base into the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 7,
+    "radiusBottom": 7,
+    "depth": 610,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    335,
+    0
+   ],
+   "material": {
+    "color": "#b5893f",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "height_knob",
+   "name": "Height adjuster knob",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Round knob on a collar for the adjustable arm",
+   "geometry": {
+    "op": "sphere",
+    "radius": 13
+   },
+   "position": [
+    0,
+    478,
+    14
+   ],
+   "material": {
+    "color": "#b5893f",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "switch",
+   "name": "Inline switch",
+   "category": "power",
+   "materialName": "Black plastic",
+   "detail": "Small rocker switch on the pole near the base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     12,
+     25,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    252,
+    10
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "Linen",
+   "detail": "Tapered white linen drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 55,
+    "radiusBottom": 80,
+    "depth": 180,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    621,
+    0
+   ],
+   "material": {
+    "color": "#f5f2ea",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

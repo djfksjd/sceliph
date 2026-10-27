@@ -1,0 +1,182 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Brass Floor Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base_disc",
+   "name": "Base disc",
+   "category": "mechanical",
+   "materialName": "Antique brass",
+   "detail": "Lower wide base disc",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 71,
+    "radiusBottom": 71,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    10,
+    0
+   ],
+   "material": {
+    "color": "#b98a3e",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "base_ring",
+   "name": "Base ring",
+   "category": "mechanical",
+   "materialName": "Antique brass",
+   "detail": "Upper stepped ring of the base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 58,
+    "radiusBottom": 64,
+    "depth": 26,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    33,
+    0
+   ],
+   "material": {
+    "color": "#c0903f",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "Brass tube",
+   "detail": "Central brass stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 7,
+    "radiusBottom": 7,
+    "depth": 575,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    312,
+    0
+   ],
+   "material": {
+    "color": "#b98a3e",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Collar",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Adjustment collar below shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 16,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    533,
+    0
+   ],
+   "material": {
+    "color": "#b98a3e",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Knob",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Adjustment knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 8,
+    "radialSegments": 32
+   },
+   "position": [
+    -26,
+    547,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#b98a3e",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "switch",
+   "name": "Switch",
+   "category": "power",
+   "materialName": "Black plastic",
+   "detail": "Small inline switch near base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     5,
+     22,
+     5
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    97,
+    7
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Shade",
+   "category": "enclosure",
+   "materialName": "Linen",
+   "detail": "Tapered drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 75,
+    "radiusBottom": 88,
+    "depth": 136,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    643,
+    0
+   ],
+   "material": {
+    "color": "#f1eee6",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

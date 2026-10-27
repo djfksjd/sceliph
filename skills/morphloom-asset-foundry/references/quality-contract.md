@@ -103,3 +103,4 @@ The local viewer must not upload customer evidence. Imported IR is memory-only, 
 ## Stop conditions
 
 Delivery may be called an editable base only when topology/IR and every source-visible silhouette, feature, relationship, and material gate pass. Do not call it survey-, manufacturing-, identity-, or construction-ready without the matching physical evidence and validation.
+- Use `geometry.op: booleanCSG` for exact negative space (holes, slots, pockets) or merged/intersected solids on one part. Operands must compile to closed manifold meshes; a non-manifold operand, an empty result, nesting deeper than 2, or more than 8 operands is a blocking error, never a silent fallback. Booleans are computed by the vendored single-threaded Manifold runtime and must keep zero boundary and non-manifold edges in the compiled topology audit.

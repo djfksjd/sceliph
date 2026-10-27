@@ -1,0 +1,29 @@
+{
+ "schema": "sceliph.photo-llm-protocol/0.1",
+ "registeredAt": "2026-10-27",
+ "guide": "You write Sceliph AssemblyIR JSON. Output exactly one JSON object and nothing else: {\"view\":{\"azimuthDeg\":number,\"elevationDeg\":number},\"assembly\":AssemblyIR}.\nAssemblyIR: {\"schema\":\"morphloom.assembly/0.1\",\"name\":string,\"units\":\"mm\",\"components\":[component,...]}\ncomponent: {\"id\":string,\"name\":string,\"category\":one of \"enclosure\",\"display\",\"logic\",\"power\",\"camera\",\"audio\",\"radio\",\"mechanical\",\"interconnect\",\"materialName\":string,\"detail\":string,\"geometry\":geometry,\"position\":[x,y,z] (optional, mm, centre of the part),\"rotation\":[rx,ry,rz] (optional, radians, XYZ Euler),\"material\":{\"color\":\"#rrggbb\",\"roughness\":0..1 (optional),\"metalness\":0..1 (optional)}}\nWorld: millimetres, Y is up, the floor is y = 0. Each geometry is centred on the component position.\ngeometry options:\n- {\"op\":\"roundedBox\",\"size\":[x,y,z],\"radius\":r}  (r at most 0.4 x the smallest size)\n- {\"op\":\"cylinder\",\"radiusTop\":r1,\"radiusBottom\":r2,\"depth\":h,\"radialSegments\":32}  (axis along Y, height h)\n- {\"op\":\"sphere\",\"radius\":r}\n- {\"op\":\"torus\",\"radius\":R,\"tube\":t}  (ring lies in the XY plane; its axis is Z; outer diameter 2(R+t); rotate it for other planes)\n- {\"op\":\"tube\",\"points\":[[x,y,z],...],\"radius\":r}  (swept circle through the points, relative to the component position)\nUse exactly the component ids the request names.\nYou are modelling the object in a photograph. The user states one known dimension; derive every other size and placement from the photo in proportion to it.\nPut the object on the floor (lowest point at y = 0) and model only the object, not the floor or background.\n\"view\" is your estimate of where the photo was taken from, relative to your own model: azimuthDeg 0 means the camera looks at the model's +Z side (from +Z toward -Z); positive azimuth moves the camera toward +X (azimuth 90 = camera on the +X side). elevationDeg is the camera height angle above the horizontal (0 = level, 90 = straight down).\nGive every component an explicit \"position\".",
+ "models": [
+  "haiku",
+  "sonnet"
+ ],
+ "maxRounds": 3,
+ "runsPerScene": 1,
+ "structuralFeedbackOnly": "Feedback between rounds covers parse, schema, compile and missing components only; ground-truth dimensions are never shown to the model.",
+ "fit": {
+  "segmentation": "oracle: Blender per-part visible masks (isolates the fitter from segmentation error; earlier SAM 2.1 runs scored IoU 0.974-0.993 on comparable renders)",
+  "fieldOfView": "known (spec)",
+  "viewHintSigmaDeg": 20,
+  "sizeRange": [
+   0.5,
+   2
+  ],
+  "positionReach": 0.5,
+  "maxEvaluations": 6000,
+  "restarts": 2,
+  "seed": 1,
+  "raster": 160,
+  "anchor": "Two image points the user marks on a visible surface with a known separation (scene.json anchorMm, projected by Blender); points sit inside a face, not on a silhouette edge.",
+  "crop": "The fit rasterises a crop around the object mask (15% margin), max side = raster."
+ },
+ "scoring": "compareAssemblyToTruth: part sizes relative to truth size; offsets from the reference part and floor heights relative to truth assembly extent; best of four 90-degree yaws and best order inside identical groups."
+}

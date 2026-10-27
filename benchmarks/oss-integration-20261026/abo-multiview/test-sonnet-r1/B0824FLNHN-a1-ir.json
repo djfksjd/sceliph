@@ -1,0 +1,203 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Wall sconce with linen shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Back plate",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Rectangular wall mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     109,
+     102,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    83,
+    4
+   ],
+   "material": {
+    "color": "#b4b3ac",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "screw_l",
+   "name": "Left screw",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Plate screw head",
+   "geometry": {
+    "op": "sphere",
+    "radius": 5
+   },
+   "position": [
+    -33,
+    72,
+    8
+   ],
+   "material": {
+    "color": "#d0d0d0",
+    "roughness": 0.2,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "screw_r",
+   "name": "Right screw",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Plate screw head",
+   "geometry": {
+    "op": "sphere",
+    "radius": 5
+   },
+   "position": [
+    37,
+    72,
+    8
+   ],
+   "material": {
+    "color": "#d0d0d0",
+    "roughness": 0.2,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Short arm from plate to stem",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      32
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    82,
+    8
+   ],
+   "material": {
+    "color": "#c8c8c8",
+    "roughness": 0.25,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "clamp",
+   "name": "Clamp block",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Collar where the stem meets the arm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     12,
+     35,
+     12
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    82,
+    40
+   ],
+   "material": {
+    "color": "#c8c8c8",
+    "roughness": 0.25,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Stem",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Vertical rod running up into the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 289,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    155,
+    40
+   ],
+   "material": {
+    "color": "#c8c8c8",
+    "roughness": 0.25,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "ball",
+   "name": "Ball finial",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Ball at the bottom of the stem",
+   "geometry": {
+    "op": "sphere",
+    "radius": 11
+   },
+   "position": [
+    0,
+    11,
+    40
+   ],
+   "material": {
+    "color": "#d0d0d0",
+    "roughness": 0.2,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Linen shade",
+   "category": "enclosure",
+   "materialName": "white linen",
+   "detail": "Tall cylindrical drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 77,
+    "radiusBottom": 77,
+    "depth": 210,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    359,
+    40
+   ],
+   "material": {
+    "color": "#f4f5f6",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

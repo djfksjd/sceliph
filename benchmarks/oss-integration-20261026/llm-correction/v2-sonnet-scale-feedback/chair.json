@@ -1,0 +1,99 @@
+{
+ "summary": {
+  "id": "chair",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.0243465,
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0243465,
+   "durationMs": 16240,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Chair\",\"units\":\"mm\",\"components\":[{\"id\":\"seat\",\"name\":\"Seat\",\"category\":\"enclosure\",\"materialName\":\"Oak wood\",\"detail\":\"450 x 40 x 450 mm seat panel, top surface 450 mm above the floor\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[450,40,450],\"radius\":5},\"position\":[0,430,0],\"material\":{\"color\":\"#b08850\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_fl\",\"name\":\"Front left leg\",\"category\":\"mechanical\",\"materialName\":\"Oak wood\",\"detail\":\"30 mm diameter vertical leg, floor to seat underside\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[-195,205,195],\"material\":{\"color\":\"#8f6b3a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_fr\",\"name\":\"Front right leg\",\"category\":\"mechanical\",\"materialName\":\"Oak wood\",\"detail\":\"30 mm diameter vertical leg, floor to seat underside\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[195,205,195],\"material\":{\"color\":\"#8f6b3a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_bl\",\"name\":\"Back left leg\",\"category\":\"mechanical\",\"materialName\":\"Oak wood\",\"detail\":\"30 mm diameter vertical leg, floor to seat underside\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[-195,205,-195],\"material\":{\"color\":\"#8f6b3a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_br\",\"name\":\"Back right leg\",\"category\":\"mechanical\",\"materialName\":\"Oak wood\",\"detail\":\"30 mm diameter vertical leg, floor to seat underside\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":410,\"radialSegments\":32},\"position\":[195,205,-195],\"material\":{\"color\":\"#8f6b3a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"backrest\",\"name\":\"Backrest\",\"category\":\"enclosure\",\"materialName\":\"Oak wood\",\"detail\":\"450 x 500 x 30 mm backrest tilted back 10 degrees, bottom edge on the rear edge of the seat top\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[450,500,30],\"radius\":5},\"position\":[0,696.2,-268.4],\"rotation\":[-0.174533,0,0],\"material\":{\"color\":\"#b08850\",\"roughness\":0.7,\"metalness\":0}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 2712,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      450,
+      945.007,
+      551.584
+     ],
+     "dimensionChecks": [
+      {
+       "id": "seat-top",
+       "expectedMm": 450,
+       "actualMm": 449.99999955296516,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "seat-t",
+       "expectedMm": 40,
+       "actualMm": 39.99999910593033,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "leg",
+       "expectedMm": 410,
+       "actualMm": 409.99999642372126,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "back-y",
+       "expectedMm": 497.61,
+       "actualMm": 497.61331743510453,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "back-z",
+       "expectedMm": 116.37,
+       "actualMm": 116.36835720588576,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0.0000017881393310492655,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

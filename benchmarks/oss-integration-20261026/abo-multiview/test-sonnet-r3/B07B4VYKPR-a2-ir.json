@@ -1,0 +1,103 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Concrete table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "ring",
+   "name": "Brass base ring",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Polished brass band at the base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 45,
+    "radiusBottom": 45,
+    "depth": 27,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    13.5,
+    0
+   ],
+   "material": {
+    "color": "#a98a3c",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "base",
+   "name": "Concrete base",
+   "category": "enclosure",
+   "materialName": "concrete",
+   "detail": "Cylindrical concrete body",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 44,
+    "radiusBottom": 44,
+    "depth": 138,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    96,
+    0
+   ],
+   "material": {
+    "color": "#9a9a9c",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Brass neck",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Small brass socket neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 8,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    169,
+    0
+   ],
+   "material": {
+    "color": "#8a6d2e",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Linen drum shade",
+   "category": "enclosure",
+   "materialName": "linen fabric",
+   "detail": "Off-white drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 112,
+    "radiusBottom": 112,
+    "depth": 208,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    277,
+    0
+   ],
+   "material": {
+    "color": "#e2e2e0",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  }
+ ]
+}

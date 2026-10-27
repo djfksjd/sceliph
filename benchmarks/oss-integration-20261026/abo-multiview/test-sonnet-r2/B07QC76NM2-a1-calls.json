@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Mid-Century Wall Sconce Light, Oil-Rubbed Bronze.\nThe product listing gives its overall height as 332 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.026409000000000002,
+   "durationMs": 19621,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":2},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Globe wall sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"backplate\",\"name\":\"Backplate\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"Round wall mounting disc\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":66,\"radiusBottom\":66,\"depth\":16,\"radialSegments\":48},\"position\":[0,266,8],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"plate_boss\",\"name\":\"Plate boss\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"Raised inner ring on the backplate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":50,\"radiusBottom\":54,\"depth\":8,\"radialSegments\":48},\"position\":[0,266,19],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#242120\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"finial\",\"name\":\"Center stud\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"Small stud projecting from plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5,\"radiusBottom\":6,\"depth\":30,\"radialSegments\":24},\"position\":[0,272,38],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"arm\",\"name\":\"Arm\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"Neck joining backplate to socket\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-10,45],[0,6,-45]],\"radius\":9},\"position\":[0,250,70],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"socket_top\",\"name\":\"Socket cap\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"Upper socket housing\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":10,\"radiusBottom\":18,\"depth\":30,\"radialSegments\":32},\"position\":[0,228,115],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"socket\",\"name\":\"Socket\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"Lamp socket body\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":17,\"radiusBottom\":17,\"depth\":55,\"radialSegments\":32},\"position\":[0,170,115],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"collar\",\"name\":\"Glass holder ring\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"Ring holding the glass globe\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":68,\"radiusBottom\":68,\"depth\":18,\"radialSegments\":48},\"position\":[0,196,115],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"globe\",\"name\":\"Glass globe\",\"category\":\"enclosure\",\"materialName\":\"clear glass\",\"detail\":\"Clear spherical shade\",\"geometry\":{\"op\":\"sphere\",\"radius\":104},\"position\":[0,104,115],\"material\":{\"color\":\"#e6eef0\",\"roughness\":0.05,\"metalness\":0}},{\"id\":\"bulb\",\"name\":\"Filament bulb\",\"category\":\"power\",\"materialName\":\"clear glass\",\"detail\":\"Spiral filament bulb\",\"geometry\":{\"op\":\"sphere\",\"radius\":24},\"position\":[0,85,115],\"material\":{\"color\":\"#f3ead2\",\"roughness\":0.1,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

@@ -1,0 +1,397 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "6-Drawer Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "stained pine",
+   "detail": "main cabinet box",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1500,
+     563,
+     430
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    531.5,
+    0
+   ],
+   "material": {
+    "color": "#a8481c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d1",
+   "name": "Drawer top left",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     176,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -364,
+    709,
+    225
+   ],
+   "material": {
+    "color": "#b4501f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d2",
+   "name": "Drawer mid left",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     176,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -364,
+    527,
+    225
+   ],
+   "material": {
+    "color": "#b4501f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d3",
+   "name": "Drawer bottom left",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     176,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -364,
+    345,
+    225
+   ],
+   "material": {
+    "color": "#b4501f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d4",
+   "name": "Drawer top right",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     176,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    364,
+    709,
+    225
+   ],
+   "material": {
+    "color": "#b4501f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d5",
+   "name": "Drawer mid right",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     176,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    364,
+    527,
+    225
+   ],
+   "material": {
+    "color": "#b4501f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d6",
+   "name": "Drawer bottom right",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     176,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    364,
+    345,
+    225
+   ],
+   "material": {
+    "color": "#b4501f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "p1",
+   "name": "Post front left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "base post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     250,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    -720,
+    125,
+    180
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "p2",
+   "name": "Post front right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "base post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     250,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    720,
+    125,
+    180
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "p3",
+   "name": "Post back left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "base post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     250,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    -720,
+    125,
+    -180
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "p4",
+   "name": "Post back right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "base post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     250,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    720,
+    125,
+    -180
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "r1",
+   "name": "Bottom rail front",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "lower rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1465,
+     25,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    12.5,
+    180
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "r2",
+   "name": "Bottom rail back",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "lower rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1465,
+     25,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    12.5,
+    -180
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "r3",
+   "name": "Top rail front",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "upper rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1465,
+     25,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    237.5,
+    180
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "r4",
+   "name": "Top rail back",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "upper rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1465,
+     25,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    237.5,
+    -180
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

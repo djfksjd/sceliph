@@ -1,0 +1,413 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Six-drawer dark oak chest",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "dark oak veneer",
+   "detail": "Main cabinet box",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     810,
+     1281,
+     480
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    680.5,
+    0
+   ],
+   "material": {
+    "color": "#3d2a20",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Plinth",
+   "category": "mechanical",
+   "materialName": "dark oak veneer",
+   "detail": "Recessed base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     40,
+     440
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    20,
+    -5
+   ],
+   "material": {
+    "color": "#2f2018",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d1",
+   "name": "Drawer 1",
+   "category": "mechanical",
+   "materialName": "dark oak veneer",
+   "detail": "Top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     184,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1155,
+    248
+   ],
+   "material": {
+    "color": "#43302a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d2",
+   "name": "Drawer 2",
+   "category": "mechanical",
+   "materialName": "dark oak veneer",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     184,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    965,
+    248
+   ],
+   "material": {
+    "color": "#43302a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d3",
+   "name": "Drawer 3",
+   "category": "mechanical",
+   "materialName": "dark oak veneer",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     184,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    775,
+    248
+   ],
+   "material": {
+    "color": "#43302a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d4",
+   "name": "Drawer 4",
+   "category": "mechanical",
+   "materialName": "dark oak veneer",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     184,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    585,
+    248
+   ],
+   "material": {
+    "color": "#43302a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d5",
+   "name": "Drawer 5",
+   "category": "mechanical",
+   "materialName": "dark oak veneer",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     184,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    395,
+    248
+   ],
+   "material": {
+    "color": "#43302a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "d6",
+   "name": "Drawer 6",
+   "category": "mechanical",
+   "materialName": "dark oak veneer",
+   "detail": "Bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     184,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    205,
+    248
+   ],
+   "material": {
+    "color": "#43302a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "h1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -95,
+      0,
+      0
+     ],
+     [
+      95,
+      0,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    1205,
+    266
+   ],
+   "material": {
+    "color": "#c8a45a",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "h2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -95,
+      0,
+      0
+     ],
+     [
+      95,
+      0,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    1015,
+    266
+   ],
+   "material": {
+    "color": "#c8a45a",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "h3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -95,
+      0,
+      0
+     ],
+     [
+      95,
+      0,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    825,
+    266
+   ],
+   "material": {
+    "color": "#c8a45a",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "h4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -95,
+      0,
+      0
+     ],
+     [
+      95,
+      0,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    635,
+    266
+   ],
+   "material": {
+    "color": "#c8a45a",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "h5",
+   "name": "Handle 5",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -95,
+      0,
+      0
+     ],
+     [
+      95,
+      0,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    445,
+    266
+   ],
+   "material": {
+    "color": "#c8a45a",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "h6",
+   "name": "Handle 6",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -95,
+      0,
+      0
+     ],
+     [
+      95,
+      0,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    255,
+    266
+   ],
+   "material": {
+    "color": "#c8a45a",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

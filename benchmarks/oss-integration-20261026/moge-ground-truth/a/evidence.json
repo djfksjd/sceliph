@@ -1,0 +1,62 @@
+{
+  "schema": "sceliph.monocular-camera-evidence/0.1",
+  "provenance": "estimated",
+  "writesAssemblyIR": false,
+  "model": {
+    "id": "Ruicheng/moge-2-vits-normal-onnx@e50ffda41565591092adea54c6ac83d6212e1e23",
+    "sha256": "24eacb5dc7a2c54c7bc98f7de085ffbed79ad006ea5b664c2c2cdc02ff3a52f0",
+    "upstreamRevision": "74fbce054ebed49800de42d0ad0e83495065719a"
+  },
+  "input": {
+    "sha256": "3f08f5d56e4e89838d282ee5e0007c33ff80536e3d19b18271afed1cdaa1e195",
+    "width": 640,
+    "height": 480
+  },
+  "camera": {
+    "intrinsicsNormalized": {
+      "fx": 1.056175372121673,
+      "fy": 1.4082338294955639,
+      "cx": 0.5,
+      "cy": 0.5
+    },
+    "intrinsicsPixels": {
+      "fx": 675.9522381578706,
+      "fy": 675.9522381578706,
+      "cx": 320,
+      "cy": 240
+    },
+    "fovXDegrees": 50.66633230200393,
+    "fovYDegrees": 39.09528830119511
+  },
+  "depth": {
+    "unit": "m",
+    "validPixels": 85561,
+    "validFraction": 0.2785188802083333,
+    "minimum": 2.202294111251831,
+    "median": 2.5981028079986572,
+    "maximum": 3.3960471153259277
+  },
+  "anchor": {
+    "estimatedMm": 1075.058294225237,
+    "knownMm": 260,
+    "scaleCorrection": 0.24184735041495994
+  },
+  "measurements": [
+    {
+      "from": [
+        171.24,
+        320.94
+      ],
+      "to": [
+        163.23,
+        223.76
+      ],
+      "estimatedMm": 493.59531724849455,
+      "anchoredMm": 119.37471965377999
+    }
+  ],
+  "limitations": [
+    "Camera intrinsics and depth are single-image model estimates, not measurements.",
+    "Assumes a centred principal point, square pixels and no lens distortion."
+  ]
+}

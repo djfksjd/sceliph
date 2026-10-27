@@ -1,0 +1,326 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-century desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Desk top and drawer carcass",
+   "category": "enclosure",
+   "materialName": "wood veneer",
+   "detail": "top slab with drawer housing",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1070,
+     100,
+     510
+    ],
+    "radius": 15
+   },
+   "position": [
+    0,
+    705,
+    0
+   ],
+   "material": {
+    "color": "#7a5c42",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "drawerL",
+   "name": "Left drawer front",
+   "category": "enclosure",
+   "materialName": "wood veneer",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     510,
+     70,
+     16
+    ],
+    "radius": 3
+   },
+   "position": [
+    -262,
+    690,
+    255
+   ],
+   "material": {
+    "color": "#765840",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "drawerR",
+   "name": "Right drawer front",
+   "category": "enclosure",
+   "materialName": "wood veneer",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     510,
+     70,
+     16
+    ],
+    "radius": 3
+   },
+   "position": [
+    262,
+    690,
+    255
+   ],
+   "material": {
+    "color": "#765840",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "handleL",
+   "name": "Left handle",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "recessed pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     25,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    -262,
+    695,
+    266
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "handleR",
+   "name": "Right handle",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "recessed pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     25,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    262,
+    695,
+    266
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "legFL",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 17,
+    "depth": 655,
+    "radialSegments": 24
+   },
+   "position": [
+    -470,
+    327,
+    200
+   ],
+   "material": {
+    "color": "#6b4f38",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "legBL",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 17,
+    "depth": 655,
+    "radialSegments": 24
+   },
+   "position": [
+    -470,
+    327,
+    -200
+   ],
+   "material": {
+    "color": "#6b4f38",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "legFR",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 17,
+    "depth": 655,
+    "radialSegments": 24
+   },
+   "position": [
+    470,
+    327,
+    200
+   ],
+   "material": {
+    "color": "#6b4f38",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "legBR",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 17,
+    "depth": 655,
+    "radialSegments": 24
+   },
+   "position": [
+    470,
+    327,
+    -200
+   ],
+   "material": {
+    "color": "#6b4f38",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "strL1",
+   "name": "Left upper stretcher",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "side rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     30,
+     400
+    ],
+    "radius": 4
+   },
+   "position": [
+    -470,
+    360,
+    0
+   ],
+   "material": {
+    "color": "#6b4f38",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "strL2",
+   "name": "Left lower stretcher",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "side rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     30,
+     400
+    ],
+    "radius": 4
+   },
+   "position": [
+    -470,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#6b4f38",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "strR1",
+   "name": "Right upper stretcher",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "side rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     30,
+     400
+    ],
+    "radius": 4
+   },
+   "position": [
+    470,
+    360,
+    0
+   ],
+   "material": {
+    "color": "#6b4f38",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "strR2",
+   "name": "Right lower stretcher",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "side rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     30,
+     400
+    ],
+    "radius": 4
+   },
+   "position": [
+    470,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#6b4f38",
+    "roughness": 0.65
+   }
+  }
+ ]
+}

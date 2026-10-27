@@ -1,0 +1,137 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Arc floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "Chrome steel",
+   "detail": "Round weighted base disc",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 135,
+    "radiusBottom": 138,
+    "depth": 50,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    25,
+    0
+   ],
+   "material": {
+    "color": "#8c8e92",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "arc",
+   "name": "Arc pole",
+   "category": "mechanical",
+   "materialName": "Brushed steel",
+   "detail": "Thin steel pole curving over into an arc",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      50,
+      0
+     ],
+     [
+      0,
+      1000,
+      0
+     ],
+     [
+      0,
+      1700,
+      0
+     ],
+     [
+      40,
+      2000,
+      150
+     ],
+     [
+      250,
+      2092,
+      500
+     ],
+     [
+      450,
+      2020,
+      800
+     ],
+     [
+      560,
+      1880,
+      1000
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b5b8bc",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Shade cap",
+   "category": "mechanical",
+   "materialName": "Steel",
+   "detail": "Small fitting joining arc to shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 20,
+    "radiusBottom": 30,
+    "depth": 40,
+    "radialSegments": 24
+   },
+   "position": [
+    560,
+    1860,
+    1000
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "mechanical",
+   "materialName": "Fabric",
+   "detail": "Tapered cream fabric drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 200,
+    "radiusBottom": 250,
+    "depth": 330,
+    "radialSegments": 48
+   },
+   "position": [
+    560,
+    1690,
+    1000
+   ],
+   "material": {
+    "color": "#f1e9d8",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

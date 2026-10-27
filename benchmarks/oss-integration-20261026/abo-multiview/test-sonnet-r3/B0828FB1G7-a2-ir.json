@@ -1,0 +1,142 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Semiflush frosted glass ceiling light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round mounting canopy at the top",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 64,
+    "radiusBottom": 66,
+    "depth": 22,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    199,
+    0
+   ],
+   "material": {
+    "color": "#8a8984",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Frosted glass shade",
+   "category": "enclosure",
+   "materialName": "frosted opal glass",
+   "detail": "Bowl-shaped shade with a flat top",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -90
+     ],
+     [
+      40,
+      -88
+     ],
+     [
+      90,
+      -76
+     ],
+     [
+      130,
+      -52
+     ],
+     [
+      158,
+      -16
+     ],
+     [
+      167,
+      25
+     ],
+     [
+      168,
+      60
+     ],
+     [
+      160,
+      84
+     ],
+     [
+      140,
+      90
+     ],
+     [
+      0,
+      90
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    100,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f6",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "finial_cap",
+   "name": "Finial cap",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Nickel cap at the bottom of the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 36,
+    "depth": 16,
+    "radialSegments": 40
+   },
+   "position": [
+    0,
+    13,
+    0
+   ],
+   "material": {
+    "color": "#8a8984",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "finial_knob",
+   "name": "Finial knob",
+   "category": "mechanical",
+   "materialName": "satin nickel",
+   "detail": "Small knob at the bottom",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 17,
+    "depth": 12,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    6,
+    0
+   ],
+   "material": {
+    "color": "#b4b2ac",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

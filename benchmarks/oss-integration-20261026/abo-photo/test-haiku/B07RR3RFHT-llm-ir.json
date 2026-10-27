@@ -1,0 +1,111 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Marchio Amazon Movian Argenton bathroom column cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "carcass",
+   "name": "Cabinet carcass",
+   "category": "enclosure",
+   "materialName": "Matte white melamine",
+   "detail": "Tall narrow body, 300 x 1400 x 270 mm overall, wall-hung column unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     296,
+     1396,
+     262
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    700,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f4",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_upper",
+   "name": "Upper door",
+   "category": "enclosure",
+   "materialName": "Matte white melamine",
+   "detail": "Upper front panel above the horizontal handle seam",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     298,
+     695,
+     14
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1052.5,
+    138
+   ],
+   "material": {
+    "color": "#f7f7f7",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_lower",
+   "name": "Lower door",
+   "category": "enclosure",
+   "materialName": "Matte white melamine",
+   "detail": "Lower front panel below the horizontal handle seam",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     298,
+     690,
+     14
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    345,
+    138
+   ],
+   "material": {
+    "color": "#f7f7f7",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle_strip",
+   "name": "Horizontal recessed handle strip",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium-look profile",
+   "detail": "Slim grip rail along the door seam, roughly mid-height",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     260,
+     16,
+     12
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    700,
+    152
+   ],
+   "material": {
+    "color": "#d0d4d8",
+    "roughness": 0.3,
+    "metalness": 0.5
+   }
+  }
+ ]
+}

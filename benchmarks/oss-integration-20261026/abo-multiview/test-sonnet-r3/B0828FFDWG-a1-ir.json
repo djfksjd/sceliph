@@ -1,0 +1,254 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Flush-mount ceiling light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Frosted glass shade",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "Bowl-shaped white frosted glass dome, closed profile",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      18
+     ],
+     [
+      60,
+      22
+     ],
+     [
+      110,
+      36
+     ],
+     [
+      150,
+      56
+     ],
+     [
+      178,
+      80
+     ],
+     [
+      188,
+      98
+     ],
+     [
+      190,
+      106
+     ],
+     [
+      0,
+      106
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rim",
+   "name": "Shade rim ring",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Metal ring holding the glass",
+   "geometry": {
+    "op": "torus",
+    "radius": 192,
+    "tube": 6
+   },
+   "position": [
+    0,
+    106,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8babb",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "frame",
+   "name": "Back frame",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Shallow mounting frame at the ceiling",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 200,
+    "radiusBottom": 196,
+    "depth": 24,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    118,
+    0
+   ],
+   "material": {
+    "color": "#b0b3b5",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "band",
+   "name": "Outer decorative band",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Wide decorative ring around the frame",
+   "geometry": {
+    "op": "torus",
+    "radius": 222,
+    "tube": 6
+   },
+   "position": [
+    0,
+    114,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8babb",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "rod_back",
+   "name": "Back band rod",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Rod linking band to frame",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      22
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    114,
+    -205
+   ],
+   "material": {
+    "color": "#c0c2c3",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "rod_right",
+   "name": "Side band rod",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Rod linking band to frame",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -22,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    222,
+    114,
+    0
+   ],
+   "material": {
+    "color": "#c0c2c3",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "finial_base",
+   "name": "Finial cone",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Conical cap at bottom of shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 18,
+    "depth": 12,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    20,
+    0
+   ],
+   "material": {
+    "color": "#c4c6c7",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "finial_pin",
+   "name": "Finial pin",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Small knob below the cone",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 14,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    7,
+    0
+   ],
+   "material": {
+    "color": "#c4c6c7",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

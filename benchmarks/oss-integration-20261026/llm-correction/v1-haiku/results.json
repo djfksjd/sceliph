@@ -1,0 +1,134 @@
+{
+ "schema": "sceliph.llm-correction-eval/0.1",
+ "tasksSha256": "46a1dbc3c192174d80125a0656b0859776f811afea57a891aad91c188e5a25f0",
+ "modelAlias": "haiku",
+ "modelIds": [
+  "claude-haiku-5-5"
+ ],
+ "maxRounds": 3,
+ "firstTryPass": "6/6",
+ "finalPass": "6/6",
+ "totalCostUsd": 0.00471985,
+ "results": [
+  {
+   "id": "stool",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.0008470999999999999,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  },
+  {
+   "id": "router",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.00074445,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  },
+  {
+   "id": "mug",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.00075305,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  },
+  {
+   "id": "shelf",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.0009386500000000001,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  },
+  {
+   "id": "lamp",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.00065885,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  },
+  {
+   "id": "speaker",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.00077775,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  }
+ ]
+}

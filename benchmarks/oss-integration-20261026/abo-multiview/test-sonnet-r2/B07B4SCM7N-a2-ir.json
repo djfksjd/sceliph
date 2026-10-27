@@ -1,0 +1,432 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Chase 7-drawer dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "wood",
+   "detail": "Overhanging top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1540,
+     34,
+     480
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    897,
+    0
+   ],
+   "material": {
+    "color": "#c68f55",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "wood",
+   "detail": "Main case with side panels",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1480,
+     780,
+     450
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    490,
+    0
+   ],
+   "material": {
+    "color": "#c28a50",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "d_tl",
+   "name": "Top left drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Small drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     365,
+     200,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -517,
+    765,
+    235
+   ],
+   "material": {
+    "color": "#c89258",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_tc",
+   "name": "Top centre drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Wide drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     200,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    40,
+    765,
+    235
+   ],
+   "material": {
+    "color": "#c89258",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_tr",
+   "name": "Top right drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Small drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     285,
+     200,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    557,
+    765,
+    235
+   ],
+   "material": {
+    "color": "#c89258",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_ml",
+   "name": "Middle left drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     685,
+     240,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -352,
+    520,
+    235
+   ],
+   "material": {
+    "color": "#c89258",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_mr",
+   "name": "Middle right drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     685,
+     240,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    352,
+    520,
+    235
+   ],
+   "material": {
+    "color": "#c89258",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_bl",
+   "name": "Bottom left drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     685,
+     230,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -352,
+    260,
+    235
+   ],
+   "material": {
+    "color": "#c89258",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_br",
+   "name": "Bottom right drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     685,
+     230,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    352,
+    260,
+    235
+   ],
+   "material": {
+    "color": "#c89258",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      26,
+      20
+     ],
+     [
+      20,
+      45
+     ],
+     [
+      30,
+      75
+     ],
+     [
+      34,
+      100
+     ],
+     [
+      0,
+      100
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    -680,
+    0,
+    185
+   ],
+   "material": {
+    "color": "#b97f46",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      26,
+      20
+     ],
+     [
+      20,
+      45
+     ],
+     [
+      30,
+      75
+     ],
+     [
+      34,
+      100
+     ],
+     [
+      0,
+      100
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    680,
+    0,
+    185
+   ],
+   "material": {
+    "color": "#b97f46",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      26,
+      20
+     ],
+     [
+      20,
+      45
+     ],
+     [
+      30,
+      75
+     ],
+     [
+      34,
+      100
+     ],
+     [
+      0,
+      100
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    -680,
+    0,
+    -185
+   ],
+   "material": {
+    "color": "#b97f46",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Turned foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      26,
+      20
+     ],
+     [
+      20,
+      45
+     ],
+     [
+      30,
+      75
+     ],
+     [
+      34,
+      100
+     ],
+     [
+      0,
+      100
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    680,
+    0,
+    -185
+   ],
+   "material": {
+    "color": "#b97f46",
+    "roughness": 0.6
+   }
+  }
+ ]
+}

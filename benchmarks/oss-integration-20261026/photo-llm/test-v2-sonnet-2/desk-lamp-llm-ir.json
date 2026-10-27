@@ -1,0 +1,79 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "black painted metal",
+   "detail": "Round flat base disc, 160 mm diameter",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 80,
+    "radiusBottom": 80,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    10,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "brushed grey metal",
+   "detail": "Thin vertical pole",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 400,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    220,
+    0
+   ],
+   "material": {
+    "color": "#9a9a9a",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Shade",
+   "category": "enclosure",
+   "materialName": "cream fabric",
+   "detail": "Truncated cone lamp shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 62,
+    "radiusBottom": 110,
+    "depth": 170,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    465,
+    0
+   ],
+   "material": {
+    "color": "#e0d8c6",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

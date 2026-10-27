@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Remote-Controlled 5-Blade Ceiling Fan with Light, Diameter, Antique Brass.\nThe product listing gives its overall height as 356 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.026143200000000002,
+   "durationMs": 16924,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"5-Blade Ceiling Fan with Light\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Canopy\",\"category\":\"mechanical\",\"materialName\":\"antique brass\",\"detail\":\"Ceiling canopy cap\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,26],[30,26],[40,16],[36,0],[0,0]],\"segments\":32},\"position\":[0,330,0],\"material\":{\"color\":\"#a89466\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"downrod\",\"name\":\"Downrod\",\"category\":\"mechanical\",\"materialName\":\"antique brass\",\"detail\":\"Downrod\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":11,\"radiusBottom\":11,\"depth\":200,\"radialSegments\":24},\"position\":[0,235,0],\"material\":{\"color\":\"#a89466\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"motor\",\"name\":\"Motor housing\",\"category\":\"mechanical\",\"materialName\":\"antique brass\",\"detail\":\"Motor housing\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,60],[30,58],[85,40],[105,22],[105,-10],[90,-30],[0,-30]],\"segments\":48},\"position\":[0,95,0],\"material\":{\"color\":\"#a89466\",\"roughness\":0.35,\"metalness\":0.85}},{\"id\":\"light\",\"name\":\"Light glass\",\"category\":\"power\",\"materialName\":\"frosted glass\",\"detail\":\"Frosted glass light bowl\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[55,3],[85,18],[90,35],[80,55],[0,55]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#f1eee6\",\"roughness\":0.5,\"metalness\":0.0}},{\"id\":\"blade1\",\"name\":\"Blade 1\",\"category\":\"mechanical\",\"materialName\":\"dark walnut\",\"detail\":\"Fan blade\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[540,8,110],\"radius\":3},\"position\":[-370,100,0],\"rotation\":[0,3.1416,0],\"material\":{\"color\":\"#4a2c2e\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"blade2\",\"name\":\"Blade 2\",\"category\":\"mechanical\",\"materialName\":\"dark walnut\",\"detail\":\"Fan blade\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[540,8,110],\"radius\":3},\"position\":[-114,100,352],\"rotation\":[0,4.398,0],\"material\":{\"color\":\"#4a2c2e\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"blade3\",\"name\":\"Blade 3\",\"category\":\"mechanical\",\"materialName\":\"dark walnut\",\"detail\":\"Fan blade\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[540,8,110],\"radius\":3},\"position\":[299,100,218],\"rotation\":[0,5.655,0],\"material\":{\"color\":\"#4a2c2e\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"blade4\",\"name\":\"Blade 4\",\"category\":\"mechanical\",\"materialName\":\"dark walnut\",\"detail\":\"Fan blade\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[540,8,110],\"radius\":3},\"position\":[299,100,-218],\"rotation\":[0,0.628,0],\"material\":{\"color\":\"#4a2c2e\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"blade5\",\"name\":\"Blade 5\",\"category\":\"mechanical\",\"materialName\":\"dark walnut\",\"detail\":\"Fan blade\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[540,8,110],\"radius\":3},\"position\":[-114,100,-352],\"rotation\":[0,1.885,0],\"material\":{\"color\":\"#4a2c2e\",\"roughness\":0.6,\"metalness\":0.0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

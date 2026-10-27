@@ -1,0 +1,136 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Scandinavian Pendant Light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "White shade",
+   "category": "enclosure",
+   "materialName": "white glossy glass",
+   "detail": "Cylindrical white shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 100,
+    "radiusBottom": 100,
+    "depth": 300,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.15,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wood",
+   "name": "Wood band",
+   "category": "mechanical",
+   "materialName": "blonde wood",
+   "detail": "Wooden top section of the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 100,
+    "radiusBottom": 100,
+    "depth": 130,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    365,
+    0
+   ],
+   "material": {
+    "color": "#d2ac7a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Grey collar",
+   "category": "mechanical",
+   "materialName": "painted metal",
+   "detail": "Cord grip collar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 35,
+    "radiusBottom": 40,
+    "depth": 70,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    465,
+    0
+   ],
+   "material": {
+    "color": "#a9aaac",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Suspension cord",
+   "category": "interconnect",
+   "materialName": "cable",
+   "detail": "Thin cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -630,
+      0
+     ],
+     [
+      0,
+      630,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1130,
+    0
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.6,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "white painted metal",
+   "detail": "Round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 130,
+    "radiusBottom": 145,
+    "depth": 40,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1777,
+    0
+   ],
+   "material": {
+    "color": "#e8e8e8",
+    "roughness": 0.5,
+    "metalness": 0.1
+   }
+  }
+ ]
+}

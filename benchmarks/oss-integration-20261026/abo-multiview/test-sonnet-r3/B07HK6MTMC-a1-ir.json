@@ -1,0 +1,181 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Black drum shade table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Conical base",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "Cone-shaped base with chamfered foot",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      62,
+      0
+     ],
+     [
+      80,
+      16
+     ],
+     [
+      9,
+      205
+     ],
+     [
+      0,
+      205
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Stem",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Central neck rod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 340,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    370,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "black fabric",
+   "detail": "Cylindrical drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 175,
+    "radiusBottom": 175,
+    "depth": 316,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    426,
+    0
+   ],
+   "material": {
+    "color": "#0c0c0d",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Socket",
+   "category": "power",
+   "materialName": "brass",
+   "detail": "Bulb socket inside shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 16,
+    "depth": 30,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    545,
+    0
+   ],
+   "material": {
+    "color": "#b09a50",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "chain",
+   "name": "Pull chain",
+   "category": "mechanical",
+   "materialName": "metal chain",
+   "detail": "Pull chain",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -35,
+      0
+     ]
+    ],
+    "radius": 1.2
+   },
+   "position": [
+    17,
+    265,
+    0
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "pull",
+   "name": "Pull handle",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Pull chain handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     8,
+     28,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    17,
+    216,
+    0
+   ],
+   "material": {
+    "color": "#101010",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  }
+ ]
+}

@@ -1,0 +1,405 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Six Drawer Chest",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plinth",
+   "name": "Plinth base",
+   "category": "enclosure",
+   "materialName": "dark oak",
+   "detail": "Recessed base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     60,
+     420
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    30,
+    -10
+   ],
+   "material": {
+    "color": "#2e211a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "dark oak veneer",
+   "detail": "Main body with top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     840,
+     1261,
+     480
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    690.5,
+    0
+   ],
+   "material": {
+    "color": "#3a2a20",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "d1",
+   "name": "Drawer 1",
+   "category": "mechanical",
+   "materialName": "dark oak",
+   "detail": "Bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     190,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    189,
+    240
+   ],
+   "material": {
+    "color": "#433125",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d2",
+   "name": "Drawer 2",
+   "category": "mechanical",
+   "materialName": "dark oak",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     190,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    386.5,
+    240
+   ],
+   "material": {
+    "color": "#433125",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d3",
+   "name": "Drawer 3",
+   "category": "mechanical",
+   "materialName": "dark oak",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     190,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    584,
+    240
+   ],
+   "material": {
+    "color": "#433125",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d4",
+   "name": "Drawer 4",
+   "category": "mechanical",
+   "materialName": "dark oak",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     190,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    781.5,
+    240
+   ],
+   "material": {
+    "color": "#433125",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d5",
+   "name": "Drawer 5",
+   "category": "mechanical",
+   "materialName": "dark oak",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     190,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    979,
+    240
+   ],
+   "material": {
+    "color": "#433125",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d6",
+   "name": "Drawer 6",
+   "category": "mechanical",
+   "materialName": "dark oak",
+   "detail": "Top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     190,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1176.5,
+    240
+   ],
+   "material": {
+    "color": "#433125",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "h1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -100,
+      0,
+      0
+     ],
+     [
+      100,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    219,
+    264
+   ],
+   "material": {
+    "color": "#c9a45c",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "h2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -100,
+      0,
+      0
+     ],
+     [
+      100,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    416.5,
+    264
+   ],
+   "material": {
+    "color": "#c9a45c",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "h3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -100,
+      0,
+      0
+     ],
+     [
+      100,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    614,
+    264
+   ],
+   "material": {
+    "color": "#c9a45c",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "h4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -100,
+      0,
+      0
+     ],
+     [
+      100,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    811.5,
+    264
+   ],
+   "material": {
+    "color": "#c9a45c",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "h5",
+   "name": "Handle 5",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -100,
+      0,
+      0
+     ],
+     [
+      100,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    1009,
+    264
+   ],
+   "material": {
+    "color": "#c9a45c",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "h6",
+   "name": "Handle 6",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -100,
+      0,
+      0
+     ],
+     [
+      100,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    1206.5,
+    264
+   ],
+   "material": {
+    "color": "#c9a45c",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

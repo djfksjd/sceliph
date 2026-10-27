@@ -1,0 +1,163 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Foldable Storage Cube Navy",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "navy fabric",
+   "detail": "Bottom board of the cube",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     279,
+     6,
+     279
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    3,
+    0
+   ],
+   "material": {
+    "color": "#16205a",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "front",
+   "name": "Front wall",
+   "category": "enclosure",
+   "materialName": "navy fabric",
+   "detail": "Front wall facing the viewer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     279,
+     273,
+     5
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    142.5,
+    137
+   ],
+   "material": {
+    "color": "#16205a",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back wall",
+   "category": "enclosure",
+   "materialName": "navy fabric",
+   "detail": "Rear wall",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     279,
+     273,
+     5
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    142.5,
+    -137
+   ],
+   "material": {
+    "color": "#101a4d",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "left",
+   "name": "Left wall",
+   "category": "enclosure",
+   "materialName": "navy fabric",
+   "detail": "Left side wall",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     5,
+     273,
+     269
+    ],
+    "radius": 2
+   },
+   "position": [
+    -137,
+    142.5,
+    0
+   ],
+   "material": {
+    "color": "#141d54",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "right",
+   "name": "Right wall",
+   "category": "enclosure",
+   "materialName": "navy fabric",
+   "detail": "Right side wall with handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     5,
+     273,
+     269
+    ],
+    "radius": 2
+   },
+   "position": [
+    137,
+    142.5,
+    0
+   ],
+   "material": {
+    "color": "#1a2562",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Fabric handle",
+   "category": "mechanical",
+   "materialName": "navy fabric strap",
+   "detail": "Pull handle on the right wall",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     6,
+     22,
+     90
+    ],
+    "radius": 2.5
+   },
+   "position": [
+    141,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#1a2562",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  }
+ ]
+}

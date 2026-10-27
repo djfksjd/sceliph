@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Rivet Modern Glass Globe Living Room Table Desk Lamp With LED Light Bulb - ches, Brass Finish.\nThe product listing gives its overall height as 254 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0119999,
+   "durationMs": 9793,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":10},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Brass Globe Table Lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Cylindrical base\",\"category\":\"enclosure\",\"materialName\":\"Brushed brass\",\"detail\":\"Solid cylindrical brass base\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":54,\"radiusBottom\":54,\"depth\":115,\"radialSegments\":48},\"position\":[0,57.5,0],\"material\":{\"color\":\"#9a7f4a\",\"roughness\":0.45,\"metalness\":0.8}},{\"id\":\"cup\",\"name\":\"Socket cup\",\"category\":\"mechanical\",\"materialName\":\"Brushed brass\",\"detail\":\"Hemispherical socket cup holding the globe\",\"geometry\":{\"op\":\"sphere\",\"radius\":18},\"position\":[-22,117,0],\"material\":{\"color\":\"#8a7040\",\"roughness\":0.45,\"metalness\":0.8}},{\"id\":\"globe\",\"name\":\"Glass globe\",\"category\":\"display\",\"materialName\":\"Opal glass\",\"detail\":\"Frosted white glass globe shade\",\"geometry\":{\"op\":\"sphere\",\"radius\":70},\"position\":[-22,184,0],\"material\":{\"color\":\"#fff1d6\",\"roughness\":0.3,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

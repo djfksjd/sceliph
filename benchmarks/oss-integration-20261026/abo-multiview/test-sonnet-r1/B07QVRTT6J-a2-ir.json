@@ -1,0 +1,392 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Martin bookcase",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top shelf",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "top board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1000,
+     15,
+     330
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    772,
+    0
+   ],
+   "material": {
+    "color": "#c9a779",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom shelf",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "bottom board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     984,
+     15,
+     314
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    70,
+    0
+   ],
+   "material": {
+    "color": "#c9a779",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "shelfA",
+   "name": "Upper right shelf",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "offset shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     15,
+     314
+    ],
+    "radius": 2
+   },
+   "position": [
+    135,
+    540,
+    0
+   ],
+   "material": {
+    "color": "#c9a779",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "shelfB",
+   "name": "Lower right shelf",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "offset shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     15,
+     314
+    ],
+    "radius": 2
+   },
+   "position": [
+    135,
+    300,
+    0
+   ],
+   "material": {
+    "color": "#c9a779",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "shelfC",
+   "name": "Small left shelf",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "left shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     260,
+     15,
+     314
+    ],
+    "radius": 2
+   },
+   "position": [
+    -365,
+    410,
+    0
+   ],
+   "material": {
+    "color": "#c9a779",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "postFL",
+   "name": "Front left post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -492,
+    382,
+    157
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "postBL",
+   "name": "Back left post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -492,
+    382,
+    -157
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "postFR",
+   "name": "Front right post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    492,
+    382,
+    157
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "postBR",
+   "name": "Back right post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    492,
+    382,
+    -157
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "postMF",
+   "name": "Middle front post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "middle post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -230,
+    382,
+    157
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "postMB",
+   "name": "Middle back post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "middle post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    130,
+    382,
+    -157
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "railTF",
+   "name": "Top front rail",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1000,
+     16,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    764,
+    157
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "railBF",
+   "name": "Bottom front rail",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1000,
+     16,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    60,
+    157
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "railMF",
+   "name": "Middle front rail",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "rail under upper shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     730,
+     16,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    135,
+    530,
+    157
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "railLF",
+   "name": "Lower mid front rail",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "rail under lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     730,
+     16,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    135,
+    290,
+    157
+   ],
+   "material": {
+    "color": "#4a4a4d",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

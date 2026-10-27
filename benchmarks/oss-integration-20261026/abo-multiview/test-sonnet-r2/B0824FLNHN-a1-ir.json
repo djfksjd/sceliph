@@ -1,0 +1,203 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Wall Sconce with Linen Shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Back plate",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Rectangular wall mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     99,
+     98,
+     8
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    138,
+    4
+   ],
+   "material": {
+    "color": "#b8b8b0",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "screw_l",
+   "name": "Left screw",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Plate screw head",
+   "geometry": {
+    "op": "sphere",
+    "radius": 4
+   },
+   "position": [
+    -27,
+    135,
+    8
+   ],
+   "material": {
+    "color": "#d0d0d0",
+    "roughness": 0.2,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "screw_r",
+   "name": "Right screw",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Plate screw head",
+   "geometry": {
+    "op": "sphere",
+    "radius": 4
+   },
+   "position": [
+    32,
+    135,
+    8
+   ],
+   "material": {
+    "color": "#d0d0d0",
+    "roughness": 0.2,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "standoff",
+   "name": "Standoff",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "Connects plate to stem",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -8
+     ],
+     [
+      0,
+      0,
+      8
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    143,
+    17
+   ],
+   "material": {
+    "color": "#c8c8c8",
+    "roughness": 0.25,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Stem",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Vertical rod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3.5,
+    "radiusBottom": 3.5,
+    "depth": 291,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    155,
+    25
+   ],
+   "material": {
+    "color": "#cfcfcf",
+    "roughness": 0.2,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Collar",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Clamp block on stem",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     11,
+     30,
+     11
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    143,
+    25
+   ],
+   "material": {
+    "color": "#c8c8c8",
+    "roughness": 0.25,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "ball",
+   "name": "Ball finial",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Bottom ball",
+   "geometry": {
+    "op": "sphere",
+    "radius": 9
+   },
+   "position": [
+    0,
+    9,
+    25
+   ],
+   "material": {
+    "color": "#d4d4d4",
+    "roughness": 0.15,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Linen shade",
+   "category": "enclosure",
+   "materialName": "white linen",
+   "detail": "Cylindrical drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 61,
+    "radiusBottom": 61,
+    "depth": 185,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    371.5,
+    25
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

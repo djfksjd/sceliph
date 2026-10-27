@@ -1,0 +1,302 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "4-Blade Ceiling Fan with Light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "light",
+   "name": "Light dome",
+   "category": "power",
+   "materialName": "frosted glass",
+   "detail": "Opal glass bowl under the motor",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      35,
+      2
+     ],
+     [
+      58,
+      12
+     ],
+     [
+      68,
+      28
+     ],
+     [
+      64,
+      46
+     ],
+     [
+      50,
+      56
+     ],
+     [
+      0,
+      58
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f0f0ec",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "ring",
+   "name": "Light ring",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Trim ring holding the glass",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 90,
+    "radiusBottom": 75,
+    "depth": 22,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    68,
+    0
+   ],
+   "material": {
+    "color": "#8d9094",
+    "roughness": 0.4,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "motor",
+   "name": "Motor housing",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Main motor body",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 88,
+    "radiusBottom": 95,
+    "depth": 44,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    101,
+    0
+   ],
+   "material": {
+    "color": "#7f8286",
+    "roughness": 0.4,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Top cap",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Tapered cap above motor",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 35,
+    "radiusBottom": 80,
+    "depth": 24,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    135,
+    0
+   ],
+   "material": {
+    "color": "#8d9094",
+    "roughness": 0.4,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Downrod",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Suspension rod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 200,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    245,
+    0
+   ],
+   "material": {
+    "color": "#8d9094",
+    "roughness": 0.4,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Ceiling mount cover",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 58,
+    "depth": 36,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    363,
+    0
+   ],
+   "material": {
+    "color": "#8d9094",
+    "roughness": 0.4,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "blade1",
+   "name": "Blade 1",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     480,
+     5,
+     120
+    ],
+    "radius": 2
+   },
+   "position": [
+    258,
+    106,
+    258
+   ],
+   "rotation": [
+    0,
+    -0.785,
+    0
+   ],
+   "material": {
+    "color": "#8a8d90",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "blade2",
+   "name": "Blade 2",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     480,
+     5,
+     120
+    ],
+    "radius": 2
+   },
+   "position": [
+    -258,
+    106,
+    258
+   ],
+   "rotation": [
+    0,
+    -2.356,
+    0
+   ],
+   "material": {
+    "color": "#8a8d90",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "blade3",
+   "name": "Blade 3",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     480,
+     5,
+     120
+    ],
+    "radius": 2
+   },
+   "position": [
+    -258,
+    106,
+    -258
+   ],
+   "rotation": [
+    0,
+    -3.927,
+    0
+   ],
+   "material": {
+    "color": "#8a8d90",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "blade4",
+   "name": "Blade 4",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     480,
+     5,
+     120
+    ],
+    "radius": 2
+   },
+   "position": [
+    258,
+    106,
+    -258
+   ],
+   "rotation": [
+    0,
+    -5.498,
+    0
+   ],
+   "material": {
+    "color": "#8a8d90",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "request": "Photo: a box with a cylindrical post standing on top of it.\nThe box is 300 mm wide (its longest horizontal edge).\nThe camera's horizontal field of view is 50 degrees.\nModel it with exactly these components: \"box\" (the box), \"post\" (the cylinder on top).",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0120492,
+   "durationMs": 8132,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-22,\"elevationDeg\":27},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Box with post\",\"units\":\"mm\",\"components\":[{\"id\":\"box\",\"name\":\"Box\",\"category\":\"enclosure\",\"materialName\":\"painted block\",\"detail\":\"Rust-red rectangular box, 300 mm wide\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,160,200],\"radius\":2},\"position\":[0,80,0],\"material\":{\"color\":\"#984a2e\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"post\",\"name\":\"Post\",\"category\":\"mechanical\",\"materialName\":\"blue plastic\",\"detail\":\"Blue cylindrical post standing on top of the box\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":35,\"radiusBottom\":35,\"depth\":220,\"radialSegments\":32},\"position\":[30,270,-40],\"material\":{\"color\":\"#3a6aa8\",\"roughness\":0.6,\"metalness\":0}}]}}",
+   "stage": "pass",
+   "issues": []
+  }
+ ]
+}

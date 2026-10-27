@@ -1,0 +1,267 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Modular wall shelf",
+ "units": "mm",
+ "components": [
+  {
+   "id": "lpost1",
+   "name": "Left frame outer post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Left outer upright of the left frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     776,
+     30
+    ],
+    "radius": 2
+   },
+   "position": [
+    -454,
+    533,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "lpost2",
+   "name": "Left frame inner post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Right upright of the left frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     776,
+     30
+    ],
+    "radius": 2
+   },
+   "position": [
+    142,
+    533,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "rpost1",
+   "name": "Right frame inner post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Left upright of the right frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     570,
+     30
+    ],
+    "radius": 2
+   },
+   "position": [
+    -111,
+    285,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "rpost2",
+   "name": "Right frame outer post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Right outer upright of the right frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     761,
+     30
+    ],
+    "radius": 2
+   },
+   "position": [
+    456,
+    380,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shelfL1",
+   "name": "Left top shelf",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Top shelf of the left frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     610,
+     18,
+     150
+    ],
+    "radius": 3
+   },
+   "position": [
+    -156,
+    772,
+    0
+   ],
+   "material": {
+    "color": "#d9b27c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfL2",
+   "name": "Left middle shelf",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Middle shelf of the left frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     610,
+     18,
+     150
+    ],
+    "radius": 3
+   },
+   "position": [
+    -156,
+    476,
+    0
+   ],
+   "material": {
+    "color": "#d9b27c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfL3",
+   "name": "Left bottom shelf",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Bottom shelf of the left frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     610,
+     18,
+     150
+    ],
+    "radius": 3
+   },
+   "position": [
+    -156,
+    182,
+    0
+   ],
+   "material": {
+    "color": "#d9b27c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfR1",
+   "name": "Right top shelf",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Top shelf of the right frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     580,
+     18,
+     150
+    ],
+    "radius": 3
+   },
+   "position": [
+    172,
+    625,
+    0
+   ],
+   "material": {
+    "color": "#d9b27c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfR2",
+   "name": "Right middle shelf",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Middle shelf of the right frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     580,
+     18,
+     150
+    ],
+    "radius": 3
+   },
+   "position": [
+    172,
+    327,
+    0
+   ],
+   "material": {
+    "color": "#d9b27c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfR3",
+   "name": "Right bottom shelf",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Bottom shelf of the right frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     580,
+     22,
+     150
+    ],
+    "radius": 3
+   },
+   "position": [
+    172,
+    38,
+    0
+   ],
+   "material": {
+    "color": "#d9b27c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

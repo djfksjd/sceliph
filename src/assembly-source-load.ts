@@ -1,5 +1,6 @@
 import {createLatestIntentGate} from './engine/latest-intent';
 import {validateAssemblyIR} from './engine/assembly-compiler';
+import {prepareAssemblyRuntime} from './engine/boolean-csg';
 import type {AssemblyIR} from './engine/assembly-ir';
 export type AssemblySourceLoadState={status:'ready'}|{status:'reading';name:string}|{status:'failed';name:string;error:string};
 /** Shares the viewer's import intent. Retains no source, geometry or approval. */
@@ -17,6 +18,8 @@ export class AssemblySourceLoadSession{
    if(file.size>2_000_000)throw Error('AssemblyIR exceeds 2 MB.');
    const text=await file.text();if(!current())return;
    const value:unknown=JSON.parse(text);validateAssemblyIR(value);if(!current())return;
+   // Boolean parts need the Manifold WASM before the synchronous viewer compile.
+   await prepareAssemblyRuntime(value);if(!current())return;
    publish(value);this.state={status:'ready'};notify(this.state);
   }catch(error){if(!current())return;this.state={status:'failed',name:file.name,error:error instanceof Error?error.message:String(error)};notify(this.state);}
  }

@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Rivet Concrete Dome Ceiling Hanging Pendant Chandelier Light Fixture - ches, Concrete and Metal.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 762 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0194852,
+   "durationMs": 12825,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Concrete Dome Pendant Light\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"brushed brass\",\"detail\":\"Round ceiling plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":53,\"radiusBottom\":53,\"depth\":28,\"radialSegments\":48},\"position\":[0,748,0],\"material\":{\"color\":\"#b5a583\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"cord\",\"name\":\"Cord\",\"category\":\"interconnect\",\"materialName\":\"black fabric cord\",\"detail\":\"Hanging cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-249,0],[0,249,0]],\"radius\":2.5},\"position\":[0,485,0],\"material\":{\"color\":\"#111111\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"cap\",\"name\":\"Shade cap\",\"category\":\"mechanical\",\"materialName\":\"brushed brass\",\"detail\":\"Small brass neck on top of the shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4,\"radiusBottom\":8,\"depth\":18,\"radialSegments\":24},\"position\":[0,234,0],\"material\":{\"color\":\"#b5a583\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"shade\",\"name\":\"Concrete dome shade\",\"category\":\"enclosure\",\"materialName\":\"concrete\",\"detail\":\"Dome shade\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,113],[15,111],[35,102],[55,82],[70,45],[78,-20],[80,-80],[80,-113],[77,-113],[75,-80],[73,-20],[65,40],[50,78],[30,98],[12,107],[0,108]],\"segments\":64},\"position\":[0,113,0],\"material\":{\"color\":\"#6b6d58\",\"roughness\":0.9,\"metalness\":0.05}},{\"id\":\"diffuser\",\"name\":\"Diffuser\",\"category\":\"display\",\"materialName\":\"warm glass\",\"detail\":\"Glowing diffuser disc in the shade opening\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":76,\"radiusBottom\":76,\"depth\":2,\"radialSegments\":48},\"position\":[0,12,0],\"material\":{\"color\":\"#f3e6b8\",\"roughness\":0.6,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

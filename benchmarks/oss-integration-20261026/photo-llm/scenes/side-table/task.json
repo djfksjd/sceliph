@@ -1,0 +1,31 @@
+{
+ "schema": "sceliph.photo-llm-task/0.1",
+ "id": "side-table",
+ "object": "a small side table with a rectangular top and four round legs",
+ "components": [
+  {
+   "id": "top",
+   "description": "the table top"
+  },
+  {
+   "id": "leg-1",
+   "description": "a leg"
+  },
+  {
+   "id": "leg-2",
+   "description": "a leg"
+  },
+  {
+   "id": "leg-3",
+   "description": "a leg"
+  },
+  {
+   "id": "leg-4",
+   "description": "a leg"
+  }
+ ],
+ "referenceComponentId": "top",
+ "known": "The table top is 600 mm wide (its longer side).",
+ "knownDimensionMm": 600,
+ "fovXDegrees": 50
+}

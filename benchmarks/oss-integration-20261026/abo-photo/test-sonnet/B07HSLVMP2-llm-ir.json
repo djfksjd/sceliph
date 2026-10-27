@@ -1,0 +1,339 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Acacia 3-drawer sideboard",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top slab",
+   "category": "enclosure",
+   "materialName": "gray-wash acacia",
+   "detail": "Thick solid acacia top overhanging the carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1600,
+     30,
+     420
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    785,
+    0
+   ],
+   "material": {
+    "color": "#b39b7a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "acacia",
+   "detail": "Main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1560,
+     610,
+     390
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    465,
+    -5
+   ],
+   "material": {
+    "color": "#a98d68",
+    "roughness": 0.85,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_l",
+   "name": "Left drawer front",
+   "category": "mechanical",
+   "materialName": "acacia",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     508,
+     125,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    -518,
+    702,
+    199
+   ],
+   "material": {
+    "color": "#c2aa86",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_c",
+   "name": "Centre drawer front",
+   "category": "mechanical",
+   "materialName": "acacia",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     508,
+     125,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    702,
+    199
+   ],
+   "material": {
+    "color": "#bfa682",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_r",
+   "name": "Right drawer front",
+   "category": "mechanical",
+   "materialName": "acacia",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     508,
+     125,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    518,
+    702,
+    199
+   ],
+   "material": {
+    "color": "#c2aa86",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_l",
+   "name": "Left door",
+   "category": "mechanical",
+   "materialName": "acacia",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     508,
+     450,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    -518,
+    400,
+    199
+   ],
+   "material": {
+    "color": "#bfa682",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_c",
+   "name": "Centre door",
+   "category": "mechanical",
+   "materialName": "acacia",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     508,
+     450,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    400,
+    199
+   ],
+   "material": {
+    "color": "#c6ae8a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_r",
+   "name": "Right door",
+   "category": "mechanical",
+   "materialName": "acacia",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     508,
+     450,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    518,
+    400,
+    199
+   ],
+   "material": {
+    "color": "#bfa682",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "acacia",
+   "detail": "Splayed tapered leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     50,
+     170,
+     50
+    ],
+    "radius": 6
+   },
+   "position": [
+    -690,
+    85,
+    140
+   ],
+   "rotation": [
+    0.15,
+    0,
+    -0.2
+   ],
+   "material": {
+    "color": "#9c805c",
+    "roughness": 0.85,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "acacia",
+   "detail": "Splayed tapered leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     50,
+     170,
+     50
+    ],
+    "radius": 6
+   },
+   "position": [
+    690,
+    85,
+    140
+   ],
+   "rotation": [
+    0.15,
+    0,
+    0.2
+   ],
+   "material": {
+    "color": "#9c805c",
+    "roughness": 0.85,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "acacia",
+   "detail": "Splayed tapered leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     50,
+     170,
+     50
+    ],
+    "radius": 6
+   },
+   "position": [
+    -690,
+    85,
+    -140
+   ],
+   "rotation": [
+    -0.15,
+    0,
+    -0.2
+   ],
+   "material": {
+    "color": "#9c805c",
+    "roughness": 0.85,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "acacia",
+   "detail": "Splayed tapered leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     50,
+     170,
+     50
+    ],
+    "radius": 6
+   },
+   "position": [
+    690,
+    85,
+    -140
+   ],
+   "rotation": [
+    -0.15,
+    0,
+    0.2
+   ],
+   "material": {
+    "color": "#9c805c",
+    "roughness": 0.85,
+    "metalness": 0
+   }
+  }
+ ]
+}

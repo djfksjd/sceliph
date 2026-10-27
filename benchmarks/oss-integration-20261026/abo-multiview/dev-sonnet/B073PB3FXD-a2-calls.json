@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: AmazonBasics Foldable Storage Cubes (6 Pack), Navy.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 279 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0178092,
+   "durationMs": 7118,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-25,\"elevationDeg\":15},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Foldable Storage Cube Navy\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Base panel\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Bottom panel of the cube\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[270,4,270],\"radius\":1.5},\"position\":[0,2,0],\"material\":{\"color\":\"#1b2461\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"wall_front\",\"name\":\"Front wall\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Front wall, +Z\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[270,275,4],\"radius\":1.5},\"position\":[0,141.5,133],\"material\":{\"color\":\"#1b2461\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"wall_back\",\"name\":\"Back wall\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Back wall, -Z\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[270,275,4],\"radius\":1.5},\"position\":[0,141.5,-133],\"material\":{\"color\":\"#1b2461\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"wall_left\",\"name\":\"Left wall\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Left wall, -X\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[4,275,262],\"radius\":1.5},\"position\":[-133,141.5,0],\"material\":{\"color\":\"#1b2461\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"wall_right\",\"name\":\"Right wall\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Right wall, +X\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[4,275,262],\"radius\":1.5},\"position\":[133,141.5,0],\"material\":{\"color\":\"#1b2461\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"rim_top\",\"name\":\"Top rim front\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Reinforced top edge along front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[270,6,6],\"radius\":2},\"position\":[0,276,131],\"material\":{\"color\":\"#1b2461\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"handle_front\",\"name\":\"Front handle\",\"category\":\"mechanical\",\"materialName\":\"Navy fabric strap\",\"detail\":\"Fabric pull handle on the front face\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[100,22,8],\"radius\":3},\"position\":[0,215,138],\"material\":{\"color\":\"#1b2461\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"handle_side\",\"name\":\"Side handle\",\"category\":\"mechanical\",\"materialName\":\"Navy fabric strap\",\"detail\":\"Fabric pull handle on the left face\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[8,22,100],\"radius\":3},\"position\":[-138,215,0],\"material\":{\"color\":\"#1b2461\",\"roughness\":0.95,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

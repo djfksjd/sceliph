@@ -1,0 +1,318 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Desk Air Circulator Fan",
+ "units": "mm",
+ "components": [
+  {
+   "id": "foot",
+   "name": "Base foot",
+   "category": "enclosure",
+   "materialName": "black plastic",
+   "detail": "Wide base plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     290,
+     30,
+     130
+    ],
+    "radius": 12
+   },
+   "position": [
+    0,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "armL",
+   "name": "Left arm",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Left yoke arm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     190,
+     50
+    ],
+    "radius": 8
+   },
+   "position": [
+    -130,
+    115,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "armR",
+   "name": "Right arm",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Right yoke arm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     190,
+     50
+    ],
+    "radius": 8
+   },
+   "position": [
+    130,
+    115,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "housing",
+   "name": "Motor housing",
+   "category": "enclosure",
+   "materialName": "black plastic",
+   "detail": "Rear round fan housing",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 112,
+    "radiusBottom": 116,
+    "depth": 70,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    161,
+    -15
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bezel",
+   "name": "Front bezel",
+   "category": "enclosure",
+   "materialName": "black plastic",
+   "detail": "Front guard rim",
+   "geometry": {
+    "op": "torus",
+    "radius": 110,
+    "tube": 6
+   },
+   "position": [
+    0,
+    161,
+    22
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "blades",
+   "name": "Blade disc",
+   "category": "mechanical",
+   "materialName": "dark plastic",
+   "detail": "Fan blades",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 100,
+    "radiusBottom": 100,
+    "depth": 8,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    161,
+    10
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "ring1",
+   "name": "Guard ring outer",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Grille ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 85,
+    "tube": 1.8
+   },
+   "position": [
+    0,
+    161,
+    28
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.4,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "ring2",
+   "name": "Guard ring mid",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Grille ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 58,
+    "tube": 1.8
+   },
+   "position": [
+    0,
+    161,
+    30
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.4,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "ring3",
+   "name": "Guard ring inner",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Grille ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 34,
+    "tube": 1.8
+   },
+   "position": [
+    0,
+    161,
+    31
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.4,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "hub",
+   "name": "Logo hub",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Central hub cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 24,
+    "depth": 6,
+    "radialSegments": 40
+   },
+   "position": [
+    0,
+    161,
+    33
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#0c0c0c",
+    "roughness": 0.4,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "pivotL",
+   "name": "Left pivot",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Tilt knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 18,
+    "depth": 16,
+    "radialSegments": 24
+   },
+   "position": [
+    -122,
+    161,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pivotR",
+   "name": "Right pivot",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Tilt knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 18,
+    "depth": 16,
+    "radialSegments": 24
+   },
+   "position": [
+    122,
+    161,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  }
+ ]
+}

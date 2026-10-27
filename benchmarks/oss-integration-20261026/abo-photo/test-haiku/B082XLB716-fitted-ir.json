@@ -1,0 +1,109 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Amazon Brand Rivet Globe Stick Floor Lamp 69in White Marble",
+ "units": "mm",
+ "components": [
+  {
+   "id": "marble_base",
+   "name": "Marble base",
+   "category": "mechanical",
+   "materialName": "White marble",
+   "detail": "Cylindrical grey marble weighted base, 180 mm diameter, 200 mm tall, sitting on the floor.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 93.64832546528456,
+    "radiusBottom": 93.64832546528456,
+    "depth": 193.5845246616895,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    69.17899544687668,
+    0
+   ],
+   "material": {
+    "color": "#9ea3a8",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "brass_rod",
+   "name": "Brass stem rod",
+   "category": "mechanical",
+   "materialName": "Brushed brass",
+   "detail": "Slender gold-finish vertical rod rising from the base to the socket, 18 mm diameter.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -640,
+      0
+     ],
+     [
+      0,
+      640,
+      0
+     ]
+    ],
+    "radius": 10.908977330868126
+   },
+   "position": [
+    0,
+    746.5004585472707,
+    0
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "brass_socket",
+   "name": "Brass globe socket",
+   "category": "mechanical",
+   "materialName": "Brushed brass",
+   "detail": "Short tapered gold cup that holds the globe shade.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 45,
+    "radiusBottom": 60,
+    "depth": 80,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1590.0837695408522,
+    0
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "opal_globe",
+   "name": "Opal glass globe shade",
+   "category": "enclosure",
+   "materialName": "Frosted white opal glass",
+   "detail": "Frosted white spherical glass shade, 280 mm diameter, forming the top of the lamp.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 111.56585411847412
+   },
+   "position": [
+    0,
+    1613,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.2,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Globe Pendant Light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 58,
+    "radiusBottom": 58,
+    "depth": 22,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    751,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b5",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Cord",
+   "category": "interconnect",
+   "materialName": "black fabric cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -293,
+      0
+     ],
+     [
+      0,
+      293,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    446,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Cord cap",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "small nickel collar on globe top",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 9,
+    "depth": 28,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    160,
+    0
+   ],
+   "material": {
+    "color": "#c0c0bd",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Concrete globe shade",
+   "category": "enclosure",
+   "materialName": "grey concrete",
+   "detail": "globe shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 76
+   },
+   "position": [
+    0,
+    78,
+    0
+   ],
+   "material": {
+    "color": "#6b6b6b",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "opening",
+   "name": "Bottom opening",
+   "category": "display",
+   "materialName": "dark bronze interior",
+   "detail": "visible bulb opening at bottom",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 42,
+    "radiusBottom": 42,
+    "depth": 5,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    4,
+    0
+   ],
+   "material": {
+    "color": "#3a2c18",
+    "roughness": 0.6
+   }
+  }
+ ]
+}

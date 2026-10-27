@@ -1,0 +1,230 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Globe Wall Sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Backplate",
+   "category": "enclosure",
+   "materialName": "oil-rubbed bronze",
+   "detail": "round wall plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 63,
+    "radiusBottom": 63,
+    "depth": 24,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    269,
+    -112
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "category": "mechanical",
+   "materialName": "oil-rubbed bronze",
+   "detail": "horizontal arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -100
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    267,
+    0
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Arm knob",
+   "category": "mechanical",
+   "materialName": "oil-rubbed bronze",
+   "detail": "upright finial",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 6,
+    "depth": 28,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    266,
+    0
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Cap",
+   "category": "mechanical",
+   "materialName": "oil-rubbed bronze",
+   "detail": "turned cap above ring",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -23
+     ],
+     [
+      16,
+      -23
+     ],
+     [
+      14,
+      -10
+     ],
+     [
+      26,
+      -2
+     ],
+     [
+      34,
+      10
+     ],
+     [
+      0,
+      23
+     ]
+    ],
+    "segments": 40
+   },
+   "position": [
+    0,
+    226,
+    0
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "ring",
+   "name": "Glass holder ring",
+   "category": "mechanical",
+   "materialName": "oil-rubbed bronze",
+   "detail": "holder ring",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 63,
+    "radiusBottom": 63,
+    "depth": 10,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    196,
+    0
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Socket",
+   "category": "mechanical",
+   "materialName": "oil-rubbed bronze",
+   "detail": "socket sleeve",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 19,
+    "radiusBottom": 19,
+    "depth": 40,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    172,
+    0
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "globe",
+   "name": "Glass globe",
+   "category": "enclosure",
+   "materialName": "clear glass",
+   "detail": "clear globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 104
+   },
+   "position": [
+    0,
+    104,
+    0
+   ],
+   "material": {
+    "color": "#e8eef0",
+    "roughness": 0.05,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Bulb",
+   "category": "power",
+   "materialName": "glass",
+   "detail": "filament bulb",
+   "geometry": {
+    "op": "sphere",
+    "radius": 23
+   },
+   "position": [
+    0,
+    106,
+    0
+   ],
+   "material": {
+    "color": "#f4e6c8",
+    "roughness": 0.1,
+    "metalness": 0
+   }
+  }
+ ]
+}

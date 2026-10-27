@@ -1,0 +1,100 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Globe Stick Floor Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Marble base",
+   "category": "mechanical",
+   "materialName": "white marble",
+   "detail": "Cylindrical marble base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 70,
+    "radiusBottom": 70,
+    "depth": 95,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    47.5,
+    0
+   ],
+   "material": {
+    "color": "#c9cbcc",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Brass pole",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Slim brass stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 1500,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    845,
+    0
+   ],
+   "material": {
+    "color": "#c9a227",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Brass socket cup",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Cup holding the globe",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 58,
+    "radiusBottom": 10,
+    "depth": 45,
+    "radialSegments": 40
+   },
+   "position": [
+    0,
+    1577,
+    0
+   ],
+   "material": {
+    "color": "#c9a227",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "globe",
+   "name": "Opal glass globe",
+   "category": "enclosure",
+   "materialName": "opal glass",
+   "detail": "White frosted glass globe shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 100
+   },
+   "position": [
+    0,
+    1653,
+    0
+   ],
+   "material": {
+    "color": "#f4f3ef",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  }
+ ]
+}
