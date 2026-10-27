@@ -1,0 +1,473 @@
+{
+ "schema": "sceliph.abo-appearance-eval/0.1",
+ "mode": "controls",
+ "render": {
+  "views": 8,
+  "elevationDeg": 20,
+  "size": 256
+ },
+ "metricsSha256": "1cbba1a296f020476880798096e505243ad0723af56ab6600d1b874dc022c03e",
+ "rendererSha256": "fa6cd090266f3a9e7e307574caff820d2a8abb53da6b9c29c81b2c226664d218",
+ "results": [
+  {
+   "modelId": "B07GFLG5MM",
+   "productType": "CABINET",
+   "scores": {
+    "self": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 1,
+     "detailReference": 0.7928,
+     "detailCandidate": 0.7928,
+     "detailRatio": 1,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "flat": {
+     "maskIoU": 1,
+     "deltaE00": 1.4913,
+     "histogram": 0.418,
+     "detailReference": 0.7928,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.8577,
+     "ssimLit": 0.8561
+    },
+    "hue": {
+     "maskIoU": 1,
+     "deltaE00": 2.3854,
+     "histogram": 0.4439,
+     "detailReference": 0.7928,
+     "detailCandidate": 0.7955,
+     "detailRatio": 1.0035,
+     "ssimAlbedo": 0.9993,
+     "ssimLit": 0.9991
+    },
+    "grey": {
+     "maskIoU": 1,
+     "deltaE00": 22.9665,
+     "histogram": 0.0002,
+     "detailReference": 0.7928,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.7025,
+     "ssimLit": 0.7651
+    }
+   }
+  },
+  {
+   "modelId": "B07GFFQZRQ",
+   "productType": "DESK",
+   "scores": {
+    "self": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 1,
+     "detailReference": 0.0069,
+     "detailCandidate": 0.0069,
+     "detailRatio": 1,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "flat": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 0.9952,
+     "detailReference": 0.0069,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.9991,
+     "ssimLit": 0.8511
+    },
+    "hue": {
+     "maskIoU": 1,
+     "deltaE00": 2.2124,
+     "histogram": 0,
+     "detailReference": 0.0069,
+     "detailCandidate": 0.0076,
+     "detailRatio": 1.1033,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "grey": {
+     "maskIoU": 1,
+     "deltaE00": 25.6249,
+     "histogram": 0,
+     "detailReference": 0.0069,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.8934,
+     "ssimLit": 0.8919
+    }
+   }
+  },
+  {
+   "modelId": "B075YZ16V7",
+   "productType": "DRESSER",
+   "scores": {
+    "self": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 1,
+     "detailReference": 2.1508,
+     "detailCandidate": 2.1508,
+     "detailRatio": 1,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "flat": {
+     "maskIoU": 1,
+     "deltaE00": 3.7338,
+     "histogram": 0.0792,
+     "detailReference": 2.1508,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.5739,
+     "ssimLit": 0.5481
+    },
+    "hue": {
+     "maskIoU": 1,
+     "deltaE00": 45.8024,
+     "histogram": 0.0131,
+     "detailReference": 2.1508,
+     "detailCandidate": 2.193,
+     "detailRatio": 1.0179,
+     "ssimAlbedo": 0.9862,
+     "ssimLit": 0.9934
+    },
+    "grey": {
+     "maskIoU": 1,
+     "deltaE00": 29.2584,
+     "histogram": 0,
+     "detailReference": 2.1508,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.5475,
+     "ssimLit": 0.6507
+    }
+   }
+  },
+  {
+   "modelId": "B082XCPNH5",
+   "productType": "ELECTRIC_FAN",
+   "scores": {
+    "self": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 1,
+     "detailReference": 0.2762,
+     "detailCandidate": 0.2762,
+     "detailRatio": 1,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "flat": {
+     "maskIoU": 1,
+     "deltaE00": 0.1962,
+     "histogram": 0.587,
+     "detailReference": 0.2762,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.9641,
+     "ssimLit": 0.2256
+    },
+    "hue": {
+     "maskIoU": 1,
+     "deltaE00": 6.4835,
+     "histogram": 0.0086,
+     "detailReference": 0.2762,
+     "detailCandidate": 0.2727,
+     "detailRatio": 0.9871,
+     "ssimAlbedo": 0.9998,
+     "ssimLit": 0.9999
+    },
+    "grey": {
+     "maskIoU": 1,
+     "deltaE00": 14.2189,
+     "histogram": 0.0005,
+     "detailReference": 0.2762,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.9349,
+     "ssimLit": 0.9552
+    }
+   }
+  },
+  {
+   "modelId": "B07B4SB2D9",
+   "productType": "LAMP",
+   "scores": {
+    "self": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 1,
+     "detailReference": 0.4557,
+     "detailCandidate": 0.4557,
+     "detailRatio": 1,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "flat": {
+     "maskIoU": 1,
+     "deltaE00": 7.898,
+     "histogram": 0.0013,
+     "detailReference": 0.4557,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.9148,
+     "ssimLit": 0.6385
+    },
+    "hue": {
+     "maskIoU": 1,
+     "deltaE00": 6.9644,
+     "histogram": 0.0004,
+     "detailReference": 0.4557,
+     "detailCandidate": 0.4545,
+     "detailRatio": 0.9974,
+     "ssimAlbedo": 1,
+     "ssimLit": 0.9998
+    },
+    "grey": {
+     "maskIoU": 1,
+     "deltaE00": 31.9485,
+     "histogram": 0.0001,
+     "detailReference": 0.4557,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.8017,
+     "ssimLit": 0.8136
+    }
+   }
+  },
+  {
+   "modelId": "B07374P5NP",
+   "productType": "LIGHT_FIXTURE",
+   "scores": {
+    "self": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 1,
+     "detailReference": 2.8026,
+     "detailCandidate": 2.8026,
+     "detailRatio": 1,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "flat": {
+     "maskIoU": 1,
+     "deltaE00": 11.9629,
+     "histogram": 0.0116,
+     "detailReference": 2.8026,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.5208,
+     "ssimLit": 0.1751
+    },
+    "hue": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 0.521,
+     "detailReference": 2.8026,
+     "detailCandidate": 2.8013,
+     "detailRatio": 0.9995,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "grey": {
+     "maskIoU": 1,
+     "deltaE00": 21.6487,
+     "histogram": 0.0003,
+     "detailReference": 2.8026,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.4935,
+     "ssimLit": 0.6605
+    }
+   }
+  },
+  {
+   "modelId": "B07TY5GXBQ",
+   "productType": "SHELF",
+   "scores": {
+    "self": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 1,
+     "detailReference": 0.6698,
+     "detailCandidate": 0.6698,
+     "detailRatio": 1,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "flat": {
+     "maskIoU": 1,
+     "deltaE00": 1.906,
+     "histogram": 0.4683,
+     "detailReference": 0.6698,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.8601,
+     "ssimLit": 0.8038
+    },
+    "hue": {
+     "maskIoU": 1,
+     "deltaE00": 26.2734,
+     "histogram": 0,
+     "detailReference": 0.6698,
+     "detailCandidate": 0.6765,
+     "detailRatio": 1.0097,
+     "ssimAlbedo": 0.9995,
+     "ssimLit": 0.9995
+    },
+    "grey": {
+     "maskIoU": 1,
+     "deltaE00": 24.7487,
+     "histogram": 0,
+     "detailReference": 0.6698,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.7988,
+     "ssimLit": 0.8586
+    }
+   }
+  },
+  {
+   "modelId": "B073PB3FXD",
+   "productType": "STORAGE_BOX",
+   "scores": {
+    "self": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 1,
+     "detailReference": 0.078,
+     "detailCandidate": 0.078,
+     "detailRatio": 1,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "flat": {
+     "maskIoU": 1,
+     "deltaE00": 0.0839,
+     "histogram": 1,
+     "detailReference": 0.078,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.9977,
+     "ssimLit": 0.9236
+    },
+    "hue": {
+     "maskIoU": 1,
+     "deltaE00": 47.928,
+     "histogram": 0,
+     "detailReference": 0.078,
+     "detailCandidate": 0.1146,
+     "detailRatio": 1.5479,
+     "ssimAlbedo": 0.9978,
+     "ssimLit": 0.9991
+    },
+    "grey": {
+     "maskIoU": 1,
+     "deltaE00": 37.7658,
+     "histogram": 0,
+     "detailReference": 0.078,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.648,
+     "ssimLit": 0.7188
+    }
+   }
+  },
+  {
+   "modelId": "B075Z96L53",
+   "productType": "TABLE",
+   "scores": {
+    "self": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 1,
+     "detailReference": 1.9493,
+     "detailCandidate": 1.9493,
+     "detailRatio": 1,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "flat": {
+     "maskIoU": 1,
+     "deltaE00": 9.8887,
+     "histogram": 0.0029,
+     "detailReference": 1.9493,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.5181,
+     "ssimLit": 0.3961
+    },
+    "hue": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 0.5838,
+     "detailReference": 1.9493,
+     "detailCandidate": 1.9494,
+     "detailRatio": 1,
+     "ssimAlbedo": 0.9998,
+     "ssimLit": 0.9998
+    },
+    "grey": {
+     "maskIoU": 1,
+     "deltaE00": 31.6383,
+     "histogram": 0,
+     "detailReference": 1.9493,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.519,
+     "ssimLit": 0.6463
+    }
+   }
+  },
+  {
+   "modelId": "B07B78G1BW",
+   "productType": "CABINET",
+   "scores": {
+    "self": {
+     "maskIoU": 1,
+     "deltaE00": 0,
+     "histogram": 1,
+     "detailReference": 1.4234,
+     "detailCandidate": 1.4234,
+     "detailRatio": 1,
+     "ssimAlbedo": 1,
+     "ssimLit": 1
+    },
+    "flat": {
+     "maskIoU": 1,
+     "deltaE00": 5.6939,
+     "histogram": 0.3906,
+     "detailReference": 1.4234,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.6424,
+     "ssimLit": 0.5735
+    },
+    "hue": {
+     "maskIoU": 1,
+     "deltaE00": 33.1596,
+     "histogram": 0,
+     "detailReference": 1.4234,
+     "detailCandidate": 1.3962,
+     "detailRatio": 0.9822,
+     "ssimAlbedo": 0.9981,
+     "ssimLit": 0.9992
+    },
+    "grey": {
+     "maskIoU": 1,
+     "deltaE00": 26.8397,
+     "histogram": 0,
+     "detailReference": 1.4234,
+     "detailCandidate": 0,
+     "detailRatio": 0,
+     "ssimAlbedo": 0.5457,
+     "ssimLit": 0.7182
+    }
+   }
+  }
+ ]
+}

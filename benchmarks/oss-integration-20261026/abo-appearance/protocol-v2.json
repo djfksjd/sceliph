@@ -1,0 +1,16 @@
+{
+ "schema": "sceliph.abo-appearance-protocol/0.2",
+ "registered": "2026-10-27, after the 13th-slice plan review and before running any v2 metric",
+ "changes": "renderer awaits reference projections and adds an id pass; metrics add detailLog and spreadLog with part boundaries excluded (floors 0.25 Sobel-L*, 0.5 L*); controls add hueIn (in-gamut LCh rotation, L* kept) and shuffle (same colour statistics, wrong placement); readPixels RGBA path",
+ "texturedDefinition": "reference detailReference >= 1.0 (mean over views), decided before running",
+ "phaseA2": {
+  "items": "slice-8 dev split, 10 items",
+  "criteria": [
+   "W1 determinism: self deltaE00 = 0, detailLog = 0, spreadLog = 0 on every item",
+   "W2 detail axis: hueIn detailLog <= 0.1 on >= 9/10 items; flat detailLog >= ln(3) on every textured item",
+   "W3 colour axis: grey deltaE00 > flat deltaE00 on >= 9/10 items",
+   "W4 statistics vs placement: shuffle histogram >= 0.9 and spreadLog <= 0.1 on >= 9/10 items, and shuffle ssimAlbedo <= 0.9 on every textured item"
+  ],
+  "use": "if W1-W4 pass, detailLog/spreadLog/histogram are the primary appearance metrics for slice 13 arms (B0 solid, B1 procedural albedo, B2 photo patch tiling, B3 projection) with deltaE00 and SSIM as non-inferiority checks; if any fails, the failing axis is reported and not used as a primary criterion"
+ }
+}

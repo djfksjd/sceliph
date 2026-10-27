@@ -30,6 +30,14 @@ The profile decides which capabilities matter. Do not require product internals 
 
 If `buildReady` fails, do not create an attractive but misleading low-quality asset. Return the unresolved capabilities and the smallest useful evidence request. If `buildReady` passes but `deliveryReady` fails, a review draft may be compiled, but label it as such and keep the exact next actions visible.
 
+## Asking for one more photo when depth is unresolved
+
+When `depth` is unresolved, pass the view you estimated for each photo (`viewAngles`, azimuth from the product front) and a `shapeClass` to `evaluateSemiProfessionalReadiness`. Its `depthViewAdvice` (`src/engine/depth-view-advice.ts`) says whether one more photo is worth asking for, and which. In the pre-registered ABO tests:
+- Near-frontal photos of thin or hanging products (lamps, light fixtures, fans) leave depth guessed. A second photo of the same product turned about 90° halved the footprint error (10.3% → 5.2% median).
+- A single 3/4 photo of box-like furniture already showed depth well enough, and the extra view did not help.
+
+Ask for that one side photo when the advice says so. Quote the measured effect as it is, not as a guarantee. Advice never marks depth as resolved, so the readiness gates keep their meaning.
+
 ## Conflict handling
 
 Bind every dimension to a source id, property, status, value, and tolerance. Compare measured/datasheet values for the same property before geometry. A conflict above the declared tolerance or 0.5%/0.1 mm fallback blocks the build until resolved. Estimated values cannot overrule measured or datasheet values.

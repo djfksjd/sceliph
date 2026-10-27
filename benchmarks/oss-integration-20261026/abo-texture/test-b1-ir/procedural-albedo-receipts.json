@@ -1,0 +1,374 @@
+{
+ "schema": "sceliph.procedural-albedo/0.1",
+ "rules": [
+  {
+   "pattern": "linen|cotton|fabric|cloth|velvet|boucl|wool|felt|burlap|jute|rattan|wicker|weave",
+   "surface": "fabric",
+   "variation": 0.2,
+   "textureScale": [
+    3,
+    3
+   ]
+  },
+  {
+   "pattern": "leather",
+   "surface": "leather",
+   "variation": 0.15,
+   "textureScale": [
+    2,
+    2
+   ]
+  },
+  {
+   "pattern": "marble|granite|stone|travertine|terrazzo|slate",
+   "surface": "stone",
+   "variation": 0.22,
+   "textureScale": [
+    1.5,
+    1.5
+   ]
+  },
+  {
+   "pattern": "concrete|cement",
+   "surface": "concrete",
+   "variation": 0.15,
+   "textureScale": [
+    2,
+    2
+   ]
+  },
+  {
+   "pattern": "wood|oak|pine|walnut|maple|birch|teak|ash\\b|elm|acacia|beech|cherry|mango|bamboo|veneer|mdf|plywood|fir|timber",
+   "surface": "wood",
+   "variation": 0.3,
+   "textureScale": [
+    1.2,
+    3
+   ]
+  }
+ ],
+ "receipts": [
+  {
+   "modelId": "B07HSCYS4C",
+   "changed": [
+    "top",
+    "ped_l",
+    "ped_r",
+    "ped_c",
+    "front_l",
+    "front_r",
+    "front_c",
+    "leg_fl",
+    "leg_fr",
+    "leg_bl",
+    "leg_br",
+    "rail_long",
+    "rail_l",
+    "rail_r"
+   ],
+   "components": 18
+  },
+  {
+   "modelId": "B071SHBTM5",
+   "changed": [
+    "plinth",
+    "body",
+    "d1",
+    "d2",
+    "d3",
+    "d4",
+    "d5",
+    "d6"
+   ],
+   "components": 14
+  },
+  {
+   "modelId": "B082XCSHKB",
+   "changed": [
+    "blade1",
+    "blade2",
+    "blade3",
+    "blade4",
+    "blade5"
+   ],
+   "components": 9
+  },
+  {
+   "modelId": "B075X2NLKP",
+   "changed": [
+    "shade"
+   ],
+   "components": 4
+  },
+  {
+   "modelId": "B082JHBD9S",
+   "changed": [],
+   "components": 14
+  },
+  {
+   "modelId": "B07HSMYNYJ",
+   "changed": [
+    "side_l",
+    "side_r",
+    "top",
+    "shelf_1",
+    "shelf_2",
+    "shelf_3",
+    "div_top",
+    "div_mid",
+    "div_low",
+    "base",
+    "drawer_1",
+    "drawer_2"
+   ],
+   "components": 17
+  },
+  {
+   "modelId": "B07B4SCM7N",
+   "changed": [
+    "top",
+    "carcass",
+    "base",
+    "leg_fl",
+    "leg_fr",
+    "leg_bl",
+    "leg_br",
+    "d_top_l",
+    "d_top_c",
+    "d_top_r",
+    "d_mid_l",
+    "d_mid_r",
+    "d_bot_l",
+    "d_bot_r"
+   ],
+   "components": 14
+  },
+  {
+   "modelId": "B07QVRTT6J",
+   "changed": [
+    "shelf_top",
+    "shelf_bottom",
+    "shelf_low_r",
+    "shelf_up_r",
+    "shelf_left"
+   ],
+   "components": 11
+  },
+  {
+   "modelId": "B0154WJZH2",
+   "changed": [
+    "oak"
+   ],
+   "components": 12
+  },
+  {
+   "modelId": "B07K6S7QHQ",
+   "changed": [
+    "top",
+    "sideL",
+    "sideR",
+    "base",
+    "divider",
+    "midshelf",
+    "kbtray",
+    "rshelf"
+   ],
+   "components": 12
+  },
+  {
+   "modelId": "B07B4Y45GY",
+   "changed": [
+    "top",
+    "carcass",
+    "leg_fl",
+    "leg_fr",
+    "leg_bl",
+    "leg_br",
+    "drawer_tl",
+    "drawer_tr",
+    "drawer_ml",
+    "drawer_mr",
+    "drawer_bl",
+    "drawer_br"
+   ],
+   "components": 12
+  },
+  {
+   "modelId": "B082JH9VWG",
+   "changed": [],
+   "components": 16
+  },
+  {
+   "modelId": "B07B4Z9PL9",
+   "changed": [],
+   "components": 6
+  },
+  {
+   "modelId": "B07TVYR4SS",
+   "changed": [
+    "side",
+    "back",
+    "shelf1",
+    "shelf2",
+    "shelf3",
+    "shelf4"
+   ],
+   "components": 6
+  },
+  {
+   "modelId": "B07B4W2MFW",
+   "changed": [
+    "headboard",
+    "hb_rattan_l",
+    "hb_rattan_r",
+    "hb_leg_l",
+    "hb_leg_r",
+    "platform",
+    "mattress",
+    "footboard",
+    "fb_rattan_l",
+    "fb_rattan_r",
+    "fb_base",
+    "pillow_l",
+    "pillow_r"
+   ],
+   "components": 13
+  },
+  {
+   "modelId": "B07B78G4QH",
+   "changed": [
+    "top",
+    "apron",
+    "leg_fl",
+    "leg_fr",
+    "leg_bl",
+    "leg_br",
+    "rail_front",
+    "rail_back",
+    "rail_center"
+   ],
+   "components": 9
+  },
+  {
+   "modelId": "B07MBMJS1B",
+   "changed": [
+    "top",
+    "drawer",
+    "leg_fl",
+    "leg_fr",
+    "leg_bl",
+    "leg_br",
+    "shelf_mid",
+    "shelf_low",
+    "towel_bar"
+   ],
+   "components": 14
+  },
+  {
+   "modelId": "B0742FPL25",
+   "changed": [
+    "shade"
+   ],
+   "components": 3
+  },
+  {
+   "modelId": "B0828FB1G7",
+   "changed": [],
+   "components": 4
+  },
+  {
+   "modelId": "B082MXDF82",
+   "changed": [],
+   "components": 13
+  },
+  {
+   "modelId": "B07QC76NM2",
+   "changed": [],
+   "components": 8
+  },
+  {
+   "modelId": "B075X1T4ZS",
+   "changed": [
+    "base",
+    "shade",
+    "finial"
+   ],
+   "components": 3
+  },
+  {
+   "modelId": "B0824FLNHN",
+   "changed": [
+    "shade"
+   ],
+   "components": 8
+  },
+  {
+   "modelId": "B0828FFDWG",
+   "changed": [],
+   "components": 6
+  },
+  {
+   "modelId": "B075X2LLWF",
+   "changed": [],
+   "components": 3
+  },
+  {
+   "modelId": "B07374QGD7",
+   "changed": [
+    "shade",
+    "cord"
+   ],
+   "components": 5
+  },
+  {
+   "modelId": "B07B4W2ZRW",
+   "changed": [
+    "shade",
+    "leg1",
+    "leg2",
+    "leg3"
+   ],
+   "components": 9
+  },
+  {
+   "modelId": "B0828DZ1QL",
+   "changed": [],
+   "components": 5
+  },
+  {
+   "modelId": "B07HK6MTMC",
+   "changed": [
+    "shade"
+   ],
+   "components": 6
+  },
+  {
+   "modelId": "B0825CLV7M",
+   "changed": [
+    "wood"
+   ],
+   "components": 5
+  },
+  {
+   "modelId": "B075X2XZDD",
+   "changed": [],
+   "components": 6
+  },
+  {
+   "modelId": "B08B8SV8DB",
+   "changed": [
+    "cord",
+    "shade"
+   ],
+   "components": 5
+  },
+  {
+   "modelId": "B07B4VYKPR",
+   "changed": [
+    "base",
+    "shade"
+   ],
+   "components": 4
+  }
+ ]
+}

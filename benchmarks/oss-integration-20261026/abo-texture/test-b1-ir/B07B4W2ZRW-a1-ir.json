@@ -1,0 +1,320 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Tripod table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Linen shade",
+   "category": "enclosure",
+   "materialName": "burlap linen",
+   "detail": "Tapered drum shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      147,
+      -124.5
+     ],
+     [
+      149,
+      -124.5
+     ],
+     [
+      130,
+      124.5
+     ],
+     [
+      127,
+      124.5
+     ],
+     [
+      147,
+      -124.5
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    383.5,
+    0
+   ],
+   "material": {
+    "color": "#b87a45",
+    "roughness": 0.95,
+    "metalness": 0,
+    "surface": "fabric",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "id": "leg1",
+   "name": "Front leg",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "Splayed wooden leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      105,
+      14
+     ],
+     [
+      0,
+      -105,
+      90
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    0,
+    110,
+    0
+   ],
+   "material": {
+    "color": "#6b4a3a",
+    "roughness": 0.8,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "leg2",
+   "name": "Rear right leg",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "Splayed wooden leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      12.1,
+      105,
+      -7
+     ],
+     [
+      77.9,
+      -105,
+      -45
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    0,
+    110,
+    0
+   ],
+   "material": {
+    "color": "#6b4a3a",
+    "roughness": 0.8,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "leg3",
+   "name": "Rear left leg",
+   "category": "mechanical",
+   "materialName": "stained pine",
+   "detail": "Splayed wooden leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -12.1,
+      105,
+      -7
+     ],
+     [
+      -77.9,
+      -105,
+      -45
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    0,
+    110,
+    0
+   ],
+   "material": {
+    "color": "#6b4a3a",
+    "roughness": 0.8,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     1.2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "hub",
+   "name": "Hub",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Leg junction hub",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 24,
+    "depth": 22,
+    "radialSegments": 6
+   },
+   "position": [
+    0,
+    222,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Stem",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Central stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 80,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    273,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "brace1",
+   "name": "Brace A",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Thin brace rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      70
+     ],
+     [
+      60.6,
+      0,
+      -35
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    59,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "brace2",
+   "name": "Brace B",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Thin brace rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      60.6,
+      0,
+      -35
+     ],
+     [
+      -60.6,
+      0,
+      -35
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    59,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "brace3",
+   "name": "Brace C",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Thin brace rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -60.6,
+      0,
+      -35
+     ],
+     [
+      0,
+      0,
+      70
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    59,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  }
+ ]
+}

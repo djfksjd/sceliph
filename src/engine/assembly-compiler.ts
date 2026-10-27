@@ -388,6 +388,9 @@ export function validateAssemblyIR(value: unknown): asserts value is AssemblyIR 
       const value = component.material[key];
       if (value !== undefined && (value < 0 || value > 1)) throw new Error(`Unsafe ${key} in ${component.id}.`);
     }
+    if (component.material.albedoVariation !== undefined && !(component.material.albedoVariation >= 0 && component.material.albedoVariation <= 0.5)) {
+      throw new Error(`Unsafe albedoVariation in ${component.id}.`);
+    }
     if (component.material.ior !== undefined && (component.material.ior < 1 || component.material.ior > 2.5)) {
       throw new Error(`Unsafe ior in ${component.id}.`);
     }

@@ -80,6 +80,12 @@ export interface AssemblyMaterialIR {
   sheenRoughness?: number;
   specularIntensity?: number;
   microNormalStrength?: number;
+  /**
+   * Opt-in colour variation (0–0.5) from the finish's procedural pattern (wood grain,
+   * weave, stone), applied as a base-colour map with the mean colour preserved.
+   * Absent keeps the legacy solid base colour.
+   */
+  albedoVariation?: number;
   textureScale?: [number, number];
   thicknessMm?: number;
   emissive?: string;

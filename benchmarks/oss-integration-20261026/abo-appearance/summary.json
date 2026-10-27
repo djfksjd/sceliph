@@ -1,0 +1,109 @@
+{
+ "schema": "sceliph.abo-appearance-summary/0.1",
+ "phaseA": [
+  {
+   "id": "V1",
+   "rule": "self deltaE00 = 0 and detailRatio = 1 on every item",
+   "pass": true,
+   "observed": "10/10"
+  },
+  {
+   "id": "V2",
+   "rule": "flat detailRatio <= 0.1 on >= 9/10 and hue detailRatio within [0.9, 1.1] on >= 9/10",
+   "pass": false,
+   "observed": "flat 10/10, hue 8/10"
+  },
+  {
+   "id": "V3",
+   "rule": "grey deltaE00 > flat deltaE00 on >= 9/10",
+   "pass": true,
+   "observed": "10/10"
+  }
+ ],
+ "phaseB": {
+  "arms": {
+   "a1": {
+    "n": 33,
+    "deltaE00": {
+     "ir": 6.8119,
+     "greyIr": 21.9758,
+     "pairedMedian": -12.5783,
+     "ci95": [
+      -19.4332,
+      -6.9723
+     ],
+     "better": 30
+    },
+    "histogram": {
+     "ir": 0.1031,
+     "greyIr": 0
+    },
+    "detailRatio": {
+     "ir": 0.5084,
+     "texturedItems": 14,
+     "irOnTextured": 0.4022
+    },
+    "ssimAlbedo": 0.7524,
+    "ssimLit": 0.539,
+    "maskIoU": 0.8233,
+    "byStratum": {
+     "thin": {
+      "n": 21,
+      "deltaE00": 6.7326
+     },
+     "other": {
+      "n": 12,
+      "deltaE00": 8.1047
+     }
+    }
+   },
+   "a2": {
+    "n": 33,
+    "deltaE00": {
+     "ir": 7.6822,
+     "greyIr": 21.9758,
+     "pairedMedian": -9.7783,
+     "ci95": [
+      -20.142,
+      -7.0328
+     ],
+     "better": 30
+    },
+    "histogram": {
+     "ir": 0.0776,
+     "greyIr": 0
+    },
+    "detailRatio": {
+     "ir": 0.4888,
+     "texturedItems": 14,
+     "irOnTextured": 0.3105
+    },
+    "ssimAlbedo": 0.736,
+    "ssimLit": 0.5967,
+    "maskIoU": 0.8177,
+    "byStratum": {
+     "thin": {
+      "n": 21,
+      "deltaE00": 7.6822
+     },
+     "other": {
+      "n": 12,
+      "deltaE00": 8.1267
+     }
+    }
+   }
+  },
+  "controls": {
+   "flatDeltaE00": 2.9291,
+   "greyDeltaE00": 22.2249,
+   "referenceDetail": 0.9042
+  },
+  "criteria": [
+   {
+    "id": "B1",
+    "rule": "a2: median paired (IR - grey IR) deltaE00 < 0 and 95% CI upper < 0",
+    "pass": true
+   }
+  ]
+ }
+}

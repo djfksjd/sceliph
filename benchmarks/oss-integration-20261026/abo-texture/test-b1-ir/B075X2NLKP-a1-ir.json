@@ -1,0 +1,152 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Ceramic Table Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Ceramic base",
+   "category": "mechanical",
+   "materialName": "blue ribbed ceramic",
+   "detail": "Capsule-shaped textured ceramic body",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      50,
+      0
+     ],
+     [
+      66,
+      6
+     ],
+     [
+      70,
+      30
+     ],
+     [
+      70,
+      290
+     ],
+     [
+      66,
+      314
+     ],
+     [
+      50,
+      322
+     ],
+     [
+      0,
+      322
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c2a44",
+    "roughness": 0.35,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "Small socket neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 10,
+    "depth": 18,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    331,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Bulb",
+   "category": "mechanical",
+   "materialName": "frosted glass",
+   "detail": "LED bulb inside shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 30
+   },
+   "position": [
+    0,
+    375,
+    0
+   ],
+   "material": {
+    "color": "#fff3d0",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Shade",
+   "category": "mechanical",
+   "materialName": "cream fabric",
+   "detail": "Tapered drum fabric shade, closed solid form",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      328
+     ],
+     [
+      182,
+      328
+     ],
+     [
+      161,
+      622
+     ],
+     [
+      0,
+      622
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f5d8a8",
+    "roughness": 0.9,
+    "metalness": 0,
+    "surface": "fabric",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     3,
+     3
+    ]
+   }
+  }
+ ]
+}
