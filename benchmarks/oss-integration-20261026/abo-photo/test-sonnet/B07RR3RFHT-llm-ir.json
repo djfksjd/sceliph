@@ -1,0 +1,111 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Bathroom tall column cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Cabinet carcass",
+   "category": "enclosure",
+   "materialName": "white melamine",
+   "detail": "Main box of the column, slightly recessed behind doors",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     296,
+     1392,
+     250
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    700,
+    -9
+   ],
+   "material": {
+    "color": "#f2f3f5",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_upper",
+   "name": "Upper door",
+   "category": "enclosure",
+   "materialName": "white matte lacquer",
+   "detail": "Upper door front, about 56 percent of height",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     770,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1010,
+    126
+   ],
+   "material": {
+    "color": "#f5f6f8",
+    "roughness": 0.45,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_lower",
+   "name": "Lower door",
+   "category": "enclosure",
+   "materialName": "white matte lacquer",
+   "detail": "Lower door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     610,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    305,
+    126
+   ],
+   "material": {
+    "color": "#f5f6f8",
+    "roughness": 0.45,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Recessed handle",
+   "category": "mechanical",
+   "materialName": "white plastic",
+   "detail": "Horizontal grip rail at the door split",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     270,
+     16,
+     12
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    616,
+    134
+   ],
+   "material": {
+    "color": "#e4e6ea",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  }
+ ]
+}

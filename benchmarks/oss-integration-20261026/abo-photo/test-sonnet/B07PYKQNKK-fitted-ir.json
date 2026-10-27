@@ -1,0 +1,361 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "4-Drawer Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "laminate",
+   "detail": "Overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     770,
+     25,
+     430
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1007.5,
+    0
+   ],
+   "material": {
+    "color": "#2b2a29",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "side_l",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "laminate",
+   "detail": "Left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     27.290129136534947,
+     1008.2853813575724,
+     487.412519620657
+    ],
+    "radius": 3
+   },
+   "position": [
+    -319.6309162440399,
+    503.968435627006,
+    0
+   ],
+   "material": {
+    "color": "#2b2a29",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "laminate",
+   "detail": "Right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     27.290129136534947,
+     1008.2853813575724,
+     487.412519620657
+    ],
+    "radius": 3
+   },
+   "position": [
+    319.6309162440399,
+    503.968435627006,
+    0
+   ],
+   "material": {
+    "color": "#2b2a29",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "laminate",
+   "detail": "Back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     552.1592459705904,
+     900,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    527.8368993572784,
+    -358.3161482610953
+   ],
+   "material": {
+    "color": "#242322",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "base",
+   "name": "Bottom rail",
+   "category": "enclosure",
+   "materialName": "laminate",
+   "detail": "Bottom panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     20,
+     390
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    550.0000060535967,
+    0
+   ],
+   "material": {
+    "color": "#2b2a29",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "drawer1",
+   "name": "Drawer 1",
+   "category": "mechanical",
+   "materialName": "laminate",
+   "detail": "Top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     759.8270245419362,
+     260.3567012778054,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    807.7031984925786,
+    168.97815120444568
+   ],
+   "material": {
+    "color": "#302f2d",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer2",
+   "name": "Drawer 2",
+   "category": "mechanical",
+   "materialName": "laminate",
+   "detail": "Second drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     759.8270245419362,
+     260.3567012778054,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    130.76412643883734,
+    168.97815120444568
+   ],
+   "material": {
+    "color": "#302f2d",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer3",
+   "name": "Drawer 3",
+   "category": "mechanical",
+   "materialName": "laminate",
+   "detail": "Third drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     759.8270245419362,
+     260.3567012778054,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    411.30736259125246,
+    168.97815120444568
+   ],
+   "material": {
+    "color": "#302f2d",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer4",
+   "name": "Drawer 4",
+   "category": "mechanical",
+   "materialName": "laminate",
+   "detail": "Bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     759.8270245419362,
+     260.3567012778054,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    190,
+    168.97815120444568
+   ],
+   "material": {
+    "color": "#302f2d",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     10,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    865,
+    224
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     10,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    640,
+    224
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     10,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    415,
+    224
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     10,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    190,
+    224
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "foot_l",
+   "name": "Left foot",
+   "category": "mechanical",
+   "materialName": "laminate",
+   "detail": "Base foot",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     30,
+     400
+    ],
+    "radius": 3
+   },
+   "position": [
+    -368,
+    441.10431935108966,
+    0
+   ],
+   "material": {
+    "color": "#2b2a29",
+    "roughness": 0.7
+   }
+  }
+ ]
+}

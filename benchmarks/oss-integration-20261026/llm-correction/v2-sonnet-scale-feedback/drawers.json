@@ -1,0 +1,106 @@
+{
+ "summary": {
+  "id": "drawers",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.017320500000000003,
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.017320500000000003,
+   "durationMs": 8959,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Three-drawer cabinet\",\"units\":\"mm\",\"components\":[{\"id\":\"carcass\",\"name\":\"Carcass\",\"category\":\"enclosure\",\"materialName\":\"Painted MDF\",\"detail\":\"600 x 900 x 500 mm cabinet body standing on the floor\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,900,500],\"radius\":5},\"position\":[0,450,0],\"material\":{\"color\":\"#d8d2c4\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"drawer_1\",\"name\":\"Drawer front 1 (bottom)\",\"category\":\"enclosure\",\"materialName\":\"Painted MDF\",\"detail\":\"580 x 280 x 20 mm drawer front on the carcass front face\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[580,280,20],\"radius\":3},\"position\":[0,155,260],\"material\":{\"color\":\"#a9b8c4\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"drawer_2\",\"name\":\"Drawer front 2 (middle)\",\"category\":\"enclosure\",\"materialName\":\"Painted MDF\",\"detail\":\"580 x 280 x 20 mm drawer front on the carcass front face\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[580,280,20],\"radius\":3},\"position\":[0,450,260],\"material\":{\"color\":\"#a9b8c4\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"drawer_3\",\"name\":\"Drawer front 3 (top)\",\"category\":\"enclosure\",\"materialName\":\"Painted MDF\",\"detail\":\"580 x 280 x 20 mm drawer front on the carcass front face\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[580,280,20],\"radius\":3},\"position\":[0,745,260],\"material\":{\"color\":\"#a9b8c4\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"handle_1\",\"name\":\"Handle 1\",\"category\":\"mechanical\",\"materialName\":\"Brushed steel\",\"detail\":\"12 mm diameter, 200 mm long horizontal bar handle along x\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":200,\"radialSegments\":32},\"position\":[0,155,300],\"rotation\":[0,0,1.5707963],\"material\":{\"color\":\"#c0c4c8\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"handle_2\",\"name\":\"Handle 2\",\"category\":\"mechanical\",\"materialName\":\"Brushed steel\",\"detail\":\"12 mm diameter, 200 mm long horizontal bar handle along x\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":200,\"radialSegments\":32},\"position\":[0,450,300],\"rotation\":[0,0,1.5707963],\"material\":{\"color\":\"#c0c4c8\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"handle_3\",\"name\":\"Handle 3\",\"category\":\"mechanical\",\"materialName\":\"Brushed steel\",\"detail\":\"12 mm diameter, 200 mm long horizontal bar handle along x\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":200,\"radialSegments\":32},\"position\":[0,745,300],\"rotation\":[0,0,1.5707963],\"material\":{\"color\":\"#c0c4c8\",\"roughness\":0.35,\"metalness\":0.9}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 4464,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      600,
+      900,
+      556
+     ],
+     "dimensionChecks": [
+      {
+       "id": "d3-top",
+       "expectedMm": 885,
+       "actualMm": 885.0000005960464,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "d1-bot",
+       "expectedMm": 15,
+       "actualMm": 14.99999940395355,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "h2-x",
+       "expectedMm": 200,
+       "actualMm": 200.0000033017709,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "h2-y",
+       "expectedMm": 12,
+       "actualMm": 12.000005463287494,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "h1-front",
+       "expectedMm": 306,
+       "actualMm": 306.00000005215406,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "depth",
+       "expectedMm": 556,
+       "actualMm": 556.0000000521541,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0.000011920928966180355,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,345 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Martin boekenkast",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top board",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "top shelf board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     16,
+     350
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    772,
+    0
+   ],
+   "material": {
+    "color": "#c9a577",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom shelf",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "bottom shelf board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1090,
+     16,
+     340
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    95,
+    0
+   ],
+   "material": {
+    "color": "#c9a577",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfL",
+   "name": "Left shelf",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "small left shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     380,
+     16,
+     340
+    ],
+    "radius": 3
+   },
+   "position": [
+    -355,
+    430,
+    0
+   ],
+   "material": {
+    "color": "#c9a577",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfR1",
+   "name": "Right shelf low",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "right lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     900,
+     16,
+     340
+    ],
+    "radius": 3
+   },
+   "position": [
+    90,
+    360,
+    0
+   ],
+   "material": {
+    "color": "#c9a577",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelfR2",
+   "name": "Right shelf high",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "right upper shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     900,
+     16,
+     340
+    ],
+    "radius": 3
+   },
+   "position": [
+    90,
+    560,
+    0
+   ],
+   "material": {
+    "color": "#c9a577",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legFL",
+   "name": "Front left post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "square tube post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -542,
+    382,
+    167
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legBL",
+   "name": "Back left post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "square tube post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -542,
+    382,
+    -167
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legFR",
+   "name": "Front right post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "square tube post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    542,
+    382,
+    167
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legBR",
+   "name": "Back right post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "square tube post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    542,
+    382,
+    -167
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "midF",
+   "name": "Middle front post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "centre post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    80,
+    382,
+    167
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "midB",
+   "name": "Middle back post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "centre post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    80,
+    382,
+    -167
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "stepF",
+   "name": "Step front post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "post at step",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     200,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -350,
+    460,
+    167
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "stepB",
+   "name": "Step back post",
+   "category": "mechanical",
+   "materialName": "dark steel",
+   "detail": "post at step",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     764,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -170,
+    382,
+    -167
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

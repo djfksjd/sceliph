@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Ravenna Home Traditional Wall Sconce with Linen Shade, LED Bulb Included, Brushed Nickel.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 464 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.024069599999999997,
+   "durationMs": 19262,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Wall Sconce with Linen Shade\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Linen shade\",\"category\":\"enclosure\",\"materialName\":\"white linen\",\"detail\":\"Cylindrical drum shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":61,\"radiusBottom\":61,\"depth\":265,\"radialSegments\":48},\"position\":[0,331.5,0],\"material\":{\"color\":\"#f2f3f5\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"stem\",\"name\":\"Vertical stem\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Vertical rod\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4,\"radiusBottom\":4,\"depth\":220,\"radialSegments\":24},\"position\":[0,110,0],\"material\":{\"color\":\"#c9c9cb\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"ball\",\"name\":\"Ball finial\",\"category\":\"mechanical\",\"materialName\":\"polished nickel\",\"detail\":\"Ball at stem bottom\",\"geometry\":{\"op\":\"sphere\",\"radius\":9},\"position\":[0,9,0],\"material\":{\"color\":\"#d4d4d6\",\"roughness\":0.2,\"metalness\":1}},{\"id\":\"collar\",\"name\":\"Arm collar\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Clamp collar where arm meets stem\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[14,26,14],\"radius\":2},\"position\":[0,125,0],\"material\":{\"color\":\"#c0c0c3\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"arm\",\"name\":\"Horizontal arm\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Rod from plate to stem\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":3.5,\"radiusBottom\":3.5,\"depth\":125,\"radialSegments\":24},\"position\":[0,125,-62.5],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#c9c9cb\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"plate\",\"name\":\"Wall plate\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Rectangular wall plate\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[98,120,10],\"radius\":1.5},\"position\":[0,123,-130],\"material\":{\"color\":\"#b9b9b9\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"screwL\",\"name\":\"Left screw\",\"category\":\"mechanical\",\"materialName\":\"polished nickel\",\"detail\":\"Screw head\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5,\"radiusBottom\":5,\"depth\":3,\"radialSegments\":24},\"position\":[-28,125,-124],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#d4d4d6\",\"roughness\":0.2,\"metalness\":1}},{\"id\":\"screwR\",\"name\":\"Right screw\",\"category\":\"mechanical\",\"materialName\":\"polished nickel\",\"detail\":\"Screw head\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5,\"radiusBottom\":5,\"depth\":3,\"radialSegments\":24},\"position\":[28,125,-124],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#d4d4d6\",\"roughness\":0.2,\"metalness\":1}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

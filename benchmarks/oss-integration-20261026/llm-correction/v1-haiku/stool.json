@@ -1,0 +1,99 @@
+{
+ "summary": {
+  "id": "stool",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.0008470999999999999,
+  "modelIds": [
+   "claude-haiku-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.0008470999999999999,
+   "durationMs": 5961,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Three-legged stool\",\"units\":\"mm\",\"components\":[{\"id\":\"seat\",\"name\":\"Seat\",\"category\":\"mechanical\",\"materialName\":\"Wood\",\"detail\":\"Circular seat disc, 350 mm diameter, 30 mm thick, top surface at 450 mm above the floor.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":175,\"radiusBottom\":175,\"depth\":30,\"radialSegments\":32},\"position\":[0,435,0],\"material\":{\"color\":\"#8B5A2B\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_1\",\"name\":\"Leg 1\",\"category\":\"mechanical\",\"materialName\":\"Wood\",\"detail\":\"Vertical cylindrical leg, 30 mm diameter, running from the floor to the underside of the seat, 120 mm from the centre at 0 degrees.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":420,\"radialSegments\":32},\"position\":[120,210,0],\"material\":{\"color\":\"#8B5A2B\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_2\",\"name\":\"Leg 2\",\"category\":\"mechanical\",\"materialName\":\"Wood\",\"detail\":\"Vertical cylindrical leg, 30 mm diameter, running from the floor to the underside of the seat, 120 mm from the centre at 120 degrees.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":420,\"radialSegments\":32},\"position\":[-60,210,103.923],\"material\":{\"color\":\"#8B5A2B\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_3\",\"name\":\"Leg 3\",\"category\":\"mechanical\",\"materialName\":\"Wood\",\"detail\":\"Vertical cylindrical leg, 30 mm diameter, running from the floor to the underside of the seat, 120 mm from the centre at 240 degrees.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":420,\"radialSegments\":32},\"position\":[-60,210,-103.923],\"material\":{\"color\":\"#8B5A2B\",\"roughness\":0.7,\"metalness\":0}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 768,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      350,
+      450,
+      350
+     ],
+     "dimensionChecks": [
+      {
+       "id": "height",
+       "expectedMm": 450,
+       "actualMm": 449.99999310821295,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0.000006556510917521408,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "seat-d",
+       "expectedMm": 350,
+       "actualMm": 349.9999940395355,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "seat-t",
+       "expectedMm": 30,
+       "actualMm": 29.999999329447746,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "leg-h",
+       "expectedMm": 420,
+       "actualMm": 419.9999868869781,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "leg-d",
+       "expectedMm": 30,
+       "actualMm": 29.999999329447746,
+       "toleranceMm": 1,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

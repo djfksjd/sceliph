@@ -1,0 +1,136 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Scandinavian Wood Single Pendant",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "White painted metal",
+   "detail": "Round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 60,
+    "radiusBottom": 65,
+    "depth": 27,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1783.5,
+    0
+   ],
+   "material": {
+    "color": "#f0f0f0",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Suspension cord",
+   "category": "interconnect",
+   "materialName": "Grey cord",
+   "detail": "Thin hanging cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -670,
+      0
+     ],
+     [
+      0,
+      670,
+      0
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1100,
+    0
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Socket cap",
+   "category": "mechanical",
+   "materialName": "Grey metal",
+   "detail": "Small cap above wood collar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 24,
+    "depth": 40,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    410,
+    0
+   ],
+   "material": {
+    "color": "#9a9a9a",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "wood",
+   "name": "Wood collar",
+   "category": "mechanical",
+   "materialName": "Blonde wood",
+   "detail": "Wooden collar on top of shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 60,
+    "radiusBottom": 75,
+    "depth": 90,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    345,
+    0
+   ],
+   "material": {
+    "color": "#d9b88a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Glass shade",
+   "category": "enclosure",
+   "materialName": "White glass",
+   "detail": "Cylindrical opal white glass shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 75,
+    "radiusBottom": 75,
+    "depth": 300,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#f7f7f7",
+    "roughness": 0.15,
+    "metalness": 0
+   }
+  }
+ ]
+}

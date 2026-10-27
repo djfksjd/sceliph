@@ -1,0 +1,389 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Modern 3-Drawer Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "white painted wood",
+   "detail": "Thick rectangular desktop",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1290,
+     25,
+     570
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    749.5,
+    0
+   ],
+   "material": {
+    "color": "#f1f1ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "ped_l",
+   "name": "Left drawer pedestal",
+   "category": "enclosure",
+   "materialName": "white painted wood",
+   "detail": "Left drawer box under top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     290,
+     130,
+     520
+    ],
+    "radius": 3
+   },
+   "position": [
+    -495,
+    672,
+    0
+   ],
+   "material": {
+    "color": "#efefec",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "ped_r",
+   "name": "Right drawer pedestal",
+   "category": "enclosure",
+   "materialName": "white painted wood",
+   "detail": "Right drawer box under top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     290,
+     130,
+     520
+    ],
+    "radius": 3
+   },
+   "position": [
+    495,
+    672,
+    0
+   ],
+   "material": {
+    "color": "#efefec",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drw_c",
+   "name": "Center drawer",
+   "category": "enclosure",
+   "materialName": "white painted wood",
+   "detail": "Shallow center drawer front, recessed",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     620,
+     80,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    695,
+    230
+   ],
+   "material": {
+    "color": "#f3f3f0",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "front_l",
+   "name": "Left drawer front",
+   "category": "enclosure",
+   "materialName": "white painted wood",
+   "detail": "Drawer front panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     265,
+     105,
+     14
+    ],
+    "radius": 2
+   },
+   "position": [
+    -495,
+    668,
+    267
+   ],
+   "material": {
+    "color": "#f5f5f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "front_r",
+   "name": "Right drawer front",
+   "category": "enclosure",
+   "materialName": "white painted wood",
+   "detail": "Drawer front panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     265,
+     105,
+     14
+    ],
+    "radius": 2
+   },
+   "position": [
+    495,
+    668,
+    267
+   ],
+   "material": {
+    "color": "#f5f5f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pull_l",
+   "name": "Left handle",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     95,
+     10,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    -495,
+    690,
+    282
+   ],
+   "material": {
+    "color": "#3a3835",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "pull_r",
+   "name": "Right handle",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     95,
+     10,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    495,
+    690,
+    282
+   ],
+   "material": {
+    "color": "#3a3835",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 12,
+    "depth": 607,
+    "radialSegments": 32
+   },
+   "position": [
+    -545,
+    303.5,
+    190
+   ],
+   "material": {
+    "color": "#f1f1ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 12,
+    "depth": 607,
+    "radialSegments": 32
+   },
+   "position": [
+    545,
+    303.5,
+    190
+   ],
+   "material": {
+    "color": "#f1f1ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 12,
+    "depth": 607,
+    "radialSegments": 32
+   },
+   "position": [
+    -545,
+    303.5,
+    -190
+   ],
+   "material": {
+    "color": "#f1f1ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 12,
+    "depth": 607,
+    "radialSegments": 32
+   },
+   "position": [
+    545,
+    303.5,
+    -190
+   ],
+   "material": {
+    "color": "#f1f1ee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rail_x",
+   "name": "Long stretcher",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "Lengthwise low stretcher",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1090,
+     35,
+     28
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    160,
+    0
+   ],
+   "material": {
+    "color": "#efefec",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rail_l",
+   "name": "Left end stretcher",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "End stretcher",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     28,
+     35,
+     380
+    ],
+    "radius": 3
+   },
+   "position": [
+    -545,
+    160,
+    0
+   ],
+   "material": {
+    "color": "#efefec",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rail_r",
+   "name": "Right end stretcher",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "End stretcher",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     28,
+     35,
+     380
+    ],
+    "radius": 3
+   },
+   "position": [
+    545,
+    160,
+    0
+   ],
+   "material": {
+    "color": "#efefec",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

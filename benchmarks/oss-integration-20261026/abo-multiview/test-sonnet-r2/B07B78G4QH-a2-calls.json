@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Stone & Beam Jon Casual Farmhouse Wood Dining Table, -, Birch Finish.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 762 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.026541200000000004,
+   "durationMs": 18341,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":40,\"elevationDeg\":20},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Round farmhouse dining table\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Tabletop\",\"category\":\"mechanical\",\"materialName\":\"birch veneer\",\"detail\":\"Round tabletop with parquet-style grain\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":533,\"radiusBottom\":533,\"depth\":38,\"radialSegments\":64},\"position\":[0,743,0],\"material\":{\"color\":\"#b98f5f\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"apron\",\"name\":\"Apron ring\",\"category\":\"mechanical\",\"materialName\":\"stained birch\",\"detail\":\"Round apron beneath the top\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":440,\"radiusBottom\":440,\"depth\":54,\"radialSegments\":64},\"position\":[0,697,0],\"material\":{\"color\":\"#8d6644\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"leg_fl\",\"name\":\"Leg front left\",\"category\":\"mechanical\",\"materialName\":\"stained birch\",\"detail\":\"Square tapered leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[70,670,70],\"radius\":4},\"position\":[-270,335,270],\"material\":{\"color\":\"#85603f\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"leg_fr\",\"name\":\"Leg front right\",\"category\":\"mechanical\",\"materialName\":\"stained birch\",\"detail\":\"Square tapered leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[70,670,70],\"radius\":4},\"position\":[270,335,270],\"material\":{\"color\":\"#85603f\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"leg_bl\",\"name\":\"Leg back left\",\"category\":\"mechanical\",\"materialName\":\"stained birch\",\"detail\":\"Square tapered leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[70,670,70],\"radius\":4},\"position\":[-270,335,-270],\"material\":{\"color\":\"#85603f\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"leg_br\",\"name\":\"Leg back right\",\"category\":\"mechanical\",\"materialName\":\"stained birch\",\"detail\":\"Square tapered leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[70,670,70],\"radius\":4},\"position\":[270,335,-270],\"material\":{\"color\":\"#85603f\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"rail_front\",\"name\":\"Front rail\",\"category\":\"mechanical\",\"materialName\":\"stained birch\",\"detail\":\"Lower side stretcher\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[470,45,30],\"radius\":3},\"position\":[0,150,270],\"material\":{\"color\":\"#8d6644\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"rail_back\",\"name\":\"Back rail\",\"category\":\"mechanical\",\"materialName\":\"stained birch\",\"detail\":\"Lower side stretcher\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[470,45,30],\"radius\":3},\"position\":[0,150,-270],\"material\":{\"color\":\"#8d6644\",\"roughness\":0.75,\"metalness\":0}},{\"id\":\"rail_center\",\"name\":\"Center stretcher\",\"category\":\"mechanical\",\"materialName\":\"stained birch\",\"detail\":\"Cross stretcher connecting the side rails\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[30,45,470],\"radius\":3},\"position\":[0,150,0],\"material\":{\"color\":\"#8d6644\",\"roughness\":0.75,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

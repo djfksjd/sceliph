@@ -1,0 +1,345 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Amazon Brand Movian Idro 4-Door Shoe Cabinet (Dark Grey)",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_left",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Full-height left carcass side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1630,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    -251,
+    815,
+    0
+   ],
+   "material": {
+    "color": "#2e3134",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_right",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Full-height right carcass side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1630,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    251,
+    815,
+    0
+   ],
+   "material": {
+    "color": "#2e3134",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top_panel",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Top cap spanning the carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     18,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1621,
+    0
+   ],
+   "material": {
+    "color": "#2e3134",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "base_panel",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Bottom base panel of the carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     20,
+     250
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    10,
+    0
+   ],
+   "material": {
+    "color": "#2e3134",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back_panel",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "Dark grey laminate back board",
+   "detail": "Thin rear panel closing the carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     1590,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    815,
+    -122
+   ],
+   "material": {
+    "color": "#25282b",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_bottom",
+   "name": "Bottom tip-up door",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Lowest flip-up shoe compartment door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     326,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    423,
+    134
+   ],
+   "material": {
+    "color": "#3a3d40",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_lower",
+   "name": "Lower tip-up door",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Second flip-up shoe compartment door from bottom",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     326,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    764,
+    134
+   ],
+   "material": {
+    "color": "#3a3d40",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_upper",
+   "name": "Upper tip-up door",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Second flip-up shoe compartment door from top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     326,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1105,
+    134
+   ],
+   "material": {
+    "color": "#3a3d40",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_top",
+   "name": "Top tip-up door",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Highest flip-up shoe compartment door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     484,
+     326,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1446,
+    134
+   ],
+   "material": {
+    "color": "#3a3d40",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle_bottom",
+   "name": "Bottom door handle",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium pull",
+   "detail": "Recessed pull bar on the bottom door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     10,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    562,
+    146
+   ],
+   "material": {
+    "color": "#b0b5ba",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle_lower",
+   "name": "Lower door handle",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium pull",
+   "detail": "Recessed pull bar on the lower door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     10,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    903,
+    146
+   ],
+   "material": {
+    "color": "#b0b5ba",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle_upper",
+   "name": "Upper door handle",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium pull",
+   "detail": "Recessed pull bar on the upper door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     10,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1244,
+    146
+   ],
+   "material": {
+    "color": "#b0b5ba",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle_top",
+   "name": "Top door handle",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium pull",
+   "detail": "Recessed pull bar on the top door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     10,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1585,
+    146
+   ],
+   "material": {
+    "color": "#b0b5ba",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

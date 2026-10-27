@@ -1,0 +1,332 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Chase King Bed",
+ "units": "mm",
+ "components": [
+  {
+   "id": "headboard",
+   "name": "Headboard frame",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "tall headboard frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1960,
+     1122,
+     70
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    811,
+    -1030
+   ],
+   "material": {
+    "color": "#b98a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "hpanelL",
+   "name": "Headboard rattan left",
+   "category": "enclosure",
+   "materialName": "rattan",
+   "detail": "woven cane panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     880,
+     900,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    -460,
+    860,
+    -992
+   ],
+   "material": {
+    "color": "#9a6b3a",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "hpanelR",
+   "name": "Headboard rattan right",
+   "category": "enclosure",
+   "materialName": "rattan",
+   "detail": "woven cane panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     880,
+     900,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    460,
+    860,
+    -992
+   ],
+   "material": {
+    "color": "#9a6b3a",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "legBL",
+   "name": "Back leg left",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     250,
+     70
+    ],
+    "radius": 6
+   },
+   "position": [
+    -925,
+    125,
+    -1030
+   ],
+   "material": {
+    "color": "#b98a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "legBR",
+   "name": "Back leg right",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     250,
+     70
+    ],
+    "radius": 6
+   },
+   "position": [
+    925,
+    125,
+    -1030
+   ],
+   "material": {
+    "color": "#b98a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "footboard",
+   "name": "Footboard frame",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "low footboard frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1960,
+     480,
+     60
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    360,
+    1030
+   ],
+   "material": {
+    "color": "#b98a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "fpanelL",
+   "name": "Footboard rattan left",
+   "category": "enclosure",
+   "materialName": "rattan",
+   "detail": "woven cane panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     880,
+     330,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    -460,
+    380,
+    1058
+   ],
+   "material": {
+    "color": "#9a6b3a",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "fpanelR",
+   "name": "Footboard rattan right",
+   "category": "enclosure",
+   "materialName": "rattan",
+   "detail": "woven cane panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     880,
+     330,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    460,
+    380,
+    1058
+   ],
+   "material": {
+    "color": "#9a6b3a",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "railL",
+   "name": "Side rail left",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "side rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     50,
+     200,
+     2000
+    ],
+    "radius": 6
+   },
+   "position": [
+    -940,
+    230,
+    0
+   ],
+   "material": {
+    "color": "#b98a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "railR",
+   "name": "Side rail right",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "side rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     50,
+     200,
+     2000
+    ],
+    "radius": 6
+   },
+   "position": [
+    940,
+    230,
+    0
+   ],
+   "material": {
+    "color": "#b98a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "mattress",
+   "name": "Mattress",
+   "category": "mechanical",
+   "materialName": "white fabric",
+   "detail": "mattress with white sheet",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1880,
+     260,
+     2010
+    ],
+    "radius": 30
+   },
+   "position": [
+    0,
+    430,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f2",
+    "roughness": 0.95
+   }
+  },
+  {
+   "id": "pillowL",
+   "name": "Pillow left",
+   "category": "mechanical",
+   "materialName": "white fabric",
+   "detail": "pillow",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     130,
+     500
+    ],
+    "radius": 50
+   },
+   "position": [
+    -480,
+    620,
+    -700
+   ],
+   "material": {
+    "color": "#ececec",
+    "roughness": 0.95
+   }
+  },
+  {
+   "id": "pillowR",
+   "name": "Pillow right",
+   "category": "mechanical",
+   "materialName": "white fabric",
+   "detail": "pillow",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     130,
+     500
+    ],
+    "radius": 50
+   },
+   "position": [
+    480,
+    620,
+    -700
+   ],
+   "material": {
+    "color": "#ececec",
+    "roughness": 0.95
+   }
+  }
+ ]
+}

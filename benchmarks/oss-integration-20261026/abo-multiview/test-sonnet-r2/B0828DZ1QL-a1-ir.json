@@ -1,0 +1,163 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Flush-mount ceiling light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Frosted glass shade",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "Domed opal glass bowl",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      40,
+      1
+     ],
+     [
+      85,
+      8
+     ],
+     [
+      118,
+      28
+     ],
+     [
+      132,
+      55
+     ],
+     [
+      136,
+      80
+     ],
+     [
+      138,
+      95
+     ],
+     [
+      0,
+      95
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    22,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "trim",
+   "name": "Bronze trim ring",
+   "category": "enclosure",
+   "materialName": "oil-rubbed bronze",
+   "detail": "Stepped trim band at ceiling",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      135,
+      0
+     ],
+     [
+      152,
+      3
+     ],
+     [
+      165,
+      14
+     ],
+     [
+      165,
+      26
+     ],
+     [
+      150,
+      36
+     ],
+     [
+      0,
+      40
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    95,
+    0
+   ],
+   "material": {
+    "color": "#3f3029",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Finial base",
+   "category": "mechanical",
+   "materialName": "bronze",
+   "detail": "Flared cap under bowl",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 7,
+    "depth": 12,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    24,
+    0
+   ],
+   "material": {
+    "color": "#3f3029",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Finial knob",
+   "category": "mechanical",
+   "materialName": "bronze",
+   "detail": "Small knob at bottom",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     12,
+     22,
+     12
+    ],
+    "radius": 4.5
+   },
+   "position": [
+    0,
+    11,
+    0
+   ],
+   "material": {
+    "color": "#3f3029",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

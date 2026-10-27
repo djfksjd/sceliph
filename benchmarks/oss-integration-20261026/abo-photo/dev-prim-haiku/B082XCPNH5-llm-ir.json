@@ -1,0 +1,270 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Stone & Beam 4-Blade Ceiling Fan with Light (52in, Brushed Nickel)",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "Brushed nickel",
+   "detail": "Round mounting canopy at top of the assembly",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 40,
+    "radiusBottom": 45,
+    "depth": 25,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    368.5,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "downrod",
+   "name": "Down rod",
+   "category": "mechanical",
+   "materialName": "Brushed nickel",
+   "detail": "Vertical rod connecting canopy to motor cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 200,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    255,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "motor_cap",
+   "name": "Motor cap",
+   "category": "mechanical",
+   "materialName": "Brushed nickel",
+   "detail": "Short cap at the top of the motor housing",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 50,
+    "depth": 30,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    140,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "motor_housing",
+   "name": "Motor housing",
+   "category": "enclosure",
+   "materialName": "Brushed nickel",
+   "detail": "Main motor body, tapering outward toward the bottom",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 70,
+    "radiusBottom": 80,
+    "depth": 50,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    100,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "rim_ring",
+   "name": "Trim ring",
+   "category": "mechanical",
+   "materialName": "Brushed nickel",
+   "detail": "Decorative horizontal ring around the motor housing",
+   "geometry": {
+    "op": "torus",
+    "radius": 85,
+    "tube": 6
+   },
+   "position": [
+    0,
+    125,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "light_bowl",
+   "name": "Frosted light bowl",
+   "category": "display",
+   "materialName": "Frosted glass",
+   "detail": "Hemispherical frosted glass light diffuser at the bottom",
+   "geometry": {
+    "op": "sphere",
+    "radius": 60
+   },
+   "position": [
+    0,
+    60,
+    0
+   ],
+   "material": {
+    "color": "#e8e8e8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade_east",
+   "name": "Blade east",
+   "category": "mechanical",
+   "materialName": "Grey laminate",
+   "detail": "Fan blade on the +X side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     10,
+     110
+    ],
+    "radius": 4
+   },
+   "position": [
+    260,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "blade_north",
+   "name": "Blade north",
+   "category": "mechanical",
+   "materialName": "Grey laminate",
+   "detail": "Fan blade on the +Z side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     10,
+     110
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    150,
+    260
+   ],
+   "rotation": [
+    0,
+    -1.5708,
+    0
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "blade_west",
+   "name": "Blade west",
+   "category": "mechanical",
+   "materialName": "Grey laminate",
+   "detail": "Fan blade on the -X side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     10,
+     110
+    ],
+    "radius": 4
+   },
+   "position": [
+    -260,
+    150,
+    0
+   ],
+   "rotation": [
+    0,
+    3.1416,
+    0
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "blade_south",
+   "name": "Blade south",
+   "category": "mechanical",
+   "materialName": "Grey laminate",
+   "detail": "Fan blade on the -Z side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     10,
+     110
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    150,
+    -260
+   ],
+   "rotation": [
+    0,
+    1.5708,
+    0
+   ],
+   "material": {
+    "color": "#8a8a8a",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  }
+ ]
+}

@@ -1,0 +1,299 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Corner shelf 3 tier",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side",
+   "name": "Side panel",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "Tall left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     881,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    9,
+    440.5,
+    150
+   ],
+   "material": {
+    "color": "#d4b184",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "Rear panel forming the corner",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     282,
+     881,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    159,
+    440.5,
+    9
+   ],
+   "material": {
+    "color": "#d9b98e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_bottom",
+   "name": "Bottom shelf",
+   "category": "mechanical",
+   "materialName": "light oak laminate",
+   "detail": "Quarter-round base shelf",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      300,
+      0
+     ],
+     [
+      289.8,
+      77.6
+     ],
+     [
+      259.8,
+      150
+     ],
+     [
+      212.1,
+      212.1
+     ],
+     [
+      150,
+      259.8
+     ],
+     [
+      77.6,
+      289.8
+     ],
+     [
+      0,
+      300
+     ]
+    ],
+    "depth": 18
+   },
+   "position": [
+    0,
+    9,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#dcbc92",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_1",
+   "name": "Lower shelf",
+   "category": "mechanical",
+   "materialName": "light oak laminate",
+   "detail": "Quarter-round shelf",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      300,
+      0
+     ],
+     [
+      289.8,
+      77.6
+     ],
+     [
+      259.8,
+      150
+     ],
+     [
+      212.1,
+      212.1
+     ],
+     [
+      150,
+      259.8
+     ],
+     [
+      77.6,
+      289.8
+     ],
+     [
+      0,
+      300
+     ]
+    ],
+    "depth": 18
+   },
+   "position": [
+    0,
+    300,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#dcbc92",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_2",
+   "name": "Middle shelf",
+   "category": "mechanical",
+   "materialName": "light oak laminate",
+   "detail": "Quarter-round shelf",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      300,
+      0
+     ],
+     [
+      289.8,
+      77.6
+     ],
+     [
+      259.8,
+      150
+     ],
+     [
+      212.1,
+      212.1
+     ],
+     [
+      150,
+      259.8
+     ],
+     [
+      77.6,
+      289.8
+     ],
+     [
+      0,
+      300
+     ]
+    ],
+    "depth": 18
+   },
+   "position": [
+    0,
+    590,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#dcbc92",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_top",
+   "name": "Top shelf",
+   "category": "mechanical",
+   "materialName": "light oak laminate",
+   "detail": "Quarter-round top",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      300,
+      0
+     ],
+     [
+      289.8,
+      77.6
+     ],
+     [
+      259.8,
+      150
+     ],
+     [
+      212.1,
+      212.1
+     ],
+     [
+      150,
+      259.8
+     ],
+     [
+      77.6,
+      289.8
+     ],
+     [
+      0,
+      300
+     ]
+    ],
+    "depth": 18
+   },
+   "position": [
+    0,
+    872,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#dcbc92",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

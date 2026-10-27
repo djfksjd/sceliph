@@ -1,0 +1,163 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Leland ceramic table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Ceramic body",
+   "category": "enclosure",
+   "materialName": "ribbed blue ceramic",
+   "detail": "Capsule-shaped textured ceramic base",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      48,
+      0
+     ],
+     [
+      62,
+      5
+     ],
+     [
+      69,
+      22
+     ],
+     [
+      71,
+      60
+     ],
+     [
+      71,
+      270
+     ],
+     [
+      68,
+      298
+     ],
+     [
+      58,
+      314
+     ],
+     [
+      40,
+      322
+     ],
+     [
+      0,
+      324
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c2a47",
+    "roughness": 0.4,
+    "metalness": 0.05
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "Short socket neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 30,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    335,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Fabric shade",
+   "category": "enclosure",
+   "materialName": "cream linen",
+   "detail": "Tapered drum shade with thin closed wall",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      181,
+      330
+     ],
+     [
+      161,
+      622
+     ],
+     [
+      159,
+      622
+     ],
+     [
+      179,
+      330
+     ],
+     [
+      181,
+      330
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f3c58c",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "trim",
+   "name": "Top trim",
+   "category": "mechanical",
+   "materialName": "brown trim",
+   "detail": "Ring trim at shade top rim",
+   "geometry": {
+    "op": "torus",
+    "radius": 160,
+    "tube": 1.8
+   },
+   "position": [
+    0,
+    620,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#5a4a40",
+    "roughness": 0.7
+   }
+  }
+ ]
+}

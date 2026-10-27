@@ -1,0 +1,324 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-century buffet credenza",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "wood",
+   "detail": "Overhanging wood top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1420,
+     25,
+     430
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    800.5,
+    0
+   ],
+   "material": {
+    "color": "#a8682f",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "body",
+   "name": "Cabinet body",
+   "category": "enclosure",
+   "materialName": "wood",
+   "detail": "Four-door cabinet carcass with horizontal plank fronts",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1360,
+     390,
+     400
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    593,
+    0
+   ],
+   "material": {
+    "color": "#b0702f",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 14,
+    "depth": 398,
+    "radialSegments": 24
+   },
+   "position": [
+    -620,
+    199,
+    165
+   ],
+   "material": {
+    "color": "#a0612a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 14,
+    "depth": 398,
+    "radialSegments": 24
+   },
+   "position": [
+    620,
+    199,
+    165
+   ],
+   "material": {
+    "color": "#a0612a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 14,
+    "depth": 398,
+    "radialSegments": 24
+   },
+   "position": [
+    -620,
+    199,
+    -165
+   ],
+   "material": {
+    "color": "#a0612a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 24,
+    "radiusBottom": 14,
+    "depth": 398,
+    "radialSegments": 24
+   },
+   "position": [
+    620,
+    199,
+    -165
+   ],
+   "material": {
+    "color": "#a0612a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "rail_front",
+   "name": "Shelf front rail",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Front rail of lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1240,
+     30,
+     22
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    270,
+    165
+   ],
+   "material": {
+    "color": "#a0612a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "rail_back",
+   "name": "Shelf back rail",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Back rail of lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1240,
+     30,
+     22
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    270,
+    -165
+   ],
+   "material": {
+    "color": "#a0612a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "slats",
+   "name": "Shelf slats",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Slatted lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1220,
+     12,
+     310
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    268,
+    0
+   ],
+   "material": {
+    "color": "#6e3f1c",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "handle_1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     150,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    -365,
+    600,
+    208
+   ],
+   "material": {
+    "color": "#3a2415",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "handle_2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     150,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    -320,
+    600,
+    208
+   ],
+   "material": {
+    "color": "#3a2415",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "handle_3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     150,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    320,
+    600,
+    208
+   ],
+   "material": {
+    "color": "#3a2415",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "handle_4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "dark wood",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     150,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    365,
+    600,
+    208
+   ],
+   "material": {
+    "color": "#3a2415",
+    "roughness": 0.5
+   }
+  }
+ ]
+}

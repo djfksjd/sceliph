@@ -1,0 +1,106 @@
+{
+ "summary": {
+  "id": "speaker",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.00077775,
+  "modelIds": [
+   "claude-haiku-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00077775,
+   "durationMs": 6674,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Bookshelf Speaker\",\"units\":\"mm\",\"components\":[{\"id\":\"cabinet\",\"name\":\"Cabinet\",\"category\":\"enclosure\",\"materialName\":\"Painted MDF\",\"detail\":\"Rounded-box speaker enclosure, 200 mm wide, 320 mm tall, 240 mm deep, standing on the floor and facing +z.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[200,320,240],\"radius\":12},\"position\":[0,160,0],\"material\":{\"color\":\"#2b2b2b\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"woofer\",\"name\":\"Woofer\",\"category\":\"audio\",\"materialName\":\"Polypropylene cone driver\",\"detail\":\"160 mm diameter, 20 mm thick disc, flat faces along z, centred 110 mm above the floor and protruding 10 mm beyond the cabinet front face.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":80,\"radiusBottom\":80,\"depth\":20,\"radialSegments\":32},\"position\":[0,110,120],\"rotation\":[1.5707963,0,0],\"material\":{\"color\":\"#555555\",\"roughness\":0.8,\"metalness\":0.0}},{\"id\":\"tweeter\",\"name\":\"Tweeter\",\"category\":\"audio\",\"materialName\":\"Silk dome tweeter\",\"detail\":\"50 mm diameter, 15 mm thick disc, flat faces along z, centred 250 mm above the floor and protruding 10 mm beyond the cabinet front face.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":25,\"radiusBottom\":25,\"depth\":15,\"radialSegments\":32},\"position\":[0,250,122.5],\"rotation\":[1.5707963,0,0],\"material\":{\"color\":\"#888888\",\"roughness\":0.4,\"metalness\":0.1}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 1356,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      200,
+      320,
+      250
+     ],
+     "dimensionChecks": [
+      {
+       "id": "cw",
+       "expectedMm": 200,
+       "actualMm": 200.00000298023224,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "ch",
+       "expectedMm": 320,
+       "actualMm": 319.9999928474427,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "wd",
+       "expectedMm": 160,
+       "actualMm": 159.9999964237213,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "wt",
+       "expectedMm": 20,
+       "actualMm": 20.000003840148565,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "tt",
+       "expectedMm": 15,
+       "actualMm": 15.000001004468729,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "depth",
+       "expectedMm": 250,
+       "actualMm": 249.99999923786527,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0.0000035762786898541066,
+       "toleranceMm": 1,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

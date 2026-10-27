@@ -1,0 +1,2120 @@
+{
+ "spec": {
+  "schema": "sceliph.photo-fit-spec/0.1",
+  "referenceComponentId": "motor",
+  "viewHint": {
+   "azimuthDeg": 15,
+   "elevationDeg": 15,
+   "sigmaDeg": 20
+  },
+  "knownExtent": {
+   "axis": 1,
+   "mm": 355.59999999999997,
+   "sigmaMm": 3.5559999999999996
+  },
+  "parameters": [
+   {
+    "componentId": "light",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 50,
+    "max": 200
+   },
+   {
+    "componentId": "light",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 52.5,
+    "max": 210
+   },
+   {
+    "componentId": "light",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 40,
+    "max": 160
+   },
+   {
+    "componentId": "light",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -630.0004312390893,
+    "max": 710.0004312390893
+   },
+   {
+    "componentId": "motor",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 56,
+    "max": 224
+   },
+   {
+    "componentId": "motor",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 57.5,
+    "max": 230
+   },
+   {
+    "componentId": "motor",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 50,
+    "max": 200
+   },
+   {
+    "componentId": "rod",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 6,
+    "max": 24,
+    "links": [
+     {
+      "componentId": "rod",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rod",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 75,
+    "max": 300
+   },
+   {
+    "componentId": "rod",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -415.00043123908927,
+    "max": 925.0004312390893
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 22.5,
+    "max": 90
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 37.5,
+    "max": 150
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -334.00043123908927,
+    "max": 1006.0004312390893
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -260.00043123908927,
+    "max": 1080.0004312390893
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -1080.0004312390893,
+    "max": 260.00043123908927
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1080.0004312390893,
+    "max": 260.00043123908927
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -260.00043123908927,
+    "max": 1080.0004312390893
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -510.00043123908927,
+    "max": 830.0004312390893
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -830.0004312390893,
+    "max": 510.00043123908927
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -830.0004312390893,
+    "max": 510.00043123908927
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -510.00043123908927,
+    "max": 830.0004312390893
+   }
+  ]
+ },
+ "derived": {
+  "parameters": [
+   {
+    "componentId": "light",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 50,
+    "max": 200
+   },
+   {
+    "componentId": "light",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 52.5,
+    "max": 210
+   },
+   {
+    "componentId": "light",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 40,
+    "max": 160
+   },
+   {
+    "componentId": "light",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -630.0004312390893,
+    "max": 710.0004312390893
+   },
+   {
+    "componentId": "motor",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 56,
+    "max": 224
+   },
+   {
+    "componentId": "motor",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 57.5,
+    "max": 230
+   },
+   {
+    "componentId": "motor",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 50,
+    "max": 200
+   },
+   {
+    "componentId": "rod",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 6,
+    "max": 24,
+    "links": [
+     {
+      "componentId": "rod",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "rod",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 75,
+    "max": 300
+   },
+   {
+    "componentId": "rod",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -415.00043123908927,
+    "max": 925.0004312390893
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 22.5,
+    "max": 90
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 37.5,
+    "max": 150
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -334.00043123908927,
+    "max": 1006.0004312390893
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -260.00043123908927,
+    "max": 1080.0004312390893
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -1080.0004312390893,
+    "max": 260.00043123908927
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1080.0004312390893,
+    "max": 260.00043123908927
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -260.00043123908927,
+    "max": 1080.0004312390893
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -510.00043123908927,
+    "max": 830.0004312390893
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -830.0004312390893,
+    "max": 510.00043123908927
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -830.0004312390893,
+    "max": 510.00043123908927
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -510.00043123908927,
+    "max": 830.0004312390893
+   }
+  ],
+  "locked": [],
+  "groups": [],
+  "aligned": [
+   {
+    "componentId": "light",
+    "axis": 0
+   },
+   {
+    "componentId": "light",
+    "axis": 2
+   },
+   {
+    "componentId": "rod",
+    "axis": 0
+   },
+   {
+    "componentId": "rod",
+    "axis": 2
+   },
+   {
+    "componentId": "canopy",
+    "axis": 0
+   },
+   {
+    "componentId": "canopy",
+    "axis": 2
+   },
+   {
+    "componentId": "blade1",
+    "axis": 1
+   },
+   {
+    "componentId": "blade1",
+    "axis": 2
+   },
+   {
+    "componentId": "blade2",
+    "axis": 0
+   },
+   {
+    "componentId": "blade2",
+    "axis": 1
+   },
+   {
+    "componentId": "blade3",
+    "axis": 1
+   },
+   {
+    "componentId": "blade3",
+    "axis": 2
+   },
+   {
+    "componentId": "blade4",
+    "axis": 0
+   },
+   {
+    "componentId": "blade4",
+    "axis": 1
+   },
+   {
+    "componentId": "arm1",
+    "axis": 2
+   },
+   {
+    "componentId": "arm2",
+    "axis": 0
+   },
+   {
+    "componentId": "arm3",
+    "axis": 2
+   },
+   {
+    "componentId": "arm4",
+    "axis": 0
+   }
+  ],
+  "skipped": []
+ },
+ "anchor": {
+  "estimatedMm": 1175.3000617027283,
+  "knownMm": 355.59999999999997,
+  "scaleCorrection": 0.30256103235868187
+ },
+ "raster": {
+  "width": 160,
+  "height": 81,
+  "crop": {
+   "x": 0,
+   "y": 0,
+   "width": 636,
+   "height": 321
+  }
+ },
+ "cameraOnly": {
+  "loss": 0.24321916365152496,
+  "view": {
+   "id": "photo",
+   "iou": 0.4523924601256646,
+   "meanBoundaryDistancePx": 1.7828145136117832,
+   "depthResidual": 0.07348853443213202
+  }
+ },
+ "receipt": {
+  "schema": "sceliph.silhouette-parameter-fit/0.2",
+  "provenance": "inferred",
+  "seed": 1,
+  "parameters": [
+   {
+    "componentId": "light",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 50,
+    "max": 200,
+    "before": 100,
+    "after": 100,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00031812121122032355,
+    "frozen": true
+   },
+   {
+    "componentId": "light",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 52.5,
+    "max": 210,
+    "before": 105,
+    "after": 105,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000189792818017398,
+    "frozen": true
+   },
+   {
+    "componentId": "light",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 40,
+    "max": 160,
+    "before": 80,
+    "after": 80,
+    "spread": 24.333554179561887,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.009163708708736229,
+    "frozen": false
+   },
+   {
+    "componentId": "light",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -630.0004312390893,
+    "max": 710.0004312390893,
+    "before": 40,
+    "after": 40,
+    "spread": 12.003716671885059,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 3.597608808843299,
+    "frozen": false
+   },
+   {
+    "componentId": "motor",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 56,
+    "max": 224,
+    "before": 112,
+    "after": 112,
+    "spread": 63.452582514726856,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0022862974090908095,
+    "frozen": false
+   },
+   {
+    "componentId": "motor",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 57.5,
+    "max": 230,
+    "before": 115,
+    "after": 115,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0007106324622566662,
+    "frozen": true
+   },
+   {
+    "componentId": "motor",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 50,
+    "max": 200,
+    "before": 100,
+    "after": 100,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0010331714226514688,
+    "frozen": true
+   },
+   {
+    "componentId": "rod",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "links": [
+     {
+      "componentId": "rod",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 6,
+    "max": 24,
+    "before": 12,
+    "after": 12,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000002759375056782254,
+    "frozen": true
+   },
+   {
+    "componentId": "rod",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 75,
+    "max": 300,
+    "before": 150,
+    "after": 150,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0,
+    "frozen": true
+   },
+   {
+    "componentId": "rod",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -415.00043123908927,
+    "max": 925.0004312390893,
+    "before": 255,
+    "after": 255,
+    "spread": 26.62063810454606,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 1.3552672275523943,
+    "frozen": false
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 22.5,
+    "max": 90,
+    "before": 45,
+    "after": 45,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000026860660814420623,
+    "frozen": true
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 37.5,
+    "max": 150,
+    "before": 75,
+    "after": 75,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00025780715455059333,
+    "frozen": true
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 20,
+    "max": 80,
+    "before": 40,
+    "after": 40,
+    "spread": 11.013050163485829,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.002759873869064483,
+    "frozen": false
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -334.00043123908927,
+    "max": 1006.0004312390893,
+    "before": 336,
+    "after": 336,
+    "spread": 15.1824107003049,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 3.5879053331208457,
+    "frozen": false
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040,
+    "before": 520,
+    "after": 520,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0010090012776204915,
+    "frozen": true
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20,
+    "before": 10,
+    "after": 10,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0005054353844127224,
+    "frozen": true
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240,
+    "before": 120,
+    "after": 120,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0019526806352845871,
+    "frozen": true
+   },
+   {
+    "componentId": "blade1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -260.00043123908927,
+    "max": 1080.0004312390893,
+    "before": 410,
+    "after": 410,
+    "spread": 1071.2689233976198,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.006912836313566595,
+    "frozen": false
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040,
+    "before": 520,
+    "after": 520,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0002979671296304276,
+    "frozen": true
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20,
+    "before": 10,
+    "after": 10,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00008066131176620583,
+    "frozen": true
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240,
+    "before": 120,
+    "after": 120,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00024529628347286225,
+    "frozen": true
+   },
+   {
+    "componentId": "blade2",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -1080.0004312390893,
+    "max": 260.00043123908927,
+    "before": -410,
+    "after": -410,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0016059189803451779,
+    "frozen": true
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040,
+    "before": 520,
+    "after": 520,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00009465434078936852,
+    "frozen": true
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20,
+    "before": 10,
+    "after": 10,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00010787993104327542,
+    "frozen": true
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240,
+    "before": 120,
+    "after": 120,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.001150250336194869,
+    "frozen": true
+   },
+   {
+    "componentId": "blade3",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1080.0004312390893,
+    "max": 260.00043123908927,
+    "before": -410,
+    "after": -410,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0008439869573262371,
+    "frozen": true
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 260,
+    "max": 1040,
+    "before": 520,
+    "after": 520,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00033047100728972323,
+    "frozen": true
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 5,
+    "max": 20,
+    "before": 10,
+    "after": 10,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0001133782734674127,
+    "frozen": true
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 60,
+    "max": 240,
+    "before": 120,
+    "after": 120,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0017382237930627098,
+    "frozen": true
+   },
+   {
+    "componentId": "blade4",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -260.00043123908927,
+    "max": 1080.0004312390893,
+    "before": 410,
+    "after": 410,
+    "spread": 262.1177415101986,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.003529797093655529,
+    "frozen": false
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180,
+    "before": 90,
+    "after": 90,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00006196178331663305,
+    "frozen": true
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28,
+    "before": 14,
+    "after": 14,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000005225780168982563,
+    "frozen": true
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80,
+    "before": 40,
+    "after": 40,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00019399105372264192,
+    "frozen": true
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -510.00043123908927,
+    "max": 830.0004312390893,
+    "before": 160,
+    "after": 160,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0009679752030092859,
+    "frozen": true
+   },
+   {
+    "componentId": "arm1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893,
+    "before": 138,
+    "after": 138,
+    "spread": 113.50205164344493,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.002019254778132973,
+    "frozen": false
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180,
+    "before": 90,
+    "after": 90,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0,
+    "frozen": true
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28,
+    "before": 14,
+    "after": 14,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0000019905163689548644,
+    "frozen": true
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80,
+    "before": 40,
+    "after": 40,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00001372888046835552,
+    "frozen": true
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893,
+    "before": 138,
+    "after": 138,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00042453953819066026,
+    "frozen": true
+   },
+   {
+    "componentId": "arm2",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -830.0004312390893,
+    "max": 510.00043123908927,
+    "before": -160,
+    "after": -160,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00007274650633359858,
+    "frozen": true
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180,
+    "before": 90,
+    "after": 90,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 7.086604111306016e-7,
+    "frozen": true
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28,
+    "before": 14,
+    "after": 14,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0000018553513714270053,
+    "frozen": true
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80,
+    "before": 40,
+    "after": 40,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00020740212974362793,
+    "frozen": true
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -830.0004312390893,
+    "max": 510.00043123908927,
+    "before": -160,
+    "after": -160,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00037993995258239766,
+    "frozen": true
+   },
+   {
+    "componentId": "arm3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893,
+    "before": 138,
+    "after": 138,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.001969318475552928,
+    "frozen": true
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 45,
+    "max": 180,
+    "before": 90,
+    "after": 90,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000006111661907892696,
+    "frozen": true
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 7,
+    "max": 28,
+    "before": 14,
+    "after": 14,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.000007418481783760811,
+    "frozen": true
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 20,
+    "max": 80,
+    "before": 40,
+    "after": 40,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00003236650684368403,
+    "frozen": true
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -532.0004312390893,
+    "max": 808.0004312390893,
+    "before": 138,
+    "after": 138,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0008834909002667368,
+    "frozen": true
+   },
+   {
+    "componentId": "arm4",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -510.00043123908927,
+    "max": 830.0004312390893,
+    "before": 160,
+    "after": 160,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00018875488283565112,
+    "frozen": true
+   }
+  ],
+  "cameraParameters": [
+   {
+    "viewId": "photo",
+    "field": "azimuthDeg",
+    "prior": {
+     "mean": 15,
+     "sigma": 20
+    },
+    "min": -35,
+    "max": 65,
+    "before": 19.205905704876876,
+    "after": 19.205905704876876,
+    "spread": 2.2867968450166813,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "elevationDeg",
+    "prior": {
+     "mean": 15,
+     "sigma": 20
+    },
+    "min": -35,
+    "max": 65,
+    "before": 31.41021132589765,
+    "after": 31.41021132589765,
+    "spread": 25.26539427579877,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "distanceMm",
+    "prior": {
+     "mean": 1176.3601847720513,
+     "sigma": 294.0900461930128
+    },
+    "min": 588.1800923860256,
+    "max": 2352.7203695441026,
+    "before": 1181.917634715752,
+    "after": 1181.917634715752,
+    "spread": 70.99350059154995,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetX",
+    "min": -1377.1028659464862,
+    "max": 1302.8988590098709,
+    "before": 191.8334488005819,
+    "after": 191.8334488005819,
+    "spread": 400.1721010674353,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetY",
+    "min": -1169.6257559533208,
+    "max": 1510.3759690030363,
+    "before": 498.7008264646995,
+    "after": 498.7008264646995,
+    "spread": 330.4239976767898,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetZ",
+    "min": -1327.9440929664343,
+    "max": 1352.0576319899228,
+    "before": 530.7323117323738,
+    "after": 530.7323117323738,
+    "spread": 967.7692649985793,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "rollDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 4
+    },
+    "min": -15,
+    "max": 15,
+    "before": -0.9207241867509488,
+    "after": -0.9207241867509488,
+    "spread": 0.6666870445320843,
+    "identified": false,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "focalScale",
+    "prior": {
+     "mean": 1,
+     "sigma": 0.15
+    },
+    "min": 0.6,
+    "max": 1.6,
+    "before": 0.9650575134262083,
+    "after": 0.9650575134262083,
+    "spread": 0.11272129513915519,
+    "identified": false,
+    "atBound": false
+   }
+  ],
+  "orbits": [
+   {
+    "viewId": "photo",
+    "orbit": {
+     "width": 640,
+     "height": 321,
+     "fx": 671.1136442021899,
+     "fy": 671.1136442021899,
+     "cx": 320,
+     "cy": 160.5,
+     "target": [
+      191.8334488005819,
+      498.7008264646995,
+      530.7323117323738
+     ],
+     "azimuthDeg": 19.205905704876876,
+     "elevationDeg": 31.41021132589765,
+     "distanceMm": 1181.917634715752,
+     "rollDeg": -0.9207241867509488,
+     "focalScale": 0.9650575134262083
+    }
+   }
+  ],
+  "restarts": 2,
+  "before": {
+   "loss": 0.32173144275172366,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.24164278892072588,
+     "meanBoundaryDistancePx": 3.510751695485637,
+     "depthResidual": 0.09344050694750046
+    }
+   ]
+  },
+  "after": {
+   "loss": 0.24321916365152496,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.4523924601256646,
+     "meanBoundaryDistancePx": 1.7828145136117832,
+     "depthResidual": 0.07348853443213202
+    }
+   ]
+  },
+  "evaluations": 16106,
+  "stopReason": "maxEvaluations",
+  "compiledGeometries": 34151
+ },
+ "lowConfidenceReasons": [
+  "Object silhouette IoU 0.452 < 0.97.",
+  "Depth-shape residual 0.073 > 0.03.",
+  "light.geometry.depth is not identified by equally good restarts.",
+  "motor.geometry.radiusTop is not identified by equally good restarts.",
+  "canopy.geometry.depth is not identified by equally good restarts.",
+  "blade1.position.0 is not identified by equally good restarts.",
+  "blade4.position.2 is not identified by equally good restarts.",
+  "arm1.position.1 is not identified by equally good restarts.",
+  "camera.azimuthDeg is not identified by equally good restarts.",
+  "camera.elevationDeg is not identified by equally good restarts.",
+  "camera.distanceMm is not identified by equally good restarts.",
+  "camera.targetX is not identified by equally good restarts.",
+  "camera.targetY is not identified by equally good restarts.",
+  "camera.targetZ is not identified by equally good restarts.",
+  "camera.rollDeg is not identified by equally good restarts.",
+  "camera.focalScale is not identified by equally good restarts."
+ ],
+ "acceptance": {
+  "accept": false,
+  "relativeLossGain": 0,
+  "freeParameters": 9,
+  "iou": 0.4523924601256646,
+  "reasons": [
+   "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+   "9 free parameters removed 0.0% each (< 5.0%).",
+   "Fitted silhouette IoU 0.452 < 0.9."
+  ]
+ }
+}

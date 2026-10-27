@@ -1,0 +1,210 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Wall sconce with linen shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Linen shade",
+   "category": "enclosure",
+   "materialName": "white linen",
+   "detail": "Cylindrical drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 63,
+    "radiusBottom": 63,
+    "depth": 193,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    367.5,
+    0
+   ],
+   "material": {
+    "color": "#f1f2f4",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Vertical stem",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Vertical stem holding shade",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -141,
+      0
+     ],
+     [
+      0,
+      150,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#c9c9cb",
+    "roughness": 0.3,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "ball",
+   "name": "Ball finial",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Ball at bottom of stem",
+   "geometry": {
+    "op": "sphere",
+    "radius": 9
+   },
+   "position": [
+    0,
+    9,
+    0
+   ],
+   "material": {
+    "color": "#d8d8da",
+    "roughness": 0.15,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Wall arm",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Horizontal arm to wall plate",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      -125
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    121,
+    -62
+   ],
+   "material": {
+    "color": "#c9c9cb",
+    "roughness": 0.3,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Collar",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Joint collar at stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5.5,
+    "radiusBottom": 5.5,
+    "depth": 42,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    123,
+    0
+   ],
+   "material": {
+    "color": "#c4c4c6",
+    "roughness": 0.3,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "plate",
+   "name": "Back plate",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Rectangular wall mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     108,
+     114,
+     10
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    118,
+    -130
+   ],
+   "material": {
+    "color": "#bdbdbd",
+    "roughness": 0.35,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "screwL",
+   "name": "Left screw",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Plate screw head",
+   "geometry": {
+    "op": "sphere",
+    "radius": 4.5
+   },
+   "position": [
+    -32,
+    121,
+    -124
+   ],
+   "material": {
+    "color": "#d8d8da",
+    "roughness": 0.15,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "screwR",
+   "name": "Right screw",
+   "category": "mechanical",
+   "materialName": "polished nickel",
+   "detail": "Plate screw head",
+   "geometry": {
+    "op": "sphere",
+    "radius": 4.5
+   },
+   "position": [
+    32,
+    121,
+    -124
+   ],
+   "material": {
+    "color": "#d8d8da",
+    "roughness": 0.15,
+    "metalness": 1
+   }
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Flush-mount ceiling light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Mounting plate",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Flat top mounting disc",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 190,
+    "radiusBottom": 190,
+    "depth": 8,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    126,
+    0
+   ],
+   "material": {
+    "color": "#b8babc",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "outer_ring",
+   "name": "Outer decorative ring",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Thin band ring around the fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 200,
+    "radiusBottom": 200,
+    "depth": 14,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    108,
+    0
+   ],
+   "material": {
+    "color": "#a9acaf",
+    "roughness": 0.35,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "inner_collar",
+   "name": "Inner collar",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Collar holding the glass",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 175,
+    "radiusBottom": 170,
+    "depth": 30,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    112,
+    0
+   ],
+   "material": {
+    "color": "#c4c6c8",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Frosted glass shade",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "Closed shallow bowl dome",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      14
+     ],
+     [
+      40,
+      16
+     ],
+     [
+      90,
+      24
+     ],
+     [
+      130,
+      42
+     ],
+     [
+      158,
+      69
+     ],
+     [
+      168,
+      99
+     ],
+     [
+      170,
+      122
+     ],
+     [
+      0,
+      122
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "finial_base",
+   "name": "Finial cone",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Cone under shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 4,
+    "depth": 8,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    12,
+    0
+   ],
+   "material": {
+    "color": "#c0c2c4",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "finial_knob",
+   "name": "Finial knob",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "Small knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 8,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    4,
+    0
+   ],
+   "material": {
+    "color": "#c0c2c4",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

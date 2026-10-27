@@ -1,0 +1,178 @@
+{
+ "schema": "sceliph.assembly-truth-compare/0.1",
+ "yawDeg": 0,
+ "extentMm": 479.9999890476465,
+ "items": [
+  {
+   "componentId": "base",
+   "candidateId": "base",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 160,
+   "candidateMm": 160,
+   "relativeError": 0
+  },
+  {
+   "componentId": "base",
+   "candidateId": "base",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 20,
+   "candidateMm": 20,
+   "relativeError": 0
+  },
+  {
+   "componentId": "base",
+   "candidateId": "base",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 160,
+   "candidateMm": 160,
+   "relativeError": 0
+  },
+  {
+   "componentId": "base",
+   "candidateId": "base",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "pole",
+   "candidateId": "pole",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 16,
+   "candidateMm": 10,
+   "relativeError": 0.375
+  },
+  {
+   "componentId": "pole",
+   "candidateId": "pole",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 350,
+   "candidateMm": 240,
+   "relativeError": 0.3143
+  },
+  {
+   "componentId": "pole",
+   "candidateId": "pole",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 16,
+   "candidateMm": 10,
+   "relativeError": 0.375
+  },
+  {
+   "componentId": "pole",
+   "candidateId": "pole",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "pole",
+   "candidateId": "pole",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": 185,
+   "candidateMm": 130,
+   "relativeError": 0.1146
+  },
+  {
+   "componentId": "pole",
+   "candidateId": "pole",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "pole",
+   "candidateId": "pole",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 20,
+   "candidateMm": 20,
+   "relativeError": 0
+  },
+  {
+   "componentId": "shade",
+   "candidateId": "shade",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 190,
+   "candidateMm": 200,
+   "relativeError": 0.0526
+  },
+  {
+   "componentId": "shade",
+   "candidateId": "shade",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 120,
+   "candidateMm": 160,
+   "relativeError": 0.3333
+  },
+  {
+   "componentId": "shade",
+   "candidateId": "shade",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 190,
+   "candidateMm": 200,
+   "relativeError": 0.0526
+  },
+  {
+   "componentId": "shade",
+   "candidateId": "shade",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "shade",
+   "candidateId": "shade",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": 410,
+   "candidateMm": 320,
+   "relativeError": 0.1875
+  },
+  {
+   "componentId": "shade",
+   "candidateId": "shade",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "shade",
+   "candidateId": "shade",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 360,
+   "candidateMm": 250,
+   "relativeError": 0.2292
+  }
+ ],
+ "missingComponentIds": [],
+ "summary": {
+  "medianSizeError": 0.0526,
+  "maxSizeError": 0.375,
+  "medianPlacementError": 0,
+  "maxPlacementError": 0.2292,
+  "within5": 0.5,
+  "within10": 0.6111
+ }
+}

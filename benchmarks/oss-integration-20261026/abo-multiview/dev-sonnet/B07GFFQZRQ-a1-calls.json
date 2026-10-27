@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand - Movian Inari 1-Drawer Desk, White.\nThe product listing gives its overall height as 730 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.013223200000000001,
+   "durationMs": 6193,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":30,\"elevationDeg\":18},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian Inari 1-Drawer Desk\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Desktop\",\"category\":\"enclosure\",\"materialName\":\"white laminate\",\"detail\":\"Desk top panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[900,25,500],\"radius\":2},\"position\":[0,717.5,0],\"material\":{\"color\":\"#f2f3f4\",\"roughness\":0.6}},{\"id\":\"legl\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"white laminate\",\"detail\":\"Left side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,705,480],\"radius\":2},\"position\":[-430,352.5,0],\"material\":{\"color\":\"#eceeef\",\"roughness\":0.6}},{\"id\":\"legr\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"white laminate\",\"detail\":\"Right side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,705,480],\"radius\":2},\"position\":[430,352.5,0],\"material\":{\"color\":\"#eceeef\",\"roughness\":0.6}},{\"id\":\"back\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"white laminate\",\"detail\":\"Rear modesty panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[842,150,16],\"radius\":2},\"position\":[0,630,-225],\"material\":{\"color\":\"#e6e8e9\",\"roughness\":0.6}},{\"id\":\"drawer\",\"name\":\"Drawer box\",\"category\":\"enclosure\",\"materialName\":\"white laminate\",\"detail\":\"Drawer body\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[330,140,440],\"radius\":2},\"position\":[255,635,-10],\"material\":{\"color\":\"#e8eaeb\",\"roughness\":0.6}},{\"id\":\"front\",\"name\":\"Drawer front\",\"category\":\"enclosure\",\"materialName\":\"white laminate\",\"detail\":\"Drawer front panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[340,150,18],\"radius\":2},\"position\":[255,635,220],\"material\":{\"color\":\"#f4f5f6\",\"roughness\":0.6}},{\"id\":\"handle\",\"name\":\"Drawer handle\",\"category\":\"mechanical\",\"materialName\":\"brushed aluminium\",\"detail\":\"Bar handle\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[160,10,14],\"radius\":3},\"position\":[255,655,236],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.4,\"metalness\":0.7}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

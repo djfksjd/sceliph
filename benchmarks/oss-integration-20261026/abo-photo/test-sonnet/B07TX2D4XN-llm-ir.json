@@ -1,0 +1,163 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Two-tier cube bookcase",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "15 mm full-height side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     15,
+     592,
+     290
+    ],
+    "radius": 1
+   },
+   "position": [
+    -200,
+    296,
+    0
+   ],
+   "material": {
+    "color": "#d2b583",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "15 mm full-height side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     15,
+     592,
+     290
+    ],
+    "radius": 1
+   },
+   "position": [
+    200,
+    296,
+    0
+   ],
+   "material": {
+    "color": "#d2b583",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "Top board between sides",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     385,
+     15,
+     290
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    584.5,
+    0
+   ],
+   "material": {
+    "color": "#d8bc8c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "Bottom board between sides",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     385,
+     15,
+     290
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    7.5,
+    0
+   ],
+   "material": {
+    "color": "#d2b583",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Middle shelf",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "Fixed middle shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     385,
+     15,
+     282
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    296,
+    4
+   ],
+   "material": {
+    "color": "#d8bc8c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "Light oak MDF",
+   "detail": "Thin back board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     385,
+     577,
+     5
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    296,
+    -140
+   ],
+   "material": {
+    "color": "#c9a874",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  }
+ ]
+}

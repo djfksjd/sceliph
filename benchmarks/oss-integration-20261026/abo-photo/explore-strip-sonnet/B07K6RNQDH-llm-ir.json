@@ -1,0 +1,212 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Desk with 2 drawers",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "oak effect board",
+   "detail": "Thick desktop",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1200,
+     30,
+     550
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    735,
+    0
+   ],
+   "material": {
+    "color": "#c4a07a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "legl",
+   "name": "Left slanted leg panel",
+   "category": "enclosure",
+   "materialName": "oak effect board",
+   "detail": "Side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     705,
+     500
+    ],
+    "radius": 8
+   },
+   "position": [
+    -585,
+    352,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0.05
+   ],
+   "material": {
+    "color": "#c4a07a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "legr",
+   "name": "Right panel",
+   "category": "enclosure",
+   "materialName": "oak effect board",
+   "detail": "Side panel right",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     705,
+     500
+    ],
+    "radius": 5
+   },
+   "position": [
+    587,
+    352,
+    0
+   ],
+   "material": {
+    "color": "#c4a07a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "back",
+   "name": "Modesty panel",
+   "category": "enclosure",
+   "materialName": "oak effect board",
+   "detail": "Back rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1150,
+     200,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    610,
+    -240
+   ],
+   "material": {
+    "color": "#c4a07a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "midpanel",
+   "name": "Pedestal side panel",
+   "category": "enclosure",
+   "materialName": "oak effect board",
+   "detail": "Inner panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     705,
+     500
+    ],
+    "radius": 5
+   },
+   "position": [
+    250,
+    352,
+    0
+   ],
+   "material": {
+    "color": "#c4a07a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "box",
+   "name": "Drawer carcass",
+   "category": "enclosure",
+   "materialName": "oak effect board",
+   "detail": "Drawer housing",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     330,
+     380,
+     480
+    ],
+    "radius": 8
+   },
+   "position": [
+    420,
+    500,
+    0
+   ],
+   "material": {
+    "color": "#c4a07a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "drawer1",
+   "name": "Upper drawer front",
+   "category": "mechanical",
+   "materialName": "white laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     330,
+     190,
+     18
+    ],
+    "radius": 6
+   },
+   "position": [
+    420,
+    595,
+    250
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.4
+   }
+  },
+  {
+   "id": "drawer2",
+   "name": "Lower drawer front",
+   "category": "mechanical",
+   "materialName": "white laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     330,
+     190,
+     18
+    ],
+    "radius": 6
+   },
+   "position": [
+    420,
+    405,
+    250
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.4
+   }
+  }
+ ]
+}

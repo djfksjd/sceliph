@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Stone & Beam Lámpara de pie moderna para sala de estar con luz LED integrada – pulgadas, color negro mate.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 1245 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.026799200000000002,
+   "durationMs": 19546,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":6},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Black LED floor lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Base\",\"category\":\"mechanical\",\"materialName\":\"matte black steel\",\"detail\":\"Round weighted base\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":100,\"radiusBottom\":105,\"depth\":28,\"radialSegments\":48},\"position\":[0,14,0],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.6,\"metalness\":0.4}},{\"id\":\"pole\",\"name\":\"Pole\",\"category\":\"mechanical\",\"materialName\":\"matte black metal\",\"detail\":\"Main vertical stem\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":9,\"radiusBottom\":9,\"depth\":1190,\"radialSegments\":32},\"position\":[0,623,0],\"material\":{\"color\":\"#151515\",\"roughness\":0.5,\"metalness\":0.5}},{\"id\":\"collar\",\"name\":\"Upper collar\",\"category\":\"mechanical\",\"materialName\":\"matte black metal\",\"detail\":\"Thicker upper stem section\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":11,\"radiusBottom\":11,\"depth\":420,\"radialSegments\":32},\"position\":[0,1000,0],\"material\":{\"color\":\"#151515\",\"roughness\":0.5,\"metalness\":0.5}},{\"id\":\"arm\",\"name\":\"Arm\",\"category\":\"mechanical\",\"materialName\":\"matte black metal\",\"detail\":\"Curved arm to the lamp head\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,1195,0],[0,1228,0],[25,1232,40],[156,1226,250]],\"radius\":7},\"position\":[0,0,0],\"material\":{\"color\":\"#151515\",\"roughness\":0.5,\"metalness\":0.5}},{\"id\":\"head\",\"name\":\"LED head\",\"category\":\"logic\",\"materialName\":\"matte black metal\",\"detail\":\"Round LED light head\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":65,\"radiusBottom\":65,\"depth\":48,\"radialSegments\":48},\"position\":[156,1198,250],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.5,\"metalness\":0.4}},{\"id\":\"diffuser\",\"name\":\"Diffuser\",\"category\":\"display\",\"materialName\":\"warm light diffuser\",\"detail\":\"Underside LED diffuser\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":58,\"radiusBottom\":58,\"depth\":3,\"radialSegments\":48},\"position\":[156,1173,250],\"material\":{\"color\":\"#f3e6c4\",\"roughness\":0.4,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

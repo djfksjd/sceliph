@@ -1,0 +1,345 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Idro 4-Door Shoe Cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "dark grey wood-grain laminate",
+   "detail": "left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1592,
+     222
+    ],
+    "radius": 1
+   },
+   "position": [
+    -241,
+    816,
+    -9
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "dark grey wood-grain laminate",
+   "detail": "right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1592,
+     222
+    ],
+    "radius": 1
+   },
+   "position": [
+    241,
+    816,
+    -9
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "dark grey wood-grain laminate",
+   "detail": "top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     500,
+     18,
+     240
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    1621,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Base plinth",
+   "category": "enclosure",
+   "materialName": "dark grey laminate",
+   "detail": "recessed base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     464,
+     20,
+     200
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    10,
+    -10
+   ],
+   "material": {
+    "color": "#2e2e30",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "dark grey hardboard",
+   "detail": "back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     464,
+     1592,
+     8
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    816,
+    -116
+   ],
+   "material": {
+    "color": "#2e2e30",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door1",
+   "name": "Door 1 (bottom)",
+   "category": "mechanical",
+   "materialName": "dark grey wood-grain laminate",
+   "detail": "flip-down door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     464,
+     394,
+     18
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    217,
+    111
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door2",
+   "name": "Door 2",
+   "category": "mechanical",
+   "materialName": "dark grey wood-grain laminate",
+   "detail": "flip-down door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     464,
+     394,
+     18
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    615,
+    111
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door3",
+   "name": "Door 3",
+   "category": "mechanical",
+   "materialName": "dark grey wood-grain laminate",
+   "detail": "flip-down door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     464,
+     394,
+     18
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    1013,
+    111
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door4",
+   "name": "Door 4 (top)",
+   "category": "mechanical",
+   "materialName": "dark grey wood-grain laminate",
+   "detail": "flip-down door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     464,
+     394,
+     18
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    1411,
+    111
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "chrome",
+   "detail": "door handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     80,
+     4,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    402,
+    122
+   ],
+   "material": {
+    "color": "#c0c0c4",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "chrome",
+   "detail": "door handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     80,
+     4,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    800,
+    122
+   ],
+   "material": {
+    "color": "#c0c0c4",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "chrome",
+   "detail": "door handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     80,
+     4,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    1198,
+    122
+   ],
+   "material": {
+    "color": "#c0c0c4",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "chrome",
+   "detail": "door handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     80,
+     4,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    1596,
+    122
+   ],
+   "material": {
+    "color": "#c0c0c4",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

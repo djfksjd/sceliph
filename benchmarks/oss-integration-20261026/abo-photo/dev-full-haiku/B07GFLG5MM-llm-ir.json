@@ -1,0 +1,241 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Amazon Brand Movian Idro 4-Door Shoe Cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "carcass",
+   "name": "Cabinet carcass",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Full-height 520 x 1630 x 250 mm body with rounded edges",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     520,
+     1630,
+     250
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    815,
+    0
+   ],
+   "material": {
+    "color": "#3b3e40",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_1",
+   "name": "Bottom flip door",
+   "category": "mechanical",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Lowest flip-down shoe door, 512 x 392 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     512,
+     392,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    210,
+    134
+   ],
+   "material": {
+    "color": "#34373a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_2",
+   "name": "Lower-middle flip door",
+   "category": "mechanical",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Second flip-down shoe door, 512 x 392 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     512,
+     392,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    618,
+    134
+   ],
+   "material": {
+    "color": "#34373a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_3",
+   "name": "Upper-middle flip door",
+   "category": "mechanical",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Third flip-down shoe door, 512 x 392 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     512,
+     392,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1026,
+    134
+   ],
+   "material": {
+    "color": "#34373a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_4",
+   "name": "Top flip door",
+   "category": "mechanical",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "Highest flip-down shoe door, 512 x 392 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     512,
+     392,
+     18
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1434,
+    134
+   ],
+   "material": {
+    "color": "#34373a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle_1",
+   "name": "Handle bottom door",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium",
+   "detail": "Horizontal bar pull on the bottom door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     8,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1,
+    148
+   ],
+   "material": {
+    "color": "#b8bcc0",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle_2",
+   "name": "Handle lower-middle door",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium",
+   "detail": "Horizontal bar pull on the second door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     8,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    784,
+    148
+   ],
+   "material": {
+    "color": "#b8bcc0",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle_3",
+   "name": "Handle upper-middle door",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium",
+   "detail": "Horizontal bar pull on the third door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     8,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1192,
+    148
+   ],
+   "material": {
+    "color": "#b8bcc0",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle_4",
+   "name": "Handle top door",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium",
+   "detail": "Horizontal bar pull on the top door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     110,
+     8,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1600,
+    148
+   ],
+   "material": {
+    "color": "#b8bcc0",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

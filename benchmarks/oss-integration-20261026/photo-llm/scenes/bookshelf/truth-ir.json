@@ -1,0 +1,182 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "bookshelf-truth",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side-left",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "pine",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     900,
+     300
+    ],
+    "radius": 2
+   },
+   "position": [
+    -390,
+    450,
+    0
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "side-right",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "pine",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     900,
+     300
+    ],
+    "radius": 2
+   },
+   "position": [
+    390,
+    450,
+    0
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf-1",
+   "name": "Shelf 1",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     20,
+     300
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    60,
+    0
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf-2",
+   "name": "Shelf 2",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     20,
+     300
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    340,
+    0
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf-3",
+   "name": "Shelf 3",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     20,
+     300
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    620,
+    0
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf-4",
+   "name": "Shelf 4",
+   "category": "mechanical",
+   "materialName": "pine",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     20,
+     300
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    890,
+    0
+   ],
+   "material": {
+    "color": "#c8a878",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "hardboard",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     880,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    450,
+    -147
+   ],
+   "material": {
+    "color": "#8a7458",
+    "roughness": 0.5
+   }
+  }
+ ]
+}

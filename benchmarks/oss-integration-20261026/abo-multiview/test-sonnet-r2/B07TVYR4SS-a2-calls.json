@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Iris Ohyama Corner Shelf CX-3C Ripiani ad Angolo 3 Nicchie/3 Scaffali in Legno, Marrone.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 881 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0237317,
+   "durationMs": 19379,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-70,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Corner Shelf CX-3C\",\"units\":\"mm\",\"components\":[{\"id\":\"panelA\",\"name\":\"Back panel A\",\"category\":\"enclosure\",\"materialName\":\"light oak laminate\",\"detail\":\"flat back panel along X\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,881,18],\"radius\":2},\"position\":[150,440.5,9],\"material\":{\"color\":\"#d9b88a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"panelB\",\"name\":\"Side panel B\",\"category\":\"enclosure\",\"materialName\":\"light oak laminate\",\"detail\":\"flat side panel along Z\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,881,300],\"radius\":2},\"position\":[9,440.5,150],\"material\":{\"color\":\"#d4b283\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"shelf_top\",\"name\":\"Top shelf\",\"category\":\"mechanical\",\"materialName\":\"light oak laminate\",\"detail\":\"quarter-round top\",\"geometry\":{\"op\":\"extrude\",\"points\":[[0,0],[300,0],[297,39],[285,77],[266,112],[240,145],[212,212],[145,240],[112,266],[77,285],[39,297],[0,300]],\"depth\":18},\"rotation\":[1.5707963,0,0],\"position\":[0,872,0],\"material\":{\"color\":\"#dcbc8f\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"shelf_2\",\"name\":\"Upper shelf\",\"category\":\"mechanical\",\"materialName\":\"light oak laminate\",\"detail\":\"quarter-round shelf\",\"geometry\":{\"op\":\"extrude\",\"points\":[[0,0],[300,0],[297,39],[285,77],[266,112],[240,145],[212,212],[145,240],[112,266],[77,285],[39,297],[0,300]],\"depth\":18},\"rotation\":[1.5707963,0,0],\"position\":[0,590,0],\"material\":{\"color\":\"#dcbc8f\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"shelf_3\",\"name\":\"Lower shelf\",\"category\":\"mechanical\",\"materialName\":\"light oak laminate\",\"detail\":\"quarter-round shelf\",\"geometry\":{\"op\":\"extrude\",\"points\":[[0,0],[300,0],[297,39],[285,77],[266,112],[240,145],[212,212],[145,240],[112,266],[77,285],[39,297],[0,300]],\"depth\":18},\"rotation\":[1.5707963,0,0],\"position\":[0,300,0],\"material\":{\"color\":\"#dcbc8f\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"shelf_base\",\"name\":\"Bottom shelf\",\"category\":\"mechanical\",\"materialName\":\"light oak laminate\",\"detail\":\"quarter-round base\",\"geometry\":{\"op\":\"extrude\",\"points\":[[0,0],[300,0],[297,39],[285,77],[266,112],[240,145],[212,212],[145,240],[112,266],[77,285],[39,297],[0,300]],\"depth\":18},\"rotation\":[1.5707963,0,0],\"position\":[0,9,0],\"material\":{\"color\":\"#dcbc8f\",\"roughness\":0.7,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

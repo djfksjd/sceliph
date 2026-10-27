@@ -1,0 +1,189 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Open bookshelf",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side-left",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "light wood",
+   "detail": "900 mm tall side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     34.177399335472245,
+     900,
+     280.769978907457
+    ],
+    "radius": 2
+   },
+   "position": [
+    -391,
+    450,
+    0
+   ],
+   "material": {
+    "color": "#c9a97a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side-right",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "light wood",
+   "detail": "900 mm tall side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     34.177399335472245,
+     900,
+     280.769978907457
+    ],
+    "radius": 2
+   },
+   "position": [
+    509.2247761942327,
+    428.2504736463477,
+    -33.768344211376586
+   ],
+   "material": {
+    "color": "#c9a97a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-1",
+   "name": "Lowest shelf",
+   "category": "enclosure",
+   "materialName": "light wood",
+   "detail": "bottom shelf raised off floor",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     895.9962723044779,
+     17.751340565223146,
+     292.2713666911551
+    ],
+    "radius": 2
+   },
+   "position": [
+    54.267776295184206,
+    -43.403068318569126,
+    5.947699680794642
+   ],
+   "material": {
+    "color": "#d0b184",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-2",
+   "name": "Second shelf",
+   "category": "enclosure",
+   "materialName": "light wood",
+   "detail": "second shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     895.9962723044779,
+     17.751340565223146,
+     292.2713666911551
+    ],
+    "radius": 2
+   },
+   "position": [
+    54.267776295184206,
+    280.59447890752773,
+    5.947699680794642
+   ],
+   "material": {
+    "color": "#d0b184",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-3",
+   "name": "Third shelf",
+   "category": "enclosure",
+   "materialName": "light wood",
+   "detail": "third shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     895.9962723044779,
+     17.751340565223146,
+     292.2713666911551
+    ],
+    "radius": 2
+   },
+   "position": [
+    54.267776295184206,
+    603.5927807333011,
+    5.947699680794642
+   ],
+   "material": {
+    "color": "#d0b184",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-4",
+   "name": "Top shelf",
+   "category": "enclosure",
+   "materialName": "light wood",
+   "detail": "top shelf closing the top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     895.9962723044779,
+     17.751340565223146,
+     292.2713666911551
+    ],
+    "radius": 2
+   },
+   "position": [
+    54.267776295184206,
+    910.0804575609188,
+    5.947699680794642
+   ],
+   "material": {
+    "color": "#d0b184",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "dark hardboard",
+   "detail": "thin back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     928.5088644759026,
+     1174.8294148652483,
+     10.964137954762576
+    ],
+    "radius": 1
+   },
+   "position": [
+    0.9241766484231562,
+    328.59692052439897,
+    -182.33302618602067
+   ],
+   "material": {
+    "color": "#7a6048",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

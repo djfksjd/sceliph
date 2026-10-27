@@ -1,0 +1,106 @@
+{
+ "summary": {
+  "id": "wheel",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.03973449999999999,
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.03973449999999999,
+   "durationMs": 19546,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Bicycle Wheel\",\"units\":\"mm\",\"components\":[\n{\"id\":\"rim\",\"name\":\"Rim\",\"category\":\"mechanical\",\"materialName\":\"Anodized aluminium\",\"detail\":\"Torus rim, ring radius 300 mm, tube radius 15 mm\",\"geometry\":{\"op\":\"torus\",\"radius\":300,\"tube\":15},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c4c8\",\"roughness\":0.35,\"metalness\":0.9}},\n{\"id\":\"hub\",\"name\":\"Hub\",\"category\":\"mechanical\",\"materialName\":\"Steel\",\"detail\":\"Cylinder 60 mm diameter, 80 mm long, axis along z\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":30,\"radiusBottom\":30,\"depth\":80,\"radialSegments\":32},\"position\":[0,315,0],\"rotation\":[1.5707963,0,0],\"material\":{\"color\":\"#8a8d91\",\"roughness\":0.4,\"metalness\":0.9}},\n{\"id\":\"spoke_1\",\"name\":\"Spoke 1\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 0 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[-135,0,0],[135,0,0]],\"radius\":2},\"position\":[165,315,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_2\",\"name\":\"Spoke 2\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 22.5 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[-124.72,-51.66,0],[124.72,51.66,0]],\"radius\":2},\"position\":[152.44,378.14,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_3\",\"name\":\"Spoke 3\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 45 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[-95.46,-95.46,0],[95.46,95.46,0]],\"radius\":2},\"position\":[116.67,431.67,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_4\",\"name\":\"Spoke 4\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 67.5 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[-51.66,-124.72,0],[51.66,124.72,0]],\"radius\":2},\"position\":[63.14,467.44,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_5\",\"name\":\"Spoke 5\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 90 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-135,0],[0,135,0]],\"radius\":2},\"position\":[0,480,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_6\",\"name\":\"Spoke 6\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 112.5 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[51.66,-124.72,0],[-51.66,124.72,0]],\"radius\":2},\"position\":[-63.14,467.44,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_7\",\"name\":\"Spoke 7\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 135 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[95.46,-95.46,0],[-95.46,95.46,0]],\"radius\":2},\"position\":[-116.67,431.67,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_8\",\"name\":\"Spoke 8\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 157.5 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[124.72,-51.66,0],[-124.72,51.66,0]],\"radius\":2},\"position\":[-152.44,378.14,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_9\",\"name\":\"Spoke 9\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 180 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[135,0,0],[-135,0,0]],\"radius\":2},\"position\":[-165,315,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_10\",\"name\":\"Spoke 10\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 202.5 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[124.72,51.66,0],[-124.72,-51.66,0]],\"radius\":2},\"position\":[-152.44,251.86,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_11\",\"name\":\"Spoke 11\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 225 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[95.46,95.46,0],[-95.46,-95.46,0]],\"radius\":2},\"position\":[-116.67,198.33,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_12\",\"name\":\"Spoke 12\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 247.5 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[51.66,124.72,0],[-51.66,-124.72,0]],\"radius\":2},\"position\":[-63.14,162.56,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_13\",\"name\":\"Spoke 13\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 270 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,135,0],[0,-135,0]],\"radius\":2},\"position\":[0,150,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_14\",\"name\":\"Spoke 14\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 292.5 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[-51.66,124.72,0],[51.66,-124.72,0]],\"radius\":2},\"position\":[63.14,162.56,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_15\",\"name\":\"Spoke 15\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 315 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[-95.46,95.46,0],[95.46,-95.46,0]],\"radius\":2},\"position\":[116.67,198.33,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}},\n{\"id\":\"spoke_16\",\"name\":\"Spoke 16\",\"category\":\"mechanical\",\"materialName\":\"Stainless steel\",\"detail\":\"Spoke at 337.5 degrees\",\"geometry\":{\"op\":\"tube\",\"points\":[[-124.72,51.66,0],[124.72,-51.66,0]],\"radius\":2},\"position\":[152.44,251.86,0],\"material\":{\"color\":\"#d0d3d6\",\"roughness\":0.3,\"metalness\":0.95}}\n]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 17664,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      630,
+      630,
+      80
+     ],
+     "dimensionChecks": [
+      {
+       "id": "h",
+       "expectedMm": 630,
+       "actualMm": 629.9999952316284,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0.000002384185793236071,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "hub-l",
+       "expectedMm": 80,
+       "actualMm": 79.99999981955439,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "hub-d",
+       "expectedMm": 60,
+       "actualMm": 59.99999865889549,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "sp1-x",
+       "expectedMm": 270,
+       "actualMm": 270.0000107288361,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "sp3-x",
+       "expectedMm": 193.75,
+       "actualMm": 193.60999763011932,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "sp5-y",
+       "expectedMm": 270,
+       "actualMm": 270.00001072883606,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

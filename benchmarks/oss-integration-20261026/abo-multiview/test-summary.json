@@ -1,0 +1,974 @@
+{
+ "schema": "sceliph.abo-multiview-summary/0.1",
+ "protocolSha256": "69b07de5fad215aff09b611e9f9ffde5d91e9b3cd598113cebf572480a3b78d0",
+ "modelAlias": "sonnet",
+ "repeats": 3,
+ "items": 36,
+ "excluded": [
+  "B0825DBY38",
+  "B0825D147R",
+  "B0825DWB31"
+ ],
+ "noIr": {
+  "a1": [
+   [],
+   [],
+   []
+  ],
+  "a2": [
+   [],
+   [],
+   []
+  ]
+ },
+ "repeatSpreadFootprintMedian": {
+  "a1": 0.0456,
+  "a2": 0.0333
+ },
+ "strata": {
+  "all": {
+   "n": 33,
+   "perArm": {
+    "b0": {
+     "footprintMedian": 0.3545,
+     "heightMedian": 0.0022,
+     "chamferMedian": 0.0728,
+     "fScore2Median": 0.1667,
+     "meanIoUMedian": 0.4762,
+     "footprintP75": 0.9328
+    },
+    "b1": {
+     "footprintMedian": 0.3545,
+     "heightMedian": 0.0025,
+     "chamferMedian": 0.0452,
+     "fScore2Median": 0.2782,
+     "meanIoUMedian": 0.6049,
+     "footprintP75": 0.9328
+    },
+    "b2": {
+     "footprintMedian": 0.301,
+     "heightMedian": 0.0025,
+     "chamferMedian": 0.0324,
+     "fScore2Median": 0.4346,
+     "meanIoUMedian": 0.7104,
+     "footprintP75": 0.5412
+    },
+    "a1": {
+     "footprintMedian": 0.0844,
+     "heightMedian": 0.0034,
+     "chamferMedian": 0.0198,
+     "fScore2Median": 0.6934,
+     "meanIoUMedian": 0.7757,
+     "footprintP75": 0.1761
+    },
+    "a2": {
+     "footprintMedian": 0.071,
+     "heightMedian": 0.004,
+     "chamferMedian": 0.0161,
+     "fScore2Median": 0.7528,
+     "meanIoUMedian": 0.8138,
+     "footprintP75": 0.1291
+    }
+   },
+   "comparisons": {
+    "a2-a1": {
+     "footprint": {
+      "n": 33,
+      "median": -0.0149,
+      "ci95": [
+       -0.0261,
+       -0.0046
+      ],
+      "better": 23,
+      "worse": 10
+     },
+     "height": {
+      "n": 33,
+      "median": 0,
+      "ci95": [
+       0,
+       0.0001
+      ],
+      "better": 9,
+      "worse": 12
+     },
+     "chamfer": {
+      "n": 33,
+      "median": -0.001,
+      "ci95": [
+       -0.0037,
+       0.001
+      ],
+      "better": 20,
+      "worse": 13
+     },
+     "fScore2": {
+      "n": 33,
+      "median": 0.0144,
+      "ci95": [
+       0.0011,
+       0.0617
+      ],
+      "better": 23,
+      "worse": 10
+     },
+     "meanIoU": {
+      "n": 33,
+      "median": 0.0052,
+      "ci95": [
+       -0.0061,
+       0.0406
+      ],
+      "better": 20,
+      "worse": 13
+     }
+    },
+    "a2-b2": {
+     "footprint": {
+      "n": 33,
+      "median": -0.1525,
+      "ci95": [
+       -0.3201,
+       -0.0035
+      ],
+      "better": 22,
+      "worse": 11
+     },
+     "height": {
+      "n": 33,
+      "median": 0,
+      "ci95": [
+       0,
+       0.0006
+      ],
+      "better": 11,
+      "worse": 15
+     },
+     "chamfer": {
+      "n": 33,
+      "median": -0.0169,
+      "ci95": [
+       -0.0222,
+       -0.0122
+      ],
+      "better": 31,
+      "worse": 2
+     },
+     "fScore2": {
+      "n": 33,
+      "median": 0.3487,
+      "ci95": [
+       0.2952,
+       0.3761
+      ],
+      "better": 31,
+      "worse": 2
+     },
+     "meanIoU": {
+      "n": 33,
+      "median": 0.1319,
+      "ci95": [
+       0.0904,
+       0.1618
+      ],
+      "better": 29,
+      "worse": 4
+     }
+    },
+    "a1-b1": {
+     "footprint": {
+      "n": 33,
+      "median": -0.1559,
+      "ci95": [
+       -0.7135,
+       -0.046
+      ],
+      "better": 24,
+      "worse": 9
+     },
+     "height": {
+      "n": 33,
+      "median": 0,
+      "ci95": [
+       0,
+       0.0004
+      ],
+      "better": 9,
+      "worse": 16
+     },
+     "chamfer": {
+      "n": 33,
+      "median": -0.028,
+      "ci95": [
+       -0.034,
+       -0.0224
+      ],
+      "better": 31,
+      "worse": 2
+     },
+     "fScore2": {
+      "n": 33,
+      "median": 0.4147,
+      "ci95": [
+       0.3036,
+       0.4907
+      ],
+      "better": 31,
+      "worse": 2
+     },
+     "meanIoU": {
+      "n": 33,
+      "median": 0.2045,
+      "ci95": [
+       0.1655,
+       0.2626
+      ],
+      "better": 31,
+      "worse": 2
+     }
+    },
+    "a2-b1": {
+     "footprint": {
+      "n": 33,
+      "median": -0.2094,
+      "ci95": [
+       -0.7057,
+       -0.043
+      ],
+      "better": 25,
+      "worse": 8
+     },
+     "height": {
+      "n": 33,
+      "median": 0,
+      "ci95": [
+       0,
+       0.0006
+      ],
+      "better": 11,
+      "worse": 15
+     },
+     "chamfer": {
+      "n": 33,
+      "median": -0.0316,
+      "ci95": [
+       -0.0361,
+       -0.024
+      ],
+      "better": 32,
+      "worse": 1
+     },
+     "fScore2": {
+      "n": 33,
+      "median": 0.4694,
+      "ci95": [
+       0.4189,
+       0.5051
+      ],
+      "better": 32,
+      "worse": 1
+     },
+     "meanIoU": {
+      "n": 33,
+      "median": 0.2411,
+      "ci95": [
+       0.1942,
+       0.2654
+      ],
+      "better": 33,
+      "worse": 0
+     }
+    },
+    "b2-b1": {
+     "footprint": {
+      "n": 33,
+      "median": 0,
+      "ci95": [
+       -0.3148,
+       0
+      ],
+      "better": 16,
+      "worse": 7
+     },
+     "height": {
+      "n": 33,
+      "median": 0,
+      "ci95": [
+       0,
+       0
+      ],
+      "better": 0,
+      "worse": 0
+     },
+     "chamfer": {
+      "n": 33,
+      "median": -0.0155,
+      "ci95": [
+       -0.0207,
+       -0.0117
+      ],
+      "better": 31,
+      "worse": 2
+     },
+     "fScore2": {
+      "n": 33,
+      "median": 0.1064,
+      "ci95": [
+       0.0762,
+       0.1897
+      ],
+      "better": 30,
+      "worse": 3
+     },
+     "meanIoU": {
+      "n": 33,
+      "median": 0.1162,
+      "ci95": [
+       0.0712,
+       0.1472
+      ],
+      "better": 29,
+      "worse": 4
+     }
+    }
+   }
+  },
+  "other": {
+   "n": 12,
+   "perArm": {
+    "b0": {
+     "footprintMedian": 0.9306,
+     "heightMedian": 0.0004,
+     "chamferMedian": 0.0892,
+     "fScore2Median": 0.1883,
+     "meanIoUMedian": 0.5765,
+     "footprintP75": 1.82
+    },
+    "b1": {
+     "footprintMedian": 0.9306,
+     "heightMedian": 0.0017,
+     "chamferMedian": 0.0665,
+     "fScore2Median": 0.2357,
+     "meanIoUMedian": 0.6382,
+     "footprintP75": 1.82
+    },
+    "b2": {
+     "footprintMedian": 0.557,
+     "heightMedian": 0.0017,
+     "chamferMedian": 0.0464,
+     "fScore2Median": 0.298,
+     "meanIoUMedian": 0.7128,
+     "footprintP75": 0.9567
+    },
+    "a1": {
+     "footprintMedian": 0.0682,
+     "heightMedian": 0.0006,
+     "chamferMedian": 0.0176,
+     "fScore2Median": 0.7397,
+     "meanIoUMedian": 0.8939,
+     "footprintP75": 0.0938
+    },
+    "a2": {
+     "footprintMedian": 0.0856,
+     "heightMedian": 0.0019,
+     "chamferMedian": 0.0176,
+     "fScore2Median": 0.7518,
+     "meanIoUMedian": 0.881,
+     "footprintP75": 0.1148
+    }
+   },
+   "comparisons": {
+    "a2-a1": {
+     "footprint": {
+      "n": 12,
+      "median": 0.0056,
+      "ci95": [
+       -0.0125,
+       0.0302
+      ],
+      "better": 5,
+      "worse": 7
+     },
+     "height": {
+      "n": 12,
+      "median": 0.0001,
+      "ci95": [
+       0,
+       0.0002
+      ],
+      "better": 1,
+      "worse": 6
+     },
+     "chamfer": {
+      "n": 12,
+      "median": 0.0002,
+      "ci95": [
+       -0.0011,
+       0.0027
+      ],
+      "better": 6,
+      "worse": 6
+     },
+     "fScore2": {
+      "n": 12,
+      "median": -0.0092,
+      "ci95": [
+       -0.071,
+       0.0294
+      ],
+      "better": 6,
+      "worse": 6
+     },
+     "meanIoU": {
+      "n": 12,
+      "median": -0.0109,
+      "ci95": [
+       -0.049,
+       0.0217
+      ],
+      "better": 4,
+      "worse": 8
+     }
+    },
+    "a2-b2": {
+     "footprint": {
+      "n": 12,
+      "median": -0.4246,
+      "ci95": [
+       -0.8932,
+       -0.3245
+      ],
+      "better": 11,
+      "worse": 1
+     },
+     "height": {
+      "n": 12,
+      "median": 0.0001,
+      "ci95": [
+       -0.0002,
+       0.0003
+      ],
+      "better": 4,
+      "worse": 6
+     },
+     "chamfer": {
+      "n": 12,
+      "median": -0.0278,
+      "ci95": [
+       -0.0399,
+       -0.0212
+      ],
+      "better": 12,
+      "worse": 0
+     },
+     "fScore2": {
+      "n": 12,
+      "median": 0.4023,
+      "ci95": [
+       0.3276,
+       0.4972
+      ],
+      "better": 12,
+      "worse": 0
+     },
+     "meanIoU": {
+      "n": 12,
+      "median": 0.1562,
+      "ci95": [
+       0.0856,
+       0.1954
+      ],
+      "better": 11,
+      "worse": 1
+     }
+    },
+    "a1-b1": {
+     "footprint": {
+      "n": 12,
+      "median": -0.8435,
+      "ci95": [
+       -1.7623,
+       -0.4347
+      ],
+      "better": 11,
+      "worse": 1
+     },
+     "height": {
+      "n": 12,
+      "median": 0,
+      "ci95": [
+       -0.0003,
+       0.0002
+      ],
+      "better": 5,
+      "worse": 4
+     },
+     "chamfer": {
+      "n": 12,
+      "median": -0.052,
+      "ci95": [
+       -0.0655,
+       -0.0299
+      ],
+      "better": 12,
+      "worse": 0
+     },
+     "fScore2": {
+      "n": 12,
+      "median": 0.4997,
+      "ci95": [
+       0.4112,
+       0.5534
+      ],
+      "better": 11,
+      "worse": 1
+     },
+     "meanIoU": {
+      "n": 12,
+      "median": 0.2066,
+      "ci95": [
+       0.1794,
+       0.2914
+      ],
+      "better": 11,
+      "worse": 1
+     }
+    },
+    "a2-b1": {
+     "footprint": {
+      "n": 12,
+      "median": -0.8234,
+      "ci95": [
+       -1.7432,
+       -0.3671
+      ],
+      "better": 11,
+      "worse": 1
+     },
+     "height": {
+      "n": 12,
+      "median": 0.0001,
+      "ci95": [
+       -0.0002,
+       0.0003
+      ],
+      "better": 4,
+      "worse": 6
+     },
+     "chamfer": {
+      "n": 12,
+      "median": -0.0481,
+      "ci95": [
+       -0.0657,
+       -0.034
+      ],
+      "better": 12,
+      "worse": 0
+     },
+     "fScore2": {
+      "n": 12,
+      "median": 0.455,
+      "ci95": [
+       0.3715,
+       0.5567
+      ],
+      "better": 12,
+      "worse": 0
+     },
+     "meanIoU": {
+      "n": 12,
+      "median": 0.1956,
+      "ci95": [
+       0.1374,
+       0.2836
+      ],
+      "better": 12,
+      "worse": 0
+     }
+    },
+    "b2-b1": {
+     "footprint": {
+      "n": 12,
+      "median": -0.387,
+      "ci95": [
+       -0.8494,
+       -0.1742
+      ],
+      "better": 10,
+      "worse": 2
+     },
+     "height": {
+      "n": 12,
+      "median": 0,
+      "ci95": [
+       0,
+       0
+      ],
+      "better": 0,
+      "worse": 0
+     },
+     "chamfer": {
+      "n": 12,
+      "median": -0.018,
+      "ci95": [
+       -0.0242,
+       -0.0129
+      ],
+      "better": 11,
+      "worse": 1
+     },
+     "fScore2": {
+      "n": 12,
+      "median": 0.0639,
+      "ci95": [
+       0.0285,
+       0.0924
+      ],
+      "better": 10,
+      "worse": 2
+     },
+     "meanIoU": {
+      "n": 12,
+      "median": 0.0667,
+      "ci95": [
+       0.0492,
+       0.0733
+      ],
+      "better": 10,
+      "worse": 2
+     }
+    }
+   }
+  },
+  "thin": {
+   "n": 21,
+   "perArm": {
+    "b0": {
+     "footprintMedian": 0.1229,
+     "heightMedian": 0.0025,
+     "chamferMedian": 0.0666,
+     "fScore2Median": 0.1488,
+     "meanIoUMedian": 0.4552,
+     "footprintP75": 0.3594
+    },
+    "b1": {
+     "footprintMedian": 0.1229,
+     "heightMedian": 0.0025,
+     "chamferMedian": 0.0411,
+     "fScore2Median": 0.3465,
+     "meanIoUMedian": 0.5874,
+     "footprintP75": 0.3594
+    },
+    "b2": {
+     "footprintMedian": 0.0732,
+     "heightMedian": 0.0025,
+     "chamferMedian": 0.029,
+     "fScore2Median": 0.5055,
+     "meanIoUMedian": 0.6182,
+     "footprintP75": 0.3545
+    },
+    "a1": {
+     "footprintMedian": 0.1029,
+     "heightMedian": 0.0043,
+     "chamferMedian": 0.0199,
+     "fScore2Median": 0.6738,
+     "meanIoUMedian": 0.7349,
+     "footprintP75": 0.2171
+    },
+    "a2": {
+     "footprintMedian": 0.0523,
+     "heightMedian": 0.0042,
+     "chamferMedian": 0.0151,
+     "fScore2Median": 0.7805,
+     "meanIoUMedian": 0.7941,
+     "footprintP75": 0.1291
+    }
+   },
+   "comparisons": {
+    "a2-a1": {
+     "footprint": {
+      "n": 21,
+      "median": -0.0261,
+      "ci95": [
+       -0.0596,
+       -0.0093
+      ],
+      "better": 18,
+      "worse": 3
+     },
+     "height": {
+      "n": 21,
+      "median": 0,
+      "ci95": [
+       -0.0002,
+       0
+      ],
+      "better": 8,
+      "worse": 6
+     },
+     "chamfer": {
+      "n": 21,
+      "median": -0.0019,
+      "ci95": [
+       -0.0093,
+       0.001
+      ],
+      "better": 14,
+      "worse": 7
+     },
+     "fScore2": {
+      "n": 21,
+      "median": 0.0441,
+      "ci95": [
+       0.0036,
+       0.1689
+      ],
+      "better": 17,
+      "worse": 4
+     },
+     "meanIoU": {
+      "n": 21,
+      "median": 0.0354,
+      "ci95": [
+       0.002,
+       0.0771
+      ],
+      "better": 16,
+      "worse": 5
+     }
+    },
+    "a2-b2": {
+     "footprint": {
+      "n": 21,
+      "median": -0.0035,
+      "ci95": [
+       -0.1525,
+       0.0075
+      ],
+      "better": 11,
+      "worse": 10
+     },
+     "height": {
+      "n": 21,
+      "median": 0,
+      "ci95": [
+       -0.0005,
+       0.0006
+      ],
+      "better": 7,
+      "worse": 9
+     },
+     "chamfer": {
+      "n": 21,
+      "median": -0.0122,
+      "ci95": [
+       -0.0161,
+       -0.0085
+      ],
+      "better": 19,
+      "worse": 2
+     },
+     "fScore2": {
+      "n": 21,
+      "median": 0.3032,
+      "ci95": [
+       0.1746,
+       0.3528
+      ],
+      "better": 19,
+      "worse": 2
+     },
+     "meanIoU": {
+      "n": 21,
+      "median": 0.1256,
+      "ci95": [
+       0.0335,
+       0.1461
+      ],
+      "better": 18,
+      "worse": 3
+     }
+    },
+    "a1-b1": {
+     "footprint": {
+      "n": 21,
+      "median": -0.0561,
+      "ci95": [
+       -0.1833,
+       0.0073
+      ],
+      "better": 13,
+      "worse": 8
+     },
+     "height": {
+      "n": 21,
+      "median": 0.0003,
+      "ci95": [
+       0,
+       0.001
+      ],
+      "better": 4,
+      "worse": 12
+     },
+     "chamfer": {
+      "n": 21,
+      "median": -0.0224,
+      "ci95": [
+       -0.028,
+       -0.0159
+      ],
+      "better": 19,
+      "worse": 2
+     },
+     "fScore2": {
+      "n": 21,
+      "median": 0.3036,
+      "ci95": [
+       0.2434,
+       0.4187
+      ],
+      "better": 20,
+      "worse": 1
+     },
+     "meanIoU": {
+      "n": 21,
+      "median": 0.2045,
+      "ci95": [
+       0.1491,
+       0.2626
+      ],
+      "better": 20,
+      "worse": 1
+     }
+    },
+    "a2-b1": {
+     "footprint": {
+      "n": 21,
+      "median": -0.0702,
+      "ci95": [
+       -0.2687,
+       0.0027
+      ],
+      "better": 14,
+      "worse": 7
+     },
+     "height": {
+      "n": 21,
+      "median": 0,
+      "ci95": [
+       -0.0005,
+       0.0006
+      ],
+      "better": 7,
+      "worse": 9
+     },
+     "chamfer": {
+      "n": 21,
+      "median": -0.0253,
+      "ci95": [
+       -0.0316,
+       -0.0228
+      ],
+      "better": 20,
+      "worse": 1
+     },
+     "fScore2": {
+      "n": 21,
+      "median": 0.4849,
+      "ci95": [
+       0.403,
+       0.5551
+      ],
+      "better": 20,
+      "worse": 1
+     },
+     "meanIoU": {
+      "n": 21,
+      "median": 0.2483,
+      "ci95": [
+       0.199,
+       0.2923
+      ],
+      "better": 21,
+      "worse": 0
+     }
+    },
+    "b2-b1": {
+     "footprint": {
+      "n": 21,
+      "median": 0,
+      "ci95": [
+       0,
+       0
+      ],
+      "better": 6,
+      "worse": 5
+     },
+     "height": {
+      "n": 21,
+      "median": 0,
+      "ci95": [
+       0,
+       0
+      ],
+      "better": 0,
+      "worse": 0
+     },
+     "chamfer": {
+      "n": 21,
+      "median": -0.0143,
+      "ci95": [
+       -0.0232,
+       -0.0109
+      ],
+      "better": 20,
+      "worse": 1
+     },
+     "fScore2": {
+      "n": 21,
+      "median": 0.1937,
+      "ci95": [
+       0.1157,
+       0.2487
+      ],
+      "better": 20,
+      "worse": 1
+     },
+     "meanIoU": {
+      "n": 21,
+      "median": 0.1486,
+      "ci95": [
+       0.1193,
+       0.1889
+      ],
+      "better": 19,
+      "worse": 2
+     }
+    }
+   }
+  }
+ },
+ "criteria": [
+  {
+   "id": "footprint-gain",
+   "rule": "thin: median paired (a2 − a1) footprint error < 0 and bootstrap 95% CI upper bound < 0",
+   "pass": true
+  },
+  {
+   "id": "no-shape-loss",
+   "rule": "thin: median paired (a2 − a1) Chamfer/diag ≤ +0.001",
+   "pass": true
+  },
+  {
+   "id": "beats-hull",
+   "rule": "all: median paired (a2 − b2) Chamfer/diag < 0 and bootstrap 95% CI upper bound < 0",
+   "pass": true
+  },
+  {
+   "id": "absolute-footprint",
+   "rule": "thin: a2 footprint error median ≤ 10%",
+   "pass": true
+  }
+ ],
+ "totalCostUsd": 5.231
+}

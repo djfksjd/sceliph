@@ -1,0 +1,791 @@
+{
+ "schema": "sceliph.llm-correction-tasks/0.1",
+ "registeredAt": "2026-10-26",
+ "version": 2,
+ "guide": "You write Sceliph AssemblyIR JSON. Output exactly one JSON object and nothing else.\nFormat: {\"schema\":\"morphloom.assembly/0.1\",\"name\":string,\"units\":\"mm\",\"components\":[component,...]}\ncomponent: {\"id\":string,\"name\":string,\"category\":one of \"enclosure\",\"display\",\"logic\",\"power\",\"camera\",\"audio\",\"radio\",\"mechanical\",\"interconnect\",\"materialName\":string,\"detail\":string,\"geometry\":geometry,\"position\":[x,y,z] (optional, mm, centre of the part),\"rotation\":[rx,ry,rz] (optional, radians, XYZ Euler),\"material\":{\"color\":\"#rrggbb\",\"roughness\":0..1 (optional),\"metalness\":0..1 (optional)}}\nWorld: millimetres, Y is up, the floor is y = 0. Each geometry is centred on the component position.\ngeometry options:\n- {\"op\":\"roundedBox\",\"size\":[x,y,z],\"radius\":r}  (r at most 0.4 x the smallest size)\n- {\"op\":\"cylinder\",\"radiusTop\":r1,\"radiusBottom\":r2,\"depth\":h,\"radialSegments\":32}  (axis along Y, height h)\n- {\"op\":\"sphere\",\"radius\":r}\n- {\"op\":\"torus\",\"radius\":R,\"tube\":t}  (ring lies in the XY plane; its axis is Z; outer diameter 2(R+t))\n- {\"op\":\"tube\",\"points\":[[x,y,z],...],\"radius\":r}  (swept circle through the points, relative to the component position)\nUse exactly the component ids the request names.",
+ "protocol": {
+  "models": [
+   "haiku",
+   "sonnet"
+  ],
+  "maxRounds": 3,
+  "runsPerTask": 1,
+  "note": "Registered after v1 reached a ceiling (6/6 first try). Fixed before any v2 model call; failures are kept."
+ },
+ "tasks": [
+  {
+   "id": "spiral_stair",
+   "request": "A spiral staircase on the floor. Component ids: column, step_1 ... step_12. The column is a vertical cylinder 100 mm in diameter from the floor to 2400 mm. Each step is a flat rounded box (corner radius at most 5 mm) 600 mm long radially, 250 mm wide and 30 mm thick, whose inner end touches the column surface, so it spans radius 50 mm to 650 mm from the column axis. The top surface of step k is at k x 200 mm. step_1 points along +x and each following step is rotated a further 30 degrees about the vertical axis.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "column",
+     "step_1",
+     "step_2",
+     "step_3",
+     "step_4",
+     "step_5",
+     "step_6",
+     "step_7",
+     "step_8",
+     "step_9",
+     "step_10",
+     "step_11",
+     "step_12"
+    ],
+    "dimensions": [
+     {
+      "id": "col",
+      "label": "Column height",
+      "target": {
+       "kind": "component",
+       "componentId": "column"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 2400,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "s1-top",
+      "label": "Step 1 top",
+      "target": {
+       "kind": "component",
+       "componentId": "step_1"
+      },
+      "axis": "y",
+      "measurement": "max",
+      "expectedMm": 200,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "s12-top",
+      "label": "Step 12 top",
+      "target": {
+       "kind": "component",
+       "componentId": "step_12"
+      },
+      "axis": "y",
+      "measurement": "max",
+      "expectedMm": 2400,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "s2-x",
+      "label": "Step 2 footprint x",
+      "target": {
+       "kind": "component",
+       "componentId": "step_2"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 644.62,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "s2-z",
+      "label": "Step 2 footprint z",
+      "target": {
+       "kind": "component",
+       "componentId": "step_2"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 516.51,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "s4-x",
+      "label": "Step 4 footprint x",
+      "target": {
+       "kind": "component",
+       "componentId": "step_4"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 250,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "s4-z",
+      "label": "Step 4 footprint z",
+      "target": {
+       "kind": "component",
+       "componentId": "step_4"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 600,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     }
+    ],
+    "maxTriangles": 200000
+   }
+  },
+  {
+   "id": "wheel",
+   "request": "A bicycle-style wheel standing upright in the XY plane and touching the floor. Component ids: rim, hub, spoke_1 ... spoke_16. The rim is a torus with ring radius 300 mm and tube radius 15 mm, centred at height 315 mm. The hub is a cylinder 60 mm in diameter and 80 mm long whose axis is along z, at the wheel centre. Each spoke is a straight tube of radius 2 mm from the hub surface (30 mm from the centre) to the rim centreline (300 mm from the centre), in the XY plane; spoke_1 points along +x and the spokes are spaced 22.5 degrees apart.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "rim",
+     "hub",
+     "spoke_1",
+     "spoke_2",
+     "spoke_3",
+     "spoke_4",
+     "spoke_5",
+     "spoke_6",
+     "spoke_7",
+     "spoke_8",
+     "spoke_9",
+     "spoke_10",
+     "spoke_11",
+     "spoke_12",
+     "spoke_13",
+     "spoke_14",
+     "spoke_15",
+     "spoke_16"
+    ],
+    "dimensions": [
+     {
+      "id": "h",
+      "label": "Overall height",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 630,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "hub-l",
+      "label": "Hub length",
+      "target": {
+       "kind": "component",
+       "componentId": "hub"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 80,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "hub-d",
+      "label": "Hub diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "hub"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 60,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "sp1-x",
+      "label": "Spoke 1 extent x",
+      "target": {
+       "kind": "component",
+       "componentId": "spoke_1"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 270,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "sp3-x",
+      "label": "Spoke 3 extent x",
+      "target": {
+       "kind": "component",
+       "componentId": "spoke_3"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 193.75,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "sp5-y",
+      "label": "Spoke 5 extent y",
+      "target": {
+       "kind": "component",
+       "componentId": "spoke_5"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 270,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     }
+    ],
+    "maxTriangles": 200000
+   }
+  },
+  {
+   "id": "chair",
+   "request": "A chair on the floor facing +z. Component ids: seat, leg_fl, leg_fr, leg_bl, leg_br, backrest. The seat is a rounded box 450 mm wide (x), 40 mm thick and 450 mm deep (z) whose top surface is 450 mm above the floor. The four legs are vertical cylinders 30 mm in diameter from the floor to the underside of the seat, their axes 30 mm in from each seat edge. The backrest is a rounded box (corner radius at most 5 mm) 450 mm wide, 500 mm tall and 30 mm thick, tilted backward (top toward -z) by 10 degrees about the x axis, with its bottom edge resting on the rear edge of the seat top.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "seat",
+     "leg_fl",
+     "leg_fr",
+     "leg_bl",
+     "leg_br",
+     "backrest"
+    ],
+    "dimensions": [
+     {
+      "id": "seat-top",
+      "label": "Seat top",
+      "target": {
+       "kind": "component",
+       "componentId": "seat"
+      },
+      "axis": "y",
+      "measurement": "max",
+      "expectedMm": 450,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "seat-t",
+      "label": "Seat thickness",
+      "target": {
+       "kind": "component",
+       "componentId": "seat"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 40,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "leg",
+      "label": "Leg length",
+      "target": {
+       "kind": "component",
+       "componentId": "leg_br"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 410,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "back-y",
+      "label": "Backrest vertical extent",
+      "target": {
+       "kind": "component",
+       "componentId": "backrest"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 497.61,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "back-z",
+      "label": "Backrest depth extent",
+      "target": {
+       "kind": "component",
+       "componentId": "backrest"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 116.37,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     }
+    ],
+    "maxTriangles": 200000
+   }
+  },
+  {
+   "id": "arch",
+   "request": "A stone arch made of 9 blocks standing on the floor. Component ids: block_1 ... block_9. Every block is a rounded box (corner radius at most 5 mm) 300 mm long in the radial direction, 200 mm long tangentially and 400 mm deep along z. The block centres lie on a semicircle of radius 1000 mm in the XY plane centred at the origin on the floor, at angles 10, 30, 50, ..., 170 degrees measured from +x toward +y, and each block's radial length points away from the origin along its angle.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "block_1",
+     "block_2",
+     "block_3",
+     "block_4",
+     "block_5",
+     "block_6",
+     "block_7",
+     "block_8",
+     "block_9"
+    ],
+    "dimensions": [
+     {
+      "id": "b5-top",
+      "label": "Keystone top",
+      "target": {
+       "kind": "component",
+       "componentId": "block_5"
+      },
+      "axis": "y",
+      "measurement": "max",
+      "expectedMm": 1150,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "b5-y",
+      "label": "Keystone vertical extent",
+      "target": {
+       "kind": "component",
+       "componentId": "block_5"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 300,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "b5-x",
+      "label": "Keystone horizontal extent",
+      "target": {
+       "kind": "component",
+       "componentId": "block_5"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 200,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "b1-x",
+      "label": "Block 1 horizontal extent",
+      "target": {
+       "kind": "component",
+       "componentId": "block_1"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 330.17,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "span",
+      "label": "Overall span",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 2299.79,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "depth",
+      "label": "Depth",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 400,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     }
+    ],
+    "maxTriangles": 200000
+   }
+  },
+  {
+   "id": "pipe",
+   "request": "An L-shaped pipe on a floor flange. Component ids: flange, pipe_vertical, pipe_horizontal. The flange is a cylinder 120 mm in diameter and 20 mm tall resting on the floor, centred on the origin. pipe_vertical is a straight tube of radius 25 mm whose centreline runs from (0, 0, 0) to (0, 800, 0). pipe_horizontal is a straight tube of radius 25 mm whose centreline runs from (0, 800, 0) to (600, 800, 0).",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "flange",
+     "pipe_vertical",
+     "pipe_horizontal"
+    ],
+    "dimensions": [
+     {
+      "id": "fl",
+      "label": "Flange height",
+      "target": {
+       "kind": "component",
+       "componentId": "flange"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 20,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "pv-y",
+      "label": "Vertical pipe extent",
+      "target": {
+       "kind": "component",
+       "componentId": "pipe_vertical"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 800,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "pv-x",
+      "label": "Vertical pipe diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "pipe_vertical"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 50,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "ph-x",
+      "label": "Horizontal pipe extent",
+      "target": {
+       "kind": "component",
+       "componentId": "pipe_horizontal"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 600,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "ph-y",
+      "label": "Horizontal pipe diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "pipe_horizontal"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 50,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "span",
+      "label": "Overall width",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 660,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     }
+    ],
+    "maxTriangles": 200000
+   }
+  },
+  {
+   "id": "drawers",
+   "request": "A three-drawer cabinet on the floor facing +z. Component ids: carcass, drawer_1, drawer_2, drawer_3, handle_1, handle_2, handle_3. The carcass is a rounded box 600 mm wide (x), 900 mm tall (y) and 500 mm deep (z) centred on x = 0 and z = 0. The three drawer fronts are boards 580 mm wide, 280 mm tall and 20 mm thick mounted on the carcass front face, stacked from drawer_1 at the bottom with 15 mm gaps between them and at the bottom and top. Each handle is a horizontal cylinder 12 mm in diameter and 200 mm long running along x, centred on its drawer front and with its axis 30 mm in front of the drawer front surface.",
+   "requirements": {
+    "schema": "sceliph.assembly-requirements/0.1",
+    "requiredComponentIds": [
+     "carcass",
+     "drawer_1",
+     "drawer_2",
+     "drawer_3",
+     "handle_1",
+     "handle_2",
+     "handle_3"
+    ],
+    "dimensions": [
+     {
+      "id": "d3-top",
+      "label": "Top drawer top",
+      "target": {
+       "kind": "component",
+       "componentId": "drawer_3"
+      },
+      "axis": "y",
+      "measurement": "max",
+      "expectedMm": 885,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "d1-bot",
+      "label": "Bottom drawer bottom",
+      "target": {
+       "kind": "component",
+       "componentId": "drawer_1"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 15,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "h2-x",
+      "label": "Handle length",
+      "target": {
+       "kind": "component",
+       "componentId": "handle_2"
+      },
+      "axis": "x",
+      "measurement": "size",
+      "expectedMm": 200,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "h2-y",
+      "label": "Handle diameter",
+      "target": {
+       "kind": "component",
+       "componentId": "handle_2"
+      },
+      "axis": "y",
+      "measurement": "size",
+      "expectedMm": 12,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "h1-front",
+      "label": "Handle front",
+      "target": {
+       "kind": "component",
+       "componentId": "handle_1"
+      },
+      "axis": "z",
+      "measurement": "max",
+      "expectedMm": 306,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "depth",
+      "label": "Overall depth",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "z",
+      "measurement": "size",
+      "expectedMm": 556,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     },
+     {
+      "id": "floor",
+      "label": "Lowest point",
+      "target": {
+       "kind": "assembly"
+      },
+      "axis": "y",
+      "measurement": "min",
+      "expectedMm": 0,
+      "toleranceMm": 1.5,
+      "evidence": {
+       "status": "datasheet",
+       "source": "pre-registered task specification v2"
+      }
+     }
+    ],
+    "maxTriangles": 200000
+   }
+  }
+ ]
+}

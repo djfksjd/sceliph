@@ -1,0 +1,21 @@
+{
+ "request": "Photo: a coffee mug with a ring-shaped handle.\nThe mug is 95 mm tall.\nThe camera's horizontal field of view is 45 degrees.\nModel it with exactly these components: \"body\" (the mug body (a cylinder, possibly slightly tapered)), \"handle\" (the handle (a torus)).",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00115449,
+   "durationMs": 12422,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":15},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Coffee mug with ring handle\",\"units\":\"mm\",\"components\":[{\"id\":\"body\",\"name\":\"Mug body\",\"category\":\"enclosure\",\"materialName\":\"Glazed ceramic\",\"detail\":\"Slightly tapered cylindrical mug body, 95 mm tall, open-top cup form\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":42,\"radiusBottom\":37,\"depth\":95,\"radialSegments\":32},\"position\":[0,47.5,0],\"material\":{\"color\":\"#2b6e8c\",\"roughness\":0.4,\"metalness\":0.0}},{\"id\":\"handle\",\"name\":\"Mug handle\",\"category\":\"mechanical\",\"materialName\":\"Glazed ceramic\",\"detail\":\"Ring-shaped handle attached to the +X side of the body, lying in the XY plane\",\"geometry\":{\"op\":\"torus\",\"radius\":27.5,\"tube\":4.5},\"position\":[50,43.5,0],\"material\":{\"color\":\"#2b6e8c\",\"roughness\":0.4,\"metalness\":0.0}}]}}",
+   "stage": "pass",
+   "issues": []
+  }
+ ]
+}

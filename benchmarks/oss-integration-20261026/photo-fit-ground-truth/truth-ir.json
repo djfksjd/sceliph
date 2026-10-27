@@ -1,0 +1,53 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "photo-fit-truth",
+ "units": "mm",
+ "components": [
+  {
+   "id": "box",
+   "name": "Box",
+   "category": "enclosure",
+   "materialName": "box",
+   "detail": "ground-truth fixture",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     150,
+     200
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    75,
+    0
+   ],
+   "material": {
+    "color": "#8c4020"
+   }
+  },
+  {
+   "id": "post",
+   "name": "Post",
+   "category": "mechanical",
+   "materialName": "post",
+   "detail": "ground-truth fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 40,
+    "radiusBottom": 40,
+    "depth": 180,
+    "radialSegments": 32
+   },
+   "position": [
+    60,
+    240,
+    -20
+   ],
+   "material": {
+    "color": "#335999"
+   }
+  }
+ ]
+}

@@ -1,0 +1,352 @@
+{
+  "schema": "sceliph.photo-shape-fit/0.1",
+  "provenance": "inferred",
+  "writesInputIR": false,
+  "inputs": {
+    "imageSha256": "9b7f7400c26ad4caa62a95b0ee455a9c441742683dbcd441e66fadfab537f751",
+    "irSha256": "4a91f84a44f88fa04701e5645596346cb1f0b992a8d2fd234c93aaf799e4fd30",
+    "specSha256": "f80a54fe1bdb42fc55f8b51b1a47e78d704e202666ccbe25e1155e15479e565f",
+    "segmentationObjectSha256": "bb3d18d6abd7b2014de50a4b963f2e832ecbf49ccd2a8590342e24484fbbc857",
+    "mogeModel": {
+      "id": "Ruicheng/moge-2-vits-normal-onnx@e50ffda41565591092adea54c6ac83d6212e1e23",
+      "sha256": "24eacb5dc7a2c54c7bc98f7de085ffbed79ad006ea5b664c2c2cdc02ff3a52f0"
+    }
+  },
+  "lowConfidenceReasons": [],
+  "anchor": {
+    "estimatedMm": 1017.5062613466707,
+    "knownMm": 260,
+    "scaleCorrection": 0.2555266831045243
+  },
+  "raster": {
+    "width": 160,
+    "height": 120
+  },
+  "initialOrbit": {
+    "width": 160,
+    "height": 120,
+    "fx": 196.2795836990014,
+    "fy": 196.2795836990014,
+    "cx": 80,
+    "cy": 60,
+    "target": [
+      -3.9872157909975052,
+      131.06970607795418,
+      1.9973398056376688
+    ],
+    "azimuthDeg": 25,
+    "elevationDeg": 5,
+    "distanceMm": 876.1224664008656,
+    "rollDeg": 0,
+    "focalScale": 1
+  },
+  "fit": {
+    "schema": "sceliph.silhouette-parameter-fit/0.2",
+    "provenance": "inferred",
+    "seed": 1,
+    "parameters": [
+      {
+        "componentId": "box",
+        "path": [
+          "geometry",
+          "size",
+          1
+        ],
+        "min": 60,
+        "max": 300,
+        "before": 110,
+        "after": 155.37106838569713,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "componentId": "box",
+        "path": [
+          "geometry",
+          "size",
+          2
+        ],
+        "min": 60,
+        "max": 400,
+        "before": 260,
+        "after": 313.30848220883684,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "componentId": "post",
+        "path": [
+          "geometry",
+          "radiusTop"
+        ],
+        "min": 10,
+        "max": 80,
+        "before": 28,
+        "after": 37.148397944279886,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "componentId": "post",
+        "path": [
+          "geometry",
+          "radiusBottom"
+        ],
+        "min": 10,
+        "max": 80,
+        "before": 28,
+        "after": 40.59390666641598,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "componentId": "post",
+        "path": [
+          "geometry",
+          "depth"
+        ],
+        "min": 60,
+        "max": 300,
+        "before": 130,
+        "after": 191.18533923601947,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "componentId": "post",
+        "path": [
+          "position",
+          0
+        ],
+        "min": -150,
+        "max": 150,
+        "before": 30,
+        "after": 62.1047927081255,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "componentId": "post",
+        "path": [
+          "position",
+          1
+        ],
+        "min": 100,
+        "max": 450,
+        "before": 200,
+        "after": 218.6243967248912,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "componentId": "post",
+        "path": [
+          "position",
+          2
+        ],
+        "min": -150,
+        "max": 150,
+        "before": 10,
+        "after": 52.982249443513695,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      }
+    ],
+    "cameraParameters": [
+      {
+        "viewId": "photo",
+        "field": "azimuthDeg",
+        "prior": {
+          "mean": 25,
+          "sigma": 25
+        },
+        "min": -37.5,
+        "max": 87.5,
+        "before": 25,
+        "after": 11.264418898716443,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "viewId": "photo",
+        "field": "elevationDeg",
+        "prior": {
+          "mean": 5,
+          "sigma": 25
+        },
+        "min": -57.5,
+        "max": 67.5,
+        "before": 5,
+        "after": 10.354596970672674,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "viewId": "photo",
+        "field": "distanceMm",
+        "prior": {
+          "mean": 876.1224664008656,
+          "sigma": 219.0306166002164
+        },
+        "min": 438.0612332004328,
+        "max": 1752.2449328017312,
+        "before": 876.1224664008656,
+        "after": 1014.4213613937363,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "viewId": "photo",
+        "field": "targetX",
+        "min": -303.98722771192644,
+        "max": 296.0127961299315,
+        "before": -3.9872157909975052,
+        "after": -14.36540976866894,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "viewId": "photo",
+        "field": "targetY",
+        "min": -168.93030584297478,
+        "max": 431.0697179988831,
+        "before": 131.06970607795418,
+        "after": 69.14075433117935,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "viewId": "photo",
+        "field": "targetZ",
+        "min": -298.00267211529126,
+        "max": 301.99735172656665,
+        "before": 1.9973398056376688,
+        "after": -11.053708061414568,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "viewId": "photo",
+        "field": "rollDeg",
+        "prior": {
+          "mean": 0,
+          "sigma": 4
+        },
+        "min": -15,
+        "max": 15,
+        "before": 0,
+        "after": 0.1046782038345846,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      },
+      {
+        "viewId": "photo",
+        "field": "focalScale",
+        "prior": {
+          "mean": 1,
+          "sigma": 0.15
+        },
+        "min": 0.6,
+        "max": 1.6,
+        "before": 1,
+        "after": 1.0017409091691527,
+        "spread": 0,
+        "identified": true,
+        "atBound": false
+      }
+    ],
+    "orbits": [
+      {
+        "viewId": "photo",
+        "orbit": {
+          "width": 160,
+          "height": 120,
+          "fx": 196.2795836990014,
+          "fy": 196.2795836990014,
+          "cx": 80,
+          "cy": 60,
+          "target": [
+            -14.36540976866894,
+            69.14075433117935,
+            -11.053708061414568
+          ],
+          "azimuthDeg": 11.264418898716443,
+          "elevationDeg": 10.354596970672674,
+          "distanceMm": 1014.4213613937363,
+          "rollDeg": 0.1046782038345846,
+          "focalScale": 1.0017409091691527
+        }
+      }
+    ],
+    "restarts": 2,
+    "before": {
+      "loss": 0.41813523990192714,
+      "views": [
+        {
+          "id": "photo",
+          "iou": 0.4390557939914163,
+          "meanBoundaryDistancePx": 2.490324747639017,
+          "parts": [
+            {
+              "id": "box",
+              "iou": 0.44570837642192346,
+              "meanBoundaryDistancePx": 2.528500892609847
+            },
+            {
+              "id": "post",
+              "iou": 0.18463180362860193,
+              "meanBoundaryDistancePx": 4.648942287228399
+            }
+          ],
+          "depthResidual": 0.055866666957095426
+        }
+      ]
+    },
+    "after": {
+      "loss": 0.026196395989394522,
+      "views": [
+        {
+          "id": "photo",
+          "iou": 0.9826999432785025,
+          "meanBoundaryDistancePx": 0.010626012316878758,
+          "parts": [
+            {
+              "id": "box",
+              "iou": 0.9801277501774308,
+              "meanBoundaryDistancePx": 0.012501277611199875
+            },
+            {
+              "id": "post",
+              "iou": 0.9872881355932204,
+              "meanBoundaryDistancePx": 0.006371994342291372
+            }
+          ],
+          "depthResidual": 0.021794075586082703
+        }
+      ]
+    },
+    "evaluations": 8019,
+    "stopReason": "maxEvaluations",
+    "compiledGeometries": 16034
+  },
+  "limitations": [
+    "Camera and shape come from one photo, model-estimated depth and masks; values are inferred, not measured.",
+    "Only parameters declared in the spec move; everything else is taken from the input IR.",
+    "Occluded geometry is constrained only by priors and bounds; check per-parameter identification."
+  ]
+}

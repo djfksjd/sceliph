@@ -1,0 +1,311 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Artum Hill BE5-539 Kensington Dresser, 6-Drawer, Limestone Gray",
+ "units": "mm",
+ "components": [
+  {
+   "id": "carcass",
+   "name": "Dresser carcass",
+   "category": "enclosure",
+   "materialName": "Limed oak",
+   "detail": "Main case body, 1450 x 780 x 480 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1647.8803372556365,
+     938.1578632639347,
+     480
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    540,
+    0
+   ],
+   "material": {
+    "color": "#b8ab94",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "Limed oak",
+   "detail": "Overhanging top slab, 86 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1490,
+     109.13152551384894,
+     510
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    441.3317572883217,
+    0
+   ],
+   "material": {
+    "color": "#a99c84",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_top_left",
+   "name": "Upper left drawer front",
+   "category": "enclosure",
+   "materialName": "Limed oak",
+   "detail": "Short upper drawer, left",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     715,
+     180,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -140.9705422828207,
+    830,
+    240.59630722792372
+   ],
+   "material": {
+    "color": "#c2b59d",
+    "roughness": 0.75,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_top_right",
+   "name": "Upper right drawer front",
+   "category": "enclosure",
+   "materialName": "Limed oak",
+   "detail": "Short upper drawer, right",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     715,
+     180,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    140.9705422828207,
+    830,
+    240.59630722792372
+   ],
+   "material": {
+    "color": "#c2b59d",
+    "roughness": 0.75,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_mid_left",
+   "name": "Middle left drawer front",
+   "category": "enclosure",
+   "materialName": "Limed oak",
+   "detail": "Middle drawer, left",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     715,
+     270,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -304.9531754214046,
+    585,
+    -372.84281109918135
+   ],
+   "material": {
+    "color": "#c2b59d",
+    "roughness": 0.75,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_mid_right",
+   "name": "Middle right drawer front",
+   "category": "enclosure",
+   "materialName": "Limed oak",
+   "detail": "Middle drawer, right",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     715,
+     270,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    304.9531754214046,
+    585,
+    -372.84281109918135
+   ],
+   "material": {
+    "color": "#c2b59d",
+    "roughness": 0.75,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_bot_left",
+   "name": "Lower left drawer front",
+   "category": "enclosure",
+   "materialName": "Limed oak",
+   "detail": "Lower drawer, left",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     715,
+     270,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -304.9531754214046,
+    168.86445715862283,
+    -372.84281109918135
+   ],
+   "material": {
+    "color": "#c2b59d",
+    "roughness": 0.75,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_bot_right",
+   "name": "Lower right drawer front",
+   "category": "enclosure",
+   "materialName": "Limed oak",
+   "detail": "Lower drawer, right",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     715,
+     270,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    304.9531754214046,
+    127.95795035812887,
+    -372.84281109918135
+   ],
+   "material": {
+    "color": "#c2b59d",
+    "roughness": 0.75,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_front_left",
+   "name": "Front left tapered leg",
+   "category": "mechanical",
+   "materialName": "Limed oak",
+   "detail": "Tapered turned leg, 150 mm tall",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 18,
+    "depth": 185.47624522778875,
+    "radialSegments": 32
+   },
+   "position": [
+    -1406.244257271499,
+    363.4711505546213,
+    -16.892471802393402
+   ],
+   "material": {
+    "color": "#b8ab94",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_front_right",
+   "name": "Front right tapered leg",
+   "category": "mechanical",
+   "materialName": "Limed oak",
+   "detail": "Tapered turned leg, 150 mm tall",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 18,
+    "depth": 185.47624522778875,
+    "radialSegments": 32
+   },
+   "position": [
+    1406.244257271499,
+    363.4711505546213,
+    -16.892471802393402
+   ],
+   "material": {
+    "color": "#b8ab94",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_back_left",
+   "name": "Back left tapered leg",
+   "category": "mechanical",
+   "materialName": "Limed oak",
+   "detail": "Tapered turned leg, 150 mm tall",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 18,
+    "depth": 185.47624522778875,
+    "radialSegments": 32
+   },
+   "position": [
+    -1406.244257271499,
+    363.4711505546213,
+    16.892471802393402
+   ],
+   "material": {
+    "color": "#b8ab94",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_back_right",
+   "name": "Back right tapered leg",
+   "category": "mechanical",
+   "materialName": "Limed oak",
+   "detail": "Tapered turned leg, 150 mm tall",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 18,
+    "depth": 185.47624522778875,
+    "radialSegments": 32
+   },
+   "position": [
+    1406.244257271499,
+    363.4711505546213,
+    16.892471802393402
+   ],
+   "material": {
+    "color": "#b8ab94",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "summary": {
+  "id": "router",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.00074445,
+  "modelIds": [
+   "claude-haiku-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00074445,
+   "durationMs": 7418,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Wi-Fi Router\",\"units\":\"mm\",\"components\":[{\"id\":\"body\",\"name\":\"Router body\",\"category\":\"enclosure\",\"materialName\":\"ABS plastic\",\"detail\":\"Flat rounded enclosure, 220 x 35 x 150 mm, lying on the floor. Rear edge is at -z.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[220,35,150],\"radius\":6},\"position\":[0,17.5,0],\"material\":{\"color\":\"#222222\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"antenna_left\",\"name\":\"Left antenna\",\"category\":\"radio\",\"materialName\":\"Plastic with metal core\",\"detail\":\"Vertical cylinder, 10 mm diameter, 160 mm long, standing on the top surface 20 mm in from the left rear corner (x = -90, z = -55).\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5,\"radiusBottom\":5,\"depth\":160,\"radialSegments\":32},\"position\":[-90,115,-55],\"material\":{\"color\":\"#111111\",\"roughness\":0.4,\"metalness\":0.1}},{\"id\":\"antenna_right\",\"name\":\"Right antenna\",\"category\":\"radio\",\"materialName\":\"Plastic with metal core\",\"detail\":\"Vertical cylinder, 10 mm diameter, 160 mm long, standing on the top surface 20 mm in from the right rear corner (x = 90, z = -55).\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5,\"radiusBottom\":5,\"depth\":160,\"radialSegments\":32},\"position\":[90,115,-55],\"material\":{\"color\":\"#111111\",\"roughness\":0.4,\"metalness\":0.1}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 1356,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      220,
+      195,
+      150
+     ],
+     "dimensionChecks": [
+      {
+       "id": "w",
+       "expectedMm": 220,
+       "actualMm": 219.9999988079071,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "h",
+       "expectedMm": 35,
+       "actualMm": 35.00000014901161,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "d",
+       "expectedMm": 150,
+       "actualMm": 150.00000596046448,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "ant",
+       "expectedMm": 160,
+       "actualMm": 159.9999964237213,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "ant-d",
+       "expectedMm": 10,
+       "actualMm": 9.999999776482582,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "total",
+       "expectedMm": 195,
+       "actualMm": 194.99999828636646,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": -7.450580430390374e-8,
+       "toleranceMm": 1,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

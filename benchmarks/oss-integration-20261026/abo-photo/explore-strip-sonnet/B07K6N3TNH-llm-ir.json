@@ -1,0 +1,211 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Sava Writing Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desk top",
+   "category": "enclosure",
+   "materialName": "white gloss MDF",
+   "detail": "Thin rectangular desktop panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1300,
+     30,
+     580
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    745,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f4",
+    "roughness": 0.25,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "ped_left",
+   "name": "Left pedestal",
+   "category": "enclosure",
+   "materialName": "white gloss MDF",
+   "detail": "Left cabinet with single door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     640,
+     480
+    ],
+    "radius": 4
+   },
+   "position": [
+    -430,
+    335,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f6",
+    "roughness": 0.25,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "ped_right",
+   "name": "Right pedestal",
+   "category": "enclosure",
+   "materialName": "white gloss MDF",
+   "detail": "Right cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     640,
+     480
+    ],
+    "radius": 4
+   },
+   "position": [
+    430,
+    335,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f6",
+    "roughness": 0.25,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer",
+   "name": "Drawer front",
+   "category": "mechanical",
+   "materialName": "white gloss MDF",
+   "detail": "Drawer front on right pedestal",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     392,
+     150,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    430,
+    560,
+    249
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.2,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door_r",
+   "name": "Right door",
+   "category": "mechanical",
+   "materialName": "white gloss MDF",
+   "detail": "Door front below drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     392,
+     440,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    430,
+    265,
+    249
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.2,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "modesty",
+   "name": "Back rail",
+   "category": "mechanical",
+   "materialName": "white MDF",
+   "detail": "Rear modesty panel between pedestals",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     460,
+     150,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    660,
+    -210
+   ],
+   "material": {
+    "color": "#efefef",
+    "roughness": 0.35,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_l1",
+   "name": "Left foot front",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Glide foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 15,
+    "radiusBottom": 15,
+    "depth": 15,
+    "radialSegments": 24
+   },
+   "position": [
+    -430,
+    7,
+    190
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_r1",
+   "name": "Right foot front",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Glide foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 15,
+    "radiusBottom": 15,
+    "depth": 15,
+    "radialSegments": 24
+   },
+   "position": [
+    430,
+    7,
+    190
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

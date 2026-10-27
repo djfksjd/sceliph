@@ -1,0 +1,79 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "base",
+   "category": "mechanical",
+   "materialName": "black painted metal",
+   "detail": "Round flat base, 160 mm diameter.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 80,
+    "radiusBottom": 80,
+    "depth": 26.1435109867666,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    12.5,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "pole",
+   "name": "pole",
+   "category": "mechanical",
+   "materialName": "brushed metal rod",
+   "detail": "Thin vertical pole rising from the base to the shade.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5.5,
+    "radiusBottom": 5.5,
+    "depth": 314.65167869346016,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    182.5919547511871,
+    0
+   ],
+   "material": {
+    "color": "#aaaaaa",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "shade",
+   "category": "enclosure",
+   "materialName": "fabric lamp shade",
+   "detail": "Conical lampshade, wider at the bottom, with a truncated top.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 43.198875963160795,
+    "radiusBottom": 98.64948614841597,
+    "depth": 128.94383867875936,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    421.804762534211,
+    0
+   ],
+   "material": {
+    "color": "#e8e0c8",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

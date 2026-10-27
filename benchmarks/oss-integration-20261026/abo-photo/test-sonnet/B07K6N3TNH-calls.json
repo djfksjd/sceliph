@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand - Movian Sava 2-Door 1-Drawer Writing Desk, 140 x 55 x 76cm, White.\nThe product listing gives its overall height as 760 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0266552,
+   "durationMs": 17629,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":35,\"elevationDeg\":20},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian Sava Writing Desk\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Desk top\",\"category\":\"mechanical\",\"materialName\":\"white gloss MDF\",\"detail\":\"Thick rectangular desktop slab\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1400,30,550],\"radius\":4},\"position\":[0,745,0],\"material\":{\"color\":\"#f4f5f6\",\"roughness\":0.25,\"metalness\":0}},{\"id\":\"rail\",\"name\":\"Back rail\",\"category\":\"mechanical\",\"materialName\":\"white MDF\",\"detail\":\"Rear support rail under the top\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1000,50,20],\"radius\":3},\"position\":[-20,705,-200],\"material\":{\"color\":\"#eceeef\",\"roughness\":0.3,\"metalness\":0}},{\"id\":\"ped_l\",\"name\":\"Left pedestal\",\"category\":\"enclosure\",\"materialName\":\"white gloss MDF\",\"detail\":\"Left cabinet with door\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[350,670,480],\"radius\":5},\"position\":[-465,345,0],\"material\":{\"color\":\"#f6f7f8\",\"roughness\":0.25,\"metalness\":0}},{\"id\":\"ped_r\",\"name\":\"Right pedestal\",\"category\":\"enclosure\",\"materialName\":\"white gloss MDF\",\"detail\":\"Right cabinet body\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[440,670,480],\"radius\":5},\"position\":[420,345,0],\"material\":{\"color\":\"#f6f7f8\",\"roughness\":0.25,\"metalness\":0}},{\"id\":\"drawer\",\"name\":\"Drawer front\",\"category\":\"mechanical\",\"materialName\":\"white gloss MDF\",\"detail\":\"Drawer front on right pedestal\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[430,110,14],\"radius\":3},\"position\":[420,610,244],\"material\":{\"color\":\"#fafafa\",\"roughness\":0.2,\"metalness\":0}},{\"id\":\"door_r\",\"name\":\"Right door\",\"category\":\"mechanical\",\"materialName\":\"white gloss MDF\",\"detail\":\"Door below drawer\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[430,520,14],\"radius\":3},\"position\":[420,300,244],\"material\":{\"color\":\"#fafafa\",\"roughness\":0.2,\"metalness\":0}},{\"id\":\"foot_l1\",\"name\":\"Foot L front\",\"category\":\"mechanical\",\"materialName\":\"black plastic\",\"detail\":\"Glide foot\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":10,\"radialSegments\":24},\"position\":[-465,5,190],\"material\":{\"color\":\"#161616\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"foot_l2\",\"name\":\"Foot L back\",\"category\":\"mechanical\",\"materialName\":\"black plastic\",\"detail\":\"Glide foot\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":10,\"radialSegments\":24},\"position\":[-465,5,-190],\"material\":{\"color\":\"#161616\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"foot_r1\",\"name\":\"Foot R front\",\"category\":\"mechanical\",\"materialName\":\"black plastic\",\"detail\":\"Glide foot\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":10,\"radialSegments\":24},\"position\":[420,5,190],\"material\":{\"color\":\"#161616\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"foot_r2\",\"name\":\"Foot R back\",\"category\":\"mechanical\",\"materialName\":\"black plastic\",\"detail\":\"Glide foot\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":15,\"radiusBottom\":15,\"depth\":10,\"radialSegments\":24},\"position\":[420,5,-190],\"material\":{\"color\":\"#161616\",\"roughness\":0.6,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

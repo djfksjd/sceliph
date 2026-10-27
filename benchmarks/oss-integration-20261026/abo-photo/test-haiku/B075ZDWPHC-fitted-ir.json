@@ -1,0 +1,367 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Stone & Beam Miramar Elm Wood Cutout Coffee Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top-slab",
+   "name": "Round tabletop",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Solid round top, about 1001 mm diameter and 45 mm thick",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 439.06593549969364,
+    "radiusBottom": 439.06593549969364,
+    "depth": 62.60498550259254,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    411.5,
+    0
+   ],
+   "material": {
+    "color": "#9c7a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "top-rim",
+   "name": "Under-top band",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Solid rim band beneath the tabletop",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 470.95778105679176,
+    "radiusBottom": 470.95778105679176,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    89.17330590639077,
+    0
+   ],
+   "material": {
+    "color": "#9c7a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "base-rim",
+   "name": "Base ring",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Low continuous base ring at floor level",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 365.3569181332752,
+    "radiusBottom": 365.3569181332752,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    124.79168995484497,
+    0
+   ],
+   "material": {
+    "color": "#9c7a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "lower-shelf",
+   "name": "Lower shelf",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Round lower shelf about 35 mm thick, set about 170 mm above the floor",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 340.60382371836977,
+    "radiusBottom": 340.60382371836977,
+    "depth": 35,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    63.66189885179227,
+    0
+   ],
+   "material": {
+    "color": "#8c6a4c",
+    "roughness": 0.75
+   }
+  },
+  {
+   "id": "pillar-front",
+   "name": "Front pillar (+Z)",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Hourglass-shaped cutout panel forming the drum wall between openings",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      -70,
+      -194.5
+     ],
+     [
+      70,
+      -194.5
+     ],
+     [
+      38,
+      -100
+     ],
+     [
+      32,
+      0
+     ],
+     [
+      38,
+      100
+     ],
+     [
+      70,
+      194.5
+     ],
+     [
+      -70,
+      194.5
+     ],
+     [
+      -38,
+      100
+     ],
+     [
+      -32,
+      0
+     ],
+     [
+      -38,
+      -100
+     ]
+    ],
+    "depth": 60
+   },
+   "position": [
+    0,
+    203.2347354563454,
+    333.79122011901495
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#9c7a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "pillar-back",
+   "name": "Back pillar (-Z)",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Hourglass-shaped cutout panel forming the drum wall between openings",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      -70,
+      -194.5
+     ],
+     [
+      70,
+      -194.5
+     ],
+     [
+      38,
+      -100
+     ],
+     [
+      32,
+      0
+     ],
+     [
+      38,
+      100
+     ],
+     [
+      70,
+      194.5
+     ],
+     [
+      -70,
+      194.5
+     ],
+     [
+      -38,
+      100
+     ],
+     [
+      -32,
+      0
+     ],
+     [
+      -38,
+      -100
+     ]
+    ],
+    "depth": 60
+   },
+   "position": [
+    0,
+    203.2347354563454,
+    -333.79122011901495
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#9c7a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "pillar-right",
+   "name": "Right pillar (+X)",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Hourglass-shaped cutout panel forming the drum wall between openings",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      -70,
+      -194.5
+     ],
+     [
+      70,
+      -194.5
+     ],
+     [
+      38,
+      -100
+     ],
+     [
+      32,
+      0
+     ],
+     [
+      38,
+      100
+     ],
+     [
+      70,
+      194.5
+     ],
+     [
+      -70,
+      194.5
+     ],
+     [
+      -38,
+      100
+     ],
+     [
+      -32,
+      0
+     ],
+     [
+      -38,
+      -100
+     ]
+    ],
+    "depth": 60
+   },
+   "position": [
+    80.32705460789039,
+    207.32804999718417,
+    0
+   ],
+   "rotation": [
+    0,
+    1.5708,
+    0
+   ],
+   "material": {
+    "color": "#9c7a5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "pillar-left",
+   "name": "Left pillar (-X)",
+   "category": "enclosure",
+   "materialName": "elm wood",
+   "detail": "Hourglass-shaped cutout panel forming the drum wall between openings",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      -70,
+      -194.5
+     ],
+     [
+      70,
+      -194.5
+     ],
+     [
+      38,
+      -100
+     ],
+     [
+      32,
+      0
+     ],
+     [
+      38,
+      100
+     ],
+     [
+      70,
+      194.5
+     ],
+     [
+      -70,
+      194.5
+     ],
+     [
+      -38,
+      100
+     ],
+     [
+      -32,
+      0
+     ],
+     [
+      -38,
+      -100
+     ]
+    ],
+    "depth": 60
+   },
+   "position": [
+    -80.32705460789039,
+    207.32804999718417,
+    0
+   ],
+   "rotation": [
+    0,
+    1.5708,
+    0
+   ],
+   "material": {
+    "color": "#9c7a5a",
+    "roughness": 0.7
+   }
+  }
+ ]
+}

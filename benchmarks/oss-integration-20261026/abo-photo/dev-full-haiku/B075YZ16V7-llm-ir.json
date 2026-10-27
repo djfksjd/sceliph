@@ -1,0 +1,400 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Amazon Brand Rivet Mid-Century Stark 6-Drawer Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "carcass",
+   "name": "Wood carcass",
+   "category": "enclosure",
+   "materialName": "Warm espresso stained pine",
+   "detail": "Main wooden cabinet body, 61 in wide, 813 mm overall height",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1549,
+     623,
+     406
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    501.5,
+    0
+   ],
+   "material": {
+    "color": "#a65a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_top_left",
+   "name": "Top left drawer front",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Upper left drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     186,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    -385,
+    685,
+    212
+   ],
+   "material": {
+    "color": "#a65a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_top_right",
+   "name": "Top right drawer front",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Upper right drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     186,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    385,
+    685,
+    212
+   ],
+   "material": {
+    "color": "#a65a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_mid_left",
+   "name": "Middle left drawer front",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Middle left drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     186,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    -385,
+    489,
+    212
+   ],
+   "material": {
+    "color": "#a65a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_mid_right",
+   "name": "Middle right drawer front",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Middle right drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     186,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    385,
+    489,
+    212
+   ],
+   "material": {
+    "color": "#a65a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_bot_left",
+   "name": "Bottom left drawer front",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Lower left drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     186,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    -385,
+    293,
+    212
+   ],
+   "material": {
+    "color": "#a65a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_bot_right",
+   "name": "Bottom right drawer front",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Lower right drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     186,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    385,
+    293,
+    212
+   ],
+   "material": {
+    "color": "#a65a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle_top_left",
+   "name": "Top left handle",
+   "category": "mechanical",
+   "materialName": "Black metal pull",
+   "detail": "Bar pull on upper left drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     180,
+     12,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    -385,
+    747,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "handle_top_right",
+   "name": "Top right handle",
+   "category": "mechanical",
+   "materialName": "Black metal pull",
+   "detail": "Bar pull on upper right drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     180,
+     12,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    385,
+    747,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "handle_mid_left",
+   "name": "Middle left handle",
+   "category": "mechanical",
+   "materialName": "Black metal pull",
+   "detail": "Bar pull on middle left drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     180,
+     12,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    -385,
+    551,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "handle_mid_right",
+   "name": "Middle right handle",
+   "category": "mechanical",
+   "materialName": "Black metal pull",
+   "detail": "Bar pull on middle right drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     180,
+     12,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    385,
+    551,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "handle_bot_left",
+   "name": "Bottom left handle",
+   "category": "mechanical",
+   "materialName": "Black metal pull",
+   "detail": "Bar pull on lower left drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     180,
+     12,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    -385,
+    355,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "handle_bot_right",
+   "name": "Bottom right handle",
+   "category": "mechanical",
+   "materialName": "Black metal pull",
+   "detail": "Bar pull on lower right drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     180,
+     12,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    385,
+    355,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "base_frame",
+   "name": "Black metal base frame",
+   "category": "mechanical",
+   "materialName": "Powder-coated black steel",
+   "detail": "Open U-section side frame supporting the carcass, 320 mm deep",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      -720,
+      0
+     ],
+     [
+      720,
+      0
+     ],
+     [
+      720,
+      190
+     ],
+     [
+      696,
+      190
+     ],
+     [
+      696,
+      24
+     ],
+     [
+      -696,
+      24
+     ],
+     [
+      -696,
+      190
+     ],
+     [
+      -720,
+      190
+     ]
+    ],
+    "depth": 320
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1c",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  }
+ ]
+}

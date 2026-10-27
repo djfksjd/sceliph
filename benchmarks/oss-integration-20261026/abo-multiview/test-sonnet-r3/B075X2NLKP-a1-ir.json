@@ -1,0 +1,110 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Ceramic table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Ceramic base",
+   "category": "enclosure",
+   "materialName": "ribbed blue ceramic",
+   "detail": "Tall rounded capsule-shaped ceramic body with fine horizontal ribbing",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      50,
+      0
+     ],
+     [
+      64,
+      6
+     ],
+     [
+      69.5,
+      25
+     ],
+     [
+      69.5,
+      295
+     ],
+     [
+      64,
+      314
+     ],
+     [
+      45,
+      322
+     ],
+     [
+      0,
+      322
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1f2b45",
+    "roughness": 0.4,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Socket neck",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "Small socket stub between base and shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 14,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    328,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Fabric shade",
+   "category": "enclosure",
+   "materialName": "cream linen",
+   "detail": "Tapered drum shade, wider at the bottom, glowing warm cream",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 161,
+    "radiusBottom": 182,
+    "depth": 294,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    475,
+    0
+   ],
+   "material": {
+    "color": "#f5c98f",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

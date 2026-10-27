@@ -1,0 +1,115 @@
+{
+ "schema": "sceliph.assembly-truth-compare/0.1",
+ "yawDeg": 0,
+ "extentMm": 125.99999830126762,
+ "items": [
+  {
+   "componentId": "body",
+   "candidateId": "body",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 84,
+   "candidateMm": 84,
+   "relativeError": 0
+  },
+  {
+   "componentId": "body",
+   "candidateId": "body",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 95,
+   "candidateMm": 95,
+   "relativeError": 0
+  },
+  {
+   "componentId": "body",
+   "candidateId": "body",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 84,
+   "candidateMm": 84,
+   "relativeError": 0
+  },
+  {
+   "componentId": "body",
+   "candidateId": "body",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 64,
+   "candidateMm": 64,
+   "relativeError": 0
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 64,
+   "candidateMm": 64,
+   "relativeError": 0
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 12,
+   "candidateMm": 8.77,
+   "relativeError": 0.2688
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 52,
+   "candidateMm": 50,
+   "relativeError": 0.0159
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": 2.5,
+   "candidateMm": -4,
+   "relativeError": 0.0516
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "handle",
+   "candidateId": "handle",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 18,
+   "candidateMm": 11.5,
+   "relativeError": 0.0516
+  }
+ ],
+ "missingComponentIds": [],
+ "summary": {
+  "medianSizeError": 0,
+  "maxSizeError": 0.2688,
+  "medianPlacementError": 0.0159,
+  "maxPlacementError": 0.0516,
+  "within5": 0.7273,
+  "within10": 0.9091
+ }
+}

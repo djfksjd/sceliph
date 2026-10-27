@@ -1,0 +1,397 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rolling kitchen cart",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Worktop",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "butcher block top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     25,
+     420
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    914.5,
+    0
+   ],
+   "material": {
+    "color": "#d4b98a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legfl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     852,
+     40
+    ],
+    "radius": 3
+   },
+   "position": [
+    -320,
+    476,
+    170
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legfr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     852,
+     40
+    ],
+    "radius": 3
+   },
+   "position": [
+    320,
+    476,
+    170
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legbl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     852,
+     40
+    ],
+    "radius": 3
+   },
+   "position": [
+    -320,
+    476,
+    -170
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legbr",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     852,
+     40
+    ],
+    "radius": 3
+   },
+   "position": [
+    320,
+    476,
+    -170
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer",
+   "name": "Drawer",
+   "category": "enclosure",
+   "materialName": "white painted wood",
+   "detail": "drawer box under top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     70,
+     380
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    865,
+    0
+   ],
+   "material": {
+    "color": "#f7f7f5",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Drawer handle",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "bar pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -60,
+      0,
+      0
+     ],
+     [
+      60,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    868,
+    205
+   ],
+   "material": {
+    "color": "#c0c0c4",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shelfmid",
+   "name": "Middle shelf",
+   "category": "mechanical",
+   "materialName": "white slatted wood",
+   "detail": "slatted shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     28,
+     340
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    490,
+    0
+   ],
+   "material": {
+    "color": "#f1f1ef",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelflow",
+   "name": "Lower shelf",
+   "category": "mechanical",
+   "materialName": "white slatted wood",
+   "detail": "slatted shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     28,
+     340
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#f1f1ef",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "towelbar",
+   "name": "Towel bar",
+   "category": "mechanical",
+   "materialName": "white painted wood",
+   "detail": "side towel rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -150
+     ],
+     [
+      0,
+      0,
+      150
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    350,
+    855,
+    0
+   ],
+   "material": {
+    "color": "#f7f7f5",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheelfl",
+   "name": "Wheel front left",
+   "category": "mechanical",
+   "materialName": "black rubber",
+   "detail": "caster",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 25,
+    "radiusBottom": 25,
+    "depth": 18,
+    "radialSegments": 32
+   },
+   "position": [
+    -320,
+    25,
+    170
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheelfr",
+   "name": "Wheel front right",
+   "category": "mechanical",
+   "materialName": "black rubber",
+   "detail": "caster",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 25,
+    "radiusBottom": 25,
+    "depth": 18,
+    "radialSegments": 32
+   },
+   "position": [
+    320,
+    25,
+    170
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheelbl",
+   "name": "Wheel back left",
+   "category": "mechanical",
+   "materialName": "black rubber",
+   "detail": "caster",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 25,
+    "radiusBottom": 25,
+    "depth": 18,
+    "radialSegments": 32
+   },
+   "position": [
+    -320,
+    25,
+    -170
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wheelbr",
+   "name": "Wheel back right",
+   "category": "mechanical",
+   "materialName": "black rubber",
+   "detail": "caster",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 25,
+    "radiusBottom": 25,
+    "depth": 18,
+    "radialSegments": 32
+   },
+   "position": [
+    320,
+    25,
+    -170
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  }
+ ]
+}

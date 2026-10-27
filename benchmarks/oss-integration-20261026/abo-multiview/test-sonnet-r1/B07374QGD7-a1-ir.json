@@ -1,0 +1,171 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Concrete Dome Pendant Light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Concrete dome shade",
+   "category": "enclosure",
+   "materialName": "concrete",
+   "detail": "Dome-shaped concrete shade, closed solid profile",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -96
+     ],
+     [
+      92,
+      -96
+     ],
+     [
+      91,
+      -60
+     ],
+     [
+      84,
+      -10
+     ],
+     [
+      68,
+      40
+     ],
+     [
+      45,
+      75
+     ],
+     [
+      25,
+      95
+     ],
+     [
+      14,
+      100
+     ],
+     [
+      0,
+      100
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    100,
+    0
+   ],
+   "material": {
+    "color": "#6b6d5a",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "diffuser",
+   "name": "Bottom diffuser",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "Cream-colored diffuser disc under the shade opening",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 88,
+    "radiusBottom": 88,
+    "depth": 4,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    2,
+    0
+   ],
+   "material": {
+    "color": "#f3e6bd",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Brass neck cap",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Small brass cap joining cord and shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 10,
+    "depth": 24,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    212,
+    0
+   ],
+   "material": {
+    "color": "#b8a577",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Black cord",
+   "category": "interconnect",
+   "materialName": "fabric cord",
+   "detail": "Straight black suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -262,
+      0
+     ],
+     [
+      0,
+      262,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    486,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Round brass ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 55,
+    "radiusBottom": 55,
+    "depth": 14,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    755,
+    0
+   ],
+   "material": {
+    "color": "#b8a577",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

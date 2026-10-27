@@ -1,0 +1,339 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Amazon Brand Rivet Scandinavian Ceiling Fan with Light, 52in, Matte Black",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "enclosure",
+   "materialName": "Matte black powder-coated steel",
+   "detail": "Tapered mounting canopy at the top of the fan, tapering from the ceiling plate down to the downrod.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 45,
+    "radiusBottom": 75,
+    "depth": 56,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    328,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "downrod",
+   "name": "Downrod",
+   "category": "interconnect",
+   "materialName": "Matte black steel rod",
+   "detail": "Vertical rod connecting the canopy to the motor housing.",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -80,
+      0
+     ],
+     [
+      0,
+      80,
+      0
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    0,
+    220,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "motorHousing",
+   "name": "Motor housing",
+   "category": "enclosure",
+   "materialName": "Matte black die-cast housing",
+   "detail": "Rounded motor housing at the hub where the blades attach.",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -30
+     ],
+     [
+      100,
+      -30
+     ],
+     [
+      115,
+      -10
+     ],
+     [
+      115,
+      15
+     ],
+     [
+      80,
+      30
+     ],
+     [
+      0,
+      30
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    110,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "lightMount",
+   "name": "Light mount ring",
+   "category": "mechanical",
+   "materialName": "Matte black steel",
+   "detail": "Short collar joining the light fixture to the underside of the motor housing.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 55,
+    "radiusBottom": 55,
+    "depth": 25,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    72,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "lightDiffuser",
+   "name": "LED light diffuser",
+   "category": "display",
+   "materialName": "Frosted white acrylic",
+   "detail": "Round frosted diffuser disc forming the bottom of the fan, the lowest point of the product.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 90,
+    "radiusBottom": 90,
+    "depth": 60,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    30,
+    0
+   ],
+   "material": {
+    "color": "#e8e8e8",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade1",
+   "name": "Wood-effect blade 1",
+   "category": "mechanical",
+   "materialName": "Light oak-finish composite",
+   "detail": "Tapered, swept fan blade in the horizontal plane at 0 degrees.",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      50,
+      -45
+     ],
+     [
+      250,
+      -60
+     ],
+     [
+      520,
+      -45
+     ],
+     [
+      660,
+      -5
+     ],
+     [
+      640,
+      10
+     ],
+     [
+      520,
+      30
+     ],
+     [
+      250,
+      45
+     ],
+     [
+      50,
+      40
+     ]
+    ],
+    "depth": 14
+   },
+   "position": [
+    0,
+    110,
+    0
+   ],
+   "rotation": [
+    -1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b07a3f",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade2",
+   "name": "Wood-effect blade 2",
+   "category": "mechanical",
+   "materialName": "Light oak-finish composite",
+   "detail": "Tapered, swept fan blade in the horizontal plane at 120 degrees.",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      50,
+      -45
+     ],
+     [
+      250,
+      -60
+     ],
+     [
+      520,
+      -45
+     ],
+     [
+      660,
+      -5
+     ],
+     [
+      640,
+      10
+     ],
+     [
+      520,
+      30
+     ],
+     [
+      250,
+      45
+     ],
+     [
+      50,
+      40
+     ]
+    ],
+    "depth": 14
+   },
+   "position": [
+    0,
+    110,
+    0
+   ],
+   "rotation": [
+    -1.5708,
+    0,
+    2.0944
+   ],
+   "material": {
+    "color": "#b07a3f",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade3",
+   "name": "Wood-effect blade 3",
+   "category": "mechanical",
+   "materialName": "Light oak-finish composite",
+   "detail": "Tapered, swept fan blade in the horizontal plane at 240 degrees.",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      50,
+      -45
+     ],
+     [
+      250,
+      -60
+     ],
+     [
+      520,
+      -45
+     ],
+     [
+      660,
+      -5
+     ],
+     [
+      640,
+      10
+     ],
+     [
+      520,
+      30
+     ],
+     [
+      250,
+      45
+     ],
+     [
+      50,
+      40
+     ]
+    ],
+    "depth": 14
+   },
+   "position": [
+    0,
+    110,
+    0
+   ],
+   "rotation": [
+    -1.5708,
+    0,
+    4.1888
+   ],
+   "material": {
+    "color": "#b07a3f",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

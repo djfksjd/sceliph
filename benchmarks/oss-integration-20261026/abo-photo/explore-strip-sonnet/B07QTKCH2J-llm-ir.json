@@ -1,0 +1,315 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Expandable wardrobe with curtain",
+ "units": "mm",
+ "components": [
+  {
+   "id": "left_side",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "white melamine",
+   "detail": "Left outer panel of shelf unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1780,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    9,
+    890,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "mid_side",
+   "name": "Inner divider",
+   "category": "enclosure",
+   "materialName": "white melamine",
+   "detail": "Inner panel of shelf unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1700,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    321,
+    850,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "top_left",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "white melamine",
+   "detail": "Top over shelf unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     330,
+     18,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    165,
+    1771,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "top_right",
+   "name": "Top extension panel",
+   "category": "enclosure",
+   "materialName": "white melamine",
+   "detail": "Sliding top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     18,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    680,
+    1811,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "right_side",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "white melamine",
+   "detail": "Right outer panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1820,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    1021,
+    910,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "shelf1",
+   "name": "Shelf 1",
+   "category": "mechanical",
+   "materialName": "white melamine",
+   "detail": "Lowest shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     303,
+     18,
+     370
+    ],
+    "radius": 2
+   },
+   "position": [
+    165,
+    340,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "shelf2",
+   "name": "Shelf 2",
+   "category": "mechanical",
+   "materialName": "white melamine",
+   "detail": "Shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     303,
+     18,
+     370
+    ],
+    "radius": 2
+   },
+   "position": [
+    165,
+    700,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "shelf3",
+   "name": "Shelf 3",
+   "category": "mechanical",
+   "materialName": "white melamine",
+   "detail": "Shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     303,
+     18,
+     370
+    ],
+    "radius": 2
+   },
+   "position": [
+    165,
+    1060,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "shelf4",
+   "name": "Shelf 4",
+   "category": "mechanical",
+   "materialName": "white melamine",
+   "detail": "Upper shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     303,
+     18,
+     370
+    ],
+    "radius": 2
+   },
+   "position": [
+    165,
+    1420,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "rod_front",
+   "name": "Hanging rod front",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Gold hanging rail",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 12,
+    "radiusBottom": 12,
+    "depth": 1000,
+    "radialSegments": 24
+   },
+   "position": [
+    515,
+    1720,
+    90
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#b89a4a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "rod_back",
+   "name": "Hanging rod back",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Second gold rail",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 12,
+    "radiusBottom": 12,
+    "depth": 1000,
+    "radialSegments": 24
+   },
+   "position": [
+    515,
+    1690,
+    -60
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#b89a4a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "curtain",
+   "name": "Curtain",
+   "category": "mechanical",
+   "materialName": "taupe fabric",
+   "detail": "Taupe eyelet curtain",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     680,
+     1700,
+     25
+    ],
+    "radius": 8
+   },
+   "position": [
+    680,
+    860,
+    100
+   ],
+   "material": {
+    "color": "#85766a",
+    "roughness": 0.95
+   }
+  }
+ ]
+}

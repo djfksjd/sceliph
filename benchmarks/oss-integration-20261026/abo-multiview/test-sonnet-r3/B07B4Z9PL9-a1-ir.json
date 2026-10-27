@@ -1,0 +1,175 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Modern LED floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Round weighted base disc",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 120,
+    "radiusBottom": 125,
+    "depth": 25,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    12.5,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "pole_lower",
+   "name": "Lower pole",
+   "category": "mechanical",
+   "materialName": "matte black steel",
+   "detail": "Main lower stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 11,
+    "radiusBottom": 11,
+    "depth": 1000,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    525,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "pole_upper",
+   "name": "Upper pole",
+   "category": "mechanical",
+   "materialName": "matte black steel",
+   "detail": "Thinner upper section",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 7,
+    "radiusBottom": 7,
+    "depth": 140,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    1095,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Curved arm",
+   "category": "mechanical",
+   "materialName": "matte black steel",
+   "detail": "Bent arm reaching forward to the head",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      40,
+      0
+     ],
+     [
+      10,
+      55,
+      0
+     ],
+     [
+      40,
+      60,
+      0
+     ],
+     [
+      190,
+      60,
+      0
+     ]
+    ],
+    "radius": 7
+   },
+   "position": [
+    0,
+    1165,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "head",
+   "name": "Lamp head",
+   "category": "lighting",
+   "materialName": "matte black metal",
+   "detail": "Cylindrical LED head",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 50,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    210,
+    1205,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "diffuser",
+   "name": "LED diffuser",
+   "category": "lighting",
+   "materialName": "warm diffuser",
+   "detail": "Glowing underside",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 44,
+    "radiusBottom": 44,
+    "depth": 3,
+    "radialSegments": 48
+   },
+   "position": [
+    210,
+    1189,
+    0
+   ],
+   "material": {
+    "color": "#f5e6b8",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "mug-truth",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Mug body",
+   "category": "enclosure",
+   "materialName": "ceramic",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 42,
+    "radiusBottom": 38,
+    "depth": 95,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    47.5,
+    0
+   ],
+   "material": {
+    "color": "#2f6f8f",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Handle",
+   "category": "mechanical",
+   "materialName": "ceramic",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "torus",
+    "radius": 26,
+    "tube": 6,
+    "radialSegments": 16,
+    "tubularSegments": 48
+   },
+   "position": [
+    52,
+    50,
+    0
+   ],
+   "material": {
+    "color": "#2f6f8f",
+    "roughness": 0.5
+   }
+  }
+ ]
+}

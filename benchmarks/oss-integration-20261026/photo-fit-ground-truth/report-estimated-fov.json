@@ -1,0 +1,132 @@
+{
+ "schema": "sceliph.photo-fit-ground-truth/0.1",
+ "truthIrSha256": "6b62fe2e2355517d6d91ff59d2690b98fd1c0c632b99aa479a820cdc8173d05f",
+ "cases": [
+  {
+   "id": "a",
+   "imageSha256": "81e0baf828f46df05bca31019b4b8a418fa80c7df1fb8b594f20d8598a76cf54",
+   "segmentation": {
+    "ownRasterVsBlenderAlphaIoU": 0.996,
+    "samUnionVsBlenderAlphaIoU": 0.9874,
+    "parts": [
+     {
+      "id": "box",
+      "iou": 0.9929
+     },
+     {
+      "id": "post",
+      "iou": 0.9851
+     }
+    ]
+   },
+   "camera": {
+    "relativePositionErrorMm": 187.3,
+    "trueDistanceToBoxMm": 910.8,
+    "viewDirectionErrorDegrees": 1.98,
+    "azimuthErrorDegrees": 1.55,
+    "elevationErrorDegrees": -1.41,
+    "fovXTrue": 40,
+    "fovXFitted": 49.17
+   },
+   "dimensionsPercentError": {
+    "boxHeight": 0.4,
+    "boxDepth": -0.55,
+    "postRadiusTop": -2.19,
+    "postRadiusBottom": -13.34,
+    "postDepth": 60.07
+   },
+   "placementErrorMm": {
+    "postTopAboveBox": -8.4,
+    "postOffsetXZ": [
+     10.5,
+     14.8
+    ]
+   },
+   "fitSilhouetteIoU": 0.9826
+  },
+  {
+   "id": "b",
+   "imageSha256": "02558b88f185ec293b26d997bf83e5982408f8c39d630224dd041649e8248cd3",
+   "segmentation": {
+    "ownRasterVsBlenderAlphaIoU": 0.9965,
+    "samUnionVsBlenderAlphaIoU": 0.9741,
+    "parts": [
+     {
+      "id": "box",
+      "iou": 0.9749
+     },
+     {
+      "id": "post",
+      "iou": 0.9868
+     }
+    ]
+   },
+   "camera": {
+    "relativePositionErrorMm": 133.2,
+    "trueDistanceToBoxMm": 614.7,
+    "viewDirectionErrorDegrees": 1.44,
+    "azimuthErrorDegrees": 0.11,
+    "elevationErrorDegrees": 1.44,
+    "fovXTrue": 60,
+    "fovXFitted": 50.15
+   },
+   "dimensionsPercentError": {
+    "boxHeight": 5.04,
+    "boxDepth": -9.04,
+    "postRadiusTop": -0.57,
+    "postRadiusBottom": -1.69,
+    "postDepth": 2.99
+   },
+   "placementErrorMm": {
+    "postTopAboveBox": 8.9,
+    "postOffsetXZ": [
+     -7,
+     3.4
+    ]
+   },
+   "fitSilhouetteIoU": 0.973
+  },
+  {
+   "id": "c",
+   "imageSha256": "9b7f7400c26ad4caa62a95b0ee455a9c441742683dbcd441e66fadfab537f751",
+   "segmentation": {
+    "ownRasterVsBlenderAlphaIoU": 0.9969,
+    "samUnionVsBlenderAlphaIoU": 0.9829,
+    "parts": [
+     {
+      "id": "box",
+      "iou": 0.9853
+     },
+     {
+      "id": "post",
+      "iou": 0.9882
+     }
+    ]
+   },
+   "camera": {
+    "relativePositionErrorMm": 414.7,
+    "trueDistanceToBoxMm": 1406.7,
+    "viewDirectionErrorDegrees": 4.73,
+    "azimuthErrorDegrees": 0.57,
+    "elevationErrorDegrees": -4.7,
+    "fovXTrue": 30,
+    "fovXFitted": 44.28
+   },
+   "dimensionsPercentError": {
+    "boxHeight": 3.58,
+    "boxDepth": 56.65,
+    "postRadiusTop": -7.13,
+    "postRadiusBottom": 1.48,
+    "postDepth": 6.21
+   },
+   "placementErrorMm": {
+    "postTopAboveBox": 1.5,
+    "postOffsetXZ": [
+     2.1,
+     73
+    ]
+   },
+   "fitSilhouetteIoU": 0.9827
+  }
+ ]
+}

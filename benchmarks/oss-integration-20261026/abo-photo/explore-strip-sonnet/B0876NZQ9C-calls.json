@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: AmazonBasics Multipurpose Foldable Computer Study Desk - Natural.\nThe product listing gives its overall height as 762 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0188332,
+   "durationMs": 8866,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-30,\"elevationDeg\":15},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Foldable Computer Desk\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Desk top\",\"category\":\"enclosure\",\"materialName\":\"wood laminate\",\"detail\":\"Natural wood tabletop\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1000,25,500],\"radius\":4},\"position\":[0,749.5,0],\"material\":{\"color\":\"#d1a15f\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"legL_front\",\"name\":\"Left front leg\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Square tube leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[25,737,25],\"radius\":3},\"position\":[-460,368.5,-225],\"material\":{\"color\":\"#f5f5f5\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"legL_back\",\"name\":\"Left back leg\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Square tube leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[25,737,25],\"radius\":3},\"position\":[-460,368.5,225],\"material\":{\"color\":\"#f5f5f5\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"legR_front\",\"name\":\"Right front leg\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Square tube leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[25,737,25],\"radius\":3},\"position\":[460,368.5,-225],\"material\":{\"color\":\"#f5f5f5\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"legR_back\",\"name\":\"Right back leg\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Square tube leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[25,737,25],\"radius\":3},\"position\":[460,368.5,225],\"material\":{\"color\":\"#f5f5f5\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"footL\",\"name\":\"Left foot rail\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Bottom side rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[25,25,475],\"radius\":3},\"position\":[-460,25,0],\"material\":{\"color\":\"#f5f5f5\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"footR\",\"name\":\"Right foot rail\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Bottom side rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[25,25,475],\"radius\":3},\"position\":[460,25,0],\"material\":{\"color\":\"#f5f5f5\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"topRailL\",\"name\":\"Left top rail\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Top side rail under tabletop\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[25,25,475],\"radius\":3},\"position\":[-460,725,0],\"material\":{\"color\":\"#f5f5f5\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"topRailR\",\"name\":\"Right top rail\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Top side rail under tabletop\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[25,25,475],\"radius\":3},\"position\":[460,725,0],\"material\":{\"color\":\"#f5f5f5\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"stretcher\",\"name\":\"Rear stretcher\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Horizontal cross bar between side frames\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[895,22,22],\"radius\":3},\"position\":[0,330,225],\"material\":{\"color\":\"#f5f5f5\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"hinge\",\"name\":\"Hinge\",\"category\":\"mechanical\",\"materialName\":\"steel\",\"detail\":\"Folding hinge plate\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[10,60,20],\"radius\":2},\"position\":[460,640,225],\"material\":{\"color\":\"#aaaaaa\",\"roughness\":0.4,\"metalness\":0.8}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

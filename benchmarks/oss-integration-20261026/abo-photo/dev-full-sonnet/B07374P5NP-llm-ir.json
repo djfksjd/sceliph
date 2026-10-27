@@ -1,0 +1,416 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "5-Globe Pendant Chandelier",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Canopy",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 160,
+    "radiusBottom": 160,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1209,
+    0
+   ],
+   "material": {
+    "color": "#2a2420",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cord1",
+   "name": "Cord 1",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      341.5,
+      0
+     ],
+     [
+      0,
+      -341.5,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    -115,
+    857.5,
+    72
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "cord2",
+   "name": "Cord 2",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      304.5,
+      0
+     ],
+     [
+      0,
+      -304.5,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    -63,
+    894.5,
+    -81
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "cord3",
+   "name": "Cord 3",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      271.5,
+      0
+     ],
+     [
+      0,
+      -271.5,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    105,
+    927.5,
+    -54
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "cord4",
+   "name": "Cord 4",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      378,
+      0
+     ],
+     [
+      0,
+      -378,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    79,
+    821,
+    72
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "cord5",
+   "name": "Cord 5",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      493.5,
+      0
+     ],
+     [
+      0,
+      -493.5,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    705.5,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "globe1",
+   "name": "Globe 1",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "opal globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 95
+   },
+   "position": [
+    -115,
+    401,
+    72
+   ],
+   "material": {
+    "color": "#f7ecd2",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe2",
+   "name": "Globe 2",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "opal globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    -63,
+    475,
+    -81
+   ],
+   "material": {
+    "color": "#f5e4bc",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe3",
+   "name": "Globe 3",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "opal globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 95
+   },
+   "position": [
+    105,
+    541,
+    -54
+   ],
+   "material": {
+    "color": "#f7ecd2",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe4",
+   "name": "Globe 4",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "opal globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 95
+   },
+   "position": [
+    79,
+    328,
+    72
+   ],
+   "material": {
+    "color": "#f7ecd2",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe5",
+   "name": "Globe 5",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "opal globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 95
+   },
+   "position": [
+    0,
+    97,
+    0
+   ],
+   "material": {
+    "color": "#f7ecd2",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap1",
+   "name": "Cap 1",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "globe holder cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 34,
+    "depth": 30,
+    "radialSegments": 24
+   },
+   "position": [
+    -115,
+    501,
+    72
+   ],
+   "material": {
+    "color": "#1c1815",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cap2",
+   "name": "Cap 2",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "globe holder cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 34,
+    "depth": 30,
+    "radialSegments": 24
+   },
+   "position": [
+    -63,
+    575,
+    -81
+   ],
+   "material": {
+    "color": "#1c1815",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cap3",
+   "name": "Cap 3",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "globe holder cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 34,
+    "depth": 30,
+    "radialSegments": 24
+   },
+   "position": [
+    105,
+    641,
+    -54
+   ],
+   "material": {
+    "color": "#1c1815",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cap4",
+   "name": "Cap 4",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "globe holder cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 34,
+    "depth": 30,
+    "radialSegments": 24
+   },
+   "position": [
+    79,
+    428,
+    72
+   ],
+   "material": {
+    "color": "#1c1815",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cap5",
+   "name": "Cap 5",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "globe holder cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 34,
+    "depth": 30,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    197,
+    0
+   ],
+   "material": {
+    "color": "#1c1815",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

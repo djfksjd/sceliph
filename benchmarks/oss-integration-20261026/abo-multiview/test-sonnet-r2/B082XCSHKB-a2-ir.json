@@ -1,0 +1,306 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Ceiling fan with light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "glass",
+   "name": "Light glass",
+   "category": "power",
+   "materialName": "frosted glass",
+   "detail": "Frosted light bowl",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 105,
+    "radiusBottom": 90,
+    "depth": 55,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    27,
+    0
+   ],
+   "material": {
+    "color": "#f1eee6",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "trim",
+   "name": "Trim ring",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Ring below motor",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 125,
+    "radiusBottom": 112,
+    "depth": 24,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    66,
+    0
+   ],
+   "material": {
+    "color": "#b0a07a",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "motor",
+   "name": "Motor housing",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Motor housing",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 95,
+    "radiusBottom": 125,
+    "depth": 50,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    103,
+    0
+   ],
+   "material": {
+    "color": "#b0a07a",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Top cap",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Upper motor cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 90,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    138,
+    0
+   ],
+   "material": {
+    "color": "#b0a07a",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Downrod",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Downrod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 170,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    233,
+    0
+   ],
+   "material": {
+    "color": "#b0a07a",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "canopy",
+   "name": "Canopy",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Ceiling canopy",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 48,
+    "depth": 40,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    336,
+    0
+   ],
+   "material": {
+    "color": "#b0a07a",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "blade1",
+   "name": "Blade 1",
+   "category": "mechanical",
+   "materialName": "dark walnut",
+   "detail": "Blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     550,
+     10,
+     130
+    ],
+    "radius": 4
+   },
+   "position": [
+    385,
+    118,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#4a2f30",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade2",
+   "name": "Blade 2",
+   "category": "mechanical",
+   "materialName": "dark walnut",
+   "detail": "Blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     550,
+     10,
+     130
+    ],
+    "radius": 4
+   },
+   "position": [
+    119,
+    118,
+    -366
+   ],
+   "rotation": [
+    0,
+    1.2566,
+    0
+   ],
+   "material": {
+    "color": "#4a2f30",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade3",
+   "name": "Blade 3",
+   "category": "mechanical",
+   "materialName": "dark walnut",
+   "detail": "Blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     550,
+     10,
+     130
+    ],
+    "radius": 4
+   },
+   "position": [
+    -311,
+    118,
+    -226
+   ],
+   "rotation": [
+    0,
+    2.5133,
+    0
+   ],
+   "material": {
+    "color": "#4a2f30",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade4",
+   "name": "Blade 4",
+   "category": "mechanical",
+   "materialName": "dark walnut",
+   "detail": "Blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     550,
+     10,
+     130
+    ],
+    "radius": 4
+   },
+   "position": [
+    -311,
+    118,
+    226
+   ],
+   "rotation": [
+    0,
+    3.7699,
+    0
+   ],
+   "material": {
+    "color": "#4a2f30",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade5",
+   "name": "Blade 5",
+   "category": "mechanical",
+   "materialName": "dark walnut",
+   "detail": "Blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     550,
+     10,
+     130
+    ],
+    "radius": 4
+   },
+   "position": [
+    119,
+    118,
+    366
+   ],
+   "rotation": [
+    0,
+    5.0265,
+    0
+   ],
+   "material": {
+    "color": "#4a2f30",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

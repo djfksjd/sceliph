@@ -1,0 +1,157 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Underbed storage",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plinth",
+   "name": "Plinth base",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "recessed base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1440,
+     30,
+     390
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#a89473",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "main body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1500,
+     223,
+     420
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    141.5,
+    0
+   ],
+   "material": {
+    "color": "#b5a283",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "dark oak",
+   "detail": "top slab",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1500,
+     20,
+     440
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    263,
+    0
+   ],
+   "material": {
+    "color": "#7d6b5a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "drawer_l",
+   "name": "Left drawer front",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     480,
+     190,
+     16
+    ],
+    "radius": 3
+   },
+   "position": [
+    -490,
+    140,
+    212
+   ],
+   "material": {
+    "color": "#c2b08f",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "drawer_c",
+   "name": "Center drawer front",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     480,
+     190,
+     16
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    140,
+    212
+   ],
+   "material": {
+    "color": "#baa886",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "drawer_r",
+   "name": "Right drawer front",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     480,
+     190,
+     16
+    ],
+    "radius": 3
+   },
+   "position": [
+    490,
+    140,
+    212
+   ],
+   "material": {
+    "color": "#c2b08f",
+    "roughness": 0.8
+   }
+  }
+ ]
+}

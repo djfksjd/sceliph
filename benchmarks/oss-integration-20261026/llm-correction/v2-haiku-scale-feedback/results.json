@@ -1,0 +1,137 @@
+{
+ "schema": "sceliph.llm-correction-eval/0.1",
+ "tasksSha256": "9115672bb10683cb245b6900c75f5cdb1850fa209dc51579cc20db16aaf4967e",
+ "modelAlias": "haiku",
+ "modelIds": [
+  "claude-haiku-5-5"
+ ],
+ "maxRounds": 3,
+ "firstTryPass": "5/6",
+ "finalPass": "6/6",
+ "totalCostUsd": 0.010788550000000001,
+ "results": [
+  {
+   "id": "spiral_stair",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.00200215,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  },
+  {
+   "id": "wheel",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.0025153500000000004,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  },
+  {
+   "id": "chair",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.0013389499999999998,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  },
+  {
+   "id": "arch",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.00198145,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  },
+  {
+   "id": "pipe",
+   "firstTryPass": false,
+   "finalPass": true,
+   "passRound": 1,
+   "roundsUsed": 2,
+   "scores": [
+    0.8400000000000001,
+    1
+   ],
+   "stages": [
+    "requirements",
+    "pass"
+   ],
+   "issueCounts": [
+    2,
+    0
+   ],
+   "costUsd": 0.0016645000000000002,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  },
+  {
+   "id": "drawers",
+   "firstTryPass": true,
+   "finalPass": true,
+   "passRound": 0,
+   "roundsUsed": 1,
+   "scores": [
+    1
+   ],
+   "stages": [
+    "pass"
+   ],
+   "issueCounts": [
+    0
+   ],
+   "costUsd": 0.0012861499999999998,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ]
+  }
+ ]
+}

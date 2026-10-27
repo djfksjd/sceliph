@@ -1,0 +1,53 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Coffee mug",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Mug body",
+   "category": "enclosure",
+   "materialName": "glazed ceramic",
+   "detail": "Slightly tapered cylindrical mug body",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 35,
+    "radiusBottom": 30,
+    "depth": 95,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    47.5,
+    0
+   ],
+   "material": {
+    "color": "#3a7ca0",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Mug handle",
+   "category": "mechanical",
+   "materialName": "glazed ceramic",
+   "detail": "Ring-shaped handle on the +X side",
+   "geometry": {
+    "op": "torus",
+    "radius": 19.5,
+    "tube": 5.5
+   },
+   "position": [
+    46,
+    47,
+    0
+   ],
+   "material": {
+    "color": "#3a7ca0",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Modern 2-Drawer File Cabinet with Recessed Metal Handles, 28.5\"H, White.\nThe product listing gives its overall height as 724 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.0021482199999999997,
+   "durationMs": 19865,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":35,\"elevationDeg\":15},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Amazon Brand Stone & Beam Modern 2-Drawer File Cabinet\",\"units\":\"mm\",\"components\":[{\"id\":\"carcass\",\"name\":\"Cabinet body\",\"category\":\"enclosure\",\"materialName\":\"White painted wood\",\"detail\":\"Main white carcass box with two drawer openings\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[410,634,360],\"radius\":4},\"position\":[0,377,0],\"material\":{\"color\":\"#f5f5f2\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"top\",\"name\":\"Top panel\",\"category\":\"enclosure\",\"materialName\":\"White painted wood\",\"detail\":\"Flat top slab that overhangs the carcass slightly\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[450,30,400],\"radius\":4},\"position\":[0,709,0],\"material\":{\"color\":\"#f7f7f4\",\"roughness\":0.5,\"metalness\":0.0}},{\"id\":\"plinth\",\"name\":\"Base plinth\",\"category\":\"enclosure\",\"materialName\":\"White painted wood\",\"detail\":\"Recessed toe base under the carcass\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[402,60,362],\"radius\":3},\"position\":[0,30,0],\"material\":{\"color\":\"#eeeeea\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"drawer_top\",\"name\":\"Top drawer front\",\"category\":\"mechanical\",\"materialName\":\"White painted wood\",\"detail\":\"Upper drawer front panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[396,280,18],\"radius\":3},\"position\":[0,500,189],\"material\":{\"color\":\"#fafaf8\",\"roughness\":0.5,\"metalness\":0.0}},{\"id\":\"drawer_bottom\",\"name\":\"Bottom drawer front\",\"category\":\"mechanical\",\"materialName\":\"White painted wood\",\"detail\":\"Lower drawer front panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[396,268,18],\"radius\":3},\"position\":[0,216,189],\"material\":{\"color\":\"#fafaf8\",\"roughness\":0.5,\"metalness\":0.0}},{\"id\":\"handle_top\",\"name\":\"Top drawer recessed handle\",\"category\":\"mechanical\",\"materialName\":\"Brushed brass\",\"detail\":\"Recessed gold pull on the top drawer\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[110,26,10],\"radius\":4},\"position\":[0,506,202],\"material\":{\"color\":\"#c9a96e\",\"roughness\":0.35,\"metalness\":0.6}},{\"id\":\"handle_bottom\",\"name\":\"Bottom drawer recessed handle\",\"category\":\"mechanical\",\"materialName\":\"Brushed brass\",\"detail\":\"Recessed gold pull on the bottom drawer\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[110,26,10],\"radius\":4},\"position\":[0,228,202],\"material\":{\"color\":\"#c9a96e\",\"roughness\":0.35,\"metalness\":0.6}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

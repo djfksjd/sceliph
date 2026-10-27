@@ -1,0 +1,165 @@
+{
+ "schema": "sceliph.abo-photo-summary/0.1",
+ "protocolSha256": "291418d9d676ec2a4faf994f13bc91f3bbd0f6feae9242a12b3d76174980a42c",
+ "split": "test",
+ "modelAlias": "sonnet",
+ "items": 30,
+ "excluded": [],
+ "noIr": [],
+ "fitErrors": [],
+ "accepted": 5,
+ "perArm": {
+  "b0": {
+   "medianIoU": 0.5356,
+   "medianFScore5": 0.4417,
+   "medianChamfer": 0.0748,
+   "lateralExtentErrorMedian": 0.2814,
+   "lateralExtentErrorP75": 0.8772
+  },
+  "b1": {
+   "medianIoU": 0.6069,
+   "medianFScore5": 0.552,
+   "medianChamfer": 0.0605,
+   "lateralExtentErrorMedian": 0.2127,
+   "lateralExtentErrorP75": 0.7962
+  },
+  "llm": {
+   "medianIoU": 0.8702,
+   "medianFScore5": 0.9939,
+   "medianChamfer": 0.0138,
+   "lateralExtentErrorMedian": 0.017,
+   "lateralExtentErrorP75": 0.0523
+  },
+  "fit": {
+   "medianIoU": 0.7383,
+   "medianFScore5": 0.9222,
+   "medianChamfer": 0.0208,
+   "lateralExtentErrorMedian": 0.0301,
+   "lateralExtentErrorP75": 0.0909
+  },
+  "final": {
+   "medianIoU": 0.8491,
+   "medianFScore5": 0.9684,
+   "medianChamfer": 0.0189,
+   "lateralExtentErrorMedian": 0.0225,
+   "lateralExtentErrorP75": 0.0671
+  }
+ },
+ "comparisons": {
+  "finalVsLlmIoU": {
+   "median": 0,
+   "ci95": [
+    0,
+    0
+   ],
+   "wins": 1,
+   "ties": 26,
+   "losses": 3
+  },
+  "fitVsLlmIoU": {
+   "median": 0,
+   "ci95": [
+    -0.0155,
+    0
+   ],
+   "wins": 5,
+   "ties": 14,
+   "losses": 11
+  },
+  "finalVsB0IoU": {
+   "median": 0.2823,
+   "ci95": [
+    0.2353,
+    0.3524
+   ],
+   "wins": 29,
+   "ties": 0,
+   "losses": 1
+  },
+  "finalVsB1IoU": {
+   "median": 0.2423,
+   "ci95": [
+    0.1897,
+    0.2747
+   ],
+   "wins": 27,
+   "ties": 0,
+   "losses": 3
+  },
+  "finalVsB0FScore": {
+   "median": 0.4647,
+   "ci95": [
+    0.368,
+    0.5808
+   ],
+   "wins": 29,
+   "ties": 0,
+   "losses": 1
+  },
+  "finalVsB1FScore": {
+   "median": 0.3395,
+   "ci95": [
+    0.2825,
+    0.4536
+   ],
+   "wins": 27,
+   "ties": 1,
+   "losses": 2
+  },
+  "llmVsB0IoU": {
+   "median": 0.2841,
+   "ci95": [
+    0.2251,
+    0.3595
+   ],
+   "wins": 30,
+   "ties": 0,
+   "losses": 0
+  },
+  "llmVsB1IoU": {
+   "median": 0.2475,
+   "ci95": [
+    0.1957,
+    0.2865
+   ],
+   "wins": 28,
+   "ties": 0,
+   "losses": 2
+  }
+ },
+ "doNoHarm": {
+  "accurateItems": 18,
+  "harmed": [
+   "B07RR3RFHT",
+   "B07TX2D4XN"
+  ]
+ },
+ "criteria": [
+  {
+   "id": "final-beats-llm-iou",
+   "rule": "median paired (final − llm) mean IoU ≥ 0.02 and bootstrap 95% CI lower bound > 0",
+   "pass": false
+  },
+  {
+   "id": "final-beats-baselines",
+   "rule": "median paired (final − b0) and (final − b1) > 0 for both mean IoU and F-score@5%",
+   "pass": true
+  },
+  {
+   "id": "lateral-extent",
+   "rule": "final lateral (x, z) extent error median ≤ 10% and p75 ≤ 25%",
+   "pass": true
+  },
+  {
+   "id": "llm-beats-baselines",
+   "rule": "median paired (llm − b0) and (llm − b1) mean IoU > 0 with bootstrap 95% CI lower bounds > 0",
+   "pass": true
+  },
+  {
+   "id": "do-no-harm",
+   "rule": "of items with written lateral error ≤ 5%, at most 20% end > 3 pp worse",
+   "pass": true
+  }
+ ],
+ "totalCostUsd": 0.755
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Stone & Beam Iluminación de granja clásico, Table Lamp, Blanco gastado.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 508 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0138502,
+   "durationMs": 12417,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Farmhouse table lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Turned wood base\",\"category\":\"mechanical\",\"materialName\":\"weathered wood\",\"detail\":\"Turned baluster base with stepped foot and bulb\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[69,0],[69,18],[58,22],[52,24],[52,32],[42,36],[40,52],[38,63],[26,70],[25,89],[33,93],[34,100],[30,106],[35,125],[36,135],[30,152],[22,165],[24,174],[32,180],[33,185],[23,195],[22,202],[30,212],[30,220],[20,227],[18,236],[0,236]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#a98a74\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"shade\",\"name\":\"Linen shade\",\"category\":\"enclosure\",\"materialName\":\"linen fabric\",\"detail\":\"Tapered drum shade, open top and bottom\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":112,\"radiusBottom\":137,\"depth\":265,\"radialSegments\":48},\"position\":[0,364.5,0],\"material\":{\"color\":\"#d9d8d3\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"finial\",\"name\":\"Finial\",\"category\":\"mechanical\",\"materialName\":\"weathered wood\",\"detail\":\"Small round finial at top\",\"geometry\":{\"op\":\"sphere\",\"radius\":12},\"position\":[0,496,0],\"material\":{\"color\":\"#a98a74\",\"roughness\":0.8,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

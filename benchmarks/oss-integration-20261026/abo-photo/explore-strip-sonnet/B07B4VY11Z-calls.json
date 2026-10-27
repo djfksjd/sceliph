@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Bishop Modern Wood King Bed, Weathered Oak.\nThe product listing gives its overall height as 1372 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.024523199999999995,
+   "durationMs": 16340,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-35,\"elevationDeg\":18},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Bishop Modern Wood King Bed\",\"units\":\"mm\",\"components\":[{\"id\":\"headboard\",\"name\":\"Headboard\",\"category\":\"enclosure\",\"materialName\":\"weathered oak\",\"detail\":\"Tall rectangular panel headboard with raised inset frame\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1930,1372,50],\"radius\":8},\"position\":[0,686,-1040],\"material\":{\"color\":\"#a8977c\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"footboard\",\"name\":\"Footboard\",\"category\":\"enclosure\",\"materialName\":\"weathered oak\",\"detail\":\"Low panel footboard\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1930,440,50],\"radius\":8},\"position\":[0,260,1040],\"material\":{\"color\":\"#a8977c\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"rail_left\",\"name\":\"Left side rail\",\"category\":\"enclosure\",\"materialName\":\"weathered oak\",\"detail\":\"Side rail connecting head and foot\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[40,200,2030],\"radius\":6},\"position\":[-945,300,0],\"material\":{\"color\":\"#a8977c\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"rail_right\",\"name\":\"Right side rail\",\"category\":\"enclosure\",\"materialName\":\"weathered oak\",\"detail\":\"Side rail connecting head and foot\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[40,200,2030],\"radius\":6},\"position\":[945,300,0],\"material\":{\"color\":\"#a8977c\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"platform\",\"name\":\"Support deck\",\"category\":\"mechanical\",\"materialName\":\"wood slats\",\"detail\":\"Mattress support deck\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1850,30,2030],\"radius\":5},\"position\":[0,385,0],\"material\":{\"color\":\"#8f7f66\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"mattress\",\"name\":\"Mattress\",\"category\":\"mechanical\",\"materialName\":\"white fabric\",\"detail\":\"White mattress\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1850,230,2000],\"radius\":25},\"position\":[0,515,-5],\"material\":{\"color\":\"#f4f4f4\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"pillow_left\",\"name\":\"Left pillow\",\"category\":\"mechanical\",\"materialName\":\"white fabric\",\"detail\":\"White pillow\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[700,130,460],\"radius\":55},\"position\":[-400,695,-740],\"rotation\":[0,0.1,0],\"material\":{\"color\":\"#ffffff\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"pillow_right\",\"name\":\"Right pillow\",\"category\":\"mechanical\",\"materialName\":\"white fabric\",\"detail\":\"White pillow\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[700,130,460],\"radius\":55},\"position\":[400,695,-740],\"rotation\":[0,-0.1,0],\"material\":{\"color\":\"#ffffff\",\"roughness\":0.95,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

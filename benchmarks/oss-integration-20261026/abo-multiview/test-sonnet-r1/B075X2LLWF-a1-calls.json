@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Rivet Modern Glass Globe Living Room Table Desk Lamp With LED Light Bulb - ches, Brass Finish.\nThe product listing gives its overall height as 254 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0140392,
+   "durationMs": 10158,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Brass Cylinder Globe Table Lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Brass base\",\"category\":\"enclosure\",\"materialName\":\"brushed brass\",\"detail\":\"Solid cylindrical brass base\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":54,\"radiusBottom\":54,\"depth\":112,\"radialSegments\":48},\"position\":[0,56,0],\"material\":{\"color\":\"#8f7a45\",\"roughness\":0.45,\"metalness\":0.8}},{\"id\":\"cup\",\"name\":\"Globe holder cup\",\"category\":\"mechanical\",\"materialName\":\"brushed brass\",\"detail\":\"Tapered cup holding the globe\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":30,\"radiusBottom\":16,\"depth\":14,\"radialSegments\":40},\"position\":[-22,119,0],\"material\":{\"color\":\"#85703f\",\"roughness\":0.45,\"metalness\":0.8}},{\"id\":\"globe\",\"name\":\"Opal glass globe\",\"category\":\"display\",\"materialName\":\"opal glass\",\"detail\":\"Frosted white glass globe shade\",\"geometry\":{\"op\":\"sphere\",\"radius\":70},\"position\":[-22,184,0],\"material\":{\"color\":\"#fff1d6\",\"roughness\":0.3,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

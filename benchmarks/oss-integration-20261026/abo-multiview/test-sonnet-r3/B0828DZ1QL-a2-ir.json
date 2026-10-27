@@ -1,0 +1,178 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Flush-mount ceiling light, bronze with frosted shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "trim",
+   "name": "Bronze trim ring",
+   "category": "enclosure",
+   "materialName": "oil-rubbed bronze",
+   "detail": "Stepped round canopy ring at the ceiling side",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      98
+     ],
+     [
+      130,
+      98
+     ],
+     [
+      166,
+      106
+     ],
+     [
+      166,
+      120
+     ],
+     [
+      150,
+      130
+     ],
+     [
+      110,
+      135
+     ],
+     [
+      0,
+      135
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#4a3a33",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Frosted glass shade",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "Domed opal glass bowl",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      18
+     ],
+     [
+      40,
+      21
+     ],
+     [
+      80,
+      34
+     ],
+     [
+      112,
+      58
+     ],
+     [
+      130,
+      88
+     ],
+     [
+      135,
+      110
+     ],
+     [
+      0,
+      110
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Finial cap",
+   "category": "mechanical",
+   "materialName": "oil-rubbed bronze",
+   "detail": "Conical cap under the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 16,
+    "depth": 10,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    22,
+    0
+   ],
+   "material": {
+    "color": "#4a3a33",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Finial stem",
+   "category": "mechanical",
+   "materialName": "oil-rubbed bronze",
+   "detail": "Short stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 12,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    14,
+    0
+   ],
+   "material": {
+    "color": "#4a3a33",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Finial knob",
+   "category": "mechanical",
+   "materialName": "oil-rubbed bronze",
+   "detail": "Rounded end knob",
+   "geometry": {
+    "op": "sphere",
+    "radius": 7
+   },
+   "position": [
+    0,
+    7,
+    0
+   ],
+   "material": {
+    "color": "#4a3a33",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

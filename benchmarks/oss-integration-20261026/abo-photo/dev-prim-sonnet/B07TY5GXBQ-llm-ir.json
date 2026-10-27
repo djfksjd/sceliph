@@ -1,0 +1,163 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Two-compartment MDF bookcase",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Oak-look MDF",
+   "detail": "Beige wood-grain side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     594,
+     290
+    ],
+    "radius": 1
+   },
+   "position": [
+    -92,
+    297,
+    0
+   ],
+   "material": {
+    "color": "#d1a577",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Oak-look MDF",
+   "detail": "Beige wood-grain side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     594,
+     290
+    ],
+    "radius": 1
+   },
+   "position": [
+    92,
+    297,
+    0
+   ],
+   "material": {
+    "color": "#d1a577",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "White MDF",
+   "detail": "White top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     168,
+     16,
+     280
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    586,
+    -5
+   ],
+   "material": {
+    "color": "#f4f6f8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "White MDF",
+   "detail": "White bottom panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     168,
+     16,
+     280
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    8,
+    -5
+   ],
+   "material": {
+    "color": "#f4f6f8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Middle shelf",
+   "category": "enclosure",
+   "materialName": "White MDF",
+   "detail": "White fixed middle shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     168,
+     16,
+     276
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    300,
+    -7
+   ],
+   "material": {
+    "color": "#f4f6f8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "White fibreboard",
+   "detail": "Thin back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     168,
+     562,
+     4
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    297,
+    -143
+   ],
+   "material": {
+    "color": "#e9ecee",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

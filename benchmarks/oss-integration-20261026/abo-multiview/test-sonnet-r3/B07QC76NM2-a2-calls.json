@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Stone & Beam Mid-Century Wall Sconce Light, Oil-Rubbed Bronze.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 332 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0243997,
+   "durationMs": 18906,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Globe Wall Sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"backplate\",\"name\":\"Wall plate\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"round mounting plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":63,\"radiusBottom\":63,\"depth\":11,\"radialSegments\":48},\"position\":[0,269,-122],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"arm\",\"name\":\"Arm\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"horizontal rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,0,61],[0,0,-61]],\"radius\":5},\"position\":[0,269,-61],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"post\",\"name\":\"Post\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"vertical stub with rounded top\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5,\"radiusBottom\":6,\"depth\":42,\"radialSegments\":24},\"position\":[0,266,0],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"neck\",\"name\":\"Neck\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"tapered neck above rim\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":10,\"radiusBottom\":24,\"depth\":46,\"radialSegments\":32},\"position\":[0,228,0],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"rim\",\"name\":\"Glass holder rim\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"flat holder ring\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":60,\"radiusBottom\":60,\"depth\":10,\"radialSegments\":48},\"position\":[0,198,0],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"socket\",\"name\":\"Socket\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"lamp socket\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":20,\"radiusBottom\":20,\"depth\":42,\"radialSegments\":32},\"position\":[0,172,0],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"bulb\",\"name\":\"Bulb\",\"category\":\"mechanical\",\"materialName\":\"clear glass\",\"detail\":\"filament bulb\",\"geometry\":{\"op\":\"sphere\",\"radius\":25},\"position\":[0,98,0],\"material\":{\"color\":\"#f3ead2\",\"roughness\":0.2,\"metalness\":0}},{\"id\":\"globe\",\"name\":\"Glass globe\",\"category\":\"mechanical\",\"materialName\":\"clear glass\",\"detail\":\"spherical glass shade\",\"geometry\":{\"op\":\"sphere\",\"radius\":103},\"position\":[0,103,0],\"material\":{\"color\":\"#e4eaed\",\"roughness\":0.1,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

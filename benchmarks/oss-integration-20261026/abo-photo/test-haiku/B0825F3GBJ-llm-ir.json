@@ -1,0 +1,103 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Scandinavian Gray-Wood Table Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base-ring",
+   "name": "Black base ring",
+   "category": "mechanical",
+   "materialName": "Painted metal",
+   "detail": "Dark metal foot ring under the wood base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 68,
+    "radiusBottom": 68,
+    "depth": 20,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    10,
+    0
+   ],
+   "material": {
+    "color": "#2b2b2b",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "wood-base",
+   "name": "Gray-wood base",
+   "category": "enclosure",
+   "materialName": "Grey-washed wood",
+   "detail": "Cylindrical gray-wood base body",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 62,
+    "radiusBottom": 62,
+    "depth": 108,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    74,
+    0
+   ],
+   "material": {
+    "color": "#b8b2a4",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Black stem",
+   "category": "mechanical",
+   "materialName": "Black metal rod",
+   "detail": "Thin vertical rod joining base to shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 90,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    165,
+    0
+   ],
+   "material": {
+    "color": "#2b2b2b",
+    "roughness": 0.4,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Linen drum shade",
+   "category": "enclosure",
+   "materialName": "Gray linen fabric",
+   "detail": "Wide cylindrical fabric lampshade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 126,
+    "radiusBottom": 127,
+    "depth": 269,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    335.5,
+    0
+   ],
+   "material": {
+    "color": "#8f8a84",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

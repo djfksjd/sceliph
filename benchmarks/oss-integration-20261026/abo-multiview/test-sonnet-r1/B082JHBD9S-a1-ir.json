@@ -1,0 +1,443 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Outdoor wall sconce with frosted glass cage shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "stem",
+   "name": "Top stem",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Short rod at top of the fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 32,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    329,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Collar",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Cylindrical housing above the hood",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 34,
+    "depth": 42,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    285,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "plate",
+   "name": "Back plate",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Wall mounting plate behind the collar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     95,
+     38,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    277,
+    -38
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.65,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "hood",
+   "name": "Hood",
+   "category": "enclosure",
+   "materialName": "Matte black metal",
+   "detail": "Wide conical shade cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 42,
+    "radiusBottom": 110,
+    "depth": 38,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    241,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.55,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "glass",
+   "name": "Frosted glass shade",
+   "category": "enclosure",
+   "materialName": "Frosted glass",
+   "detail": "Cylindrical glass with rounded bottom",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      28,
+      2
+     ],
+     [
+      48,
+      14
+     ],
+     [
+      56,
+      40
+     ],
+     [
+      57,
+      80
+     ],
+     [
+      57,
+      195
+     ],
+     [
+      0,
+      195
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    24,
+    0
+   ],
+   "material": {
+    "color": "#e9ebec",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "ring_top",
+   "name": "Upper cage ring",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Horizontal ring on the cage",
+   "geometry": {
+    "op": "torus",
+    "radius": 59,
+    "tube": 3
+   },
+   "position": [
+    0,
+    178,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "ring_low",
+   "name": "Lower cage ring",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Horizontal ring near the bottom",
+   "geometry": {
+    "op": "torus",
+    "radius": 59,
+    "tube": 3
+   },
+   "position": [
+    0,
+    66,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "bar_front",
+   "name": "Front cage bar",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3,
+    "radiusBottom": 3,
+    "depth": 160,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    140,
+    61
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "bar_back",
+   "name": "Back cage bar",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3,
+    "radiusBottom": 3,
+    "depth": 160,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    140,
+    -61
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "bar_left",
+   "name": "Left cage bar",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3,
+    "radiusBottom": 3,
+    "depth": 160,
+    "radialSegments": 16
+   },
+   "position": [
+    -61,
+    140,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "bar_right",
+   "name": "Right cage bar",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3,
+    "radiusBottom": 3,
+    "depth": 160,
+    "radialSegments": 16
+   },
+   "position": [
+    61,
+    140,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "basket_x",
+   "name": "Bottom basket arc A",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Curved cage rib under the glass",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -60,
+      0,
+      0
+     ],
+     [
+      -48,
+      -26,
+      0
+     ],
+     [
+      -25,
+      -45,
+      0
+     ],
+     [
+      0,
+      -52,
+      0
+     ],
+     [
+      25,
+      -45,
+      0
+     ],
+     [
+      48,
+      -26,
+      0
+     ],
+     [
+      60,
+      0,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    66,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "basket_z",
+   "name": "Bottom basket arc B",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Curved cage rib under the glass",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -60
+     ],
+     [
+      0,
+      -26,
+      -48
+     ],
+     [
+      0,
+      -45,
+      -25
+     ],
+     [
+      0,
+      -52,
+      0
+     ],
+     [
+      0,
+      -45,
+      25
+     ],
+     [
+      0,
+      -26,
+      48
+     ],
+     [
+      0,
+      0,
+      60
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    66,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Bottom finial",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Small knob at the lowest point",
+   "geometry": {
+    "op": "sphere",
+    "radius": 7
+   },
+   "position": [
+    0,
+    7,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  }
+ ]
+}

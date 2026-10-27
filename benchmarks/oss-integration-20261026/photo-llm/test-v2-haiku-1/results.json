@@ -1,0 +1,321 @@
+{
+ "schema": "sceliph.photo-llm-eval/0.1",
+ "protocolSha256": "1b8c2472e31162bc49852a2707b7d7435a1b128da62a6a1740dff5e1a5c5e382",
+ "sceneImageSha256": {
+  "bookshelf": "0468551cecf87d43105d93e37e206dc4d7c51972bd80adf272e830f2814561ca",
+  "box-post": "d3db98f1aaf8f953d754992bfe85485ad91b65046ce6a6f9b079ff0535b9a3ac",
+  "desk-lamp": "611bb0d4ad7f595ebb1937de63f492df7376227b397236aac3841ba82508acf9",
+  "mug": "2ef6f842b4b6bd69d3b5a1edd73523ce9e1482e095673eb7e38f5dc96aaf04ea",
+  "side-table": "d1f50fb0d60e396371d57e4ed6f38e3b9be0c24acd08feea987f33d6c8d951fd"
+ },
+ "modelAlias": "haiku",
+ "totalCostUsd": 0.0072,
+ "results": [
+  {
+   "id": "bookshelf",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0.0018,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "view": {
+    "azimuthDeg": 25,
+    "elevationDeg": 8
+   },
+   "llm": {
+    "medianSizeError": 0.0526,
+    "maxSizeError": 0.1,
+    "medianPlacementError": 0.0111,
+    "maxPlacementError": 0.1067,
+    "within5": 0.6522,
+    "within10": 0.8913
+   },
+   "fit": {
+    "medianSizeError": 0.0526,
+    "maxSizeError": 0.1,
+    "medianPlacementError": 0.0111,
+    "maxPlacementError": 0.1067,
+    "within5": 0.6522,
+    "within10": 0.8913,
+    "parameters": 14,
+    "locked": 1,
+    "groups": [
+     [
+      "side-left",
+      "side-right"
+     ],
+     [
+      "shelf-1",
+      "shelf-2",
+      "shelf-3",
+      "shelf-4"
+     ]
+    ],
+    "iouBefore": 0.8454,
+    "iouCameraOnly": 0.957,
+    "iouAfter": 0.957,
+    "lossCameraOnly": 0.07335,
+    "lossAfter": 0.07335,
+    "lowConfidenceReasons": 3,
+    "aligned": 12,
+    "frozen": 2,
+    "fitMs": 100319
+   },
+   "acceptance": {
+    "accept": false,
+    "relativeLossGain": 0,
+    "freeParameters": 12,
+    "iou": 0.957,
+    "reasons": [
+     "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+     "12 free parameters removed 0.0% each (< 5.0%)."
+    ]
+   },
+   "final": {
+    "medianSizeError": 0.0526,
+    "maxSizeError": 0.1,
+    "medianPlacementError": 0.0111,
+    "maxPlacementError": 0.1067,
+    "within5": 0.6522,
+    "within10": 0.8913
+   }
+  },
+  {
+   "id": "box-post",
+   "conventionIoU": 0.9999,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0.0015,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "view": {
+    "azimuthDeg": -15,
+    "elevationDeg": 20
+   },
+   "llm": {
+    "medianSizeError": 0.025,
+    "maxSizeError": 0.1111,
+    "medianPlacementError": 0.0303,
+    "maxPlacementError": 0.1212,
+    "within5": 0.8182,
+    "within10": 0.8182
+   },
+   "fit": {
+    "medianSizeError": 0.0569,
+    "maxSizeError": 0.1624,
+    "medianPlacementError": 0.0307,
+    "maxPlacementError": 0.1023,
+    "within5": 0.3636,
+    "within10": 0.7273,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.5152,
+    "iouCameraOnly": 0.8458,
+    "iouAfter": 0.9776,
+    "lossCameraOnly": 0.10546,
+    "lossAfter": 0.0207,
+    "lowConfidenceReasons": 13,
+    "aligned": 0,
+    "frozen": 0,
+    "fitMs": 51694
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.8037,
+    "freeParameters": 7,
+    "iou": 0.9776,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0569,
+    "maxSizeError": 0.1624,
+    "medianPlacementError": 0.0307,
+    "maxPlacementError": 0.1023,
+    "within5": 0.3636,
+    "within10": 0.7273
+   }
+  },
+  {
+   "id": "desk-lamp",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0.001,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "view": {
+    "azimuthDeg": 15,
+    "elevationDeg": 20
+   },
+   "llm": {
+    "medianSizeError": 0.2429,
+    "maxSizeError": 0.3333,
+    "medianPlacementError": 0,
+    "maxPlacementError": 0.1458,
+    "within5": 0.4444,
+    "within10": 0.5
+   },
+   "fit": {
+    "medianSizeError": 0.0745,
+    "maxSizeError": 0.3125,
+    "medianPlacementError": 0.0012,
+    "maxPlacementError": 0.0311,
+    "within5": 0.7222,
+    "within10": 0.7778,
+    "parameters": 8,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.6643,
+    "iouCameraOnly": 0.8086,
+    "iouAfter": 0.9597,
+    "lossCameraOnly": 0.16305,
+    "lossAfter": 0.06186,
+    "lowConfidenceReasons": 8,
+    "aligned": 4,
+    "frozen": 1,
+    "fitMs": 23876
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.6206,
+    "freeParameters": 7,
+    "iou": 0.9597,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0745,
+    "maxSizeError": 0.3125,
+    "medianPlacementError": 0.0012,
+    "maxPlacementError": 0.0311,
+    "within5": 0.7222,
+    "within10": 0.7778
+   }
+  },
+  {
+   "id": "mug",
+   "conventionIoU": 0.9994,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0.0014,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "view": {
+    "azimuthDeg": 25,
+    "elevationDeg": 12
+   },
+   "llm": {
+    "medianSizeError": 0.0904,
+    "maxSizeError": 0.2688,
+    "medianPlacementError": 0.0119,
+    "maxPlacementError": 0.0238,
+    "within5": 0.5455,
+    "within10": 0.7273
+   },
+   "fit": {
+    "medianSizeError": 0.0092,
+    "maxSizeError": 0.0238,
+    "medianPlacementError": 0.0071,
+    "maxPlacementError": 0.0159,
+    "within5": 1,
+    "within10": 1,
+    "parameters": 5,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.6504,
+    "iouCameraOnly": 0.9366,
+    "iouAfter": 0.9902,
+    "lossCameraOnly": 0.11748,
+    "lossAfter": 0.04156,
+    "lowConfidenceReasons": 1,
+    "aligned": 2,
+    "frozen": 0,
+    "fitMs": 59745
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.6462,
+    "freeParameters": 5,
+    "iou": 0.9902,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0092,
+    "maxSizeError": 0.0238,
+    "medianPlacementError": 0.0071,
+    "maxPlacementError": 0.0159,
+    "within5": 1,
+    "within10": 1
+   }
+  },
+  {
+   "id": "side-table",
+   "conventionIoU": 0.9996,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0.0015,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "view": {
+    "azimuthDeg": 20,
+    "elevationDeg": 25
+   },
+   "llm": {
+    "medianSizeError": 0.1,
+    "maxSizeError": 0.1786,
+    "medianPlacementError": 0,
+    "maxPlacementError": 0.125,
+    "within5": 0.4375,
+    "within10": 0.6875
+   },
+   "fit": {
+    "medianSizeError": 0.0096,
+    "maxSizeError": 0.1289,
+    "medianPlacementError": 0.013,
+    "maxPlacementError": 0.1265,
+    "within5": 0.6563,
+    "within10": 0.8125,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [
+     [
+      "leg-1",
+      "leg-2",
+      "leg-3",
+      "leg-4"
+     ]
+    ],
+    "iouBefore": 0.129,
+    "iouCameraOnly": 0.9037,
+    "iouAfter": 0.9827,
+    "lossCameraOnly": 0.07749,
+    "lossAfter": 0.03121,
+    "lowConfidenceReasons": 8,
+    "aligned": 0,
+    "frozen": 0,
+    "fitMs": 40111
+   },
+   "acceptance": {
+    "accept": true,
+    "relativeLossGain": 0.5973,
+    "freeParameters": 7,
+    "iou": 0.9827,
+    "reasons": []
+   },
+   "final": {
+    "medianSizeError": 0.0096,
+    "maxSizeError": 0.1289,
+    "medianPlacementError": 0.013,
+    "maxPlacementError": 0.1265,
+    "within5": 0.6563,
+    "within10": 0.8125
+   }
+  }
+ ]
+}

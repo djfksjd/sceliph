@@ -1,0 +1,233 @@
+{
+ "schema": "sceliph.photo-llm-eval/0.1",
+ "protocolSha256": "6c6d1983fd372b4c6563d0a75fdbc8e9af7aea40ce5f500a4830e854c80a8979",
+ "sceneImageSha256": {
+  "bookshelf": "0468551cecf87d43105d93e37e206dc4d7c51972bd80adf272e830f2814561ca",
+  "box-post": "d3db98f1aaf8f953d754992bfe85485ad91b65046ce6a6f9b079ff0535b9a3ac",
+  "desk-lamp": "611bb0d4ad7f595ebb1937de63f492df7376227b397236aac3841ba82508acf9",
+  "mug": "2ef6f842b4b6bd69d3b5a1edd73523ce9e1482e095673eb7e38f5dc96aaf04ea",
+  "side-table": "d1f50fb0d60e396371d57e4ed6f38e3b9be0c24acd08feea987f33d6c8d951fd"
+ },
+ "modelAlias": "replay",
+ "totalCostUsd": 0,
+ "results": [
+  {
+   "id": "bookshelf",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 25,
+    "elevationDeg": 12
+   },
+   "llm": {
+    "medianSizeError": 0,
+    "maxSizeError": 0.1,
+    "medianPlacementError": 0,
+    "maxPlacementError": 0.1011,
+    "within5": 0.6957,
+    "within10": 0.913
+   },
+   "fit": {
+    "medianSizeError": 0.0728,
+    "maxSizeError": 0.2808,
+    "medianPlacementError": 0.033,
+    "maxPlacementError": 0.0818,
+    "within5": 0.6087,
+    "within10": 0.8043,
+    "parameters": 20,
+    "locked": 1,
+    "groups": [
+     [
+      "side-left",
+      "side-right"
+     ],
+     [
+      "shelf-1",
+      "shelf-2",
+      "shelf-3",
+      "shelf-4"
+     ]
+    ],
+    "iouBefore": 0.897,
+    "iouCameraOnly": 0.9064,
+    "iouAfter": 0.9847,
+    "lossCameraOnly": 0.14581,
+    "lossAfter": 0.05009,
+    "lowConfidenceReasons": 2,
+    "fitMs": 132872
+   }
+  },
+  {
+   "id": "box-post",
+   "conventionIoU": 0.9999,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": -20,
+    "elevationDeg": 25
+   },
+   "llm": {
+    "medianSizeError": 0,
+    "maxSizeError": 0,
+    "medianPlacementError": 0,
+    "maxPlacementError": 0.1212,
+    "within5": 0.9091,
+    "within10": 0.9091
+   },
+   "fit": {
+    "medianSizeError": 0.0081,
+    "maxSizeError": 0.3359,
+    "medianPlacementError": 0.0142,
+    "maxPlacementError": 0.1858,
+    "within5": 0.7273,
+    "within10": 0.8182,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.5574,
+    "iouCameraOnly": 0.8269,
+    "iouAfter": 0.9969,
+    "lossCameraOnly": 0.09275,
+    "lossAfter": 0.00714,
+    "lowConfidenceReasons": 0,
+    "fitMs": 60352
+   }
+  },
+  {
+   "id": "desk-lamp",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 20,
+    "elevationDeg": 30
+   },
+   "llm": {
+    "medianSizeError": 0.0526,
+    "maxSizeError": 0.375,
+    "medianPlacementError": 0,
+    "maxPlacementError": 0.2292,
+    "within5": 0.5,
+    "within10": 0.6111
+   },
+   "fit": {
+    "medianSizeError": 0.1172,
+    "maxSizeError": 0.2335,
+    "medianPlacementError": 0.0738,
+    "maxPlacementError": 0.189,
+    "within5": 0.3333,
+    "within10": 0.4444,
+    "parameters": 12,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.5343,
+    "iouCameraOnly": 0.742,
+    "iouAfter": 0.9813,
+    "lossCameraOnly": 0.21252,
+    "lossAfter": 0.03149,
+    "lowConfidenceReasons": 1,
+    "fitMs": 28436
+   }
+  },
+  {
+   "id": "mug",
+   "conventionIoU": 0.9994,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 20,
+    "elevationDeg": 15
+   },
+   "llm": {
+    "medianSizeError": 0.1239,
+    "maxSizeError": 1.8403,
+    "medianPlacementError": 0.0159,
+    "maxPlacementError": 0.0556,
+    "within5": 0.4545,
+    "within10": 0.5455
+   },
+   "fit": {
+    "medianSizeError": 0.0116,
+    "maxSizeError": 2.511,
+    "medianPlacementError": 0.0343,
+    "maxPlacementError": 0.1208,
+    "within5": 0.7273,
+    "within10": 0.7273,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.7081,
+    "iouCameraOnly": 0.8884,
+    "iouAfter": 0.9793,
+    "lossCameraOnly": 0.1527,
+    "lossAfter": 0.074,
+    "lowConfidenceReasons": 2,
+    "fitMs": 70779
+   }
+  },
+  {
+   "id": "side-table",
+   "conventionIoU": 0.9996,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 40,
+    "elevationDeg": 20
+   },
+   "llm": {
+    "medianSizeError": 0.1,
+    "maxSizeError": 0.1,
+    "medianPlacementError": 0,
+    "maxPlacementError": 0,
+    "within5": 0.75,
+    "within10": 0.875
+   },
+   "fit": {
+    "medianSizeError": 0.0068,
+    "maxSizeError": 0.6637,
+    "medianPlacementError": 0.0589,
+    "maxPlacementError": 0.1644,
+    "within5": 0.3125,
+    "within10": 0.5625,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [
+     [
+      "leg-1",
+      "leg-2",
+      "leg-3",
+      "leg-4"
+     ]
+    ],
+    "iouBefore": 0.1415,
+    "iouCameraOnly": 0.4369,
+    "iouAfter": 0.6326,
+    "lossCameraOnly": 0.56747,
+    "lossAfter": 0.48626,
+    "lowConfidenceReasons": 18,
+    "fitMs": 62070
+   }
+  }
+ ]
+}

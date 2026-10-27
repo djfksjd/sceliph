@@ -1,0 +1,189 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Open bookshelf",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side-left",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Pine board",
+   "detail": "Left side panel, 900 mm tall, full depth, standing on the floor.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     900,
+     280
+    ],
+    "radius": 2
+   },
+   "position": [
+    -390,
+    450,
+    0
+   ],
+   "material": {
+    "color": "#c8a674",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side-right",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Pine board",
+   "detail": "Right side panel, 900 mm tall, full depth, standing on the floor.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     900,
+     280
+    ],
+    "radius": 2
+   },
+   "position": [
+    390,
+    450,
+    0
+   ],
+   "material": {
+    "color": "#c8a674",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-1",
+   "name": "Lowest shelf",
+   "category": "mechanical",
+   "materialName": "Pine board",
+   "detail": "Bottom shelf spanning between the side panels.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     18,
+     280
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    150,
+    0
+   ],
+   "material": {
+    "color": "#c8a674",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-2",
+   "name": "Second shelf",
+   "category": "mechanical",
+   "materialName": "Pine board",
+   "detail": "Second shelf spanning between the side panels.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     18,
+     280
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    395,
+    0
+   ],
+   "material": {
+    "color": "#c8a674",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-3",
+   "name": "Third shelf",
+   "category": "mechanical",
+   "materialName": "Pine board",
+   "detail": "Third shelf spanning between the side panels.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     18,
+     280
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    640,
+    0
+   ],
+   "material": {
+    "color": "#c8a674",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf-4",
+   "name": "Top shelf",
+   "category": "mechanical",
+   "materialName": "Pine board",
+   "detail": "Top shelf closing the top of the unit.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     18,
+     280
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    891,
+    0
+   ],
+   "material": {
+    "color": "#c8a674",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "Thin back board",
+   "detail": "Thin back panel closing the rear of the unit.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     880,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    450,
+    -137
+   ],
+   "material": {
+    "color": "#b08a5a",
+    "roughness": 0.85,
+    "metalness": 0
+   }
+  }
+ ]
+}

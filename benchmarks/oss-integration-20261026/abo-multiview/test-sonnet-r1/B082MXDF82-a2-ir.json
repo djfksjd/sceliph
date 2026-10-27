@@ -1,0 +1,426 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "AmazonBasics Box Fan",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Frame top",
+   "category": "enclosure",
+   "materialName": "black plastic",
+   "detail": "top frame bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     521,
+     30,
+     100
+    ],
+    "radius": 12
+   },
+   "position": [
+    0,
+    518,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Frame bottom",
+   "category": "enclosure",
+   "materialName": "black plastic",
+   "detail": "bottom frame bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     521,
+     30,
+     100
+    ],
+    "radius": 12
+   },
+   "position": [
+    0,
+    27,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "left",
+   "name": "Frame left",
+   "category": "enclosure",
+   "materialName": "black plastic",
+   "detail": "left frame bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     461,
+     100
+    ],
+    "radius": 12
+   },
+   "position": [
+    -245.5,
+    272.5,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "right",
+   "name": "Frame right",
+   "category": "enclosure",
+   "materialName": "black plastic",
+   "detail": "right frame bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     461,
+     100
+    ],
+    "radius": 12
+   },
+   "position": [
+    245.5,
+    272.5,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "ring1",
+   "name": "Grille ring outer",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "front guard ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 230,
+    "tube": 3
+   },
+   "position": [
+    0,
+    272.5,
+    50
+   ],
+   "material": {
+    "color": "#202022",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "ring2",
+   "name": "Grille ring mid",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "front guard ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 155,
+    "tube": 3
+   },
+   "position": [
+    0,
+    272.5,
+    50
+   ],
+   "material": {
+    "color": "#202022",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "ring3",
+   "name": "Grille ring inner",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "front guard ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 90,
+    "tube": 3
+   },
+   "position": [
+    0,
+    272.5,
+    50
+   ],
+   "material": {
+    "color": "#202022",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "hub",
+   "name": "Hub",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "center logo hub",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 58,
+    "radiusBottom": 58,
+    "depth": 30,
+    "radialSegments": 40
+   },
+   "position": [
+    0,
+    272.5,
+    52
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#151517",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "b1",
+   "name": "Blade 1",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     160,
+     55,
+     6
+    ],
+    "radius": 2.5
+   },
+   "position": [
+    131.6,
+    320.4,
+    10
+   ],
+   "rotation": [
+    0,
+    0,
+    0.349
+   ],
+   "material": {
+    "color": "#111113",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "b2",
+   "name": "Blade 2",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     160,
+     55,
+     6
+    ],
+    "radius": 2.5
+   },
+   "position": [
+    -4.9,
+    412.4,
+    10
+   ],
+   "rotation": [
+    0,
+    0,
+    1.606
+   ],
+   "material": {
+    "color": "#111113",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "b3",
+   "name": "Blade 3",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     160,
+     55,
+     6
+    ],
+    "radius": 2.5
+   },
+   "position": [
+    -134.6,
+    311.1,
+    10
+   ],
+   "rotation": [
+    0,
+    0,
+    2.862
+   ],
+   "material": {
+    "color": "#111113",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "b4",
+   "name": "Blade 4",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     160,
+     55,
+     6
+    ],
+    "radius": 2.5
+   },
+   "position": [
+    -78.3,
+    156.4,
+    10
+   ],
+   "rotation": [
+    0,
+    0,
+    4.118
+   ],
+   "material": {
+    "color": "#111113",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "b5",
+   "name": "Blade 5",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     160,
+     55,
+     6
+    ],
+    "radius": 2.5
+   },
+   "position": [
+    86.2,
+    162.2,
+    10
+   ],
+   "rotation": [
+    0,
+    0,
+    5.375
+   ],
+   "material": {
+    "color": "#111113",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Speed knob",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "speed selector knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 22,
+    "radiusBottom": 22,
+    "depth": 30,
+    "radialSegments": 32
+   },
+   "position": [
+    205,
+    490,
+    40
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#101012",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "footL",
+   "name": "Foot left",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "stand foot",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     12,
+     120
+    ],
+    "radius": 3
+   },
+   "position": [
+    -150,
+    6,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "footR",
+   "name": "Foot right",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "stand foot",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     12,
+     120
+    ],
+    "radius": 3
+   },
+   "position": [
+    150,
+    6,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.6
+   }
+  }
+ ]
+}

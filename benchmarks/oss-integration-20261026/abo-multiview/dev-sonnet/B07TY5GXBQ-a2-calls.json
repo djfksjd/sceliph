@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Movian 2-voudig modulair MDF boekenkast, beige/wit.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 594 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0204292,
+   "durationMs": 14067,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-62,\"elevationDeg\":14},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian 2-voudig modulaire boekenkast\",\"units\":\"mm\",\"components\":[{\"id\":\"sideL\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"Oak-look MDF\",\"detail\":\"Left side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[16,594,280],\"radius\":1},\"position\":[-67,297,0],\"material\":{\"color\":\"#d9aa7c\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"sideR\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"Oak-look MDF\",\"detail\":\"Right side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[16,594,280],\"radius\":1},\"position\":[67,297,0],\"material\":{\"color\":\"#d9aa7c\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"top\",\"name\":\"Top panel\",\"category\":\"enclosure\",\"materialName\":\"White MDF\",\"detail\":\"Top panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[118,16,280],\"radius\":1},\"position\":[0,586,0],\"material\":{\"color\":\"#f4f5f6\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"bottom\",\"name\":\"Bottom panel\",\"category\":\"enclosure\",\"materialName\":\"White MDF\",\"detail\":\"Bottom panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[118,16,280],\"radius\":1},\"position\":[0,8,0],\"material\":{\"color\":\"#f4f5f6\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"shelf\",\"name\":\"Middle shelf\",\"category\":\"mechanical\",\"materialName\":\"White MDF\",\"detail\":\"Middle shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[118,16,270],\"radius\":1},\"position\":[0,297,-5],\"material\":{\"color\":\"#f4f5f6\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"back\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"Oak-look MDF\",\"detail\":\"Back panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[118,562,6],\"radius\":1},\"position\":[0,297,-137],\"material\":{\"color\":\"#d2a273\",\"roughness\":0.75,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

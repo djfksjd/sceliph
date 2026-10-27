@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand - Movian MDF Shelf 2 lockers Cube Bookcase, Light Oak, 41.5 x 29 x 59.5 cm.\nThe product listing gives its overall height as 592 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00142112,
+   "durationMs": 12001,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-30,\"elevationDeg\":15},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian 2-Compartment MDF Cube Bookcase, Light Oak\",\"units\":\"mm\",\"components\":[{\"id\":\"side_left\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"Light oak MDF\",\"detail\":\"Full-height side panel, 18 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,592,289],\"radius\":2},\"position\":[-197.5,296,0],\"material\":{\"color\":\"#d9b98a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"side_right\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"Light oak MDF\",\"detail\":\"Full-height side panel, 18 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,592,289],\"radius\":2},\"position\":[197.5,296,0],\"material\":{\"color\":\"#d9b98a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"top_panel\",\"name\":\"Top panel\",\"category\":\"enclosure\",\"materialName\":\"Light oak MDF\",\"detail\":\"Top panel spanning between the sides, 18 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[377,18,289],\"radius\":2},\"position\":[0,583,0],\"material\":{\"color\":\"#d9b98a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"bottom_panel\",\"name\":\"Bottom panel\",\"category\":\"enclosure\",\"materialName\":\"Light oak MDF\",\"detail\":\"Base panel spanning between the sides, 18 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[377,18,289],\"radius\":2},\"position\":[0,9,0],\"material\":{\"color\":\"#d9b98a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"middle_shelf\",\"name\":\"Middle shelf\",\"category\":\"enclosure\",\"materialName\":\"Light oak MDF\",\"detail\":\"Adjustable-height fixed shelf dividing the two lockers, at roughly 48% of the height\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[377,18,283],\"radius\":2},\"position\":[0,285,3],\"material\":{\"color\":\"#d9b98a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"back_panel\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"Light oak MDF back board\",\"detail\":\"Thin rear panel closing the back of the cube, set in behind the shelf and top/bottom\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[377,556,6],\"radius\":1},\"position\":[0,296,-141.5],\"material\":{\"color\":\"#c9a677\",\"roughness\":0.7,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

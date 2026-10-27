@@ -1,0 +1,76 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "lamp-truth",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "enclosure",
+   "materialName": "steel",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 80,
+    "radiusBottom": 80,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    10,
+    0
+   ],
+   "material": {
+    "color": "#303030",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 350,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    195,
+    0
+   ],
+   "material": {
+    "color": "#b0b0b0",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Shade",
+   "category": "enclosure",
+   "materialName": "fabric",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 45,
+    "radiusBottom": 95,
+    "depth": 120,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    420,
+    0
+   ],
+   "material": {
+    "color": "#e8dcc0",
+    "roughness": 0.5
+   }
+  }
+ ]
+}

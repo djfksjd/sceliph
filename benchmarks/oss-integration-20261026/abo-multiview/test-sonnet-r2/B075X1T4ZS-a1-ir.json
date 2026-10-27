@@ -1,0 +1,230 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Turned wood table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Turned wood base",
+   "category": "mechanical",
+   "materialName": "weathered wood",
+   "detail": "Turned baluster base with stepped foot and bulb",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      68,
+      0
+     ],
+     [
+      68,
+      9
+     ],
+     [
+      58,
+      14
+     ],
+     [
+      56,
+      22
+     ],
+     [
+      48,
+      24
+     ],
+     [
+      46,
+      34
+     ],
+     [
+      34,
+      38
+     ],
+     [
+      28,
+      46
+     ],
+     [
+      34,
+      52
+     ],
+     [
+      42,
+      66
+     ],
+     [
+      46,
+      85
+     ],
+     [
+      44,
+      120
+     ],
+     [
+      40,
+      140
+     ],
+     [
+      30,
+      150
+     ],
+     [
+      24,
+      156
+     ],
+     [
+      30,
+      160
+     ],
+     [
+      34,
+      165
+     ],
+     [
+      28,
+      172
+     ],
+     [
+      20,
+      178
+     ],
+     [
+      18,
+      195
+     ],
+     [
+      26,
+      205
+     ],
+     [
+      28,
+      212
+     ],
+     [
+      20,
+      222
+     ],
+     [
+      12,
+      234
+     ],
+     [
+      0,
+      234
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b09580",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Linen drum shade",
+   "category": "enclosure",
+   "materialName": "linen fabric",
+   "detail": "Tapered shade with thin closed wall",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      130,
+      -132
+     ],
+     [
+      134,
+      -132
+     ],
+     [
+      134,
+      -130
+     ],
+     [
+      105,
+      132
+     ],
+     [
+      101,
+      132
+     ],
+     [
+      101,
+      130
+     ],
+     [
+      130,
+      -132
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    368,
+    0
+   ],
+   "material": {
+    "color": "#d8d6d0",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Inner rod",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Hidden support rod to finial",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 250,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    359,
+    0
+   ],
+   "material": {
+    "color": "#b09580",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Finial",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Small round finial",
+   "geometry": {
+    "op": "sphere",
+    "radius": 12
+   },
+   "position": [
+    0,
+    496,
+    0
+   ],
+   "material": {
+    "color": "#a98d78",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  }
+ ]
+}

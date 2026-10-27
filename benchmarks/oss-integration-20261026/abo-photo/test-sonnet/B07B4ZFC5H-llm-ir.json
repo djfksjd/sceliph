@@ -1,0 +1,419 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Five drawer wood dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "oak veneer",
+   "detail": "Overhanging top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     965,
+     50,
+     490
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    1296,
+    0
+   ],
+   "material": {
+    "color": "#b8884f",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "oak veneer",
+   "detail": "Main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     930,
+     1180,
+     450
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    680,
+    0
+   ],
+   "material": {
+    "color": "#b5834c",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Tapered turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 18,
+    "depth": 90,
+    "radialSegments": 24
+   },
+   "position": [
+    -410,
+    45,
+    190
+   ],
+   "material": {
+    "color": "#b5834c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Tapered turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 18,
+    "depth": 90,
+    "radialSegments": 24
+   },
+   "position": [
+    410,
+    45,
+    190
+   ],
+   "material": {
+    "color": "#b5834c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Tapered turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 18,
+    "depth": 90,
+    "radialSegments": 24
+   },
+   "position": [
+    -410,
+    45,
+    -190
+   ],
+   "material": {
+    "color": "#b5834c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "turned wood",
+   "detail": "Tapered turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 18,
+    "depth": 90,
+    "radialSegments": 24
+   },
+   "position": [
+    410,
+    45,
+    -190
+   ],
+   "material": {
+    "color": "#b5834c",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "drawer1",
+   "name": "Drawer 1",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     208,
+     24
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    214,
+    232
+   ],
+   "material": {
+    "color": "#b9895a",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer2",
+   "name": "Drawer 2",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     208,
+     24
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    442,
+    232
+   ],
+   "material": {
+    "color": "#b9895a",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer3",
+   "name": "Drawer 3",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     208,
+     24
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    670,
+    232
+   ],
+   "material": {
+    "color": "#b9895a",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer4",
+   "name": "Drawer 4",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     208,
+     24
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    898,
+    232
+   ],
+   "material": {
+    "color": "#b9895a",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer5",
+   "name": "Drawer 5",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     208,
+     24
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    1126,
+    232
+   ],
+   "material": {
+    "color": "#b9895a",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "knob1",
+   "name": "Knob 1",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Round knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 16,
+    "depth": 28,
+    "radialSegments": 24
+   },
+   "position": [
+    330,
+    226,
+    256
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#8c8a70",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "knob2",
+   "name": "Knob 2",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Round knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 16,
+    "depth": 28,
+    "radialSegments": 24
+   },
+   "position": [
+    330,
+    454,
+    256
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#8c8a70",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "knob3",
+   "name": "Knob 3",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Round knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 16,
+    "depth": 28,
+    "radialSegments": 24
+   },
+   "position": [
+    330,
+    682,
+    256
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#8c8a70",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "knob4",
+   "name": "Knob 4",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Round knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 16,
+    "depth": 28,
+    "radialSegments": 24
+   },
+   "position": [
+    330,
+    910,
+    256
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#8c8a70",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "knob5",
+   "name": "Knob 5",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Round knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 16,
+    "depth": 28,
+    "radialSegments": 24
+   },
+   "position": [
+    330,
+    1138,
+    256
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#8c8a70",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "summary": {
+  "id": "arch",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.0213665,
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0213665,
+   "durationMs": 12082,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Stone Arch\",\"units\":\"mm\",\"components\":[\n{\"id\":\"block_1\",\"name\":\"Arch block 1\",\"category\":\"mechanical\",\"materialName\":\"stone\",\"detail\":\"Arch voussoir at 10 degrees\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,200,400],\"radius\":5},\"position\":[984.81,173.65,0],\"rotation\":[0,0,0.17453],\"material\":{\"color\":\"#9a9488\",\"roughness\":0.9,\"metalness\":0}},\n{\"id\":\"block_2\",\"name\":\"Arch block 2\",\"category\":\"mechanical\",\"materialName\":\"stone\",\"detail\":\"Arch voussoir at 30 degrees\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,200,400],\"radius\":5},\"position\":[866.03,500,0],\"rotation\":[0,0,0.5236],\"material\":{\"color\":\"#9a9488\",\"roughness\":0.9,\"metalness\":0}},\n{\"id\":\"block_3\",\"name\":\"Arch block 3\",\"category\":\"mechanical\",\"materialName\":\"stone\",\"detail\":\"Arch voussoir at 50 degrees\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,200,400],\"radius\":5},\"position\":[642.79,766.04,0],\"rotation\":[0,0,0.87266],\"material\":{\"color\":\"#9a9488\",\"roughness\":0.9,\"metalness\":0}},\n{\"id\":\"block_4\",\"name\":\"Arch block 4\",\"category\":\"mechanical\",\"materialName\":\"stone\",\"detail\":\"Arch voussoir at 70 degrees\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,200,400],\"radius\":5},\"position\":[342.02,939.69,0],\"rotation\":[0,0,1.22173],\"material\":{\"color\":\"#9a9488\",\"roughness\":0.9,\"metalness\":0}},\n{\"id\":\"block_5\",\"name\":\"Arch block 5 (keystone)\",\"category\":\"mechanical\",\"materialName\":\"stone\",\"detail\":\"Arch voussoir at 90 degrees\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,200,400],\"radius\":5},\"position\":[0,1000,0],\"rotation\":[0,0,1.5708],\"material\":{\"color\":\"#9a9488\",\"roughness\":0.9,\"metalness\":0}},\n{\"id\":\"block_6\",\"name\":\"Arch block 6\",\"category\":\"mechanical\",\"materialName\":\"stone\",\"detail\":\"Arch voussoir at 110 degrees\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,200,400],\"radius\":5},\"position\":[-342.02,939.69,0],\"rotation\":[0,0,1.91986],\"material\":{\"color\":\"#9a9488\",\"roughness\":0.9,\"metalness\":0}},\n{\"id\":\"block_7\",\"name\":\"Arch block 7\",\"category\":\"mechanical\",\"materialName\":\"stone\",\"detail\":\"Arch voussoir at 130 degrees\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,200,400],\"radius\":5},\"position\":[-642.79,766.04,0],\"rotation\":[0,0,2.26893],\"material\":{\"color\":\"#9a9488\",\"roughness\":0.9,\"metalness\":0}},\n{\"id\":\"block_8\",\"name\":\"Arch block 8\",\"category\":\"mechanical\",\"materialName\":\"stone\",\"detail\":\"Arch voussoir at 150 degrees\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,200,400],\"radius\":5},\"position\":[-866.03,500,0],\"rotation\":[0,0,2.61799],\"material\":{\"color\":\"#9a9488\",\"roughness\":0.9,\"metalness\":0}},\n{\"id\":\"block_9\",\"name\":\"Arch block 9\",\"category\":\"mechanical\",\"materialName\":\"stone\",\"detail\":\"Arch voussoir at 170 degrees\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,200,400],\"radius\":5},\"position\":[-984.81,173.65,0],\"rotation\":[0,0,2.96706],\"material\":{\"color\":\"#9a9488\",\"roughness\":0.9,\"metalness\":0}}\n]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 8748,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      2299.792,
+      1100.878,
+      400
+     ],
+     "dimensionChecks": [
+      {
+       "id": "b5-top",
+       "expectedMm": 1150,
+       "actualMm": 1150.0003732799685,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "b5-y",
+       "expectedMm": 300,
+       "actualMm": 300.0007465599367,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "b5-x",
+       "expectedMm": 200,
+       "actualMm": 200.00110494045774,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "b1-x",
+       "expectedMm": 330.17,
+       "actualMm": 330.1715499278175,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "span",
+       "expectedMm": 2299.79,
+       "actualMm": 2299.791742137444,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "depth",
+       "expectedMm": 400,
+       "actualMm": 400.0000059604645,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

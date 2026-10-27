@@ -1,0 +1,189 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Two-drawer file cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plinth",
+   "name": "Base plinth",
+   "category": "enclosure",
+   "materialName": "painted MDF",
+   "detail": "Wider base plinth at the bottom",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     517.0201229267482,
+     40,
+     430
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    24.073982342884392,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "body",
+   "name": "Cabinet body",
+   "category": "enclosure",
+   "materialName": "painted wood",
+   "detail": "Main carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     478.140306480988,
+     712.7834455692255,
+     393.97031762717245
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    355,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "painted wood",
+   "detail": "Overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     480,
+     29,
+     440
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    707.9898907445153,
+    0
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.45,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_top",
+   "name": "Upper drawer front",
+   "category": "mechanical",
+   "materialName": "painted wood",
+   "detail": "Upper drawer front panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     395,
+     265,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    512,
+    196.00710701523496
+   ],
+   "material": {
+    "color": "#f7f7f5",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_bot",
+   "name": "Lower drawer front",
+   "category": "mechanical",
+   "materialName": "painted wood",
+   "detail": "Lower drawer front panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     395,
+     265,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    235,
+    196.00710701523496
+   ],
+   "material": {
+    "color": "#f7f7f5",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle_top",
+   "name": "Upper handle",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Recessed metal pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     25,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    512,
+    215
+   ],
+   "material": {
+    "color": "#c8b08a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "handle_bot",
+   "name": "Lower handle",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Recessed metal pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     25,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    235,
+    215
+   ],
+   "material": {
+    "color": "#c8b08a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

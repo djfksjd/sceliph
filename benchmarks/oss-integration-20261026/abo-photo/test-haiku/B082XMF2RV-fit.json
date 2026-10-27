@@ -1,0 +1,1430 @@
+{
+ "spec": {
+  "schema": "sceliph.photo-fit-spec/0.1",
+  "referenceComponentId": "light-globe",
+  "viewHint": {
+   "azimuthDeg": 20,
+   "elevationDeg": 8,
+   "sigmaDeg": 20
+  },
+  "knownExtent": {
+   "axis": 1,
+   "mm": 355.59999999999997,
+   "sigmaMm": 3.5559999999999996
+  },
+  "parameters": [
+   {
+    "componentId": "light-globe",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "light-globe",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 47.5,
+    "max": 190
+   },
+   {
+    "componentId": "light-globe",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 35,
+    "max": 140
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 35,
+    "max": 140
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 42.5,
+    "max": 170
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 25,
+    "max": 100
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -565.0004882363746,
+    "max": 755.0004882363746
+   },
+   {
+    "componentId": "downrod",
+    "path": [
+     "geometry",
+     "radius"
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "downrod",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -432.0004882363746,
+    "max": 888.0004882363746
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 30,
+    "max": 120
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 32.5,
+    "max": 130
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 10,
+    "max": 40
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -314.0004882363746,
+    "max": 1006.0004882363746
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -270.0004882363746,
+    "max": 1050.0004882363746
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -270.0004882363746,
+    "max": 1050.0004882363746
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1050.0004882363746,
+    "max": 270.0004882363746
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -1050.0004882363746,
+    "max": 270.0004882363746
+   }
+  ]
+ },
+ "derived": {
+  "parameters": [
+   {
+    "componentId": "light-globe",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "light-globe",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 47.5,
+    "max": 190
+   },
+   {
+    "componentId": "light-globe",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 35,
+    "max": 140
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 35,
+    "max": 140
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 42.5,
+    "max": 170
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 25,
+    "max": 100
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -565.0004882363746,
+    "max": 755.0004882363746
+   },
+   {
+    "componentId": "downrod",
+    "path": [
+     "geometry",
+     "radius"
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "downrod",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -432.0004882363746,
+    "max": 888.0004882363746
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 30,
+    "max": 120
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 32.5,
+    "max": 130
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 10,
+    "max": 40
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -314.0004882363746,
+    "max": 1006.0004882363746
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -270.0004882363746,
+    "max": 1050.0004882363746
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -270.0004882363746,
+    "max": 1050.0004882363746
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1050.0004882363746,
+    "max": 270.0004882363746
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -1050.0004882363746,
+    "max": 270.0004882363746
+   }
+  ],
+  "locked": [],
+  "groups": [],
+  "aligned": [
+   {
+    "componentId": "motor-housing",
+    "axis": 0
+   },
+   {
+    "componentId": "motor-housing",
+    "axis": 2
+   },
+   {
+    "componentId": "downrod",
+    "axis": 0
+   },
+   {
+    "componentId": "downrod",
+    "axis": 2
+   },
+   {
+    "componentId": "canopy",
+    "axis": 0
+   },
+   {
+    "componentId": "canopy",
+    "axis": 2
+   },
+   {
+    "componentId": "blade-1",
+    "axis": 2
+   },
+   {
+    "componentId": "blade-2",
+    "axis": 0
+   },
+   {
+    "componentId": "blade-3",
+    "axis": 2
+   },
+   {
+    "componentId": "blade-4",
+    "axis": 0
+   }
+  ],
+  "skipped": []
+ },
+ "anchor": {
+  "estimatedMm": 1175.3000617027283,
+  "knownMm": 355.59999999999997,
+  "scaleCorrection": 0.30256103235868187
+ },
+ "raster": {
+  "width": 160,
+  "height": 81,
+  "crop": {
+   "x": 0,
+   "y": 0,
+   "width": 636,
+   "height": 321
+  }
+ },
+ "cameraOnly": {
+  "loss": 0.2559905214938843,
+  "view": {
+   "id": "photo",
+   "iou": 0.5419489317352788,
+   "meanBoundaryDistancePx": 1.162079714140209,
+   "depthResidual": 0.1386705425694653
+  }
+ },
+ "receipt": {
+  "schema": "sceliph.silhouette-parameter-fit/0.2",
+  "provenance": "inferred",
+  "seed": 1,
+  "parameters": [
+   {
+    "componentId": "light-globe",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 45,
+    "max": 180,
+    "before": 90,
+    "after": 90,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0007198225777279577,
+    "frozen": true
+   },
+   {
+    "componentId": "light-globe",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 47.5,
+    "max": 190,
+    "before": 95,
+    "after": 95,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0005552385458150733,
+    "frozen": true
+   },
+   {
+    "componentId": "light-globe",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 35,
+    "max": 140,
+    "before": 70,
+    "after": 77.62613037032739,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.007096873440269491,
+    "frozen": false
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 35,
+    "max": 140,
+    "before": 70,
+    "after": 70,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.001598859671814279,
+    "frozen": true
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 42.5,
+    "max": 170,
+    "before": 85,
+    "after": 85,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00066633940939681,
+    "frozen": true
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 25,
+    "max": 100,
+    "before": 50,
+    "after": 50,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0006136064184464329,
+    "frozen": true
+   },
+   {
+    "componentId": "motor-housing",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -565.0004882363746,
+    "max": 755.0004882363746,
+    "before": 95,
+    "after": 128.5976720039465,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.013312657295423025,
+    "frozen": false
+   },
+   {
+    "componentId": "downrod",
+    "path": [
+     "geometry",
+     "radius"
+    ],
+    "min": 6,
+    "max": 24,
+    "before": 12,
+    "after": 12,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.001428474841126126,
+    "frozen": true
+   },
+   {
+    "componentId": "downrod",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -432.0004882363746,
+    "max": 888.0004882363746,
+    "before": 228,
+    "after": 243.80726362172618,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 1.702803076228796,
+    "frozen": false
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 30,
+    "max": 120,
+    "before": 60,
+    "after": 60,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0008534362424957864,
+    "frozen": true
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 32.5,
+    "max": 130,
+    "before": 65,
+    "after": 65,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00021612439364421254,
+    "frozen": true
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 10,
+    "max": 40,
+    "before": 20,
+    "after": 20,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0010636954495461537,
+    "frozen": true
+   },
+   {
+    "componentId": "canopy",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -314.0004882363746,
+    "max": 1006.0004882363746,
+    "before": 346,
+    "after": 169.27848485139089,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 3.4944910173158035,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080,
+    "before": 540,
+    "after": 540,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0007219528102920814,
+    "frozen": true
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24,
+    "before": 12,
+    "after": 12,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0011714531804224992,
+    "frozen": true
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260,
+    "before": 130,
+    "after": 178.78956438384247,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.0021604193915385483,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -270.0004882363746,
+    "max": 1050.0004882363746,
+    "before": 390,
+    "after": 266.88475965046916,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.012330777755097999,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-1",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746,
+    "before": 100,
+    "after": 41.38305325236547,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.0879704603631063,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080,
+    "before": 540,
+    "after": 512.9756166761236,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.0026277955056149827,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24,
+    "before": 12,
+    "after": 12,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0004702033575365028,
+    "frozen": true
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260,
+    "before": 130,
+    "after": 74.0145275494975,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.0033800250665594334,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746,
+    "before": 100,
+    "after": 5.07949738984712,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.008934237527421174,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-2",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -270.0004882363746,
+    "max": 1050.0004882363746,
+    "before": 390,
+    "after": 194.16747440077665,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.009951323372934057,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080,
+    "before": 540,
+    "after": 540,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.001420977189633521,
+    "frozen": true
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24,
+    "before": 12,
+    "after": 12,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00031959522388536055,
+    "frozen": true
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260,
+    "before": 130,
+    "after": 130,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0007923956294410006,
+    "frozen": true
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "position",
+     0
+    ],
+    "min": -1050.0004882363746,
+    "max": 270.0004882363746,
+    "before": -390,
+    "after": -467.70047025649103,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.0022150827472721124,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-3",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746,
+    "before": 100,
+    "after": 345.11828265874476,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.03155977612434524,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "geometry",
+     "size",
+     0
+    ],
+    "min": 270,
+    "max": 1080,
+    "before": 540,
+    "after": 540,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0007963147793531578,
+    "frozen": true
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "geometry",
+     "size",
+     1
+    ],
+    "min": 6,
+    "max": 24,
+    "before": 12,
+    "after": 12,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0002830555666663015,
+    "frozen": true
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "geometry",
+     "size",
+     2
+    ],
+    "min": 65,
+    "max": 260,
+    "before": 130,
+    "after": 130,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0006292072933243298,
+    "frozen": true
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -560.0004882363746,
+    "max": 760.0004882363746,
+    "before": 100,
+    "after": 286.92629027242356,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.008897060824254566,
+    "frozen": false
+   },
+   {
+    "componentId": "blade-4",
+    "path": [
+     "position",
+     2
+    ],
+    "min": -1050.0004882363746,
+    "max": 270.0004882363746,
+    "before": -390,
+    "after": -224.88646476326562,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.006160028768333603,
+    "frozen": false
+   }
+  ],
+  "cameraParameters": [
+   {
+    "viewId": "photo",
+    "field": "azimuthDeg",
+    "prior": {
+     "mean": 20,
+     "sigma": 20
+    },
+    "min": -30,
+    "max": 70,
+    "before": 24.973799072428285,
+    "after": 27.72197308667483,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "elevationDeg",
+    "prior": {
+     "mean": 8,
+     "sigma": 20
+    },
+    "min": -42,
+    "max": 58,
+    "before": 22.192292056691358,
+    "after": 13.678358829732474,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "distanceMm",
+    "prior": {
+     "mean": 1176.3601847720513,
+     "sigma": 294.0900461930128
+    },
+    "min": 588.1800923860256,
+    "max": 2352.7203695441026,
+    "before": 1291.3489033059127,
+    "after": 1150.1213574108074,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetX",
+    "min": -1356.2340449643416,
+    "max": 1283.767907981157,
+    "before": 209.5770498483489,
+    "after": 184.0307464684172,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetY",
+    "min": -1149.8180248751692,
+    "max": 1490.1839280703293,
+    "before": 320.35391297402043,
+    "after": 181.238136203845,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetZ",
+    "min": -1305.6444225848938,
+    "max": 1334.3575303606046,
+    "before": 442.99247446821437,
+    "after": 350.1475418448324,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "rollDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 4
+    },
+    "min": -15,
+    "max": 15,
+    "before": -1.2954638185423235,
+    "after": 0.344595564147415,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "focalScale",
+    "prior": {
+     "mean": 1,
+     "sigma": 0.15
+    },
+    "min": 0.6,
+    "max": 1.6,
+    "before": 1.0277239500918458,
+    "after": 0.995692106859476,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   }
+  ],
+  "orbits": [
+   {
+    "viewId": "photo",
+    "orbit": {
+     "width": 640,
+     "height": 321,
+     "fx": 671.1136442021899,
+     "fy": 671.1136442021899,
+     "cx": 320,
+     "cy": 160.5,
+     "target": [
+      184.0307464684172,
+      181.238136203845,
+      350.1475418448324
+     ],
+     "azimuthDeg": 27.72197308667483,
+     "elevationDeg": 13.678358829732474,
+     "distanceMm": 1150.1213574108074,
+     "rollDeg": 0.344595564147415,
+     "focalScale": 0.995692106859476
+    }
+   }
+  ],
+  "restarts": 2,
+  "before": {
+   "loss": 0.36191501638696066,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.1647782453868566,
+     "meanBoundaryDistancePx": 5.469740534536195,
+     "depthResidual": 0.1098217768134298
+    }
+   ]
+  },
+  "after": {
+   "loss": 0.2096680192068523,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.5288518738845925,
+     "meanBoundaryDistancePx": 2.7231935100572757,
+     "depthResidual": 0.0676466698692765
+    }
+   ]
+  },
+  "evaluations": 16084,
+  "stopReason": "maxEvaluations",
+  "compiledGeometries": 35584
+ },
+ "lowConfidenceReasons": [
+  "Object silhouette IoU 0.529 < 0.97.",
+  "Depth-shape residual 0.068 > 0.03."
+ ],
+ "acceptance": {
+  "accept": false,
+  "relativeLossGain": 0.18095397445463096,
+  "freeParameters": 15,
+  "iou": 0.5288518738845925,
+  "reasons": [
+   "Shape fit removed 18.1% of the camera-only loss (< 30.0%).",
+   "15 free parameters removed 1.2% each (< 5.0%).",
+   "Fitted silhouette IoU 0.529 < 0.9."
+  ]
+ }
+}

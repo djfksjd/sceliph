@@ -1,0 +1,122 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Table lamp with wood base and linen shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "ring",
+   "name": "Base ring",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Thin dark metal ring under the wood base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 62,
+    "radiusBottom": 62,
+    "depth": 7,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    3.5,
+    0
+   ],
+   "material": {
+    "color": "#2b2b2c",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "base",
+   "name": "Wood base",
+   "category": "enclosure",
+   "materialName": "gray wood",
+   "detail": "Cylindrical gray-washed wood base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 56,
+    "radiusBottom": 56,
+    "depth": 88,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    51,
+    0
+   ],
+   "material": {
+    "color": "#b4aa9a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Stem",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Slim black metal stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 7,
+    "radiusBottom": 7,
+    "depth": 245,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    217.5,
+    0
+   ],
+   "material": {
+    "color": "#2b2b2c",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Fabric shade",
+   "category": "enclosure",
+   "materialName": "gray linen",
+   "detail": "Open cylindrical drum shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      110,
+      0
+     ],
+     [
+      111,
+      0
+     ],
+     [
+      111,
+      205
+     ],
+     [
+      110,
+      205
+     ],
+     [
+      110,
+      0
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    265,
+    0
+   ],
+   "material": {
+    "color": "#9b948a",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  }
+ ]
+}

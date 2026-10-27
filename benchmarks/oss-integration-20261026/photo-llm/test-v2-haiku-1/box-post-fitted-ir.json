@@ -1,0 +1,57 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "box_with_post",
+ "units": "mm",
+ "components": [
+  {
+   "id": "box",
+   "name": "box",
+   "category": "enclosure",
+   "materialName": "painted plastic",
+   "detail": "Rectangular box, 300 mm long front face, about 150 mm tall and 200 mm deep, standing on the floor.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     167.8090204927126,
+     167.52748766309418
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    75,
+    0
+   ],
+   "material": {
+    "color": "#9a4a33",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "post",
+   "name": "post",
+   "category": "mechanical",
+   "materialName": "painted plastic",
+   "detail": "Vertical cylindrical post, about 84 mm diameter and 200 mm tall, standing on the top face of the box, set slightly back and to the right of centre.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 37.930657283116815,
+    "radiusBottom": 37.930657283116815,
+    "depth": 191.181846154208,
+    "radialSegments": 32
+   },
+   "position": [
+    37.36596058471642,
+    235.46902968985637,
+    13.773671362321238
+   ],
+   "material": {
+    "color": "#3f6fb0",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  }
+ ]
+}

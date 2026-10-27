@@ -1,0 +1,324 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Torchiere Floor Lamp with Reading Light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "silver painted metal",
+   "detail": "Round weighted base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 175,
+    "radiusBottom": 190,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#a9abae",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "silver painted metal",
+   "detail": "Main vertical stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 1600,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    830,
+    0
+   ],
+   "material": {
+    "color": "#b0b2b5",
+    "roughness": 0.35,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "cup",
+   "name": "Torchiere cup holder",
+   "category": "mechanical",
+   "materialName": "silver metal",
+   "detail": "Flared socket holder under the shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      14,
+      30
+     ],
+     [
+      35,
+      90
+     ],
+     [
+      30,
+      90
+     ],
+     [
+      10,
+      40
+     ],
+     [
+      0,
+      40
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    0,
+    1640,
+    0
+   ],
+   "material": {
+    "color": "#b0b2b5",
+    "roughness": 0.35,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Torchiere shade",
+   "category": "enclosure",
+   "materialName": "white plastic",
+   "detail": "Upward-facing bowl shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      60,
+      10
+     ],
+     [
+      120,
+      50
+     ],
+     [
+      170,
+      110
+     ],
+     [
+      178,
+      190
+     ],
+     [
+      172,
+      190
+     ],
+     [
+      165,
+      115
+     ],
+     [
+      115,
+      60
+     ],
+     [
+      55,
+      22
+     ],
+     [
+      0,
+      12
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    1639,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "reading_neck",
+   "name": "Reading light gooseneck",
+   "category": "mechanical",
+   "materialName": "silver metal",
+   "detail": "Curved flexible arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      60,
+      40,
+      0
+     ],
+     [
+      120,
+      40,
+      0
+     ],
+     [
+      170,
+      -10,
+      0
+     ],
+     [
+      175,
+      -60,
+      0
+     ]
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    1170,
+    0
+   ],
+   "material": {
+    "color": "#b0b2b5",
+    "roughness": 0.35,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "reading_collar",
+   "name": "Reading light collar",
+   "category": "mechanical",
+   "materialName": "silver metal",
+   "detail": "Small clamp on pole",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 14,
+    "depth": 30,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    1170,
+    0
+   ],
+   "material": {
+    "color": "#b0b2b5",
+    "roughness": 0.35,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "reading_cap",
+   "name": "Reading light cap",
+   "category": "mechanical",
+   "materialName": "silver metal",
+   "detail": "Top cap of reading light",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 12,
+    "radiusBottom": 18,
+    "depth": 30,
+    "radialSegments": 24
+   },
+   "position": [
+    -175,
+    1170,
+    0
+   ],
+   "material": {
+    "color": "#b0b2b5",
+    "roughness": 0.35,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "reading_shade",
+   "name": "Reading light shade",
+   "category": "enclosure",
+   "materialName": "white plastic",
+   "detail": "Small dome shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      60
+     ],
+     [
+      28,
+      55
+     ],
+     [
+      55,
+      25
+     ],
+     [
+      75,
+      -20
+     ],
+     [
+      75,
+      -30
+     ],
+     [
+      70,
+      -30
+     ],
+     [
+      50,
+      -18
+     ],
+     [
+      25,
+      20
+     ],
+     [
+      0,
+      40
+     ]
+    ],
+    "segments": 40
+   },
+   "position": [
+    -175,
+    1110,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

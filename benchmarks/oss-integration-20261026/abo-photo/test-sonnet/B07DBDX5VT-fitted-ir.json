@@ -1,0 +1,469 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Farmhouse shelf coffee table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Tabletop",
+   "category": "mechanical",
+   "materialName": "Natural rustic wood",
+   "detail": "Planked wood top with rounded edge",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1118,
+     30,
+     560
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    442,
+    0
+   ],
+   "material": {
+    "color": "#b0824f",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "apr_f",
+   "name": "Front apron",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Long apron",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1040,
+     60,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    397,
+    245
+   ],
+   "material": {
+    "color": "#ebe9e4",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "apr_b",
+   "name": "Back apron",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Long apron",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1040,
+     60,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    397,
+    -245
+   ],
+   "material": {
+    "color": "#ebe9e4",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "apr_l",
+   "name": "Left apron",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "End apron",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     60,
+     470
+    ],
+    "radius": 3
+   },
+   "position": [
+    -510,
+    397,
+    0
+   ],
+   "material": {
+    "color": "#ebe9e4",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "apr_r",
+   "name": "Right apron",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "End apron",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     60,
+     470
+    ],
+    "radius": 3
+   },
+   "position": [
+    510,
+    397,
+    0
+   ],
+   "material": {
+    "color": "#ebe9e4",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Turned leg",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -213.5
+     ],
+     [
+      17,
+      -213.5
+     ],
+     [
+      20,
+      -150
+     ],
+     [
+      25,
+      -90
+     ],
+     [
+      34,
+      -80
+     ],
+     [
+      34,
+      -60
+     ],
+     [
+      22,
+      -50
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      27,
+      20
+     ],
+     [
+      22,
+      50
+     ],
+     [
+      22,
+      100
+     ],
+     [
+      30,
+      120
+     ],
+     [
+      30,
+      213.5
+     ],
+     [
+      0,
+      213.5
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    -520,
+    213.5,
+    240
+   ],
+   "material": {
+    "color": "#ebe9e4",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Turned leg",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -213.5
+     ],
+     [
+      17,
+      -213.5
+     ],
+     [
+      20,
+      -150
+     ],
+     [
+      25,
+      -90
+     ],
+     [
+      34,
+      -80
+     ],
+     [
+      34,
+      -60
+     ],
+     [
+      22,
+      -50
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      27,
+      20
+     ],
+     [
+      22,
+      50
+     ],
+     [
+      22,
+      100
+     ],
+     [
+      30,
+      120
+     ],
+     [
+      30,
+      213.5
+     ],
+     [
+      0,
+      213.5
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    520,
+    213.5,
+    240
+   ],
+   "material": {
+    "color": "#ebe9e4",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Turned leg",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -213.5
+     ],
+     [
+      17,
+      -213.5
+     ],
+     [
+      20,
+      -150
+     ],
+     [
+      25,
+      -90
+     ],
+     [
+      34,
+      -80
+     ],
+     [
+      34,
+      -60
+     ],
+     [
+      22,
+      -50
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      27,
+      20
+     ],
+     [
+      22,
+      50
+     ],
+     [
+      22,
+      100
+     ],
+     [
+      30,
+      120
+     ],
+     [
+      30,
+      213.5
+     ],
+     [
+      0,
+      213.5
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    -520,
+    213.5,
+    -240
+   ],
+   "material": {
+    "color": "#ebe9e4",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Turned leg",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -213.5
+     ],
+     [
+      17,
+      -213.5
+     ],
+     [
+      20,
+      -150
+     ],
+     [
+      25,
+      -90
+     ],
+     [
+      34,
+      -80
+     ],
+     [
+      34,
+      -60
+     ],
+     [
+      22,
+      -50
+     ],
+     [
+      22,
+      0
+     ],
+     [
+      27,
+      20
+     ],
+     [
+      22,
+      50
+     ],
+     [
+      22,
+      100
+     ],
+     [
+      30,
+      120
+     ],
+     [
+      30,
+      213.5
+     ],
+     [
+      0,
+      213.5
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    520,
+    213.5,
+    -240
+   ],
+   "material": {
+    "color": "#ebe9e4",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Lower shelf",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "Flat lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1040,
+     18,
+     480
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    120,
+    0
+   ],
+   "material": {
+    "color": "#e4e2de",
+    "roughness": 0.7
+   }
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: AmazonBasics 3 Speed Air Circulator, 7-Inch.\nThe product listing gives its overall height as 277 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.00165472,
+   "durationMs": 13892,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-30,\"elevationDeg\":12},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"AmazonBasics 3 Speed Air Circulator 7-Inch\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Base plate\",\"category\":\"enclosure\",\"materialName\":\"ABS plastic\",\"detail\":\"Low wide rounded base plate that sits on the floor and carries the pedestal.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[230,36,165],\"radius\":12},\"position\":[0,18,0],\"material\":{\"color\":\"#111111\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"pedestal\",\"name\":\"Pedestal\",\"category\":\"mechanical\",\"materialName\":\"ABS plastic\",\"detail\":\"Central upright column rising from the base to the head pivot.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[40,90,30],\"radius\":6},\"position\":[0,81,-10],\"material\":{\"color\":\"#111111\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"yoke\",\"name\":\"Tilt yoke\",\"category\":\"mechanical\",\"materialName\":\"ABS plastic\",\"detail\":\"Curved arc behind the head that carries the fan housing and allows tilt.\",\"geometry\":{\"op\":\"tube\",\"points\":[[-95,-95,0],[-60,-125,0],[0,-130,0],[60,-125,0],[95,-95,0]],\"radius\":7},\"position\":[0,177,-20],\"material\":{\"color\":\"#111111\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"head\",\"name\":\"Fan housing\",\"category\":\"enclosure\",\"materialName\":\"ABS plastic\",\"detail\":\"Round motor housing that forms the body of the air circulator head.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":100,\"radiusBottom\":100,\"depth\":45,\"radialSegments\":48},\"position\":[0,177,0],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#141414\",\"roughness\":0.5,\"metalness\":0.0}},{\"id\":\"grille\",\"name\":\"Front grille\",\"category\":\"enclosure\",\"materialName\":\"ABS plastic\",\"detail\":\"Circular front guard ring that protects the rotor and frames the blades.\",\"geometry\":{\"op\":\"torus\",\"radius\":92,\"tube\":5},\"position\":[0,177,24],\"material\":{\"color\":\"#0d0d0d\",\"roughness\":0.5,\"metalness\":0.0}},{\"id\":\"rotor\",\"name\":\"Rotor blades\",\"category\":\"mechanical\",\"materialName\":\"ABS plastic\",\"detail\":\"Dark multi-blade rotor disc visible through the grille.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":88,\"radiusBottom\":88,\"depth\":6,\"radialSegments\":48},\"position\":[0,177,10],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.4,\"metalness\":0.1}},{\"id\":\"hub\",\"name\":\"Center hub\",\"category\":\"mechanical\",\"materialName\":\"ABS plastic\",\"detail\":\"Round logo badge hub at the centre of the rotor.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":26,\"radiusBottom\":26,\"depth\":10,\"radialSegments\":32},\"position\":[0,177,26],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#222222\",\"roughness\":0.4,\"metalness\":0.0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Coffee mug with ring handle",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Mug body",
+   "category": "enclosure",
+   "materialName": "Glazed ceramic",
+   "detail": "Slightly tapered cylindrical mug body, 95 mm tall, open-top cup form",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 41.70139073967229,
+    "radiusBottom": 37.977501839640325,
+    "depth": 95,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    47.5,
+    0
+   ],
+   "material": {
+    "color": "#2b6e8c",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Mug handle",
+   "category": "mechanical",
+   "materialName": "Glazed ceramic",
+   "detail": "Ring-shaped handle attached to the +X side of the body, lying in the XY plane",
+   "geometry": {
+    "op": "torus",
+    "radius": 25.83747636834282,
+    "tube": 6.147551594329595
+   },
+   "position": [
+    51.339218672388796,
+    49.02132004300664,
+    0
+   ],
+   "material": {
+    "color": "#2b6e8c",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  }
+ ]
+}

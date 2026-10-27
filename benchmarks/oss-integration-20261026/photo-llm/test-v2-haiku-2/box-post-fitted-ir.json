@@ -1,0 +1,57 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "box_with_post",
+ "units": "mm",
+ "components": [
+  {
+   "id": "box",
+   "name": "box",
+   "category": "enclosure",
+   "materialName": "painted box",
+   "detail": "Rectangular box, longest edge along X, resting on the floor.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     164.42003355999537,
+     148.99604802769605
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    70,
+    0
+   ],
+   "material": {
+    "color": "#9a4a33",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "post",
+   "name": "post",
+   "category": "mechanical",
+   "materialName": "painted post",
+   "detail": "Cylindrical post standing on the top face of the box, set toward the back-right.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 37.74711443472471,
+    "radiusBottom": 37.74711443472471,
+    "depth": 180.82354758231494,
+    "radialSegments": 32
+   },
+   "position": [
+    43.94768257479399,
+    230.55246929456013,
+    -7.62110451161098
+   ],
+   "material": {
+    "color": "#3d6fb0",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  }
+ ]
+}

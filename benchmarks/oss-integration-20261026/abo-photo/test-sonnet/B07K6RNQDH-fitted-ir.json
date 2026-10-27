@@ -1,0 +1,246 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Maggiore desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "San Remo oak effect",
+   "detail": "Desktop panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1300,
+     30,
+     500
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    751.9767595059635,
+    -20.271164337225514
+   ],
+   "material": {
+    "color": "#c9a97f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_left",
+   "name": "Left slanted leg",
+   "category": "enclosure",
+   "materialName": "San Remo oak effect",
+   "detail": "Slanted side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     578.4832252941545,
+     637.4618464979962
+    ],
+    "radius": 6
+   },
+   "position": [
+    -578.9391587329469,
+    362,
+    20
+   ],
+   "rotation": [
+    -0.2,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#c9a97f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_right",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "San Remo oak effect",
+   "detail": "Right end panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     724.6090350462495,
+     636.0847001338752
+    ],
+    "radius": 4
+   },
+   "position": [
+    559.0728669291296,
+    404.1805412872326,
+    -49.493842727689525
+   ],
+   "material": {
+    "color": "#c9a97f",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "apron",
+   "name": "Back rail",
+   "category": "enclosure",
+   "materialName": "San Remo oak effect",
+   "detail": "Rear apron panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     900,
+     130,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    -170,
+    637.5171876380101,
+    -29.574215424951262
+   ],
+   "material": {
+    "color": "#bf9f76",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_body",
+   "name": "Drawer carcass",
+   "category": "enclosure",
+   "materialName": "San Remo oak effect",
+   "detail": "Drawer unit carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     300,
+     420
+    ],
+    "radius": 5
+   },
+   "position": [
+    400,
+    490,
+    -20
+   ],
+   "material": {
+    "color": "#c4a37a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_top",
+   "name": "Upper drawer front",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Upper drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     385,
+     140,
+     18
+    ],
+    "radius": 5
+   },
+   "position": [
+    405,
+    555,
+    248.67407819447078
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_bottom",
+   "name": "Lower drawer front",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Lower drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     385,
+     140,
+     18
+    ],
+    "radius": 5
+   },
+   "position": [
+    405,
+    410,
+    248.67407819447078
+   ],
+   "material": {
+    "color": "#f5f5f3",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_left",
+   "name": "Left foot",
+   "category": "mechanical",
+   "materialName": "Black plastic",
+   "detail": "Glide foot",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     8,
+     30
+    ],
+    "radius": 3
+   },
+   "position": [
+    -630,
+    74.2091079123445,
+    150
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_right",
+   "name": "Right foot",
+   "category": "mechanical",
+   "materialName": "Black plastic",
+   "detail": "Glide foot",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     8,
+     30
+    ],
+    "radius": 3
+   },
+   "position": [
+    630,
+    74.2091079123445,
+    200
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,457 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Outdoor wall sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Wall plate",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "back mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     95,
+     146,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    214,
+    -116
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Curved arm",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "swan neck arm to plate",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      15,
+      45
+     ],
+     [
+      0,
+      22,
+      25
+     ],
+     [
+      0,
+      10,
+      0
+     ],
+     [
+      0,
+      -5,
+      -30
+     ],
+     [
+      0,
+      -10,
+      -48
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    320,
+    -58
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Top stem",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "top post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 38,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    323,
+    0
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "cylindrical neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 26,
+    "radiusBottom": 28,
+    "depth": 44,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    283,
+    0
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "hat",
+   "name": "Hat shade",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "wide conical top canopy",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      108,
+      0
+     ],
+     [
+      108,
+      5
+     ],
+     [
+      90,
+      12
+     ],
+     [
+      62,
+      24
+     ],
+     [
+      40,
+      38
+     ],
+     [
+      0,
+      38
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    222,
+    0
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "glass",
+   "name": "Frosted glass",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "cylindrical shade with domed bottom",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      28,
+      2
+     ],
+     [
+      46,
+      14
+     ],
+     [
+      55,
+      40
+     ],
+     [
+      55,
+      192
+     ],
+     [
+      0,
+      192
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    28,
+    0
+   ],
+   "material": {
+    "color": "#e8e8e6",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bar1",
+   "name": "Cage bar front",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 2.5,
+    "radiusBottom": 2.5,
+    "depth": 205,
+    "radialSegments": 12
+   },
+   "position": [
+    0,
+    122,
+    62
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bar2",
+   "name": "Cage bar back",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 2.5,
+    "radiusBottom": 2.5,
+    "depth": 205,
+    "radialSegments": 12
+   },
+   "position": [
+    0,
+    122,
+    -62
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bar3",
+   "name": "Cage bar left",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 2.5,
+    "radiusBottom": 2.5,
+    "depth": 205,
+    "radialSegments": 12
+   },
+   "position": [
+    -62,
+    122,
+    0
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bar4",
+   "name": "Cage bar right",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 2.5,
+    "radiusBottom": 2.5,
+    "depth": 205,
+    "radialSegments": 12
+   },
+   "position": [
+    62,
+    122,
+    0
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "ringTop",
+   "name": "Upper cage ring",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "horizontal ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 62,
+    "tube": 2.5
+   },
+   "position": [
+    0,
+    177,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "ringLow",
+   "name": "Lower cage ring",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "horizontal ring",
+   "geometry": {
+    "op": "torus",
+    "radius": 62,
+    "tube": 2.5
+   },
+   "position": [
+    0,
+    75,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "cageBowl",
+   "name": "Cage bottom",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "curved bottom cage cup",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      1
+     ],
+     [
+      30,
+      8
+     ],
+     [
+      50,
+      25
+     ],
+     [
+      62,
+      50
+     ],
+     [
+      58,
+      50
+     ],
+     [
+      47,
+      28
+     ],
+     [
+      28,
+      12
+     ],
+     [
+      0,
+      5
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    0,
+    12,
+    0
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Bottom finial",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "small bottom knob",
+   "geometry": {
+    "op": "sphere",
+    "radius": 6
+   },
+   "position": [
+    0,
+    6,
+    0
+   ],
+   "material": {
+    "color": "#1c1f1f",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

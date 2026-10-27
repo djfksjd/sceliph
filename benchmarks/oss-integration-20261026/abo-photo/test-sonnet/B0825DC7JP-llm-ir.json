@@ -1,0 +1,167 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Marble Pendant Light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "bulb",
+   "name": "Edison bulb",
+   "category": "power",
+   "materialName": "clear glass",
+   "detail": "Exposed teardrop LED bulb",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      26,
+      25
+     ],
+     [
+      32,
+      55
+     ],
+     [
+      28,
+      85
+     ],
+     [
+      18,
+      105
+     ],
+     [
+      15,
+      120
+     ],
+     [
+      0,
+      120
+     ]
+    ],
+    "segments": 40
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#e8e6df",
+    "roughness": 0.1,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "marble",
+   "name": "Marble disc",
+   "category": "enclosure",
+   "materialName": "white marble",
+   "detail": "Thick marble socket holder",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 68,
+    "radiusBottom": 68,
+    "depth": 42,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    108,
+    0
+   ],
+   "material": {
+    "color": "#f0f0ee",
+    "roughness": 0.35,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Brass socket neck",
+   "category": "mechanical",
+   "materialName": "satin brass",
+   "detail": "Brass collar above marble",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 16,
+    "depth": 40,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    149,
+    0
+   ],
+   "material": {
+    "color": "#c9a45c",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Suspension cord",
+   "category": "interconnect",
+   "materialName": "white fabric cord",
+   "detail": "Thin white cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -745,
+      0
+     ],
+     [
+      0,
+      745,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    914,
+    0
+   ],
+   "material": {
+    "color": "#f4f2ec",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "satin brass",
+   "detail": "Round brass ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 55,
+    "radiusBottom": 55,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1666,
+    0
+   ],
+   "material": {
+    "color": "#c9a45c",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

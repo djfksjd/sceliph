@@ -1,0 +1,129 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Side table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Table top",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Rectangular table top, 600 x 30 x 430 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     47.555932181420545,
+     332.8755215058575
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    455,
+    0
+   ],
+   "material": {
+    "color": "#c27d4a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg-1",
+   "name": "Leg 1",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Round leg, front left",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 19.49379500600932,
+    "radiusBottom": 19.49379500600932,
+    "depth": 401.28394196114266,
+    "radialSegments": 32
+   },
+   "position": [
+    -255.15594983416906,
+    230.00126131025263,
+    156.81775007889343
+   ],
+   "material": {
+    "color": "#7a4a28",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg-2",
+   "name": "Leg 2",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Round leg, front right",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 19.49379500600932,
+    "radiusBottom": 19.49379500600932,
+    "depth": 401.28394196114266,
+    "radialSegments": 32
+   },
+   "position": [
+    255.15594983416906,
+    230.00126131025263,
+    156.81775007889343
+   ],
+   "material": {
+    "color": "#7a4a28",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg-3",
+   "name": "Leg 3",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Round leg, back left",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 19.49379500600932,
+    "radiusBottom": 19.49379500600932,
+    "depth": 401.28394196114266,
+    "radialSegments": 32
+   },
+   "position": [
+    -255.15594983416906,
+    230.00126131025263,
+    -156.81775007889343
+   ],
+   "material": {
+    "color": "#7a4a28",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg-4",
+   "name": "Leg 4",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Round leg, back right",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 19.49379500600932,
+    "radiusBottom": 19.49379500600932,
+    "depth": 401.28394196114266,
+    "radialSegments": 32
+   },
+   "position": [
+    255.15594983416906,
+    230.00126131025263,
+    -156.81775007889343
+   ],
+   "material": {
+    "color": "#7a4a28",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

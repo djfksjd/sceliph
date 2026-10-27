@@ -1,0 +1,21 @@
+{
+ "request": "Photo: a small side table with a rectangular top and four round legs.\nThe table top is 600 mm wide (its longer side).\nThe camera's horizontal field of view is 50 degrees.\nModel it with exactly these components: \"top\" (the table top), \"leg-1\" (a leg), \"leg-2\" (a leg), \"leg-3\" (a leg), \"leg-4\" (a leg).",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.0010896599999999999,
+   "durationMs": 10427,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":20,\"elevationDeg\":25},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"small side table\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"table top\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Rectangular table top, 600 x 400 x 30 mm, long side along X.\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,30,400],\"radius\":3},\"position\":[0,435,0],\"material\":{\"color\":\"#a0602a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"leg-1\",\"name\":\"leg 1\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Round leg, 24 mm diameter, 420 mm tall, front-right corner.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":12,\"radiusBottom\":12,\"depth\":420,\"radialSegments\":32},\"position\":[260,210,160],\"material\":{\"color\":\"#8a5626\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"leg-2\",\"name\":\"leg 2\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Round leg, 24 mm diameter, 420 mm tall, front-left corner.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":12,\"radiusBottom\":12,\"depth\":420,\"radialSegments\":32},\"position\":[-260,210,160],\"material\":{\"color\":\"#8a5626\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"leg-3\",\"name\":\"leg 3\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Round leg, 24 mm diameter, 420 mm tall, back-right corner.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":12,\"radiusBottom\":12,\"depth\":420,\"radialSegments\":32},\"position\":[260,210,-160],\"material\":{\"color\":\"#8a5626\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"leg-4\",\"name\":\"leg 4\",\"category\":\"mechanical\",\"materialName\":\"wood\",\"detail\":\"Round leg, 24 mm diameter, 420 mm tall, back-left corner.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":12,\"radiusBottom\":12,\"depth\":420,\"radialSegments\":32},\"position\":[-260,210,-160],\"material\":{\"color\":\"#8a5626\",\"roughness\":0.6,\"metalness\":0}}]}}",
+   "stage": "pass",
+   "issues": []
+  }
+ ]
+}

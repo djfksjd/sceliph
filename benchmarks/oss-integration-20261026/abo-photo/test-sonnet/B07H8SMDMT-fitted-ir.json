@@ -1,0 +1,257 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Saale King Bed",
+ "units": "mm",
+ "components": [
+  {
+   "id": "headboard",
+   "name": "Headboard",
+   "category": "enclosure",
+   "materialName": "oak-effect board",
+   "detail": "Tall headboard panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     15,
+     970.6283557919922,
+     1614.2526070894091
+    ],
+    "radius": 4
+   },
+   "position": [
+    -628.0803115747995,
+    532.9750742916651,
+    0
+   ],
+   "material": {
+    "color": "#c9b8a8",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "hb_strip_top",
+   "name": "Headboard strip top",
+   "category": "enclosure",
+   "materialName": "oak-effect board",
+   "detail": "Raised horizontal strip",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     130,
+     1560
+    ],
+    "radius": 3
+   },
+   "position": [
+    -1000,
+    515.7225289471287,
+    0
+   ],
+   "material": {
+    "color": "#cdbdad",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "hb_strip_mid",
+   "name": "Headboard strip middle",
+   "category": "enclosure",
+   "materialName": "oak-effect board",
+   "detail": "Raised horizontal strip",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     130,
+     1560
+    ],
+    "radius": 3
+   },
+   "position": [
+    -1000,
+    650,
+    0
+   ],
+   "material": {
+    "color": "#cdbdad",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "hb_leg",
+   "name": "Headboard lower part",
+   "category": "enclosure",
+   "materialName": "oak-effect board",
+   "detail": "Headboard lower extension",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     204.38713629374956,
+     1700
+    ],
+    "radius": 4
+   },
+   "position": [
+    -1020,
+    827.826278040819,
+    0
+   ],
+   "material": {
+    "color": "#bfae9e",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Plinth",
+   "category": "mechanical",
+   "materialName": "oak-effect board",
+   "detail": "Recessed base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     2805.0974715726534,
+     61.96361472473617,
+     1208.1691408256374
+    ],
+    "radius": 6
+   },
+   "position": [
+    -330.4204173405195,
+    254.48242437244357,
+    0
+   ],
+   "material": {
+    "color": "#b4a393",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "rail_front",
+   "name": "Side rail front",
+   "category": "enclosure",
+   "materialName": "oak-effect board",
+   "detail": "Long side rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     2000,
+     250,
+     30
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    228.78073022665546,
+    825.1966817824066
+   ],
+   "material": {
+    "color": "#c4b3a3",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "rail_back",
+   "name": "Side rail back",
+   "category": "enclosure",
+   "materialName": "oak-effect board",
+   "detail": "Long side rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     2000,
+     250,
+     30
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    228.78073022665546,
+    -825.1966817824066
+   ],
+   "material": {
+    "color": "#c4b3a3",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "rail_foot",
+   "name": "Foot rail",
+   "category": "enclosure",
+   "materialName": "oak-effect board",
+   "detail": "Foot end rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     250,
+     1600
+    ],
+    "radius": 4
+   },
+   "position": [
+    985,
+    245.4809009227663,
+    0
+   ],
+   "material": {
+    "color": "#c4b3a3",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "deck",
+   "name": "Slat deck",
+   "category": "mechanical",
+   "materialName": "board",
+   "detail": "Support deck",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1940,
+     20,
+     1600
+    ],
+    "radius": 3
+   },
+   "position": [
+    -5,
+    330,
+    0
+   ],
+   "material": {
+    "color": "#b8a898",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "mattress",
+   "name": "Mattress",
+   "category": "mechanical",
+   "materialName": "white fabric",
+   "detail": "Mattress 160x200",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1960,
+     180,
+     1469.9189200745132
+    ],
+    "radius": 30
+   },
+   "position": [
+    -5,
+    430,
+    0
+   ],
+   "material": {
+    "color": "#f5f5f6",
+    "roughness": 0.95
+   }
+  }
+ ]
+}

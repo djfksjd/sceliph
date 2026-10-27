@@ -1,0 +1,19 @@
+{
+ "schema": "sceliph.photo-llm-task/0.1",
+ "id": "box-post",
+ "object": "a box with a cylindrical post standing on top of it",
+ "components": [
+  {
+   "id": "box",
+   "description": "the box"
+  },
+  {
+   "id": "post",
+   "description": "the cylinder on top"
+  }
+ ],
+ "referenceComponentId": "box",
+ "known": "The box is 300 mm wide (its longest horizontal edge).",
+ "knownDimensionMm": 300,
+ "fovXDegrees": 50
+}

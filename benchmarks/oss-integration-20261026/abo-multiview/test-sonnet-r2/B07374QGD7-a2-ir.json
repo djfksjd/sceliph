@@ -1,0 +1,193 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Concrete Dome Pendant",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 52,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    747,
+    0
+   ],
+   "material": {
+    "color": "#b9a67c",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Cord",
+   "category": "interconnect",
+   "materialName": "black fabric cord",
+   "detail": "Suspension cord",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 2.5,
+    "radiusBottom": 2.5,
+    "depth": 504,
+    "radialSegments": 12
+   },
+   "position": [
+    0,
+    480,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Brass cap",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Cord grip above shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 10,
+    "depth": 24,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    217,
+    0
+   ],
+   "material": {
+    "color": "#b9a67c",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Concrete dome shade",
+   "category": "enclosure",
+   "materialName": "concrete",
+   "detail": "Dome shade, closed thick wall",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      205
+     ],
+     [
+      18,
+      205
+     ],
+     [
+      35,
+      198
+     ],
+     [
+      52,
+      185
+     ],
+     [
+      66,
+      160
+     ],
+     [
+      76,
+      120
+     ],
+     [
+      81,
+      70
+     ],
+     [
+      81,
+      20
+     ],
+     [
+      80,
+      0
+     ],
+     [
+      75,
+      0
+     ],
+     [
+      75,
+      20
+     ],
+     [
+      75,
+      70
+     ],
+     [
+      70,
+      120
+     ],
+     [
+      60,
+      160
+     ],
+     [
+      46,
+      183
+     ],
+     [
+      30,
+      195
+     ],
+     [
+      0,
+      200
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#6b6d58",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "diffuser",
+   "name": "Diffuser",
+   "category": "display",
+   "materialName": "warm glow",
+   "detail": "Lit interior disc",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 73,
+    "radiusBottom": 73,
+    "depth": 3,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    8,
+    0
+   ],
+   "material": {
+    "color": "#f3e6b8",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

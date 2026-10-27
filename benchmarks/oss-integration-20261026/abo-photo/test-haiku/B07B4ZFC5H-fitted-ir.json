@@ -1,0 +1,578 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Stone & Beam Chase 5-Drawer Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "oak veneer",
+   "detail": "Main case body of the dresser, 940 x 1136 x 450 mm.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1014.5674460947837,
+     1320.8129829979562,
+     538.4202535187578
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    718,
+    0
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top Panel",
+   "category": "enclosure",
+   "materialName": "oak veneer",
+   "detail": "Flat top slab overhanging the carcass on all sides.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     985,
+     35,
+     490
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    1118.3398493352117,
+    0
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer1",
+   "name": "Drawer 1 (bottom)",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Bottom drawer front with raised molded frame.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     809.0413669843683,
+     210,
+     25
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    214.9133286301252,
+    95.69258748430457
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer2",
+   "name": "Drawer 2",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Second drawer front from bottom with raised molded frame.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     809.0413669843683,
+     210,
+     25
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    490,
+    95.69258748430457
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer3",
+   "name": "Drawer 3",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Middle drawer front with raised molded frame.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     809.0413669843683,
+     210,
+     25
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    710,
+    95.69258748430457
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer4",
+   "name": "Drawer 4",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Second drawer front from top with raised molded frame.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     809.0413669843683,
+     210,
+     25
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    930,
+    95.69258748430457
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer5",
+   "name": "Drawer 5 (top)",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Top drawer front with raised molded frame.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     809.0413669843683,
+     210,
+     25
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1150,
+    95.69258748430457
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_fr",
+   "name": "Turned Foot Front Right",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Turned tapered foot at the front right corner.",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -75
+     ],
+     [
+      24,
+      -75
+     ],
+     [
+      20,
+      -60
+     ],
+     [
+      14,
+      -45
+     ],
+     [
+      26,
+      -28
+     ],
+     [
+      16,
+      -12
+     ],
+     [
+      18,
+      0
+     ],
+     [
+      12,
+      14
+     ],
+     [
+      10,
+      40
+     ],
+     [
+      13,
+      60
+     ],
+     [
+      10,
+      75
+     ],
+     [
+      0,
+      75
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    514.4765309983283,
+    184.71351161263158,
+    185
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_fl",
+   "name": "Turned Foot Front Left",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Turned tapered foot at the front left corner.",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -75
+     ],
+     [
+      24,
+      -75
+     ],
+     [
+      20,
+      -60
+     ],
+     [
+      14,
+      -45
+     ],
+     [
+      26,
+      -28
+     ],
+     [
+      16,
+      -12
+     ],
+     [
+      18,
+      0
+     ],
+     [
+      12,
+      14
+     ],
+     [
+      10,
+      40
+     ],
+     [
+      13,
+      60
+     ],
+     [
+      10,
+      75
+     ],
+     [
+      0,
+      75
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    -514.4765309983283,
+    184.71351161263158,
+    185
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_br",
+   "name": "Turned Foot Back Right",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Turned tapered foot at the back right corner.",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -75
+     ],
+     [
+      24,
+      -75
+     ],
+     [
+      20,
+      -60
+     ],
+     [
+      14,
+      -45
+     ],
+     [
+      26,
+      -28
+     ],
+     [
+      16,
+      -12
+     ],
+     [
+      18,
+      0
+     ],
+     [
+      12,
+      14
+     ],
+     [
+      10,
+      40
+     ],
+     [
+      13,
+      60
+     ],
+     [
+      10,
+      75
+     ],
+     [
+      0,
+      75
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    514.4765309983283,
+    184.71351161263158,
+    -185
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "foot_bl",
+   "name": "Turned Foot Back Left",
+   "category": "mechanical",
+   "materialName": "oak veneer",
+   "detail": "Turned tapered foot at the back left corner.",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -75
+     ],
+     [
+      24,
+      -75
+     ],
+     [
+      20,
+      -60
+     ],
+     [
+      14,
+      -45
+     ],
+     [
+      26,
+      -28
+     ],
+     [
+      16,
+      -12
+     ],
+     [
+      18,
+      0
+     ],
+     [
+      12,
+      14
+     ],
+     [
+      10,
+      40
+     ],
+     [
+      13,
+      60
+     ],
+     [
+      10,
+      75
+     ],
+     [
+      0,
+      75
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    -514.4765309983283,
+    184.71351161263158,
+    -185
+   ],
+   "material": {
+    "color": "#b38a5c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "knob1",
+   "name": "Knob Drawer 1",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round pull knob centred on drawer 1.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 18
+   },
+   "position": [
+    0,
+    270,
+    258
+   ],
+   "material": {
+    "color": "#9a9a9a",
+    "roughness": 0.35,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "knob2",
+   "name": "Knob Drawer 2",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round pull knob centred on drawer 2.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 18
+   },
+   "position": [
+    0,
+    490,
+    258
+   ],
+   "material": {
+    "color": "#9a9a9a",
+    "roughness": 0.35,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "knob3",
+   "name": "Knob Drawer 3",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round pull knob centred on drawer 3.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 18
+   },
+   "position": [
+    0,
+    710,
+    258
+   ],
+   "material": {
+    "color": "#9a9a9a",
+    "roughness": 0.35,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "knob4",
+   "name": "Knob Drawer 4",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round pull knob centred on drawer 4.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 18
+   },
+   "position": [
+    0,
+    930,
+    258
+   ],
+   "material": {
+    "color": "#9a9a9a",
+    "roughness": 0.35,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "knob5",
+   "name": "Knob Drawer 5",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round pull knob centred on drawer 5.",
+   "geometry": {
+    "op": "sphere",
+    "radius": 18
+   },
+   "position": [
+    0,
+    1150,
+    258
+   ],
+   "material": {
+    "color": "#9a9a9a",
+    "roughness": 0.35,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

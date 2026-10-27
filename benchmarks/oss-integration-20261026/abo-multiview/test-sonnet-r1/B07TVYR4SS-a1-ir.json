@@ -1,0 +1,395 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Corner shelf 3 niches",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side",
+   "name": "Side panel",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "Tall side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     881,
+     300
+    ],
+    "radius": 2
+   },
+   "position": [
+    -150,
+    440.5,
+    0
+   ],
+   "material": {
+    "color": "#d9b88a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "Rear panel between shelves",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     290,
+     863,
+     12
+    ],
+    "radius": 2
+   },
+   "position": [
+    4,
+    431.5,
+    144
+   ],
+   "material": {
+    "color": "#d4b283",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf1",
+   "name": "Bottom shelf",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "Quarter-round shelf",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      -141,
+      -141
+     ],
+     [
+      149,
+      -141
+     ],
+     [
+      148.1,
+      -85
+     ],
+     [
+      144.4,
+      -29
+     ],
+     [
+      137.5,
+      26
+     ],
+     [
+      127.6,
+      60
+     ],
+     [
+      113.6,
+      93
+     ],
+     [
+      95.8,
+      124
+     ],
+     [
+      73.5,
+      152
+     ],
+     [
+      44,
+      177
+     ],
+     [
+      10,
+      198
+     ],
+     [
+      -33,
+      215
+     ],
+     [
+      -80,
+      226
+     ],
+     [
+      -141,
+      149
+     ]
+    ],
+    "depth": 18
+   },
+   "position": [
+    0,
+    9,
+    0
+   ],
+   "rotation": [
+    -1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#dcbc8e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf2",
+   "name": "Lower shelf",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "Quarter-round shelf",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      -141,
+      -141
+     ],
+     [
+      149,
+      -141
+     ],
+     [
+      148.1,
+      -85
+     ],
+     [
+      144.4,
+      -29
+     ],
+     [
+      137.5,
+      26
+     ],
+     [
+      127.6,
+      60
+     ],
+     [
+      113.6,
+      93
+     ],
+     [
+      95.8,
+      124
+     ],
+     [
+      73.5,
+      152
+     ],
+     [
+      44,
+      177
+     ],
+     [
+      10,
+      198
+     ],
+     [
+      -33,
+      215
+     ],
+     [
+      -80,
+      226
+     ],
+     [
+      -141,
+      149
+     ]
+    ],
+    "depth": 18
+   },
+   "position": [
+    0,
+    300,
+    0
+   ],
+   "rotation": [
+    -1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#dcbc8e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf3",
+   "name": "Middle shelf",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "Quarter-round shelf",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      -141,
+      -141
+     ],
+     [
+      149,
+      -141
+     ],
+     [
+      148.1,
+      -85
+     ],
+     [
+      144.4,
+      -29
+     ],
+     [
+      137.5,
+      26
+     ],
+     [
+      127.6,
+      60
+     ],
+     [
+      113.6,
+      93
+     ],
+     [
+      95.8,
+      124
+     ],
+     [
+      73.5,
+      152
+     ],
+     [
+      44,
+      177
+     ],
+     [
+      10,
+      198
+     ],
+     [
+      -33,
+      215
+     ],
+     [
+      -80,
+      226
+     ],
+     [
+      -141,
+      149
+     ]
+    ],
+    "depth": 18
+   },
+   "position": [
+    0,
+    590,
+    0
+   ],
+   "rotation": [
+    -1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#dcbc8e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf4",
+   "name": "Top shelf",
+   "category": "enclosure",
+   "materialName": "light oak laminate",
+   "detail": "Quarter-round top",
+   "geometry": {
+    "op": "extrude",
+    "points": [
+     [
+      -141,
+      -141
+     ],
+     [
+      149,
+      -141
+     ],
+     [
+      148.1,
+      -85
+     ],
+     [
+      144.4,
+      -29
+     ],
+     [
+      137.5,
+      26
+     ],
+     [
+      127.6,
+      60
+     ],
+     [
+      113.6,
+      93
+     ],
+     [
+      95.8,
+      124
+     ],
+     [
+      73.5,
+      152
+     ],
+     [
+      44,
+      177
+     ],
+     [
+      10,
+      198
+     ],
+     [
+      -33,
+      215
+     ],
+     [
+      -80,
+      226
+     ],
+     [
+      -141,
+      149
+     ]
+    ],
+    "depth": 18
+   },
+   "position": [
+    0,
+    872,
+    0
+   ],
+   "rotation": [
+    -1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#dcbc8e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

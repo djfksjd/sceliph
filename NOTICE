@@ -47,3 +47,39 @@ Kapoulkine, licensed under the MIT License. Morphloom preserves the source
 vertex attributes and rejects simplified output that fails its topology,
 self-intersection, skin-weight, or silhouette contracts.
 Upstream: https://github.com/zeux/meshoptimizer
+
+src/engine/moge-geometry.ts ports the MoGe-2 focal/shift recovery and
+reprojection post-processing from MoGe, Copyright (c) Microsoft Corporation,
+licensed under the MIT License, because the official ONNX export omits it.
+Sceliph does not redistribute MoGe weights or ONNX Runtime; the opt-in
+scripts/moge-camera-evidence.ts requires a separately obtained, hash-pinned
+Ruicheng/moge-2-vits-normal-onnx export and a separately installed
+onnxruntime-node (MIT License, Copyright Microsoft Corporation).
+Upstream: https://github.com/microsoft/MoGe
+Upstream revision: 74fbce054ebed49800de42d0ad0e83495065719a
+
+src/engine/cma-es.ts is a TypeScript port of purecma.py by Nikolaus Hansen,
+released into the public domain, from pycma (BSD 3-Clause, Copyright Inria),
+with a seeded normal generator added for reproducibility.
+Upstream: https://github.com/CMA-ES/pycma
+Upstream revision: 5846f6ea3ac709014f78779182fd01db3c508550
+
+The opt-in scripts/segment-parts.ts runs Grounding DINO (IDEA Research,
+Apache License 2.0; onnx-community/grounding-dino-tiny-ONNX) and SAM 2.1
+(Meta Platforms, Apache License 2.0; onnx-community/sam2.1-hiera-tiny-ONNX)
+through Transformers.js (Hugging Face, Apache License 2.0). None of these
+models or libraries is redistributed; the script requires separately obtained,
+hash-pinned model files and a separately installed runtime.
+Upstream: https://github.com/IDEA-Research/GroundingDINO
+Upstream: https://github.com/facebookresearch/sam2
+Upstream: https://github.com/huggingface/transformers.js
+
+vendor/manifold-3d-3.5.4/ contains only the runtime files (manifold.js,
+manifold.wasm and their type declarations) of manifold-3d 3.5.4, Copyright
+The Manifold Authors, licensed under the Apache License 2.0 (LICENSE in that
+directory). The npm package's CLI/CAD tooling and its transitive dependencies
+are not included. src/engine/boolean-csg.ts loads it lazily for the
+AssemblyIR booleanCSG operation.
+Upstream: https://github.com/elalish/manifold
+SHA-256 manifold.js: ca3c8a88df63bb3083013d1eb7f700bf23216594f6e98a2566e34f55d7341ce8
+SHA-256 manifold.wasm: 73e3b419ad31294f6b1cc478173944e50efc4a34bfdeeff0107bdfc12975f11c

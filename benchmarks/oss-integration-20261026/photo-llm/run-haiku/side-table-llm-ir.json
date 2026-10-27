@@ -1,0 +1,129 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Small side table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Table top",
+   "category": "mechanical",
+   "materialName": "Wood",
+   "detail": "Rectangular table top, 600 x 400 x 30 mm, long side along X",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     30,
+     400
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    435,
+    0
+   ],
+   "material": {
+    "color": "#b8703a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg-1",
+   "name": "Leg 1",
+   "category": "mechanical",
+   "materialName": "Wood",
+   "detail": "Round leg, 36 mm diameter, 420 mm tall, front-right corner",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 18,
+    "depth": 420,
+    "radialSegments": 32
+   },
+   "position": [
+    260,
+    210,
+    160
+   ],
+   "material": {
+    "color": "#8b5a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg-2",
+   "name": "Leg 2",
+   "category": "mechanical",
+   "materialName": "Wood",
+   "detail": "Round leg, 36 mm diameter, 420 mm tall, back-right corner",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 18,
+    "depth": 420,
+    "radialSegments": 32
+   },
+   "position": [
+    260,
+    210,
+    -160
+   ],
+   "material": {
+    "color": "#8b5a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg-3",
+   "name": "Leg 3",
+   "category": "mechanical",
+   "materialName": "Wood",
+   "detail": "Round leg, 36 mm diameter, 420 mm tall, front-left corner",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 18,
+    "depth": 420,
+    "radialSegments": 32
+   },
+   "position": [
+    -260,
+    210,
+    160
+   ],
+   "material": {
+    "color": "#8b5a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg-4",
+   "name": "Leg 4",
+   "category": "mechanical",
+   "materialName": "Wood",
+   "detail": "Round leg, 36 mm diameter, 420 mm tall, back-left corner",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 18,
+    "depth": 420,
+    "radialSegments": 32
+   },
+   "position": [
+    -260,
+    210,
+    -160
+   ],
+   "material": {
+    "color": "#8b5a2b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

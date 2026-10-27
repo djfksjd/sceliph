@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: AmazonBasics 40\" Multipurpose Foldable Computer Study Desk - Natural.\nThe product listing gives its overall height as 762 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.022351199999999998,
+   "durationMs": 12835,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-35,\"elevationDeg\":14},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Foldable Computer Desk\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Desktop\",\"category\":\"enclosure\",\"materialName\":\"wood laminate\",\"detail\":\"Natural wood-finish tabletop\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1000,20,500],\"radius\":2},\"position\":[0,752,0],\"material\":{\"color\":\"#c9965a\",\"roughness\":0.6}},{\"id\":\"legLF\",\"name\":\"Front left leg\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Square tube leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,742,20],\"radius\":2},\"position\":[-480,371,230],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.4}},{\"id\":\"legLB\",\"name\":\"Back left leg\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Square tube leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,742,20],\"radius\":2},\"position\":[-480,371,-230],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.4}},{\"id\":\"legRF\",\"name\":\"Front right leg\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Square tube leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,742,20],\"radius\":2},\"position\":[480,371,230],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.4}},{\"id\":\"legRB\",\"name\":\"Back right leg\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Square tube leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,742,20],\"radius\":2},\"position\":[480,371,-230],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.4}},{\"id\":\"railLB\",\"name\":\"Left bottom rail\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Floor rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,20,460],\"radius\":2},\"position\":[-480,15,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.4}},{\"id\":\"railRB\",\"name\":\"Right bottom rail\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Floor rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,20,460],\"radius\":2},\"position\":[480,15,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.4}},{\"id\":\"railLT\",\"name\":\"Left top rail\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Under-top rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,20,460],\"radius\":2},\"position\":[-480,732,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.4}},{\"id\":\"railRT\",\"name\":\"Right top rail\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Under-top rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,20,460],\"radius\":2},\"position\":[480,732,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.4}},{\"id\":\"brace\",\"name\":\"Cross brace\",\"category\":\"mechanical\",\"materialName\":\"white steel\",\"detail\":\"Mid-height stretcher\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[940,18,18],\"radius\":2},\"position\":[0,300,-230],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.4}},{\"id\":\"hinge\",\"name\":\"Hinge plates\",\"category\":\"mechanical\",\"materialName\":\"steel\",\"detail\":\"Folding hinge on right back leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[24,60,8],\"radius\":1},\"position\":[480,300,-243],\"material\":{\"color\":\"#a8a8a8\",\"roughness\":0.4,\"metalness\":0.8}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

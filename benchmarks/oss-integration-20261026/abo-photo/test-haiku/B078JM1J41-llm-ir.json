@@ -1,0 +1,371 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Modern Wood and Metal Floating Wall Storage Shelves",
+ "units": "mm",
+ "components": [
+  {
+   "id": "post_left_outer",
+   "name": "Left outer post (upper unit)",
+   "category": "mechanical",
+   "materialName": "Black powder-coated steel",
+   "detail": "Flat steel upright of the upper-left shelf unit, floor-clear, 921 mm overall height top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     33,
+     784,
+     30
+    ],
+    "radius": 4
+   },
+   "position": [
+    -452,
+    529,
+    0
+   ],
+   "material": {
+    "color": "#2b2b2b",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_left_inner",
+   "name": "Right post (upper-left unit)",
+   "category": "mechanical",
+   "materialName": "Black powder-coated steel",
+   "detail": "Upright at the right edge of the upper-left shelf unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     33,
+     784,
+     30
+    ],
+    "radius": 4
+   },
+   "position": [
+    144,
+    529,
+    0
+   ],
+   "material": {
+    "color": "#2b2b2b",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_mid",
+   "name": "Shared middle post (lower-right unit)",
+   "category": "mechanical",
+   "materialName": "Black powder-coated steel",
+   "detail": "Upright shared by the lower-right unit, rises from floor",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     33,
+     760,
+     30
+    ],
+    "radius": 4
+   },
+   "position": [
+    -111,
+    380,
+    0
+   ],
+   "material": {
+    "color": "#2b2b2b",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_right_outer",
+   "name": "Right outer post (lower-right unit)",
+   "category": "mechanical",
+   "materialName": "Black powder-coated steel",
+   "detail": "Right-edge upright of the lower-right shelf unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     33,
+     760,
+     30
+    ],
+    "radius": 4
+   },
+   "position": [
+    457,
+    380,
+    0
+   ],
+   "material": {
+    "color": "#2b2b2b",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shelf_ul_top",
+   "name": "Upper-left shelf 1",
+   "category": "mechanical",
+   "materialName": "Natural wood plank",
+   "detail": "Top plank of the upper-left unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     606,
+     18,
+     150
+    ],
+    "radius": 4
+   },
+   "position": [
+    -154,
+    770,
+    0
+   ],
+   "material": {
+    "color": "#c9a46a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_ul_mid",
+   "name": "Upper-left shelf 2",
+   "category": "mechanical",
+   "materialName": "Natural wood plank",
+   "detail": "Middle plank of the upper-left unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     606,
+     18,
+     150
+    ],
+    "radius": 4
+   },
+   "position": [
+    -154,
+    476,
+    0
+   ],
+   "material": {
+    "color": "#c9a46a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_ul_low",
+   "name": "Upper-left shelf 3",
+   "category": "mechanical",
+   "materialName": "Natural wood plank",
+   "detail": "Lowest plank of the upper-left unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     606,
+     18,
+     150
+    ],
+    "radius": 4
+   },
+   "position": [
+    -154,
+    178,
+    0
+   ],
+   "material": {
+    "color": "#c9a46a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_lr_top",
+   "name": "Lower-right shelf 1",
+   "category": "mechanical",
+   "materialName": "Natural wood plank",
+   "detail": "Top plank of the lower-right unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     568,
+     18,
+     150
+    ],
+    "radius": 4
+   },
+   "position": [
+    173,
+    620,
+    0
+   ],
+   "material": {
+    "color": "#c9a46a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_lr_mid",
+   "name": "Lower-right shelf 2",
+   "category": "mechanical",
+   "materialName": "Natural wood plank",
+   "detail": "Middle plank of the lower-right unit",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     568,
+     18,
+     150
+    ],
+    "radius": 4
+   },
+   "position": [
+    173,
+    322,
+    0
+   ],
+   "material": {
+    "color": "#c9a46a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_lr_low",
+   "name": "Lower-right shelf 3",
+   "category": "mechanical",
+   "materialName": "Natural wood plank",
+   "detail": "Bottom plank of the lower-right unit, nearest the floor",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     568,
+     18,
+     150
+    ],
+    "radius": 4
+   },
+   "position": [
+    173,
+    37,
+    0
+   ],
+   "material": {
+    "color": "#c9a46a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bracket_ul_a",
+   "name": "Wall bracket A (upper-left)",
+   "category": "mechanical",
+   "materialName": "Black steel bracket",
+   "detail": "Hanging bracket under the top upper-left shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     22,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -447,
+    741,
+    -40
+   ],
+   "material": {
+    "color": "#2b2b2b",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bracket_ul_b",
+   "name": "Wall bracket B (upper-left)",
+   "category": "mechanical",
+   "materialName": "Black steel bracket",
+   "detail": "Hanging bracket under the top upper-left shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     22,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    118,
+    741,
+    -40
+   ],
+   "material": {
+    "color": "#2b2b2b",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bracket_lr_a",
+   "name": "Wall bracket C (lower-right)",
+   "category": "mechanical",
+   "materialName": "Black steel bracket",
+   "detail": "Hanging bracket under the top lower-right shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     22,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    -86,
+    595,
+    -40
+   ],
+   "material": {
+    "color": "#2b2b2b",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bracket_lr_b",
+   "name": "Wall bracket D (lower-right)",
+   "category": "mechanical",
+   "materialName": "Black steel bracket",
+   "detail": "Hanging bracket under the top lower-right shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     22,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    424,
+    595,
+    -40
+   ],
+   "material": {
+    "color": "#2b2b2b",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

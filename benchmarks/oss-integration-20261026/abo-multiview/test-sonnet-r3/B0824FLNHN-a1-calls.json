@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Ravenna Home Traditional Wall Sconce with Linen Shade, LED Bulb Included, Brushed Nickel.\nThe product listing gives its overall height as 464 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0208143,
+   "durationMs": 15285,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":2},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Wall sconce with linen shade\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Linen shade\",\"category\":\"enclosure\",\"materialName\":\"white linen\",\"detail\":\"Tall cylindrical drum shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":63,\"radiusBottom\":63,\"depth\":267,\"radialSegments\":48},\"position\":[0,330.5,72],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"plate\",\"name\":\"Back plate\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Rectangular wall plate\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[93,83,6],\"radius\":1.5},\"position\":[0,144,3],\"material\":{\"color\":\"#b9b6ae\",\"roughness\":0.45,\"metalness\":0.9}},{\"id\":\"stem\",\"name\":\"Vertical stem\",\"category\":\"mechanical\",\"materialName\":\"polished nickel\",\"detail\":\"Slender vertical rod\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":3,\"radiusBottom\":3,\"depth\":203,\"radialSegments\":24},\"position\":[0,118,72],\"material\":{\"color\":\"#c8c8c6\",\"roughness\":0.25,\"metalness\":1}},{\"id\":\"ball\",\"name\":\"Bottom ball finial\",\"category\":\"mechanical\",\"materialName\":\"polished nickel\",\"detail\":\"Ball at stem base\",\"geometry\":{\"op\":\"sphere\",\"radius\":8},\"position\":[0,9,72],\"material\":{\"color\":\"#c8c8c6\",\"roughness\":0.2,\"metalness\":1}},{\"id\":\"arm\",\"name\":\"Wall arm\",\"category\":\"mechanical\",\"materialName\":\"polished nickel\",\"detail\":\"Horizontal arm from plate to stem\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,0,0],[0,0,66]],\"radius\":3},\"position\":[0,144,6],\"material\":{\"color\":\"#c8c8c6\",\"roughness\":0.25,\"metalness\":1}},{\"id\":\"collar\",\"name\":\"Stem collar\",\"category\":\"mechanical\",\"materialName\":\"polished nickel\",\"detail\":\"Clamp collar on stem\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5,\"radiusBottom\":5,\"depth\":30,\"radialSegments\":24},\"position\":[0,130,72],\"material\":{\"color\":\"#c0c0be\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"screwL\",\"name\":\"Left screw\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Screw head\",\"geometry\":{\"op\":\"sphere\",\"radius\":4},\"position\":[-23,133,6],\"material\":{\"color\":\"#d0d0ce\",\"roughness\":0.2,\"metalness\":1}},{\"id\":\"screwR\",\"name\":\"Right screw\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Screw head\",\"geometry\":{\"op\":\"sphere\",\"radius\":4},\"position\":[23,133,6],\"material\":{\"color\":\"#d0d0ce\",\"roughness\":0.2,\"metalness\":1}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

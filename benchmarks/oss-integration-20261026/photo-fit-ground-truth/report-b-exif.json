@@ -1,0 +1,48 @@
+{
+ "schema": "sceliph.photo-fit-ground-truth/0.1",
+ "truthIrSha256": "6b62fe2e2355517d6d91ff59d2690b98fd1c0c632b99aa479a820cdc8173d05f",
+ "cases": [
+  {
+   "id": "b-exif",
+   "imageSha256": "171a4c9e436bc6aeb65c7c43e9d0b95e8813550155e9f639c895387c5dffb00c",
+   "segmentation": {
+    "ownRasterVsBlenderAlphaIoU": 0.9965,
+    "samUnionVsBlenderAlphaIoU": 0.9736,
+    "parts": [
+     {
+      "id": "box",
+      "iou": 0.9731
+     },
+     {
+      "id": "post",
+      "iou": 0.9917
+     }
+    ]
+   },
+   "camera": {
+    "relativePositionErrorMm": 29.8,
+    "trueDistanceToBoxMm": 614.7,
+    "viewDirectionErrorDegrees": 2.77,
+    "azimuthErrorDegrees": 1.23,
+    "elevationErrorDegrees": 2.6,
+    "fovXTrue": 60,
+    "fovXFitted": 59.96
+   },
+   "dimensionsPercentError": {
+    "boxHeight": 4.17,
+    "boxDepth": -6.37,
+    "postRadiusTop": -3.69,
+    "postRadiusBottom": -1.28,
+    "postDepth": 9.23
+   },
+   "placementErrorMm": {
+    "postTopAboveBox": 20.4,
+    "postOffsetXZ": [
+     -2.7,
+     3.3
+    ]
+   },
+   "fitSilhouetteIoU": 0.9793
+  }
+ ]
+}

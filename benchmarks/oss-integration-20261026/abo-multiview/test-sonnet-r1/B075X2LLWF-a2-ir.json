@@ -1,0 +1,73 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Brass Globe Table Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Cylindrical base",
+   "category": "enclosure",
+   "materialName": "Antique brushed brass",
+   "detail": "Solid brushed brass cylinder base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 54.5,
+    "radiusBottom": 54.5,
+    "depth": 108,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    54,
+    0
+   ],
+   "material": {
+    "color": "#a08550",
+    "roughness": 0.45,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "cup",
+   "name": "Socket cup",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Dome-shaped brass holder cradling the globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 24
+   },
+   "position": [
+    -18,
+    110,
+    12
+   ],
+   "material": {
+    "color": "#8a7040",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "globe",
+   "name": "Opal glass globe",
+   "category": "enclosure",
+   "materialName": "Opal frosted glass",
+   "detail": "Frosted white glass globe shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 70
+   },
+   "position": [
+    -18,
+    184,
+    12
+   ],
+   "material": {
+    "color": "#fff1d6",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  }
+ ]
+}

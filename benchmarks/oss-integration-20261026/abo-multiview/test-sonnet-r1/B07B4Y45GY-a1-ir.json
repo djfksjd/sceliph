@@ -1,0 +1,331 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Stone & Beam Modern Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "weathered oak",
+   "detail": "Overhanging top slab",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1520,
+     30,
+     480
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    849,
+    0
+   ],
+   "material": {
+    "color": "#6b3f24",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "weathered oak",
+   "detail": "Main case body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1480,
+     734,
+     450
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    467,
+    0
+   ],
+   "material": {
+    "color": "#5e3520",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "weathered oak",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 20,
+    "depth": 100,
+    "radialSegments": 4
+   },
+   "position": [
+    -700,
+    50,
+    190
+   ],
+   "rotation": [
+    0,
+    0.785,
+    0
+   ],
+   "material": {
+    "color": "#5e3520",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "weathered oak",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 20,
+    "depth": 100,
+    "radialSegments": 4
+   },
+   "position": [
+    700,
+    50,
+    190
+   ],
+   "rotation": [
+    0,
+    0.785,
+    0
+   ],
+   "material": {
+    "color": "#5e3520",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "weathered oak",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 20,
+    "depth": 100,
+    "radialSegments": 4
+   },
+   "position": [
+    -700,
+    50,
+    -190
+   ],
+   "rotation": [
+    0,
+    0.785,
+    0
+   ],
+   "material": {
+    "color": "#5e3520",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "weathered oak",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 20,
+    "depth": 100,
+    "radialSegments": 4
+   },
+   "position": [
+    700,
+    50,
+    -190
+   ],
+   "rotation": [
+    0,
+    0.785,
+    0
+   ],
+   "material": {
+    "color": "#5e3520",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_tl",
+   "name": "Top left drawer",
+   "category": "mechanical",
+   "materialName": "black faux leather",
+   "detail": "Studded drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     220,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    -365,
+    709,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_tr",
+   "name": "Top right drawer",
+   "category": "mechanical",
+   "materialName": "black faux leather",
+   "detail": "Studded drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     220,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    365,
+    709,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_ml",
+   "name": "Middle left drawer",
+   "category": "mechanical",
+   "materialName": "black faux leather",
+   "detail": "Studded drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     220,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    -365,
+    472,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_mr",
+   "name": "Middle right drawer",
+   "category": "mechanical",
+   "materialName": "black faux leather",
+   "detail": "Studded drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     220,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    365,
+    472,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_bl",
+   "name": "Bottom left drawer",
+   "category": "mechanical",
+   "materialName": "black faux leather",
+   "detail": "Studded drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     220,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    -365,
+    235,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_br",
+   "name": "Bottom right drawer",
+   "category": "mechanical",
+   "materialName": "black faux leather",
+   "detail": "Studded drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     700,
+     220,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    365,
+    235,
+    230
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

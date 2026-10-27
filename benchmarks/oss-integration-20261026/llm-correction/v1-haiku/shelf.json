@@ -1,0 +1,113 @@
+{
+ "summary": {
+  "id": "shelf",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.0009386500000000001,
+  "modelIds": [
+   "claude-haiku-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.0009386500000000001,
+   "durationMs": 7719,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Bookshelf\",\"units\":\"mm\",\"components\":[{\"id\":\"left_side\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"Oak veneer\",\"detail\":\"18 mm side panel spanning full height and depth\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,1800,300],\"radius\":1},\"position\":[-391,900,0],\"material\":{\"color\":\"#c8a165\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"right_side\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"Oak veneer\",\"detail\":\"18 mm side panel spanning full height and depth\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,1800,300],\"radius\":1},\"position\":[391,900,0],\"material\":{\"color\":\"#c8a165\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"shelf_1\",\"name\":\"Shelf 1 (bottom)\",\"category\":\"enclosure\",\"materialName\":\"Oak veneer\",\"detail\":\"18 mm shelf resting on the floor, spanning between side panels\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[764,18,300],\"radius\":1},\"position\":[0,9,0],\"material\":{\"color\":\"#c8a165\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"shelf_2\",\"name\":\"Shelf 2\",\"category\":\"enclosure\",\"materialName\":\"Oak veneer\",\"detail\":\"18 mm shelf, evenly spaced, spanning between side panels\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[764,18,300],\"radius\":1},\"position\":[0,603,0],\"material\":{\"color\":\"#c8a165\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"shelf_3\",\"name\":\"Shelf 3\",\"category\":\"enclosure\",\"materialName\":\"Oak veneer\",\"detail\":\"18 mm shelf, evenly spaced, spanning between side panels\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[764,18,300],\"radius\":1},\"position\":[0,1197,0],\"material\":{\"color\":\"#c8a165\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"shelf_4\",\"name\":\"Shelf 4 (top)\",\"category\":\"enclosure\",\"materialName\":\"Oak veneer\",\"detail\":\"18 mm shelf at the very top, spanning between side panels\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[764,18,300],\"radius\":1},\"position\":[0,1791,0],\"material\":{\"color\":\"#c8a165\",\"roughness\":0.6,\"metalness\":0}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 5832,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      800,
+      1800,
+      300
+     ],
+     "dimensionChecks": [
+      {
+       "id": "w",
+       "expectedMm": 800,
+       "actualMm": 799.9999992251396,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "h",
+       "expectedMm": 1800,
+       "actualMm": 1799.9999992251396,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "d",
+       "expectedMm": 300,
+       "actualMm": 300.00001192092896,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "side",
+       "expectedMm": 1800,
+       "actualMm": 1799.9999523162842,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "shelf-w",
+       "expectedMm": 764,
+       "actualMm": 763.9999985694885,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "shelf-t",
+       "expectedMm": 18,
+       "actualMm": 17.999999225139618,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "top",
+       "expectedMm": 1800,
+       "actualMm": 1799.9999996125698,
+       "toleranceMm": 1,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 3.8743019036002746e-7,
+       "toleranceMm": 1,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Rivet Scandinavian Blonde-Wood Single-Light Adjustable Pendant, LED Bulb Included, -, White.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 1797 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0152509,
+   "durationMs": 11325,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":2},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Scandinavian wood and white pendant light\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"White painted metal\",\"detail\":\"Round flat ceiling plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":75,\"radiusBottom\":75,\"depth\":30,\"radialSegments\":48},\"position\":[0,1782,0],\"material\":{\"color\":\"#eeeeee\",\"roughness\":0.5,\"metalness\":0.2}},{\"id\":\"cord\",\"name\":\"Suspension cord\",\"category\":\"interconnect\",\"materialName\":\"Grey cable\",\"detail\":\"Thin hanging cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-605,0],[0,605,0]],\"radius\":4},\"position\":[0,1165,0],\"material\":{\"color\":\"#999999\",\"roughness\":0.6,\"metalness\":0.1}},{\"id\":\"connector\",\"name\":\"Cord connector\",\"category\":\"mechanical\",\"materialName\":\"Grey metal\",\"detail\":\"Small neck joining cord to shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":18,\"radiusBottom\":24,\"depth\":70,\"radialSegments\":32},\"position\":[0,535,0],\"material\":{\"color\":\"#a8a8a8\",\"roughness\":0.4,\"metalness\":0.6}},{\"id\":\"wood_collar\",\"name\":\"Wood collar\",\"category\":\"mechanical\",\"materialName\":\"Blonde wood\",\"detail\":\"Upper wood cap of the shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":70,\"radiusBottom\":75,\"depth\":150,\"radialSegments\":48},\"position\":[0,425,0],\"material\":{\"color\":\"#d9b88a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"shade\",\"name\":\"Glass shade\",\"category\":\"enclosure\",\"materialName\":\"White glossy glass\",\"detail\":\"Cylindrical white shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":75,\"radiusBottom\":75,\"depth\":350,\"radialSegments\":48},\"position\":[0,175,0],\"material\":{\"color\":\"#f6f6f6\",\"roughness\":0.15,\"metalness\":0.05}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

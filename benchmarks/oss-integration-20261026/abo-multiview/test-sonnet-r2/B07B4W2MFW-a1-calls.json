@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Chase Casual Wood and Rattan King Bed with Headboard, Natural.\nThe product listing gives its overall height as 1372 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.027635200000000006,
+   "durationMs": 18211,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":40,\"elevationDeg\":18},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Rattan King Bed\",\"units\":\"mm\",\"components\":[{\"id\":\"headboard\",\"name\":\"Headboard frame\",\"category\":\"enclosure\",\"materialName\":\"natural wood\",\"detail\":\"Tall wood headboard frame\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1960,1372,60],\"radius\":10},\"position\":[0,686,-1040],\"material\":{\"color\":\"#b98a58\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"hb_panel_l\",\"name\":\"Headboard rattan left\",\"category\":\"enclosure\",\"materialName\":\"rattan\",\"detail\":\"Woven cane panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[850,980,20],\"radius\":5},\"position\":[-460,830,-1005],\"material\":{\"color\":\"#a9763a\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"hb_panel_r\",\"name\":\"Headboard rattan right\",\"category\":\"enclosure\",\"materialName\":\"rattan\",\"detail\":\"Woven cane panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[850,980,20],\"radius\":5},\"position\":[460,830,-1005],\"material\":{\"color\":\"#a9763a\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"base\",\"name\":\"Bed base\",\"category\":\"mechanical\",\"materialName\":\"natural wood\",\"detail\":\"Side rails and platform\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1900,200,2060],\"radius\":20},\"position\":[0,200,0],\"material\":{\"color\":\"#b98a58\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"footboard\",\"name\":\"Footboard frame\",\"category\":\"enclosure\",\"materialName\":\"natural wood\",\"detail\":\"Low wood footboard\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1960,440,50],\"radius\":10},\"position\":[0,330,1050],\"material\":{\"color\":\"#b98a58\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"fb_panel_l\",\"name\":\"Footboard rattan left\",\"category\":\"enclosure\",\"materialName\":\"rattan\",\"detail\":\"Woven cane panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[850,300,15],\"radius\":4},\"position\":[-460,340,1080],\"material\":{\"color\":\"#a9763a\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"fb_panel_r\",\"name\":\"Footboard rattan right\",\"category\":\"enclosure\",\"materialName\":\"rattan\",\"detail\":\"Woven cane panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[850,300,15],\"radius\":4},\"position\":[460,340,1080],\"material\":{\"color\":\"#a9763a\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"mattress\",\"name\":\"Mattress with sheet\",\"category\":\"mechanical\",\"materialName\":\"white fabric\",\"detail\":\"Mattress with white bedding\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1830,250,2000],\"radius\":40},\"position\":[0,425,0],\"material\":{\"color\":\"#f2f2f2\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"pillow_l\",\"name\":\"Left pillow\",\"category\":\"mechanical\",\"materialName\":\"white fabric\",\"detail\":\"Pillow\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[760,130,480],\"radius\":50},\"position\":[-460,610,-740],\"material\":{\"color\":\"#ececec\",\"roughness\":0.95,\"metalness\":0}},{\"id\":\"pillow_r\",\"name\":\"Right pillow\",\"category\":\"mechanical\",\"materialName\":\"white fabric\",\"detail\":\"Pillow\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[760,130,480],\"radius\":50},\"position\":[460,610,-740],\"material\":{\"color\":\"#ececec\",\"roughness\":0.95,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Movian Space Saving Shelf UB-9030 L.Brown/White Iris Ohyama-Meuble de Rangement Petit Espace/Etagere modulable Gain de Place UB-9030-Chêne Clair et Blanc, Bois, Beige.\nThe product listing gives its overall height as 882 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.018147200000000002,
+   "durationMs": 11208,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-30,\"elevationDeg\":12},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Three-tier shelf\",\"units\":\"mm\",\"components\":[{\"id\":\"side_l\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"light oak melamine\",\"detail\":\"Full-height side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,882,290],\"radius\":2},\"position\":[-141,441,0],\"material\":{\"color\":\"#d9b58a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"side_r\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"light oak melamine\",\"detail\":\"Full-height side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,882,290],\"radius\":2},\"position\":[141,441,0],\"material\":{\"color\":\"#d9b58a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"top\",\"name\":\"Top panel\",\"category\":\"enclosure\",\"materialName\":\"white melamine\",\"detail\":\"Top panel between sides\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[264,18,290],\"radius\":2},\"position\":[0,873,0],\"material\":{\"color\":\"#f2f2f2\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"base\",\"name\":\"Bottom shelf\",\"category\":\"enclosure\",\"materialName\":\"white melamine\",\"detail\":\"Bottom panel slightly raised\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[264,18,280],\"radius\":2},\"position\":[0,40,5],\"material\":{\"color\":\"#f2f2f2\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"shelf_1\",\"name\":\"Lower shelf\",\"category\":\"enclosure\",\"materialName\":\"white melamine\",\"detail\":\"Adjustable shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[264,18,275],\"radius\":2},\"position\":[0,390,5],\"material\":{\"color\":\"#f2f2f2\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"shelf_2\",\"name\":\"Upper shelf\",\"category\":\"enclosure\",\"materialName\":\"white melamine\",\"detail\":\"Adjustable shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[264,18,275],\"radius\":2},\"position\":[0,610,5],\"material\":{\"color\":\"#f2f2f2\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"back\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"white hardboard\",\"detail\":\"Thin back panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[264,830,6],\"radius\":1},\"position\":[0,450,-140],\"material\":{\"color\":\"#e8e8e8\",\"roughness\":0.6,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

@@ -1,0 +1,204 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Farmhouse Table Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Turned wood base",
+   "category": "mechanical",
+   "materialName": "weathered wood",
+   "detail": "Turned baluster base with stepped foot and round belly",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      68,
+      0
+     ],
+     [
+      68,
+      26
+     ],
+     [
+      60,
+      30
+     ],
+     [
+      42,
+      32
+     ],
+     [
+      41,
+      44
+     ],
+     [
+      28,
+      48
+     ],
+     [
+      26,
+      65
+     ],
+     [
+      33,
+      70
+     ],
+     [
+      33,
+      78
+     ],
+     [
+      24,
+      84
+     ],
+     [
+      23,
+      97
+     ],
+     [
+      36,
+      108
+     ],
+     [
+      43,
+      129
+     ],
+     [
+      36,
+      150
+     ],
+     [
+      26,
+      158
+     ],
+     [
+      22,
+      165
+     ],
+     [
+      20,
+      178
+     ],
+     [
+      28,
+      184
+     ],
+     [
+      28,
+      192
+     ],
+     [
+      18,
+      198
+     ],
+     [
+      15,
+      210
+     ],
+     [
+      15,
+      235
+     ],
+     [
+      0,
+      235
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#a98c78",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Fabric drum shade",
+   "category": "enclosure",
+   "materialName": "linen fabric",
+   "detail": "Tapered drum shade in off-white linen",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 112,
+    "radiusBottom": 136,
+    "depth": 268,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    369,
+    0
+   ],
+   "material": {
+    "color": "#d6d5d0",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Finial",
+   "category": "mechanical",
+   "materialName": "weathered wood",
+   "detail": "Small round wooden finial knob",
+   "geometry": {
+    "op": "sphere",
+    "radius": 11
+   },
+   "position": [
+    0,
+    497,
+    0
+   ],
+   "material": {
+    "color": "#a98c78",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "harp",
+   "name": "Finial rod",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "Short stem joining the neck to the finial",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      250,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#a98c78",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  }
+ ]
+}

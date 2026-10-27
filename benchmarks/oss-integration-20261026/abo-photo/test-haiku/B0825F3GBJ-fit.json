@@ -1,0 +1,749 @@
+{
+ "spec": {
+  "schema": "sceliph.photo-fit-spec/0.1",
+  "referenceComponentId": "shade",
+  "viewHint": {
+   "azimuthDeg": 0,
+   "elevationDeg": 3,
+   "sigmaDeg": 20
+  },
+  "knownExtent": {
+   "axis": 1,
+   "mm": 469.9,
+   "sigmaMm": 4.699
+  },
+  "parameters": [
+   {
+    "componentId": "base-ring",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 34,
+    "max": 136,
+    "links": [
+     {
+      "componentId": "base-ring",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "base-ring",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 10,
+    "max": 40
+   },
+   {
+    "componentId": "base-ring",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -224.99999833852053,
+    "max": 244.99999833852053
+   },
+   {
+    "componentId": "wood-base",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 31,
+    "max": 124,
+    "links": [
+     {
+      "componentId": "wood-base",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "wood-base",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 54,
+    "max": 216
+   },
+   {
+    "componentId": "wood-base",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -160.99999833852053,
+    "max": 308.9999983385205
+   },
+   {
+    "componentId": "stem",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 2.5,
+    "max": 10,
+    "links": [
+     {
+      "componentId": "stem",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "stem",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "stem",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -69.99999833852053,
+    "max": 399.9999983385205
+   },
+   {
+    "componentId": "shade",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 63,
+    "max": 252
+   },
+   {
+    "componentId": "shade",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 63.5,
+    "max": 254
+   },
+   {
+    "componentId": "shade",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 134.5,
+    "max": 538
+   }
+  ]
+ },
+ "derived": {
+  "parameters": [
+   {
+    "componentId": "base-ring",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 34,
+    "max": 136,
+    "links": [
+     {
+      "componentId": "base-ring",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "base-ring",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 10,
+    "max": 40
+   },
+   {
+    "componentId": "base-ring",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -224.99999833852053,
+    "max": 244.99999833852053
+   },
+   {
+    "componentId": "wood-base",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 31,
+    "max": 124,
+    "links": [
+     {
+      "componentId": "wood-base",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "wood-base",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 54,
+    "max": 216
+   },
+   {
+    "componentId": "wood-base",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -160.99999833852053,
+    "max": 308.9999983385205
+   },
+   {
+    "componentId": "stem",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 2.5,
+    "max": 10,
+    "links": [
+     {
+      "componentId": "stem",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ]
+   },
+   {
+    "componentId": "stem",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 45,
+    "max": 180
+   },
+   {
+    "componentId": "stem",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -69.99999833852053,
+    "max": 399.9999983385205
+   },
+   {
+    "componentId": "shade",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 63,
+    "max": 252
+   },
+   {
+    "componentId": "shade",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 63.5,
+    "max": 254
+   },
+   {
+    "componentId": "shade",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 134.5,
+    "max": 538
+   }
+  ],
+  "locked": [],
+  "groups": [],
+  "aligned": [
+   {
+    "componentId": "base-ring",
+    "axis": 0
+   },
+   {
+    "componentId": "base-ring",
+    "axis": 2
+   },
+   {
+    "componentId": "wood-base",
+    "axis": 0
+   },
+   {
+    "componentId": "wood-base",
+    "axis": 2
+   },
+   {
+    "componentId": "stem",
+    "axis": 0
+   },
+   {
+    "componentId": "stem",
+    "axis": 2
+   }
+  ],
+  "skipped": []
+ },
+ "anchor": {
+  "estimatedMm": 1009.7739398479462,
+  "knownMm": 469.9,
+  "scaleCorrection": 0.46535168066503924
+ },
+ "raster": {
+  "width": 88,
+  "height": 160,
+  "crop": {
+   "x": 0,
+   "y": 0,
+   "width": 351,
+   "height": 640
+  }
+ },
+ "cameraOnly": {
+  "loss": 0.10241512592618147,
+  "view": {
+   "id": "photo",
+   "iou": 0.7824913806026083,
+   "meanBoundaryDistancePx": 0.6515946521444058,
+   "depthResidual": 0.04276268931451739
+  }
+ },
+ "receipt": {
+  "schema": "sceliph.silhouette-parameter-fit/0.2",
+  "provenance": "inferred",
+  "seed": 1,
+  "parameters": [
+   {
+    "componentId": "base-ring",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "links": [
+     {
+      "componentId": "base-ring",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 34,
+    "max": 136,
+    "before": 68,
+    "after": 68,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0010651931041248952,
+    "frozen": true
+   },
+   {
+    "componentId": "base-ring",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 10,
+    "max": 40,
+    "before": 20,
+    "after": 20,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0005633322703876148,
+    "frozen": true
+   },
+   {
+    "componentId": "base-ring",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -224.99999833852053,
+    "max": 244.99999833852053,
+    "before": 10,
+    "after": 58.003987441598554,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.2507267711153744,
+    "frozen": false
+   },
+   {
+    "componentId": "wood-base",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "links": [
+     {
+      "componentId": "wood-base",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 31,
+    "max": 124,
+    "before": 62,
+    "after": 62.60163572097758,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.002044676274318924,
+    "frozen": false
+   },
+   {
+    "componentId": "wood-base",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 54,
+    "max": 216,
+    "before": 108,
+    "after": 108,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.0010240966494859255,
+    "frozen": true
+   },
+   {
+    "componentId": "wood-base",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -160.99999833852053,
+    "max": 308.9999983385205,
+    "before": 74,
+    "after": 15.478201214645736,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.005079068146826751,
+    "frozen": false
+   },
+   {
+    "componentId": "stem",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "links": [
+     {
+      "componentId": "stem",
+      "path": [
+       "geometry",
+       "radiusBottom"
+      ],
+      "ratio": 1
+     }
+    ],
+    "min": 2.5,
+    "max": 10,
+    "before": 5,
+    "after": 5,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00032646669696045905,
+    "frozen": true
+   },
+   {
+    "componentId": "stem",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 45,
+    "max": 180,
+    "before": 90,
+    "after": 90,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0,
+    "frozen": true
+   },
+   {
+    "componentId": "stem",
+    "path": [
+     "position",
+     1
+    ],
+    "min": -69.99999833852053,
+    "max": 399.9999983385205,
+    "before": 165,
+    "after": 165,
+    "spread": 0,
+    "identified": false,
+    "atBound": false,
+    "sensitivity": 0.00028445698634911587,
+    "frozen": true
+   },
+   {
+    "componentId": "shade",
+    "path": [
+     "geometry",
+     "radiusTop"
+    ],
+    "min": 63,
+    "max": 252,
+    "before": 126,
+    "after": 113.19320584164241,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.0072875709427343005,
+    "frozen": false
+   },
+   {
+    "componentId": "shade",
+    "path": [
+     "geometry",
+     "radiusBottom"
+    ],
+    "min": 63.5,
+    "max": 254,
+    "before": 127,
+    "after": 116.57104333428471,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.00920740235479299,
+    "frozen": false
+   },
+   {
+    "componentId": "shade",
+    "path": [
+     "geometry",
+     "depth"
+    ],
+    "min": 134.5,
+    "max": 538,
+    "before": 269,
+    "after": 191.85786050049992,
+    "spread": 0,
+    "identified": true,
+    "atBound": false,
+    "sensitivity": 0.05975362678932582,
+    "frozen": false
+   }
+  ],
+  "cameraParameters": [
+   {
+    "viewId": "photo",
+    "field": "azimuthDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 20
+    },
+    "min": -50,
+    "max": 50,
+    "before": -0.3021972594034992,
+    "after": 2.3881574622529484,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "elevationDeg",
+    "prior": {
+     "mean": 3,
+     "sigma": 20
+    },
+    "min": -47,
+    "max": 53,
+    "before": 1.3998285498890368,
+    "after": 10.046685377521676,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "distanceMm",
+    "prior": {
+     "mean": 895.3921956356184,
+     "sigma": 223.8480489089046
+    },
+    "min": 447.6960978178092,
+    "max": 1790.7843912712367,
+    "before": 909.3040840552803,
+    "after": 820.4698463995695,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetX",
+    "min": -470.3501717215161,
+    "max": 469.649821632566,
+    "before": -1.3522764636513216,
+    "after": 5.9599278109029115,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetY",
+    "min": -275.69323933319447,
+    "max": 664.3067540208876,
+    "before": 236.51396817262332,
+    "after": 229.92334930974175,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "targetZ",
+    "min": -467.8673542729665,
+    "max": 472.1326390811156,
+    "before": 128.13445474435844,
+    "after": 168.70717412293106,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "rollDeg",
+    "prior": {
+     "mean": 0,
+     "sigma": 4
+    },
+    "min": -15,
+    "max": 15,
+    "before": 0.4004032908905195,
+    "after": -0.16167938045207286,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   },
+   {
+    "viewId": "photo",
+    "field": "focalScale",
+    "prior": {
+     "mean": 1,
+     "sigma": 0.15
+    },
+    "min": 0.6,
+    "max": 1.6,
+    "before": 0.9967522057676622,
+    "after": 1.0169620141743883,
+    "spread": 0,
+    "identified": true,
+    "atBound": false
+   }
+  ],
+  "orbits": [
+   {
+    "viewId": "photo",
+    "orbit": {
+     "width": 351,
+     "height": 640,
+     "fx": 1081.017494065357,
+     "fy": 1081.017494065357,
+     "cx": 175.5,
+     "cy": 320,
+     "target": [
+      5.9599278109029115,
+      229.92334930974175,
+      168.70717412293106
+     ],
+     "azimuthDeg": 2.3881574622529484,
+     "elevationDeg": 10.046685377521676,
+     "distanceMm": 820.4698463995695,
+     "rollDeg": -0.16167938045207286,
+     "focalScale": 1.0169620141743883
+    }
+   }
+  ],
+  "restarts": 2,
+  "before": {
+   "loss": 0.14911985699181038,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.6366083445491252,
+     "meanBoundaryDistancePx": 0.9367967081967692,
+     "depthResidual": 0.03941205186127596
+    }
+   ]
+  },
+  "after": {
+   "loss": 0.035945891670953245,
+   "views": [
+    {
+     "id": "photo",
+     "iou": 0.9575437317784257,
+     "meanBoundaryDistancePx": 0.032351201714421976,
+     "depthResidual": 0.028627714030345336
+    }
+   ]
+  },
+  "evaluations": 16042,
+  "stopReason": "maxEvaluations",
+  "compiledGeometries": 23912
+ },
+ "lowConfidenceReasons": [
+  "Object silhouette IoU 0.958 < 0.97."
+ ],
+ "acceptance": {
+  "accept": true,
+  "relativeLossGain": 0.6490177466865369,
+  "freeParameters": 6,
+  "iou": 0.9575437317784257,
+  "reasons": []
+ }
+}

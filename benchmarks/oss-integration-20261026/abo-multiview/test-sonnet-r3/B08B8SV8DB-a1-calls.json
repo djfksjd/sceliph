@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Basics Poly Globe Pendant Light - x x , Brushed Nickel.\nThe product listing gives its overall height as 762 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.011344700000000001,
+   "durationMs": 6919,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Globe Pendant Light\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Round flat canopy plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":65,\"radiusBottom\":65,\"depth\":14,\"radialSegments\":48},\"position\":[0,755,0],\"material\":{\"color\":\"#b8b8b6\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"canopy_cap\",\"name\":\"Canopy cap\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Small raised dome at canopy centre\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":14,\"radiusBottom\":20,\"depth\":8,\"radialSegments\":32},\"position\":[0,744,0],\"material\":{\"color\":\"#c0c0be\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"cord\",\"name\":\"Cord\",\"category\":\"interconnect\",\"materialName\":\"black fabric cord\",\"detail\":\"Thin black suspension cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,0,0],[0,-600,0]],\"radius\":3.5},\"position\":[0,440,0],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"collar\",\"name\":\"Nickel collar\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Small collar where cord enters shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":7,\"radiusBottom\":14,\"depth\":28,\"radialSegments\":24},\"position\":[0,152,0],\"material\":{\"color\":\"#b8b8b6\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"shade\",\"name\":\"Concrete globe shade\",\"category\":\"enclosure\",\"materialName\":\"grey concrete\",\"detail\":\"Rounded globe shade with open bottom\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[40,0],[70,10],[92,40],[104,80],[100,115],[78,140],[40,150],[14,150],[30,140],[0,140]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#6b6b6b\",\"roughness\":0.9,\"metalness\":0.05}},{\"id\":\"bulb_recess\",\"name\":\"Inner recess\",\"category\":\"enclosure\",\"materialName\":\"dark bronze\",\"detail\":\"Dark interior seen at the opening\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":38,\"radiusBottom\":38,\"depth\":4,\"radialSegments\":32},\"position\":[0,3,0],\"material\":{\"color\":\"#3a2c18\",\"roughness\":0.6,\"metalness\":0.3}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Mid-Century Wall Sconce Light, Oil-Rubbed Bronze.\nThe product listing gives its overall height as 332 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0236532,
+   "durationMs": 15973,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Globe wall sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"plate\",\"name\":\"Backplate\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"round wall mounting plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":63,\"radiusBottom\":63,\"depth\":14,\"radialSegments\":48},\"position\":[0,270,7],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"arm\",\"name\":\"Arm\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"stem from plate to socket\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,0,0],[0,-8,50],[0,-13,101]],\"radius\":7},\"position\":[0,258,14],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"cap\",\"name\":\"Socket cap\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"socket top cap\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":10,\"radiusBottom\":20,\"depth\":24,\"radialSegments\":32},\"position\":[0,240,115],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"socket\",\"name\":\"Socket body\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"lamp socket\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":18,\"radiusBottom\":18,\"depth\":85,\"radialSegments\":32},\"position\":[0,190,115],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"collar\",\"name\":\"Glass holder ring\",\"category\":\"mechanical\",\"materialName\":\"oil-rubbed bronze\",\"detail\":\"ring holding the glass globe\",\"geometry\":{\"op\":\"torus\",\"radius\":62,\"tube\":6},\"position\":[0,197,115],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#1c1a19\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"globe\",\"name\":\"Glass globe\",\"category\":\"enclosure\",\"materialName\":\"clear glass\",\"detail\":\"round clear glass shade\",\"geometry\":{\"op\":\"sphere\",\"radius\":104},\"position\":[0,104,115],\"material\":{\"color\":\"#dfe6e8\",\"roughness\":0.05,\"metalness\":0.1}},{\"id\":\"bulbneck\",\"name\":\"Bulb base\",\"category\":\"power\",\"materialName\":\"brass\",\"detail\":\"bulb screw base\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":11,\"radiusBottom\":11,\"depth\":18,\"radialSegments\":24},\"position\":[0,140,115],\"material\":{\"color\":\"#8a7a5a\",\"roughness\":0.4,\"metalness\":0.7}},{\"id\":\"bulb\",\"name\":\"Filament bulb\",\"category\":\"power\",\"materialName\":\"glass\",\"detail\":\"vintage spiral filament bulb\",\"geometry\":{\"op\":\"sphere\",\"radius\":22},\"position\":[0,108,115],\"material\":{\"color\":\"#f2e6c8\",\"roughness\":0.2,\"metalness\":0.1}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

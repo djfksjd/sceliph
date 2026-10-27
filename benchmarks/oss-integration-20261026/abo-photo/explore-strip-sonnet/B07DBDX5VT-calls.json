@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Ravenna Home Amber Rustic Farmhouse Shelf Coffee Table, Natural and White.\nThe product listing gives its overall height as 457 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.024951200000000003,
+   "durationMs": 14692,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":25,\"elevationDeg\":22},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Farmhouse shelf coffee table\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Tabletop\",\"category\":\"mechanical\",\"materialName\":\"Rustic wood\",\"detail\":\"Natural wood plank top\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1220,30,610],\"radius\":8},\"position\":[0,442,0],\"material\":{\"color\":\"#b98a52\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"apronF\",\"name\":\"Front apron\",\"category\":\"mechanical\",\"materialName\":\"White paint\",\"detail\":\"Front apron\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1000,70,20],\"radius\":3},\"position\":[0,392,255],\"material\":{\"color\":\"#ece9e2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"apronB\",\"name\":\"Back apron\",\"category\":\"mechanical\",\"materialName\":\"White paint\",\"detail\":\"Back apron\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1000,70,20],\"radius\":3},\"position\":[0,392,-255],\"material\":{\"color\":\"#ece9e2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"apronL\",\"name\":\"Left apron\",\"category\":\"mechanical\",\"materialName\":\"White paint\",\"detail\":\"Left end apron\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,70,460],\"radius\":3},\"position\":[-555,392,0],\"material\":{\"color\":\"#ece9e2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"apronR\",\"name\":\"Right apron\",\"category\":\"mechanical\",\"materialName\":\"White paint\",\"detail\":\"Right end apron\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,70,460],\"radius\":3},\"position\":[555,392,0],\"material\":{\"color\":\"#ece9e2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"shelf\",\"name\":\"Lower shelf\",\"category\":\"mechanical\",\"materialName\":\"White paint\",\"detail\":\"Lower shelf panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1110,14,510],\"radius\":3},\"position\":[0,115,0],\"material\":{\"color\":\"#e4e1da\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"legFL\",\"name\":\"Front left leg\",\"category\":\"mechanical\",\"materialName\":\"White paint\",\"detail\":\"Turned leg\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,-213.5],[17,-213.5],[19,-150],[22,-110],[28,-105],[28,-62],[21,-58],[24,-30],[20,0],[24,40],[28,85],[28,213.5],[0,213.5]],\"segments\":32},\"position\":[-555,213.5,255],\"material\":{\"color\":\"#ece9e2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"legFR\",\"name\":\"Front right leg\",\"category\":\"mechanical\",\"materialName\":\"White paint\",\"detail\":\"Turned leg\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,-213.5],[17,-213.5],[19,-150],[22,-110],[28,-105],[28,-62],[21,-58],[24,-30],[20,0],[24,40],[28,85],[28,213.5],[0,213.5]],\"segments\":32},\"position\":[555,213.5,255],\"material\":{\"color\":\"#ece9e2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"legBL\",\"name\":\"Back left leg\",\"category\":\"mechanical\",\"materialName\":\"White paint\",\"detail\":\"Turned leg\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,-213.5],[17,-213.5],[19,-150],[22,-110],[28,-105],[28,-62],[21,-58],[24,-30],[20,0],[24,40],[28,85],[28,213.5],[0,213.5]],\"segments\":32},\"position\":[-555,213.5,-255],\"material\":{\"color\":\"#ece9e2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"legBR\",\"name\":\"Back right leg\",\"category\":\"mechanical\",\"materialName\":\"White paint\",\"detail\":\"Turned leg\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,-213.5],[17,-213.5],[19,-150],[22,-110],[28,-105],[28,-62],[21,-58],[24,-30],[20,0],[24,40],[28,85],[28,213.5],[0,213.5]],\"segments\":32},\"position\":[555,213.5,-255],\"material\":{\"color\":\"#ece9e2\",\"roughness\":0.6,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

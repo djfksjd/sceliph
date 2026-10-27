@@ -1,0 +1,68 @@
+{
+ "schema": "sceliph.moge-ground-truth-check/0.1",
+ "generatedAt": "2026-10-26",
+ "model": {
+  "id": "Ruicheng/moge-2-vits-normal-onnx@e50ffda41565591092adea54c6ac83d6212e1e23",
+  "sha256": "24eacb5dc7a2c54c7bc98f7de085ffbed79ad006ea5b664c2c2cdc02ff3a52f0",
+  "upstreamRevision": "74fbce054ebed49800de42d0ad0e83495065719a"
+ },
+ "renderer": "Blender 5.2.1 LTS EEVEE, scripts/blender-moge-ground-truth.py",
+ "cases": [
+  {
+   "id": "a",
+   "imageSha256": "3f08f5d56e4e89838d282ee5e0007c33ff80536e3d19b18271afed1cdaa1e195",
+   "trueFovXDegrees": 40.0,
+   "cameraDistanceM": 0.9,
+   "estimatedFovXDegrees": 50.666,
+   "fovErrorDegrees": 10.666,
+   "priorOnlyAnchorMm": 1075.1,
+   "priorOnlyScaleErrorPercent": 313.5,
+   "probeTrueMm": 110,
+   "probeAnchoredMm": 119.37,
+   "probeAnchoredErrorPercent": 8.52,
+   "probeAnchoredKnownFovMm": 116.96,
+   "probeAnchoredKnownFovErrorPercent": 6.32
+  },
+  {
+   "id": "b",
+   "imageSha256": "9c3aa4427e283a71fd7cb631f32e7c4d7ab89706a48cd4d778dc01debcf801e3",
+   "trueFovXDegrees": 60.0,
+   "cameraDistanceM": 0.6,
+   "estimatedFovXDegrees": 49.971,
+   "fovErrorDegrees": -10.029,
+   "priorOnlyAnchorMm": 1162.7,
+   "priorOnlyScaleErrorPercent": 347.2,
+   "probeTrueMm": 110,
+   "probeAnchoredMm": 116.35,
+   "probeAnchoredErrorPercent": 5.77,
+   "probeAnchoredKnownFovMm": 118.62,
+   "probeAnchoredKnownFovErrorPercent": 7.84
+  },
+  {
+   "id": "c",
+   "imageSha256": "724f985844c14d469137a6ae01f3e84e04a46d52e9579c42cbe777f993b6ee04",
+   "trueFovXDegrees": 30.0,
+   "cameraDistanceM": 1.4,
+   "estimatedFovXDegrees": 44.35,
+   "fovErrorDegrees": 14.35,
+   "priorOnlyAnchorMm": 1017.5,
+   "priorOnlyScaleErrorPercent": 291.3,
+   "probeTrueMm": 110,
+   "probeAnchoredMm": 115.77,
+   "probeAnchoredErrorPercent": 5.24,
+   "probeAnchoredKnownFovMm": 113.75,
+   "probeAnchoredKnownFovErrorPercent": 3.41
+  }
+ ],
+ "findings": [
+  "Single-image horizontal FOV error was 10.0-14.4 degrees on these untextured synthetic scenes.",
+  "The learned metric scale overestimated a 260 mm dimension by 291-347%; it must never be used as millimetre evidence.",
+  "With one known 260 mm anchor, an independent 110 mm probe was within +5.2% to +8.5%.",
+  "Supplying the true FOV changed the anchored probe error to +3.4% to +7.8%: no consistent improvement on three cases."
+ ],
+ "limitations": [
+  "Three synthetic CG scenes of one box; not real photographs, materials or lenses.",
+  "EEVEE output bytes vary between renders; each evidence file is bound to the stored image SHA-256.",
+  "No pass/fail gate is derived from these numbers."
+ ]
+}

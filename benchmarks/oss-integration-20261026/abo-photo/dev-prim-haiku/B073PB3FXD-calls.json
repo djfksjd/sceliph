@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: AmazonBasics Foldable Storage Cubes (6 Pack), Navy.\nThe product listing gives its overall height as 279 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.0014995,
+   "durationMs": 13513,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-35,\"elevationDeg\":22},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"AmazonBasics Foldable Storage Cube, Navy\",\"units\":\"mm\",\"components\":[{\"id\":\"bottom_panel\",\"name\":\"Bottom panel\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Stiffened fabric base panel, 6 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[273,6,273],\"radius\":1.5},\"position\":[0,3,0],\"material\":{\"color\":\"#1b2a6b\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"front_wall\",\"name\":\"Front wall\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Front fabric panel carrying the pull handle\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[279,279,6],\"radius\":1.5},\"position\":[0,139.5,136.5],\"material\":{\"color\":\"#1b2a6b\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"back_wall\",\"name\":\"Back wall\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Rear fabric panel, 6 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[279,279,6],\"radius\":1.5},\"position\":[0,139.5,-136.5],\"material\":{\"color\":\"#1b2a6b\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"left_wall\",\"name\":\"Left side wall\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Left fabric side panel, 6 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[6,279,273],\"radius\":1.5},\"position\":[-136.5,139.5,0],\"material\":{\"color\":\"#1b2a6b\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"right_wall\",\"name\":\"Right side wall\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric\",\"detail\":\"Right fabric side panel, 6 mm thick\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[6,279,273],\"radius\":1.5},\"position\":[136.5,139.5,0],\"material\":{\"color\":\"#1b2a6b\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"front_handle\",\"name\":\"Front pull handle\",\"category\":\"mechanical\",\"materialName\":\"Navy fabric strap\",\"detail\":\"Fabric grab handle sewn onto the front panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[140,22,10],\"radius\":4},\"position\":[0,195,144],\"material\":{\"color\":\"#1b2a6b\",\"roughness\":0.85,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

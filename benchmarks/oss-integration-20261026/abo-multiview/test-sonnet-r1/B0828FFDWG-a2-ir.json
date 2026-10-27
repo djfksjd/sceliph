@@ -1,0 +1,222 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Flush-mount ceiling light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "finial",
+   "name": "Finial",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "small bottom knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 5,
+    "depth": 14,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    7,
+    0
+   ],
+   "material": {
+    "color": "#b8babc",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Finial cap",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "cone under the glass",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 16,
+    "depth": 10,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    19,
+    0
+   ],
+   "material": {
+    "color": "#b8babc",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Glass shade",
+   "category": "enclosure",
+   "materialName": "frosted glass",
+   "detail": "white dome bowl",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      1
+     ],
+     [
+      80,
+      12
+     ],
+     [
+      130,
+      40
+     ],
+     [
+      160,
+      75
+     ],
+     [
+      168,
+      100
+     ],
+     [
+      168,
+      104
+     ],
+     [
+      0,
+      104
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    14,
+    0
+   ],
+   "material": {
+    "color": "#f2f3f4",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rim",
+   "name": "Shade rim",
+   "category": "enclosure",
+   "materialName": "brushed steel",
+   "detail": "collar around the glass",
+   "geometry": {
+    "op": "torus",
+    "radius": 172,
+    "tube": 6
+   },
+   "position": [
+    0,
+    118,
+    0
+   ],
+   "rotation": [
+    1.5707963,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8babc",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "outer_ring",
+   "name": "Outer ring",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "decorative outer band",
+   "geometry": {
+    "op": "torus",
+    "radius": 188,
+    "tube": 6
+   },
+   "position": [
+    0,
+    124,
+    0
+   ],
+   "rotation": [
+    1.5707963,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8babc",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "peg_a",
+   "name": "Ring peg right",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "connects ring to rim",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3,
+    "radiusBottom": 3,
+    "depth": 24,
+    "radialSegments": 16
+   },
+   "position": [
+    180,
+    121,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5707963
+   ],
+   "material": {
+    "color": "#b8babc",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "peg_b",
+   "name": "Ring peg back",
+   "category": "mechanical",
+   "materialName": "brushed steel",
+   "detail": "connects ring to rim",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3,
+    "radiusBottom": 3,
+    "depth": 24,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    121,
+    -180
+   ],
+   "rotation": [
+    1.5707963,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8babc",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

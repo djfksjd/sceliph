@@ -1,0 +1,3118 @@
+{
+ "schema": "sceliph.abo-photo-eval/0.1",
+ "protocolSha256": "291418d9d676ec2a4faf994f13bc91f3bbd0f6feae9242a12b3d76174980a42c",
+ "split": "test",
+ "modelAlias": "sonnet",
+ "totalCostUsd": 0.755,
+ "results": [
+  {
+   "modelId": "B07K6RNQDH",
+   "productType": "DESK",
+   "name": "Marca Amazon -\u00a0Movian Maggiore - Escritorio con 2 cajones, 130 x 50 x 75\u00a0cm, blanco y efecto de roble San Remo",
+   "heightMm": 749.9999992349999,
+   "maskShare": 0.3155,
+   "roundsUsed": 1,
+   "costUsd": 0.0232,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 9,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": -35,
+    "elevationDeg": 14
+   },
+   "fit": {
+    "referenceComponentId": "drawer_body",
+    "parameters": 38,
+    "aligned": 3,
+    "frozen": 24,
+    "iouCameraOnly": 0.7003,
+    "iouAfter": 0.7701,
+    "focalScale": 1.0277,
+    "initialScaleCorrection": 0.5565,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.8387,
+     "freeParameters": 14,
+     "iou": 0.7701,
+     "reasons": [
+      "Fitted silhouette IoU 0.770 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4851,
+     "chamfer": 0.0952,
+     "fScore5": 0.4144,
+     "fScore2": 0.2294,
+     "extentError": [
+      0.2154,
+      0.0003,
+      2.1609
+     ],
+     "yawDeg": 46.5
+    },
+    "b1": {
+     "meanIoU": 0.551,
+     "chamfer": 0.0702,
+     "fScore5": 0.5445,
+     "fScore2": 0.3123,
+     "extentError": [
+      0.2154,
+      0.0003,
+      2.1609
+     ],
+     "yawDeg": 46.5
+    },
+    "llm": {
+     "meanIoU": 0.7217,
+     "chamfer": 0.0235,
+     "fScore5": 0.9083,
+     "fScore2": 0.5608,
+     "extentError": [
+      0.0033,
+      0.0666,
+      0.1858
+     ],
+     "yawDeg": 359.5
+    },
+    "fit": {
+     "meanIoU": 0.7712,
+     "chamfer": 0.0211,
+     "fScore5": 0.9153,
+     "fScore2": 0.6617,
+     "extentError": [
+      0.0064,
+      0.0012,
+      0.4755
+     ],
+     "yawDeg": 359
+    },
+    "final": {
+     "meanIoU": 0.7217,
+     "chamfer": 0.0235,
+     "fScore5": 0.9083,
+     "fScore2": 0.5608,
+     "extentError": [
+      0.0033,
+      0.0666,
+      0.1858
+     ],
+     "yawDeg": 359.5
+    }
+   },
+   "ms": 122867
+  },
+  {
+   "modelId": "B082XLB716",
+   "productType": "LAMP",
+   "name": "Amazon Brand \u2013 Rivet Globe Stick Floor Lamp, 69\"H, White Marble",
+   "heightMm": 1752.6,
+   "maskShare": 0.093,
+   "roundsUsed": 1,
+   "costUsd": 0.0146,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 5,
+   "ops": [
+    "cylinder",
+    "sphere"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 2
+   },
+   "fit": {
+    "referenceComponentId": "globe",
+    "parameters": 14,
+    "aligned": 8,
+    "frozen": 8,
+    "iouCameraOnly": 0.8516,
+    "iouAfter": 0.8516,
+    "focalScale": 1.0325,
+    "initialScaleCorrection": 1.0612,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 6,
+     "iou": 0.8516,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "6 free parameters removed 0.0% each (< 5.0%).",
+      "Fitted silhouette IoU 0.852 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.2388,
+     "chamfer": 0.0386,
+     "fScore5": 0.485,
+     "fScore2": 0.2298,
+     "extentError": [
+      0.0327,
+      0,
+      0.0327
+     ],
+     "yawDeg": 358
+    },
+    "b1": {
+     "meanIoU": 0.4402,
+     "chamfer": 0.0157,
+     "fScore5": 0.9454,
+     "fScore2": 0.6725,
+     "extentError": [
+      0.0327,
+      0,
+      0.0327
+     ],
+     "yawDeg": 88
+    },
+    "llm": {
+     "meanIoU": 0.6904,
+     "chamfer": 0.0033,
+     "fScore5": 1,
+     "fScore2": 0.991,
+     "extentError": [
+      0.0249,
+      0.0003,
+      0.0249
+     ],
+     "yawDeg": 5
+    },
+    "fit": {
+     "meanIoU": 0.6904,
+     "chamfer": 0.0033,
+     "fScore5": 1,
+     "fScore2": 0.991,
+     "extentError": [
+      0.0249,
+      0.0003,
+      0.0249
+     ],
+     "yawDeg": 5
+    },
+    "final": {
+     "meanIoU": 0.6904,
+     "chamfer": 0.0033,
+     "fScore5": 1,
+     "fScore2": 0.991,
+     "extentError": [
+      0.0249,
+      0.0003,
+      0.0249
+     ],
+     "yawDeg": 5
+    }
+   },
+   "ms": 36629
+  },
+  {
+   "modelId": "B07B7H9VMM",
+   "productType": "TABLE",
+   "name": "Amazon Brand \u2013 Rivet Rustic Reclaimed Fir Wood Side End Table, 16.5\"W, Natural",
+   "heightMm": 599.948,
+   "maskShare": 0.5569,
+   "roundsUsed": 1,
+   "costUsd": 0.009,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 3,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": 20,
+    "elevationDeg": 15
+   },
+   "fit": {
+    "referenceComponentId": "upper",
+    "parameters": 10,
+    "aligned": 5,
+    "frozen": 2,
+    "iouCameraOnly": 0.9647,
+    "iouAfter": 0.9628,
+    "focalScale": 1.0083,
+    "initialScaleCorrection": 0.5209,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.1293,
+     "freeParameters": 8,
+     "iou": 0.9628,
+     "reasons": [
+      "Shape fit removed 12.9% of the camera-only loss (< 30.0%).",
+      "8 free parameters removed 1.6% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.847,
+     "chamfer": 0.0307,
+     "fScore5": 0.7848,
+     "fScore2": 0.4632,
+     "extentError": [
+      0.1232,
+      0.0068,
+      0.1547
+     ],
+     "yawDeg": 0
+    },
+    "b1": {
+     "meanIoU": 0.854,
+     "chamfer": 0.0304,
+     "fScore5": 0.8039,
+     "fScore2": 0.4682,
+     "extentError": [
+      0.1232,
+      0.0068,
+      0.1547
+     ],
+     "yawDeg": 180
+    },
+    "llm": {
+     "meanIoU": 0.8936,
+     "chamfer": 0.0262,
+     "fScore5": 0.8702,
+     "fScore2": 0.5389,
+     "extentError": [
+      0.0163,
+      0.0067,
+      0.0201
+     ],
+     "yawDeg": 14.5
+    },
+    "fit": {
+     "meanIoU": 0.8906,
+     "chamfer": 0.0277,
+     "fScore5": 0.8486,
+     "fScore2": 0.5063,
+     "extentError": [
+      0.0151,
+      0.0066,
+      0.0364
+     ],
+     "yawDeg": 14.5
+    },
+    "final": {
+     "meanIoU": 0.8936,
+     "chamfer": 0.0262,
+     "fScore5": 0.8702,
+     "fScore2": 0.5389,
+     "extentError": [
+      0.0163,
+      0.0067,
+      0.0201
+     ],
+     "yawDeg": 14.5
+    }
+   },
+   "ms": 106952
+  },
+  {
+   "modelId": "B07PYKQNKK",
+   "productType": "DRESSER",
+   "name": "AmazonBasics Classic Dresser Drawers 4-Drawer, Espresso",
+   "heightMm": 1020.0639999999999,
+   "maskShare": 0.581,
+   "roundsUsed": 1,
+   "costUsd": 0.0209,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 14,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": -25,
+    "elevationDeg": 10
+   },
+   "fit": {
+    "referenceComponentId": "top",
+    "parameters": 38,
+    "aligned": 14,
+    "frozen": 22,
+    "iouCameraOnly": 0.9314,
+    "iouAfter": 0.9746,
+    "focalScale": 1.0146,
+    "initialScaleCorrection": 0.7287,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.4484,
+     "freeParameters": 16,
+     "iou": 0.9746,
+     "reasons": [
+      "16 free parameters removed 2.8% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.6542,
+     "chamfer": 0.0813,
+     "fScore5": 0.3976,
+     "fScore2": 0.1503,
+     "extentError": [
+      0.4717,
+      0.0001,
+      1.5986
+     ],
+     "yawDeg": 51.5
+    },
+    "b1": {
+     "meanIoU": 0.7046,
+     "chamfer": 0.0723,
+     "fScore5": 0.4592,
+     "fScore2": 0.2389,
+     "extentError": [
+      0.4717,
+      0.0001,
+      1.5986
+     ],
+     "yawDeg": 51.5
+    },
+    "llm": {
+     "meanIoU": 0.8881,
+     "chamfer": 0.0197,
+     "fScore5": 0.9961,
+     "fScore2": 0.5618,
+     "extentError": [
+      0.1283,
+      0,
+      0.1966
+     ],
+     "yawDeg": 356.5
+    },
+    "fit": {
+     "meanIoU": 0.8034,
+     "chamfer": 0.0395,
+     "fScore5": 0.7306,
+     "fScore2": 0.397,
+     "extentError": [
+      0.1091,
+      0.0002,
+      0.5617
+     ],
+     "yawDeg": 178.5
+    },
+    "final": {
+     "meanIoU": 0.8881,
+     "chamfer": 0.0197,
+     "fScore5": 0.9961,
+     "fScore2": 0.5618,
+     "extentError": [
+      0.1283,
+      0,
+      0.1966
+     ],
+     "yawDeg": 356.5
+    }
+   },
+   "ms": 148474
+  },
+  {
+   "modelId": "B078JM1J41",
+   "productType": "SHELF",
+   "name": "Amazon Brand \u2013 Rivet Modern Wood and Metal Floating Wall Storage Shelves - 37.25\"W x 36.25\"H, Natural and Black",
+   "heightMm": 920.75,
+   "maskShare": 0.1157,
+   "roundsUsed": 1,
+   "costUsd": 0.0288,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 12,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 0
+   },
+   "fit": {
+    "referenceComponentId": "shL1",
+    "parameters": 39,
+    "aligned": 12,
+    "frozen": 19,
+    "iouCameraOnly": 0.5304,
+    "iouAfter": 0.5304,
+    "focalScale": 1.0416,
+    "initialScaleCorrection": 0.4148,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 20,
+     "iou": 0.5304,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "20 free parameters removed 0.0% each (< 5.0%).",
+      "Fitted silhouette IoU 0.530 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.2351,
+     "chamfer": 0.163,
+     "fScore5": 0.1252,
+     "fScore2": 0.0294,
+     "extentError": [
+      0.3935,
+      0,
+      6.2195
+     ],
+     "yawDeg": 35
+    },
+    "b1": {
+     "meanIoU": 0.2793,
+     "chamfer": 0.0744,
+     "fScore5": 0.4341,
+     "fScore2": 0.2534,
+     "extentError": [
+      0.3935,
+      0,
+      6.2195
+     ],
+     "yawDeg": 325
+    },
+    "llm": {
+     "meanIoU": 0.6579,
+     "chamfer": 0.0098,
+     "fScore5": 0.9998,
+     "fScore2": 0.9023,
+     "extentError": [
+      0.0178,
+      0.0008,
+      0.039
+     ],
+     "yawDeg": 357.5
+    },
+    "fit": {
+     "meanIoU": 0.6579,
+     "chamfer": 0.0098,
+     "fScore5": 0.9998,
+     "fScore2": 0.9023,
+     "extentError": [
+      0.0178,
+      0.0008,
+      0.039
+     ],
+     "yawDeg": 357.5
+    },
+    "final": {
+     "meanIoU": 0.6579,
+     "chamfer": 0.0098,
+     "fScore5": 0.9998,
+     "fScore2": 0.9023,
+     "extentError": [
+      0.0178,
+      0.0008,
+      0.039
+     ],
+     "yawDeg": 357.5
+    }
+   },
+   "ms": 138684
+  },
+  {
+   "modelId": "B082L28P18",
+   "productType": "CABINET",
+   "name": "Amazon Brand \u2013 Stone & Beam Modern 2-Drawer File Cabinet with Recessed Metal Handles, 28.5\"H, White",
+   "heightMm": 723.9,
+   "maskShare": 0.591,
+   "roundsUsed": 1,
+   "costUsd": 0.014,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 7,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": -30,
+    "elevationDeg": 15
+   },
+   "fit": {
+    "referenceComponentId": "body",
+    "parameters": 23,
+    "aligned": 8,
+    "frozen": 16,
+    "iouCameraOnly": 0.9494,
+    "iouAfter": 0.988,
+    "focalScale": 1.0022,
+    "initialScaleCorrection": 0.6758,
+    "acceptance": {
+     "accept": true,
+     "relativeLossGain": 0.6658,
+     "freeParameters": 7,
+     "iou": 0.988,
+     "reasons": []
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.7161,
+     "chamfer": 0.0742,
+     "fScore5": 0.2928,
+     "fScore2": 0.0824,
+     "extentError": [
+      0.2999,
+      0.0009,
+      0.5711
+     ],
+     "yawDeg": 9.5
+    },
+    "b1": {
+     "meanIoU": 0.7843,
+     "chamfer": 0.0612,
+     "fScore5": 0.4114,
+     "fScore2": 0.1438,
+     "extentError": [
+      0.2835,
+      0.0009,
+      0.5513
+     ],
+     "yawDeg": 261.5
+    },
+    "llm": {
+     "meanIoU": 0.9323,
+     "chamfer": 0.021,
+     "fScore5": 0.9461,
+     "fScore2": 0.6171,
+     "extentError": [
+      0.0778,
+      0.001,
+      0.0217
+     ],
+     "yawDeg": 180
+    },
+    "fit": {
+     "meanIoU": 0.9638,
+     "chamfer": 0.022,
+     "fScore5": 0.9255,
+     "fScore2": 0.6167,
+     "extentError": [
+      0.0004,
+      0.0008,
+      0.0312
+     ],
+     "yawDeg": 180.5
+    },
+    "final": {
+     "meanIoU": 0.9638,
+     "chamfer": 0.022,
+     "fScore5": 0.9255,
+     "fScore2": 0.6167,
+     "extentError": [
+      0.0004,
+      0.0008,
+      0.0312
+     ],
+     "yawDeg": 180.5
+    }
+   },
+   "ms": 130890
+  },
+  {
+   "modelId": "B0825F3GBJ",
+   "productType": "LAMP",
+   "name": "Amazon Brand \u2013 Rivet Scandinavian Real Gray-Wood Table Lamp with Marble Bottom, LED Bulb Included, 18.5\"H, Grey",
+   "heightMm": 469.9,
+   "maskShare": 0.3837,
+   "roundsUsed": 1,
+   "costUsd": 0.0166,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 4,
+   "ops": [
+    "cylinder",
+    "lathe"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "fit": {
+    "referenceComponentId": "shade",
+    "parameters": 9,
+    "aligned": 6,
+    "frozen": 5,
+    "iouCameraOnly": 0.9072,
+    "iouAfter": 0.9106,
+    "focalScale": 1.0178,
+    "initialScaleCorrection": 0.4654,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.0196,
+     "freeParameters": 4,
+     "iou": 0.9106,
+     "reasons": [
+      "Shape fit removed 2.0% of the camera-only loss (< 30.0%).",
+      "4 free parameters removed 0.5% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5384,
+     "chamfer": 0.0565,
+     "fScore5": 0.5297,
+     "fScore2": 0.3125,
+     "extentError": [
+      0.0642,
+      0,
+      0.0642
+     ],
+     "yawDeg": 5.5
+    },
+    "b1": {
+     "meanIoU": 0.6553,
+     "chamfer": 0.0361,
+     "fScore5": 0.719,
+     "fScore2": 0.396,
+     "extentError": [
+      0.0409,
+      0,
+      0.0409
+     ],
+     "yawDeg": 4
+    },
+    "llm": {
+     "meanIoU": 0.9086,
+     "chamfer": 0.0084,
+     "fScore5": 0.9922,
+     "fScore2": 0.9513,
+     "extentError": [
+      0.0293,
+      0.0002,
+      0.0293
+     ],
+     "yawDeg": 13
+    },
+    "fit": {
+     "meanIoU": 0.897,
+     "chamfer": 0.009,
+     "fScore5": 0.9926,
+     "fScore2": 0.8837,
+     "extentError": [
+      0.0289,
+      0.0004,
+      0.0289
+     ],
+     "yawDeg": 0
+    },
+    "final": {
+     "meanIoU": 0.9086,
+     "chamfer": 0.0084,
+     "fScore5": 0.9922,
+     "fScore2": 0.9513,
+     "extentError": [
+      0.0293,
+      0.0002,
+      0.0293
+     ],
+     "yawDeg": 13
+    }
+   },
+   "ms": 48601
+  },
+  {
+   "modelId": "B07B4VY11Z",
+   "productType": "STORAGE_BOX",
+   "name": "Amazon Brand \u2013 Stone & Beam Bishop Modern Wood King Bed, 79\"W, Weathered Oak",
+   "heightMm": 1371.6,
+   "maskShare": 0.406,
+   "roundsUsed": 1,
+   "costUsd": 0.0245,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 10,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": -45,
+    "elevationDeg": 20
+   },
+   "fit": {
+    "referenceComponentId": "mattress",
+    "parameters": 40,
+    "aligned": 5,
+    "frozen": 31,
+    "iouCameraOnly": 0.9115,
+    "iouAfter": 0.9381,
+    "focalScale": 1.0221,
+    "initialScaleCorrection": 1.1655,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.2385,
+     "freeParameters": 9,
+     "iou": 0.9381,
+     "reasons": [
+      "Shape fit removed 23.8% of the camera-only loss (< 30.0%).",
+      "9 free parameters removed 2.6% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.6255,
+     "chamfer": 0.0754,
+     "fScore5": 0.5666,
+     "fScore2": 0.0692,
+     "extentError": [
+      0.188,
+      0.002,
+      0.1285
+     ],
+     "yawDeg": 358
+    },
+    "b1": {
+     "meanIoU": 0.6345,
+     "chamfer": 0.0598,
+     "fScore5": 0.5788,
+     "fScore2": 0.1596,
+     "extentError": [
+      0.1586,
+      0.002,
+      0.15
+     ],
+     "yawDeg": 269.5
+    },
+    "llm": {
+     "meanIoU": 0.8248,
+     "chamfer": 0.0227,
+     "fScore5": 0.9108,
+     "fScore2": 0.5325,
+     "extentError": [
+      0.2835,
+      0.0023,
+      0.0014
+     ],
+     "yawDeg": 358.5
+    },
+    "fit": {
+     "meanIoU": 0.8538,
+     "chamfer": 0.0247,
+     "fScore5": 0.9253,
+     "fScore2": 0.4486,
+     "extentError": [
+      0.2495,
+      0.0033,
+      0.0417
+     ],
+     "yawDeg": 0
+    },
+    "final": {
+     "meanIoU": 0.8248,
+     "chamfer": 0.0227,
+     "fScore5": 0.9108,
+     "fScore2": 0.5325,
+     "extentError": [
+      0.2835,
+      0.0023,
+      0.0014
+     ],
+     "yawDeg": 358.5
+    }
+   },
+   "ms": 126563
+  },
+  {
+   "modelId": "B07K6N3TNH",
+   "productType": "DESK",
+   "name": "Amazon Brand -\u00a0Movian Sava 2-Door 1-Drawer Writing Desk, 140 x 55 x 76cm, White",
+   "heightMm": 759.9999992247999,
+   "maskShare": 0.4098,
+   "roundsUsed": 1,
+   "costUsd": 0.0267,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 10,
+   "ops": [
+    "roundedBox",
+    "cylinder"
+   ],
+   "view": {
+    "azimuthDeg": 35,
+    "elevationDeg": 20
+   },
+   "fit": {
+    "referenceComponentId": "ped_r",
+    "parameters": 35,
+    "aligned": 6,
+    "frozen": 23,
+    "iouCameraOnly": 0.8005,
+    "iouAfter": 0.8005,
+    "focalScale": 0.9788,
+    "initialScaleCorrection": 0.4607,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 12,
+     "iou": 0.8005,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "12 free parameters removed 0.0% each (< 5.0%).",
+      "Fitted silhouette IoU 0.800 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5483,
+     "chamfer": 0.0846,
+     "fScore5": 0.4808,
+     "fScore2": 0.2697,
+     "extentError": [
+      0.2102,
+      0.0022,
+      2.0806
+     ],
+     "yawDeg": 45.5
+    },
+    "b1": {
+     "meanIoU": 0.5857,
+     "chamfer": 0.0692,
+     "fScore5": 0.5595,
+     "fScore2": 0.3071,
+     "extentError": [
+      0.2101,
+      0.0022,
+      2.0802
+     ],
+     "yawDeg": 314
+    },
+    "llm": {
+     "meanIoU": 0.8724,
+     "chamfer": 0.0194,
+     "fScore5": 0.9477,
+     "fScore2": 0.6353,
+     "extentError": [
+      0,
+      0.0022,
+      0
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.8724,
+     "chamfer": 0.0194,
+     "fScore5": 0.9477,
+     "fScore2": 0.6353,
+     "extentError": [
+      0,
+      0.0022,
+      0
+     ],
+     "yawDeg": 0
+    },
+    "final": {
+     "meanIoU": 0.8724,
+     "chamfer": 0.0194,
+     "fScore5": 0.9477,
+     "fScore2": 0.6353,
+     "extentError": [
+      0,
+      0.0022,
+      0
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 107970
+  },
+  {
+   "modelId": "B0824DVF9J",
+   "productType": "LAMP",
+   "name": "Amazon Brand \u2013 Ravenna Home Traditional Metal Torchiere Floor Lamp with Reading Light, LED Bulbs Included, 72\"H, Silver",
+   "heightMm": 1828.8,
+   "maskShare": 0.0536,
+   "roundsUsed": 2,
+   "costUsd": 0.0437,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 8,
+   "ops": [
+    "cylinder",
+    "lathe",
+    "tube"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "fit": {
+    "referenceComponentId": "shade",
+    "parameters": 20,
+    "aligned": 12,
+    "frozen": 10,
+    "iouCameraOnly": 0.5518,
+    "iouAfter": 0.5518,
+    "focalScale": 1.0045,
+    "initialScaleCorrection": 1.3764,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 10,
+     "iou": 0.5518,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "10 free parameters removed 0.0% each (< 5.0%).",
+      "Fitted silhouette IoU 0.552 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.1171,
+     "chamfer": 0.0645,
+     "fScore5": 0.2619,
+     "fScore2": 0.1081,
+     "extentError": [
+      0.303,
+      0.0135,
+      0.9823
+     ],
+     "yawDeg": 41.5
+    },
+    "b1": {
+     "meanIoU": 0.2467,
+     "chamfer": 0.0271,
+     "fScore5": 0.7674,
+     "fScore2": 0.4323,
+     "extentError": [
+      0.305,
+      0.0135,
+      0.9853
+     ],
+     "yawDeg": 43.5
+    },
+    "llm": {
+     "meanIoU": 0.3677,
+     "chamfer": 0.0184,
+     "fScore5": 0.9679,
+     "fScore2": 0.5831,
+     "extentError": [
+      0.0342,
+      0.0136,
+      0.3588
+     ],
+     "yawDeg": 357.5
+    },
+    "fit": {
+     "meanIoU": 0.3677,
+     "chamfer": 0.0184,
+     "fScore5": 0.9679,
+     "fScore2": 0.5831,
+     "extentError": [
+      0.0342,
+      0.0136,
+      0.3588
+     ],
+     "yawDeg": 357.5
+    },
+    "final": {
+     "meanIoU": 0.3677,
+     "chamfer": 0.0184,
+     "fScore5": 0.9679,
+     "fScore2": 0.5831,
+     "extentError": [
+      0.0342,
+      0.0136,
+      0.3588
+     ],
+     "yawDeg": 357.5
+    }
+   },
+   "ms": 40118
+  },
+  {
+   "modelId": "B07FK1HLZ4",
+   "productType": "DRESSER",
+   "name": "Artum Hill BE5-539 Kensington Dresser, 6-Drawer, Limestone Gray",
+   "heightMm": 1016,
+   "maskShare": 0.4743,
+   "roundsUsed": 1,
+   "costUsd": 0.0231,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 15,
+   "ops": [
+    "roundedBox",
+    "cylinder"
+   ],
+   "view": {
+    "azimuthDeg": 25,
+    "elevationDeg": 12
+   },
+   "fit": {
+    "referenceComponentId": "body",
+    "parameters": 39,
+    "aligned": 4,
+    "frozen": 28,
+    "iouCameraOnly": 0.9235,
+    "iouAfter": 0.9398,
+    "focalScale": 0.9827,
+    "initialScaleCorrection": 0.5149,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.0851,
+     "freeParameters": 11,
+     "iou": 0.9398,
+     "reasons": [
+      "Shape fit removed 8.5% of the camera-only loss (< 30.0%).",
+      "11 free parameters removed 0.8% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5538,
+     "chamfer": 0.1022,
+     "fScore5": 0.3317,
+     "fScore2": 0.1813,
+     "extentError": [
+      0.2037,
+      0,
+      3.2796
+     ],
+     "yawDeg": 48.5
+    },
+    "b1": {
+     "meanIoU": 0.6317,
+     "chamfer": 0.0839,
+     "fScore5": 0.4859,
+     "fScore2": 0.2833,
+     "extentError": [
+      0.2055,
+      0,
+      3.2861
+     ],
+     "yawDeg": 46.5
+    },
+    "llm": {
+     "meanIoU": 0.92,
+     "chamfer": 0.0131,
+     "fScore5": 1,
+     "fScore2": 0.8534,
+     "extentError": [
+      0.0157,
+      0.0005,
+      0.0717
+     ],
+     "yawDeg": 180
+    },
+    "fit": {
+     "meanIoU": 0.9437,
+     "chamfer": 0.0144,
+     "fScore5": 0.9542,
+     "fScore2": 0.8593,
+     "extentError": [
+      0.0217,
+      0.0001,
+      0.0717
+     ],
+     "yawDeg": 180
+    },
+    "final": {
+     "meanIoU": 0.92,
+     "chamfer": 0.0131,
+     "fScore5": 1,
+     "fScore2": 0.8534,
+     "extentError": [
+      0.0157,
+      0.0005,
+      0.0717
+     ],
+     "yawDeg": 180
+    }
+   },
+   "ms": 160701
+  },
+  {
+   "modelId": "B07QTKCH2J",
+   "productType": "SHELF",
+   "name": "Marchio Amazon -\u00a0Movian Arga - Guardaroba, 123/160 x 50 x 182 cm (L x P x A), struttura in colore bianco con tenda tonalit\u00e0 talpa",
+   "heightMm": 1819.9999981436,
+   "maskShare": 0.146,
+   "roundsUsed": 1,
+   "costUsd": 0.0318,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 11,
+   "ops": [
+    "roundedBox",
+    "tube"
+   ],
+   "view": {
+    "azimuthDeg": 20,
+    "elevationDeg": 8
+   },
+   "fit": {
+    "referenceComponentId": "curtain",
+    "parameters": 30,
+    "aligned": 12,
+    "frozen": 22,
+    "iouCameraOnly": 0.5021,
+    "iouAfter": 0.6186,
+    "focalScale": 1.0313,
+    "initialScaleCorrection": 0.6902,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.1788,
+     "freeParameters": 8,
+     "iou": 0.6186,
+     "reasons": [
+      "Shape fit removed 17.9% of the camera-only loss (< 30.0%).",
+      "8 free parameters removed 2.2% each (< 5.0%).",
+      "Fitted silhouette IoU 0.619 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4916,
+     "chamfer": 0.0993,
+     "fScore5": 0.3564,
+     "fScore2": 0.1617,
+     "extentError": [
+      0.2922,
+      0,
+      3.1351
+     ],
+     "yawDeg": 49.5
+    },
+    "b1": {
+     "meanIoU": 0.4855,
+     "chamfer": 0.0829,
+     "fScore5": 0.4699,
+     "fScore2": 0.2151,
+     "extentError": [
+      0.2944,
+      0,
+      3.1422
+     ],
+     "yawDeg": 138
+    },
+    "llm": {
+     "meanIoU": 0.8302,
+     "chamfer": 0.0289,
+     "fScore5": 0.7616,
+     "fScore2": 0.62,
+     "extentError": [
+      0,
+      0,
+      0
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.5531,
+     "chamfer": 0.0431,
+     "fScore5": 0.6294,
+     "fScore2": 0.327,
+     "extentError": [
+      0.0517,
+      0.0002,
+      0.663
+     ],
+     "yawDeg": 358.5
+    },
+    "final": {
+     "meanIoU": 0.8302,
+     "chamfer": 0.0289,
+     "fScore5": 0.7616,
+     "fScore2": 0.62,
+     "extentError": [
+      0,
+      0,
+      0
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 124114
+  },
+  {
+   "modelId": "B07H8SMDMT",
+   "productType": "CABINET",
+   "name": "Amazon Brand - Movian Saale King Size Bed Frame with Headboard, 160 x 200cm, Light Brown Oak-Effect",
+   "heightMm": 969.9999990105999,
+   "maskShare": 0.379,
+   "roundsUsed": 1,
+   "costUsd": 0.0255,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 10,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": 35,
+    "elevationDeg": 20
+   },
+   "fit": {
+    "referenceComponentId": "mattress",
+    "parameters": 39,
+    "aligned": 8,
+    "frozen": 22,
+    "iouCameraOnly": 0.9305,
+    "iouAfter": 0.9666,
+    "focalScale": 1.0254,
+    "initialScaleCorrection": 0.7281,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.3845,
+     "freeParameters": 17,
+     "iou": 0.9666,
+     "reasons": [
+      "17 free parameters removed 2.3% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.6708,
+     "chamfer": 0.0572,
+     "fScore5": 0.6317,
+     "fScore2": 0.2035,
+     "extentError": [
+      0.0382,
+      0.0002,
+      0.1265
+     ],
+     "yawDeg": 0.5
+    },
+    "b1": {
+     "meanIoU": 0.6692,
+     "chamfer": 0.0426,
+     "fScore5": 0.7501,
+     "fScore2": 0.3303,
+     "extentError": [
+      0.0817,
+      0.0002,
+      0.0899
+     ],
+     "yawDeg": 183
+    },
+    "llm": {
+     "meanIoU": 0.9319,
+     "chamfer": 0.0159,
+     "fScore5": 1,
+     "fScore2": 0.7033,
+     "extentError": [
+      0.0284,
+      0.0002,
+      0.0145
+     ],
+     "yawDeg": 270.5
+    },
+    "fit": {
+     "meanIoU": 0.7085,
+     "chamfer": 0.0328,
+     "fScore5": 0.7753,
+     "fScore2": 0.5634,
+     "extentError": [
+      0.0058,
+      0.0009,
+      0.368
+     ],
+     "yawDeg": 268
+    },
+    "final": {
+     "meanIoU": 0.9319,
+     "chamfer": 0.0159,
+     "fScore5": 1,
+     "fScore2": 0.7033,
+     "extentError": [
+      0.0284,
+      0.0002,
+      0.0145
+     ],
+     "yawDeg": 270.5
+    }
+   },
+   "ms": 140019
+  },
+  {
+   "modelId": "B082XLWBDL",
+   "productType": "ELECTRIC_FAN",
+   "name": "Amazon Brand \u2013 Rivet Scandinavian Ceiling Fan with Light, 52\" Diameter, Matte Black",
+   "heightMm": 355.59999999999997,
+   "maskShare": 0.1046,
+   "roundsUsed": 1,
+   "costUsd": 0.0373,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 8,
+   "ops": [
+    "cylinder",
+    "lathe",
+    "extrude"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 10
+   },
+   "fit": {
+    "referenceComponentId": "motor",
+    "parameters": 16,
+    "aligned": 14,
+    "frozen": 8,
+    "iouCameraOnly": 0.3951,
+    "iouAfter": 0.491,
+    "focalScale": 0.9849,
+    "initialScaleCorrection": 0.3571,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.1428,
+     "freeParameters": 8,
+     "iou": 0.491,
+     "reasons": [
+      "Shape fit removed 14.3% of the camera-only loss (< 30.0%).",
+      "8 free parameters removed 1.8% each (< 5.0%).",
+      "Fitted silhouette IoU 0.491 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.2085,
+     "chamfer": 0.0814,
+     "fScore5": 0.3278,
+     "fScore2": 0.0905,
+     "extentError": [
+      0.2707,
+      0.0013,
+      0.1754
+     ],
+     "yawDeg": 82
+    },
+    "b1": {
+     "meanIoU": 0.2706,
+     "chamfer": 0.0634,
+     "fScore5": 0.4049,
+     "fScore2": 0.1705,
+     "extentError": [
+      0.243,
+      0.0013,
+      0.144
+     ],
+     "yawDeg": 79
+    },
+    "llm": {
+     "meanIoU": 0.5153,
+     "chamfer": 0.0141,
+     "fScore5": 1,
+     "fScore2": 0.7237,
+     "extentError": [
+      0.0043,
+      0.0025,
+      0.0059
+     ],
+     "yawDeg": 91.5
+    },
+    "fit": {
+     "meanIoU": 0.2385,
+     "chamfer": 0.0412,
+     "fScore5": 0.694,
+     "fScore2": 0.3211,
+     "extentError": [
+      0.0024,
+      0.0013,
+      0.0338
+     ],
+     "yawDeg": 85
+    },
+    "final": {
+     "meanIoU": 0.5153,
+     "chamfer": 0.0141,
+     "fScore5": 1,
+     "fScore2": 0.7237,
+     "extentError": [
+      0.0043,
+      0.0025,
+      0.0059
+     ],
+     "yawDeg": 91.5
+    }
+   },
+   "ms": 50749
+  },
+  {
+   "modelId": "B07B4ZFC5H",
+   "productType": "STORAGE_BOX",
+   "name": "Amazon Brand \u2013 Stone & Beam Chase Casual Wood Bedroom Dresser, 38\" W, Natural",
+   "heightMm": 1320.8,
+   "maskShare": 0.555,
+   "roundsUsed": 1,
+   "costUsd": 0.0347,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 16,
+   "ops": [
+    "roundedBox",
+    "cylinder"
+   ],
+   "view": {
+    "azimuthDeg": -35,
+    "elevationDeg": 10
+   },
+   "fit": {
+    "referenceComponentId": "carcass",
+    "parameters": 31,
+    "aligned": 7,
+    "frozen": 24,
+    "iouCameraOnly": 0.9633,
+    "iouAfter": 0.9781,
+    "focalScale": 0.9955,
+    "initialScaleCorrection": 0.8354,
+    "acceptance": {
+     "accept": true,
+     "relativeLossGain": 0.3719,
+     "freeParameters": 7,
+     "iou": 0.9781,
+     "reasons": []
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.6127,
+     "chamfer": 0.0871,
+     "fScore5": 0.3289,
+     "fScore2": 0.1473,
+     "extentError": [
+      0.427,
+      0.0021,
+      1.8692
+     ],
+     "yawDeg": 38
+    },
+    "b1": {
+     "meanIoU": 0.6792,
+     "chamfer": 0.0734,
+     "fScore5": 0.464,
+     "fScore2": 0.2377,
+     "extentError": [
+      0.4284,
+      0.0021,
+      1.8721
+     ],
+     "yawDeg": 51.5
+    },
+    "llm": {
+     "meanIoU": 0.9655,
+     "chamfer": 0.0106,
+     "fScore5": 1,
+     "fScore2": 0.8823,
+     "extentError": [
+      0.0078,
+      0.0022,
+      0.0647
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.9162,
+     "chamfer": 0.0202,
+     "fScore5": 0.9688,
+     "fScore2": 0.6459,
+     "extentError": [
+      0.0065,
+      0.0022,
+      0.0691
+     ],
+     "yawDeg": 0
+    },
+    "final": {
+     "meanIoU": 0.9162,
+     "chamfer": 0.0202,
+     "fScore5": 0.9688,
+     "fScore2": 0.6459,
+     "extentError": [
+      0.0065,
+      0.0022,
+      0.0691
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 137617
+  },
+  {
+   "modelId": "B07TMGJC9N",
+   "productType": "DESK",
+   "name": "Marca Amazon - Rivet - Escritorio estilo Mid-century, 107 x 51 x 75,5 cm, c\u00e1lida madera marr\u00f3n con chapa de madera",
+   "heightMm": 754.9999992298999,
+   "maskShare": 0.2448,
+   "roundsUsed": 1,
+   "costUsd": 0.0251,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 13,
+   "ops": [
+    "roundedBox",
+    "cylinder"
+   ],
+   "view": {
+    "azimuthDeg": -35,
+    "elevationDeg": 20
+   },
+   "fit": {
+    "referenceComponentId": "body",
+    "parameters": 29,
+    "aligned": 4,
+    "frozen": 13,
+    "iouCameraOnly": 0.8065,
+    "iouAfter": 0.8065,
+    "focalScale": 1.0165,
+    "initialScaleCorrection": 0.5407,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 16,
+     "iou": 0.8065,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "16 free parameters removed 0.0% each (< 5.0%).",
+      "Fitted silhouette IoU 0.807 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.3375,
+     "chamfer": 0.0975,
+     "fScore5": 0.357,
+     "fScore2": 0.2287,
+     "extentError": [
+      0.3138,
+      0.0003,
+      1.759
+     ],
+     "yawDeg": 43.5
+    },
+    "b1": {
+     "meanIoU": 0.4159,
+     "chamfer": 0.0653,
+     "fScore5": 0.4315,
+     "fScore2": 0.1958,
+     "extentError": [
+      0.0546,
+      0.0003,
+      0.9853
+     ],
+     "yawDeg": 1
+    },
+    "llm": {
+     "meanIoU": 0.7227,
+     "chamfer": 0.0126,
+     "fScore5": 0.9972,
+     "fScore2": 0.8773,
+     "extentError": [
+      0.003,
+      0.0009,
+      0.0354
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.7227,
+     "chamfer": 0.0126,
+     "fScore5": 0.9972,
+     "fScore2": 0.8773,
+     "extentError": [
+      0.003,
+      0.0009,
+      0.0354
+     ],
+     "yawDeg": 0
+    },
+    "final": {
+     "meanIoU": 0.7227,
+     "chamfer": 0.0126,
+     "fScore5": 0.9972,
+     "fScore2": 0.8773,
+     "extentError": [
+      0.003,
+      0.0009,
+      0.0354
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 96325
+  },
+  {
+   "modelId": "B07HKFRTVC",
+   "productType": "LIGHT_FIXTURE",
+   "name": "Amazon Brand \u2013 Rivet Modern 6 Globe Flush Mount Metal Ceiling Pendant Chandelier Fixture - 26 x 26 x 8 Inches, Matte Black",
+   "heightMm": 200.02499999999998,
+   "maskShare": 0.3391,
+   "roundsUsed": 1,
+   "costUsd": 0.0333,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 15,
+   "ops": [
+    "cylinder",
+    "tube",
+    "sphere"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 20
+   },
+   "fit": {
+    "referenceComponentId": "globe1",
+    "parameters": 31,
+    "aligned": 24,
+    "frozen": 27,
+    "iouCameraOnly": 0.4579,
+    "iouAfter": 0.6796,
+    "focalScale": 0.9895,
+    "initialScaleCorrection": 0.1889,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.151,
+     "freeParameters": 4,
+     "iou": 0.6796,
+     "reasons": [
+      "Shape fit removed 15.1% of the camera-only loss (< 30.0%).",
+      "4 free parameters removed 3.8% each (< 5.0%).",
+      "Fitted silhouette IoU 0.680 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5133,
+     "chamfer": 0.0491,
+     "fScore5": 0.5525,
+     "fScore2": 0.2163,
+     "extentError": [
+      0.1502,
+      0.0026,
+      0.239
+     ],
+     "yawDeg": 21.5
+    },
+    "b1": {
+     "meanIoU": 0.4761,
+     "chamfer": 0.0425,
+     "fScore5": 0.649,
+     "fScore2": 0.2971,
+     "extentError": [
+      0.1029,
+      0.0026,
+      0.1966
+     ],
+     "yawDeg": 329.5
+    },
+    "llm": {
+     "meanIoU": 0.6908,
+     "chamfer": 0.0199,
+     "fScore5": 0.9414,
+     "fScore2": 0.6291,
+     "extentError": [
+      0.0923,
+      0.0027,
+      0.0945
+     ],
+     "yawDeg": 60
+    },
+    "fit": {
+     "meanIoU": 0.4531,
+     "chamfer": 0.0507,
+     "fScore5": 0.5297,
+     "fScore2": 0.2031,
+     "extentError": [
+      0.0848,
+      0.0022,
+      0.2837
+     ],
+     "yawDeg": 254.5
+    },
+    "final": {
+     "meanIoU": 0.6908,
+     "chamfer": 0.0199,
+     "fScore5": 0.9414,
+     "fScore2": 0.6291,
+     "extentError": [
+      0.0923,
+      0.0027,
+      0.0945
+     ],
+     "yawDeg": 60
+    }
+   },
+   "ms": 92802
+  },
+  {
+   "modelId": "B075ZDWPHC",
+   "productType": "TABLE",
+   "name": "Amazon Brand \u2013 Stone & Beam Miramar Elm Wood Cutout Coffee Table, 39.4\"D, Natural",
+   "heightMm": 434.34000000000003,
+   "maskShare": 0.5611,
+   "roundsUsed": 1,
+   "costUsd": 0.0197,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 7,
+   "ops": [
+    "cylinder",
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 28
+   },
+   "fit": {
+    "referenceComponentId": "top",
+    "parameters": 18,
+    "aligned": 8,
+    "frozen": 14,
+    "iouCameraOnly": 0.647,
+    "iouAfter": 0.647,
+    "focalScale": 1.0087,
+    "initialScaleCorrection": 0.576,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 4,
+     "iou": 0.647,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "4 free parameters removed 0.0% each (< 5.0%).",
+      "Fitted silhouette IoU 0.647 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.781,
+     "chamfer": 0.0324,
+     "fScore5": 0.7214,
+     "fScore2": 0.4467,
+     "extentError": [
+      0.0737,
+      0.035,
+      0.0737
+     ],
+     "yawDeg": 67.5
+    },
+    "b1": {
+     "meanIoU": 0.7036,
+     "chamfer": 0.0422,
+     "fScore5": 0.5976,
+     "fScore2": 0.2989,
+     "extentError": [
+      0.0805,
+      0.035,
+      0.0805
+     ],
+     "yawDeg": 248.5
+    },
+    "llm": {
+     "meanIoU": 0.9435,
+     "chamfer": 0.0204,
+     "fScore5": 0.9191,
+     "fScore2": 0.6632,
+     "extentError": [
+      0.026,
+      0.0357,
+      0.026
+     ],
+     "yawDeg": 35.5
+    },
+    "fit": {
+     "meanIoU": 0.9435,
+     "chamfer": 0.0204,
+     "fScore5": 0.9191,
+     "fScore2": 0.6632,
+     "extentError": [
+      0.026,
+      0.0357,
+      0.026
+     ],
+     "yawDeg": 35.5
+    },
+    "final": {
+     "meanIoU": 0.9435,
+     "chamfer": 0.0204,
+     "fScore5": 0.9191,
+     "fScore2": 0.6632,
+     "extentError": [
+      0.026,
+      0.0357,
+      0.026
+     ],
+     "yawDeg": 35.5
+    }
+   },
+   "ms": 94551
+  },
+  {
+   "modelId": "B07HSLVMP2",
+   "productType": "DRESSER",
+   "name": "Amazon Brand \u2013 Stone & Beam Rylee Modern Acacia Wood 3-Drawer Sideboard Buffet, 63\"W, Acacia, Gray-Wash Acacia",
+   "heightMm": 800.0999999999999,
+   "maskShare": 0.4172,
+   "roundsUsed": 1,
+   "costUsd": 0.0274,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 12,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": -30,
+    "elevationDeg": 12
+   },
+   "fit": {
+    "referenceComponentId": "carcass",
+    "parameters": 47,
+    "aligned": 2,
+    "frozen": 28,
+    "iouCameraOnly": 0.9381,
+    "iouAfter": 0.9527,
+    "focalScale": 1.0455,
+    "initialScaleCorrection": 0.6708,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.2441,
+     "freeParameters": 19,
+     "iou": 0.9527,
+     "reasons": [
+      "Shape fit removed 24.4% of the camera-only loss (< 30.0%).",
+      "19 free parameters removed 1.3% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5329,
+     "chamfer": 0.1036,
+     "fScore5": 0.3493,
+     "fScore2": 0.1976,
+     "extentError": [
+      0.1616,
+      0.0152,
+      3.0855
+     ],
+     "yawDeg": 43.5
+    },
+    "b1": {
+     "meanIoU": 0.6151,
+     "chamfer": 0.0793,
+     "fScore5": 0.5204,
+     "fScore2": 0.2825,
+     "extentError": [
+      0.162,
+      0.0152,
+      3.0869
+     ],
+     "yawDeg": 45
+    },
+    "llm": {
+     "meanIoU": 0.9071,
+     "chamfer": 0.0113,
+     "fScore5": 1,
+     "fScore2": 0.9526,
+     "extentError": [
+      0.0011,
+      0.0202,
+      0.0777
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.6677,
+     "chamfer": 0.0327,
+     "fScore5": 0.7653,
+     "fScore2": 0.3925,
+     "extentError": [
+      0.1779,
+      0.0155,
+      0.0207
+     ],
+     "yawDeg": 179.5
+    },
+    "final": {
+     "meanIoU": 0.9071,
+     "chamfer": 0.0113,
+     "fScore5": 1,
+     "fScore2": 0.9526,
+     "extentError": [
+      0.0011,
+      0.0202,
+      0.0777
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 127280
+  },
+  {
+   "modelId": "B082JHRRLW",
+   "productType": "LIGHT_FIXTURE",
+   "name": "Amazon Brand \u2013 Stone & Beam Contemporary Outdoor Wall Sconce, 11.62\"H, Matte Black",
+   "heightMm": 296.164,
+   "maskShare": 0.079,
+   "roundsUsed": 3,
+   "costUsd": 0.0594,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 4,
+   "ops": [
+    "cylinder",
+    "tube",
+    "lathe"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "fit": {
+    "referenceComponentId": "shade",
+    "parameters": 11,
+    "aligned": 5,
+    "frozen": 9,
+    "iouCameraOnly": 0.9583,
+    "iouAfter": 0.9521,
+    "focalScale": 1.0307,
+    "initialScaleCorrection": 0.355,
+    "acceptance": {
+     "accept": true,
+     "relativeLossGain": 0.3058,
+     "freeParameters": 2,
+     "iou": 0.9521,
+     "reasons": []
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.3271,
+     "chamfer": 0.0956,
+     "fScore5": 0.2823,
+     "fScore2": 0.1177,
+     "extentError": [
+      0.0027,
+      0.0044,
+      0.4564
+     ],
+     "yawDeg": 359.5
+    },
+    "b1": {
+     "meanIoU": 0.4306,
+     "chamfer": 0.0663,
+     "fScore5": 0.4793,
+     "fScore2": 0.254,
+     "extentError": [
+      0.0027,
+      0.0044,
+      0.4564
+     ],
+     "yawDeg": 0.5
+    },
+    "llm": {
+     "meanIoU": 0.3984,
+     "chamfer": 0.076,
+     "fScore5": 0.4136,
+     "fScore2": 0.2218,
+     "extentError": [
+      0.012,
+      0.0167,
+      0.4513
+     ],
+     "yawDeg": 175.5
+    },
+    "fit": {
+     "meanIoU": 0.3995,
+     "chamfer": 0.0759,
+     "fScore5": 0.4137,
+     "fScore2": 0.2198,
+     "extentError": [
+      0.0115,
+      0.0092,
+      0.4516
+     ],
+     "yawDeg": 178
+    },
+    "final": {
+     "meanIoU": 0.3995,
+     "chamfer": 0.0759,
+     "fScore5": 0.4137,
+     "fScore2": 0.2198,
+     "extentError": [
+      0.0115,
+      0.0092,
+      0.4516
+     ],
+     "yawDeg": 178
+    }
+   },
+   "ms": 85324
+  },
+  {
+   "modelId": "B082XMF2RV",
+   "productType": "ELECTRIC_FAN",
+   "name": "Amazon Brand \u2013 Rivet Remote-Controlled Ceiling Fan with Light, 52\" Diameter, Matte Black",
+   "heightMm": 355.59999999999997,
+   "maskShare": 0.1038,
+   "roundsUsed": 1,
+   "costUsd": 0.0269,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 12,
+   "ops": [
+    "cylinder",
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": 15,
+    "elevationDeg": 15
+   },
+   "fit": {
+    "referenceComponentId": "motor",
+    "parameters": 50,
+    "aligned": 18,
+    "frozen": 41,
+    "iouCameraOnly": 0.4524,
+    "iouAfter": 0.4524,
+    "focalScale": 0.9651,
+    "initialScaleCorrection": 0.3026,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 9,
+     "iou": 0.4524,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "9 free parameters removed 0.0% each (< 5.0%).",
+      "Fitted silhouette IoU 0.452 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.1809,
+     "chamfer": 0.0619,
+     "fScore5": 0.424,
+     "fScore2": 0.0913,
+     "extentError": [
+      0.108,
+      0.0009,
+      0.108
+     ],
+     "yawDeg": 43.5
+    },
+    "b1": {
+     "meanIoU": 0.2368,
+     "chamfer": 0.0455,
+     "fScore5": 0.5216,
+     "fScore2": 0.2328,
+     "extentError": [
+      0.1079,
+      0.0009,
+      0.1078
+     ],
+     "yawDeg": 226
+    },
+    "llm": {
+     "meanIoU": 0.389,
+     "chamfer": 0.0315,
+     "fScore5": 0.7473,
+     "fScore2": 0.413,
+     "extentError": [
+      0.0009,
+      0.002,
+      0.0008
+     ],
+     "yawDeg": 16
+    },
+    "fit": {
+     "meanIoU": 0.389,
+     "chamfer": 0.0315,
+     "fScore5": 0.7473,
+     "fScore2": 0.413,
+     "extentError": [
+      0.0009,
+      0.002,
+      0.0008
+     ],
+     "yawDeg": 16
+    },
+    "final": {
+     "meanIoU": 0.389,
+     "chamfer": 0.0315,
+     "fScore5": 0.7473,
+     "fScore2": 0.413,
+     "extentError": [
+      0.0009,
+      0.002,
+      0.0008
+     ],
+     "yawDeg": 16
+    }
+   },
+   "ms": 56391
+  },
+  {
+   "modelId": "B07B4W2MFG",
+   "productType": "STORAGE_BOX",
+   "name": "Amazon Brand \u2013 Stone & Beam Bishop Modern Wood Underbed Storage, 81.5\"W, Weathered Oak",
+   "heightMm": 273.05,
+   "maskShare": 0.2987,
+   "roundsUsed": 1,
+   "costUsd": 0.0168,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 6,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": -28,
+    "elevationDeg": 22
+   },
+   "fit": {
+    "referenceComponentId": "body",
+    "parameters": 18,
+    "aligned": 7,
+    "frozen": 7,
+    "iouCameraOnly": 0.99,
+    "iouAfter": 0.99,
+    "focalScale": 0.9589,
+    "initialScaleCorrection": 0.3201,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 11,
+     "iou": 0.99,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "11 free parameters removed 0.0% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4942,
+     "chamfer": 0.0539,
+     "fScore5": 0.6462,
+     "fScore2": 0.3699,
+     "extentError": [
+      0.3027,
+      0.0022,
+      1.4459
+     ],
+     "yawDeg": 29.5
+    },
+    "b1": {
+     "meanIoU": 0.482,
+     "chamfer": 0.0554,
+     "fScore5": 0.6494,
+     "fScore2": 0.4225,
+     "extentError": [
+      0.3733,
+      0.0022,
+      1.1981
+     ],
+     "yawDeg": 75
+    },
+    "llm": {
+     "meanIoU": 0.9498,
+     "chamfer": 0.0105,
+     "fScore5": 0.9956,
+     "fScore2": 0.8791,
+     "extentError": [
+      0.0008,
+      0.0024,
+      0.0282
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.9498,
+     "chamfer": 0.0105,
+     "fScore5": 0.9956,
+     "fScore2": 0.8791,
+     "extentError": [
+      0.0008,
+      0.0024,
+      0.0282
+     ],
+     "yawDeg": 0
+    },
+    "final": {
+     "meanIoU": 0.9498,
+     "chamfer": 0.0105,
+     "fScore5": 0.9956,
+     "fScore2": 0.8791,
+     "extentError": [
+      0.0008,
+      0.0024,
+      0.0282
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 84735
+  },
+  {
+   "modelId": "B0876NZQ9C",
+   "productType": "DESK",
+   "name": "AmazonBasics 40\" Multipurpose Foldable Computer Study Desk - Natural",
+   "heightMm": 762,
+   "maskShare": 0.1257,
+   "roundsUsed": 1,
+   "costUsd": 0.0224,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 11,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": -35,
+    "elevationDeg": 14
+   },
+   "fit": {
+    "referenceComponentId": "top",
+    "parameters": 28,
+    "aligned": 5,
+    "frozen": 14,
+    "iouCameraOnly": 0.6484,
+    "iouAfter": 0.6484,
+    "focalScale": 1.0424,
+    "initialScaleCorrection": 0.4783,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 14,
+     "iou": 0.6484,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "14 free parameters removed 0.0% each (< 5.0%).",
+      "Fitted silhouette IoU 0.648 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.2509,
+     "chamfer": 0.0829,
+     "fScore5": 0.4368,
+     "fScore2": 0.2546,
+     "extentError": [
+      0.3095,
+      0,
+      1.619
+     ],
+     "yawDeg": 45
+    },
+    "b1": {
+     "meanIoU": 0.2735,
+     "chamfer": 0.0756,
+     "fScore5": 0.3815,
+     "fScore2": 0.1636,
+     "extentError": [
+      0.0792,
+      0,
+      1.1584
+     ],
+     "yawDeg": 259.5
+    },
+    "llm": {
+     "meanIoU": 0.6501,
+     "chamfer": 0.0075,
+     "fScore5": 1,
+     "fScore2": 0.9673,
+     "extentError": [
+      0.0157,
+      0,
+      0.0158
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.6501,
+     "chamfer": 0.0075,
+     "fScore5": 1,
+     "fScore2": 0.9673,
+     "extentError": [
+      0.0157,
+      0,
+      0.0158
+     ],
+     "yawDeg": 0
+    },
+    "final": {
+     "meanIoU": 0.6501,
+     "chamfer": 0.0075,
+     "fScore5": 1,
+     "fScore2": 0.9673,
+     "extentError": [
+      0.0157,
+      0,
+      0.0158
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 110805
+  },
+  {
+   "modelId": "B0825DC7JP",
+   "productType": "LIGHT_FIXTURE",
+   "name": "Amazon Brand \u2013 Rivet Mid-Century Modern Single-Light Marble Pendant with Exposed Bulb and Satin Brass Accents, LED Bulb Included, 66\"H, White",
+   "heightMm": 1676.3999999999999,
+   "maskShare": 0.0518,
+   "roundsUsed": 1,
+   "costUsd": 0.0166,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 5,
+   "ops": [
+    "lathe",
+    "cylinder",
+    "tube"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "fit": {
+    "referenceComponentId": "marble",
+    "parameters": 12,
+    "aligned": 8,
+    "frozen": 3,
+    "iouCameraOnly": 0.7816,
+    "iouAfter": 0.7816,
+    "focalScale": 0.9857,
+    "initialScaleCorrection": 0.9941,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 9,
+     "iou": 0.7816,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "9 free parameters removed 0.0% each (< 5.0%).",
+      "Fitted silhouette IoU 0.782 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.0664,
+     "chamfer": 0.0322,
+     "fScore5": 0.868,
+     "fScore2": 0.1832,
+     "extentError": [
+      0.1317,
+      0.0046,
+      0.1317
+     ],
+     "yawDeg": 359
+    },
+    "b1": {
+     "meanIoU": 0.1567,
+     "chamfer": 0.0088,
+     "fScore5": 1,
+     "fScore2": 0.8407,
+     "extentError": [
+      0.122,
+      0.0046,
+      0.1048
+     ],
+     "yawDeg": 270.5
+    },
+    "llm": {
+     "meanIoU": 0.522,
+     "chamfer": 0.0054,
+     "fScore5": 1,
+     "fScore2": 0.9844,
+     "extentError": [
+      0.0523,
+      0.0044,
+      0.0523
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.522,
+     "chamfer": 0.0054,
+     "fScore5": 1,
+     "fScore2": 0.9844,
+     "extentError": [
+      0.0523,
+      0.0044,
+      0.0523
+     ],
+     "yawDeg": 0
+    },
+    "final": {
+     "meanIoU": 0.522,
+     "chamfer": 0.0054,
+     "fScore5": 1,
+     "fScore2": 0.9844,
+     "extentError": [
+      0.0523,
+      0.0044,
+      0.0523
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 31976
+  },
+  {
+   "modelId": "B07DBDX5VT",
+   "productType": "TABLE",
+   "name": "Amazon Brand \u2013 Ravenna Home Amber Rustic Farmhouse Shelf Coffee Table, 44\"W, Natural and White",
+   "heightMm": 457.2,
+   "maskShare": 0.2632,
+   "roundsUsed": 1,
+   "costUsd": 0.0261,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 10,
+   "ops": [
+    "roundedBox",
+    "lathe"
+   ],
+   "view": {
+    "azimuthDeg": -35,
+    "elevationDeg": 25
+   },
+   "fit": {
+    "referenceComponentId": "top",
+    "parameters": 20,
+    "aligned": 6,
+    "frozen": 9,
+    "iouCameraOnly": 0.8722,
+    "iouAfter": 0.8722,
+    "focalScale": 1.0408,
+    "initialScaleCorrection": 0.4419,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 11,
+     "iou": 0.8722,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "11 free parameters removed 0.0% each (< 5.0%).",
+      "Fitted silhouette IoU 0.872 < 0.9."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5397,
+     "chamfer": 0.0716,
+     "fScore5": 0.4466,
+     "fScore2": 0.305,
+     "extentError": [
+      0.1015,
+      0.0025,
+      1.203
+     ],
+     "yawDeg": 62.5
+    },
+    "b1": {
+     "meanIoU": 0.6156,
+     "chamfer": 0.0467,
+     "fScore5": 0.5852,
+     "fScore2": 0.3515,
+     "extentError": [
+      0.0545,
+      0.0025,
+      1.0946
+     ],
+     "yawDeg": 68.5
+    },
+    "llm": {
+     "meanIoU": 0.868,
+     "chamfer": 0.0134,
+     "fScore5": 1,
+     "fScore2": 0.8258,
+     "extentError": [
+      0.0004,
+      0.0029,
+      0.0021
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.868,
+     "chamfer": 0.0134,
+     "fScore5": 1,
+     "fScore2": 0.8258,
+     "extentError": [
+      0.0004,
+      0.0029,
+      0.0021
+     ],
+     "yawDeg": 0
+    },
+    "final": {
+     "meanIoU": 0.868,
+     "chamfer": 0.0134,
+     "fScore5": 1,
+     "fScore2": 0.8258,
+     "extentError": [
+      0.0004,
+      0.0029,
+      0.0021
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 91057
+  },
+  {
+   "modelId": "B07HSL4TS1",
+   "productType": "DRESSER",
+   "name": "Amazon Brand \u2013 Rivet Kingston Modern Chest of Drawers 35.43\"W, White",
+   "heightMm": 749.3,
+   "maskShare": 0.4816,
+   "roundsUsed": 1,
+   "costUsd": 0.0313,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 15,
+   "ops": [
+    "roundedBox",
+    "cylinder"
+   ],
+   "view": {
+    "azimuthDeg": -30,
+    "elevationDeg": 14
+   },
+   "fit": {
+    "referenceComponentId": "carcass",
+    "parameters": 35,
+    "aligned": 4,
+    "frozen": 19,
+    "iouCameraOnly": 0.9559,
+    "iouAfter": 0.9635,
+    "focalScale": 1.0081,
+    "initialScaleCorrection": 0.6359,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.2917,
+     "freeParameters": 16,
+     "iou": 0.9635,
+     "reasons": [
+      "Shape fit removed 29.2% of the camera-only loss (< 30.0%).",
+      "16 free parameters removed 1.8% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5185,
+     "chamfer": 0.1053,
+     "fScore5": 0.3203,
+     "fScore2": 0.0678,
+     "extentError": [
+      0.4217,
+      0.0386,
+      1.8166
+     ],
+     "yawDeg": 50.5
+    },
+    "b1": {
+     "meanIoU": 0.622,
+     "chamfer": 0.0735,
+     "fScore5": 0.5076,
+     "fScore2": 0.2663,
+     "extentError": [
+      0.4217,
+      0.0386,
+      1.8166
+     ],
+     "yawDeg": 39.5
+    },
+    "llm": {
+     "meanIoU": 0.9274,
+     "chamfer": 0.0127,
+     "fScore5": 1,
+     "fScore2": 0.895,
+     "extentError": [
+      0.0053,
+      0.0382,
+      0.0073
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.5441,
+     "chamfer": 0.0851,
+     "fScore5": 0.2867,
+     "fScore2": 0.0611,
+     "extentError": [
+      0.5175,
+      0.0381,
+      1.1055
+     ],
+     "yawDeg": 10
+    },
+    "final": {
+     "meanIoU": 0.9274,
+     "chamfer": 0.0127,
+     "fScore5": 1,
+     "fScore2": 0.895,
+     "extentError": [
+      0.0053,
+      0.0382,
+      0.0073
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 143374
+  },
+  {
+   "modelId": "B07TVYR4SH",
+   "productType": "SHELF",
+   "name": "Movian Space Saving Shelf UB-9030 L.Brown/White Iris Ohyama-Meuble de Rangement Petit Espace/Etagere modulable Gain de Place UB-9030-Ch\u00eane Clair et Blanc, 30 x 29 x 90 cm, Bois, Beige, 30 cm",
+   "heightMm": 881.9999991003599,
+   "maskShare": 0.5546,
+   "roundsUsed": 1,
+   "costUsd": 0.0173,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 7,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": -35,
+    "elevationDeg": 12
+   },
+   "fit": {
+    "referenceComponentId": "side_l",
+    "parameters": 20,
+    "aligned": 9,
+    "frozen": 11,
+    "iouCameraOnly": 0.9865,
+    "iouAfter": 0.9865,
+    "focalScale": 1.034,
+    "initialScaleCorrection": 0.4263,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0,
+     "freeParameters": 9,
+     "iou": 0.9865,
+     "reasons": [
+      "Shape fit removed 0.0% of the camera-only loss (< 30.0%).",
+      "9 free parameters removed 0.0% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.763,
+     "chamfer": 0.0476,
+     "fScore5": 0.5754,
+     "fScore2": 0.3262,
+     "extentError": [
+      0.7809,
+      0.02,
+      0.8422
+     ],
+     "yawDeg": 45
+    },
+    "b1": {
+     "meanIoU": 0.7735,
+     "chamfer": 0.0457,
+     "fScore5": 0.6065,
+     "fScore2": 0.3333,
+     "extentError": [
+      0.7809,
+      0.02,
+      0.8422
+     ],
+     "yawDeg": 45
+    },
+    "llm": {
+     "meanIoU": 0.9745,
+     "chamfer": 0.0126,
+     "fScore5": 0.9621,
+     "fScore2": 0.8591,
+     "extentError": [
+      0,
+      0.02,
+      0
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.9745,
+     "chamfer": 0.0126,
+     "fScore5": 0.9621,
+     "fScore2": 0.8591,
+     "extentError": [
+      0,
+      0.02,
+      0
+     ],
+     "yawDeg": 0
+    },
+    "final": {
+     "meanIoU": 0.9745,
+     "chamfer": 0.0126,
+     "fScore5": 0.9621,
+     "fScore2": 0.8591,
+     "extentError": [
+      0,
+      0.02,
+      0
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 98879
+  },
+  {
+   "modelId": "B07RR3RFHT",
+   "productType": "CABINET",
+   "name": "Marchio Amazon -\u00a0Movian Argenton - Colonna da bagno, 30 x 27 x 140 cm, colore bianco",
+   "heightMm": 1399.9999985719999,
+   "maskShare": 0.3086,
+   "roundsUsed": 1,
+   "costUsd": 0.0097,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 4,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": 0,
+    "elevationDeg": 0
+   },
+   "fit": {
+    "referenceComponentId": "body",
+    "parameters": 18,
+    "aligned": 3,
+    "frozen": 8,
+    "iouCameraOnly": 0.9988,
+    "iouAfter": 1,
+    "focalScale": 1.0043,
+    "initialScaleCorrection": 0.4313,
+    "acceptance": {
+     "accept": true,
+     "relativeLossGain": 0.614,
+     "freeParameters": 10,
+     "iou": 1,
+     "reasons": []
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.9398,
+     "chamfer": 0.0133,
+     "fScore5": 0.9736,
+     "fScore2": 0.8351,
+     "extentError": [
+      0.0124,
+      0,
+      0.1249
+     ],
+     "yawDeg": 359.5
+    },
+    "b1": {
+     "meanIoU": 0.9417,
+     "chamfer": 0.0133,
+     "fScore5": 0.9735,
+     "fScore2": 0.8333,
+     "extentError": [
+      0.0124,
+      0,
+      0.1249
+     ],
+     "yawDeg": 89.5
+    },
+    "llm": {
+     "meanIoU": 0.9844,
+     "chamfer": 0.0096,
+     "fScore5": 0.9827,
+     "fScore2": 0.9494,
+     "extentError": [
+      0,
+      0.0029,
+      0.0148
+     ],
+     "yawDeg": 180
+    },
+    "fit": {
+     "meanIoU": 0.7539,
+     "chamfer": 0.0237,
+     "fScore5": 0.9116,
+     "fScore2": 0.6786,
+     "extentError": [
+      0.2178,
+      0,
+      0.2214
+     ],
+     "yawDeg": 275
+    },
+    "final": {
+     "meanIoU": 0.7539,
+     "chamfer": 0.0237,
+     "fScore5": 0.9116,
+     "fScore2": 0.6786,
+     "extentError": [
+      0.2178,
+      0,
+      0.2214
+     ],
+     "yawDeg": 275
+    }
+   },
+   "ms": 60788
+  },
+  {
+   "modelId": "B082MY2MX3",
+   "productType": "ELECTRIC_FAN",
+   "name": "AmazonBasics 3 Speed Air Circulator, 7-Inch",
+   "heightMm": 276.86,
+   "maskShare": 0.3445,
+   "roundsUsed": 1,
+   "costUsd": 0.0312,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 12,
+   "ops": [
+    "roundedBox",
+    "cylinder",
+    "torus"
+   ],
+   "view": {
+    "azimuthDeg": 50,
+    "elevationDeg": 10
+   },
+   "fit": {
+    "referenceComponentId": "housing",
+    "parameters": 33,
+    "aligned": 20,
+    "frozen": 24,
+    "iouCameraOnly": 0.8571,
+    "iouAfter": 0.9165,
+    "focalScale": 1.0202,
+    "initialScaleCorrection": 0.1784,
+    "acceptance": {
+     "accept": false,
+     "relativeLossGain": 0.1904,
+     "freeParameters": 9,
+     "iou": 0.9165,
+     "reasons": [
+      "Shape fit removed 19.0% of the camera-only loss (< 30.0%).",
+      "9 free parameters removed 2.1% each (< 5.0%)."
+     ]
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5467,
+     "chamfer": 0.0866,
+     "fScore5": 0.4839,
+     "fScore2": 0.1942,
+     "extentError": [
+      0.0864,
+      0.0014,
+      0.0263
+     ],
+     "yawDeg": 359.5
+    },
+    "b1": {
+     "meanIoU": 0.5987,
+     "chamfer": 0.0678,
+     "fScore5": 0.5809,
+     "fScore2": 0.2856,
+     "extentError": [
+      0.0481,
+      0.0014,
+      0.0145
+     ],
+     "yawDeg": 357
+    },
+    "llm": {
+     "meanIoU": 0.5636,
+     "chamfer": 0.0533,
+     "fScore5": 0.6124,
+     "fScore2": 0.319,
+     "extentError": [
+      0.1321,
+      0.0009,
+      0.0664
+     ],
+     "yawDeg": 153
+    },
+    "fit": {
+     "meanIoU": 0.5826,
+     "chamfer": 0.0522,
+     "fScore5": 0.629,
+     "fScore2": 0.3299,
+     "extentError": [
+      0.037,
+      0.0016,
+      0.1915
+     ],
+     "yawDeg": 154
+    },
+    "final": {
+     "meanIoU": 0.5636,
+     "chamfer": 0.0533,
+     "fScore5": 0.6124,
+     "fScore2": 0.319,
+     "extentError": [
+      0.1321,
+      0.0009,
+      0.0664
+     ],
+     "yawDeg": 153
+    }
+   },
+   "ms": 150443
+  },
+  {
+   "modelId": "B07TX2D4XN",
+   "productType": "SHELF",
+   "name": "Amazon Brand - Movian MDF Shelf 2 lockers Cube Bookcase, Light Oak, 41.5 x 29 x 59.5 cm",
+   "heightMm": 591.99999939616,
+   "maskShare": 0.6238,
+   "roundsUsed": 1,
+   "costUsd": 0.0174,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "components": 6,
+   "ops": [
+    "roundedBox"
+   ],
+   "view": {
+    "azimuthDeg": -35,
+    "elevationDeg": 15
+   },
+   "fit": {
+    "referenceComponentId": "side_l",
+    "parameters": 17,
+    "aligned": 10,
+    "frozen": 9,
+    "iouCameraOnly": 0.9835,
+    "iouAfter": 0.9858,
+    "focalScale": 1.0307,
+    "initialScaleCorrection": 0.4011,
+    "acceptance": {
+     "accept": true,
+     "relativeLossGain": 0.4169,
+     "freeParameters": 8,
+     "iou": 0.9858,
+     "reasons": []
+    }
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.7291,
+     "chamfer": 0.067,
+     "fScore5": 0.5062,
+     "fScore2": 0.3011,
+     "extentError": [
+      0.5371,
+      0,
+      1.1944
+     ],
+     "yawDeg": 46
+    },
+    "b1": {
+     "meanIoU": 0.7821,
+     "chamfer": 0.0578,
+     "fScore5": 0.5413,
+     "fScore2": 0.2776,
+     "extentError": [
+      0.2358,
+      0,
+      0.7642
+     ],
+     "yawDeg": 81.5
+    },
+    "llm": {
+     "meanIoU": 0.9905,
+     "chamfer": 0.0104,
+     "fScore5": 1,
+     "fScore2": 0.9707,
+     "extentError": [
+      0.0024,
+      0,
+      0
+     ],
+     "yawDeg": 0
+    },
+    "fit": {
+     "meanIoU": 0.9712,
+     "chamfer": 0.0204,
+     "fScore5": 0.874,
+     "fScore2": 0.7902,
+     "extentError": [
+      0.0038,
+      0,
+      0.0729
+     ],
+     "yawDeg": 0.5
+    },
+    "final": {
+     "meanIoU": 0.9712,
+     "chamfer": 0.0204,
+     "fScore5": 0.874,
+     "fScore2": 0.7902,
+     "extentError": [
+      0.0038,
+      0,
+      0.0729
+     ],
+     "yawDeg": 0.5
+    }
+   },
+   "ms": 129087
+  }
+ ],
+ "chunks": 3
+}

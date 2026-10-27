@@ -1,0 +1,189 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Stone & Beam Bishop Modern Wood King Bed",
+ "units": "mm",
+ "components": [
+  {
+   "id": "headboard",
+   "name": "Headboard panel",
+   "category": "mechanical",
+   "materialName": "Weathered oak",
+   "detail": "Full-height framed panel headboard, 1372 mm tall, spanning the full bed width at the head end.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     2007,
+     1372,
+     50
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    686,
+    -1065
+   ],
+   "material": {
+    "color": "#b8a58a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "footboard",
+   "name": "Footboard panel",
+   "category": "mechanical",
+   "materialName": "Weathered oak",
+   "detail": "Low framed footboard panel at the foot end, about 560 mm tall.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     2007,
+     560,
+     50
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    280,
+    1065
+   ],
+   "material": {
+    "color": "#b8a58a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rail_left",
+   "name": "Left side rail",
+   "category": "mechanical",
+   "materialName": "Weathered oak",
+   "detail": "Left side rail running the length of the bed frame.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     330,
+     2180
+    ],
+    "radius": 4
+   },
+   "position": [
+    -973,
+    165,
+    0
+   ],
+   "material": {
+    "color": "#b8a58a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rail_right",
+   "name": "Right side rail",
+   "category": "mechanical",
+   "materialName": "Weathered oak",
+   "detail": "Right side rail running the length of the bed frame.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     330,
+     2180
+    ],
+    "radius": 4
+   },
+   "position": [
+    973,
+    165,
+    0
+   ],
+   "material": {
+    "color": "#b8a58a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "mattress",
+   "name": "Mattress",
+   "category": "mechanical",
+   "materialName": "White mattress ticking",
+   "detail": "Pale mattress sitting on the side rails between the headboard and footboard.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1930,
+     250,
+     2030
+    ],
+    "radius": 30
+   },
+   "position": [
+    0,
+    455,
+    15
+   ],
+   "material": {
+    "color": "#f0f0f0",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pillow_left",
+   "name": "Left pillow",
+   "category": "mechanical",
+   "materialName": "White pillow",
+   "detail": "Standard pillow resting against the headboard on the left side of the bed.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     160,
+     450
+    ],
+    "radius": 40
+   },
+   "position": [
+    -460,
+    660,
+    -810
+   ],
+   "material": {
+    "color": "#f7f7f7",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pillow_right",
+   "name": "Right pillow",
+   "category": "mechanical",
+   "materialName": "White pillow",
+   "detail": "Standard pillow resting against the headboard on the right side of the bed.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     160,
+     450
+    ],
+    "radius": 40
+   },
+   "position": [
+    460,
+    660,
+    -810
+   ],
+   "material": {
+    "color": "#f7f7f7",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  }
+ ]
+}

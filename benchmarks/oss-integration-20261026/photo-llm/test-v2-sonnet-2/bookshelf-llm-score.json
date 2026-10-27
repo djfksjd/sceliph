@@ -1,0 +1,430 @@
+{
+ "schema": "sceliph.assembly-truth-compare/0.1",
+ "yawDeg": 0,
+ "extentMm": 899.9999642372129,
+ "items": [
+  {
+   "componentId": "side-left",
+   "candidateId": "side-left",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 20,
+   "candidateMm": 18,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "side-left",
+   "candidateId": "side-left",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 900,
+   "candidateMm": 900,
+   "relativeError": 0
+  },
+  {
+   "componentId": "side-left",
+   "candidateId": "side-left",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 300,
+   "candidateMm": 280,
+   "relativeError": 0.0667
+  },
+  {
+   "componentId": "side-left",
+   "candidateId": "side-left",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "side-right",
+   "candidateId": "side-right",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 20,
+   "candidateMm": 18,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "side-right",
+   "candidateId": "side-right",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 900,
+   "candidateMm": 900,
+   "relativeError": 0
+  },
+  {
+   "componentId": "side-right",
+   "candidateId": "side-right",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 300,
+   "candidateMm": 280,
+   "relativeError": 0.0667
+  },
+  {
+   "componentId": "side-right",
+   "candidateId": "side-right",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 780,
+   "candidateMm": 782,
+   "relativeError": 0.0022
+  },
+  {
+   "componentId": "side-right",
+   "candidateId": "side-right",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "side-right",
+   "candidateId": "side-right",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "side-right",
+   "candidateId": "side-right",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "shelf-1",
+   "candidateId": "shelf-1",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 760,
+   "candidateMm": 764,
+   "relativeError": 0.0053
+  },
+  {
+   "componentId": "shelf-1",
+   "candidateId": "shelf-1",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 20,
+   "candidateMm": 18,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "shelf-1",
+   "candidateId": "shelf-1",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 300,
+   "candidateMm": 280,
+   "relativeError": 0.0667
+  },
+  {
+   "componentId": "shelf-1",
+   "candidateId": "shelf-1",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 390,
+   "candidateMm": 391,
+   "relativeError": 0.0011
+  },
+  {
+   "componentId": "shelf-1",
+   "candidateId": "shelf-1",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": -390,
+   "candidateMm": -324,
+   "relativeError": 0.0733
+  },
+  {
+   "componentId": "shelf-1",
+   "candidateId": "shelf-1",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "shelf-1",
+   "candidateId": "shelf-1",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 50,
+   "candidateMm": 117,
+   "relativeError": 0.0744
+  },
+  {
+   "componentId": "shelf-2",
+   "candidateId": "shelf-2",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 760,
+   "candidateMm": 764,
+   "relativeError": 0.0053
+  },
+  {
+   "componentId": "shelf-2",
+   "candidateId": "shelf-2",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 20,
+   "candidateMm": 18,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "shelf-2",
+   "candidateId": "shelf-2",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 300,
+   "candidateMm": 280,
+   "relativeError": 0.0667
+  },
+  {
+   "componentId": "shelf-2",
+   "candidateId": "shelf-2",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 390,
+   "candidateMm": 391,
+   "relativeError": 0.0011
+  },
+  {
+   "componentId": "shelf-2",
+   "candidateId": "shelf-2",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": -110,
+   "candidateMm": -80,
+   "relativeError": 0.0333
+  },
+  {
+   "componentId": "shelf-2",
+   "candidateId": "shelf-2",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "shelf-2",
+   "candidateId": "shelf-2",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 330,
+   "candidateMm": 361,
+   "relativeError": 0.0344
+  },
+  {
+   "componentId": "shelf-3",
+   "candidateId": "shelf-3",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 760,
+   "candidateMm": 764,
+   "relativeError": 0.0053
+  },
+  {
+   "componentId": "shelf-3",
+   "candidateId": "shelf-3",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 20,
+   "candidateMm": 18,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "shelf-3",
+   "candidateId": "shelf-3",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 300,
+   "candidateMm": 280,
+   "relativeError": 0.0667
+  },
+  {
+   "componentId": "shelf-3",
+   "candidateId": "shelf-3",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 390,
+   "candidateMm": 391,
+   "relativeError": 0.0011
+  },
+  {
+   "componentId": "shelf-3",
+   "candidateId": "shelf-3",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": 170,
+   "candidateMm": 180,
+   "relativeError": 0.0111
+  },
+  {
+   "componentId": "shelf-3",
+   "candidateId": "shelf-3",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "shelf-3",
+   "candidateId": "shelf-3",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 610,
+   "candidateMm": 621,
+   "relativeError": 0.0122
+  },
+  {
+   "componentId": "shelf-4",
+   "candidateId": "shelf-4",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 760,
+   "candidateMm": 764,
+   "relativeError": 0.0053
+  },
+  {
+   "componentId": "shelf-4",
+   "candidateId": "shelf-4",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 20,
+   "candidateMm": 18,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "shelf-4",
+   "candidateId": "shelf-4",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 300,
+   "candidateMm": 280,
+   "relativeError": 0.0667
+  },
+  {
+   "componentId": "shelf-4",
+   "candidateId": "shelf-4",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 390,
+   "candidateMm": 391,
+   "relativeError": 0.0011
+  },
+  {
+   "componentId": "shelf-4",
+   "candidateId": "shelf-4",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": 440,
+   "candidateMm": 441,
+   "relativeError": 0.0011
+  },
+  {
+   "componentId": "shelf-4",
+   "candidateId": "shelf-4",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "shelf-4",
+   "candidateId": "shelf-4",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 880,
+   "candidateMm": 882,
+   "relativeError": 0.0022
+  },
+  {
+   "componentId": "back",
+   "candidateId": "back",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 760,
+   "candidateMm": 764,
+   "relativeError": 0.0053
+  },
+  {
+   "componentId": "back",
+   "candidateId": "back",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 880,
+   "candidateMm": 790,
+   "relativeError": 0.1023
+  },
+  {
+   "componentId": "back",
+   "candidateId": "back",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 6,
+   "candidateMm": 6,
+   "relativeError": 0
+  },
+  {
+   "componentId": "back",
+   "candidateId": "back",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 390,
+   "candidateMm": 391,
+   "relativeError": 0.0011
+  },
+  {
+   "componentId": "back",
+   "candidateId": "back",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 45,
+   "relativeError": 0.05
+  },
+  {
+   "componentId": "back",
+   "candidateId": "back",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": -147,
+   "candidateMm": -137,
+   "relativeError": 0.0111
+  },
+  {
+   "componentId": "back",
+   "candidateId": "back",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 10,
+   "candidateMm": 100,
+   "relativeError": 0.1
+  }
+ ],
+ "missingComponentIds": [],
+ "summary": {
+  "medianSizeError": 0.0667,
+  "maxSizeError": 0.1023,
+  "medianPlacementError": 0.0011,
+  "maxPlacementError": 0.1,
+  "within5": 0.6522,
+  "within10": 0.913
+ }
+}

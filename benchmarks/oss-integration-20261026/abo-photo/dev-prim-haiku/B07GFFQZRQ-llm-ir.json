@@ -1,0 +1,196 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Amazon Brand Movian Inari 1-Drawer Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "desk-top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "Flat rectangular work surface, 900 x 500 x 25 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     900,
+     25,
+     500
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    717.5,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "left-side-panel",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "Full-depth left leg panel from floor to underside of top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     705,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    -437.5,
+    352.5,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "right-side-panel",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "Full-depth right leg panel from floor to underside of top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     705,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    437.5,
+    352.5,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back-panel",
+   "name": "Rear back panel",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "Thin rear panel closing the back of the cubby, 850 x 705 x 8 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     850,
+     705,
+     8
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    352.5,
+    -246
+   ],
+   "material": {
+    "color": "#ececec",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer-front",
+   "name": "Drawer front",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "Single drawer front on the right, 220 x 95 x 18 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     220,
+     95,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    300,
+    608,
+    250
+   ],
+   "material": {
+    "color": "#f7f7f7",
+    "roughness": 0.45,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer-box",
+   "name": "Drawer box",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "Drawer body behind the front, 220 x 90 x 400 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     220,
+     90,
+     400
+    ],
+    "radius": 2
+   },
+   "position": [
+    300,
+    608,
+    50
+   ],
+   "material": {
+    "color": "#e6e6e6",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer-handle",
+   "name": "Drawer handle",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium bar pull",
+   "detail": "Horizontal bar pull on the drawer front, 120 mm long",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -60,
+      0,
+      0
+     ],
+     [
+      60,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    300,
+    640,
+    272
+   ],
+   "material": {
+    "color": "#c4c7cc",
+    "roughness": 0.3,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

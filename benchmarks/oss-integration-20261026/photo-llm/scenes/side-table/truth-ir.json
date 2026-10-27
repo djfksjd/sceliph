@@ -1,0 +1,124 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "side-table-truth",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Table top",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     30,
+     400
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    435,
+    0
+   ],
+   "material": {
+    "color": "#a07040",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "leg-1",
+   "name": "Leg 1",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 20,
+    "radiusBottom": 20,
+    "depth": 420,
+    "radialSegments": 48
+   },
+   "position": [
+    -260,
+    210,
+    160
+   ],
+   "material": {
+    "color": "#6b4a2b",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "leg-2",
+   "name": "Leg 2",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 20,
+    "radiusBottom": 20,
+    "depth": 420,
+    "radialSegments": 48
+   },
+   "position": [
+    260,
+    210,
+    160
+   ],
+   "material": {
+    "color": "#6b4a2b",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "leg-3",
+   "name": "Leg 3",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 20,
+    "radiusBottom": 20,
+    "depth": 420,
+    "radialSegments": 48
+   },
+   "position": [
+    260,
+    210,
+    -160
+   ],
+   "material": {
+    "color": "#6b4a2b",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "leg-4",
+   "name": "Leg 4",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "photo-llm ground-truth fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 20,
+    "radiusBottom": 20,
+    "depth": 420,
+    "radialSegments": 48
+   },
+   "position": [
+    -260,
+    210,
+    -160
+   ],
+   "material": {
+    "color": "#6b4a2b",
+    "roughness": 0.5
+   }
+  }
+ ]
+}

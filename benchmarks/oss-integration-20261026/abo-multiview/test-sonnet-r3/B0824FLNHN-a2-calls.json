@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Ravenna Home Traditional Wall Sconce with Linen Shade, LED Bulb Included, Brushed Nickel.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 464 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0222996,
+   "durationMs": 16452,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Wall Sconce with Linen Shade\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Linen shade\",\"category\":\"enclosure\",\"materialName\":\"white linen\",\"detail\":\"Cylindrical drum shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":63,\"radiusBottom\":63,\"depth\":265,\"radialSegments\":48},\"position\":[0,331,0],\"material\":{\"color\":\"#f2f3f5\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"rod\",\"name\":\"Vertical rod\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Central stem\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":3.5,\"radiusBottom\":3.5,\"depth\":284,\"radialSegments\":24},\"position\":[0,158,0],\"material\":{\"color\":\"#c9c9c6\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"ball\",\"name\":\"Ball finial\",\"category\":\"mechanical\",\"materialName\":\"polished nickel\",\"detail\":\"Bottom ball\",\"geometry\":{\"op\":\"sphere\",\"radius\":8.5},\"position\":[0,8.5,0],\"material\":{\"color\":\"#d4d4d2\",\"roughness\":0.15,\"metalness\":1}},{\"id\":\"collar\",\"name\":\"Collar\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Joint block where arm meets rod\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[12,34,12],\"radius\":2},\"position\":[0,129,0],\"material\":{\"color\":\"#c4c4c1\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"arm\",\"name\":\"Wall arm\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Horizontal arm to the plate\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,131,-4],[0,131,-122]],\"radius\":3},\"position\":[0,0,0],\"material\":{\"color\":\"#c9c9c6\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"plate\",\"name\":\"Back plate\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Rectangular wall plate\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[73,95,8],\"radius\":1.5},\"position\":[-18,136,-126],\"material\":{\"color\":\"#b9b9b5\",\"roughness\":0.4,\"metalness\":0.85}},{\"id\":\"screwL\",\"name\":\"Screw left\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Plate screw\",\"geometry\":{\"op\":\"sphere\",\"radius\":5},\"position\":[-36,142,-121],\"material\":{\"color\":\"#d4d4d2\",\"roughness\":0.2,\"metalness\":1}},{\"id\":\"screwR\",\"name\":\"Screw right\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Plate screw\",\"geometry\":{\"op\":\"sphere\",\"radius\":5},\"position\":[-4,142,-121],\"material\":{\"color\":\"#d4d4d2\",\"roughness\":0.2,\"metalness\":1}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

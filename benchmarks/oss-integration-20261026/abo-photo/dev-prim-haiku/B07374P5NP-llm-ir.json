@@ -1,0 +1,301 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-Century 5-Globe Pendant Chandelier",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Flat round black metal ceiling plate, 200 mm diameter, 12 mm thick, top at 1219 mm",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 100,
+    "radiusBottom": 100,
+    "depth": 12,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    1213,
+    0
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cord_1",
+   "name": "Suspension cord 1",
+   "category": "interconnect",
+   "materialName": "Black cord",
+   "detail": "Black suspension cord from canopy to upper-right globe",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -27.5,
+      281,
+      10
+     ],
+     [
+      27.5,
+      -281,
+      -10
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    87.5,
+    926,
+    -30
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.8,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "cord_2",
+   "name": "Suspension cord 2",
+   "category": "interconnect",
+   "materialName": "Black cord",
+   "detail": "Black suspension cord from canopy to upper-left rear globe",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      40,
+      311,
+      15
+     ],
+     [
+      -40,
+      -311,
+      -15
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    -90,
+    896,
+    -45
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.8,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "cord_3",
+   "name": "Suspension cord 3",
+   "category": "interconnect",
+   "materialName": "Black cord",
+   "detail": "Black suspension cord from canopy to left globe",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      55,
+      371,
+      5
+     ],
+     [
+      -55,
+      -371,
+      -5
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    -115,
+    836,
+    25
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.8,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "cord_4",
+   "name": "Suspension cord 4",
+   "category": "interconnect",
+   "materialName": "Black cord",
+   "detail": "Black suspension cord from canopy to centre globe",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -37.5,
+      371,
+      5
+     ],
+     [
+      37.5,
+      -371,
+      -5
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    67.5,
+    836,
+    35
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.8,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "cord_5",
+   "name": "Suspension cord 5",
+   "category": "interconnect",
+   "materialName": "Black cord",
+   "detail": "Black suspension cord from canopy to lowest globe",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      7.5,
+      516,
+      0
+     ],
+     [
+      -7.5,
+      -516,
+      0
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    -7.5,
+    691,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.8,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "globe_1",
+   "name": "Frosted globe, upper right",
+   "category": "enclosure",
+   "materialName": "Frosted glass",
+   "detail": "Opal frosted glass globe, 170 mm diameter, upper right",
+   "geometry": {
+    "op": "sphere",
+    "radius": 85
+   },
+   "position": [
+    115,
+    560,
+    -40
+   ],
+   "material": {
+    "color": "#f6f1e4",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_2",
+   "name": "Frosted globe, upper left rear",
+   "category": "enclosure",
+   "materialName": "Frosted glass",
+   "detail": "Opal frosted glass globe, 170 mm diameter, upper left rear",
+   "geometry": {
+    "op": "sphere",
+    "radius": 85
+   },
+   "position": [
+    -130,
+    500,
+    -60
+   ],
+   "material": {
+    "color": "#f6f1e4",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_3",
+   "name": "Frosted globe, left",
+   "category": "enclosure",
+   "materialName": "Frosted glass",
+   "detail": "Opal frosted glass globe, 170 mm diameter, left side",
+   "geometry": {
+    "op": "sphere",
+    "radius": 85
+   },
+   "position": [
+    -170,
+    380,
+    20
+   ],
+   "material": {
+    "color": "#f6f1e4",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_4",
+   "name": "Frosted globe, centre",
+   "category": "enclosure",
+   "materialName": "Frosted glass",
+   "detail": "Opal frosted glass globe, 170 mm diameter, centre right",
+   "geometry": {
+    "op": "sphere",
+    "radius": 85
+   },
+   "position": [
+    105,
+    380,
+    30
+   ],
+   "material": {
+    "color": "#f6f1e4",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_5",
+   "name": "Frosted globe, bottom",
+   "category": "enclosure",
+   "materialName": "Frosted glass",
+   "detail": "Opal frosted glass globe, 170 mm diameter, lowest globe touching the floor plane",
+   "geometry": {
+    "op": "sphere",
+    "radius": 85
+   },
+   "position": [
+    -15,
+    85,
+    0
+   ],
+   "material": {
+    "color": "#f6f1e4",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  }
+ ]
+}

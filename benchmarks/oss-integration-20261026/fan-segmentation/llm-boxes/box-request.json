@@ -1,0 +1,37 @@
+{
+  "schema": "sceliph.part-box-request/0.1",
+  "image": {
+    "sha256": "39cd73c6179abf618bf801cf83b739caff050d2b0ef3a70f54758a457576265e",
+    "width": 640,
+    "height": 640,
+    "maxSide": 640
+  },
+  "parts": [
+    {
+      "id": "guard_ring",
+      "description": "outer circular rim of the wire fan guard",
+      "componentIds": []
+    },
+    {
+      "id": "stand",
+      "description": "black tubular U-shaped stand frame including both side arms and the floor base",
+      "componentIds": []
+    },
+    {
+      "id": "hub",
+      "description": "round black hub cover at the guard centre with the logo",
+      "componentIds": []
+    },
+    {
+      "id": "knobs",
+      "description": "two tilt-lock knobs where the stand arms meet the guard",
+      "componentIds": []
+    },
+    {
+      "id": "feet",
+      "description": "small rubber feet under the floor base",
+      "componentIds": []
+    }
+  ],
+  "instructions": "Look at box-sheet.png. Pixel coordinates start at the top-left corner (0, 0); x grows to the right and y grows downward. Grid lines are drawn every 32 pixels and labelled every 64 pixels. For each requested part id, return one or more tight axis-aligned boxes [x0, y0, x1, y1] around its visible pixels. Use several boxes for a part made of separated or thin pieces (e.g. each leg of a stand). Omit a part you cannot see; do not guess. Reply with JSON only, matching sceliph.part-box-response/0.1: {\"schema\", \"imageSha256\", \"width\", \"height\", \"parts\": [{\"id\", \"boxes\", \"note\"?}]}."
+}

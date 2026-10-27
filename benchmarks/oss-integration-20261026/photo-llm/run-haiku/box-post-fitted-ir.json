@@ -1,0 +1,57 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "box with cylindrical post",
+ "units": "mm",
+ "components": [
+  {
+   "id": "box",
+   "name": "box",
+   "category": "enclosure",
+   "materialName": "painted brick red",
+   "detail": "Rectangular box, 300 mm long edge along X, estimated 200 mm deep and 150 mm tall, with slightly rounded edges.",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     152.99267415630845,
+     198.75374224960194
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    75,
+    0
+   ],
+   "material": {
+    "color": "#9c4a2e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "post",
+   "name": "post",
+   "category": "mechanical",
+   "materialName": "painted blue",
+   "detail": "Vertical cylindrical post standing on the top face of the box, estimated 80 mm diameter and 180 mm tall, set toward the back of the top face.",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 39.677840394317826,
+    "radiusBottom": 39.677840394317826,
+    "depth": 240.46870382959168,
+    "radialSegments": 32
+   },
+   "position": [
+    56.44051840253485,
+    208.91602201654163,
+    -15.319108852704261
+   ],
+   "material": {
+    "color": "#3c6aa8",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  }
+ ]
+}

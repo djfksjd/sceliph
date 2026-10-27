@@ -1,0 +1,33 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Basics Poly Globe Pendant Light - x x , Brushed Nickel.\nThe product listing gives its overall height as 762 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0183012,
+   "durationMs": 12914,
+   "isError": false
+  },
+  {
+   "round": 1,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0206632,
+   "durationMs": 10210,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Globe Pendant Light\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Round flat ceiling plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":42,\"radiusBottom\":42,\"depth\":14,\"radialSegments\":48},\"position\":[0,755,0],\"material\":{\"color\":\"#b4b4b2\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"cord\",\"name\":\"Cord\",\"category\":\"interconnect\",\"materialName\":\"black fabric cord\",\"detail\":\"Thin black suspension cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-275,0],[0,275,0]],\"radius\":1.6},\"position\":[0,475,0],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"cap\",\"name\":\"Shade cap\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Small nickel cap atop shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4,\"radiusBottom\":9,\"depth\":16,\"radialSegments\":24},\"position\":[0,192,0],\"material\":{\"color\":\"#b4b4b2\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"shade\",\"name\":\"Globe shade\",\"category\":\"enclosure\",\"materialName\":\"gray concrete-look poly\",\"detail\":\"Rounded globe shade with bottom opening\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[28,0],[50,4],[68,30],[75,70],[74,110],[62,150],[35,178],[12,184],[0,184]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#6b6b6a\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"socket\",\"name\":\"Inner bulb recess\",\"category\":\"mechanical\",\"materialName\":\"dark bronze\",\"detail\":\"Dark interior visible in the bottom opening\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":28,\"radiusBottom\":28,\"depth\":4,\"radialSegments\":32},\"position\":[0,6,0],\"material\":{\"color\":\"#3a2c18\",\"roughness\":0.6,\"metalness\":0.3}}]}}",
+   "stage": "requirements"
+  },
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Globe Pendant Light\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Round flat ceiling plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":42,\"radiusBottom\":42,\"depth\":14,\"radialSegments\":48},\"position\":[0,755,0],\"material\":{\"color\":\"#b4b4b2\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"cord\",\"name\":\"Cord\",\"category\":\"interconnect\",\"materialName\":\"black fabric cord\",\"detail\":\"Thin black suspension cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-275,0],[0,275,0]],\"radius\":1.6},\"position\":[0,475,0],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"cap\",\"name\":\"Shade cap\",\"category\":\"mechanical\",\"materialName\":\"brushed nickel\",\"detail\":\"Small nickel cap atop shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4,\"radiusBottom\":9,\"depth\":16,\"radialSegments\":24},\"position\":[0,192,0],\"material\":{\"color\":\"#b4b4b2\",\"roughness\":0.4,\"metalness\":0.9}},{\"id\":\"shade\",\"name\":\"Globe shade\",\"category\":\"enclosure\",\"materialName\":\"gray concrete-look poly\",\"detail\":\"Rounded globe shade with recessed bottom, closed surface\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,4],[28,0],[50,4],[68,30],[75,70],[74,110],[62,150],[35,178],[12,184],[0,184]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#6b6b6a\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"socket\",\"name\":\"Inner bulb recess\",\"category\":\"mechanical\",\"materialName\":\"dark bronze\",\"detail\":\"Dark interior visible in the bottom opening\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":26,\"radiusBottom\":26,\"depth\":2,\"radialSegments\":32},\"position\":[0,1,0],\"material\":{\"color\":\"#3a2c18\",\"roughness\":0.6,\"metalness\":0.3}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

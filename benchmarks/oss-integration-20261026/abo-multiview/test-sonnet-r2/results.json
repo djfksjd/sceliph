@@ -1,0 +1,3560 @@
+{
+ "schema": "sceliph.abo-multiview-eval/0.1",
+ "protocolSha256": "69b07de5fad215aff09b611e9f9ffde5d91e9b3cd598113cebf572480a3b78d0",
+ "modelAlias": "sonnet",
+ "totalCostUsd": 1.7848,
+ "results": [
+  {
+   "modelId": "B07HSCYS4C",
+   "productType": "DESK",
+   "stratum": "other",
+   "heightMm": 762,
+   "maskShare": [
+    0.2626,
+    0.2463
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": -35,
+    "elevationDeg": 18
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -35,
+    "elevationDeg": 15
+   },
+   "costUsd": {
+    "a1": 0.0333,
+    "a2": 0.0273
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.3883,
+     "chamfer": 0.0862,
+     "fScore5": 0.4056,
+     "fScore2": 0.2647,
+     "extentError": [
+      0.2252,
+      0.0005,
+      1.7333
+     ],
+     "footprintError": [
+      0.1336,
+      0.9328
+     ],
+     "yawDeg": 45.5
+    },
+    "b1": {
+     "meanIoU": 0.4378,
+     "chamfer": 0.0708,
+     "fScore5": 0.4318,
+     "fScore2": 0.204,
+     "extentError": [
+      0.2235,
+      0.0005,
+      1.7297
+     ],
+     "footprintError": [
+      0.1336,
+      0.9328
+     ],
+     "yawDeg": 228
+    },
+    "b2": {
+     "meanIoU": 0.505,
+     "chamfer": 0.0505,
+     "fScore5": 0.5714,
+     "fScore2": 0.2597,
+     "extentError": [
+      0.0263,
+      0.0005,
+      0.8183
+     ],
+     "footprintError": [
+      0.1336,
+      0.4911
+     ],
+     "yawDeg": 169.5
+    },
+    "a1": {
+     "meanIoU": 0.6416,
+     "chamfer": 0.017,
+     "fScore5": 0.9534,
+     "fScore2": 0.724,
+     "extentError": [
+      0.0432,
+      0.0006,
+      0.0703
+     ],
+     "footprintError": [
+      0.0432,
+      0.0703
+     ],
+     "yawDeg": 0
+    },
+    "a2": {
+     "meanIoU": 0.5867,
+     "chamfer": 0.019,
+     "fScore5": 0.9273,
+     "fScore2": 0.6711,
+     "extentError": [
+      0.0535,
+      0.0012,
+      0.0403
+     ],
+     "footprintError": [
+      0.071,
+      0.0436
+     ],
+     "yawDeg": 357.5
+    }
+   },
+   "ms": 76902
+  },
+  {
+   "modelId": "B071SHBTM5",
+   "productType": "DRESSER",
+   "stratum": "other",
+   "heightMm": 1320.8,
+   "maskShare": [
+    0.6095,
+    0.5175
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": -30,
+    "elevationDeg": 10
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -30,
+    "elevationDeg": 12
+   },
+   "costUsd": {
+    "a1": 0.0267,
+    "a2": 0.0311
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.654,
+     "chamfer": 0.0912,
+     "fScore5": 0.3529,
+     "fScore2": 0.1667,
+     "extentError": [
+      0.4556,
+      0.0002,
+      1.719
+     ],
+     "footprintError": [
+      0.0324,
+      0.9285
+     ],
+     "yawDeg": 49.5
+    },
+    "b1": {
+     "meanIoU": 0.7067,
+     "chamfer": 0.0821,
+     "fScore5": 0.419,
+     "fScore2": 0.2134,
+     "extentError": [
+      0.1505,
+      0.0002,
+      1.1492
+     ],
+     "footprintError": [
+      0.0324,
+      0.9285
+     ],
+     "yawDeg": 83
+    },
+    "b2": {
+     "meanIoU": 0.7682,
+     "chamfer": 0.0608,
+     "fScore5": 0.4782,
+     "fScore2": 0.2728,
+     "extentError": [
+      0.1273,
+      0.0002,
+      0.796
+     ],
+     "footprintError": [
+      0.0324,
+      0.5727
+     ],
+     "yawDeg": 173
+    },
+    "a1": {
+     "meanIoU": 0.9085,
+     "chamfer": 0.0202,
+     "fScore5": 0.9224,
+     "fScore2": 0.7259,
+     "extentError": [
+      0.1247,
+      0.0004,
+      0.0005
+     ],
+     "footprintError": [
+      0.1289,
+      0.0082
+     ],
+     "yawDeg": 359.5
+    },
+    "a2": {
+     "meanIoU": 0.8863,
+     "chamfer": 0.0219,
+     "fScore5": 0.9244,
+     "fScore2": 0.6655,
+     "extentError": [
+      0.1558,
+      0.0004,
+      0.0001
+     ],
+     "footprintError": [
+      0.16,
+      0.0082
+     ],
+     "yawDeg": 359.5
+    }
+   },
+   "ms": 58040
+  },
+  {
+   "modelId": "B082XCSHKB",
+   "productType": "ELECTRIC_FAN",
+   "stratum": "thin",
+   "heightMm": 355.59999999999997,
+   "maskShare": [
+    0.1347,
+    0.1339
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 10,
+    "elevationDeg": 6
+   },
+   "costUsd": {
+    "a1": 0.0261,
+    "a2": 0.0292
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.2396,
+     "chamfer": 0.0666,
+     "fScore5": 0.3493,
+     "fScore2": 0.0815,
+     "extentError": [
+      0.094,
+      0,
+      0.094
+     ],
+     "footprintError": [
+      0.3545,
+      0.331
+     ],
+     "yawDeg": 37.5
+    },
+    "b1": {
+     "meanIoU": 0.2899,
+     "chamfer": 0.0432,
+     "fScore5": 0.5994,
+     "fScore2": 0.2505,
+     "extentError": [
+      0.2799,
+      0,
+      0.2799
+     ],
+     "footprintError": [
+      0.3545,
+      0.331
+     ],
+     "yawDeg": 173
+    },
+    "b2": {
+     "meanIoU": 0.3296,
+     "chamfer": 0.042,
+     "fScore5": 0.6934,
+     "fScore2": 0.2741,
+     "extentError": [
+      0.212,
+      0,
+      0.3281
+     ],
+     "footprintError": [
+      0.3545,
+      0.3313
+     ],
+     "yawDeg": 155.5
+    },
+    "a1": {
+     "meanIoU": 0.633,
+     "chamfer": 0.0072,
+     "fScore5": 1,
+     "fScore2": 0.9451,
+     "extentError": [
+      0.0669,
+      0.0011,
+      0.064
+     ],
+     "footprintError": [
+      0.0546,
+      0.0683
+     ],
+     "yawDeg": 188.5
+    },
+    "a2": {
+     "meanIoU": 0.5437,
+     "chamfer": 0.0113,
+     "fScore5": 1,
+     "fScore2": 0.9363,
+     "extentError": [
+      0.0318,
+      0.0025,
+      0.0343
+     ],
+     "footprintError": [
+      0.0222,
+      0.0359
+     ],
+     "yawDeg": 9.5
+    }
+   },
+   "ms": 46580
+  },
+  {
+   "modelId": "B075X2NLKP",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 622.3,
+   "maskShare": [
+    0.4118,
+    0.4116
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 8
+   },
+   "costUsd": {
+    "a1": 0.0159,
+    "a2": 0.0162
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4821,
+     "chamfer": 0.0807,
+     "fScore5": 0.4027,
+     "fScore2": 0.111,
+     "extentError": [
+      0.1297,
+      0.0212,
+      0.1275
+     ],
+     "footprintError": [
+      0.0017,
+      0.0003
+     ],
+     "yawDeg": 8
+    },
+    "b1": {
+     "meanIoU": 0.6303,
+     "chamfer": 0.0452,
+     "fScore5": 0.6321,
+     "fScore2": 0.2809,
+     "extentError": [
+      0.0345,
+      0.0212,
+      0.0326
+     ],
+     "footprintError": [
+      0.0017,
+      0.0003
+     ],
+     "yawDeg": 88
+    },
+    "b2": {
+     "meanIoU": 0.7846,
+     "chamfer": 0.0297,
+     "fScore5": 0.8044,
+     "fScore2": 0.4929,
+     "extentError": [
+      0.0823,
+      0.0212,
+      0.0814
+     ],
+     "footprintError": [
+      0.0017,
+      0.001
+     ],
+     "yawDeg": 275
+    },
+    "a1": {
+     "meanIoU": 0.9161,
+     "chamfer": 0.016,
+     "fScore5": 0.9102,
+     "fScore2": 0.8116,
+     "extentError": [
+      0.0074,
+      0.0214,
+      0.0055
+     ],
+     "footprintError": [
+      0.0044,
+      0.0064
+     ],
+     "yawDeg": 29
+    },
+    "a2": {
+     "meanIoU": 0.9215,
+     "chamfer": 0.0162,
+     "fScore5": 0.9068,
+     "fScore2": 0.8196,
+     "extentError": [
+      0.0062,
+      0.0207,
+      0.008
+     ],
+     "footprintError": [
+      0.0092,
+      0.0073
+     ],
+     "yawDeg": 33.5
+    }
+   },
+   "ms": 33790
+  },
+  {
+   "modelId": "B082JHBD9S",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 344.93199999999996,
+   "maskShare": [
+    0.1503,
+    0.1611
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "costUsd": {
+    "a1": 0.0332,
+    "a2": 0.0382
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4217,
+     "chamfer": 0.0951,
+     "fScore5": 0.2082,
+     "fScore2": 0.0782,
+     "extentError": [
+      0.4179,
+      0,
+      0.2517
+     ],
+     "footprintError": [
+      0.114,
+      0.0035
+     ],
+     "yawDeg": 42.5
+    },
+    "b1": {
+     "meanIoU": 0.6104,
+     "chamfer": 0.0366,
+     "fScore5": 0.7143,
+     "fScore2": 0.3925,
+     "extentError": [
+      0.0035,
+      0,
+      0.1141
+     ],
+     "footprintError": [
+      0.114,
+      0.0035
+     ],
+     "yawDeg": 180
+    },
+    "b2": {
+     "meanIoU": 0.776,
+     "chamfer": 0.0201,
+     "fScore5": 0.9286,
+     "fScore2": 0.6426,
+     "extentError": [
+      0.0426,
+      0,
+      0.0331
+     ],
+     "footprintError": [
+      0.0029,
+      0.0035
+     ],
+     "yawDeg": 182
+    },
+    "a1": {
+     "meanIoU": 0.7184,
+     "chamfer": 0.0208,
+     "fScore5": 0.9326,
+     "fScore2": 0.6726,
+     "extentError": [
+      0.029,
+      0.0085,
+      0.1429
+     ],
+     "footprintError": [
+      0.1438,
+      0.0302
+     ],
+     "yawDeg": 357.5
+    },
+    "a2": {
+     "meanIoU": 0.8399,
+     "chamfer": 0.0136,
+     "fScore5": 0.9966,
+     "fScore2": 0.8046,
+     "extentError": [
+      0.0102,
+      0.0027,
+      0.0532
+     ],
+     "footprintError": [
+      0.0546,
+      0.0101
+     ],
+     "yawDeg": 359.5
+    }
+   },
+   "ms": 65048
+  },
+  {
+   "modelId": "B07HSMYNYJ",
+   "productType": "SHELF",
+   "stratum": "other",
+   "heightMm": 1549.2984,
+   "maskShare": [
+    0.533,
+    0.4442
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": -25,
+    "elevationDeg": 8
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -20,
+    "elevationDeg": 8
+   },
+   "costUsd": {
+    "a1": 0.0339,
+    "a2": 0.0346
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5872,
+     "chamfer": 0.0804,
+     "fScore5": 0.3287,
+     "fScore2": 0.111,
+     "extentError": [
+      0.5113,
+      0.0029,
+      2.1363
+     ],
+     "footprintError": [
+      0.0756,
+      1.2321
+     ],
+     "yawDeg": 38.5
+    },
+    "b1": {
+     "meanIoU": 0.6351,
+     "chamfer": 0.0699,
+     "fScore5": 0.4341,
+     "fScore2": 0.2035,
+     "extentError": [
+      0.5153,
+      0.0029,
+      2.1446
+     ],
+     "footprintError": [
+      0.0756,
+      1.2321
+     ],
+     "yawDeg": 140
+    },
+    "b2": {
+     "meanIoU": 0.7104,
+     "chamfer": 0.0544,
+     "fScore5": 0.5595,
+     "fScore2": 0.3088,
+     "extentError": [
+      0.3855,
+      0.0029,
+      1.8289
+     ],
+     "footprintError": [
+      0.0756,
+      0.8139
+     ],
+     "yawDeg": 40.5
+    },
+    "a1": {
+     "meanIoU": 0.9392,
+     "chamfer": 0.0106,
+     "fScore5": 0.9991,
+     "fScore2": 0.9184,
+     "extentError": [
+      0.0292,
+      0.0027,
+      0.0445
+     ],
+     "footprintError": [
+      0.0292,
+      0.0445
+     ],
+     "yawDeg": 0
+    },
+    "a2": {
+     "meanIoU": 0.9085,
+     "chamfer": 0.0158,
+     "fScore5": 0.9451,
+     "fScore2": 0.8315,
+     "extentError": [
+      0.0646,
+      0.0031,
+      0.0419
+     ],
+     "footprintError": [
+      0.0604,
+      0.0228
+     ],
+     "yawDeg": 180.5
+    }
+   },
+   "ms": 69189
+  },
+  {
+   "modelId": "B07B4SCM7N",
+   "productType": "STORAGE_BOX",
+   "stratum": "other",
+   "heightMm": 914.4,
+   "maskShare": [
+    0.4577,
+    0.3607
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": -30,
+    "elevationDeg": 10
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -32,
+    "elevationDeg": 14
+   },
+   "costUsd": {
+    "a1": 0.0348,
+    "a2": 0.0328
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.543,
+     "chamfer": 0.1156,
+     "fScore5": 0.2628,
+     "fScore2": 0.0961,
+     "extentError": [
+      0.2082,
+      0.0253,
+      3.0835
+     ],
+     "footprintError": [
+      0.1456,
+      1.8879
+     ],
+     "yawDeg": 46
+    },
+    "b1": {
+     "meanIoU": 0.6212,
+     "chamfer": 0.0917,
+     "fScore5": 0.4323,
+     "fScore2": 0.2295,
+     "extentError": [
+      0.2082,
+      0.0253,
+      3.0835
+     ],
+     "footprintError": [
+      0.1456,
+      1.8879
+     ],
+     "yawDeg": 44
+    },
+    "b2": {
+     "meanIoU": 0.7344,
+     "chamfer": 0.0594,
+     "fScore5": 0.5185,
+     "fScore2": 0.2988,
+     "extentError": [
+      0.0815,
+      0.0253,
+      1.354
+     ],
+     "footprintError": [
+      0.1456,
+      1.009
+     ],
+     "yawDeg": 172
+    },
+    "a1": {
+     "meanIoU": 0.9265,
+     "chamfer": 0.021,
+     "fScore5": 0.8896,
+     "fScore2": 0.6742,
+     "extentError": [
+      0.0269,
+      0.0249,
+      0.0464
+     ],
+     "footprintError": [
+      0.0269,
+      0.0464
+     ],
+     "yawDeg": 180
+    },
+    "a2": {
+     "meanIoU": 0.9249,
+     "chamfer": 0.0214,
+     "fScore5": 0.8891,
+     "fScore2": 0.6597,
+     "extentError": [
+      0.0269,
+      0.0249,
+      0.0357
+     ],
+     "footprintError": [
+      0.0269,
+      0.0357
+     ],
+     "yawDeg": 180
+    }
+   },
+   "ms": 86517
+  },
+  {
+   "modelId": "B07QVRTT6J",
+   "productType": "TABLE",
+   "stratum": "other",
+   "heightMm": 779.9999992044,
+   "maskShare": [
+    0.2593,
+    0.2456
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 25,
+    "elevationDeg": 14
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -30,
+    "elevationDeg": 12
+   },
+   "costUsd": {
+    "a1": 0.0317,
+    "a2": 0.0333
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4211,
+     "chamfer": 0.1039,
+     "fScore5": 0.391,
+     "fScore2": 0.1816,
+     "extentError": [
+      0.224,
+      0,
+      2.9866
+     ],
+     "footprintError": [
+      0.1345,
+      1.819
+     ],
+     "yawDeg": 45
+    },
+    "b1": {
+     "meanIoU": 0.4553,
+     "chamfer": 0.063,
+     "fScore5": 0.5031,
+     "fScore2": 0.1893,
+     "extentError": [
+      0.2235,
+      0.0196,
+      2.9852
+     ],
+     "footprintError": [
+      0.1345,
+      1.819
+     ],
+     "yawDeg": 46.5
+    },
+    "b2": {
+     "meanIoU": 0.5166,
+     "chamfer": 0.0423,
+     "fScore5": 0.6349,
+     "fScore2": 0.2509,
+     "extentError": [
+      0.0533,
+      0.0196,
+      1.3939
+     ],
+     "footprintError": [
+      0.1345,
+      0.9992
+     ],
+     "yawDeg": 351.5
+    },
+    "a1": {
+     "meanIoU": 0.7755,
+     "chamfer": 0.0105,
+     "fScore5": 0.993,
+     "fScore2": 0.9391,
+     "extentError": [
+      0.0302,
+      0,
+      0.0026
+     ],
+     "footprintError": [
+      0.0351,
+      0.0571
+     ],
+     "yawDeg": 1
+    },
+    "a2": {
+     "meanIoU": 0.7408,
+     "chamfer": 0.0156,
+     "fScore5": 0.9799,
+     "fScore2": 0.7768,
+     "extentError": [
+      0.0351,
+      0,
+      0
+     ],
+     "footprintError": [
+      0.0351,
+      0
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 78972
+  },
+  {
+   "modelId": "B0154WJZH2",
+   "productType": "CABINET",
+   "stratum": "other",
+   "heightMm": 899.9999990819999,
+   "maskShare": [
+    0.5338,
+    0.402
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": -20,
+    "elevationDeg": 10
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -25,
+    "elevationDeg": 8
+   },
+   "costUsd": {
+    "a1": 0.0299,
+    "a2": 0.0336
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.6096,
+     "chamfer": 0.1013,
+     "fScore5": 0.4279,
+     "fScore2": 0.2581,
+     "extentError": [
+      0.1908,
+      0.0001,
+      3.5433
+     ],
+     "footprintError": [
+      0.1579,
+      2.2131
+     ],
+     "yawDeg": 44
+    },
+    "b1": {
+     "meanIoU": 0.649,
+     "chamfer": 0.0935,
+     "fScore5": 0.4596,
+     "fScore2": 0.2419,
+     "extentError": [
+      0.1902,
+      0.0001,
+      3.5413
+     ],
+     "footprintError": [
+      0.1579,
+      2.2131
+     ],
+     "yawDeg": 313
+    },
+    "b2": {
+     "meanIoU": 0.7152,
+     "chamfer": 0.0663,
+     "fScore5": 0.4522,
+     "fScore2": 0.1966,
+     "extentError": [
+      0.082,
+      0.0001,
+      1.6481
+     ],
+     "footprintError": [
+      0.1579,
+      1.1973
+     ],
+     "yawDeg": 171.5
+    },
+    "a1": {
+     "meanIoU": 0.925,
+     "chamfer": 0.012,
+     "fScore5": 0.9838,
+     "fScore2": 0.9352,
+     "extentError": [
+      0.0206,
+      0.0001,
+      0.0315
+     ],
+     "footprintError": [
+      0.0206,
+      0.0315
+     ],
+     "yawDeg": 0
+    },
+    "a2": {
+     "meanIoU": 0.9716,
+     "chamfer": 0.0133,
+     "fScore5": 0.9782,
+     "fScore2": 0.896,
+     "extentError": [
+      0.0001,
+      0.0005,
+      0.0527
+     ],
+     "footprintError": [
+      0.0001,
+      0.0527
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 73886
+  },
+  {
+   "modelId": "B07K6S7QHQ",
+   "productType": "DESK",
+   "stratum": "other",
+   "heightMm": 769.9999992145999,
+   "maskShare": [
+    0.4814,
+    0.4948
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": -25,
+    "elevationDeg": 14
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -30,
+    "elevationDeg": 14
+   },
+   "costUsd": {
+    "a1": 0.0276,
+    "a2": 0.031
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.6114,
+     "chamfer": 0.0907,
+     "fScore5": 0.413,
+     "fScore2": 0.1799,
+     "extentError": [
+      0.3752,
+      0.0002,
+      1.5365
+     ],
+     "footprintError": [
+      0.0252,
+      0.7979
+     ],
+     "yawDeg": 49
+    },
+    "b1": {
+     "meanIoU": 0.6768,
+     "chamfer": 0.0551,
+     "fScore5": 0.6359,
+     "fScore2": 0.2959,
+     "extentError": [
+      0.3767,
+      0.0002,
+      1.5392
+     ],
+     "footprintError": [
+      0.0252,
+      0.7979
+     ],
+     "yawDeg": 228
+    },
+    "b2": {
+     "meanIoU": 0.7466,
+     "chamfer": 0.0393,
+     "fScore5": 0.6975,
+     "fScore2": 0.4023,
+     "extentError": [
+      0.0156,
+      0.0002,
+      0.5737
+     ],
+     "footprintError": [
+      0.0252,
+      0.4831
+     ],
+     "yawDeg": 177
+    },
+    "a1": {
+     "meanIoU": 0.8708,
+     "chamfer": 0.0193,
+     "fScore5": 0.962,
+     "fScore2": 0.6518,
+     "extentError": [
+      0.0319,
+      0.0002,
+      0.1322
+     ],
+     "footprintError": [
+      0.017,
+      0.0838
+     ],
+     "yawDeg": 358.5
+    },
+    "a2": {
+     "meanIoU": 0.8705,
+     "chamfer": 0.0193,
+     "fScore5": 0.9849,
+     "fScore2": 0.6009,
+     "extentError": [
+      0.0806,
+      0.0002,
+      0.0565
+     ],
+     "footprintError": [
+      0.0847,
+      0.0421
+     ],
+     "yawDeg": 359.5
+    }
+   },
+   "ms": 67582
+  },
+  {
+   "modelId": "B07B4Y45GY",
+   "productType": "DRESSER",
+   "stratum": "other",
+   "heightMm": 863.5999999999999,
+   "maskShare": [
+    0.4646,
+    0.3639
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": -30,
+    "elevationDeg": 15
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -25,
+    "elevationDeg": 14
+   },
+   "costUsd": {
+    "a1": 0.033,
+    "a2": 0.0225
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5657,
+     "chamfer": 0.1096,
+     "fScore5": 0.3096,
+     "fScore2": 0.1254,
+     "extentError": [
+      0.191,
+      0.0094,
+      2.9867
+     ],
+     "footprintError": [
+      0.1567,
+      1.8229
+     ],
+     "yawDeg": 42
+    },
+    "b1": {
+     "meanIoU": 0.6413,
+     "chamfer": 0.0891,
+     "fScore5": 0.4551,
+     "fScore2": 0.257,
+     "extentError": [
+      0.1919,
+      0.0094,
+      2.9897
+     ],
+     "footprintError": [
+      0.1567,
+      1.8229
+     ],
+     "yawDeg": 313
+    },
+    "b2": {
+     "meanIoU": 0.7356,
+     "chamfer": 0.0587,
+     "fScore5": 0.5223,
+     "fScore2": 0.2583,
+     "extentError": [
+      0.0972,
+      0.0094,
+      1.2799
+     ],
+     "footprintError": [
+      0.1567,
+      0.9426
+     ],
+     "yawDeg": 172
+    },
+    "a1": {
+     "meanIoU": 0.949,
+     "chamfer": 0.0209,
+     "fScore5": 0.8991,
+     "fScore2": 0.7345,
+     "extentError": [
+      0.007,
+      0.0098,
+      0.1116
+     ],
+     "footprintError": [
+      0.007,
+      0.1116
+     ],
+     "yawDeg": 0
+    },
+    "a2": {
+     "meanIoU": 0.9532,
+     "chamfer": 0.0187,
+     "fScore5": 0.909,
+     "fScore2": 0.7555,
+     "extentError": [
+      0.0199,
+      0.0098,
+      0.0037
+     ],
+     "footprintError": [
+      0.0199,
+      0.0037
+     ],
+     "yawDeg": 180
+    }
+   },
+   "ms": 72225
+  },
+  {
+   "modelId": "B082JH9VWG",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 254,
+   "maskShare": [
+    0.241,
+    0.1277
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "costUsd": {
+    "a1": 0.0397,
+    "a2": 0.0346
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.1649,
+     "chamfer": 0.162,
+     "fScore5": 0.0849,
+     "fScore2": 0.0314,
+     "extentError": [
+      0.4016,
+      0.0007,
+      2.4485
+     ],
+     "footprintError": [
+      0.0114,
+      1.4884
+     ],
+     "yawDeg": 33.5
+    },
+    "b1": {
+     "meanIoU": 0.209,
+     "chamfer": 0.0907,
+     "fScore5": 0.3648,
+     "fScore2": 0.138,
+     "extentError": [
+      0.1788,
+      0.0007,
+      1.9002
+     ],
+     "footprintError": [
+      0.0114,
+      1.4884
+     ],
+     "yawDeg": 190.5
+    },
+    "b2": {
+     "meanIoU": 0.4696,
+     "chamfer": 0.0316,
+     "fScore5": 0.8256,
+     "fScore2": 0.4452,
+     "extentError": [
+      0.0114,
+      0.0007,
+      0.0154
+     ],
+     "footprintError": [
+      0.0114,
+      0.0154
+     ],
+     "yawDeg": 180
+    },
+    "a1": {
+     "meanIoU": 0.3718,
+     "chamfer": 0.039,
+     "fScore5": 0.6871,
+     "fScore2": 0.3853,
+     "extentError": [
+      0.0026,
+      0.0055,
+      0.0117
+     ],
+     "footprintError": [
+      0.0089,
+      0.3122
+     ],
+     "yawDeg": 10
+    },
+    "a2": {
+     "meanIoU": 0.4857,
+     "chamfer": 0.0177,
+     "fScore5": 0.9715,
+     "fScore2": 0.6533,
+     "extentError": [
+      0.0137,
+      0.0016,
+      0.0117
+     ],
+     "footprintError": [
+      0.0138,
+      0.0749
+     ],
+     "yawDeg": 357
+    }
+   },
+   "ms": 90029
+  },
+  {
+   "modelId": "B07B4Z9PL9",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 1244.6,
+   "maskShare": [
+    0.0432,
+    0.0437
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 6
+   },
+   "costUsd": {
+    "a1": 0.0212,
+    "a2": 0.0268
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.112,
+     "chamfer": 0.0724,
+     "fScore5": 0.3347,
+     "fScore2": 0.1098,
+     "extentError": [
+      1.1123,
+      0.012,
+      0.1092
+     ],
+     "footprintError": [
+      0.2087,
+      0.4946
+     ],
+     "yawDeg": 46.5
+    },
+    "b1": {
+     "meanIoU": 0.2071,
+     "chamfer": 0.0416,
+     "fScore5": 0.6227,
+     "fScore2": 0.4045,
+     "extentError": [
+      1.0809,
+      0.012,
+      0.0927
+     ],
+     "footprintError": [
+      0.2087,
+      0.4946
+     ],
+     "yawDeg": 325
+    },
+    "b2": {
+     "meanIoU": 0.5447,
+     "chamfer": 0.0184,
+     "fScore5": 0.9202,
+     "fScore2": 0.6532,
+     "extentError": [
+      0.6426,
+      0.012,
+      0.096
+     ],
+     "footprintError": [
+      0.0677,
+      0.4946
+     ],
+     "yawDeg": 195
+    },
+    "a1": {
+     "meanIoU": 0.3226,
+     "chamfer": 0.0326,
+     "fScore5": 0.6551,
+     "fScore2": 0.4555,
+     "extentError": [
+      0.0753,
+      0.0164,
+      0.2394
+     ],
+     "footprintError": [
+      0.2156,
+      0.0155
+     ],
+     "yawDeg": 246.5
+    },
+    "a2": {
+     "meanIoU": 0.4172,
+     "chamfer": 0.0135,
+     "fScore5": 1,
+     "fScore2": 0.7311,
+     "extentError": [
+      0.0444,
+      0.0078,
+      0.1087
+     ],
+     "footprintError": [
+      0.1145,
+      0.0435
+     ],
+     "yawDeg": 333
+    }
+   },
+   "ms": 47628
+  },
+  {
+   "modelId": "B0825DBY38",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 342.9,
+   "excluded": "see-through material"
+  },
+  {
+   "modelId": "B07TVYR4SS",
+   "productType": "SHELF",
+   "stratum": "other",
+   "heightMm": 880.99999910138,
+   "maskShare": [
+    0.2714,
+    0.4369
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": -60,
+    "elevationDeg": 8
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -70,
+    "elevationDeg": 8
+   },
+   "costUsd": {
+    "a1": 0.0362,
+    "a2": 0.0237
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.8416,
+     "chamfer": 0.0276,
+     "fScore5": 0.8046,
+     "fScore2": 0.7044,
+     "extentError": [
+      0.0182,
+      0.0103,
+      0.0182
+     ],
+     "footprintError": [
+      0.0349,
+      0.0349
+     ],
+     "yawDeg": 359
+    },
+    "b1": {
+     "meanIoU": 0.808,
+     "chamfer": 0.0266,
+     "fScore5": 0.8133,
+     "fScore2": 0.6661,
+     "extentError": [
+      0.0266,
+      0.0103,
+      0.0266
+     ],
+     "footprintError": [
+      0.0349,
+      0.0349
+     ],
+     "yawDeg": 0.5
+    },
+    "b2": {
+     "meanIoU": 0.7552,
+     "chamfer": 0.04,
+     "fScore5": 0.6186,
+     "fScore2": 0.4346,
+     "extentError": [
+      0.3616,
+      0.0103,
+      0.0349
+     ],
+     "footprintError": [
+      0.3616,
+      0.0349
+     ],
+     "yawDeg": 270
+    },
+    "a1": {
+     "meanIoU": 0.761,
+     "chamfer": 0.0242,
+     "fScore5": 0.9339,
+     "fScore2": 0.4687,
+     "extentError": [
+      0.2146,
+      0.0103,
+      0.0226
+     ],
+     "footprintError": [
+      0.1793,
+      0.2069
+     ],
+     "yawDeg": 283
+    },
+    "a2": {
+     "meanIoU": 0.9426,
+     "chamfer": 0.009,
+     "fScore5": 1,
+     "fScore2": 0.9915,
+     "extentError": [
+      0.0435,
+      0.0103,
+      0.0349
+     ],
+     "footprintError": [
+      0.0345,
+      0.0345
+     ],
+     "yawDeg": 359.5
+    }
+   },
+   "ms": 62383
+  },
+  {
+   "modelId": "B07B4W2MFW",
+   "productType": "STORAGE_BOX",
+   "stratum": "other",
+   "heightMm": 1371.6,
+   "maskShare": [
+    0.4284,
+    0.3847
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 40,
+    "elevationDeg": 18
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -30,
+    "elevationDeg": 20
+   },
+   "costUsd": {
+    "a1": 0.0276,
+    "a2": 0.0315
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.6867,
+     "chamfer": 0.0667,
+     "fScore5": 0.5109,
+     "fScore2": 0.368,
+     "extentError": [
+      0.0143,
+      0.011,
+      0.0699
+     ],
+     "footprintError": [
+      0.0699,
+      0.0143
+     ],
+     "yawDeg": 0
+    },
+    "b1": {
+     "meanIoU": 0.6978,
+     "chamfer": 0.0481,
+     "fScore5": 0.6885,
+     "fScore2": 0.3784,
+     "extentError": [
+      0.0143,
+      0.011,
+      0.0699
+     ],
+     "footprintError": [
+      0.0699,
+      0.0143
+     ],
+     "yawDeg": 270
+    },
+    "b2": {
+     "meanIoU": 0.6898,
+     "chamfer": 0.0348,
+     "fScore5": 0.7976,
+     "fScore2": 0.4631,
+     "extentError": [
+      0.0415,
+      0.011,
+      0.0122
+     ],
+     "footprintError": [
+      0.0363,
+      0.0143
+     ],
+     "yawDeg": 181.5
+    },
+    "a1": {
+     "meanIoU": 0.9032,
+     "chamfer": 0.0164,
+     "fScore5": 0.9977,
+     "fScore2": 0.7407,
+     "extentError": [
+      0.0215,
+      0.0107,
+      0.0123
+     ],
+     "footprintError": [
+      0.0123,
+      0.0215
+     ],
+     "yawDeg": 0
+    },
+    "a2": {
+     "meanIoU": 0.9149,
+     "chamfer": 0.014,
+     "fScore5": 0.9997,
+     "fScore2": 0.7716,
+     "extentError": [
+      0.0115,
+      0.0107,
+      0.0117
+     ],
+     "footprintError": [
+      0.0117,
+      0.0115
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 59404
+  },
+  {
+   "modelId": "B07B78G4QH",
+   "productType": "TABLE",
+   "stratum": "other",
+   "heightMm": 762,
+   "maskShare": [
+    0.3174,
+    0.3175
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 20,
+    "elevationDeg": 22
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 40,
+    "elevationDeg": 20
+   },
+   "costUsd": {
+    "a1": 0.0162,
+    "a2": 0.0265
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5006,
+     "chamfer": 0.0467,
+     "fScore5": 0.5482,
+     "fScore2": 0.3581,
+     "extentError": [
+      0.0816,
+      0.0003,
+      0.0812
+     ],
+     "footprintError": [
+      0.1966,
+      0.1964
+     ],
+     "yawDeg": 9
+    },
+    "b1": {
+     "meanIoU": 0.5667,
+     "chamfer": 0.036,
+     "fScore5": 0.6741,
+     "fScore2": 0.3926,
+     "extentError": [
+      0.163,
+      0.0003,
+      0.1626
+     ],
+     "footprintError": [
+      0.1966,
+      0.1964
+     ],
+     "yawDeg": 357.5
+    },
+    "b2": {
+     "meanIoU": 0.6038,
+     "chamfer": 0.0313,
+     "fScore5": 0.7684,
+     "fScore2": 0.4588,
+     "extentError": [
+      0.1834,
+      0.0003,
+      0.1845
+     ],
+     "footprintError": [
+      0.1966,
+      0.1978
+     ],
+     "yawDeg": 1
+    },
+    "a1": {
+     "meanIoU": 0.7352,
+     "chamfer": 0.0126,
+     "fScore5": 0.9764,
+     "fScore2": 0.8974,
+     "extentError": [
+      0.0081,
+      0.0017,
+      0.0085
+     ],
+     "footprintError": [
+      0.0077,
+      0.008
+     ],
+     "yawDeg": 0
+    },
+    "a2": {
+     "meanIoU": 0.5051,
+     "chamfer": 0.0259,
+     "fScore5": 0.816,
+     "fScore2": 0.6911,
+     "extentError": [
+      0.1924,
+      0.0003,
+      0.192
+     ],
+     "footprintError": [
+      0.1923,
+      0.1921
+     ],
+     "yawDeg": 148
+    }
+   },
+   "ms": 40328
+  },
+  {
+   "modelId": "B07MBMJS1B",
+   "productType": "CABINET",
+   "stratum": "other",
+   "heightMm": 927.0999999999999,
+   "maskShare": [
+    0.3415,
+    0.3225
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": -25,
+    "elevationDeg": 14
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": -25,
+    "elevationDeg": 20
+   },
+   "costUsd": {
+    "a1": 0.0301,
+    "a2": 0.0307
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4473,
+     "chamfer": 0.0877,
+     "fScore5": 0.3514,
+     "fScore2": 0.195,
+     "extentError": [
+      0.346,
+      0.0001,
+      1.6471
+     ],
+     "footprintError": [
+      0.043,
+      0.8821
+     ],
+     "yawDeg": 51
+    },
+    "b1": {
+     "meanIoU": 0.5152,
+     "chamfer": 0.0509,
+     "fScore5": 0.518,
+     "fScore2": 0.1972,
+     "extentError": [
+      0.0738,
+      0.0001,
+      1.1116
+     ],
+     "footprintError": [
+      0.043,
+      0.8821
+     ],
+     "yawDeg": 97.5
+    },
+    "b2": {
+     "meanIoU": 0.5864,
+     "chamfer": 0.0384,
+     "fScore5": 0.6582,
+     "fScore2": 0.2972,
+     "extentError": [
+      0.0384,
+      0.0001,
+      0.7345
+     ],
+     "footprintError": [
+      0.043,
+      0.5412
+     ],
+     "yawDeg": 352.5
+    },
+    "a1": {
+     "meanIoU": 0.5731,
+     "chamfer": 0.0246,
+     "fScore5": 0.8181,
+     "fScore2": 0.606,
+     "extentError": [
+      0.1971,
+      0.0003,
+      0.0302
+     ],
+     "footprintError": [
+      0.1992,
+      0.0376
+     ],
+     "yawDeg": 180.5
+    },
+    "a2": {
+     "meanIoU": 0.6286,
+     "chamfer": 0.015,
+     "fScore5": 0.9665,
+     "fScore2": 0.8042,
+     "extentError": [
+      0.1992,
+      0.0003,
+      0.0814
+     ],
+     "footprintError": [
+      0.1992,
+      0.0814
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 94865
+  },
+  {
+   "modelId": "B0825D147R",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 609.5999999999999,
+   "excluded": "see-through material"
+  },
+  {
+   "modelId": "B0742FPL25",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 2108.2,
+   "maskShare": [
+    0.0308,
+    0.028
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "costUsd": {
+    "a1": 0.0183,
+    "a2": 0.0247
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.0743,
+     "chamfer": 0.1084,
+     "fScore5": 0.2287,
+     "fScore2": 0.1012,
+     "extentError": [
+      2.4596,
+      0.0048,
+      0.0288
+     ],
+     "footprintError": [
+      0.3122,
+      1.4514
+     ],
+     "yawDeg": 45
+    },
+    "b1": {
+     "meanIoU": 0.126,
+     "chamfer": 0.0758,
+     "fScore5": 0.3876,
+     "fScore2": 0.1537,
+     "extentError": [
+      2.4549,
+      0.0048,
+      0.0301
+     ],
+     "footprintError": [
+      0.3122,
+      1.4514
+     ],
+     "yawDeg": 318
+    },
+    "b2": {
+     "meanIoU": 0.2725,
+     "chamfer": 0.0457,
+     "fScore5": 0.7647,
+     "fScore2": 0.4123,
+     "extentError": [
+      2.452,
+      0.0048,
+      0.1545
+     ],
+     "footprintError": [
+      0.0296,
+      1.4514
+     ],
+     "yawDeg": 206.5
+    },
+    "a1": {
+     "meanIoU": 0.2862,
+     "chamfer": 0.0494,
+     "fScore5": 0.5565,
+     "fScore2": 0.2557,
+     "extentError": [
+      0.1829,
+      0.0039,
+      0.2993
+     ],
+     "footprintError": [
+      0.3076,
+      0.1827
+     ],
+     "yawDeg": 270
+    },
+    "a2": {
+     "meanIoU": 0.4218,
+     "chamfer": 0.0221,
+     "fScore5": 0.9186,
+     "fScore2": 0.4911,
+     "extentError": [
+      0.2053,
+      0.0046,
+      0.1212
+     ],
+     "footprintError": [
+      0.1183,
+      0.2082
+     ],
+     "yawDeg": 326.5
+    }
+   },
+   "ms": 63383
+  },
+  {
+   "modelId": "B0828FB1G7",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 209.54999999999998,
+   "maskShare": [
+    0.4783,
+    0.485
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 15
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 8
+   },
+   "costUsd": {
+    "a1": 0.0089,
+    "a2": 0.0176
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4552,
+     "chamfer": 0.0728,
+     "fScore5": 0.3335,
+     "fScore2": 0.1593,
+     "extentError": [
+      0.0428,
+      0.0231,
+      0.0428
+     ],
+     "footprintError": [
+      0.0824,
+      0.0823
+     ],
+     "yawDeg": 81.5
+    },
+    "b1": {
+     "meanIoU": 0.6072,
+     "chamfer": 0.0486,
+     "fScore5": 0.5697,
+     "fScore2": 0.2345,
+     "extentError": [
+      0.1985,
+      0.0231,
+      0.1985
+     ],
+     "footprintError": [
+      0.0824,
+      0.0823
+     ],
+     "yawDeg": 337.5
+    },
+    "b2": {
+     "meanIoU": 0.7234,
+     "chamfer": 0.0377,
+     "fScore5": 0.7534,
+     "fScore2": 0.3135,
+     "extentError": [
+      0.1956,
+      0.0231,
+      0.1973
+     ],
+     "footprintError": [
+      0.0824,
+      0.0855
+     ],
+     "yawDeg": 67.5
+    },
+    "a1": {
+     "meanIoU": 0.8413,
+     "chamfer": 0.0225,
+     "fScore5": 0.9315,
+     "fScore2": 0.589,
+     "extentError": [
+      0.078,
+      0.0023,
+      0.078
+     ],
+     "footprintError": [
+      0.0788,
+      0.0787
+     ],
+     "yawDeg": 5
+    },
+    "a2": {
+     "meanIoU": 0.8613,
+     "chamfer": 0.0254,
+     "fScore5": 0.8531,
+     "fScore2": 0.7449,
+     "extentError": [
+      0.0174,
+      0.021,
+      0.0174
+     ],
+     "footprintError": [
+      0.0182,
+      0.0181
+     ],
+     "yawDeg": 5
+    }
+   },
+   "ms": 33776
+  },
+  {
+   "modelId": "B082MXDF82",
+   "productType": "ELECTRIC_FAN",
+   "stratum": "thin",
+   "heightMm": 533.4,
+   "maskShare": [
+    0.5737,
+    0.3938
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": -30,
+    "elevationDeg": 10
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 30,
+    "elevationDeg": 10
+   },
+   "costUsd": {
+    "a1": 0.0307,
+    "a2": 0.0347
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4362,
+     "chamfer": 0.1264,
+     "fScore5": 0.2333,
+     "fScore2": 0.0903,
+     "extentError": [
+      0.2431,
+      0.0001,
+      3.6023
+     ],
+     "footprintError": [
+      0.1088,
+      2.2996
+     ],
+     "yawDeg": 35.5
+    },
+    "b1": {
+     "meanIoU": 0.5011,
+     "chamfer": 0.1169,
+     "fScore5": 0.2846,
+     "fScore2": 0.1205,
+     "extentError": [
+      0.2449,
+      0.0001,
+      3.6089
+     ],
+     "footprintError": [
+      0.1088,
+      2.2996
+     ],
+     "yawDeg": 54
+    },
+    "b2": {
+     "meanIoU": 0.6182,
+     "chamfer": 0.0769,
+     "fScore5": 0.4708,
+     "fScore2": 0.2769,
+     "extentError": [
+      0.0612,
+      0.0001,
+      2.4588
+     ],
+     "footprintError": [
+      0.1088,
+      1.1629
+     ],
+     "yawDeg": 208
+    },
+    "a1": {
+     "meanIoU": 0.7639,
+     "chamfer": 0.0224,
+     "fScore5": 0.9608,
+     "fScore2": 0.4508,
+     "extentError": [
+      0.03,
+      0.0007,
+      0.1485
+     ],
+     "footprintError": [
+      0.03,
+      0.1485
+     ],
+     "yawDeg": 0
+    },
+    "a2": {
+     "meanIoU": 0.6602,
+     "chamfer": 0.0216,
+     "fScore5": 0.9142,
+     "fScore2": 0.6553,
+     "extentError": [
+      0.049,
+      0.0007,
+      0.2254
+     ],
+     "footprintError": [
+      0.049,
+      0.2254
+     ],
+     "yawDeg": 180
+    }
+   },
+   "ms": 84993
+  },
+  {
+   "modelId": "B0825DWB31",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 514.35,
+   "excluded": "see-through material"
+  },
+  {
+   "modelId": "B07QC76NM2",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 332.23199999999997,
+   "maskShare": [
+    0.2218,
+    0.169
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 2
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "costUsd": {
+    "a1": 0.0264,
+    "a2": 0.0214
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4569,
+     "chamfer": 0.0865,
+     "fScore5": 0.3405,
+     "fScore2": 0.1154,
+     "extentError": [
+      0.1347,
+      0.0007,
+      0.0293
+     ],
+     "footprintError": [
+      0.1229,
+      0.0252
+     ],
+     "yawDeg": 6.5
+    },
+    "b1": {
+     "meanIoU": 0.568,
+     "chamfer": 0.0566,
+     "fScore5": 0.5485,
+     "fScore2": 0.2388,
+     "extentError": [
+      0.0252,
+      0.0007,
+      0.1229
+     ],
+     "footprintError": [
+      0.1229,
+      0.0252
+     ],
+     "yawDeg": 180
+    },
+    "b2": {
+     "meanIoU": 0.7569,
+     "chamfer": 0.0324,
+     "fScore5": 0.8151,
+     "fScore2": 0.5055,
+     "extentError": [
+      0.034,
+      0.0007,
+      0.0116
+     ],
+     "footprintError": [
+      0.0053,
+      0.0252
+     ],
+     "yawDeg": 179.5
+    },
+    "a1": {
+     "meanIoU": 0.8402,
+     "chamfer": 0.0189,
+     "fScore5": 0.9872,
+     "fScore2": 0.6438,
+     "extentError": [
+      0.0552,
+      0,
+      0.047
+     ],
+     "footprintError": [
+      0.0495,
+      0.0552
+     ],
+     "yawDeg": 359.5
+    },
+    "a2": {
+     "meanIoU": 0.8733,
+     "chamfer": 0.0169,
+     "fScore5": 0.9861,
+     "fScore2": 0.6881,
+     "extentError": [
+      0.0551,
+      0,
+      0.0058
+     ],
+     "footprintError": [
+      0.0104,
+      0.0552
+     ],
+     "yawDeg": 1
+    }
+   },
+   "ms": 51893
+  },
+  {
+   "modelId": "B075X1T4ZS",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 508,
+   "maskShare": [
+    0.3808,
+    0.3808
+   ],
+   "a1Rounds": 2,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "costUsd": {
+    "a1": 0.0376,
+    "a2": 0.0139
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4694,
+     "chamfer": 0.0733,
+     "fScore5": 0.401,
+     "fScore2": 0.0959,
+     "extentError": [
+      0.1068,
+      0.0226,
+      0.1068
+     ],
+     "footprintError": [
+      0.0013,
+      0.0013
+     ],
+     "yawDeg": 6.5
+    },
+    "b1": {
+     "meanIoU": 0.6012,
+     "chamfer": 0.0433,
+     "fScore5": 0.6407,
+     "fScore2": 0.2572,
+     "extentError": [
+      0.4089,
+      0.0226,
+      0.4089
+     ],
+     "footprintError": [
+      0.0013,
+      0.0013
+     ],
+     "yawDeg": 130
+    },
+    "b2": {
+     "meanIoU": 0.7498,
+     "chamfer": 0.029,
+     "fScore5": 0.828,
+     "fScore2": 0.4509,
+     "extentError": [
+      0.0001,
+      0.0226,
+      0.0001
+     ],
+     "footprintError": [
+      0.0013,
+      0.0013
+     ],
+     "yawDeg": 0
+    },
+    "a1": {
+     "meanIoU": 0.8977,
+     "chamfer": 0.0089,
+     "fScore5": 0.9944,
+     "fScore2": 0.9487,
+     "extentError": [
+      0.0185,
+      0.0226,
+      0.0185
+     ],
+     "footprintError": [
+      0.0184,
+      0.0184
+     ],
+     "yawDeg": 5
+    },
+    "a2": {
+     "meanIoU": 0.8967,
+     "chamfer": 0.0148,
+     "fScore5": 0.9278,
+     "fScore2": 0.824,
+     "extentError": [
+      0.0032,
+      0.0226,
+      0.0032
+     ],
+     "footprintError": [
+      0.0026,
+      0.0026
+     ],
+     "yawDeg": 358.5
+    }
+   },
+   "ms": 53412
+  },
+  {
+   "modelId": "B0824FLNHN",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 463.54999999999995,
+   "maskShare": [
+    0.1423,
+    0.1319
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 2
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "costUsd": {
+    "a1": 0.0212,
+    "a2": 0.0241
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5494,
+     "chamfer": 0.0516,
+     "fScore5": 0.5151,
+     "fScore2": 0.2331,
+     "extentError": [
+      0.0083,
+      0.0042,
+      0.3902
+     ],
+     "footprintError": [
+      0.4005,
+      0.0252
+     ],
+     "yawDeg": 1
+    },
+    "b1": {
+     "meanIoU": 0.5874,
+     "chamfer": 0.0488,
+     "fScore5": 0.5094,
+     "fScore2": 0.2536,
+     "extentError": [
+      0.0252,
+      0.0042,
+      0.4005
+     ],
+     "footprintError": [
+      0.4005,
+      0.0252
+     ],
+     "yawDeg": 90
+    },
+    "b2": {
+     "meanIoU": 0.7481,
+     "chamfer": 0.0215,
+     "fScore5": 0.9125,
+     "fScore2": 0.6317,
+     "extentError": [
+      0.0082,
+      0.0042,
+      0.0017
+     ],
+     "footprintError": [
+      0.011,
+      0.0252
+     ],
+     "yawDeg": 181
+    },
+    "a1": {
+     "meanIoU": 0.4667,
+     "chamfer": 0.0513,
+     "fScore5": 0.503,
+     "fScore2": 0.2015,
+     "extentError": [
+      0.0459,
+      0.0052,
+      0.4133
+     ],
+     "footprintError": [
+      0.4142,
+      0.0474
+     ],
+     "yawDeg": 5.5
+    },
+    "a2": {
+     "meanIoU": 0.91,
+     "chamfer": 0.0126,
+     "fScore5": 0.9423,
+     "fScore2": 0.895,
+     "extentError": [
+      0.0453,
+      0.0052,
+      0.0549
+     ],
+     "footprintError": [
+      0.0568,
+      0.0453
+     ],
+     "yawDeg": 0.5
+    }
+   },
+   "ms": 48615
+  },
+  {
+   "modelId": "B0828FFDWG",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 130.302,
+   "maskShare": [
+    0.4658,
+    0.4631
+   ],
+   "a1Rounds": 2,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 25
+   },
+   "a2Rounds": 2,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 25
+   },
+   "costUsd": {
+    "a1": 0.0343,
+    "a2": 0.0505
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.596,
+     "chamfer": 0.039,
+     "fScore5": 0.6171,
+     "fScore2": 0.3693,
+     "extentError": [
+      0.1597,
+      0.0015,
+      0.1597
+     ],
+     "footprintError": [
+      0.359,
+      0.359
+     ],
+     "yawDeg": 23
+    },
+    "b1": {
+     "meanIoU": 0.6049,
+     "chamfer": 0.0328,
+     "fScore5": 0.7887,
+     "fScore2": 0.3702,
+     "extentError": [
+      0.1627,
+      0.0015,
+      0.1627
+     ],
+     "footprintError": [
+      0.359,
+      0.359
+     ],
+     "yawDeg": 67.5
+    },
+    "b2": {
+     "meanIoU": 0.5985,
+     "chamfer": 0.0313,
+     "fScore5": 0.8196,
+     "fScore2": 0.3914,
+     "extentError": [
+      0.3374,
+      0.0015,
+      0.345
+     ],
+     "footprintError": [
+      0.359,
+      0.3668
+     ],
+     "yawDeg": 358
+    },
+    "a1": {
+     "meanIoU": 0.7626,
+     "chamfer": 0.0158,
+     "fScore5": 0.9999,
+     "fScore2": 0.7456,
+     "extentError": [
+      0.1089,
+      0.0038,
+      0.1089
+     ],
+     "footprintError": [
+      0.1078,
+      0.1078
+     ],
+     "yawDeg": 0
+    },
+    "a2": {
+     "meanIoU": 0.7922,
+     "chamfer": 0.0172,
+     "fScore5": 0.9967,
+     "fScore2": 0.6573,
+     "extentError": [
+      0.0923,
+      0.0038,
+      0.0923
+     ],
+     "footprintError": [
+      0.0912,
+      0.0912
+     ],
+     "yawDeg": 135
+    }
+   },
+   "ms": 56866
+  },
+  {
+   "modelId": "B075X2LLWF",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 254,
+   "maskShare": [
+    0.398,
+    0.3916
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 12
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 10
+   },
+   "costUsd": {
+    "a1": 0.0114,
+    "a2": 0.0154
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5754,
+     "chamfer": 0.0656,
+     "fScore5": 0.4136,
+     "fScore2": 0.1754,
+     "extentError": [
+      0.3456,
+      0.0145,
+      0.4465
+     ],
+     "footprintError": [
+      0.0085,
+      0.0322
+     ],
+     "yawDeg": 37.5
+    },
+    "b1": {
+     "meanIoU": 0.6803,
+     "chamfer": 0.0396,
+     "fScore5": 0.6129,
+     "fScore2": 0.3465,
+     "extentError": [
+      0.0165,
+      0.0145,
+      0.0927
+     ],
+     "footprintError": [
+      0.0085,
+      0.0322
+     ],
+     "yawDeg": 3.5
+    },
+    "b2": {
+     "meanIoU": 0.7996,
+     "chamfer": 0.0226,
+     "fScore5": 0.9137,
+     "fScore2": 0.575,
+     "extentError": [
+      0.2964,
+      0.0145,
+      0.3796
+     ],
+     "footprintError": [
+      0.0085,
+      0.0467
+     ],
+     "yawDeg": 44
+    },
+    "a1": {
+     "meanIoU": 0.9424,
+     "chamfer": 0.0122,
+     "fScore5": 0.9914,
+     "fScore2": 0.9056,
+     "extentError": [
+      0.046,
+      0.0145,
+      0.0098
+     ],
+     "footprintError": [
+      0.0501,
+      0.011
+     ],
+     "yawDeg": 1.5
+    },
+    "a2": {
+     "meanIoU": 0.9512,
+     "chamfer": 0.0096,
+     "fScore5": 1,
+     "fScore2": 0.9668,
+     "extentError": [
+      0.0398,
+      0.0145,
+      0.0104
+     ],
+     "footprintError": [
+      0.0484,
+      0.0093
+     ],
+     "yawDeg": 25
+    }
+   },
+   "ms": 34233
+  },
+  {
+   "modelId": "B07374QGD7",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 762,
+   "maskShare": [
+    0.1371,
+    0.1373
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "a2Rounds": 2,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "costUsd": {
+    "a1": 0.0159,
+    "a2": 0.0384
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.1776,
+     "chamfer": 0.0654,
+     "fScore5": 0.343,
+     "fScore2": 0.1348,
+     "extentError": [
+      0.1332,
+      0.0034,
+      0.1332
+     ],
+     "footprintError": [
+      0.0732,
+      0.0732
+     ],
+     "yawDeg": 356.5
+    },
+    "b1": {
+     "meanIoU": 0.3202,
+     "chamfer": 0.0357,
+     "fScore5": 0.7237,
+     "fScore2": 0.2782,
+     "extentError": [
+      0.0699,
+      0.0034,
+      0.0699
+     ],
+     "footprintError": [
+      0.0732,
+      0.0732
+     ],
+     "yawDeg": 90
+    },
+    "b2": {
+     "meanIoU": 0.5911,
+     "chamfer": 0.0243,
+     "fScore5": 0.9599,
+     "fScore2": 0.3995,
+     "extentError": [
+      0.5116,
+      0.0034,
+      0.5116
+     ],
+     "footprintError": [
+      0.0732,
+      0.0732
+     ],
+     "yawDeg": 132.5
+    },
+    "a1": {
+     "meanIoU": 0.8151,
+     "chamfer": 0.0092,
+     "fScore5": 0.9769,
+     "fScore2": 0.8774,
+     "extentError": [
+      0.0491,
+      0.0034,
+      0.0491
+     ],
+     "footprintError": [
+      0.0476,
+      0.0476
+     ],
+     "yawDeg": 69.5
+    },
+    "a2": {
+     "meanIoU": 0.7959,
+     "chamfer": 0.0123,
+     "fScore5": 0.9766,
+     "fScore2": 0.7933,
+     "extentError": [
+      0.0494,
+      0.0034,
+      0.0494
+     ],
+     "footprintError": [
+      0.0467,
+      0.0467
+     ],
+     "yawDeg": 20
+    }
+   },
+   "ms": 48679
+  },
+  {
+   "modelId": "B07B4W2ZRW",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 508,
+   "maskShare": [
+    0.3161,
+    0.302
+   ],
+   "a1Rounds": 2,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 4
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "costUsd": {
+    "a1": 0.0591,
+    "a2": 0.0234
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.4762,
+     "chamfer": 0.062,
+     "fScore5": 0.5001,
+     "fScore2": 0.2694,
+     "extentError": [
+      0.3025,
+      0.012,
+      0.3025
+     ],
+     "footprintError": [
+      0.0742,
+      0.0742
+     ],
+     "yawDeg": 49.5
+    },
+    "b1": {
+     "meanIoU": 0.6115,
+     "chamfer": 0.0384,
+     "fScore5": 0.6725,
+     "fScore2": 0.382,
+     "extentError": [
+      0.0602,
+      0.012,
+      0.0602
+     ],
+     "footprintError": [
+      0.0742,
+      0.0742
+     ],
+     "yawDeg": 91
+    },
+    "b2": {
+     "meanIoU": 0.7587,
+     "chamfer": 0.0267,
+     "fScore5": 0.8338,
+     "fScore2": 0.5717,
+     "extentError": [
+      0.0534,
+      0.012,
+      0.06
+     ],
+     "footprintError": [
+      0.0674,
+      0.0742
+     ],
+     "yawDeg": 269
+    },
+    "a1": {
+     "meanIoU": 0.7599,
+     "chamfer": 0.022,
+     "fScore5": 0.85,
+     "fScore2": 0.6716,
+     "extentError": [
+      0.0085,
+      0.0059,
+      0.0085
+     ],
+     "footprintError": [
+      0.0086,
+      0.0086
+     ],
+     "yawDeg": 89
+    },
+    "a2": {
+     "meanIoU": 0.7905,
+     "chamfer": 0.0237,
+     "fScore5": 0.8742,
+     "fScore2": 0.7573,
+     "extentError": [
+      0.0746,
+      0.0066,
+      0.0746
+     ],
+     "footprintError": [
+      0.0743,
+      0.0743
+     ],
+     "yawDeg": 88.5
+    }
+   },
+   "ms": 64601
+  },
+  {
+   "modelId": "B0828DZ1QL",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 134.874,
+   "maskShare": [
+    0.172,
+    0.1816
+   ],
+   "a1Rounds": 2,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 20
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 20
+   },
+   "costUsd": {
+    "a1": 0.034,
+    "a2": 0.0189
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5602,
+     "chamfer": 0.0458,
+     "fScore5": 0.6123,
+     "fScore2": 0.4077,
+     "extentError": [
+      0.0768,
+      0.0008,
+      0.0793
+     ],
+     "footprintError": [
+      0.301,
+      0.301
+     ],
+     "yawDeg": 24
+    },
+    "b1": {
+     "meanIoU": 0.6221,
+     "chamfer": 0.0362,
+     "fScore5": 0.6956,
+     "fScore2": 0.3907,
+     "extentError": [
+      0.0832,
+      0.0008,
+      0.0857
+     ],
+     "footprintError": [
+      0.301,
+      0.301
+     ],
+     "yawDeg": 67
+    },
+    "b2": {
+     "meanIoU": 0.5001,
+     "chamfer": 0.0428,
+     "fScore5": 0.6067,
+     "fScore2": 0.2812,
+     "extentError": [
+      0.0932,
+      0.0008,
+      0.0956
+     ],
+     "footprintError": [
+      0.301,
+      0.301
+     ],
+     "yawDeg": 291.5
+    },
+    "a1": {
+     "meanIoU": 0.7242,
+     "chamfer": 0.0295,
+     "fScore5": 0.7636,
+     "fScore2": 0.4018,
+     "extentError": [
+      0.1812,
+      0.0018,
+      0.178
+     ],
+     "footprintError": [
+      0.1784,
+      0.1784
+     ],
+     "yawDeg": 359.5
+    },
+    "a2": {
+     "meanIoU": 0.8057,
+     "chamfer": 0.0211,
+     "fScore5": 0.9426,
+     "fScore2": 0.5417,
+     "extentError": [
+      0.0739,
+      0.0018,
+      0.071
+     ],
+     "footprintError": [
+      0.0723,
+      0.0723
+     ],
+     "yawDeg": 0
+    }
+   },
+   "ms": 47353
+  },
+  {
+   "modelId": "B07HK6MTMC",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 584.1999999999999,
+   "maskShare": [
+    0.4143,
+    0.4149
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 4
+   },
+   "costUsd": {
+    "a1": 0.0199,
+    "a2": 0.0157
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5315,
+     "chamfer": 0.0597,
+     "fScore5": 0.5535,
+     "fScore2": 0.3251,
+     "extentError": [
+      0.3783,
+      0.0001,
+      0.3783
+     ],
+     "footprintError": [
+      0.0174,
+      0.0174
+     ],
+     "yawDeg": 38
+    },
+    "b1": {
+     "meanIoU": 0.6609,
+     "chamfer": 0.0379,
+     "fScore5": 0.6985,
+     "fScore2": 0.4003,
+     "extentError": [
+      0.3783,
+      0.0001,
+      0.3783
+     ],
+     "footprintError": [
+      0.0174,
+      0.0174
+     ],
+     "yawDeg": 38
+    },
+    "b2": {
+     "meanIoU": 0.7822,
+     "chamfer": 0.0282,
+     "fScore5": 0.8107,
+     "fScore2": 0.516,
+     "extentError": [
+      0.0942,
+      0.0001,
+      0.0942
+     ],
+     "footprintError": [
+      0.0174,
+      0.0174
+     ],
+     "yawDeg": 83
+    },
+    "a1": {
+     "meanIoU": 0.896,
+     "chamfer": 0.0162,
+     "fScore5": 0.9068,
+     "fScore2": 0.8136,
+     "extentError": [
+      0.0316,
+      0.0013,
+      0.0316
+     ],
+     "footprintError": [
+      0.0309,
+      0.0309
+     ],
+     "yawDeg": 14
+    },
+    "a2": {
+     "meanIoU": 0.9065,
+     "chamfer": 0.0147,
+     "fScore5": 0.9065,
+     "fScore2": 0.8178,
+     "extentError": [
+      0.0204,
+      0.0005,
+      0.0204
+     ],
+     "footprintError": [
+      0.0198,
+      0.0198
+     ],
+     "yawDeg": 19.5
+    }
+   },
+   "ms": 40135
+  },
+  {
+   "modelId": "B0825CLV7M",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 1797.05,
+   "maskShare": [
+    0.0605,
+    0.0627
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 3
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 2
+   },
+   "costUsd": {
+    "a1": 0.0154,
+    "a2": 0.0153
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.1242,
+     "chamfer": 0.0257,
+     "fScore5": 0.9349,
+     "fScore2": 0.3061,
+     "extentError": [
+      0.5896,
+      0.0007,
+      0.5896
+     ],
+     "footprintError": [
+      0.1276,
+      0.1276
+     ],
+     "yawDeg": 44.5
+    },
+    "b1": {
+     "meanIoU": 0.2541,
+     "chamfer": 0.0076,
+     "fScore5": 1,
+     "fScore2": 0.8921,
+     "extentError": [
+      0.1065,
+      0.0007,
+      0.1241
+     ],
+     "footprintError": [
+      0.1276,
+      0.11
+     ],
+     "yawDeg": 0
+    },
+    "b2": {
+     "meanIoU": 0.5449,
+     "chamfer": 0.0056,
+     "fScore5": 1,
+     "fScore2": 0.9683,
+     "extentError": [
+      0.1444,
+      0.0007,
+      0.1444
+     ],
+     "footprintError": [
+      0.11,
+      0.11
+     ],
+     "yawDeg": 182
+    },
+    "a1": {
+     "meanIoU": 0.5125,
+     "chamfer": 0.0122,
+     "fScore5": 1,
+     "fScore2": 0.7875,
+     "extentError": [
+      0.1946,
+      0.0007,
+      0.1946
+     ],
+     "footprintError": [
+      0.1969,
+      0.1969
+     ],
+     "yawDeg": 5
+    },
+    "a2": {
+     "meanIoU": 0.4008,
+     "chamfer": 0.0146,
+     "fScore5": 1,
+     "fScore2": 0.7228,
+     "extentError": [
+      0.1946,
+      0.0007,
+      0.1946
+     ],
+     "footprintError": [
+      0.1969,
+      0.1969
+     ],
+     "yawDeg": 5
+    }
+   },
+   "ms": 37247
+  },
+  {
+   "modelId": "B075X2XZDD",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 1244.6,
+   "maskShare": [
+    0.0438,
+    0.0448
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 5
+   },
+   "costUsd": {
+    "a1": 0.0127,
+    "a2": 0.025
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.1223,
+     "chamfer": 0.0671,
+     "fScore5": 0.4206,
+     "fScore2": 0.154,
+     "extentError": [
+      0.9188,
+      0.0045,
+      0.0129
+     ],
+     "footprintError": [
+      0.2734,
+      0.3594
+     ],
+     "yawDeg": 41.5
+    },
+    "b1": {
+     "meanIoU": 0.2021,
+     "chamfer": 0.0411,
+     "fScore5": 0.6196,
+     "fScore2": 0.3773,
+     "extentError": [
+      0.8525,
+      0.0045,
+      0.0221
+     ],
+     "footprintError": [
+      0.2734,
+      0.3594
+     ],
+     "yawDeg": 330.5
+    },
+    "b2": {
+     "meanIoU": 0.5557,
+     "chamfer": 0.0158,
+     "fScore5": 0.9251,
+     "fScore2": 0.719,
+     "extentError": [
+      0.6286,
+      0.0045,
+      0.1637
+     ],
+     "footprintError": [
+      0.0498,
+      0.3594
+     ],
+     "yawDeg": 207.5
+    },
+    "a1": {
+     "meanIoU": 0.4207,
+     "chamfer": 0.0208,
+     "fScore5": 0.7624,
+     "fScore2": 0.7132,
+     "extentError": [
+      0.1235,
+      0.0084,
+      0.1064
+     ],
+     "footprintError": [
+      0.1225,
+      0.1225
+     ],
+     "yawDeg": 271
+    },
+    "a2": {
+     "meanIoU": 0.4425,
+     "chamfer": 0.0131,
+     "fScore5": 0.9999,
+     "fScore2": 0.7436,
+     "extentError": [
+      0.0773,
+      0.0073,
+      0.1836
+     ],
+     "footprintError": [
+      0.1886,
+      0.0768
+     ],
+     "yawDeg": 333
+    }
+   },
+   "ms": 41756
+  },
+  {
+   "modelId": "B08B8SV8DB",
+   "productType": "LIGHT_FIXTURE",
+   "stratum": "thin",
+   "heightMm": 762,
+   "maskShare": [
+    0.1309,
+    0.1308
+   ],
+   "a1Rounds": 2,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 0
+   },
+   "a2Rounds": 2,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 0
+   },
+   "costUsd": {
+    "a1": 0.0348,
+    "a2": 0.0375
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.1685,
+     "chamfer": 0.0595,
+     "fScore5": 0.4162,
+     "fScore2": 0.1488,
+     "extentError": [
+      0.1347,
+      0.0022,
+      0.1345
+     ],
+     "footprintError": [
+      0.0711,
+      0.0714
+     ],
+     "yawDeg": 356.5
+    },
+    "b1": {
+     "meanIoU": 0.296,
+     "chamfer": 0.0306,
+     "fScore5": 0.8032,
+     "fScore2": 0.3599,
+     "extentError": [
+      0.0713,
+      0.0022,
+      0.0711
+     ],
+     "footprintError": [
+      0.0711,
+      0.0714
+     ],
+     "yawDeg": 90
+    },
+    "b2": {
+     "meanIoU": 0.5541,
+     "chamfer": 0.0196,
+     "fScore5": 0.9651,
+     "fScore2": 0.5622,
+     "extentError": [
+      0.3805,
+      0.0022,
+      0.3791
+     ],
+     "footprintError": [
+      0.0731,
+      0.0714
+     ],
+     "yawDeg": 69.5
+    },
+    "a1": {
+     "meanIoU": 0.5873,
+     "chamfer": 0.0324,
+     "fScore5": 0.8267,
+     "fScore2": 0.3255,
+     "extentError": [
+      0.4098,
+      0.0022,
+      0.4095
+     ],
+     "footprintError": [
+      0.4071,
+      0.4074
+     ],
+     "yawDeg": 358.5
+    },
+    "a2": {
+     "meanIoU": 0.8701,
+     "chamfer": 0.0093,
+     "fScore5": 0.9814,
+     "fScore2": 0.9092,
+     "extentError": [
+      0.0346,
+      0.0022,
+      0.0348
+     ],
+     "footprintError": [
+      0.0359,
+      0.0357
+     ],
+     "yawDeg": 5
+    }
+   },
+   "ms": 51622
+  },
+  {
+   "modelId": "B07B4VYKPR",
+   "productType": "LAMP",
+   "stratum": "thin",
+   "heightMm": 381,
+   "maskShare": [
+    0.4687,
+    0.4685
+   ],
+   "a1Rounds": 1,
+   "a1View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 8
+   },
+   "a2Rounds": 1,
+   "a2View": {
+    "azimuthDeg": 0,
+    "elevationDeg": 8
+   },
+   "costUsd": {
+    "a1": 0.0127,
+    "a2": 0.0143
+   },
+   "scores": {
+    "b0": {
+     "meanIoU": 0.5794,
+     "chamfer": 0.0634,
+     "fScore5": 0.5216,
+     "fScore2": 0.2972,
+     "extentError": [
+      0.3733,
+      0.0025,
+      0.3733
+     ],
+     "footprintError": [
+      0.0208,
+      0.0204
+     ],
+     "yawDeg": 38
+    },
+    "b1": {
+     "meanIoU": 0.6994,
+     "chamfer": 0.039,
+     "fScore5": 0.6881,
+     "fScore2": 0.3949,
+     "extentError": [
+      0.3747,
+      0.0025,
+      0.3747
+     ],
+     "footprintError": [
+      0.0208,
+      0.0204
+     ],
+     "yawDeg": 308.5
+    },
+    "b2": {
+     "meanIoU": 0.8084,
+     "chamfer": 0.029,
+     "fScore5": 0.8129,
+     "fScore2": 0.5088,
+     "extentError": [
+      0.3741,
+      0.0025,
+      0.3737
+     ],
+     "footprintError": [
+      0.0208,
+      0.0234
+     ],
+     "yawDeg": 141
+    },
+    "a1": {
+     "meanIoU": 0.9421,
+     "chamfer": 0.0158,
+     "fScore5": 0.9105,
+     "fScore2": 0.8446,
+     "extentError": [
+      0.0221,
+      0.0025,
+      0.0221
+     ],
+     "footprintError": [
+      0.0215,
+      0.021
+     ],
+     "yawDeg": 19.5
+    },
+    "a2": {
+     "meanIoU": 0.9435,
+     "chamfer": 0.0094,
+     "fScore5": 0.9863,
+     "fScore2": 0.9581,
+     "extentError": [
+      0.0305,
+      0.0025,
+      0.0305
+     ],
+     "footprintError": [
+      0.0302,
+      0.0297
+     ],
+     "yawDeg": 19
+    }
+   },
+   "ms": 34594
+  }
+ ]
+}

@@ -1,0 +1,324 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Seven drawer wood dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "wood",
+   "detail": "overhanging top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1540,
+     30,
+     480
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    899,
+    0
+   ],
+   "material": {
+    "color": "#c08e57",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "wood",
+   "detail": "main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1480,
+     799,
+     450
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    484.5,
+    0
+   ],
+   "material": {
+    "color": "#c28f58",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "foot_fl",
+   "name": "Front left foot",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 24,
+    "depth": 85,
+    "radialSegments": 24
+   },
+   "position": [
+    -690,
+    42,
+    190
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "foot_fr",
+   "name": "Front right foot",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 24,
+    "depth": 85,
+    "radialSegments": 24
+   },
+   "position": [
+    690,
+    42,
+    190
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "foot_bl",
+   "name": "Back left foot",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 24,
+    "depth": 85,
+    "radialSegments": 24
+   },
+   "position": [
+    -690,
+    42,
+    -190
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "foot_br",
+   "name": "Back right foot",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "turned foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 24,
+    "depth": 85,
+    "radialSegments": 24
+   },
+   "position": [
+    690,
+    42,
+    -190
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_tl",
+   "name": "Top left drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "drawer front with knob area",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     155,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    -550,
+    780,
+    230
+   ],
+   "material": {
+    "color": "#c9965e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_tc",
+   "name": "Top centre drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     780,
+     155,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    780,
+    230
+   ],
+   "material": {
+    "color": "#c9965e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_tr",
+   "name": "Top right drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     155,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    550,
+    780,
+    230
+   ],
+   "material": {
+    "color": "#c9965e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_ml",
+   "name": "Middle left drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     690,
+     275,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    -350,
+    550,
+    230
+   ],
+   "material": {
+    "color": "#c9965e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_mr",
+   "name": "Middle right drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     690,
+     275,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    350,
+    550,
+    230
+   ],
+   "material": {
+    "color": "#c9965e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_bl",
+   "name": "Bottom left drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     690,
+     275,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    -350,
+    260,
+    230
+   ],
+   "material": {
+    "color": "#c9965e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "d_br",
+   "name": "Bottom right drawer",
+   "category": "mechanical",
+   "materialName": "wood",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     690,
+     275,
+     14
+    ],
+    "radius": 4
+   },
+   "position": [
+    350,
+    260,
+    230
+   ],
+   "material": {
+    "color": "#c9965e",
+    "roughness": 0.6
+   }
+  }
+ ]
+}

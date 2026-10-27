@@ -1,0 +1,106 @@
+{
+ "summary": {
+  "id": "wheel",
+  "firstTryPass": true,
+  "finalPass": true,
+  "passRound": 0,
+  "roundsUsed": 1,
+  "scores": [
+   1
+  ],
+  "stages": [
+   "pass"
+  ],
+  "issueCounts": [
+   0
+  ],
+  "costUsd": 0.0024525000000000003,
+  "modelIds": [
+   "claude-haiku-5-5"
+  ]
+ },
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-haiku-5-5"
+   ],
+   "costUsd": 0.0024525000000000003,
+   "durationMs": 16755,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "round": 0,
+   "candidate": "{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Bicycle wheel\",\"units\":\"mm\",\"components\":[{\"id\":\"rim\",\"name\":\"Rim\",\"category\":\"mechanical\",\"materialName\":\"Rim metal\",\"detail\":\"Torus rim, ring radius 300 mm, tube radius 15 mm, lying in the XY plane, centred at height 315 mm so its underside touches the floor.\",\"geometry\":{\"op\":\"torus\",\"radius\":300,\"tube\":15},\"position\":[0,315,0],\"material\":{\"color\":\"#303030\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"hub\",\"name\":\"Hub\",\"category\":\"mechanical\",\"materialName\":\"Hub metal\",\"detail\":\"Hub cylinder, 60 mm diameter and 80 mm long, axis along z, at the wheel centre.\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":30,\"radiusBottom\":30,\"depth\":80,\"radialSegments\":32},\"position\":[0,315,0],\"rotation\":[1.5707963,0,0],\"material\":{\"color\":\"#606060\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"spoke_1\",\"name\":\"Spoke 1\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 0 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[30,0,0],[300,0,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_2\",\"name\":\"Spoke 2\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 22.5 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[27.713,11.482,0],[277.164,114.805,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_3\",\"name\":\"Spoke 3\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 45 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[21.213,21.213,0],[212.132,212.132,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_4\",\"name\":\"Spoke 4\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 67.5 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[11.481,27.713,0],[114.805,277.164,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_5\",\"name\":\"Spoke 5\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 90 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,30,0],[0,300,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_6\",\"name\":\"Spoke 6\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 112.5 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[-11.481,27.713,0],[-114.805,277.164,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_7\",\"name\":\"Spoke 7\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 135 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[-21.213,21.213,0],[-212.132,212.132,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_8\",\"name\":\"Spoke 8\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 157.5 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[-27.713,11.482,0],[-277.164,114.805,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_9\",\"name\":\"Spoke 9\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 180 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[-30,0,0],[-300,0,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_10\",\"name\":\"Spoke 10\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 202.5 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[-27.713,-11.482,0],[-277.164,-114.805,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_11\",\"name\":\"Spoke 11\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 225 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[-21.213,-21.213,0],[-212.132,-212.132,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_12\",\"name\":\"Spoke 12\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 247.5 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[-11.481,-27.713,0],[-114.805,-277.164,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_13\",\"name\":\"Spoke 13\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 270 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-30,0],[0,-300,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_14\",\"name\":\"Spoke 14\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 292.5 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[11.481,-27.713,0],[114.805,-277.164,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_15\",\"name\":\"Spoke 15\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 315 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[21.213,-21.213,0],[212.132,-212.132,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}},{\"id\":\"spoke_16\",\"name\":\"Spoke 16\",\"category\":\"mechanical\",\"materialName\":\"Spoke wire\",\"detail\":\"Straight spoke, radius 2 mm, from hub surface at 337.5 degrees to rim centreline, in the XY plane.\",\"geometry\":{\"op\":\"tube\",\"points\":[[27.713,-11.482,0],[277.164,-114.805,0]],\"radius\":2},\"position\":[0,315,0],\"material\":{\"color\":\"#c0c0c0\",\"roughness\":0.3,\"metalness\":1}}]}",
+   "feedback": {
+    "schema": "sceliph.assembly-feedback/0.1",
+    "stage": "pass",
+    "pass": true,
+    "score": 1,
+    "issues": [],
+    "measured": {
+     "triangles": 17664,
+     "topologyPass": true,
+     "assemblySizeMm": [
+      630,
+      630,
+      80
+     ],
+     "dimensionChecks": [
+      {
+       "id": "h",
+       "expectedMm": 630,
+       "actualMm": 629.9999952316284,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "floor",
+       "expectedMm": 0,
+       "actualMm": 0.000002384185793236071,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "hub-l",
+       "expectedMm": 80,
+       "actualMm": 79.99999981955439,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "hub-d",
+       "expectedMm": 60,
+       "actualMm": 59.99999865889549,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "sp1-x",
+       "expectedMm": 270,
+       "actualMm": 270.0000125914812,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "sp3-x",
+       "expectedMm": 193.75,
+       "actualMm": 193.6089973896742,
+       "toleranceMm": 1.5,
+       "pass": true
+      },
+      {
+       "id": "sp5-y",
+       "expectedMm": 270,
+       "actualMm": 270.0000125914812,
+       "toleranceMm": 1.5,
+       "pass": true
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

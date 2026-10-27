@@ -1,0 +1,214 @@
+{
+ "schema": "sceliph.photo-llm-eval/0.1",
+ "protocolSha256": "6c6d1983fd372b4c6563d0a75fdbc8e9af7aea40ce5f500a4830e854c80a8979",
+ "sceneImageSha256": {
+  "bookshelf": "0468551cecf87d43105d93e37e206dc4d7c51972bd80adf272e830f2814561ca",
+  "box-post": "d3db98f1aaf8f953d754992bfe85485ad91b65046ce6a6f9b079ff0535b9a3ac",
+  "desk-lamp": "611bb0d4ad7f595ebb1937de63f492df7376227b397236aac3841ba82508acf9",
+  "mug": "2ef6f842b4b6bd69d3b5a1edd73523ce9e1482e095673eb7e38f5dc96aaf04ea",
+  "side-table": "d1f50fb0d60e396371d57e4ed6f38e3b9be0c24acd08feea987f33d6c8d951fd"
+ },
+ "modelAlias": "replay",
+ "totalCostUsd": 0,
+ "results": [
+  {
+   "id": "bookshelf",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 35,
+    "elevationDeg": 17
+   },
+   "llm": {
+    "medianSizeError": 0.15,
+    "maxSizeError": 0.15,
+    "medianPlacementError": 0.0053,
+    "maxPlacementError": 0.0791,
+    "within5": 0.4783,
+    "within10": 0.5652
+   },
+   "fit": {
+    "medianSizeError": 0.268,
+    "maxSizeError": 0.4031,
+    "medianPlacementError": 0.1066,
+    "maxPlacementError": 0.1778,
+    "within5": 0.1957,
+    "within10": 0.2826,
+    "parameters": 23,
+    "locked": 1,
+    "groups": [
+     [
+      "shelf-1",
+      "shelf-2",
+      "shelf-3",
+      "shelf-4"
+     ]
+    ],
+    "iouBefore": 0.8206,
+    "iouAfter": 0.9537,
+    "lowConfidenceReasons": 3,
+    "fitMs": 115967
+   }
+  },
+  {
+   "id": "box-post",
+   "conventionIoU": 0.9999,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": -10,
+    "elevationDeg": 30
+   },
+   "llm": {
+    "medianSizeError": 0.15,
+    "maxSizeError": 0.15,
+    "medianPlacementError": 0.0173,
+    "maxPlacementError": 0.0582,
+    "within5": 0.4545,
+    "within10": 0.5455
+   },
+   "fit": {
+    "medianSizeError": 0.0126,
+    "maxSizeError": 0.0506,
+    "medianPlacementError": 0.0098,
+    "maxPlacementError": 0.0256,
+    "within5": 0.9091,
+    "within10": 1,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.572,
+    "iouAfter": 0.9942,
+    "lowConfidenceReasons": 9,
+    "fitMs": 50733
+   }
+  },
+  {
+   "id": "desk-lamp",
+   "conventionIoU": 0.9998,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": -5,
+    "elevationDeg": 30
+   },
+   "llm": {
+    "medianSizeError": 0.15,
+    "maxSizeError": 0.15,
+    "medianPlacementError": 0.0031,
+    "maxPlacementError": 0.07,
+    "within5": 0.5,
+    "within10": 0.6111
+   },
+   "fit": {
+    "medianSizeError": 0.0392,
+    "maxSizeError": 0.3792,
+    "medianPlacementError": 0.0128,
+    "maxPlacementError": 0.1645,
+    "within5": 0.8333,
+    "within10": 0.8889,
+    "parameters": 12,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.6183,
+    "iouAfter": 0.9937,
+    "lowConfidenceReasons": 0,
+    "fitMs": 24501
+   }
+  },
+  {
+   "id": "mug",
+   "conventionIoU": 0.9994,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 35,
+    "elevationDeg": 25
+   },
+   "llm": {
+    "medianSizeError": 0.15,
+    "maxSizeError": 0.15,
+    "medianPlacementError": 0.0063,
+    "maxPlacementError": 0.033,
+    "within5": 0.5455,
+    "within10": 0.5455
+   },
+   "fit": {
+    "medianSizeError": 0.009,
+    "maxSizeError": 0.0328,
+    "medianPlacementError": 0.0016,
+    "maxPlacementError": 0.0057,
+    "within5": 1,
+    "within10": 1,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [],
+    "iouBefore": 0.692,
+    "iouAfter": 0.9957,
+    "lowConfidenceReasons": 1,
+    "fitMs": 59017
+   }
+  },
+  {
+   "id": "side-table",
+   "conventionIoU": 0.9996,
+   "roundsUsed": 1,
+   "accepted": true,
+   "costUsd": 0,
+   "modelIds": [
+    "replay"
+   ],
+   "view": {
+    "azimuthDeg": 40,
+    "elevationDeg": 27
+   },
+   "llm": {
+    "medianSizeError": 0.15,
+    "maxSizeError": 0.15,
+    "medianPlacementError": 0.0245,
+    "maxPlacementError": 0.0347,
+    "within5": 0.5625,
+    "within10": 0.5625
+   },
+   "fit": {
+    "medianSizeError": 0.0627,
+    "maxSizeError": 0.4739,
+    "medianPlacementError": 0.0158,
+    "maxPlacementError": 0.0299,
+    "within5": 0.7188,
+    "within10": 0.9688,
+    "parameters": 7,
+    "locked": 1,
+    "groups": [
+     [
+      "leg-1",
+      "leg-2",
+      "leg-3",
+      "leg-4"
+     ]
+    ],
+    "iouBefore": 0.2395,
+    "iouAfter": 0.9635,
+    "lowConfidenceReasons": 1,
+    "fitMs": 56038
+   }
+  }
+ ]
+}

@@ -1,0 +1,248 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Ceiling fan with light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Canopy",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Ceiling canopy",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 55,
+    "radiusBottom": 40,
+    "depth": 25,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    368.5,
+    0
+   ],
+   "material": {
+    "color": "#9a9a9c",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Downrod",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Downrod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 130,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    293,
+    0
+   ],
+   "material": {
+    "color": "#8f8f92",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "motor",
+   "name": "Motor housing",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Motor housing",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 45,
+    "radiusBottom": 85,
+    "depth": 60,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    200,
+    0
+   ],
+   "material": {
+    "color": "#8c8c8f",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "ring",
+   "name": "Light ring",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Light fixture collar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 90,
+    "radiusBottom": 85,
+    "depth": 30,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    155,
+    0
+   ],
+   "material": {
+    "color": "#9a9a9c",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "globe",
+   "name": "Glass globe",
+   "category": "mechanical",
+   "materialName": "frosted glass",
+   "detail": "Light diffuser",
+   "geometry": {
+    "op": "sphere",
+    "radius": 80
+   },
+   "position": [
+    0,
+    80,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "blade1",
+   "name": "Blade 1",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     6,
+     120
+    ],
+    "radius": 2
+   },
+   "position": [
+    329,
+    185,
+    -190
+   ],
+   "rotation": [
+    0,
+    0.524,
+    0
+   ],
+   "material": {
+    "color": "#8e8e91",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "blade2",
+   "name": "Blade 2",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     6,
+     120
+    ],
+    "radius": 2
+   },
+   "position": [
+    -329,
+    185,
+    -190
+   ],
+   "rotation": [
+    0,
+    2.618,
+    0
+   ],
+   "material": {
+    "color": "#8e8e91",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "blade3",
+   "name": "Blade 3",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     6,
+     120
+    ],
+    "radius": 2
+   },
+   "position": [
+    -329,
+    185,
+    190
+   ],
+   "rotation": [
+    0,
+    3.665,
+    0
+   ],
+   "material": {
+    "color": "#8e8e91",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "blade4",
+   "name": "Blade 4",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Fan blade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     6,
+     120
+    ],
+    "radius": 2
+   },
+   "position": [
+    329,
+    185,
+    190
+   ],
+   "rotation": [
+    0,
+    5.759,
+    0
+   ],
+   "material": {
+    "color": "#8e8e91",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

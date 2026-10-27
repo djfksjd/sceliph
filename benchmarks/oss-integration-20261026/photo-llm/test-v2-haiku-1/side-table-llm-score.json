@@ -1,0 +1,304 @@
+{
+ "schema": "sceliph.assembly-truth-compare/0.1",
+ "yawDeg": 0,
+ "extentMm": 600.0000238418579,
+ "items": [
+  {
+   "componentId": "top",
+   "candidateId": "top",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 600,
+   "candidateMm": 600,
+   "relativeError": 0
+  },
+  {
+   "componentId": "top",
+   "candidateId": "top",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 30,
+   "candidateMm": 25,
+   "relativeError": 0.1667
+  },
+  {
+   "componentId": "top",
+   "candidateId": "top",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 400,
+   "candidateMm": 400,
+   "relativeError": 0
+  },
+  {
+   "componentId": "top",
+   "candidateId": "top",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 420,
+   "candidateMm": 495,
+   "relativeError": 0.125
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-2",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 40,
+   "candidateMm": 36,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-2",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 420,
+   "candidateMm": 495,
+   "relativeError": 0.1786
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-2",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 40,
+   "candidateMm": 36,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-2",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": -260,
+   "candidateMm": -260,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-2",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": -225,
+   "candidateMm": -260,
+   "relativeError": 0.0583
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-2",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 160,
+   "candidateMm": 160,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-1",
+   "candidateId": "leg-2",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-1",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 40,
+   "candidateMm": 36,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-1",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 420,
+   "candidateMm": 495,
+   "relativeError": 0.1786
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-1",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 40,
+   "candidateMm": 36,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-1",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 260,
+   "candidateMm": 260,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-1",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": -225,
+   "candidateMm": -260,
+   "relativeError": 0.0583
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-1",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": 160,
+   "candidateMm": 160,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-2",
+   "candidateId": "leg-1",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-3",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 40,
+   "candidateMm": 36,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-3",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 420,
+   "candidateMm": 495,
+   "relativeError": 0.1786
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-3",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 40,
+   "candidateMm": 36,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-3",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": 260,
+   "candidateMm": 260,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-3",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": -225,
+   "candidateMm": -260,
+   "relativeError": 0.0583
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-3",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": -160,
+   "candidateMm": -160,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-3",
+   "candidateId": "leg-3",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-4",
+   "kind": "size",
+   "axis": "x",
+   "truthMm": 40,
+   "candidateMm": 36,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-4",
+   "kind": "size",
+   "axis": "y",
+   "truthMm": 420,
+   "candidateMm": 495,
+   "relativeError": 0.1786
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-4",
+   "kind": "size",
+   "axis": "z",
+   "truthMm": 40,
+   "candidateMm": 36,
+   "relativeError": 0.1
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-4",
+   "kind": "offset",
+   "axis": "x",
+   "truthMm": -260,
+   "candidateMm": -260,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-4",
+   "kind": "offset",
+   "axis": "y",
+   "truthMm": -225,
+   "candidateMm": -260,
+   "relativeError": 0.0583
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-4",
+   "kind": "offset",
+   "axis": "z",
+   "truthMm": -160,
+   "candidateMm": -160,
+   "relativeError": 0
+  },
+  {
+   "componentId": "leg-4",
+   "candidateId": "leg-4",
+   "kind": "floor",
+   "axis": "y",
+   "truthMm": 0,
+   "candidateMm": 0,
+   "relativeError": 0
+  }
+ ],
+ "missingComponentIds": [],
+ "summary": {
+  "medianSizeError": 0.1,
+  "maxSizeError": 0.1786,
+  "medianPlacementError": 0,
+  "maxPlacementError": 0.125,
+  "within5": 0.4375,
+  "within10": 0.6875
+ }
+}
