@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>Studio Cove</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;background:#1d1e20;color:#e4e4e2;font:13px/1.4 -apple-system,"SF Pro Text","Apple SD Gothic Neo",sans-serif}
+.mono{font-family:"SF Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.top{height:48px;display:flex;align-items:center;gap:16px;padding:0 16px;border-bottom:1px solid #2e2f32}
+.logo{font-weight:700;letter-spacing:.14em;font-size:13px}
+.crumb{color:#9a9b9d}.crumb b{color:#e4e4e2;font-weight:600}
+.pill{margin-left:auto;display:flex;gap:8px;align-items:center}
+.score{padding:4px 10px;border-radius:999px;background:#2a2b2e;font-size:12px}
+.score i{display:inline-block;width:8px;height:8px;border-radius:2px;background:#e0a32e;margin-right:6px}
+.btn{padding:7px 14px;border-radius:10px;background:#2a2b2e;font-weight:600}
+.btn.p{background:#f3f3f2;color:#1d1e20}
+.shell{display:grid;grid-template-columns:56px 260px 1fr 300px;height:852px}
+.rail{background:#161719;display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:12px}
+.rail span{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:#8a8b8d;font-size:17px}
+.rail span.on{background:#2a2b2e;color:#f3f3f2}
+.out{background:#222326;border-right:1px solid #2e2f32;padding:12px}
+.h{font-size:11px;letter-spacing:.08em;color:#8a8b8d;text-transform:uppercase;display:flex;justify-content:space-between;margin:4px 0 10px}
+.search{height:32px;border-radius:10px;background:#1a1b1d;color:#6f7073;padding:8px 10px;font-size:12px;margin-bottom:10px}
+.row{display:flex;align-items:center;gap:8px;height:30px;padding:0 8px;border-radius:8px;color:#cfcfcd}
+.row .dot{border-radius:50%;background:#8a8b8d;flex:none}
+.row .ev{width:10px;height:10px;border-radius:2px;flex:none}
+.row .n{margin-left:auto;color:#6f7073;font-size:11px}
+.row.sel{background:#0885a124;box-shadow:inset 2px 0 #0885a1;color:#fff}
+.ind{padding-left:22px}
+.vp{position:relative;background:radial-gradient(120% 90% at 50% 18%,#c9cacb 0%,#a9aaac 46%,#7d7e80 100%)}
+.tb{position:absolute;top:14px;left:50%;transform:translateX(-50%);display:flex;gap:4px;padding:4px;border-radius:12px;background:#1d1e20b8;backdrop-filter:blur(12px);border:1px solid #ffffff1a}
+.tb span{padding:6px 11px;border-radius:8px;font-size:12px;color:#cfcfcd}.tb span.on{background:#f3f3f2;color:#1d1e20}
+.tb i{width:1px;background:#ffffff22;margin:4px 2px}
+.cube{position:absolute;top:14px;right:14px;width:64px;height:64px;border-radius:12px;background:#1d1e20b8;border:1px solid #ffffff1a;display:grid;place-items:center;font-size:11px;color:#cfcfcd}
+.fan{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:560px;height:220px}
+.blade{position:absolute;height:34px;width:230px;background:#4a2f2c;border-radius:6px;top:120px;transform-origin:0 50%;left:280px}
+.hub{position:absolute;left:236px;top:96px;width:90px;height:56px;border-radius:50% 50% 40% 40%;background:#a89468}
+.bowl{position:absolute;left:250px;top:140px;width:62px;height:38px;border-radius:0 0 40px 40px;background:#f1eee6}
+.rod{position:absolute;left:275px;top:10px;width:10px;height:90px;background:#a89468}
+.call{position:absolute;left:640px;top:250px;padding:6px 10px;border-radius:10px;background:#1d1e20d9;border:1px solid #0885a1;font-size:12px}
+.call:before{content:"";position:absolute;left:-90px;top:14px;width:90px;height:1px;background:#0885a1}
+.checker{position:absolute;left:16px;bottom:72px;display:flex;gap:3px;padding:6px;border-radius:12px;background:#1d1e20cc;border:1px solid #ffffff1a}
+.checker div{width:58px;height:40px;border-radius:5px;padding:5px 6px;font-size:10px;color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.checker b{font-size:15px}
+.axis{position:absolute;left:16px;bottom:20px;font-size:11px;color:#2b2c2e}
+.cmd{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);width:560px;height:44px;border-radius:14px;background:#1d1e20e0;border:1px solid #ffffff22;display:flex;align-items:center;gap:10px;padding:0 12px;color:#9a9b9d}
+.chip{padding:3px 8px;border-radius:7px;background:#0885a133;color:#9fdcea;font-size:12px}
+.kbd{margin-left:auto;font-size:11px;padding:2px 6px;border-radius:6px;background:#2a2b2e}
+.side{background:#222326;border-left:1px solid #2e2f32;padding:12px}
+.tabs{display:flex;gap:4px;background:#1a1b1d;padding:3px;border-radius:10px;margin-bottom:12px}
+.tabs span{flex:1;text-align:center;padding:6px;border-radius:8px;color:#9a9b9d}.tabs span.on{background:#2e2f32;color:#fff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cell{height:118px;border-radius:12px;background:radial-gradient(100% 80% at 50% 20%,#b7b8ba,#77787a);position:relative;overflow:hidden}
+.cell.on{outline:2px solid #0885a1;outline-offset:1px}
+.cell .no{position:absolute;left:8px;top:6px;font-size:11px;color:#1d1e20;font-weight:700}
+.cell .lab{position:absolute;left:0;right:0;bottom:0;padding:6px 8px;background:#1d1e20cc;font-size:11px;display:flex;justify-content:space-between}
+.cell .seen{position:absolute;right:8px;top:6px;font-size:11px;color:#1d1e20}
+.cell .shape{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);background:#55565a;border-radius:6px}
+</style></head><body>
+<div class="top"><span class="logo">SCELIPH</span><span class="crumb">ABO 9b · test r1 / <b>03 Five-blade ceiling fan with light</b> · LLM 2장</span>
+<div class="pill"><span class="score mono"><i></i>품질 52 · 내보내기 보류 1</span><span class="btn">↶ ↷</span><span class="btn">KO</span><span class="btn p">내보내기</span></div></div>
+<div class="shell">
+<nav class="rail"><span class="on">◧</span><span>▤</span><span>◐</span><span>⟷</span><span>⇩</span><span style="margin-top:auto;margin-bottom:12px">⚙</span></nav>
+<aside class="out">
+<div class="h"><span>부품</span><span class="mono">9</span></div>
+<div class="search">부품 검색 · 근거 · 수정됨</div>
+<div class="row"><span class="dot" style="width:12px;height:12px"></span>Five-blade ceiling fan<span class="n mono">9</span></div>
+<div class="row ind"><span class="dot" style="width:9px;height:9px"></span><span class="ev" style="background:#bb5695"></span>Motor housing<span class="n mono">lathe</span></div>
+<div class="row ind"><span class="dot" style="width:7px;height:7px"></span><span class="ev" style="background:#bb5695"></span>Light glass bowl<span class="n mono">lathe</span></div>
+<div class="row ind"><span class="dot" style="width:5px;height:5px"></span><span class="ev" style="background:#e0a32e"></span>Downrod<span class="n mono">cyl</span></div>
+<div class="row ind"><span class="dot" style="width:6px;height:6px"></span><span class="ev" style="background:#e0a32e"></span>Ceiling canopy<span class="n mono">lathe</span></div>
+<div class="row ind sel"><span class="dot" style="width:10px;height:10px;background:#9fdcea"></span><span class="ev" style="background:#e0a32e"></span>Blade 1<span class="n mono">box</span></div>
+<div class="row ind"><span class="dot" style="width:10px;height:10px"></span><span class="ev" style="background:#e0a32e"></span>Blade 2<span class="n mono">box</span></div>
+<div class="row ind"><span class="dot" style="width:10px;height:10px"></span><span class="ev" style="background:#e0a32e"></span>Blade 3<span class="n mono">box</span></div>
+<div class="row ind"><span class="dot" style="width:10px;height:10px"></span><span class="ev" style="background:#e0a32e"></span>Blade 4<span class="n mono">box</span></div>
+<div class="row ind"><span class="dot" style="width:10px;height:10px"></span><span class="ev" style="background:#e0a32e"></span>Blade 5<span class="n mono">box</span></div>
+</aside>
+<section class="vp">
+<div class="tb"><span class="on">Beauty</span><span>Clay</span><span>Wire</span><span>X-Ray</span><i></i><span>Front</span><span class="on">ISO</span><span>Top</span><span>Rear</span><i></i><span>분해 ▭▭▭</span></div>
+<div class="cube mono">ISO</div>
+<div class="fan"><div class="rod"></div><div class="hub"></div><div class="bowl"></div>
+<div class="blade" style="transform:rotate(-8deg)"></div><div class="blade" style="transform:rotate(64deg);background:#4a2f2c"></div><div class="blade" style="transform:rotate(136deg)"></div><div class="blade" style="transform:rotate(208deg)"></div><div class="blade" style="transform:rotate(280deg);box-shadow:0 0 0 2px #0885a1"></div></div>
+<div class="call">Blade 1 <span class="mono" style="color:#9a9b9d">· 1231 × 22 × 152 mm</span></div>
+<div class="checker"><div style="background:#469449"><span>실측</span><b class="mono">0</b></div><div style="background:#505ba6"><span>데이터시트</span><b class="mono">0</b></div><div style="background:#e0a32e"><span>추정</span><b class="mono">7</b></div><div style="background:#bb5695"><span>추론</span><b class="mono">2</b></div><div style="background:#af363c"><span>막힘</span><b class="mono">1</b></div></div>
+<div class="cmd"><span class="chip">◎ Blade 1</span>블레이드를 15% 넓게, 끝을 둥글게…<span class="kbd mono">⌘K</span></div>
+<div class="axis mono">Y↑ X→ · mm</div>
+</section>
+<aside class="side">
+<div class="tabs"><span class="on">라이브러리</span><span>인스펙터</span><span>내보내기</span></div>
+<div class="h"><span>열린 결과</span><span class="mono">66</span></div>
+<div class="grid">
+<div class="cell"><span class="no mono">01·1</span><span class="seen">✓</span><div class="shape" style="width:70px;height:40px"></div><div class="lab"><span>Desk</span><span class="mono">0.62</span></div></div>
+<div class="cell"><span class="no mono">01·2</span><span class="seen">✓</span><div class="shape" style="width:70px;height:40px"></div><div class="lab"><span>Desk</span><span class="mono">0.58</span></div></div>
+<div class="cell"><span class="no mono">03·1</span><span class="seen">✓</span><div class="shape" style="width:96px;height:10px"></div><div class="lab"><span>Ceiling fan</span><span class="mono">0.47</span></div></div>
+<div class="cell on"><span class="no mono">03·2</span><div class="shape" style="width:96px;height:10px"></div><div class="lab"><span>Ceiling fan</span><span class="mono">0.61</span></div></div>
+<div class="cell"><span class="no mono">12·1</span><div class="shape" style="width:60px;height:24px"></div><div class="lab"><span>Vanity light</span><span class="mono">0.35</span></div></div>
+<div class="cell"><span class="no mono">12·2</span><div class="shape" style="width:60px;height:24px"></div><div class="lab"><span>Vanity light</span><span class="mono">0.57</span></div></div>
+</div></aside></div>
+</body></html>

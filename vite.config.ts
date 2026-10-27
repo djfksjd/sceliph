@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
+import { sceliphAssist } from './vite-plugins/sceliph-assist.mjs';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), sceliphAssist()],
   test: {
     // The exact triangle-intersection suites are intentionally CPU-heavy.
     // Serial file execution keeps CI results deterministic and prevents the

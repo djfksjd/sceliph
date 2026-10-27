@@ -1,9 +1,13 @@
 import { createBirdPrimaryStudy } from './engine/bird-primary-study';
 import SceliphIcon from './SceliphIcon';
-import { createLatestIntentGate } from './engine/latest-intent';
-import { AssemblySourceLoadSession, type AssemblySourceLoadState } from './assembly-source-load';
 import AssemblyComponentEditor from './AssemblyComponentEditor';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Box, Check, ChevronLeft, ChevronRight, Columns2, Download, FolderOpen, Keyboard, Layers, Maximize2, Moon, Palette, Redo2, RotateCcw, RotateCw, Ruler, Settings, ShieldCheck, Sun, Trash2, Undo2, X, ZoomIn, ZoomOut } from 'lucide-react';
+import { CommandBar, type CommandLogEntry } from './viewer/CommandBar';
+import { LOCALES, useLocale, type Locale, type MessageKey } from './viewer/i18n';
+import { approximateVolume, editedComponentIds, EVIDENCE_ORDER, evidenceOf, filesFromDrop, readAssemblyFile, type EvidenceStatus, type LibraryEntry } from './viewer/library';
+import { Outliner, type OutlinerRow } from './viewer/Outliner';
+import './viewer/studio.css';
 import type { CharacterBuild } from './engine/character';
 import type { ProductBuild } from './engine/product';
 import type { AssemblyIR } from './engine/assembly-ir';
@@ -31,8 +35,11 @@ import {
   ResultViewport,
   type BuildingLevel,
   type ExportReceipt,
+  type CameraView,
   type InspectablePart,
   type LightingMode,
+  type PartDisplay,
+  type PartHover,
   type ViewportHandle,
 } from './components/ResultViewport';
 import { ViewportErrorBoundary } from './components/ViewportErrorBoundary';
@@ -169,8 +176,55 @@ function downloadJson(payload: unknown, fileName: string): void {
   window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
+type RailSection = 'parts' | 'materials' | 'measure' | 'checks' | 'export' | 'settings';
+type Theme = 'dark' | 'light';
+type LibraryFilter = 'all' | 'imported' | 'presets';
+
+const RAIL: Array<{ id: RailSection; icon: typeof Box; label: MessageKey }> = [
+  { id: 'parts', icon: Layers, label: 'rail.parts' },
+  { id: 'materials', icon: Palette, label: 'rail.materials' },
+  { id: 'measure', icon: Ruler, label: 'rail.measure' },
+  { id: 'checks', icon: ShieldCheck, label: 'rail.checks' },
+  { id: 'export', icon: Download, label: 'rail.export' },
+  { id: 'settings', icon: Settings, label: 'rail.settings' },
+];
+
+function presetEntries(): LibraryEntry[] {
+  return VIEWER_ASSETS.map((asset, index) => ({
+    key: `preset:${asset.id}`,
+    number: index + 1,
+    kind: 'preset',
+    presetId: asset.id,
+    name: asset.label,
+    ...(asset.kind === 'product' && asset.assemblyIR ? { ir: asset.assemblyIR, originalIr: asset.assemblyIR } : {}),
+    seen: false,
+  }));
+}
+
+function readStored<T extends string>(key: string, allowed: readonly T[], fallback: T): T {
+  try {
+    const value = window.localStorage.getItem(key);
+    return value && (allowed as readonly string[]).includes(value) ? value as T : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function writeStored(key: string, value: string): void {
+  try {
+    window.localStorage.setItem(key, value);
+  } catch {
+    // Remembering a preference is a convenience only.
+  }
+}
+
+const isTyping = (target: EventTarget | null) => target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target instanceof HTMLSelectElement || (target instanceof HTMLElement && target.isContentEditable);
+
 export function ViewerApp() {
   const initialAsset = useMemo(resolveInitialViewerAsset, []);
+  const { locale, setLocale, t } = useLocale();
+  const [theme, setThemeState] = useState<Theme>(() => readStored('sceliph.theme', ['dark', 'light'] as const, 'dark'));
+  const setTheme = (next: Theme) => { setThemeState(next); writeStored('sceliph.theme', next); };
   const [pack, setPack] = useState<HumanPack>();
   const [packError, setPackError] = useState<string>();
   const [assetKind, setAssetKind] = useState<AssetKind>(initialAsset.kind);
@@ -187,31 +241,61 @@ export function ViewerApp() {
   const [deliveryVerifying, setDeliveryVerifying] = useState(true);
   const [browserProofReceipts, setBrowserProofReceipts] = useState<Record<string, BrowserRoundTripAssetReceipt>>({});
   const [telemetry, setTelemetry] = useState<LocalBuildTelemetry>();
-  const [importedExpiresAt, setImportedExpiresAt] = useState<number>();
   const [sourceCurrent, setSourceCurrent] = useState(true);
-  const sourceCurrentRef = useRef(true);
-  const markSourceCurrent = (current: boolean) => {
-    sourceCurrentRef.current = current;
-    setSourceCurrent(current);
-  };
-  const [viewerNote, setViewerNote] = useState('CLI/Codex에서 생성한 결과를 검수하는 읽기 전용 화면입니다.');
-  const [measurementEnabled, setMeasurementEnabled] = useState(true);
+  const [viewerNote, setViewerNote] = useState(() => t('note.ready'));
+  const [noteStamp, setNoteStamp] = useState(0);
+  const note = useCallback((text: string) => { setViewerNote(text); setNoteStamp(Date.now()); }, []);
+  const [measurementEnabled, setMeasurementEnabled] = useState(false);
   const measurementMode: MeasurementMode = 'distance';
-  const [measurementUnit, setMeasurementUnit] = useState<MeasurementUnit>('m');
+  const [measurementUnit, setMeasurementUnit] = useState<MeasurementUnit>('mm');
   const [measurementResult, setMeasurementResult] = useState<MeasurementResult>();
   const [measurementPoints, setMeasurementPoints] = useState<0 | 1 | 2>(0);
   const [measurementMissed, setMeasurementMissed] = useState(false);
   const [dimensionOverviewEnabled, setDimensionOverviewEnabled] = useState(false);
-  const [inspectorCollapsed, setInspectorCollapsed] = useState(false);
-  const [pipelineCollapsed, setPipelineCollapsed] = useState(false);
   const [buildingLevel, setBuildingLevel] = useState<BuildingLevel>('all');
   const [lightingMode, setLightingMode] = useState<LightingMode>('day');
+  const [cameraView, setCameraView] = useState<CameraView>('iso');
+
+  // Shell
+  const [section, setSection] = useState<RailSection>('parts');
+  // Narrow windows open on the viewport; panels slide in on demand.
+  const [leftCollapsed, setLeftCollapsed] = useState(() => window.innerWidth < 900);
+  const [rightTab, setRightTab] = useState<'library' | 'inspector'>('library');
+  const [rightCollapsed, setRightCollapsed] = useState(() => window.innerWidth < 1180);
+  const [commandOpen, setCommandOpen] = useState(false);
+  const helpRef = useRef<HTMLDialogElement>(null);
+  const [dragActive, setDragActive] = useState(false);
+
+  // Library
+  const [library, setLibrary] = useState<LibraryEntry[]>(presetEntries);
+  const [activeKey, setActiveKey] = useState(`preset:${initialAsset.id}`);
+  const activeKeyRef = useRef(activeKey);
+  activeKeyRef.current = activeKey;
+  const [libraryFilter, setLibraryFilter] = useState<LibraryFilter>('all');
+  const [compareKey, setCompareKey] = useState<string>();
+  const compareRef = useRef<ViewportHandle>(null);
+  const [failures, setFailures] = useState<Array<{ name: string; error: string }>>([]);
+  const [importExpiresAt, setImportExpiresAt] = useState<number>();
+  const importTimerRef = useRef<number | undefined>(undefined);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Part display
+  const [sceneParts, setSceneParts] = useState<InspectablePart[]>([]);
+  const [hiddenIds, setHiddenIds] = useState<string[]>([]);
+  const [lockedIds, setLockedIds] = useState<string[]>([]);
+  const [soloId, setSoloId] = useState<string>();
+  const [evidenceFocus, setEvidenceFocus] = useState<EvidenceStatus>();
+  const [hatchInferred, setHatchInferred] = useState(false);
+  const [explode, setExplode] = useState(0);
+  const [scopeIds, setScopeIds] = useState<string[]>([]);
+  const [hover, setHover] = useState<PartHover>();
+
+  // IR history (layout edits, component edits, command bar)
+  const pastRef = useRef<AssemblyIR[]>([]);
+  const futureRef = useRef<AssemblyIR[]>([]);
+  const [, setHistoryTick] = useState(0);
+
   const viewportRef = useRef<ViewportHandle>(null);
-  const irInputRef = useRef<HTMLInputElement>(null);
-  const importExpiryTimerRef = useRef<number | undefined>(undefined);
-  const [importIntent] = useState(createLatestIntentGate);
-  const [assemblySourceLoad] = useState(() => new AssemblySourceLoadSession(importIntent));
-  const [assemblyLoadState, setAssemblyLoadState] = useState<AssemblySourceLoadState>({status:'ready'});
   const jobSequenceRef = useRef(0);
   const jobsRef = useRef<LocalJob[]>([]);
   const activeJobRef = useRef<LocalJob | undefined>(undefined);
@@ -223,7 +307,7 @@ export function ViewerApp() {
     loadHumanPack('/assets/oxihuman-core-v1.ohpk')
       .then((loaded) => { if (active) setPack(loaded); })
       .catch((error: unknown) => {
-        if (active) setPackError(error instanceof Error ? error.message : '인체 팩을 불러오지 못했습니다.');
+        if (active) setPackError(error instanceof Error ? error.message : String(error));
       });
     return () => { active = false; };
   }, []);
@@ -232,12 +316,11 @@ export function ViewerApp() {
     mountedRef.current = true;
     return () => {
       mountedRef.current = false;
-      importIntent.cancel();
-      if (importExpiryTimerRef.current !== undefined) window.clearTimeout(importExpiryTimerRef.current);
+      if (importTimerRef.current !== undefined) window.clearTimeout(importTimerRef.current);
       viewportRef.current?.cancelExport();
       jobsRef.current = [];
     };
-  }, [importIntent]);
+  }, []);
 
   const syncJobs = useCallback(() => {
     if (mountedRef.current) setJobs([...jobsRef.current]);
@@ -260,13 +343,13 @@ export function ViewerApp() {
           next.outputBytes = receipt.bytes;
           next.fileName = receipt.fileName;
         }
-        if (mountedRef.current) setViewerNote(`${next.name} 작업을 완료했습니다. 브라우저 다운로드 목록에서 결과를 확인하세요.`);
+        if (mountedRef.current) note(t('note.jobDone', { name: next.name }));
       })
       .catch((error: unknown) => {
         if (next.status === 'cancelled') return;
         next.status = 'failed';
-        next.error = error instanceof Error ? error.message : `${next.name} 작업에 실패했습니다.`;
-        if (mountedRef.current) setViewerNote(next.error);
+        next.error = error instanceof Error ? error.message : String(error);
+        if (mountedRef.current) note(next.error);
       })
       .finally(() => {
         next.durationMs = performance.now() - startedAt;
@@ -294,7 +377,8 @@ export function ViewerApp() {
       ? evaluateQuality(pack, spec, undefined, characterMetrics, deliveryAudit)
       : evaluateProductQuality(productSpec, undefined, productMetrics, assemblyIR, deliveryAudit);
   }, [assemblyIR, assetKind, characterMetrics, deliveryAudit, pack, productMetrics, productSpec, spec]);
-  const qualityBlocked = quality?.checks.some((check) => check.status === 'blocked') ?? false;
+  const blockedChecks = quality?.checks.filter((check) => check.status === 'blocked').length ?? 0;
+  const qualityBlocked = blockedChecks > 0;
   const observedQualityReleaseReady = Boolean(quality && buildMetrics) && !qualityBlocked
     && deliveryAudit?.status === 'pass' && !deliveryVerifying;
   const fidelityAudit = useMemo(() => assemblyIR?.fidelity
@@ -303,26 +387,60 @@ export function ViewerApp() {
   const productPartCount = productMetrics?.parts;
   const architecturalResult = assemblyIR?.metadata?.assetKind === 'building';
   const surfaceBenchmarkResult = assemblyIR?.metadata?.scope === 'surface-material-benchmark';
-  const activePreset = VIEWER_ASSETS.find((asset) => asset.id === activeAssetId);
-  const baselineAssemblyIR = activePreset?.kind === 'product' ? activePreset.assemblyIR : assemblyIR;
+  const activeEntry = library.find((entry) => entry.key === activeKey);
+  const baselineAssemblyIR = activeEntry?.originalIr ?? assemblyIR;
   const layoutEditable = Boolean(selectedPart && assemblyIR && isLayoutEditable(selectedPart.id));
-  const editSelectedLayout = useCallback((edit: Parameters<typeof editAssemblyLayout>[2]) => {
-    if (!selectedPart || !assemblyIR || assemblySourceLoad.blocked) return;
-    const next = editAssemblyLayout(assemblyIR, selectedPart.id, edit);
-    importIntent.cancel();
-    setBuildMetrics(undefined);
-    setAssemblyIR(next);
-    setViewerNote(`${selectedPart.name} 배치를 모델 데이터에 반영했습니다. 내보내기에도 동일하게 포함됩니다.`);
-  }, [assemblyIR, selectedPart, importIntent, assemblySourceLoad]);
   const displayedTriangles = buildMetrics && 'renderedTriangles' in buildMetrics
     ? buildMetrics.renderedTriangles
     : buildMetrics?.triangles;
+  const componentById = useMemo(() => new Map((assemblyIR?.components ?? []).map((component) => [component.id, component])), [assemblyIR]);
+  const editedIds = useMemo(() => editedComponentIds(assemblyIR, activeEntry?.originalIr), [activeEntry?.originalIr, assemblyIR]);
+
+  const statusOf = useCallback((part: InspectablePart): EvidenceStatus => {
+    const component = componentById.get(part.id);
+    if (component) return evidenceOf(component);
+    return (EVIDENCE_ORDER as string[]).includes(part.surface) ? part.surface as EvidenceStatus : 'undocumented';
+  }, [componentById]);
+  const outlinerRows = useMemo<OutlinerRow[]>(() => sceneParts.map((part) => {
+    const component = componentById.get(part.id);
+    return {
+      id: part.id,
+      name: part.name,
+      status: statusOf(part),
+      ...(component ? { op: component.geometry.op } : {}),
+      volume: component ? approximateVolume(component) : 1,
+      edited: editedIds.has(part.id),
+    };
+  }), [componentById, editedIds, sceneParts, statusOf]);
+  const evidenceCounts = useMemo(() => {
+    const counts = new Map<EvidenceStatus, number>();
+    for (const row of outlinerRows) counts.set(row.status, (counts.get(row.status) ?? 0) + 1);
+    return counts;
+  }, [outlinerRows]);
+  const partNames = useMemo(() => new Map(sceneParts.map((part) => [part.id, part.name])), [sceneParts]);
+
+  const display = useMemo<PartDisplay>(() => ({
+    ...(selectedPart ? { selectedId: selectedPart.id } : {}),
+    hiddenIds,
+    ...(soloId ? { soloId } : {}),
+    ...(evidenceFocus ? { focusIds: outlinerRows.filter((row) => row.status === evidenceFocus).map((row) => row.id) } : {}),
+    ...(hatchInferred ? { hatchIds: outlinerRows.filter((row) => row.status === 'inferred').map((row) => row.id) } : {}),
+    explode,
+  }), [evidenceFocus, explode, hatchInferred, hiddenIds, outlinerRows, selectedPart, soloId]);
 
   const handleBuilt = useCallback((build: CharacterBuild | ProductBuild) => {
     // Clay/wire/X-ray are inspection render modes, not different deliverables.
     // Keep the quality evidence tied to the beauty/export build so toggling a
     // viewport aid cannot lower or inflate the product score.
-    if (mode === 'beauty') setBuildMetrics(build.metrics);
+    if (mode !== 'beauty') return;
+    setBuildMetrics(build.metrics);
+    const key = activeKeyRef.current;
+    window.setTimeout(() => {
+      if (!mountedRef.current) return;
+      setSceneParts(viewportRef.current?.listParts() ?? []);
+      const thumb = viewportRef.current?.snapshot(240);
+      if (thumb && activeKeyRef.current === key) setLibrary((entries) => entries.map((entry) => entry.key === key ? { ...entry, thumb, seen: true } : entry));
+    }, 320);
   }, [mode]);
 
   const handleMeasurementChange = useCallback((result: MeasurementResult | undefined, points: 0 | 1 | 2) => {
@@ -340,6 +458,14 @@ export function ViewerApp() {
     setDeliveryVerifying(audit === undefined);
     if (audit === undefined) setBuildMetrics(undefined);
   }, []);
+
+  const lockedSet = useMemo(() => new Set(lockedIds), [lockedIds]);
+  const handlePartSelected = useCallback((part?: InspectablePart) => {
+    if (part && lockedSet.has(part.id)) return;
+    setSelectedPart(part);
+    setScopeIds(part ? [part.id] : []);
+    if (part) setRightTab('inspector');
+  }, [lockedSet]);
 
   useEffect(() => {
     const definition = BROWSER_PROOF_ASSETS[activeAssetId];
@@ -363,7 +489,6 @@ export function ViewerApp() {
     setMeasurementResult(undefined);
     setMeasurementPoints(0);
     setMeasurementMissed(false);
-    setDimensionOverviewEnabled(false);
   }, []);
 
   const toggleMeasurement = useCallback(() => {
@@ -372,114 +497,251 @@ export function ViewerApp() {
     if (!next) clearMeasurement();
   }, [clearMeasurement, measurementEnabled]);
 
-  useEffect(() => {
-    const handleShortcut = (event: KeyboardEvent) => {
-      const target = event.target;
-      if (target instanceof HTMLInputElement || target instanceof HTMLSelectElement || target instanceof HTMLTextAreaElement) return;
-      if (event.key === 'Escape' && measurementEnabled) {
-        clearMeasurement();
-        return;
-      }
-      if (event.key.toLowerCase() === 'm' && assetKind === 'product') toggleMeasurement();
-    };
-    window.addEventListener('keydown', handleShortcut);
-    return () => window.removeEventListener('keydown', handleShortcut);
-  }, [assetKind, clearMeasurement, measurementEnabled, toggleMeasurement]);
-
-  const selectAsset = (id: string) => {
-    // A native select can dispatch change even when automation or assistive
-    // technology re-selects its current option. Do not clear a valid delivery
-    // result when the underlying asset identity has not changed.
-    if (id === activeAssetId) return;
-    const next = VIEWER_ASSETS.find((item) => item.id === id);
-    if (!next) return;
-    importIntent.cancel();
-    assemblySourceLoad.restore();setAssemblyLoadState({status:'ready'});
-    markSourceCurrent(true);
-    setActiveAssetId(next.id);
-    setAssetKind(next.kind);
-    setSelectedPart(undefined);
+  // ── IR edits with one history ─────────────────────────────────────────
+  const writeEntryIr = useCallback((ir: AssemblyIR) => {
+    const key = activeKeyRef.current;
+    setLibrary((entries) => entries.map((entry) => entry.key === key ? { ...entry, ir } : entry));
+  }, []);
+  const commitIr = useCallback((next: AssemblyIR, message: string) => {
+    if (assemblyIR) pastRef.current = [...pastRef.current.slice(-49), assemblyIR];
+    futureRef.current = [];
+    setHistoryTick((tick) => tick + 1);
     setBuildMetrics(undefined);
-    setMode('beauty');
-    setBuildingLevel('all');
-    setLightingMode('day');
-    viewportRef.current?.setBuildingLevel('all');
-    viewportRef.current?.setLighting('day');
-    setMeasurementEnabled(next.kind === 'product');
-    setMeasurementUnit(next.kind === 'product' && next.assemblyIR?.metadata?.assetKind === 'building' ? 'm' : 'mm');
-    setMeasurementResult(undefined);
-    setMeasurementPoints(0);
-    setMeasurementMissed(false);
+    setDeliveryAudit(undefined);
+    setDeliveryVerifying(true);
+    setAssemblyIR(next);
+    writeEntryIr(next);
+    note(message);
+  }, [assemblyIR, note, writeEntryIr]);
+  const stepHistory = useCallback((direction: -1 | 1) => {
+    const from = direction < 0 ? pastRef.current : futureRef.current;
+    const target = from[from.length - 1];
+    if (!target || !assemblyIR) return;
+    if (direction < 0) {
+      pastRef.current = pastRef.current.slice(0, -1);
+      futureRef.current = [...futureRef.current, assemblyIR];
+    } else {
+      futureRef.current = futureRef.current.slice(0, -1);
+      pastRef.current = [...pastRef.current, assemblyIR];
+    }
+    setHistoryTick((tick) => tick + 1);
+    setBuildMetrics(undefined);
+    setDeliveryAudit(undefined);
+    setDeliveryVerifying(true);
+    setAssemblyIR(target);
+    writeEntryIr(target);
+    note(t(direction < 0 ? 'note.undo' : 'note.redo'));
+  }, [assemblyIR, note, t, writeEntryIr]);
+
+  const editSelectedLayout = useCallback((edit: Parameters<typeof editAssemblyLayout>[2]) => {
+    if (!selectedPart || !assemblyIR) return;
+    commitIr(editAssemblyLayout(assemblyIR, selectedPart.id, edit), t('note.layout', { name: selectedPart.name }));
+  }, [assemblyIR, commitIr, selectedPart, t]);
+
+  const revertComponent = (id: string) => {
+    const original = activeEntry?.originalIr?.components.find((component) => component.id === id);
+    if (!assemblyIR || !original) return;
+    commitIr({ ...assemblyIR, components: assemblyIR.components.map((component) => component.id === id ? structuredClone(original) : component) }, t('note.reverted', { name: original.name }));
+  };
+
+  // ── Library ───────────────────────────────────────────────────────────
+  const touchImports = useCallback(() => {
+    if (importTimerRef.current !== undefined) window.clearTimeout(importTimerRef.current);
+    const expiresAt = Date.now() + IMPORTED_RESULT_TTL_MS;
+    setImportExpiresAt(expiresAt);
+    importTimerRef.current = window.setTimeout(() => {
+      importTimerRef.current = undefined;
+      setImportExpiresAt(undefined);
+      setLibrary((entries) => entries.filter((entry) => entry.kind === 'preset'));
+      if (activeKeyRef.current.startsWith('imported:')) activateRef.current(`preset:${VIEWER_ASSETS[0]!.id}`);
+      note(t('note.expired'));
+    }, IMPORTED_RESULT_TTL_MS);
+  }, [note, t]);
+
+  const activate = useCallback((key: string, entries: LibraryEntry[] = library) => {
+    const entry = entries.find((item) => item.key === key);
+    if (!entry || key === activeKeyRef.current) return;
+    const preset = VIEWER_ASSETS.find((asset) => asset.id === entry.presetId);
+    activeKeyRef.current = key;
+    setActiveKey(key);
+    setSelectedPart(undefined);
+    setScopeIds([]);
+    setHiddenIds([]);
+    setLockedIds([]);
+    setSoloId(undefined);
+    setEvidenceFocus(undefined);
+    setExplode(0);
+    setSceneParts([]);
+    setHover(undefined);
+    setBuildMetrics(undefined);
     setDeliveryAudit(undefined);
     setDeliveryVerifying(true);
     setTelemetry(undefined);
-    setImportedExpiresAt(undefined);
-    if (importExpiryTimerRef.current !== undefined) {
-      window.clearTimeout(importExpiryTimerRef.current);
-      importExpiryTimerRef.current = undefined;
-    }
-    if (next.kind === 'human') {
-      setSpec(next.spec);
-      setAssemblyIR(undefined);
-    } else {
-      setProductSpec(next.spec);
-      setAssemblyIR(next.assemblyIR);
-    }
-    setViewerNote(`${next.label} 결과를 불러왔습니다.`);
-  };
-
-  const clearImportedSession = () => {
-    importIntent.cancel();
-    if (importExpiryTimerRef.current !== undefined) window.clearTimeout(importExpiryTimerRef.current);
-    importExpiryTimerRef.current = undefined;
-    setImportedExpiresAt(undefined);
-    if (activeAssetId === 'imported') selectAsset('laurel-homes');
-    setViewerNote('가져온 결과를 브라우저 메모리에서 제거했습니다. 원본 파일은 서버로 업로드되지 않았습니다.');
-  };
-
-  const scheduleImportedExpiry = () => {
-    if (importExpiryTimerRef.current !== undefined) window.clearTimeout(importExpiryTimerRef.current);
-    const expiresAt = Date.now() + IMPORTED_RESULT_TTL_MS;
-    setImportedExpiresAt(expiresAt);
-    importExpiryTimerRef.current = window.setTimeout(() => {
-      importIntent.cancel();
-      assemblySourceLoad.restore();setAssemblyLoadState({status:'ready'});markSourceCurrent(true);
-      importExpiryTimerRef.current = undefined;
-      setImportedExpiresAt(undefined);
-      const fallback = VIEWER_ASSETS[0];
-      setActiveAssetId(fallback.id);
-      setAssetKind(fallback.kind);
-      if (fallback.kind === 'product') {
-        setProductSpec(fallback.spec);
-        setAssemblyIR(fallback.assemblyIR);
-      } else {
-        setSpec(fallback.spec);
+    setMode('beauty');
+    setBuildingLevel('all');
+    setLightingMode('day');
+    setCameraView('iso');
+    viewportRef.current?.setBuildingLevel('all');
+    viewportRef.current?.setLighting('day');
+    setMeasurementResult(undefined);
+    setMeasurementPoints(0);
+    setMeasurementMissed(false);
+    pastRef.current = [];
+    futureRef.current = [];
+    setHistoryTick((tick) => tick + 1);
+    if (entry.kind === 'imported') {
+      setActiveAssetId('imported');
+      setAssetKind('product');
+      setAssemblyIR(entry.ir);
+      setMeasurementUnit(entry.ir?.metadata?.assetKind === 'building' ? 'm' : 'mm');
+      touchImports();
+    } else if (preset) {
+      setActiveAssetId(preset.id);
+      setAssetKind(preset.kind);
+      if (preset.kind === 'human') {
+        setSpec(preset.spec);
         setAssemblyIR(undefined);
+      } else {
+        setProductSpec(preset.spec);
+        setAssemblyIR(entry.ir ?? preset.assemblyIR);
       }
-      setSelectedPart(undefined);
-      setDeliveryAudit(undefined);
-      setDeliveryVerifying(true);
-      setTelemetry(undefined);
-      setViewerNote('가져온 결과가 30분 보존기간 만료로 브라우저 메모리에서 자동 제거되었습니다.');
-    }, IMPORTED_RESULT_TTL_MS);
-  };
+      setMeasurementUnit(preset.kind === 'product' && preset.assemblyIR?.metadata?.assetKind === 'building' ? 'm' : 'mm');
+    }
+    setLibrary((items) => items.map((item) => item.key === key ? { ...item, seen: true } : item));
+    note(t('note.loaded', { name: entry.name }));
+  }, [library, note, t, touchImports]);
+  const activateRef = useRef(activate);
+  activateRef.current = activate;
 
-  const runAction = (name: string, action: () => Promise<ExportReceipt | void>) => {
-    if (assemblySourceLoad.blocked) { setViewerNote('선택한 IR을 유효하게 읽거나 파일 선택을 취소한 뒤 저장하세요.'); return; }
-    const unfinished = jobsRef.current.filter((job) => job.status === 'queued' || job.status === 'running').length;
-    if (unfinished >= 6) {
-      setViewerNote('로컬 내보내기 대기열은 최대 6개입니다. 완료 또는 취소 후 다시 시도하세요.');
+  const importFiles = useCallback(async (files: File[]) => {
+    if (files.length === 0) return;
+    setSourceCurrent(false);
+    const added: LibraryEntry[] = [];
+    const failed: Array<{ name: string; error: string }> = [];
+    let number = Math.max(0, ...library.map((entry) => entry.number));
+    for (const file of files) {
+      try {
+        const ir = await readAssemblyFile(file);
+        number += 1;
+        added.push({ key: `imported:${number}:${file.name}`, number, kind: 'imported', presetId: 'imported', name: ir.name, fileName: file.name, ir, originalIr: ir, seen: false });
+      } catch (error) {
+        failed.push({ name: file.name, error: error instanceof Error ? error.message : String(error) });
+      }
+    }
+    if (!mountedRef.current) return;
+    setSourceCurrent(true);
+    setFailures(failed);
+    if (added.length === 0) {
+      if (failed[0]) note(`${failed[0].name}: ${failed[0].error}`);
       return;
     }
-    const job: LocalJob = { id: ++jobSequenceRef.current, name, action: async () => { assemblySourceLoad.assertReady(); return action(); }, status: 'queued' };
+    const next = [...library, ...added];
+    setLibrary(next);
+    setLibraryFilter('imported');
+    setRightTab('library');
+    setRightCollapsed(false);
+    note(t('library.added', { n: added.length }));
+    touchImports();
+    activate(added[0]!.key, next);
+  }, [activate, library, note, t, touchImports]);
+
+  const clearImported = () => {
+    if (importTimerRef.current !== undefined) window.clearTimeout(importTimerRef.current);
+    importTimerRef.current = undefined;
+    setImportExpiresAt(undefined);
+    const presets = library.filter((entry) => entry.kind === 'preset');
+    setLibrary(presets);
+    setFailures([]);
+    if (activeKey.startsWith('imported:')) activate(`preset:${VIEWER_ASSETS[0]!.id}`, presets);
+    note(t('note.cleared'));
+  };
+
+  const filteredLibrary = library.filter((entry) => libraryFilter === 'all' || (libraryFilter === 'imported' ? entry.kind === 'imported' : entry.kind === 'preset'));
+  const stepLibrary = useCallback((direction: -1 | 1) => {
+    const list = library.filter((entry) => libraryFilter === 'all' || (libraryFilter === 'imported' ? entry.kind === 'imported' : entry.kind === 'preset'));
+    const index = list.findIndex((entry) => entry.key === activeKeyRef.current);
+    const next = list[(index + direction + list.length) % list.length];
+    if (next) activate(next.key);
+  }, [activate, library, libraryFilter]);
+
+  // ── Part actions ──────────────────────────────────────────────────────
+  const selectFromOutliner = (id: string, additive: boolean) => {
+    if (additive) {
+      setScopeIds((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id]);
+      return;
+    }
+    const part = viewportRef.current?.partInfo(id) ?? sceneParts.find((item) => item.id === id);
+    if (!part) return;
+    setSelectedPart(part);
+    setScopeIds([id]);
+  };
+  const toggleHidden = useCallback((id: string) => {
+    setHiddenIds((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id]);
+  }, []);
+  const toggleSolo = useCallback((id: string) => setSoloId((current) => current === id ? undefined : id), []);
+  const toggleLocked = (id: string) => {
+    setLockedIds((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id]);
+    if (selectedPart?.id === id) setSelectedPart(undefined);
+  };
+  const setView = (view: CameraView) => {
+    setCameraView(view);
+    viewportRef.current?.setView(view);
+    compareRef.current?.setView(view);
+  };
+
+  // ── Shortcuts ─────────────────────────────────────────────────────────
+  useEffect(() => {
+    const handleShortcut = (event: KeyboardEvent) => {
+      const meta = event.metaKey || event.ctrlKey;
+      if (meta && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        setCommandOpen((open) => !open);
+        return;
+      }
+      if (isTyping(event.target)) return;
+      if (meta && event.key.toLowerCase() === 'z') {
+        event.preventDefault();
+        stepHistory(event.shiftKey ? 1 : -1);
+        return;
+      }
+      if (meta || (event.altKey && event.code !== 'KeyH')) return;
+      if (event.key === 'Escape') {
+        if (commandOpen) setCommandOpen(false);
+        else if (measurementEnabled) clearMeasurement();
+        else if (soloId || evidenceFocus) { setSoloId(undefined); setEvidenceFocus(undefined); }
+        return;
+      }
+      if (event.key === '?') { helpRef.current?.showModal(); return; }
+      if (event.code === 'KeyH') {
+        if (event.altKey) setHiddenIds([]);
+        else if (selectedPart) { toggleHidden(selectedPart.id); note(t('note.hidden', { name: selectedPart.name })); setSelectedPart(undefined); }
+        return;
+      }
+      if (event.key === 'f' && selectedPart) { viewportRef.current?.focusPart(selectedPart.id); return; }
+      if (event.key === '/' && selectedPart) { event.preventDefault(); toggleSolo(selectedPart.id); return; }
+      if (event.key === 'm' && assetKind === 'product') { toggleMeasurement(); return; }
+      if (event.key === '[') stepLibrary(-1);
+      if (event.key === ']') stepLibrary(1);
+    };
+    window.addEventListener('keydown', handleShortcut);
+    return () => window.removeEventListener('keydown', handleShortcut);
+  }, [assetKind, clearMeasurement, commandOpen, evidenceFocus, measurementEnabled, note, selectedPart, soloId, stepHistory, stepLibrary, t, toggleHidden, toggleMeasurement, toggleSolo]);
+
+  // ── Export queue ──────────────────────────────────────────────────────
+  const runAction = (name: string, action: () => Promise<ExportReceipt | void>) => {
+    const unfinished = jobsRef.current.filter((job) => job.status === 'queued' || job.status === 'running').length;
+    if (unfinished >= 6) {
+      note(t('note.queueFull'));
+      return;
+    }
+    const job: LocalJob = { id: ++jobSequenceRef.current, name, action, status: 'queued' };
     const retainedUnfinished = jobsRef.current.filter((item) => item.status === 'queued' || item.status === 'running');
     const retainedFinished = jobsRef.current
       .filter((item) => item.status !== 'queued' && item.status !== 'running')
       .slice(-Math.max(0, 7 - retainedUnfinished.length));
-    const retained = retainedUnfinished.concat(retainedFinished);
-    jobsRef.current = [...retained, job];
+    jobsRef.current = [...retainedUnfinished, ...retainedFinished, job];
     syncJobs();
-    setViewerNote(`${name} 작업을 로컬 대기열에 추가했습니다.`);
+    note(t('note.queue', { name }));
     window.queueMicrotask(() => processNextJobRef.current());
   };
 
@@ -489,7 +751,6 @@ export function ViewerApp() {
     if (job.status === 'running') viewportRef.current?.cancelExport();
     job.status = 'cancelled';
     syncJobs();
-    setViewerNote(`${job.name} 작업을 취소했습니다.`);
   };
 
   const retryJob = (id: number) => {
@@ -502,7 +763,7 @@ export function ViewerApp() {
 
   const activeName = assetKind === 'human'
     ? spec.outfit === 'web-hero' ? 'ML—WEB_HERO_01' : 'ML—HUMAN_BASE'
-    : assemblyIR ? assemblyIR.name.toUpperCase() : productSpec.kind === 'smartphone' ? 'ML—PHONE_ASSEMBLY' : 'ML—ORNATE_BLADE';
+    : assemblyIR ? assemblyIR.name : productSpec.kind === 'smartphone' ? 'ML—PHONE_ASSEMBLY' : 'ML—ORNATE_BLADE';
   const sourcePayload = assetKind === 'human'
     ? { schema: 'morphloom.character/0.2', spec, interpretation: spec.outfit === 'web-hero' ? WEB_HERO_VISUAL_INTERPRETATION : undefined }
     : assemblyIR
@@ -523,172 +784,493 @@ export function ViewerApp() {
         : productEngineering?.electricalApplicable
           ? 'Digital assembly is separate from physical bench continuity and manufacturing approval.'
           : 'Editable visualization asset; manufacturing STEP/BREP approval is excluded.';
-  const primaryMeasurement = measurementResult
-    ? measurementResult.distanceMeters
-    : undefined;
   const measurementPrompt = !measurementEnabled
-    ? '실측 시작을 눌러 켜세요'
+    ? t('measure.startHint')
     : measurementMissed
-      ? '표면이 선택되지 않았습니다 · 모델 위를 다시 선택하세요'
-    : measurementPoints === 0
-      ? '표면에서 A점을 선택하세요'
-      : measurementPoints === 1
-        ? '표면에서 B점을 선택하세요'
-        : '완료 · 다음 선택은 새 A점';
+      ? t('measure.miss')
+      : measurementPoints === 0 ? t('measure.pickA') : measurementPoints === 1 ? t('measure.pickB') : t('measure.done');
+
+  const packBlockReason = !sourceCurrent ? t('export.blockedSource') : qualityBlocked ? t('export.blockedQuality') : deliveryAudit?.status === 'blocked' ? t('export.blockedAudit') : undefined;
+  const glbBlockReason = !sourceCurrent ? t('export.blockedSource') : deliveryAudit?.status === 'blocked' ? t('export.blockedAudit') : undefined;
+  const auditPending = !deliveryAudit || deliveryVerifying;
+  const commandDisabledReason = assemblyIR ? undefined : t('cmd.needsIr');
+  const materials = useMemo(() => {
+    const groups = new Map<string, { name: string; color: string; roughness?: number; metalness?: number; count: number }>();
+    for (const component of assemblyIR?.components ?? []) {
+      const key = `${component.materialName}|${component.material.color}`;
+      const group = groups.get(key) ?? { name: component.materialName, color: component.material.color, ...(component.material.roughness !== undefined ? { roughness: component.material.roughness } : {}), ...(component.material.metalness !== undefined ? { metalness: component.material.metalness } : {}), count: 0 };
+      group.count += 1;
+      groups.set(key, group);
+    }
+    return [...groups.values()].sort((a, b) => b.count - a.count);
+  }, [assemblyIR]);
+  const selectedComponent = selectedPart ? componentById.get(selectedPart.id) : undefined;
+  const selectedStatus = selectedPart ? statusOf(selectedPart) : undefined;
+  const pipeline: Array<[string, string]> = assetKind === 'human' ? [
+    ['CHARACTER IR', 'pass'], ['MORPH', pack ? 'pass' : 'run'], ['MATERIAL', pack ? 'pass' : 'wait'],
+    ['RIG', deliveryAudit?.status === 'blocked' ? 'blocked' : deliveryAudit?.reopened?.skeletons && deliveryAudit.reopened.animationClips >= 22 ? 'pass' : deliveryAudit ? 'warn' : 'run'],
+    ['TOPOLOGY', pack ? 'pass' : 'wait'], ['EXPORT', qualityBlocked || deliveryAudit?.status === 'blocked' ? 'blocked' : deliveryAudit ? 'ready' : 'run'],
+  ] : [
+    ['SOURCE', 'pass'], [assemblyIR || productSpec.kind === 'ornate-knife' ? 'ASSEMBLY IR' : 'PRODUCT SPEC', 'pass'], ['COMPILE', pack ? 'pass' : 'run'],
+    ['TOPOLOGY', pack ? 'pass' : 'wait'], ['PART TREE', pack ? 'pass' : 'wait'], ['EXPORT', qualityBlocked || deliveryAudit?.status === 'blocked' ? 'blocked' : deliveryAudit ? 'ready' : 'run'],
+  ];
+  const openSection = (next: RailSection) => {
+    if (section === next && !leftCollapsed) setLeftCollapsed(true);
+    else { setSection(next); setLeftCollapsed(false); }
+  };
+  const noteVisible = Date.now() - noteStamp < 5000;
+  useEffect(() => {
+    if (!noteStamp) return;
+    const timer = window.setTimeout(() => setNoteStamp((stamp) => stamp), 5100);
+    return () => window.clearTimeout(timer);
+  }, [noteStamp]);
+  const formatPartsCount = (n: number) => n.toLocaleString(locale);
+
+  // ── Panels ────────────────────────────────────────────────────────────
+  const partsPanel = (
+    <Outliner
+      t={t}
+      rows={outlinerRows}
+      loading={!buildMetrics && sceneParts.length === 0}
+      {...(selectedPart ? { selectedId: selectedPart.id } : {})}
+      scopeIds={scopeIds}
+      hidden={new Set(hiddenIds)}
+      locked={lockedSet}
+      {...(soloId ? { soloId } : {})}
+      onSelect={selectFromOutliner}
+      onToggleHidden={toggleHidden}
+      onToggleLocked={toggleLocked}
+      onToggleSolo={toggleSolo}
+    />
+  );
+
+  const materialsPanel = (
+    <div className="st-stack">
+      {materials.length === 0 ? <p className="st-empty">{t('materials.none')}</p> : (
+        <ul className="material-list">
+          {materials.map((item) => (
+            <li key={`${item.name}-${item.color}`}>
+              <span className="material-chip" style={{ background: item.color }} aria-hidden="true" />
+              <span className="row-name">{item.name}</span>
+              <span className="num muted">{item.roughness !== undefined ? `R ${item.roughness.toFixed(2)}` : ''}{item.metalness !== undefined ? ` · M ${item.metalness.toFixed(2)}` : ''}</span>
+              <span className="num">{item.count}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+      {productMetrics && (
+        <dl className="st-metrics">
+          <div><dt>{t('materials.finishes')}</dt><dd className="num">{productMetrics.surfaces.distinctFinishes}</dd></div>
+          <div><dt>{t('materials.microNormal')}</dt><dd className="num">{productMetrics.surfaces.microNormalMaterials}</dd></div>
+          <div><dt>{t('materials.anisotropic')}</dt><dd className="num">{productMetrics.surfaces.anisotropicMaterials}</dd></div>
+          <div><dt>{t('materials.optical')}</dt><dd className="num">{productMetrics.surfaces.transmissionMaterials}</dd></div>
+        </dl>
+      )}
+    </div>
+  );
+
+  const measurePanel = assetKind !== 'product' ? <p className="st-empty">{t('cmd.needsIr')}</p> : (
+    <div className="st-stack" aria-live="polite">
+      <button className={`st-button is-wide${measurementEnabled ? ' is-primary' : ''}`} aria-pressed={measurementEnabled} aria-keyshortcuts="M" onClick={toggleMeasurement}>
+        <Ruler size={15} />{measurementEnabled ? t('measure.on') : t('measure.off')}
+      </button>
+      <div className="st-field">
+        <span className="st-label">{t('measure.type')}</span>
+        <div className="st-segment" role="radiogroup" aria-label={t('measure.type')}>
+          <button role="radio" aria-checked="true" className="is-on" disabled={!measurementEnabled}>{t('measure.distance')}</button>
+        </div>
+      </div>
+      <div className="st-field">
+        <span className="st-label">{t('measure.overlay')}</span>
+        <label className="st-switch">
+          <input type="checkbox" checked={dimensionOverviewEnabled} onChange={(event) => setDimensionOverviewEnabled(event.target.checked)} />
+          <span>{t('measure.overlayOn')}</span>
+        </label>
+      </div>
+      <label className="st-field">
+        <span className="st-label">{t('measure.unit')}</span>
+        <select className="st-select" value={measurementUnit} onChange={(event) => setMeasurementUnit(event.target.value as MeasurementUnit)}>
+          <option value="mm">mm</option><option value="cm">cm</option><option value="m">m</option>
+        </select>
+      </label>
+      <div className={`measure-readout-card${measurementResult ? ' has-result' : ''}`}>
+        <div className="caliper" aria-hidden="true"><i className={measurementPoints >= 1 ? 'is-set' : ''}>A</i><span /><i className={measurementPoints >= 2 ? 'is-set' : ''}>B</i></div>
+        {measurementResult ? (
+          <>
+            <span className="st-label">{t('measure.result')}</span>
+            <strong className="num">{formatMeasurement(measurementResult.distanceMeters, measurementUnit)}</strong>
+            <dl className="st-metrics is-three">
+              <div><dt>ΔX</dt><dd className="num">{formatMeasurement(measurementResult.deltaMeters.x, measurementUnit)}</dd></div>
+              <div><dt>ΔY</dt><dd className="num">{formatMeasurement(measurementResult.deltaMeters.y, measurementUnit)}</dd></div>
+              <div><dt>ΔZ</dt><dd className="num">{formatMeasurement(measurementResult.deltaMeters.z, measurementUnit)}</dd></div>
+            </dl>
+          </>
+        ) : <p>{measurementPrompt}</p>}
+      </div>
+      <button className="st-button is-quiet" disabled={!measurementEnabled || measurementPoints === 0} onClick={clearMeasurement}>{t('measure.clear')}</button>
+      <p className="st-footnote">{t('measure.help')}</p>
+    </div>
+  );
+
+  const checksPanel = (
+    <div className="st-stack">
+      <div className={`score-card${qualityBlocked ? ' is-blocked' : ''}`}>
+        <strong className="num">{quality?.total ?? '—'}</strong><span className="num muted">/100</span>
+        {qualityBlocked && <em>{t('top.blocked')} {blockedChecks}</em>}
+      </div>
+      {(architecturalResult || surfaceBenchmarkResult) && quality && (
+        <div className={`st-note${quality.deliveryReady ? ' is-pass' : ' is-warn'}`}>
+          <b>{t('checks.sourceConfidence')} <span className="num">{quality.evidenceScore ?? '—'}/100</span></b>
+        </div>
+      )}
+      <ul className="check-list">
+        {quality?.checks.map((check) => (
+          <li key={check.id}>
+            <StatusMark status={check.status} />
+            <div><b>{check.label}</b><small>{check.detail}</small></div>
+            <span className="num">{check.score}</span>
+          </li>
+        )) ?? Array.from({ length: 5 }, (_, index) => <li key={index} className="is-skeleton" />)}
+      </ul>
+      {assemblyIR?.fidelity && fidelityAudit && (
+        <div className={`st-note${fidelityAudit.pass ? ' is-pass' : ' is-blocked'}`}>
+          <b>{t('checks.fidelity')}</b>
+          <p>{fidelityAudit.pass
+            ? `${Math.round(fidelityAudit.componentCoverage * 100)}% · ${Math.round(assemblyIR.fidelity.targetFidelity * 100)}% · ${assemblyIR.fidelity.maxTotalIterations}×`
+            : fidelityAudit.blockers.slice(0, 3).join(' · ')}</p>
+        </div>
+      )}
+      {assetKind === 'product' && productEngineering && (
+        <div className="st-note">
+          <b>{t('checks.engineering')}</b>
+          <dl className="evidence-bars">
+            {EVIDENCE_ORDER.map((status) => {
+              const count = status === 'undocumented' ? productEngineering.componentEvidence.undocumented : productEngineering.componentEvidence[status];
+              return <div key={status}><dt><i className={`ev-swatch ev-${status}`} />{t(`evidence.${status}`)}</dt><dd className="num">{count}</dd></div>;
+            })}
+          </dl>
+          {productEngineering.electricalApplicable && <p className="num muted">PIN {Math.round(productEngineering.physicalPinCoverage * 100)}% · AWG {Math.round(productEngineering.conductorGaugeCoverage * 100)}% · VERIFY {Math.round(productEngineering.conductorVerificationCoverage * 100)}%</p>}
+        </div>
+      )}
+      <div className="st-note"><b>{t('checks.boundary')}</b><p>{evidenceBoundary}</p></div>
+      <div className="pipeline" aria-label={t('checks.pipeline')}>
+        {pipeline.map(([label, state], index) => <span key={label} className={`pipe pipe-${state}`}><i />{String(index + 1).padStart(2, '0')} {label}<small>{state.toUpperCase()}</small></span>)}
+      </div>
+    </div>
+  );
+
+  const exportPanel = (
+    <div className="st-stack">
+      <div className="gate-grid">
+        <div className={`gate ${auditPending ? 'is-wait' : glbBlockReason ? 'is-blocked' : 'is-pass'}`}>
+          <span className="st-label">{t('export.gateGlb')}</span>
+          <b>{auditPending ? t('export.verifying') : glbBlockReason ? t('export.blocked') : t('export.ready')}</b>
+          {glbBlockReason && <small>{glbBlockReason}</small>}
+        </div>
+        <div className={`gate ${auditPending ? 'is-wait' : packBlockReason ? 'is-blocked' : 'is-pass'}`}>
+          <span className="st-label">{t('export.gatePack')}</span>
+          <b>{auditPending ? t('export.verifying') : packBlockReason ? t('export.blocked') : t('export.ready')}</b>
+          {packBlockReason && <small>{packBlockReason}</small>}
+        </div>
+      </div>
+      <div>
+        <span className="st-label">{t('export.checklist')}</span>
+        <dl className="checklist">
+          <div><dt>{t('export.reopen')}</dt><dd className={`num tone-${deliveryAudit?.status ?? 'wait'}`}>{deliveryAudit ? deliveryAudit.status.toUpperCase() : t('export.verifying')}</dd></div>
+          <div><dt>{t('export.drift')}</dt><dd className="num">{deliveryAudit ? `${deliveryAudit.boundsErrorMm.toFixed(3)} mm` : '—'}</dd></div>
+          <div><dt>{t('export.named')}</dt><dd className="num">{deliveryAudit ? `${Math.round(deliveryAudit.namedNodeCoverage * 100)}%` : '—'}</dd></div>
+          <div><dt>{t('export.validator')}</dt><dd className="num">{deliveryAudit?.standardValidation ? `${deliveryAudit.standardValidation.errors} ${t('export.errors')} · ${deliveryAudit.standardValidation.warnings} ${t('export.warnings')}` : deliveryAudit ? t('export.notRun') : '—'}</dd></div>
+          <div><dt>{t('export.size')}</dt><dd className="num">{deliveryAudit ? bytesLabel(deliveryAudit.glbBytes) : '—'}</dd></div>
+        </dl>
+        {deliveryAudit?.status === 'blocked' && <p className="st-note is-blocked">{deliveryAudit.blockers.join(' · ')}</p>}
+      </div>
+      <button className="st-button is-primary is-wide is-tall" disabled={!pack || Boolean(packBlockReason)} title={packBlockReason} onClick={() => runAction('ASSET PACK', () => viewportRef.current!.exportAssetPack({
+        assetId: activeAssetId, assetName: activeName, sourceIr: sourcePayload, qualityReport: quality, evidenceBoundary,
+      }))}>
+        <Download size={16} /><span><b>{t('export.pack')}</b><small>{t('export.packDetail')}</small></span>
+      </button>
+      <div>
+        <span className="st-label">{t('export.formats')}</span>
+        <div className="format-grid">
+          {([
+            ['GLB', () => viewportRef.current!.exportGlb(), 'Blender · Unity · Unreal · Godot'],
+            ['OBJ', () => viewportRef.current!.exportObj(), 'Maya · C4D · 3ds Max'],
+            ['STL · mm', () => viewportRef.current!.exportStl(), 'Fusion · slicer'],
+            ['PLY', () => viewportRef.current!.exportPly(), 'MeshLab · CloudCompare'],
+            ['USDZ', () => viewportRef.current!.exportUsdz(), 'Apple AR'],
+            ['SVG', () => viewportRef.current!.exportFigmaSvg(), 'Figma 2D'],
+            ['PNG', () => viewportRef.current!.capturePng(), '—'],
+          ] as Array<[string, () => Promise<ExportReceipt>, string]>).map(([label, action, hint]) => (
+            <button key={label} className="st-button" disabled={!pack || Boolean(glbBlockReason)} title={glbBlockReason ?? hint} onClick={() => runAction(label, action)}>
+              <b>{label}</b><small>{hint}</small>
+            </button>
+          ))}
+        </div>
+      </div>
+      <div>
+        <span className="st-label">{t('export.source')}</span>
+        <div className="format-grid">
+          <button className="st-button" disabled={!sourceCurrent} onClick={() => downloadJson(sourcePayload, sourceFileName)}><b>{t('export.saveIr')}</b><small>{sourceFileName}</small></button>
+          {assetKind === 'product' && assemblyIR?.electrical && <button className="st-button" onClick={() => downloadJson(buildPhysicalNetlist(assemblyIR), 'morphloom-physical-netlist.json')}><b>{t('export.saveNetlist')}</b><small>netlist.json</small></button>}
+          <button className="st-button" disabled={!pack || !assemblyIR || !sourceCurrent} title={assemblyIR ? t('export.blenderKitNote') : t('cmd.needsIr')} onClick={() => assemblyIR && runAction('BLENDER NORMAL KIT', () => viewportRef.current!.exportBlenderNormalKit(assemblyIR))}><b>{t('export.blenderKit')}</b><small>ZIP</small></button>
+        </div>
+      </div>
+      {jobs.length > 0 && (
+        <div aria-live="polite">
+          <span className="st-label">{t('export.queue')} · {busyAction ? t('export.running') : t('export.idle')}</span>
+          <ul className="job-list">
+            {jobs.slice(-5).reverse().map((job) => (
+              <li key={job.id}>
+                <span className="num">#{job.id}</span><b>{job.name}</b><span className={`tone-${job.status}`}>{job.status.toUpperCase()}</span>
+                {(job.status === 'queued' || job.status === 'running') && <button className="st-link" onClick={() => cancelJob(job.id)}>{t('export.cancel')}</button>}
+                {job.status === 'failed' && <button className="st-link" onClick={() => retryJob(job.id)}>{t('export.retry')}</button>}
+                {(job.durationMs !== undefined || job.outputBytes !== undefined) && <small className="num">{job.durationMs !== undefined ? `${job.durationMs.toFixed(0)} ms` : ''}{job.outputBytes !== undefined ? ` · ${bytesLabel(job.outputBytes)}` : ''}</small>}
+                {job.error && <small className="tone-failed">{job.error}</small>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <div className="st-inline">
+        <span className="st-label">{t('export.proof')} <span className="num">{Object.keys(browserProofReceipts).length}/{BROWSER_PROOF_EXPECTED_COUNT}</span></span>
+        <button className="st-button is-quiet" disabled={!sourceCurrent || Object.keys(browserProofReceipts).length === 0} onClick={() => {
+          const report = createBrowserRoundTripReport(
+            Object.values(browserProofReceipts).map((receipt) =>
+              receipt.id === BROWSER_PROOF_ASSETS[activeAssetId]?.id && !observedQualityReleaseReady
+                ? { ...receipt, qualityReleaseReady: false } : receipt),
+            getBrowserConsoleEvidence(),
+          );
+          downloadJson(report, 'morphloom-browser-roundtrip.json');
+        }}>{t('export.saveProof')}</button>
+      </div>
+      <div className="st-note">
+        <b>{t('export.scope')}</b>
+        <p>GLB · OBJ · PLY · STL (mm) · SVG · USDZ</p>
+        <p className="muted">{t('export.scopeNote')}</p>
+      </div>
+    </div>
+  );
+
+  const settingsPanel = (
+    <div className="st-stack">
+      <label className="st-field">
+        <span className="st-label">{t('settings.language')}</span>
+        <select className="st-select" value={locale} onChange={(event) => setLocale(event.target.value as Locale)}>
+          {LOCALES.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
+        </select>
+      </label>
+      <div className="st-field">
+        <span className="st-label">{t('settings.theme')}</span>
+        <div className="st-segment" role="group" aria-label={t('settings.theme')}>
+          {(['dark', 'light'] as Theme[]).map((item) => <button key={item} className={theme === item ? 'is-on' : ''} aria-pressed={theme === item} onClick={() => setTheme(item)}>{t(`settings.${item}`)}</button>)}
+        </div>
+      </div>
+      <div>
+        <span className="st-label">{t('settings.privacy')}</span>
+        <dl className="checklist">
+          <div><dt>{t('settings.compile')}</dt><dd className="num">{telemetry ? `${telemetry.compileMs.toFixed(1)} ms` : '—'}</dd></div>
+          <div><dt>{t('settings.memory')}</dt><dd className="num">{bytesLabel(telemetry?.estimatedRenderBytes ?? 0)}</dd></div>
+          <div><dt>{t('settings.upload')}</dt><dd>{t('settings.uploadNone')}</dd></div>
+        </dl>
+        <p className="st-footnote">{t('settings.privacyNote')}</p>
+      </div>
+      {library.some((entry) => entry.kind === 'imported') && (
+        <button className="st-button is-quiet" onClick={clearImported}><Trash2 size={14} />{t('settings.clearImported')}{importExpiresAt && <small className="num">{t('settings.expires', { n: Math.max(1, Math.ceil((importExpiresAt - Date.now()) / 60_000)) })}</small>}</button>
+      )}
+      <button className="st-button is-quiet" onClick={() => helpRef.current?.showModal()}><Keyboard size={14} />{t('rail.shortcuts')}</button>
+    </div>
+  );
+
+  const panels: Record<RailSection, React.ReactNode> = { parts: partsPanel, materials: materialsPanel, measure: measurePanel, checks: checksPanel, export: exportPanel, settings: settingsPanel };
+  const panelTitles: Record<RailSection, MessageKey> = { parts: 'parts.title', materials: 'materials.title', measure: 'measure.title', checks: 'checks.title', export: 'export.title', settings: 'settings.title' };
+
+  const libraryPanel = (
+    <div className="library">
+      <div className="library-head">
+        <div className="st-segment" role="group" aria-label={t('library.title')}>
+          {(['all', 'imported', 'presets'] as LibraryFilter[]).map((item) => (
+            <button key={item} className={libraryFilter === item ? 'is-on' : ''} aria-pressed={libraryFilter === item} onClick={() => setLibraryFilter(item)}>
+              {t(item === 'all' ? 'library.all' : item === 'imported' ? 'library.imported' : 'library.presets')}
+              <span className="num">{item === 'all' ? library.length : library.filter((entry) => (item === 'imported') === (entry.kind === 'imported')).length}</span>
+            </button>
+          ))}
+        </div>
+        <button className="st-button is-primary" disabled={queueLocked} onClick={() => fileInputRef.current?.click()}><FolderOpen size={14} />{t('library.open')}</button>
+      </div>
+      {failures.length > 0 && (
+        <div className="st-note is-blocked" role="alert">
+          <b>{t('library.failed')} <span className="num">{failures.length}</span></b>
+          <ul>{failures.slice(0, 4).map((item) => <li key={item.name}><span className="num">{item.name}</span> · {item.error}</li>)}</ul>
+        </div>
+      )}
+      {filteredLibrary.length === 0 ? (
+        <button className="library-empty" onClick={() => fileInputRef.current?.click()}><FolderOpen size={22} /><span>{t('library.emptyImported')}</span></button>
+      ) : (
+        <div className="library-grid" role="listbox" aria-label={t('library.title')}>
+          {filteredLibrary.map((entry) => (
+            <div key={entry.key} className={`cell-wrap${compareKey === entry.key ? ' is-compared' : ''}`}>
+              <button
+                role="option"
+                aria-selected={entry.key === activeKey}
+                className={`cell${entry.key === activeKey ? ' is-active' : ''}`}
+                disabled={queueLocked && entry.key !== activeKey}
+                title={entry.fileName ?? entry.name}
+                onClick={() => activate(entry.key)}
+              >
+                <span className="cell-thumb">{entry.thumb && <img src={entry.thumb} alt="" />}</span>
+                <span className="cell-no num">{String(entry.number).padStart(2, '0')}</span>
+                {entry.seen && entry.key !== activeKey && <span className="cell-seen" aria-label={t('library.seen')}><Check size={11} strokeWidth={2.5} /></span>}
+                <span className="cell-label"><span>{entry.fileName ? entry.fileName.replace(/\.json$/i, '') : entry.name}</span></span>
+              </button>
+              {entry.key !== activeKey && (
+                <button
+                  className={`cell-compare${compareKey === entry.key ? ' is-on' : ''}`}
+                  aria-pressed={compareKey === entry.key}
+                  aria-label={t('library.compare')}
+                  title={t('library.compare')}
+                  onClick={() => setCompareKey(compareKey === entry.key ? undefined : entry.key)}
+                ><Columns2 size={13} /></button>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+      <p className="st-footnote">{t('library.prevNext')}</p>
+    </div>
+  );
+
+  const inspectorPanel = !selectedPart ? (
+    <div className="inspector-empty">
+      <Box size={22} aria-hidden="true" />
+      <b>{t('inspector.none')}</b>
+      <p>{t('inspector.noneDetail')}</p>
+      {assemblyIR && (
+        <dl className="st-metrics is-three">
+          <div><dt>{t('inspector.sourceParts')}</dt><dd className="num">{assemblyIR.components.length}</dd></div>
+          <div><dt>{t('inspector.conductors')}</dt><dd className="num">{productConnectivity?.wires ?? 0}</dd></div>
+          <div><dt>{t('inspector.pins')}</dt><dd className="num">{productConnectivity?.documentedPhysicalPins ?? 0}</dd></div>
+        </dl>
+      )}
+    </div>
+  ) : (
+    <div className="inspector">
+      <header className="inspector-head">
+        <div>
+          <h3>{selectedPart.name}</h3>
+          <span className="num muted">{selectedPart.id}</span>
+        </div>
+        {selectedStatus && <span className={`ev-badge ev-${selectedStatus}`}>{t(`evidence.${selectedStatus}`)}</span>}
+      </header>
+      {editedIds.has(selectedPart.id) && (
+        <div className="override-row">
+          <span className="override-badge">{t('inspector.edited')}</span>
+          <button className="st-link" onClick={() => revertComponent(selectedPart.id)}><Undo2 size={13} />{t('inspector.revert')}</button>
+        </div>
+      )}
+      <dl className="kv">
+        <div><dt>{t('inspector.category')}</dt><dd>{selectedPart.category}</dd></div>
+        <div><dt>{t('inspector.material')}</dt><dd>{selectedComponent && <i className="material-chip is-small" style={{ background: selectedComponent.material.color }} />}{selectedPart.material}</dd></div>
+        <div><dt>{t('inspector.surface')}</dt><dd>{selectedPart.surface}</dd></div>
+        {selectedComponent && <div><dt>{t('inspector.geometry')}</dt><dd className="num">{selectedComponent.geometry.op}</dd></div>}
+        {selectedComponent?.position && <div><dt>{t('inspector.position')}</dt><dd className="num">{selectedComponent.position.map((value) => Math.round(value)).join(' · ')}</dd></div>}
+        {selectedComponent?.evidence && <div><dt>{t('inspector.source')}</dt><dd className="num">{selectedComponent.evidence.source ?? '—'}</dd></div>}
+      </dl>
+      {selectedPart.detail && <p className="inspector-detail">{selectedPart.detail}</p>}
+      <button className="st-button is-quiet" onClick={() => viewportRef.current?.focusPart(selectedPart.id)}><Maximize2 size={13} />{t('inspector.focus')} <kbd>F</kbd></button>
+      {layoutEditable && assemblyIR && (
+        <div className="layout-pad" aria-label={t('inspector.layout')}>
+          <span className="st-label">{t('inspector.layout')}</span>
+          <div>
+            <button aria-label="-X 250 mm" onClick={() => editSelectedLayout({ kind: 'translate', deltaMm: [-250, 0, 0] })}><ArrowLeft size={14} /></button>
+            <button aria-label="-Z 250 mm" onClick={() => editSelectedLayout({ kind: 'translate', deltaMm: [0, 0, -250] })}><ArrowUp size={14} /></button>
+            <button aria-label="+Z 250 mm" onClick={() => editSelectedLayout({ kind: 'translate', deltaMm: [0, 0, 250] })}><ArrowDown size={14} /></button>
+            <button aria-label="+X 250 mm" onClick={() => editSelectedLayout({ kind: 'translate', deltaMm: [250, 0, 0] })}><ArrowRight size={14} /></button>
+            <button aria-label="-15°" onClick={() => editSelectedLayout({ kind: 'rotateY', radians: -Math.PI / 12 })}><RotateCcw size={14} /> 15°</button>
+            <button aria-label="+15°" onClick={() => editSelectedLayout({ kind: 'rotateY', radians: Math.PI / 12 })}><RotateCw size={14} /> 15°</button>
+            <button onClick={() => baselineAssemblyIR && editSelectedLayout({ kind: 'reset', source: baselineAssemblyIR })}>{t('inspector.reset')}</button>
+          </div>
+        </div>
+      )}
+      {assetKind === 'product' && assemblyIR && (
+        <AssemblyComponentEditor sourceCurrent={sourceCurrent} isSourceCurrent={() => sourceCurrent} ir={assemblyIR} selectedId={selectedPart.id} onCommit={(next) => commitIr(next, t('note.edit'))} />
+      )}
+    </div>
+  );
+
+  const compareEntry = compareKey && compareKey !== activeKey ? library.find((entry) => entry.key === compareKey) : undefined;
+  const compareView = useMemo(() => {
+    if (!compareEntry) return undefined;
+    const preset = VIEWER_ASSETS.find((asset) => asset.id === compareEntry.presetId);
+    if (compareEntry.kind === 'imported' || !preset) return { kind: 'product' as AssetKind, spec: DEFAULT_SPEC, productSpec: DEFAULT_PRODUCT_SPEC, ir: compareEntry.ir };
+    return preset.kind === 'human'
+      ? { kind: 'human' as AssetKind, spec: preset.spec, productSpec: DEFAULT_PRODUCT_SPEC, ir: undefined }
+      : { kind: 'product' as AssetKind, spec: DEFAULT_SPEC, productSpec: preset.spec, ir: compareEntry.ir ?? preset.assemblyIR };
+  }, [compareEntry]);
+
+  const readout = assetKind === 'human'
+    ? `${spec.heightCm} cm`
+    : productEnvelope ? `${productEnvelope.x} × ${productEnvelope.y} × ${productEnvelope.z}` : assemblyIR ? undefined : `${productSpec.widthMm} × ${productSpec.heightMm}`;
 
   return (
-    <main className={`app-shell viewer-shell${pipelineCollapsed ? ' pipeline-is-collapsed' : ''}`}>
-      <header className="topbar viewer-topbar">
-        <div className="brand-lockup">
-          <span className="brand-mark"><SceliphIcon /></span>
-          <span className="brand-name">SCELIPH</span>
-          <span className="brand-edition">Result Viewer / α04</span>
-        </div>
-        <div className="result-selector">
-          <span>ACTIVE RESULT</span>
-          <select
-            disabled={queueLocked}
-            aria-disabled={queueLocked || deliveryVerifying}
-            value={activeAssetId}
-            onChange={(event) => { if (!deliveryVerifying) selectAsset(event.target.value); }}
-            aria-label="검수할 결과 선택"
-          >
-            {activeAssetId === 'imported' && <option value="imported">Imported AssemblyIR</option>}
-            {VIEWER_ASSETS.map((item) => <option value={item.id} key={item.id}>{item.label} — {item.caption}</option>)}
+    <main
+      className="studio"
+      data-theme={theme}
+      onDragOver={(event) => { if (event.dataTransfer.types.includes('Files')) { event.preventDefault(); setDragActive(true); } }}
+      onDragLeave={(event) => { if (event.currentTarget === event.target || !event.relatedTarget) setDragActive(false); }}
+      onDrop={(event) => {
+        event.preventDefault();
+        setDragActive(false);
+        void filesFromDrop(event.dataTransfer).then(importFiles);
+      }}
+    >
+      <header className="st-top">
+        <div className="st-brand"><span className="brand-mark"><SceliphIcon /></span><b>SCELIPH</b><span className="muted">{t('brand.edition')}</span></div>
+        <nav className="st-crumb" aria-label={t('top.result')}>
+          <button className="st-link" onClick={() => { setRightTab('library'); setRightCollapsed(false); }}>{t('top.library')}</button>
+          <span className="muted">/</span>
+          <select value={activeKey} disabled={queueLocked} aria-label={t('top.result')} onChange={(event) => activate(event.target.value)}>
+            {library.map((entry) => <option key={entry.key} value={entry.key}>{String(entry.number).padStart(2, '0')} · {entry.fileName ?? entry.name}</option>)}
           </select>
-        </div>
-        <div className="topbar-status">
-          <span><i className="pulse-dot" /> LOCAL · NO UPLOAD</span>
-          <span>{assetKind === 'product' ? `${productPartCount ?? '—'} PART NODES` : pack ? `${(buildMetrics?.vertices ?? 0).toLocaleString()} SKIN VERTICES` : 'LOADING PACK'}</span>
-          <a href="?editor=evidence">PHOTO EVIDENCE</a>
-          <a href="https://github.com/djfksjd/sceliph" target="_blank" rel="noreferrer">OPEN SOURCE ↗</a>
+        </nav>
+        <div className="st-top-actions">
+          <div className="st-group">
+            <button className="st-icon" disabled={pastRef.current.length === 0} aria-label={t('top.undo')} title={`${t('top.undo')} ⌘Z`} onClick={() => stepHistory(-1)}><Undo2 size={16} /></button>
+            <button className="st-icon" disabled={futureRef.current.length === 0} aria-label={t('top.redo')} title={`${t('top.redo')} ⇧⌘Z`} onClick={() => stepHistory(1)}><Redo2 size={16} /></button>
+          </div>
+          <button className={`quality-pill${qualityBlocked ? ' is-blocked' : ''}`} onClick={() => openSection('checks')} title={t('checks.title')}>
+            <i aria-hidden="true" />{t('top.quality')} <b className="num">{quality?.total ?? '—'}</b>{qualityBlocked && <span>· {t('top.blocked')} {blockedChecks}</span>}
+          </button>
+          <span className="local-pill"><i aria-hidden="true" />{t('top.local')}</span>
+          <select className="st-select is-compact" value={locale} aria-label={t('top.language')} onChange={(event) => setLocale(event.target.value as Locale)}>
+            {LOCALES.map((item) => <option key={item.id} value={item.id}>{item.id.toUpperCase()}</option>)}
+          </select>
+          <button className="st-icon" aria-label={t('top.theme')} title={t('top.theme')} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>{theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}</button>
+          <button className="st-button is-primary" onClick={() => openSection('export')}><Download size={15} />{t('top.export')}</button>
         </div>
       </header>
 
-      <section className={`studio-grid viewer-grid${inspectorCollapsed ? ' inspector-is-collapsed' : ''}`}>
-        <section className="viewport-panel" aria-label="3D 결과 검수 뷰포트">
-          <div className="viewport-toolbar">
-            <div className="toolbar-cluster">
-              <div className="mode-switcher" role="group" aria-label="뷰포트 표시 모드">
-                {MODES.map((item) => (
-                  <button key={item.id} className={mode === item.id ? 'active' : ''} onClick={() => setMode(item.id)}>
-                    {item.label}
-                  </button>
-                ))}
-              </div>
-              <div className="view-switcher" role="group" aria-label="고정 카메라 시점">
-                {assetKind === 'human' && <button onClick={() => viewportRef.current?.setView('front')}>FRONT</button>}
-                <button onClick={() => viewportRef.current?.setView('iso')}>ISO</button>
-                {assetKind === 'product' && <button onClick={() => viewportRef.current?.setView('top')}>
-                  {assemblyIR?.metadata?.assetKind === 'building' ? 'PLAN' : 'TOP'}
-                </button>}
-                <button onClick={() => viewportRef.current?.setView('rear')}>REAR</button>
-              </div>
-              {assemblyIR?.metadata?.assetKind === 'building' && (
-                <div className="view-switcher level-switcher" role="group" aria-label="건물 층 표시">
-                  {(['all', 'L1', 'L2'] as BuildingLevel[]).map((level) => (
-                    <button
-                      key={level}
-                      className={buildingLevel === level ? 'active' : ''}
-                      aria-pressed={buildingLevel === level}
-                      onClick={() => {
-                        setBuildingLevel(level);
-                        setSelectedPart(undefined);
-                        clearMeasurement();
-                        viewportRef.current?.setBuildingLevel(level);
-                      }}
-                    >
-                      {level === 'all' ? 'ALL' : level}
-                    </button>
-                  ))}
-                </div>
-              )}
-              {assemblyIR?.metadata?.assetKind === 'building' && (
-                <div className="view-switcher lighting-switcher" role="group" aria-label="낮과 밤 조명 미리보기">
-                  {(['day', 'night'] as LightingMode[]).map((item) => (
-                    <button
-                      key={item}
-                      className={lightingMode === item ? 'active' : ''}
-                      aria-pressed={lightingMode === item}
-                      onClick={() => {
-                        setLightingMode(item);
-                        viewportRef.current?.setLighting(item);
-                        setViewerNote(item === 'night' ? '야간 조명과 등기구 광원을 표시합니다.' : '주간 자연광 검수 모드입니다.');
-                      }}
-                    >{item === 'day' ? 'DAY' : 'NIGHT'}</button>
-                  ))}
-                </div>
-              )}
-            </div>
-            <span className="viewport-hint">DRAG ORBIT · WHEEL ZOOM · SPACE + DRAG PAN</span>
-          </div>
+      <div className={`st-body${leftCollapsed ? ' left-collapsed' : ''}${rightCollapsed ? ' right-collapsed' : ''}`}>
+        <nav className="st-rail" aria-label="Sections">
+          {RAIL.map(({ id, icon: Icon, label }) => (
+            <button key={id} className={section === id && !leftCollapsed ? 'is-on' : ''} aria-pressed={section === id && !leftCollapsed} aria-label={t(label)} data-tip={t(label)} onClick={() => openSection(id)}>
+              <Icon size={18} strokeWidth={1.75} />
+            </button>
+          ))}
+          <button className="rail-bottom" aria-label={t('rail.shortcuts')} data-tip={`${t('rail.shortcuts')} ?`} onClick={() => helpRef.current?.showModal()}><Keyboard size={18} strokeWidth={1.75} /></button>
+        </nav>
 
-          {assetKind === 'product' && (
-            <div className={`cad-measure-toolbar${measurementEnabled ? ' is-active' : ''}`} aria-label="CAD 실측 도구">
-              <button
-                className="measure-toggle"
-                aria-pressed={measurementEnabled}
-                aria-label={measurementEnabled ? '실측 도구 끄기' : '실측 도구 켜기'}
-                title="실측 켜기/끄기 (M)"
-                onClick={toggleMeasurement}
-              >
-                <i /> {measurementEnabled ? '실측 켜짐' : '실측 시작'}
-              </button>
-              <div className="measure-progress" aria-label={`실측 진행 ${measurementPoints}/2점`}>
-                <span className={measurementPoints >= 1 ? 'is-complete' : measurementEnabled ? 'is-current' : ''}><b>A</b><small>시작점</small></span>
-                <i />
-                <span className={measurementPoints >= 2 ? 'is-complete' : measurementPoints === 1 ? 'is-current' : ''}><b>B</b><small>끝점</small></span>
-              </div>
-              <div className="measure-mode-switch" role="group" aria-label="측정 종류">
-                <button aria-pressed="true" disabled={!measurementEnabled} className="active">직선거리</button>
-                <button
-                  aria-pressed={dimensionOverviewEnabled}
-                  className={dimensionOverviewEnabled ? 'active overview-active' : ''}
-                  onClick={() => {
-                    setDimensionOverviewEnabled((enabled) => !enabled);
-                    setViewerNote(dimensionOverviewEnabled ? '주요 부재 치수선을 숨겼습니다.' : '주요 부재의 폭·깊이와 세로 높이 치수선을 겹침 없이 표시합니다.');
-                  }}
-                >주요 치수 보기</button>
-              </div>
-              <label className="measure-unit-select">
-                <span>UNIT</span>
-                <select disabled={!measurementEnabled && !dimensionOverviewEnabled} value={measurementUnit} onChange={(event) => setMeasurementUnit(event.target.value as MeasurementUnit)}>
-                  <option value="mm">mm</option>
-                  <option value="cm">cm</option>
-                  <option value="m">m</option>
-                </select>
-              </label>
-              <button className="measure-clear" title="측정 지우기 (Esc)" onClick={clearMeasurement} disabled={!measurementEnabled || measurementPoints === 0}>지우기</button>
-              <span className="measure-prompt"><b>SURFACE PICK · 2 POINT</b>{measurementPrompt}</span>
-              {measurementResult && primaryMeasurement !== undefined && (
-                <div className="measure-live-result">
-                  <span><b>DISTANCE</b>{formatMeasurement(primaryMeasurement, measurementUnit)}</span>
-                </div>
-              )}
-            </div>
-          )}
+        <aside className="st-left" aria-label={t(panelTitles[section])} hidden={leftCollapsed}>
+          <header className="panel-head">
+            <h2>{t(panelTitles[section])}</h2>
+            {section === 'parts' && <span className="num muted">{formatPartsCount(outlinerRows.length)}</span>}
+          </header>
+          <div className="panel-body">{panels[section]}</div>
+        </aside>
 
-          {dimensionOverviewEnabled && (
-            <div className="dimension-overview-key" role="status">
-              <b>ARCHITECTURAL DIMENSIONS</b>
-              <span><i className="dimension-width-key" /> W 폭 · D 깊이</span>
-              <span><i className="dimension-height-key" /> H 높이</span>
-              <small>주요 부재 우선 · 반복 소부품 자동 정리</small>
-            </div>
-          )}
-
-          <div className="viewport-zoom-controls" role="group" aria-label="화면 확대 축소와 초기화">
-            <button aria-label="확대" title="확대" onClick={() => viewportRef.current?.zoomBy(1.25)}>+</button>
-            <button aria-label="축소" title="축소" onClick={() => viewportRef.current?.zoomBy(0.8)}>−</button>
-            <button className="reset-view" aria-label="화면 초기화" title="화면 초기화" onClick={() => {
-              viewportRef.current?.fitAsset();
-              setViewerNote('카메라 중심과 배율을 초기 상태로 되돌렸습니다.');
-            }}>↺</button>
-          </div>
-
-          <div className="viewfinder-corners" aria-hidden="true"><i /><i /><i /><i /></div>
+        <section className={`st-viewport${compareView ? ' is-split' : ''}`} aria-label="3D viewport">
           {pack ? (
-            <ViewportErrorBoundary resetKey={activeAssetId}>
+            <div className="vp-pane is-primary">
+            <ViewportErrorBoundary resetKey={activeKey}>
               <ResultViewport
                 ref={viewportRef}
                 assetKind={assetKind}
@@ -701,374 +1283,186 @@ export function ViewerApp() {
                 measurementMode={measurementMode}
                 measurementUnit={measurementUnit}
                 dimensionOverviewEnabled={dimensionOverviewEnabled}
+                display={display}
                 onBuilt={handleBuilt}
                 onQualityMetrics={handleQualityMetrics}
-                onPartSelected={setSelectedPart}
+                onPartSelected={handlePartSelected}
+                onPartHover={setHover}
                 onMeasurementChange={handleMeasurementChange}
                 onMeasurementMiss={() => setMeasurementMissed(true)}
                 onDeliveryAudit={handleDeliveryAudit}
                 onTelemetry={setTelemetry}
               />
             </ViewportErrorBoundary>
+            </div>
           ) : (
-            <div className="viewport-loading">
-              {packError ? <><b>인체 팩 로드 실패</b><span>{packError}</span></> : <><i /><b>결과 뷰어 준비 중</b><span>로컬 메시와 재질을 불러옵니다.</span></>}
+            <div className={`vp-state${packError ? ' is-error' : ''}`} role="status">
+              {packError ? <><b>{t('view.packError')}</b><span>{packError}</span></> : <><i className="vp-spinner" /><b>{t('view.loading')}</b><span>{t('view.loadingDetail')}</span></>}
             </div>
           )}
 
-          <div className="viewport-title">
-            <span>REVIEWING</span>
-            <strong>{activeName}</strong>
-          </div>
-          {architecturalResult && mode === 'beauty' && (
-            <div className="architectural-material-legend" aria-label="공간 마감 색상 범례">
-              <span className="legend-title">ROOM FINISH</span>
-              <span><i className="finish-living" />거실</span>
-              <span><i className="finish-bedroom" />침실</span>
-              <span><i className="finish-kitchen" />주방</span>
-              <span><i className="finish-bath" />욕실</span>
-              <span><i className="finish-passage" />통로</span>
+          {pack && compareView && compareEntry && (
+            <div className="vp-pane is-compare">
+              <ViewportErrorBoundary resetKey={compareEntry.key}>
+                <ResultViewport
+                  ref={compareRef}
+                  assetKind={compareView.kind}
+                  pack={pack}
+                  spec={compareView.spec}
+                  productSpec={compareView.productSpec}
+                  assemblyIR={compareView.ir}
+                  mode={mode}
+                />
+              </ViewportErrorBoundary>
+              <div className="vp-compare-label is-glass">
+                <Columns2 size={13} aria-hidden="true" />
+                <span className="num">{String(compareEntry.number).padStart(2, '0')}</span>
+                <b>{compareEntry.fileName?.replace(/\.json$/i, '') ?? compareEntry.name}</b>
+                <button className="st-icon" aria-label={t('library.compareClose')} title={t('library.compareClose')} onClick={() => setCompareKey(undefined)}><X size={14} /></button>
+              </div>
             </div>
           )}
-          <div className="measure-readout">
-            <span>{assetKind === 'human' ? 'HEIGHT' : 'ENVELOPE'} <b>{assetKind === 'human'
-              ? `${spec.heightCm} cm`
-              : assemblyIR && productEnvelope
-                ? `${productEnvelope.x}×${productEnvelope.y}×${productEnvelope.z}`
-                : `${productSpec.widthMm}×${productSpec.heightMm}`}</b></span>
-            {assetKind === 'product' && <span>PARTS <b>{productPartCount ?? '—'}</b></span>}
-            <span>TRIS <b>{displayedTriangles?.toLocaleString() ?? '—'}</b></span>
-            <span>ENGINE <b>{assetKind === 'human' ? 'OHPK/JS' : 'IR/JS'}</b></span>
+
+          <div className="vp-toolbar" role="toolbar" aria-label={t('view.modes')}>
+            <div className="st-segment is-glass" role="group" aria-label={t('view.modes')}>
+              {MODES.map((item) => <button key={item.id} className={mode === item.id ? 'is-on' : ''} aria-pressed={mode === item.id} onClick={() => setMode(item.id)}>{item.label}</button>)}
+            </div>
+            {architecturalResult && (
+              <div className="st-segment is-glass" role="group" aria-label={t('view.levels')}>
+                {(['all', 'L1', 'L2'] as BuildingLevel[]).map((level) => (
+                  <button key={level} className={buildingLevel === level ? 'is-on' : ''} aria-pressed={buildingLevel === level} onClick={() => { setBuildingLevel(level); setSelectedPart(undefined); clearMeasurement(); viewportRef.current?.setBuildingLevel(level); }}>{level === 'all' ? 'ALL' : level}</button>
+                ))}
+              </div>
+            )}
+            {architecturalResult && (
+              <div className="st-segment is-glass" role="group">
+                {(['day', 'night'] as LightingMode[]).map((item) => (
+                  <button key={item} className={lightingMode === item ? 'is-on' : ''} aria-pressed={lightingMode === item} onClick={() => { setLightingMode(item); viewportRef.current?.setLighting(item); }}>{t(`view.${item}`)}</button>
+                ))}
+              </div>
+            )}
+            {sceneParts.length > 1 && (
+              <label className="explode is-glass">
+                <span>{t('view.explode')}</span>
+                <input type="range" min={0} max={1} step={0.01} value={explode} aria-label={t('view.explode')} onChange={(event) => { clearMeasurement(); setExplode(Number(event.target.value)); }} />
+              </label>
+            )}
           </div>
-          <div className="axis-glyph" aria-hidden="true"><i className="axis-y" /><i className="axis-x" /><span>Y</span><b>X</b></div>
+
+          <div className="vp-viewchip is-glass" role="group" aria-label={t('view.camera')}>
+            <span className="vp-viewchip-label">{t(cameraView === 'top' && architecturalResult ? 'view.plan' : `view.${cameraView}`)}</span>
+            <div>
+              {(['front', 'iso', 'top', 'rear'] as CameraView[]).map((view) => (
+                <button key={view} className={cameraView === view ? 'is-on' : ''} aria-pressed={cameraView === view} onClick={() => setView(view)}>
+                  {t(view === 'top' && architecturalResult ? 'view.plan' : `view.${view}`)}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="vp-zoom is-glass" role="group" aria-label={t('view.fit')}>
+            <button aria-label={t('view.zoomIn')} title={t('view.zoomIn')} onClick={() => viewportRef.current?.zoomBy(1.25)}><ZoomIn size={15} /></button>
+            <button aria-label={t('view.zoomOut')} title={t('view.zoomOut')} onClick={() => viewportRef.current?.zoomBy(0.8)}><ZoomOut size={15} /></button>
+            <button aria-label={t('view.fit')} title={t('view.fit')} onClick={() => viewportRef.current?.fitAsset()}><Maximize2 size={15} /></button>
+          </div>
+
+          {hover && (
+            <div className="vp-hover" style={{ left: hover.x + 14, top: hover.y + 12 }} role="tooltip">{hover.name}</div>
+          )}
+
+          {noteVisible && <div className="vp-note" role="status" key={noteStamp}>{viewerNote}</div>}
+
+          {measurementEnabled && (
+            <div className="vp-measure is-glass" aria-live="polite">
+              <Ruler size={14} /><span>{measurementPrompt}</span>
+              {measurementResult && <b className="num">{formatMeasurement(measurementResult.distanceMeters, measurementUnit)}</b>}
+            </div>
+          )}
+
+          {outlinerRows.length > 0 && (
+            <div className="evidence-strip" role="group" aria-label={t('evidence.strip')}>
+              {EVIDENCE_ORDER.map((status) => {
+                const count = evidenceCounts.get(status) ?? 0;
+                return (
+                  <button
+                    key={status}
+                    className={`patch ev-${status}${evidenceFocus === status ? ' is-on' : ''}${evidenceFocus && evidenceFocus !== status ? ' is-dim' : ''}`}
+                    disabled={count === 0}
+                    aria-pressed={evidenceFocus === status}
+                    title={t('evidence.focus')}
+                    onClick={() => setEvidenceFocus(evidenceFocus === status ? undefined : status)}
+                  >
+                    <span>{t(`evidence.${status}`)}</span><b className="num">{count}</b>
+                  </button>
+                );
+              })}
+              <button className={`patch-toggle${hatchInferred ? ' is-on' : ''}`} aria-pressed={hatchInferred} disabled={!evidenceCounts.get('inferred')} onClick={() => setHatchInferred((value) => !value)}>
+                <i aria-hidden="true" />{t('evidence.hatch')}
+              </button>
+            </div>
+          )}
+
+          <div className="vp-axis" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 34 34"><path d="M6 28V6" /><path d="M6 28h22" /><text x="2" y="5">Y</text><text x="29" y="31">X</text></svg><span className="num">{measurementUnit}</span></div>
+
+          <dl className="vp-readout">
+            <div><dt>{t(assetKind === 'human' ? 'readout.height' : 'readout.envelope')}</dt><dd className="num">{readout ?? <i className="skeleton-bar" />}</dd></div>
+            {assetKind === 'product' && <div><dt>{t('readout.parts')}</dt><dd className="num">{productPartCount ?? <i className="skeleton-bar is-short" />}</dd></div>}
+            <div><dt>{t('readout.tris')}</dt><dd className="num">{displayedTriangles?.toLocaleString(locale) ?? <i className="skeleton-bar" />}</dd></div>
+          </dl>
+
+          <div className="vp-command">
+            <CommandBar
+              t={t}
+              locale={locale}
+              {...(assemblyIR ? { ir: assemblyIR } : {})}
+              open={commandOpen}
+              onOpenChange={setCommandOpen}
+              scopeIds={scopeIds}
+              scopeNames={partNames}
+              onClearScope={() => setScopeIds([])}
+              snapshot={() => viewportRef.current?.snapshot(768)}
+              onApply={(next: AssemblyIR, entry: CommandLogEntry) => commitIr(next, t('cmd.applied', { n: entry.summary.length }))}
+              {...(commandDisabledReason ? { disabledReason: commandDisabledReason } : {})}
+            />
+          </div>
+
+          {dragActive && (
+            <div className="vp-drop" aria-hidden="true"><FolderOpen size={28} /><b>{t('view.drop')}</b><span>{t('view.dropDetail')}</span></div>
+          )}
         </section>
 
-        <aside className={`panel inspector-panel result-inspector${inspectorCollapsed ? ' is-collapsed' : ''}`}>
-          <button
-            className="panel-collapse-button inspector-collapse-button"
-            aria-expanded={!inspectorCollapsed}
-            aria-label={inspectorCollapsed ? '오른쪽 검사 패널 펼치기' : '오른쪽 검사 패널 접기'}
-            title={inspectorCollapsed ? '검사 패널 펼치기' : '검사 패널 접기'}
-            onClick={() => setInspectorCollapsed((collapsed) => !collapsed)}
-          >{inspectorCollapsed ? '‹' : '›'}</button>
-          <div className="panel-heading quality-heading">
-            <div><span className="eyebrow">model completeness</span><h2>Model quality</h2></div>
-            <div className={`quality-total ${qualityBlocked ? 'has-blocker' : ''}`}>
-              <strong>{quality?.total ?? '—'}</strong><span>/100</span>{qualityBlocked && <em>BLOCKED</em>}
-            </div>
+        <aside className="st-right" aria-label={t('library.title')} hidden={rightCollapsed}>
+          <div className="st-tabs" role="tablist">
+            <button role="tab" aria-selected={rightTab === 'library'} className={rightTab === 'library' ? 'is-on' : ''} onClick={() => setRightTab('library')}>{t('library.title')}</button>
+            <button role="tab" aria-selected={rightTab === 'inspector'} className={rightTab === 'inspector' ? 'is-on' : ''} onClick={() => setRightTab('inspector')}>{t('library.inspector')}</button>
           </div>
-
-          {(architecturalResult || surfaceBenchmarkResult) && quality && (
-            <div className={`evidence-boundary ${quality.deliveryReady ? 'is-ready' : 'is-review'}`}>
-              <span>SOURCE CONFIDENCE</span><b>{quality.evidenceScore ?? '—'}/100</b>
-              <p>{quality.deliveryReady
-                ? '검증된 실측 근거로 납품 판정 가능'
-                : surfaceBenchmarkResult
-                  ? '모델 완성도와 별도입니다. 특정 현장의 스캔·입도·높이 보정 전에는 재질 프리셋으로 사용합니다.'
-                  : '모델 완성도와 별도입니다. 현장 실측·검증 단면이 없어 시공 납품은 보류됩니다.'}</p>
-            </div>
-          )}
-
-          <div className="viewer-note"><span>CLI → IR → VIEWER</span><p>{viewerNote}</p></div>
-
-          {assemblyIR?.fidelity && fidelityAudit && (
-            <div className={`selected-part-card fidelity-contract-card${fidelityAudit.pass ? ' is-ready' : ' is-blocked'}`}>
-              <span className="eyebrow">locked fidelity contract</span>
-              <b>{fidelityAudit.pass ? '8-PASS REVIEW READY' : 'FIDELITY CONTRACT BLOCKED'}</b>
-              <small>{assemblyIR.fidelity.details.length} DETAILS · {assemblyIR.fidelity.materialRegions.length} MATERIAL REGIONS · {assemblyIR.fidelity.cameras.length} CALIBRATED VIEWS</small>
-              <p>{fidelityAudit.pass
-                ? `부품 매핑 ${Math.round(fidelityAudit.componentCoverage * 100)}% · 특징별 합격선 ${Math.round(assemblyIR.fidelity.targetFidelity * 100)}% · 최대 ${assemblyIR.fidelity.maxTotalIterations}회`
-                : fidelityAudit.blockers.slice(0, 3).join(' · ')}</p>
-            </div>
-          )}
-
-          {assetKind === 'product' && (
-            <section className={`measurement-console${measurementEnabled ? ' is-active' : ''}`} aria-label="실측 결과" aria-live="polite">
-              <header>
-                <div><span>02 / SURFACE MEASURE</span><b>두 점 실측</b></div>
-                <em>{measurementEnabled ? `${measurementPoints}/2 POINTS` : 'OFF'}</em>
-              </header>
-              {measurementResult && primaryMeasurement !== undefined ? (
-                <>
-                  <div className="measurement-primary">
-                    <span>3D 직선거리</span>
-                    <strong>{formatMeasurement(primaryMeasurement, measurementUnit)}</strong>
-                  </div>
-                  <div className="measurement-deltas">
-                    <span>ΔX<b>{formatMeasurement(measurementResult.deltaMeters.x, measurementUnit)}</b></span>
-                    <span>ΔY<b>{formatMeasurement(measurementResult.deltaMeters.y, measurementUnit)}</b></span>
-                    <span>ΔZ<b>{formatMeasurement(measurementResult.deltaMeters.z, measurementUnit)}</b></span>
-                  </div>
-                  <p>A·B 표면 좌표 기준 · 다음 표면을 선택하면 새 측정이 시작됩니다.</p>
-                </>
-              ) : (
-                <div className="measurement-empty">
-                  <div className="measurement-caliper" aria-hidden="true"><i>A</i><span /><i>B</i></div>
-                  <p>{measurementPrompt}</p>
-                  <small>모델을 드래그하면 회전 · 클릭하면 점 선택 · M 켜기/끄기 · Esc 지우기</small>
-                </div>
-              )}
-            </section>
-          )}
-
-          <div className="quality-list">
-            {quality?.checks.map((check) => (
-              <div className="quality-row" key={check.id}>
-                <StatusMark status={check.status} />
-                <div><b>{check.label}</b><small>{check.detail}</small></div>
-                <strong>{check.score}</strong>
-              </div>
-            )) ?? <div className="quality-skeleton" />}
-          </div>
-
-          {selectedPart && (
-            <div className="selected-part-card">
-              <span className="eyebrow">selected component</span><b>{selectedPart.name}</b>
-              <small>{selectedPart.category.toUpperCase()} · {selectedPart.material} · {selectedPart.surface.toUpperCase()}</small>
-              <p>{selectedPart.detail}</p>
-              {layoutEditable && assemblyIR && (
-                <div className="layout-editor" aria-label="선택 가구 배치 편집">
-                  <span>LAYOUT EDIT · 250 mm</span>
-                  <div>
-                    <button onClick={() => editSelectedLayout({ kind: 'translate', deltaMm: [-250, 0, 0] })}>←</button>
-                    <button onClick={() => editSelectedLayout({ kind: 'translate', deltaMm: [0, 0, -250] })}>↑</button>
-                    <button onClick={() => editSelectedLayout({ kind: 'translate', deltaMm: [0, 0, 250] })}>↓</button>
-                    <button onClick={() => editSelectedLayout({ kind: 'translate', deltaMm: [250, 0, 0] })}>→</button>
-                    <button onClick={() => editSelectedLayout({ kind: 'rotateY', radians: -Math.PI / 12 })}>↺ 15°</button>
-                    <button onClick={() => editSelectedLayout({ kind: 'rotateY', radians: Math.PI / 12 })}>↻ 15°</button>
-                    <button onClick={() => baselineAssemblyIR && editSelectedLayout({ kind: 'reset', source: baselineAssemblyIR })}>RESET</button>
-                  </div>
-                  <small>새 가구·조명은 CLI/Codex에 자연어로 요청하면 같은 편집 가능한 IR 부품으로 추가됩니다.</small>
-                </div>
-              )}
-            </div>
-          )}
-
-          {assetKind === 'product' && assemblyIR && <AssemblyComponentEditor isSourceCurrent={()=>!assemblySourceLoad.blocked} sourceCurrent={sourceCurrent} ir={assemblyIR} selectedId={selectedPart?.id} onCommit={next=>{if(assemblySourceLoad.blocked)return;importIntent.cancel();setBuildMetrics(undefined);setAssemblyIR(next);setDeliveryAudit(undefined);setDeliveryVerifying(true);setViewerNote('선택 부품 수정 · 기존 납품 검사 재실행');}}/>}
-
-          {assetKind === 'product' && productMetrics && (
-            <div className="surface-audit" aria-label="PBR 표면 검사 결과">
-              <span><b>{productMetrics.surfaces.distinctFinishes}</b> finishes</span>
-              <span><b>{productMetrics.surfaces.microNormalMaterials}</b> micro normal</span>
-              <span><b>{productMetrics.surfaces.anisotropicMaterials}</b> anisotropic</span>
-              <span><b>{productMetrics.surfaces.transmissionMaterials}</b> optical</span>
-            </div>
-          )}
-
-          {assetKind === 'product' && productEngineering && (
-            <div className="selected-part-card engineering-read-card">
-              <span className="eyebrow">engineering evidence audit</span>
-              <b>{productEngineering.electricalApplicable
-                ? `${productEngineering.digitalReady ? 'DIGITAL CONNECTED' : 'DIGITAL BLOCKED'} · ${productEngineering.productionReady ? 'BENCH RELEASED' : 'PHYSICAL QA REQUIRED'}`
-                : architecturalResult
-                  ? `${productEngineering.digitalReady ? 'ARCHITECTURE COMPILED' : 'EVIDENCE BLOCKED'} · ${productEngineering.productionReady ? 'SOURCE RELEASED' : 'SITE QA REQUIRED'}`
-                : `${productEngineering.digitalReady ? 'EXTERIOR COMPILED' : 'EVIDENCE BLOCKED'} · ${productEngineering.productionReady ? 'SOURCE RELEASED' : 'SOURCE QA REQUIRED'}`}</b>
-              <small>{productEngineering.electricalApplicable
-                ? `PIN ${Math.round(productEngineering.physicalPinCoverage * 100)}% · AWG ${Math.round(productEngineering.conductorGaugeCoverage * 100)}% · VERIFY ${Math.round(productEngineering.conductorVerificationCoverage * 100)}%`
-                : architecturalResult
-                  ? `PLAN EVIDENCE ${Math.round(productEngineering.componentEvidenceCoverage * 100)}% · STRUCTURE/MEP EXCLUDED`
-                : 'EXTERIOR SCOPE · INTERNAL ELECTRICAL EXCLUDED'}</small>
-              <p>실측/데이터시트 {productEngineering.componentEvidence.measured + productEngineering.componentEvidence.datasheet} · 추정 {productEngineering.componentEvidence.estimated} · 숨은 형상 {productEngineering.componentEvidence.inferred}</p>
-              <div className="semantic-tags">
-                {productEngineering.electricalApplicable ? <>
-                  <span>{productEngineering.passiveNodes} passive nodes</span>
-                  <span>{productEngineering.benchRequiredWires} polarity checks</span>
-                  <span>live anchors {productConnectivity?.liveAnchors ? 'on' : 'off'}</span>
-                </> : <>
-                  <span>{architecturalResult ? 'architectural shell' : 'exterior only'}</span><span>{productEngineering.componentEvidence.datasheet} datasheet</span>
-                  <span>{productEngineering.componentEvidence.estimated} image-scaled</span>
-                </>}
-              </div>
-            </div>
-          )}
-
-          {assetKind === 'human' && spec.outfit === 'web-hero' && (
-            <div className="selected-part-card semantic-read-card">
-              <span className="eyebrow">agent visual interpretation</span><b>일반인 코스프레 · 슬림 소프트</b>
-              <small>HIDDEN DEPTH = INFERRED</small>
-              <p>{WEB_HERO_VISUAL_INTERPRETATION.observations.slice(1, 6).map((item) => item.label).join(' · ')}</p>
-            </div>
-          )}
-
-          {assetKind === 'product' && assemblyIR && (
-            <div className="parameter-section product-controls">
-              <div className="subheading-row"><span className="eyebrow">assembly ir inspector</span><span className="local-badge">READ ONLY</span></div>
-              <div className="assembly-summary">
-                <span><b>{assemblyIR.components.length}</b> source parts</span>
-                <span><b>{productConnectivity?.wires ?? 0}</b> conductors</span>
-                <span><b>{productConnectivity?.documentedPhysicalPins ?? 0}</b> physical pins</span>
-              </div>
-              <div className="selected-part-card imported-ir-card">
-                <b>{assemblyIR.name}</b><small>{assemblyIR.units.toUpperCase()} · {assemblyIR.schema}</small>
-                <p>{String(assemblyIR.metadata?.evidencePolicy ?? '에이전트가 기록한 근거와 추정값을 보존합니다.')}</p>
-              </div>
-            </div>
-          )}
-
-          <section className={`delivery-console status-${deliveryAudit?.status ?? 'running'}`} aria-label="내보내기 및 비용 검증">
-            <header>
-              <div><span className="eyebrow">delivery proof</span><b>실제 GLB 재열기</b></div>
-              <em>{deliveryAudit ? deliveryAudit.status.toUpperCase() : 'VERIFYING'}</em>
-            </header>
-            <div className="delivery-grid">
-              <span>FINGERPRINT<b>{deliveryAudit?.fingerprint ?? '계산 중'}</b></span>
-              <span>BUILD KEY<b>{deliveryAudit?.buildFingerprint ?? '계산 중'}</b></span>
-              <span>INPUT KEY<b>{deliveryAudit?.inputFingerprint ?? '계산 중'}</b></span>
-              <span>GLB SIZE<b>{bytesLabel(deliveryAudit?.glbBytes ?? 0)}</b></span>
-              <span>BOUNDS DRIFT<b>{deliveryAudit ? `${deliveryAudit.boundsErrorMm.toFixed(3)} mm` : '—'}</b></span>
-              <span>NAMED NODES<b>{deliveryAudit ? `${Math.round(deliveryAudit.namedNodeCoverage * 100)}%` : '—'}</b></span>
-              {(deliveryAudit?.source?.skeletons ?? 0) > 0 && (
-                <span>RIG / MOTION<b>{deliveryAudit?.reopened?.skeletons ?? 0} skeleton · {deliveryAudit?.reopened?.bones ?? 0} bones · {deliveryAudit?.reopened?.animationClips ?? 0} clip / {deliveryAudit?.reopened?.animationTracks ?? 0} tracks</b></span>
-              )}
-              {(deliveryAudit?.source?.morphTargets ?? 0) > 0 && (
-                <span>FACE CONTROLS<b>{deliveryAudit?.reopened?.morphTargets ?? 0} morph targets · GLB names preserved</b></span>
-              )}
-              {(deliveryAudit?.source?.gameLods ?? 0) > 0 && (
-                <span>GAME DELIVERY<b>{deliveryAudit?.reopened?.gameLods ?? 0} LOD profile · {deliveryAudit?.reopened?.collisionPrimitives ?? 0} collision primitives</b></span>
-              )}
-            </div>
-            <p>{deliveryAudit?.status === 'blocked'
-              ? deliveryAudit.blockers.join(' · ')
-              : 'GLB를 메모리에서 다시 열어 메시·삼각형·명명 노드·포락을 원본과 비교합니다.'}</p>
-            <div className="browser-proof-progress" aria-label="브라우저 왕복 검증 수집 현황">
-              <span><b>ACTUAL BROWSER PROOF</b>{Object.keys(browserProofReceipts).length}/{BROWSER_PROOF_EXPECTED_COUNT} ASSETS</span>
-              <button
-                disabled={!sourceCurrent || Object.keys(browserProofReceipts).length === 0}
-                onClick={() => {
-                  if(assemblySourceLoad.blocked)return;
-                  const report = createBrowserRoundTripReport(
-                    Object.values(browserProofReceipts).map(receipt =>
-                      receipt.id === BROWSER_PROOF_ASSETS[activeAssetId]?.id && !observedQualityReleaseReady
-                        ? { ...receipt, qualityReleaseReady: false } : receipt),
-                    getBrowserConsoleEvidence(),
-                  );
-                  downloadJson(report, 'morphloom-browser-roundtrip.json');
-                  setViewerNote(`실제 브라우저 왕복 증빙 ${report.assets.length}/${BROWSER_PROOF_EXPECTED_COUNT}개를 저장했습니다.`);
-                }}
-              >SAVE PROOF</button>
-            </div>
-          </section>
-
-          <section className="local-telemetry" aria-label="로컬 비용 및 개인정보 추적">
-            <header><span className="eyebrow">local build trace</span><b>비용·보안 경계</b></header>
-            <div>
-              <span>COMPILE<b>{telemetry ? `${telemetry.compileMs.toFixed(1)} ms` : '—'}</b></span>
-              <span>RENDER MEMORY<b>{bytesLabel(telemetry?.estimatedRenderBytes ?? 0)}</b></span>
-              <span>LLM COST<b>BYOK · 미관측</b></span>
-              <span>UPLOAD<b>없음</b></span>
-            </div>
-            <p>뷰어는 파일을 서버로 보내거나 자동 저장하지 않습니다. 가져온 IR은 메모리에만 두며 새로고침·명시적 제거·30분 만료 시 삭제됩니다.</p>
-            {importedExpiresAt && <button onClick={clearImportedSession}>CLEAR IMPORTED SESSION · ≤{Math.max(1, Math.ceil((importedExpiresAt - Date.now()) / 60_000))} MIN</button>}
-          </section>
-
-          <div className="export-actions">
-            <button className="export-primary" disabled={!pack || !sourceCurrent || qualityBlocked || deliveryAudit?.status === 'blocked'} onClick={() => runAction('ASSET PACK', () => viewportRef.current!.exportAssetPack({
-              assetId: activeAssetId,
-              assetName: activeName,
-              sourceIr: sourcePayload,
-              qualityReport: quality,
-              evidenceBoundary,
-            }))}>
-              <span><b>SAVE ASSET PACK</b><small>GLB + OBJ/STL/PLY + IR + quality + preview + Figma SVG</small></span><i>↓</i>
-            </button>
-            <button className="normal-kit-action" disabled={!pack || !assemblyIR || !sourceCurrent} title={!sourceCurrent ? '새로 선택한 IR을 유효하게 읽은 뒤 kit를 저장할 수 있습니다.' : assemblyIR ? 'Blender 5.2용 선택형 원본 법선 도구. GLB 검사 후 texture/rig/animation/morph 입력을 거부합니다.' : '정적 AssemblyIR이 필요합니다. 캐릭터/일반 product spec은 이 경로에서 지원하지 않습니다.'} onClick={() => assemblyIR && runAction('BLENDER NORMAL KIT', async () => { if (!sourceCurrentRef.current) throw new Error('새로 선택한 IR 검사가 완료되지 않아 이전 kit를 재사용할 수 없습니다.'); return viewportRef.current!.exportBlenderNormalKit(assemblyIR); })}>BLENDER 5.2 · SOURCE NORMAL KIT</button>
-            <small className="normal-kit-description">선택형 도구: ZIP을 풀고 포함된 명령을 직접 실행하세요. 기본 Blender import와 다르며, Blender 메시 수정은 IR에 역반영되지 않습니다.</small>
-            <button disabled={!pack || !sourceCurrent} title="PBR scene exchange for Blender, Unity glTF workflows, Unreal, Godot and web viewers" onClick={() => runAction('GLB', () => viewportRef.current!.exportGlb())}>GLB · BLENDER/UNITY/UNREAL/GODOT</button>
-            <button disabled={!pack || !sourceCurrent} title="Mesh reference only; not STEP/BREP" onClick={() => runAction('OBJ', () => viewportRef.current!.exportObj())}>CAD MESH · OBJ</button>
-            <button disabled={!pack || !sourceCurrent} title="Millimetre-valued print/CAD mesh; not STEP/BREP" onClick={() => runAction('STL', () => viewportRef.current!.exportStl())}>PRINT MESH · STL (MM)</button>
-            <button disabled={!pack || !sourceCurrent} title="Static mesh with positions, normals, vertex colors and UVs; textures are not embedded" onClick={() => runAction('PLY', () => viewportRef.current!.exportPly())}>PLY · MESHLAB/CLOUDCOMPARE</button>
-            <button disabled={!pack || !sourceCurrent} title="Apple AR Quick Look / Reality Composer handoff" onClick={() => runAction('USDZ', () => viewportRef.current!.exportUsdz())}>USDZ · APPLE AR</button>
-            <button disabled={!pack || !sourceCurrent} title="2D inspection sheet; not a 3D Figma object" onClick={() => runAction('FIGMA SVG', () => viewportRef.current!.exportFigmaSvg())}>FIGMA · SVG SHEET</button>
-            <button disabled={!pack || !sourceCurrent} onClick={() => runAction('PNG', () => viewportRef.current!.capturePng())}>CAPTURE PNG</button>
-            <button onClick={() => irInputRef.current?.click()}>OPEN RESULT</button>
-            <input
-              ref={irInputRef}
-              className="visually-hidden"
-              type="file"
-              accept="application/json,.json"
-              onChange={(event) => {
-                const file = event.currentTarget.files?.[0];
-                event.currentTarget.value = '';
-                if (!file) return;
-                for (const job of jobsRef.current) {
-                  if (job.status === 'queued' || job.status === 'running') cancelJob(job.id);
-                }
-                viewportRef.current?.cancelExport();
-                void assemblySourceLoad.load(file, () => mountedRef.current, value => {
-                  setAssemblyIR(value);
-                  setAssetKind('product');setActiveAssetId('imported');setSelectedPart(undefined);
-                  setMeasurementEnabled(true);
-                  setMeasurementUnit(value.metadata?.assetKind === 'building' ? 'm' : 'mm');
-                  setDeliveryAudit(undefined);setDeliveryVerifying(true);setTelemetry(undefined);
-                  scheduleImportedExpiry();
-                }, state => {
-                  setAssemblyLoadState(state);markSourceCurrent(state.status === 'ready');
-                  if(state.status === 'reading')setViewerNote('Reading AssemblyIR: '+state.name);
-                  else if(state.status === 'failed')setViewerNote(state.error);
-                  else setViewerNote('AssemblyIR loaded. Save IR preserves the editable source.');
-                });
-              }}
-            />
-            {!sourceCurrent && <><p role="status">{assemblyLoadState.status === 'reading' ? 'IR 읽는 중: 저장과 편집이 잠겨 있습니다.' : 'IR 로드 실패: 유효한 파일을 다시 열거나 선택을 취소하세요.'}</p><button onClick={() => {assemblySourceLoad.restore();setAssemblyLoadState({status:'ready'});markSourceCurrent(true);setViewerNote('파일 선택을 취소하고 이전 유효한 모델로 돌아왔습니다.');}}>DISCARD FILE SELECTION</button></>}
-            <button disabled={!sourceCurrent} onClick={() => {
-              if(assemblySourceLoad.blocked)return;
-              downloadJson(sourcePayload, sourceFileName);
-            }}>SAVE IR</button>
-            {assetKind === 'product' && assemblyIR?.electrical && <button disabled={!sourceCurrent} onClick={() => {
-              if(assemblySourceLoad.blocked)return;
-              downloadJson(buildPhysicalNetlist(assemblyIR), 'morphloom-physical-netlist.json');
-              setViewerNote('물리 핀·AWG·검증 상태가 포함된 NETLIST를 저장했습니다.');
-            }}>SAVE NETLIST</button>}
-          </div>
-          <section className="format-compatibility" aria-label="3D 프로그램 내보내기 범위">
-            <span className="eyebrow">handoff scope</span>
-            <p><b>GLB</b> Blender · Unity · Unreal · Godot · web</p>
-            <p><b>OBJ / PLY</b> Maya · Cinema 4D · 3ds Max · MeshLab · CloudCompare</p>
-            <p><b>STL (MM) / SVG / USDZ</b> Fusion·슬라이서 메시 · Figma 2D · Apple AR</p>
-            <small>STEP/BREP·FBX·.blend·.uasset 네이티브 파일은 아니며 필요 시 대상 프로그램에서 변환합니다.</small>
-          </section>
-          {jobs.length > 0 && (
-            <section className="local-job-queue" aria-label="로컬 작업 대기열" aria-live="polite">
-              <header><span className="eyebrow">local job queue</span><b>{busyAction ? `${busyAction} 실행 중` : '대기열 유휴'}</b></header>
-              {jobs.slice(-5).reverse().map((job) => (
-                <div key={job.id}>
-                  <span>#{job.id} · {job.name}</span><b className={`job-${job.status}`}>{job.status.toUpperCase()}</b>
-                  {(job.status === 'queued' || job.status === 'running') && <button onClick={() => cancelJob(job.id)}>CANCEL</button>}
-                  {job.status === 'failed' && <button onClick={() => retryJob(job.id)}>RETRY</button>}
-                  {(job.durationMs !== undefined || job.outputBytes !== undefined) && (
-                    <small>{job.durationMs !== undefined ? `${job.durationMs.toFixed(0)} ms` : ''}{job.outputBytes !== undefined ? ` · ${bytesLabel(job.outputBytes)}` : ''}</small>
-                  )}
-                  {job.error && <small>{job.error}</small>}
-                </div>
-              ))}
-            </section>
-          )}
+          <div className="panel-body" role="tabpanel">{rightTab === 'library' ? libraryPanel : inspectorPanel}</div>
         </aside>
-      </section>
+        <button className="edge-toggle is-right" aria-expanded={!rightCollapsed} aria-label={rightCollapsed ? t('panel.expand') : t('panel.collapse')} onClick={() => setRightCollapsed((value) => !value)}>{rightCollapsed ? <ChevronLeft size={13} /> : <ChevronRight size={13} />}</button>
+      </div>
 
-      <footer className={`pipeline-footer${pipelineCollapsed ? ' is-collapsed' : ''}`}>
-        <button
-          className="panel-collapse-button pipeline-collapse-button"
-          aria-expanded={!pipelineCollapsed}
-          aria-label={pipelineCollapsed ? '하단 파이프라인 펼치기' : '하단 파이프라인 접기'}
-          title={pipelineCollapsed ? '파이프라인 펼치기' : '파이프라인 접기'}
-          onClick={() => setPipelineCollapsed((collapsed) => !collapsed)}
-        >{pipelineCollapsed ? 'PIPELINE ↑' : 'PIPELINE ↓'}</button>
-        <span className="eyebrow">result pipeline</span>
-        {(assetKind === 'human' ? [
-          ['01', 'CHARACTER IR', 'pass'], ['02', 'MORPH', pack ? 'pass' : 'run'], ['03', 'MATERIAL', pack ? 'pass' : 'wait'],
-          ['04', 'RIG', deliveryAudit?.status === 'blocked' ? 'blocked' : deliveryAudit?.reopened?.skeletons && deliveryAudit.reopened.animationClips >= 22 ? 'pass' : deliveryAudit ? 'warn' : 'run'],
-          ['05', 'TOPOLOGY', pack ? 'pass' : 'wait'], ['06', 'EXPORT', qualityBlocked || deliveryAudit?.status === 'blocked' ? 'blocked' : deliveryAudit ? 'ready' : 'run'],
-        ] : [
-          ['01', 'SOURCE', 'pass'], ['02', assemblyIR || productSpec.kind === 'ornate-knife' ? 'ASSEMBLY IR' : 'PRODUCT SPEC', 'pass'], ['03', 'COMPILE', pack ? 'pass' : 'run'],
-          ['04', 'TOPOLOGY', pack ? 'pass' : 'wait'], ['05', 'PART TREE', pack ? 'pass' : 'wait'], ['06', 'EXPORT', qualityBlocked || deliveryAudit?.status === 'blocked' ? 'blocked' : deliveryAudit ? 'ready' : 'run'],
-        ]).map(([step, label, state], index) => (
-          <div className="pipeline-step" key={step}>
-            <i className={state} /><span>{step}</span><b>{label}</b><small>{state.toUpperCase()}</small>{index < 5 && <em>→</em>}
-          </div>
-        ))}
-        <p>Natural language in CLI · results in browser</p>
-      </footer>
+      <input
+        ref={fileInputRef}
+        className="visually-hidden"
+        type="file"
+        multiple
+        accept="application/json,.json"
+        onChange={(event) => {
+          const files = [...(event.currentTarget.files ?? [])];
+          event.currentTarget.value = '';
+          void importFiles(files);
+        }}
+      />
+
+      <dialog ref={helpRef} className="st-dialog" onClick={(event) => { if (event.target === event.currentTarget) event.currentTarget.close(); }}>
+        <header><h2>{t('help.title')}</h2><button className="st-icon" aria-label={t('cmd.close')} onClick={() => helpRef.current?.close()}><X size={15} /></button></header>
+        <dl className="shortcut-list">
+          {([
+            ['F', 'help.focus'], ['H', 'help.hide'], ['⌥H', 'help.showAll'], ['/', 'help.solo'], ['⌘K', 'help.command'],
+            ['M', 'help.measure'], ['Esc', 'help.escape'], ['⌘Z · ⇧⌘Z', 'help.undo'], ['[ · ]', 'help.prevNext'], ['?', 'help.help'],
+          ] as Array<[string, MessageKey]>).map(([keys, label]) => <div key={label}><dt><kbd>{keys}</kbd></dt><dd>{t(label)}</dd></div>)}
+        </dl>
+      </dialog>
     </main>
   );
 }

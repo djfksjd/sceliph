@@ -22,16 +22,21 @@ Sceliph는 사진·도면·실측값·자연어 요구를 선언형 IR로 정리
 
 ## 로컬 UI / UX
 
-**2026-10-10 최신 작업 화면의 실제 Chrome 캡처**입니다. 기준은 `78bec7e`와 이번 로컬 개선입니다. 로컬 스튜디오 반사광으로 금속의 거칠기와 반사를 확인하고, 상세 성능 수치는 펼쳐서 볼 수 있습니다. 원본 재질·내보내기 GLB는 보존됩니다. [캡처 출처](./assets/screenshots/README.md)
+**2026-10-27에 개편한 결과 뷰어의 실제 동작 녹화**입니다. 마우스로 돌리고 휠로 확대·축소하는 장면이 그대로 들어 있습니다. 로딩과 Claude CLI 응답 대기 시간만 잘랐습니다. 클립을 누르면 고화질 MP4가 열립니다. [녹화 출처](./assets/demos/README.md)
 
-![스튜디오 반사광, 안정적인 부품 ID와 Inspector를 갖춘 최신 Sceliph 작업 화면](./assets/screenshots/workbench-20261010-desktop.jpg)
+<a href="./assets/demos/demo-command.mp4"><img src="./assets/demos/demo-command.webp" alt="⌘K 명령 바에서 선택한 블레이드를 20% 넓히도록 요청하고 diff를 확인한 뒤 적용하는 장면" width="100%" /></a>
+
+**⌘K 명령 바**: 부품을 범위로 지정하고 자연어로 수정을 요청합니다. 요청은 내 Claude Code CLI로 가고, 현재 IR과 화면 스냅샷이 함께 전송됩니다. 응답은 부품 단위 diff로 미리 보이고, 승인해야 적용됩니다. 적용한 부품에는 '수정됨' 표시와 되돌리기가 붙습니다.
 
 <table><tr>
-<td width="72%"><img src="./assets/screenshots/deterministic-plan-20261010.jpg" alt="두 부품의 원본 SHA 결합 JSON 교체 계획을 검사한 뒤 적용하는 화면" width="100%" /><br /><strong>LLM이 작성한 JSON 계획 검토</strong><br />모든 대상 검사 후 한 번의 되돌릴 수 있는 편집으로 적용합니다.</td>
-<td width="28%"><img src="./assets/screenshots/workbench-20261010-mobile.jpg" alt="상세 성능 수치를 접은 390픽셀 모바일 작업 화면" width="100%" /><br /><strong>모바일 배치</strong><br />뷰포트에서 부품 트리와 Inspector로 스크롤하며 작업합니다.</td>
+<td width="50%"><a href="./assets/demos/demo-library-compare.mp4"><img src="./assets/demos/demo-library-compare.webp" alt="라이브러리에 쌓인 결과를 넘기고 같은 선풍기의 1장·2장 결과를 나란히 비교하는 장면" width="100%" /></a><br /><strong>라이브러리 · 나란히 비교</strong><br />여러 IR 파일과 폴더를 열면 번호가 붙어 쌓이고, 두 결과를 뷰포트 두 개로 나눠 비교합니다.</td>
+<td width="50%"><a href="./assets/demos/demo-evidence.mp4"><img src="./assets/demos/demo-evidence.webp" alt="근거 컬러 타깃 패치로 추정·추론 부품만 남기고 추론 해칭을 켜는 장면" width="100%" /></a><br /><strong>근거 컬러 타깃</strong><br />실측·데이터시트·추정·추론·미기록 패치를 누르면 해당 부품만 선명하게 남습니다. 추론 부품에는 빗금을 켤 수 있습니다.</td>
+</tr><tr>
+<td width="50%"><a href="./assets/demos/demo-parts.mp4"><img src="./assets/demos/demo-parts.webp" alt="부품 선택과 격리, 분해 보기, 시점 전환, 확대·축소 장면" width="100%" /></a><br /><strong>부품 · 분해 · 시점</strong><br />부품을 선택·숨기기·잠그기·격리하고, 분해 보기와 Front/Top/ISO 시점, 휠 확대·축소를 씁니다.</td>
+<td width="50%"><strong>그 밖에</strong><br />한국어·영어·일본어·중국어 전환, 다크·라이트 테마, 모바일 배치를 지원합니다. GLB 단일 내보내기와 에셋 팩 저장은 따로 판정하고, 막혔으면 이유를 보여 줍니다. 검증 체크리스트에는 GLB 재열기, 포락 오차, 이름 있는 노드 비율, Khronos 검증기 결과가 나옵니다.<br /><br />명령 바는 <code>npm run dev</code>나 <code>npm run preview</code>로 띄운 뷰어에서 동작합니다. 정적 빌드에서는 브리지가 없다고 표시합니다.</td>
 </tr></table>
 
-표시된 자산은 창작 예제입니다. 사진 복원·베어링 공차·전체 납품 품질을 인증하는 캡처가 아닙니다. 이전 캡처는 기존 출처 설명과 함께 저장소에 유지합니다.
+화면 속 선풍기와 조명은 ABO 사진을 보고 LLM이 쓴 IR입니다. 녹화는 뷰어 동작을 보여 줄 뿐이며, 복원 정확도나 실무 납품 품질을 인증하지 않습니다. 이전 캡처는 [기존 출처 설명](./assets/screenshots/README.md)과 함께 저장소에 남아 있습니다.
 
 ## 현재 상태
 

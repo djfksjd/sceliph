@@ -22,16 +22,21 @@ Sceliph is an open-source local tool that turns photographs, drawings, measureme
 
 ## Local UI / UX
 
-Actual Chrome captures of the current workbench on **2026-10-10**, based on `78bec7e` plus this local refinement. The viewport uses local studio reflections so metal roughness is readable; the source materials and exported GLB are preserved. Scene diagnostics remain available in a disclosure. [Capture provenance](./assets/screenshots/README.md)
+**Recordings of the redesigned result viewer, 2026-10-27.** Orbit drags and wheel zoom are shown as they happen; only loading and the Claude CLI response wait are cut. Click a clip for the full-quality MP4. [Recording provenance](./assets/demos/README.md)
 
-![Sceliph workbench with studio-lit bearing, stable component IDs and Inspector](./assets/screenshots/workbench-20261010-desktop.jpg)
+<a href="./assets/demos/demo-command.mp4"><img src="./assets/demos/demo-command.webp" alt="Asking the ⌘K command bar to widen a selected blade by 20%, reviewing the diff and applying it" width="100%" /></a>
+
+**⌘K command bar**: scope the parts you selected, then ask in plain language. The request goes to your own Claude Code CLI, together with the current IR and a view snapshot. The answer appears as a per-part diff and is applied only when you approve it. Applied parts are marked edited, with revert.
 
 <table><tr>
-<td width="72%"><img src="./assets/screenshots/deterministic-plan-20261010.jpg" alt="Two source-bound part replacements checked before Apply" width="100%" /><br /><strong>Review an LLM-authored JSON plan</strong><br />Check every replacement, then apply one reversible edit.</td>
-<td width="28%"><img src="./assets/screenshots/workbench-20261010-mobile.jpg" alt="390-pixel mobile layout with folded scene diagnostics" width="100%" /><br /><strong>Mobile layout</strong><br />Scroll from the viewport to the part tree and Inspector.</td>
+<td width="50%"><a href="./assets/demos/demo-library-compare.mp4"><img src="./assets/demos/demo-library-compare.webp" alt="Switching results in the library and comparing one-photo and two-photo results side by side" width="100%" /></a><br /><strong>Library · side-by-side compare</strong><br />Opened IR files and folders collect as numbered results; any two can be compared in split viewports.</td>
+<td width="50%"><a href="./assets/demos/demo-evidence.mp4"><img src="./assets/demos/demo-evidence.webp" alt="Evidence color-target patches keeping only estimated or inferred parts solid, with inferred hatching" width="100%" /></a><br /><strong>Evidence color target</strong><br />Measured, datasheet, estimated, inferred and undocumented patches keep only those parts solid. Inferred parts can be hatched.</td>
+</tr><tr>
+<td width="50%"><a href="./assets/demos/demo-parts.mp4"><img src="./assets/demos/demo-parts.webp" alt="Part selection, solo, exploded view, view presets and zoom" width="100%" /></a><br /><strong>Parts · explode · views</strong><br />Select, hide, lock or solo parts; exploded view, Front/Top/ISO and wheel zoom.</td>
+<td width="50%"><strong>Also</strong><br />Korean, English, Japanese and Chinese UI; dark and light themes; mobile layout. Single-GLB export and asset-pack save are separate gates, each with its blocking reason. The checklist covers GLB reopen, bounds drift, named nodes and the Khronos validator.<br /><br />The command bar works in viewers started with <code>npm run dev</code> or <code>npm run preview</code>; a static build reports that no bridge is present.</td>
 </tr></table>
 
-These are authored demonstration assets. Screenshots do not certify photograph reconstruction, bearing tolerances or whole production delivery. Previous captures remain in the repository with their original provenance.
+The fan and lamps on screen are LLM-written IRs from ABO photos. The recordings show viewer behavior only; they do not certify reconstruction accuracy or production delivery. Earlier captures remain with their [original provenance](./assets/screenshots/README.md).
 
 ## Current status
 

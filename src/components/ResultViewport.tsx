@@ -72,7 +72,28 @@ export interface InspectablePart {
   detail: string;
 }
 
+/** Viewer-only presentation state; never part of the IR or the delivered GLB. */
+export interface PartDisplay {
+  selectedId?: string;
+  hiddenIds?: string[];
+  /** Solo keeps one part solid and ghosts the rest. */
+  soloId?: string;
+  /** Keeps these parts solid and ghosts the rest (evidence focus). */
+  focusIds?: string[];
+  /** Parts drawn with the hatched "inferred" overlay. */
+  hatchIds?: string[];
+  /** 0 = assembled, 1 = parts pushed out by the model radius. */
+  explode?: number;
+}
+
+export interface PartHover { id: string; name: string; x: number; y: number }
+
 export interface ViewportHandle {
+  /** PNG data URL of the current view, scaled to fit maxSide. */
+  snapshot: (maxSide?: number) => string | undefined;
+  /** Every named part of the rendered build, outermost first. */
+  listParts: () => InspectablePart[];
+  partInfo: (partId: string) => InspectablePart | undefined;
   exportGlb: () => Promise<ExportReceipt>;
   exportBlenderNormalKit: (source: AssemblyIR) => Promise<ExportReceipt>;
   exportObj: () => Promise<ExportReceipt>;
@@ -114,6 +135,8 @@ interface ResultViewportProps {
   onBuilt?: (build: CharacterBuild | ProductBuild) => void;
   onQualityMetrics?: (metrics: CharacterBuild['metrics'] | ProductBuild['metrics']) => void;
   onPartSelected?: (part?: InspectablePart) => void;
+  onPartHover?: (hover?: PartHover) => void;
+  display?: PartDisplay;
   onMeasurementChange?: (result: MeasurementResult | undefined, points: 0 | 1 | 2) => void;
   onMeasurementMiss?: () => void;
   onDeliveryAudit?: (audit: DeliveryAudit | undefined) => void;
@@ -149,11 +172,30 @@ function clearGroup(group: THREE.Group): void {
   group.clear();
 }
 
+let coveTexture: THREE.CanvasTexture | undefined;
+/** Neutral photographic cove: light at the top centre falling to mid grey, so material colours are judged on 18% grey. */
+function studioCove(): THREE.Texture {
+  if (coveTexture) return coveTexture;
+  const canvas = document.createElement('canvas');
+  canvas.width = 256;
+  canvas.height = 256;
+  const context = canvas.getContext('2d')!;
+  const gradient = context.createRadialGradient(128, 40, 8, 128, 96, 250);
+  gradient.addColorStop(0, '#cfd0d1');
+  gradient.addColorStop(0.5, '#a9aaac');
+  gradient.addColorStop(1, '#7d7e80');
+  context.fillStyle = gradient;
+  context.fillRect(0, 0, 256, 256);
+  coveTexture = new THREE.CanvasTexture(canvas);
+  coveTexture.colorSpace = THREE.SRGBColorSpace;
+  return coveTexture;
+}
+
 function applyLighting(runtime: Runtime, build?: CharacterBuild | ProductBuild): void {
   const night = runtime.lighting === 'night';
   runtime.renderer.toneMappingExposure = night ? 1 : 1;
-  runtime.scene.background = new THREE.Color(night ? '#182535' : '#d9dad5');
-  runtime.scene.fog = new THREE.FogExp2(night ? '#1a2938' : '#c9ceca', night ? 0.026 : 0.055);
+  runtime.scene.background = night ? new THREE.Color('#182535') : studioCove();
+  runtime.scene.fog = new THREE.FogExp2(night ? '#1a2938' : '#a9aaac', night ? 0.026 : 0.055);
   runtime.key.intensity = night ? 1.35 : 2.65;
   runtime.edge.intensity = night ? 1.5 : 1.35;
   runtime.hemisphere.intensity = night ? 0.75 : 1.05;
@@ -590,6 +632,162 @@ function viewDirection(
     : new THREE.Vector3(1.5, 0.4, 1.05);
 }
 
+const GHOST_MATERIAL = new THREE.MeshBasicMaterial({ color: '#8a8b8d', transparent: true, opacity: 0.12, depthWrite: false });
+// Inverted hull pushed out along normals by a view-distance-scaled amount, so
+// the outline keeps a near-constant pixel width on smooth and faceted parts.
+const SELECTION_HULL = new THREE.ShaderMaterial({
+  side: THREE.BackSide,
+  uniforms: { color: { value: new THREE.Color('#12a6c8') } },
+  vertexShader: 'void main() { vec4 mv = modelViewMatrix * vec4(position, 1.0); vec3 n = normalize(normalMatrix * normal); mv.xyz += n * max(-mv.z, 0.01) * 0.003; gl_Position = projectionMatrix * mv; }',
+  fragmentShader: 'uniform vec3 color; void main() { gl_FragColor = vec4(color, 1.0); }',
+});
+const SELECTION_XRAY = new THREE.MeshBasicMaterial({ color: '#12a6c8', transparent: true, opacity: 0.18, depthTest: false, depthWrite: false });
+// Screen-space diagonal hatching, so it reads the same on any UV layout.
+const HATCH_MATERIAL = new THREE.ShaderMaterial({
+  transparent: true,
+  depthWrite: false,
+  polygonOffset: true,
+  polygonOffsetFactor: -2,
+  polygonOffsetUnits: -2,
+  uniforms: { color: { value: new THREE.Color('#bb5695') } },
+  vertexShader: 'void main() { gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }',
+  fragmentShader: 'uniform vec3 color; void main() { if (mod(gl_FragCoord.x + gl_FragCoord.y, 9.0) > 2.4) discard; gl_FragColor = vec4(color, 0.85); }',
+});
+const noRaycast = () => undefined;
+
+interface DisplayState {
+  overlays: Array<{ object: THREE.Object3D; ownsGeometry: boolean }>;
+  ghosted: Map<THREE.Mesh, THREE.Material | THREE.Material[]>;
+  moved: Map<THREE.Object3D, THREE.Vector3>;
+  visibility: Map<THREE.Object3D, boolean>;
+}
+const displayStates = new WeakMap<THREE.Object3D, DisplayState>();
+
+function partId(object: THREE.Object3D): string | undefined {
+  const id = (object.userData.part as { id?: unknown } | undefined)?.id ?? (object.userData.characterPart as { id?: unknown } | undefined)?.id;
+  return typeof id === 'string' ? id : undefined;
+}
+
+/** Outermost object per part id, in traversal order. */
+function partObjects(root: THREE.Object3D): Map<string, THREE.Object3D> {
+  const parts = new Map<string, THREE.Object3D>();
+  root.traverse((object) => {
+    const id = partId(object);
+    if (id && !parts.has(id)) parts.set(id, object);
+  });
+  return parts;
+}
+
+function partMeshes(object: THREE.Object3D): THREE.Mesh[] {
+  const meshes: THREE.Mesh[] = [];
+  object.traverse((child) => {
+    if (child instanceof THREE.Mesh && !child.userData.viewerOverlay) meshes.push(child);
+  });
+  return meshes;
+}
+
+function restorePartDisplay(root: THREE.Object3D): void {
+  const state = displayStates.get(root);
+  if (!state) return;
+  for (const { object, ownsGeometry } of state.overlays) {
+    object.parent?.remove(object);
+    if (ownsGeometry && (object instanceof THREE.LineSegments || object instanceof THREE.Mesh)) object.geometry.dispose();
+  }
+  for (const [mesh, material] of state.ghosted) mesh.material = material;
+  for (const [object, position] of state.moved) object.position.copy(position);
+  for (const [object, visible] of state.visibility) object.visible = visible;
+  displayStates.delete(root);
+}
+
+function applyPartDisplay(root: THREE.Object3D, display: PartDisplay | undefined): void {
+  restorePartDisplay(root);
+  if (!display) return;
+  const state: DisplayState = { overlays: [], ghosted: new Map(), moved: new Map(), visibility: new Map() };
+  displayStates.set(root, state);
+  const parts = partObjects(root);
+  for (const id of display.hiddenIds ?? []) {
+    const object = parts.get(id);
+    if (!object) continue;
+    state.visibility.set(object, object.visible);
+    object.visible = false;
+  }
+  const keep = display.soloId ? new Set([display.soloId]) : display.focusIds ? new Set(display.focusIds) : undefined;
+  if (keep) for (const [id, object] of parts) {
+    if (keep.has(id)) continue;
+    for (const mesh of partMeshes(object)) {
+      if (state.ghosted.has(mesh)) continue;
+      state.ghosted.set(mesh, mesh.material);
+      mesh.material = GHOST_MATERIAL;
+    }
+  }
+  const explode = THREE.MathUtils.clamp(display.explode ?? 0, 0, 1);
+  if (explode > 0 && parts.size > 1) {
+    const bounds = new THREE.Box3().setFromObject(root, true);
+    const center = bounds.getCenter(new THREE.Vector3());
+    const radius = bounds.getSize(new THREE.Vector3()).length() / 2;
+    for (const object of parts.values()) {
+      if (!object.parent) continue;
+      const partCenter = new THREE.Box3().setFromObject(object, true).getCenter(new THREE.Vector3());
+      const direction = partCenter.sub(center);
+      if (direction.lengthSq() < 1e-12) continue;
+      direction.normalize().multiplyScalar(radius * explode * 0.9);
+      state.moved.set(object, object.position.clone());
+      const world = object.getWorldPosition(new THREE.Vector3()).add(direction);
+      object.position.copy(object.parent.worldToLocal(world));
+    }
+  }
+  const selected = display.selectedId ? parts.get(display.selectedId) : undefined;
+  if (selected) for (const mesh of partMeshes(selected)) {
+    if (mesh instanceof THREE.SkinnedMesh || !mesh.geometry.getAttribute('normal')) continue;
+    // The hull draws the outline; the faint x-ray fill shows the part through occluders.
+    for (const material of [SELECTION_HULL, SELECTION_XRAY]) {
+      const overlay = new THREE.Mesh(mesh.geometry, material);
+      overlay.userData.viewerOverlay = true;
+      overlay.raycast = noRaycast;
+      overlay.renderOrder = material === SELECTION_XRAY ? 999 : 1;
+      mesh.add(overlay);
+      state.overlays.push({ object: overlay, ownsGeometry: false });
+    }
+  }
+  for (const id of display.hatchIds ?? []) {
+    const object = parts.get(id);
+    if (!object) continue;
+    for (const mesh of partMeshes(object)) {
+      if (mesh instanceof THREE.SkinnedMesh) continue;
+      const hatch = new THREE.Mesh(mesh.geometry, HATCH_MATERIAL);
+      hatch.userData.viewerOverlay = true;
+      hatch.raycast = noRaycast;
+      hatch.renderOrder = 3;
+      mesh.add(hatch);
+      state.overlays.push({ object: hatch, ownsGeometry: false });
+    }
+  }
+}
+
+function prefersReducedMotion(): boolean {
+  return typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches === true;
+}
+
+/** Eases the camera from a remembered pose to the pose frameBuild just set. */
+function easeCameraFrom(runtime: Runtime, fromPosition: THREE.Vector3, fromTarget: THREE.Vector3): void {
+  if (prefersReducedMotion()) return;
+  const toPosition = runtime.camera.position.clone();
+  const toTarget = runtime.controls.target.clone();
+  const started = performance.now();
+  const step = () => {
+    const t = Math.min(1, (performance.now() - started) / 400);
+    const eased = 1 - Math.pow(1 - t, 3);
+    runtime.camera.position.lerpVectors(fromPosition, toPosition, eased);
+    runtime.controls.target.lerpVectors(fromTarget, toTarget, eased);
+    runtime.camera.lookAt(runtime.controls.target);
+    runtime.controls.update();
+    if (t < 1) requestAnimationFrame(step);
+  };
+  runtime.camera.position.copy(fromPosition);
+  runtime.controls.target.copy(fromTarget);
+  requestAnimationFrame(step);
+}
+
 function frameBuild(
   runtime: Runtime,
   build: CharacterBuild | ProductBuild,
@@ -713,6 +911,8 @@ export const ResultViewport = forwardRef<ViewportHandle, ResultViewportProps>(
     onBuilt,
     onQualityMetrics,
     onPartSelected,
+    onPartHover,
+    display,
     onMeasurementChange,
     onMeasurementMiss,
     onDeliveryAudit,
@@ -723,8 +923,10 @@ export const ResultViewport = forwardRef<ViewportHandle, ResultViewportProps>(
     const buildRef = useRef<CharacterBuild | ProductBuild | undefined>(undefined);
     const configRef = useRef({ assetKind, assemblyIR, spec });
     configRef.current = { assetKind, assemblyIR, spec };
-    const interactionRef = useRef({ measurementEnabled, measurementMode, measurementUnit, dimensionOverviewEnabled, onMeasurementChange, onMeasurementMiss, onPartSelected });
-    interactionRef.current = { measurementEnabled, measurementMode, measurementUnit, dimensionOverviewEnabled, onMeasurementChange, onMeasurementMiss, onPartSelected };
+    const interactionRef = useRef({ measurementEnabled, measurementMode, measurementUnit, dimensionOverviewEnabled, onMeasurementChange, onMeasurementMiss, onPartSelected, onPartHover });
+    interactionRef.current = { measurementEnabled, measurementMode, measurementUnit, dimensionOverviewEnabled, onMeasurementChange, onMeasurementMiss, onPartSelected, onPartHover };
+    const displayRef = useRef(display);
+    displayRef.current = display;
     const measurementPointsRef = useRef<THREE.Vector3[]>([]);
     const markerRadiusRef = useRef(0.01);
     const assetIdentityRef = useRef<{ assetKind: AssetKind; assemblyIR?: AssemblyIR; productSpec: ProductSpec; spec: CharacterSpec } | undefined>(undefined);
@@ -799,7 +1001,7 @@ export const ResultViewport = forwardRef<ViewportHandle, ResultViewportProps>(
       renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
       const scene = new THREE.Scene();
-      scene.fog = new THREE.FogExp2('#c9ceca', 0.055);
+      scene.fog = new THREE.FogExp2('#a9aaac', 0.055);
       const camera = new THREE.PerspectiveCamera(31, 1, 0.001, 30);
       const controls = new OrbitControls(camera, canvas);
       controls.enableDamping = true;
@@ -847,7 +1049,8 @@ export const ResultViewport = forwardRef<ViewportHandle, ResultViewportProps>(
 
       const floor = new THREE.Mesh(
         new THREE.CircleGeometry(2.55, 96),
-        new THREE.MeshStandardMaterial({ color: '#c8c9c4', roughness: 0.92, metalness: 0.03 }),
+        // Shadow catcher only: the cove backdrop stays one seamless sweep.
+        new THREE.ShadowMaterial({ color: '#1d1e20', opacity: 0.28 }),
       );
       floor.name = 'studio_floor_below_asset';
       floor.rotation.x = -Math.PI / 2;
@@ -979,9 +1182,41 @@ export const ResultViewport = forwardRef<ViewportHandle, ResultViewportProps>(
         if (activePointerId === event.pointerId) activePointerId = undefined;
         canvas.classList.remove('is-panning');
       };
+      let hoverFrame = 0;
+      let hoverEvent: PointerEvent | undefined;
+      const hoverPart = (event: PointerEvent) => {
+        const notify = interactionRef.current.onPartHover;
+        if (!notify) return;
+        if (event.buttons !== 0 || spacePanActive) {
+          notify(undefined);
+          return;
+        }
+        hoverEvent = event;
+        if (hoverFrame) return;
+        hoverFrame = requestAnimationFrame(() => {
+          hoverFrame = 0;
+          const latest = hoverEvent;
+          if (!latest) return;
+          const rect = canvas.getBoundingClientRect();
+          pointer.x = ((latest.clientX - rect.left) / rect.width) * 2 - 1;
+          pointer.y = -((latest.clientY - rect.top) / rect.height) * 2 + 1;
+          raycaster.setFromCamera(pointer, camera);
+          const hit = raycaster.intersectObject(root, true).find((item) => visibleInHierarchy(item.object)
+            && !item.object.userData.viewerOverlay
+            && (item.object.userData.part || item.object.userData.characterPart));
+          const part = inspectablePartFromObject(hit?.object ?? null);
+          interactionRef.current.onPartHover?.(part ? { id: part.id, name: part.name, x: latest.clientX - rect.left, y: latest.clientY - rect.top } : undefined);
+        });
+      };
+      const leavePart = () => {
+        hoverEvent = undefined;
+        interactionRef.current.onPartHover?.(undefined);
+      };
       canvas.addEventListener('pointerdown', rememberPointer);
       canvas.addEventListener('pointerup', selectPart);
       canvas.addEventListener('pointercancel', cancelPointer);
+      canvas.addEventListener('pointermove', hoverPart);
+      canvas.addEventListener('pointerleave', leavePart);
       window.addEventListener('keydown', handlePanKeyDown);
       window.addEventListener('keyup', handlePanKeyUp);
       window.addEventListener('blur', releasePan);
@@ -997,6 +1232,9 @@ export const ResultViewport = forwardRef<ViewportHandle, ResultViewportProps>(
         canvas.removeEventListener('pointerdown', rememberPointer);
         canvas.removeEventListener('pointerup', selectPart);
         canvas.removeEventListener('pointercancel', cancelPointer);
+        canvas.removeEventListener('pointermove', hoverPart);
+        canvas.removeEventListener('pointerleave', leavePart);
+        cancelAnimationFrame(hoverFrame);
         canvas.removeEventListener('wheel', handleOpticalZoom, { capture: true });
         window.removeEventListener('keydown', handlePanKeyDown);
         window.removeEventListener('keyup', handlePanKeyUp);
@@ -1046,6 +1284,7 @@ export const ResultViewport = forwardRef<ViewportHandle, ResultViewportProps>(
       }
       runtime.measurement.visible = assetKind === 'human' || measurementEnabled;
       buildRef.current = build;
+      applyPartDisplay(build.root, displayRef.current);
       const size = build.metrics.bounds.getSize(new THREE.Vector3());
       markerRadiusRef.current = Math.max(0.004, Math.min(0.12, size.length() * 0.004));
       const sourceSnapshot = snapshotScene(build.root);
@@ -1105,6 +1344,11 @@ export const ResultViewport = forwardRef<ViewportHandle, ResultViewportProps>(
         build.root.removeEventListener('morphloom-reference-projection-ready' as never, handleReferenceProjectionReady as never);
       };
     }, [assemblyIR, assetKind, mode, onBuilt, onTelemetry, pack, productSpec, spec]);
+
+    useEffect(() => {
+      const build = buildRef.current;
+      if (build) applyPartDisplay(build.root, display);
+    }, [display]);
 
     useEffect(() => {
       const sequence = ++validationSequenceRef.current;
@@ -1204,16 +1448,45 @@ export const ResultViewport = forwardRef<ViewportHandle, ResultViewportProps>(
     }, [dimensionOverviewEnabled, measurementUnit]);
 
     useImperativeHandle(ref, () => ({
+      snapshot(maxSide = 512) {
+        const runtime = runtimeRef.current;
+        if (!runtime) return undefined;
+        runtime.renderer.render(runtime.scene, runtime.camera);
+        const source = runtime.renderer.domElement;
+        if (!source.width || !source.height) return undefined;
+        const scale = Math.min(1, maxSide / Math.max(source.width, source.height));
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.max(1, Math.round(source.width * scale));
+        canvas.height = Math.max(1, Math.round(source.height * scale));
+        canvas.getContext('2d')?.drawImage(source, 0, 0, canvas.width, canvas.height);
+        return canvas.toDataURL('image/png');
+      },
+      listParts() {
+        const build = buildRef.current;
+        if (!build) return [];
+        return [...partObjects(build.root).values()].flatMap((object) => {
+          const part = inspectablePartFromObject(object);
+          return part ? [part] : [];
+        });
+      },
+      partInfo(id) {
+        const build = buildRef.current;
+        const object = build ? partObjects(build.root).get(id) : undefined;
+        return object ? inspectablePartFromObject(object) : undefined;
+      },
       setView(view) {
         const runtime = runtimeRef.current;
         const build = buildRef.current;
         if (!runtime || !build) return;
+        const fromPosition = runtime.camera.position.clone();
+        const fromTarget = runtime.controls.target.clone();
         runtime.view = view;
         applyArchitecturalViewVisibility(build.root, view, assemblyIR, runtime.buildingLevel);
         if (interactionRef.current.dimensionOverviewEnabled) {
           drawDimensionOverview(runtime, build, interactionRef.current.measurementUnit);
         }
         frameBuild(runtime, build, assetKind, assemblyIR, spec);
+        easeCameraFrom(runtime, fromPosition, fromTarget);
         runtime.syncDiagnostics();
       },
       setBuildingLevel(level) {

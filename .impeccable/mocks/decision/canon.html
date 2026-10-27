@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>Canon</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;background:#141517;color:#e6e6e6;font:13px/1.4 -apple-system,"SF Pro Text","Apple SD Gothic Neo",sans-serif}
+.top{height:52px;display:flex;align-items:center;gap:20px;padding:0 18px;background:#1a1b1e}
+.logo{font-weight:800;letter-spacing:.12em}.nav{color:#9aa0a6}.nav b{color:#e6e6e6}
+.r{margin-left:auto;display:flex;gap:10px}.r span{padding:7px 12px;border-radius:999px;background:#2b2d31}.r .a{background:#3b82f6;color:#fff}
+.shell{display:grid;grid-template-columns:64px 300px 1fr 320px;height:848px;gap:12px;padding:12px}
+.rail{background:#1f2023;border-radius:16px;display:flex;flex-direction:column;align-items:center;gap:14px;padding-top:16px;color:#9aa0a6;font-size:11px}
+.rail span{display:grid;place-items:center;width:44px;height:44px;border-radius:12px}.rail span.on{background:#2b2d31;color:#3b82f6}
+.panel{background:#1f2023;border-radius:16px;padding:14px}
+.panel h4{font-size:13px;margin-bottom:12px}
+.row{display:flex;justify-content:space-between;padding:9px 10px;border-radius:10px;background:#26282c;margin-bottom:6px;color:#c9ccd1}.row.on{outline:1.5px solid #3b82f6}
+.vp{border-radius:16px;background:radial-gradient(90% 80% at 50% 40%,#3a3c40,#151618);position:relative}
+.blob{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:420px;height:90px;border-radius:40px;background:#55585e}
+.tool{position:absolute;right:14px;top:14px;display:flex;flex-direction:column;gap:8px}.tool span{width:40px;height:40px;border-radius:12px;background:#2b2d31}
+.cmd{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);width:520px;height:46px;border-radius:14px;background:#26282c;color:#9aa0a6;display:flex;align-items:center;padding:0 14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.cell{height:120px;border-radius:12px;background:radial-gradient(#3a3c40,#1a1b1e)}.cell.on{outline:2px solid #3b82f6}
+.big{margin-top:14px;padding:13px;border-radius:12px;background:#3b82f6;color:#fff;text-align:center;font-weight:700}
+</style></head><body>
+<div class="top"><span class="logo">SCELIPH</span><span class="nav"><b>작업 공간</b> · 라이브러리 · 문서</span><div class="r"><span>KO</span><span>품질 52</span><span class="a">내보내기</span></div></div>
+<div class="shell">
+<nav class="rail"><span class="on">▤<br>부품</span><span>◐<br>재질</span><span>⟷<br>측정</span><span>⇩<br>출력</span></nav>
+<aside class="panel"><h4>부품 9</h4>
+<div class="row">Ceiling canopy<span>lathe</span></div><div class="row">Downrod<span>cyl</span></div><div class="row">Motor housing<span>lathe</span></div><div class="row">Light glass bowl<span>lathe</span></div><div class="row on">Blade 1<span>box</span></div><div class="row">Blade 2<span>box</span></div><div class="row">Blade 3<span>box</span></div><div class="row">Blade 4<span>box</span></div><div class="row">Blade 5<span>box</span></div>
+<div class="big">선택 부품 내보내기</div></aside>
+<section class="vp"><div class="blob"></div><div class="tool"><span></span><span></span><span></span></div><div class="cmd">무엇을 바꿀까요? ⌘K</div></section>
+<aside class="panel"><h4>에셋</h4><div class="grid"><div class="cell"></div><div class="cell on"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div></aside>
+</div></body></html>
