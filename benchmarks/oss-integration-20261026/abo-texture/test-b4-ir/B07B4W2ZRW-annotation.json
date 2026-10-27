@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- shade: Linen shade; material \"burlap linen\"; colour #b87a45\n- leg1: Front leg; material \"stained pine\"; colour #6b4a3a\n- leg2: Rear right leg; material \"stained pine\"; colour #6b4a3a\n- leg3: Rear left leg; material \"stained pine\"; colour #6b4a3a\n- hub: Hub; material \"black metal\"; colour #1c1c1c\n- stem: Stem; material \"black metal\"; colour #1c1c1c\n- brace1: Brace A; material \"black metal\"; colour #1c1c1c\n- brace2: Brace B; material \"black metal\"; colour #1c1c1c\n- brace3: Brace C; material \"black metal\"; colour #1c1c1c\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"shade\",\"surface\":\"fabric\",\"albedoVariation\":0.3,\"textureScale\":[6,6]},{\"id\":\"leg1\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[2,4]},{\"id\":\"leg2\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[2,4]},{\"id\":\"leg3\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[2,4]},{\"id\":\"hub\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"stem\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"brace1\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"brace2\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"brace3\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0082293,
+  "durationMs": 4504,
+  "isError": false
+ }
+}

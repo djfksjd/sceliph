@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- top: Wood Top; material \"natural wood\"; colour #d2b98a\n- drawer: Drawer Front; material \"white painted wood\"; colour #f4f4f2\n- handle: Handle; material \"brushed nickel\"; colour #c0c0c4\n- leg_fl: Front Left Leg; material \"white painted wood\"; colour #f4f4f2\n- leg_fr: Front Right Leg; material \"white painted wood\"; colour #f4f4f2\n- leg_bl: Back Left Leg; material \"white painted wood\"; colour #f4f4f2\n- leg_br: Back Right Leg; material \"white painted wood\"; colour #f4f4f2\n- shelf_mid: Middle Shelf; material \"white slatted wood\"; colour #f4f4f2\n- shelf_low: Lower Shelf; material \"white slatted wood\"; colour #f4f4f2\n- towel_bar: Towel Peg; material \"white wood\"; colour #f4f4f2\n- wheel_fl: Wheel FL; material \"black rubber\"; colour #1a1a1a\n- wheel_fr: Wheel FR; material \"black rubber\"; colour #1a1a1a\n- wheel_bl: Wheel BL; material \"black rubber\"; colour #1a1a1a\n- wheel_br: Wheel BR; material \"black rubber\"; colour #1a1a1a\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"top\",\"surface\":\"wood\",\"albedoVariation\":0.2,\"textureScale\":[2,1]},{\"id\":\"drawer\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"handle\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[2,1]},{\"id\":\"leg_fl\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"leg_fr\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"leg_bl\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"leg_br\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shelf_mid\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shelf_low\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"towel_bar\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"wheel_fl\",\"surface\":\"rubber\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"wheel_fr\",\"surface\":\"rubber\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"wheel_bl\",\"surface\":\"rubber\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"wheel_br\",\"surface\":\"rubber\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0119933,
+  "durationMs": 5031,
+  "isError": false
+ }
+}

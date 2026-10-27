@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- top: Desk top; material \"Oak laminate\"; colour #d9bb8c\n- sideL: Left side panel; material \"Oak laminate\"; colour #d9bb8c\n- sideR: Right side panel; material \"Oak laminate\"; colour #d9bb8c\n- base: Bottom shelf; material \"Oak laminate\"; colour #d9bb8c\n- divider: Vertical divider; material \"Oak laminate\"; colour #d9bb8c\n- midshelf: Middle shelf; material \"Oak laminate\"; colour #d9bb8c\n- kbtray: Keyboard tray; material \"Oak laminate\"; colour #d4b484\n- rshelf: Right shelf; material \"Oak laminate\"; colour #d9bb8c\n- c1: Caster front left; material \"Black plastic\"; colour #1a1a1a\n- c2: Caster front right; material \"Black plastic\"; colour #1a1a1a\n- c3: Caster back left; material \"Black plastic\"; colour #1a1a1a\n- c4: Caster back right; material \"Black plastic\"; colour #1a1a1a\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"top\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[3,2]},{\"id\":\"sideL\",\"surface\":\"wood\",\"albedoVariation\":0.28,\"textureScale\":[2,3]},{\"id\":\"sideR\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[2,3]},{\"id\":\"base\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[3,2]},{\"id\":\"divider\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[2,3]},{\"id\":\"midshelf\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[3,2]},{\"id\":\"kbtray\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[3,2]},{\"id\":\"rshelf\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[2,2]},{\"id\":\"c1\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"c2\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"c3\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"c4\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.010601300000000001,
+  "durationMs": 5036,
+  "isError": false
+ }
+}

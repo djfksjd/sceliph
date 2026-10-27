@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- shade: White glass shade; material \"glossy white glass\"; colour #f4f4f2\n- wood: Blonde wood collar; material \"blonde wood\"; colour #d9b27c\n- cap: Grey cap; material \"grey metal\"; colour #9a9a9a\n- cord: Suspension cord; material \"grey cord\"; colour #888888\n- canopy: Ceiling canopy; material \"white painted metal\"; colour #eeeeee\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"shade\",\"surface\":\"ceramic-glass\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"wood\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[2,1]},{\"id\":\"cap\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"cord\",\"surface\":\"fabric\",\"albedoVariation\":0,\"textureScale\":[1,4]},{\"id\":\"canopy\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0054212999999999996,
+  "durationMs": 3069,
+  "isError": false
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Brass Cylinder Globe Table Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Brass base",
+   "category": "enclosure",
+   "materialName": "brushed brass",
+   "detail": "Solid cylindrical brass base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 54,
+    "radiusBottom": 54,
+    "depth": 112,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    56,
+    0
+   ],
+   "material": {
+    "color": "#8f7a45",
+    "roughness": 0.45,
+    "metalness": 0.8,
+    "surface": "brushed-metal",
+    "albedoVariation": 0.15,
+    "textureScale": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "id": "cup",
+   "name": "Globe holder cup",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Tapered cup holding the globe",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 16,
+    "depth": 14,
+    "radialSegments": 40
+   },
+   "position": [
+    -22,
+    119,
+    0
+   ],
+   "material": {
+    "color": "#85703f",
+    "roughness": 0.45,
+    "metalness": 0.8,
+    "surface": "brushed-metal",
+    "albedoVariation": 0.1,
+    "textureScale": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "id": "globe",
+   "name": "Opal glass globe",
+   "category": "display",
+   "materialName": "opal glass",
+   "detail": "Frosted white glass globe shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 70
+   },
+   "position": [
+    -22,
+    184,
+    0
+   ],
+   "material": {
+    "color": "#fff1d6",
+    "roughness": 0.3,
+    "metalness": 0,
+    "surface": "ceramic-glass",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- base: Ceramic base; material \"blue ribbed ceramic\"; colour #1c2a44\n- neck: Neck; material \"dark metal\"; colour #222222\n- bulb: Bulb; material \"frosted glass\"; colour #fff3d0\n- shade: Shade; material \"cream fabric\"; colour #f5d8a8\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"base\",\"surface\":\"ceramic-glass\",\"albedoVariation\":0.1,\"textureScale\":[2,6]},{\"id\":\"neck\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"bulb\",\"surface\":\"optical-glass\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shade\",\"surface\":\"fabric\",\"albedoVariation\":0.12,\"textureScale\":[5,5]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0058373,
+  "durationMs": 3312,
+  "isError": false
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- body: Carcass; material \"white laminate\"; colour #f4f4f4\n- top: Top panel; material \"white laminate\"; colour #f8f8f8\n- doorL: Left door; material \"white laminate\"; colour #ffffff\n- doorR: Right door; material \"white laminate\"; colour #ffffff\n- drw1: Top drawer; material \"white laminate\"; colour #ffffff\n- oak: Oak insert; material \"oak effect\"; colour #b8a38a\n- drw3: Third drawer; material \"white laminate\"; colour #ffffff\n- drw4: Bottom drawer; material \"white laminate\"; colour #ffffff\n- footFL: Front left foot; material \"plastic\"; colour #333333\n- footFR: Front right foot; material \"plastic\"; colour #333333\n- footBL: Back left foot; material \"plastic\"; colour #333333\n- footBR: Back right foot; material \"plastic\"; colour #333333\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"body\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"top\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"doorL\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"doorR\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"drw1\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"oak\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,2]},{\"id\":\"drw3\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"drw4\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"footFL\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"footFR\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"footBL\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"footBR\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0102473,
+  "durationMs": 5281,
+  "isError": false
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- canopy: Top mounting disc; material \"brushed steel\"; colour #b8babc\n- ring: Outer decorative ring; material \"brushed steel\"; colour #c0c2c4\n- collar: Shade collar; material \"brushed steel\"; colour #b4b6b8\n- shade: Frosted glass bowl; material \"frosted glass\"; colour #f2f2f0\n- finial: Bottom finial; material \"brushed steel\"; colour #b8babc\n- finial_tip: Finial tip; material \"brushed steel\"; colour #c0c2c4\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"canopy\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[2,2]},{\"id\":\"ring\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[2,2]},{\"id\":\"collar\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[2,2]},{\"id\":\"shade\",\"surface\":\"ceramic-glass\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"finial\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"finial_tip\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0069833,
+  "durationMs": 3422,
+  "isError": false
+ }
+}

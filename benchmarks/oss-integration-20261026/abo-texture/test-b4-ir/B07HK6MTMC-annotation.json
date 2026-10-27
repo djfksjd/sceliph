@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- base: Cone base; material \"matte black metal\"; colour #141414\n- neck: Neck rod; material \"matte black metal\"; colour #141414\n- shade: Drum shade; material \"black fabric\"; colour #0d0d0d\n- chain: Pull chain; material \"metal chain\"; colour #3a3a3a\n- pull: Chain pull; material \"black plastic\"; colour #111111\n- finial: Brass harp fitting; material \"brass\"; colour #b59a4a\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"base\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"neck\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shade\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[6,6]},{\"id\":\"chain\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"pull\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"finial\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0068533,
+  "durationMs": 3285,
+  "isError": false
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- base: Base; material \"matte black metal\"; colour #161616\n- pole: Main pole; material \"matte black steel\"; colour #111111\n- arm: Curved arm; material \"matte black steel\"; colour #111111\n- stem: Head stem; material \"black metal\"; colour #111111\n- head: Lamp head; material \"matte black\"; colour #151515\n- diffuser: LED diffuser; material \"frosted diffuser\"; colour #f3e7c8\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"base\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"pole\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"arm\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"stem\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"head\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"diffuser\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0066473,
+  "durationMs": 3437,
+  "isError": false
+ }
+}

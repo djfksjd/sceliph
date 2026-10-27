@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- post_fl: Front left post; material \"dark steel\"; colour #4a4a4c\n- post_bl: Back left post; material \"dark steel\"; colour #4a4a4c\n- post_fr: Front right post; material \"dark steel\"; colour #4a4a4c\n- post_br: Back right post; material \"dark steel\"; colour #4a4a4c\n- post_mf: Front middle post; material \"dark steel\"; colour #4a4a4c\n- post_mb: Back middle post; material \"dark steel\"; colour #4a4a4c\n- shelf_top: Top panel; material \"light oak laminate\"; colour #c9a374\n- shelf_bottom: Bottom shelf; material \"light oak laminate\"; colour #c9a374\n- shelf_low_r: Lower right shelf; material \"light oak laminate\"; colour #c9a374\n- shelf_up_r: Upper right shelf; material \"light oak laminate\"; colour #c9a374\n- shelf_left: Left small shelf; material \"light oak laminate\"; colour #c9a374\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"post_fl\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"post_bl\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"post_fr\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"post_br\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"post_mf\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"post_mb\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shelf_top\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[3,2]},{\"id\":\"shelf_bottom\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[3,2]},{\"id\":\"shelf_low_r\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[3,2]},{\"id\":\"shelf_up_r\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[3,2]},{\"id\":\"shelf_left\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[2,2]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.010185300000000001,
+  "durationMs": 4481,
+  "isError": false
+ }
+}

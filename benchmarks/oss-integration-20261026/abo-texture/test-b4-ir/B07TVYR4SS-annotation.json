@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- side: Side panel; material \"light oak laminate\"; colour #d9b88a\n- back: Back panel; material \"light oak laminate\"; colour #d4b283\n- shelf1: Bottom shelf; material \"light oak laminate\"; colour #dcbc8e\n- shelf2: Lower shelf; material \"light oak laminate\"; colour #dcbc8e\n- shelf3: Middle shelf; material \"light oak laminate\"; colour #dcbc8e\n- shelf4: Top shelf; material \"light oak laminate\"; colour #dcbc8e\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"side\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[2,4]},{\"id\":\"back\",\"surface\":\"wood\",\"albedoVariation\":0.2,\"textureScale\":[2,4]},{\"id\":\"shelf1\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[2,2]},{\"id\":\"shelf2\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[2,2]},{\"id\":\"shelf3\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[2,2]},{\"id\":\"shelf4\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[2,2]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0069692999999999995,
+  "durationMs": 3414,
+  "isError": false
+ }
+}

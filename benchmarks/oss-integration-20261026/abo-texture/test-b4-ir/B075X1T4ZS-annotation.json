@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- base: Turned wood base; material \"weathered wood\"; colour #a98d78\n- shade: Fabric shade; material \"linen fabric\"; colour #d9d7d0\n- finial: Wood finial; material \"weathered wood\"; colour #a98d78\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"base\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,3]},{\"id\":\"shade\",\"surface\":\"fabric\",\"albedoVariation\":0.12,\"textureScale\":[6,6]},{\"id\":\"finial\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[2,2]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.005181300000000001,
+  "durationMs": 3064,
+  "isError": false
+ }
+}
