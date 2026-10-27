@@ -1,0 +1,16 @@
+{
+ "schema": "sceliph.abo-texture-protocol/0.3",
+ "registered": "2026-10-27, after dev (9b dev 10 items, one setting) and before any test run",
+ "arms": {
+  "B4": "photo-judged material annotation (abo-texture/test-b4-ir, scored in test-b4.json)",
+  "B2": "B4 IR plus material.albedoPatch on every part the model marked patterned, taken from the frame-0 photo (scripts/abo-photo-patch.ts: silhouette camera fit with the view prior, IoU >= 0.8, largest interior square 96/64/48/32/24 px, low-frequency shading divided out); everything else unchanged"
+ },
+ "affected": "items where B2 attached at least one patch (decided by the script, before scoring)",
+ "criteria": [
+  "S1 affected items: B2 detailLog < B4 detailLog on more items than the reverse, one-sided sign test p < 0.05 (exact ties dropped)",
+  "S2 affected items: median paired (B2 - B4) spreadLog < 0",
+  "S3 affected items: median paired (B2 - B4) deltaE00 <= +1.0 (non-inferiority)",
+  "S4 descriptive: same comparisons split by textured / untextured reference and over all 33 items"
+ ],
+ "why": "slices 13–14 showed that paired CIs over all items sit at 0 because unaffected items tie exactly; the sign test on affected items is the registered remedy"
+}

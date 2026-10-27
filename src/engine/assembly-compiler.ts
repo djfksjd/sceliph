@@ -187,7 +187,9 @@ export function validateAssemblyIR(value: unknown): asserts value is AssemblyIR 
       return;
     }
     if (typeof node === 'string') {
-      if (node.length > 2_000) throw new Error(`String is too long at ${key}.`);
+      // A photo pattern tile is the only long string: ≤128×128 RGBA as base64.
+      const stringLimit = key.endsWith('.albedoPatch.rgbaBase64') ? Math.ceil(128 * 128 * 4 / 3) * 4 : 2_000;
+      if (node.length > stringLimit) throw new Error(`String is too long at ${key}.`);
       return;
     }
     if (Array.isArray(node)) {
@@ -387,6 +389,12 @@ export function validateAssemblyIR(value: unknown): asserts value is AssemblyIR 
     for (const key of ['roughness', 'metalness', 'transmission', 'clearcoat', 'clearcoatRoughness', 'iridescence', 'anisotropy', 'sheen', 'sheenRoughness', 'specularIntensity', 'microNormalStrength'] as const) {
       const value = component.material[key];
       if (value !== undefined && (value < 0 || value > 1)) throw new Error(`Unsafe ${key} in ${component.id}.`);
+    }
+    const patch = component.material.albedoPatch;
+    if (patch !== undefined) {
+      const sizeOk = Number.isInteger(patch.width) && Number.isInteger(patch.height) && patch.width >= 4 && patch.height >= 4 && patch.width <= 128 && patch.height <= 128;
+      const encodedOk = typeof patch.rgbaBase64 === 'string' && /^[A-Za-z0-9+/]+={0,2}$/.test(patch.rgbaBase64) && Math.floor(patch.rgbaBase64.length * 3 / 4) - (patch.rgbaBase64.match(/=+$/)?.[0].length ?? 0) === patch.width * patch.height * 4;
+      if (!sizeOk || !encodedOk) throw new Error(`Invalid albedoPatch in ${component.id}.`);
     }
     if (component.material.albedoVariation !== undefined && !(component.material.albedoVariation >= 0 && component.material.albedoVariation <= 0.5)) {
       throw new Error(`Unsafe albedoVariation in ${component.id}.`);

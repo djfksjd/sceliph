@@ -1,0 +1,520 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Outdoor wall sconce with frosted glass cage shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "stem",
+   "name": "Top stem",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Short rod at top of the fixture",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 32,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    329,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Collar",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Cylindrical housing above the hood",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 34,
+    "depth": 42,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    285,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "plate",
+   "name": "Back plate",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Wall mounting plate behind the collar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     95,
+     38,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    277,
+    -38
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.65,
+    "metalness": 0.4,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "hood",
+   "name": "Hood",
+   "category": "enclosure",
+   "materialName": "Matte black metal",
+   "detail": "Wide conical shade cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 42,
+    "radiusBottom": 110,
+    "depth": 38,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    241,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.55,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "glass",
+   "name": "Frosted glass shade",
+   "category": "enclosure",
+   "materialName": "Frosted glass",
+   "detail": "Cylindrical glass with rounded bottom",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      28,
+      2
+     ],
+     [
+      48,
+      14
+     ],
+     [
+      56,
+      40
+     ],
+     [
+      57,
+      80
+     ],
+     [
+      57,
+      195
+     ],
+     [
+      0,
+      195
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    24,
+    0
+   ],
+   "material": {
+    "color": "#e9ebec",
+    "roughness": 0.7,
+    "metalness": 0,
+    "surface": "ceramic-glass",
+    "albedoVariation": 0.05,
+    "textureScale": [
+     1,
+     1
+    ],
+    "albedoPatch": {
+     "width": 64,
+     "height": 64,
+     "rgbaBase64": "U19i/1FdYf9UXF7/WF9c/6+0sv+2ubj/t7q5/7i5uf+4uLj/tra2/7q6uv+9vb3/vb29/7y8vP++vr7/vr6+/7u7u/+5ubn/tra2/7a2tv+1tbX/sbGx/7CwsP+wsLD/r6+v/66urv+srKz/q6ur/6ioqP+pqan/qamp/6mpqf+rq6v/qqqq/6mpqf+np6f/qKio/6ampv+np6f/qKio/6qqqv+qqqr/q6ur/6ysrP+urq7/rq6u/62trf+srKz/q6ur/6mpqf+qqqr/qamp/6qqqv+qqqr/qamp/6urq/+tra3/rKys/62trf+srKz/ra2t/6ysrP+rq6v/qqqq/1NeYf9RXWH/U1xc/1hfXP+vtbP/uLy6/7m8u/+6u7r/uLi4/7i4uP+8vLz/vr6+/8HBwf/AwMD/v7+//76+vv+8vLz/urq6/7m5uf+5ubn/tra2/7W1tf+zs7P/srKy/7CwsP+wsLD/rq6u/66urv+urq7/rq6u/66urv+urq7/rKys/6ysrP+tra3/rq6u/66urv+qqqr/q6ur/62trf+srKz/rKys/6ysrP+rq6v/rKys/62trf+tra3/rKys/6ysrP+tra3/ra2t/6ysrP+tra3/rq6u/6ysrP+srKz/qqqq/62trf+tra3/ra2t/6ysrP+srKz/qamp/6qqqv9TXmH/UVxh/1JbXP9YXlz/sLa0/7m8u/+6vbz/u7y7/7q6uv+5ubn/vLy8/8HBwf/ExMT/w8PD/8HBwf/CwsL/wMDA/8DAwP++vr7/vLy8/7i4uP+4uLj/tra2/7Ozs/+ysrL/sLCw/6+vr/+wsLD/r6+v/6+vr/+vr6//sLCw/62trf+tra3/ra2t/66urv+rq6v/qamp/6ysrP+rq6v/ra2t/62trf+srKz/rKys/6ysrP+tra3/ra2t/66urv+vr6//r6+v/62trf+tra3/ra2t/6urq/+urq7/sLCw/6+vr/+urq7/ra2t/66urv+tra3/rKys/6mpqf+rq6v/Ul5h/09bXv9LVVX/Vlxa/6+0s/+9wcD/vL++/7q9vP+5ubn/uLi4/729vf/AwMD/wsLC/8PDw//ExMT/wsLC/8HBwf+/v7//vr6+/729vf+6urr/urq6/7i4uP+3t7f/tbW1/7Ozs/+zs7P/sLCw/7CwsP+wsLD/r6+v/66urv+wsLD/rq6u/66urv+urq7/ra2t/6+vr/+wsLD/rq6u/62trf+vr6//sLCw/6ysrP+tra3/ra2t/6ysrP+urq7/r6+v/66urv+vr6//r6+v/66urv+urq7/rq6u/6+vr/+vr6//rq6u/66urv+urq7/rKys/62trf+srKz/q6ur/1JeYf9OWV3/UVpa/1phXv+tsrH/ur69/7u9vP+6vLv/ubm5/7i4uP+8vLz/wsLC/8PDw//Gxsb/xsbG/8LCwv/CwsL/wcHB/7+/v/+/v7//u7u7/7q6uv+4uLj/uLi4/7W1tf+0tLT/s7Oz/7Gxsf+xsbH/sbGx/7CwsP+urq7/sLCw/6+vr/+vr6//sLCw/6+vr/+urq7/ra2t/6+vr/+vr6//r6+v/6+vr/+urq7/r6+v/7Gxsf+vr6//ra2t/6ysrP+vr6//sLCw/6+vr/+urq7/r6+v/66urv+xsbH/sbGx/66urv+vr6//ra2t/62trf+srKz/ra2t/6urq/9SXmH/T1pf/1JbW/9aYF//rbKx/7u/vv+7vr3/u728/7m5uf+5ubn/vb29/7+/v//BwcH/w8PD/8XFxf/FxcX/xMTE/8PDw//AwMD/v7+//729vf+7u7v/urq6/7i4uP+1tbX/tbW1/7S0tP+ysrL/srKy/7Kysv+xsbH/sbGx/7Gxsf+wsLD/r6+v/7Gxsf+xsbH/rq6u/66urv+xsbH/sLCw/7CwsP+wsLD/r6+v/66urv+vr6//sbGx/6+vr/+tra3/sLCw/7Gxsf+vr6//rq6u/66urv+tra3/sLCw/66urv+vr6//r6+v/66urv+tra3/ra2t/66urv+srKz/Ul5g/1BcYP9OVlf/WF9e/7G3tf++wsH/vL+9/7u9u/+6urr/ubm5/76+vv/Dw8P/xMTE/8bGxv/Hx8f/xsbG/8XFxf/ExMT/wcHB/7+/v/+9vb3/u7u7/7q6uv+4uLj/tbW1/7W1tf+2trb/tLS0/7Ozs/+zs7P/s7Oz/7Kysv+ysrL/sLCw/7CwsP+ysrL/sLCw/6+vr/+vr6//sbGx/7Kysv+wsLD/r6+v/7CwsP+wsLD/r6+v/6+vr/+vr6//sLCw/7Gxsf+xsbH/r6+v/62trf+urq7/ra2t/62trf+srKz/sLCw/6+vr/+urq7/ra2t/66urv+vr6//ra2t/1JdYP9QW2D/TVZX/1lgX/+yt7b/u7++/7m8uv+8vbz/urq6/7m5uf+7u7v/wcHB/8HBwf/FxcX/xMTE/8fHx//FxcX/xcXF/8LCwv/AwMD/vb29/7y8vP+6urr/ubm5/7W1tf+1tbX/tra2/7S0tP+zs7P/s7Oz/7Ozs/+xsbH/srKy/7Gxsf+xsbH/srKy/7CwsP+ysrL/srKy/7Gxsf+ysrL/srKy/7CwsP+wsLD/s7Oz/7Ozs/+wsLD/sLCw/7Kysv+xsbH/sbGx/6+vr/+vr6//r6+v/66urv+vr6//r6+v/6+vr/+vr6//r6+v/62trf+urq7/ra2t/6ysrP9SXWD/T1pe/01XV/9YXlz/r7Sz/7a6uP+5u7r/uLm4/7u7u/+/v7//v7+//8PDw//ExMT/x8fH/8fHx//Hx8f/xMTE/8bGxv/ExMT/v7+//76+vv+9vb3/u7u7/7q6uv+6urr/ubm5/7e3t/+2trb/s7Oz/7Ozs/+ysrL/s7Oz/7Gxsf+ysrL/srKy/7Gxsf+xsbH/s7Oz/7S0tP+zs7P/sbGx/7Gxsf+xsbH/sbGx/7Kysv+zs7P/srKy/7Gxsf+ysrL/sbGx/7Gxsf+wsLD/sLCw/6+vr/+vr6//r6+v/62trf+wsLD/sLCw/66urv+urq7/rKys/6urq/+pqan/UV1g/05aXv9NVVf/WWBd/7G3tf+3urn/ury7/7u8u/+7u7v/u7u7/76+vv/CwsL/xsbG/8TExP/Hx8f/xcXF/8bGxv/FxcX/w8PD/8HBwf+/v7//vb29/7q6uv+4uLj/ubm5/7m5uf+3t7f/tLS0/7W1tf+0tLT/s7Oz/7Ozs/+ysrL/srKy/7Kysv+zs7P/sbGx/7Ozs/+zs7P/s7Oz/7Kysv+ysrL/sbGx/7CwsP+ysrL/s7Oz/7Gxsf+xsbH/s7Oz/7Ozs/+xsbH/r6+v/6+vr/+vr6//r6+v/6+vr/+vr6//r6+v/66urv+tra3/ra2t/6ysrP+srKz/qqqq/1FdYP9OWV7/TlZY/1lfXv+xtrX/uLu6/7i6uf+4ubj/t7e3/7a2tv/AwMD/w8PD/8XFxf/Gxsb/yMjI/8bGxv/Hx8f/xMTE/8PDw//BwcH/wMDA/76+vv+8vLz/urq6/7q6uv+5ubn/uLi4/7a2tv+1tbX/tLS0/7Gxsf+xsbH/s7Oz/7Ozs/+zs7P/s7Oz/7Kysv+0tLT/s7Oz/7Kysv+ysrL/srKy/7Gxsf+xsbH/srKy/7Ozs/+ysrL/srKy/7Kysv+wsLD/sbGx/7Kysv+zs7P/srKy/7CwsP+vr6//rq6u/7CwsP+vr6//r6+v/62trf+tra3/rKys/6qqqv9RXWD/Tlld/1FZWv9ZX17/rrOy/7e7uv+6vLv/uru6/7i4uP+4uLj/xcXF/8LCwv/CwsL/ycnJ/8bGxv/FxcX/x8fH/8TExP/Dw8P/wcHB/8DAwP+/v7//vLy8/7y8vP+6urr/t7e3/7e3t/+5ubn/uLi4/7a2tv+zs7P/s7Oz/7Ozs/+zs7P/tLS0/7Ozs/+xsbH/s7Oz/7S0tP+zs7P/srKy/7Kysv+xsbH/sLCw/7Kysv+zs7P/srKy/7Kysv+zs7P/s7Oz/7Kysv+wsLD/rq6u/6ysrP+vr6//sbGx/7Ozs/+xsbH/sbGx/7Gxsf+vr6//rq6u/6ysrP+rq6v/UV1f/09aX/9RWVr/Vlxb/6+0s/+3urn/uLu5/7q7uv+5ubn/t7e3/8HBwf+/v7//x8fH/8XFxf/Dw8P/x8fH/8fHx//Gxsb/wsLC/8LCwv/AwMD/v7+//7y8vP+6urr/urq6/7q6uv+4uLj/tra2/7S0tP+0tLT/tbW1/7a2tv+0tLT/srKy/7Kysv+ysrL/srKy/7Kysv+ysrL/srKy/7Gxsf+ysrL/srKy/7Kysv+0tLT/tLS0/7Ozs/+zs7P/tLS0/7Kysv+xsbH/srKy/7Kysv+wsLD/r6+v/7Gxsf+tra3/sLCw/7CwsP+tra3/rKys/66urv+tra3/q6ur/1JeYf9PWl//UFpa/1ddXP+vtLL/uLu6/7i6uf+4ubj/urq6/7e3t/+8vLz/wMDA/8jIyP/Gxsb/xsbG/8bGxv/ExMT/w8PD/8XFxf/CwsL/wcHB/7+/v/+9vb3/urq6/7q6uv+5ubn/t7e3/7a2tv+2trb/s7Oz/7S0tP+3t7f/sbGx/7Ozs/+zs7P/tLS0/7Kysv+ysrL/s7Oz/7Ozs/+xsbH/sbGx/7Gxsf+xsbH/sbGx/7Kysv+zs7P/srKy/7CwsP+ysrL/sbGx/7Gxsf+xsbH/sLCw/6+vr/+xsbH/rq6u/6+vr/+urq7/rq6u/62trf+rq6v/ra2t/62trf9PW17/S1Za/1BaWv9YX13/sLWz/7e7uv+2ubf/tbi2/7a2tv+1tbX/u7u7/8LCwv/FxcX/x8fH/8jIyP/Jycn/xsbG/8PDw//AwMD/w8PD/8HBwf+/v7//vLy8/7u7u/+6urr/uLi4/7e3t/+3t7f/tbW1/7S0tP+1tbX/tra2/7Kysv+zs7P/tLS0/7Ozs/+xsbH/srKy/7Kysv+zs7P/s7Oz/7Ozs/+0tLT/tLS0/7Ozs/+ysrL/s7Oz/7Kysv+xsbH/srKy/7Kysv+xsbH/sLCw/7CwsP+wsLD/sbGx/6+vr/+tra3/rq6u/66urv+urq7/q6ur/6ysrP+srKz/Ulxg/05ZW/9RWVv/WF5d/6+0s/+4vLr/uby7/7q7uv+4uLj/t7e3/8DAwP/AwMD/wsLC/8XFxf/Hx8f/xsbG/8bGxv/Gxsb/w8PD/8LCwv/AwMD/v7+//7y8vP+8vLz/urq6/7e3t/+3t7f/tra2/7S0tP+3t7f/tra2/7Ozs/+0tLT/s7Oz/7Ozs/+ysrL/srKy/7Kysv+ysrL/srKy/7Gxsf+xsbH/sbGx/7Kysv+zs7P/sbGx/7CwsP+xsbH/srKy/7Kysv+xsbH/r6+v/6+vr/+wsLD/sLCw/7Kysv+urq7/ra2t/62trf+urq7/ra2t/6ysrP+qqqr/qqqq/1JdYP9NWFv/UFhZ/1phX/+wtbT/trq5/7q8u/+5urn/t7e3/7e3t/+6urr/wMDA/8PDw//ExMT/xsbG/8LCwv/Dw8P/xcXF/8bGxv/BwcH/wsLC/7+/v/+6urr/urq6/7q6uv+5ubn/t7e3/7a2tv+0tLT/tra2/7S0tP+zs7P/sbGx/7Kysv+zs7P/sbGx/7Kysv+zs7P/s7Oz/7Ozs/+xsbH/srKy/7Kysv+ysrL/s7Oz/7Ozs/+ysrL/srKy/7Kysv+ysrL/s7Oz/7Kysv+xsbH/sLCw/6+vr/+urq7/sbGx/62trf+wsLD/q6ur/66urv+srKz/ra2t/6ysrP9PWl3/SlVa/05WWP9ZX17/rrOy/7W4t/+3urj/tba1/7S0tP+1tbX/ubm5/7+/v//CwsL/w8PD/8XFxf/FxcX/xMTE/8PDw//Dw8P/v7+//8DAwP+9vb3/u7u7/7u7u/+6urr/uLi4/7a2tv+2trb/tLS0/7W1tf+0tLT/s7Oz/7Kysv+ysrL/tLS0/7Kysv+ysrL/srKy/7Kysv+zs7P/sbGx/7Gxsf+ysrL/srKy/7Kysv+ysrL/sbGx/7Gxsf+xsbH/sLCw/6+vr/+urq7/sLCw/7CwsP+vr6//r6+v/7CwsP+tra3/r6+v/6urq/+urq7/qqqq/6urq/+rq6v/UFxe/01YXP9QWVn/Wl9e/6+0s/+2ubj/uLq5/7a3t/+1tbX/t7e3/7y8vP+/v7//wsLC/8PDw//FxcX/x8fH/8XFxf/ExMT/wsLC/729vf++vr7/vLy8/729vf+8vLz/ubm5/7e3t/+2trb/tra2/7W1tf+0tLT/s7Oz/7S0tP+ysrL/srKy/7S0tP+xsbH/r6+v/7CwsP+wsLD/sLCw/7Gxsf+ysrL/srKy/7Ozs/+ysrL/srKy/7Gxsf+xsbH/sbGx/7Kysv+wsLD/sLCw/7Kysv+wsLD/sLCw/7CwsP+vr6//rKys/6+vr/+rq6v/rq6u/6ysrP+tra3/ra2t/1BcXv9MV1v/UVla/1tgX/+vtLP/t7q5/7m7uv+3uLf/tbW1/7S0tP+4uLj/v7+//8HBwf/CwsL/xMTE/8XFxf/ExMT/xMTE/8PDw//AwMD/vr6+/7q6uv+7u7v/u7u7/7m5uf+3t7f/tra2/7W1tf+1tbX/s7Oz/7Ozs/+1tbX/srKy/7Kysv+0tLT/srKy/7Gxsf+xsbH/sbGx/7Gxsf+xsbH/sbGx/7Kysv+ysrL/srKy/7Gxsf+wsLD/sbGx/7Gxsf+xsbH/sbGx/7CwsP+vr6//sLCw/7Gxsf+vr6//rKys/6ysrP+vr6//q6ur/62trf+rq6v/rKys/6urq/9NWVv/Tlld/01WVv9WW1r/r7Sz/7m8u/+6vLv/tbi3/7Kysv+0tLT/u7u7/729vf/CwsL/w8PD/8bGxv/ExMT/xcXF/8PDw//BwcH/v7+//7+/v/++vr7/urq6/7q6uv+5ubn/ubm5/7e3t/+4uLj/tra2/7Gxsf+ysrL/tra2/7S0tP+0tLT/srKy/7Kysv+zs7P/s7Oz/7Ozs/+ysrL/srKy/7Kysv+ysrL/sbGx/7Gxsf+xsbH/srKy/7Gxsf+wsLD/r6+v/6ysrP+wsLD/rq6u/62trf+vr6//r6+v/6urq/+tra3/r6+v/66urv+srKz/rKys/6mpqf+pqan/UV1g/01YXP9NVVb/Vlta/6+0sv+5vLv/ubu6/7W4tv+ysrL/tLS0/7u7u/+9vb3/wsLC/8PDw//Gxsb/w8PD/8TExP/Dw8P/wcHB/7+/v/+/v7//vb29/7q6uv+5ubn/ubm5/7a2tv+2trb/tbW1/7S0tP+zs7P/s7Oz/7Ozs/+zs7P/sbGx/7Kysv+xsbH/s7Oz/7Ozs/+ysrL/sbGx/7Kysv+ysrL/srKy/7Gxsf+xsbH/sbGx/7Kysv+xsbH/sLCw/6+vr/+tra3/r6+v/66urv+urq7/r6+v/66urv+urq7/ra2t/6+vr/+tra3/rKys/62trf+qqqr/qqqq/1NeYf9LVlv/TVZW/1dcW/+vtLL/t7u6/7i7uv+1t7b/srKy/7S0tP+7u7v/vr6+/8LCwv/CwsL/w8PD/8TExP/FxcX/w8PD/8HBwf/BwcH/vr6+/729vf+6urr/ubm5/7e3t/+1tbX/tLS0/7S0tP+zs7P/tbW1/7Ozs/+xsbH/srKy/7Gxsf+xsbH/sLCw/7Kysv+ysrL/srKy/7Gxsf+xsbH/sbGx/7Gxsf+wsLD/sLCw/7CwsP+ysrL/sbGx/7CwsP+wsLD/r6+v/66urv+wsLD/r6+v/66urv+urq7/r6+v/62trf+urq7/ra2t/6ysrP+tra3/q6ur/6qqqv9QW17/TVhc/09XWf9XXVv/rrOy/7e7uf+3ubj/tbe2/7Kysv+zs7P/u7u7/8DAwP/BwcH/wcHB/8LCwv/FxcX/xsbG/8TExP/CwsL/wsLC/76+vv+8vLz/u7u7/7q6uv+4uLj/tra2/7a2tv+1tbX/tLS0/7S0tP+zs7P/srKy/7S0tP+zs7P/srKy/7Kysv+ysrL/srKy/7Kysv+xsbH/sbGx/7Gxsf+xsbH/sLCw/7CwsP+wsLD/sbGx/7CwsP+wsLD/sbGx/7Gxsf+urq7/sbGx/6+vr/+xsbH/sLCw/66urv+srKz/rq6u/62trf+srKz/rq6u/6urq/+rq6v/Tlpd/01YXP9OVlf/V11c/66zsv+2u7n/uLq5/7a4t/+zs7P/tLS0/7u7u/++vr7/wsLC/8PDw//ExMT/xMTE/8TExP/Dw8P/wcHB/8HBwf+/v7//vb29/7y8vP+7u7v/ubm5/7e3t/+2trb/tbW1/7Ozs/+zs7P/srKy/7Kysv+zs7P/srKy/7Ozs/+ysrL/sbGx/7Kysv+ysrL/srKy/7Ozs/+ysrL/sbGx/7Gxsf+xsbH/sbGx/7CwsP+vr6//r6+v/6+vr/+wsLD/rq6u/7Gxsf+wsLD/sbGx/7CwsP+tra3/rq6u/6+vr/+srKz/qKio/6qqqv+rq6v/q6ur/1BbXv9NWFz/TFRW/1ddXP+us7L/t7q5/7m8uv+2uLf/tLS0/7S0tP+6urr/vLy8/8DAwP/CwsL/xMTE/8TExP/CwsL/wsLC/8HBwf+/v7//vb29/7y8vP+7u7v/urq6/7m5uf+3t7f/tra2/7W1tf+zs7P/srKy/7Kysv+ysrL/srKy/7Gxsf+ysrL/srKy/7Gxsf+xsbH/sbGx/7Gxsf+zs7P/sbGx/7Gxsf+xsbH/srKy/7Gxsf+wsLD/r6+v/7CwsP+vr6//sLCw/7CwsP+wsLD/r6+v/66urv+tra3/rKys/62trf+tra3/rKys/6ioqP+qqqr/q6ur/6qqqv9QW17/TVhc/05WV/9YXlz/rrOy/7W5uP+4urn/tri3/7S0tP+0tLT/urq6/729vf/BwcH/wsLC/8PDw//Dw8P/wcHB/8LCwv/BwcH/wMDA/76+vv+8vLz/u7u7/7m5uf+5ubn/t7e3/7W1tf+1tbX/s7Oz/7Kysv+xsbH/srKy/7Kysv+xsbH/srKy/7CwsP+wsLD/sbGx/7Gxsf+xsbH/sbGx/7Gxsf+xsbH/sLCw/7Kysv+xsbH/sLCw/6+vr/+wsLD/sbGx/7Gxsf+wsLD/sLCw/62trf+tra3/rKys/6urq/+rq6v/rKys/6ysrP+qqqr/qqqq/6urq/+qqqr/UFte/01YXP9OV1f/WV5d/66zsv+0uLf/t7m4/7a4t/+0tLT/tLS0/7q6uv+/v7//wsLC/8LCwv/Dw8P/w8PD/8HBwf/BwcH/wcHB/8HBwf++vr7/vb29/7y8vP+6urr/ubm5/7e3t/+1tbX/tbW1/7Ozs/+ysrL/sbGx/7Kysv+zs7P/srKy/7Gxsf+vr6//sLCw/7Gxsf+xsbH/sbGx/6+vr/+xsbH/srKy/7Gxsf+xsbH/sLCw/7CwsP+vr6//sLCw/7Gxsf+wsLD/r6+v/6+vr/+vr6//rq6u/62trf+srKz/ra2t/6ysrP+rq6v/q6ur/6qqqv+rq6v/qamp/1BbXv9NWFz/T1dY/1heXf+us7L/tLi3/7e5uP+2uLf/srKy/7S0tP+6urr/vr6+/8HBwf/BwcH/wcHB/8PDw//BwcH/wcHB/8HBwf+/v7//vLy8/7u7u/+6urr/ubm5/7i4uP+3t7f/tbW1/7S0tP+zs7P/srKy/7Kysv+ysrL/s7Oz/7Kysv+wsLD/r6+v/7CwsP+xsbH/sbGx/7Gxsf+vr6//sbGx/7Kysv+xsbH/sbGx/7CwsP+wsLD/r6+v/7CwsP+wsLD/sLCw/66urv+tra3/r6+v/6+vr/+urq7/ra2t/6+vr/+srKz/qqqq/6qqqv+qqqr/q6ur/6qqqv9OWl3/TVhc/05XV/9VXFn/rbKx/7W5uP+1uLb/tLe1/7Kysv+zs7P/ubm5/76+vv/BwcH/wcHB/8PDw//BwcH/wcHB/8HBwf++vr7/v7+//7y8vP+7u7v/urq6/7m5uf+5ubn/uLi4/7a2tv+1tbX/tLS0/7S0tP+zs7P/sbGx/7Ozs/+ysrL/srKy/7Ozs/+xsbH/s7Oz/7Kysv+xsbH/srKy/7Kysv+ysrL/sbGx/7Gxsf+xsbH/sLCw/7Gxsf+xsbH/srKy/7Gxsf+vr6//r6+v/6urq/+tra3/rq6u/6ysrP+urq7/rq6u/62trf+pqan/q6ur/6urq/+pqan/UVxf/0tWWv9MVFb/VVxZ/62ysf+1ubj/tbi2/7W4t/+zs7P/srKy/7e3t/++vr7/wcHB/8HBwf/Dw8P/wsLC/8LCwv/BwcH/v7+//8DAwP+9vb3/vLy8/7u7u/+6urr/urq6/7m5uf+4uLj/tbW1/7S0tP+0tLT/s7Oz/7Gxsf+ysrL/sbGx/7Kysv+ysrL/sbGx/7Ozs/+ysrL/sbGx/7Kysv+ysrL/srKy/7Gxsf+xsbH/sbGx/7CwsP+wsLD/sbGx/7Kysv+xsbH/r6+v/6+vr/+urq7/r6+v/6+vr/+urq7/rKys/62trf+urq7/q6ur/6urq/+qqqr/p6en/1FcX/9NWFz/TFZW/1VcWf+tsrD/tbm4/7a5uP+3uLj/r6+v/7Gxsf+7u7v/vr6+/8HBwf/BwcH/w8PD/8PDw//Dw8P/wsLC/8DAwP/BwcH/vr6+/729vf+8vLz/ubm5/7e3t/+2trb/tLS0/7Ozs/+zs7P/s7Oz/7Ozs/+xsbH/sbGx/7Gxsf+xsbH/srKy/7Gxsf+ysrL/srKy/7Gxsf+ysrL/srKy/7Kysv+xsbH/sbGx/7Gxsf+wsLD/sLCw/7Gxsf+ysrL/sbGx/6+vr/+vr6//sLCw/6+vr/+urq7/rq6u/62trf+urq7/rKys/6urq/+qqqr/qamp/6enp/9OWlz/TVhc/09XWP9VXFn/rbKw/7W5uP+0trX/s7W0/7Ozs/+1tbX/ubm5/76+vv/BwcH/wcHB/8PDw//Dw8P/w8PD/8LCwv/AwMD/wcHB/76+vv+9vb3/vLy8/7m5uf+2trb/tbW1/7S0tP+zs7P/s7Oz/7Ozs/+zs7P/sbGx/7Gxsf+wsLD/sbGx/7Gxsf+xsbH/srKy/7Gxsf+xsbH/sbGx/7Kysv+ysrL/sbGx/7Gxsf+xsbH/sLCw/7CwsP+wsLD/srKy/7Gxsf+vr6//r6+v/7CwsP+tra3/rKys/62trf+vr6//r6+v/6ysrP+pqan/p6en/6ioqP+oqKj/UFte/01YXP9MVlb/VVxZ/62ysf+1ubj/trm4/7i5uf+zs7P/r6+v/7q6uv++vr7/wcHB/8HBwf/Dw8P/w8PD/8HBwf/BwcH/wMDA/7+/v/+9vb3/vb29/7u7u/+6urr/uLi4/7W1tf+1tbX/tbW1/7Kysv+ysrL/s7Oz/7Ozs/+ysrL/sbGx/7Kysv+ysrL/sbGx/7Gxsf+xsbH/sLCw/7Gxsf+wsLD/sbGx/7Gxsf+wsLD/sbGx/7CwsP+wsLD/sLCw/7Gxsf+ysrL/sLCw/66urv+urq7/rq6u/66urv+tra3/sLCw/62trf+urq7/q6ur/6ysrP+rq6v/qKio/1BbXv9NWFz/S1RW/1RaWP+tsrD/trq5/7a5uP+1t7f/tbW1/7Ozs/+3t7f/vLy8/8PDw//CwsL/wcHB/8PDw//BwcH/wcHB/8DAwP+/v7//vb29/729vf+7u7v/uLi4/7i4uP+3t7f/tra2/7Ozs/+zs7P/srKy/7Ozs/+ysrL/srKy/7CwsP+wsLD/srKy/7CwsP+wsLD/sLCw/7CwsP+xsbH/sLCw/7Gxsf+xsbH/sLCw/7Gxsf+wsLD/sLCw/7CwsP+wsLD/sbGx/7CwsP+vr6//rq6u/66urv+urq7/ra2t/6+vr/+srKz/rKys/6qqqv+srKz/rKys/6mpqf9QW17/TVhc/0xWVv9VWln/rbKx/7W5uP+1uLb/s7W0/7Ozs/+1tbX/t7e3/7y8vP/Dw8P/wsLC/8HBwf/Dw8P/wcHB/8HBwf/AwMD/v7+//729vf+9vb3/u7u7/7i4uP+4uLj/t7e3/7a2tv+zs7P/s7Oz/7Kysv+ysrL/srKy/7CwsP+zs7P/s7Oz/7Gxsf+ysrL/srKy/7Gxsf+xsbH/sbGx/6+vr/+wsLD/sbGx/7CwsP+xsbH/sLCw/7CwsP+wsLD/sLCw/7CwsP+wsLD/sbGx/66urv+urq7/rq6u/62trf+wsLD/rKys/6ysrP+oqKj/q6ur/6urq/+pqan/UFte/01YXP9QWFr/V11c/62ysf+ztrX/tLa1/7O1tP+wsLD/tra2/7m5uf++vr7/wcHB/8HBwf/Dw8P/w8PD/8HBwf/BwcH/wMDA/7+/v/+9vb3/vb29/7u7u/+6urr/uLi4/7W1tf+1tbX/tbW1/7S0tP+ysrL/srKy/7Gxsf+ysrL/sbGx/7Gxsf+xsbH/sbGx/7Gxsf+xsbH/sLCw/7Gxsf+vr6//sLCw/7Gxsf+wsLD/sbGx/7CwsP+wsLD/sLCw/6+vr/+vr6//sLCw/7Kysv+urq7/rq6u/66urv+tra3/sbGx/6ysrP+rq6v/p6en/6urq/+rq6v/qamp/01YW/9LVlr/TFZW/1VcWf+tsrH/s7a1/7O1tP+0t7X/tra2/7S0tP+2trb/v7+//8HBwf/AwMD/wsLC/8LCwv/Dw8P/w8PD/8HBwf+/v7//vb29/7y8vP+7u7v/ubm5/7e3t/+1tbX/tLS0/7Ozs/+ysrL/tLS0/7Kysv+wsLD/sLCw/7CwsP+xsbH/sLCw/7Gxsf+wsLD/sLCw/7Gxsf+xsbH/sLCw/6+vr/+wsLD/srKy/7Gxsf+wsLD/sbGx/7Ozs/+vr6//sbGx/7CwsP+vr6//r6+v/7Gxsf+vr6//r6+v/62trf+qqqr/rKys/6urq/+qqqr/q6ur/6mpqf9OWl3/TVhc/0xWVv9VXFr/rrOy/7S4tv+0trX/tLe1/7Kysv+zs7P/ubm5/7+/v//BwcH/wMDA/8LCwv/CwsL/wsLC/8LCwv/BwcH/v7+//729vf+8vLz/u7u7/7q6uv+5ubn/t7e3/7e3t/+0tLT/s7Oz/7Ozs/+ysrL/sbGx/7CwsP+wsLD/sbGx/7CwsP+xsbH/srKy/7Kysv+ysrL/srKy/7Gxsf+xsbH/srKy/7Kysv+xsbH/tLS0/7Kysv+vr6//rq6u/66urv+urq7/rq6u/62trf+wsLD/ra2t/62trf+urq7/rKys/6+vr/+urq7/q6ur/6urq/+pqan/Tlpd/05ZXf9OV1f/V11c/66zsv+0uLf/tLa1/7O1tP+xsbH/tLS0/7u7u/+/v7//wcHB/8DAwP/CwsL/wcHB/8LCwv/BwcH/wMDA/7+/v/+9vb3/vLy8/7u7u/+5ubn/t7e3/7a2tv+1tbX/s7Oz/7Ozs/+ysrL/srKy/7Kysv+wsLD/sLCw/7Gxsf+wsLD/sLCw/7Kysv+zs7P/srKy/7CwsP+wsLD/r6+v/7Gxsf+ysrL/sbGx/7CwsP+xsbH/s7Oz/7CwsP+urq7/r6+v/7Gxsf+tra3/sLCw/62trf+srKz/rKys/6mpqf+srKz/rKys/6qqqv+rq6v/qamp/1BbXv9OWV3/T1hY/1hdXP+vtLP/tbm4/7O1tP+ys7P/s7Oz/7W1tf+6urr/v7+//8HBwf/AwMD/wsLC/8DAwP/BwcH/wcHB/7+/v/+/v7//vb29/7y8vP+7u7v/ubm5/7e3t/+2trb/tbW1/7S0tP+zs7P/sbGx/7Kysv+zs7P/sLCw/7CwsP+xsbH/sLCw/66urv+wsLD/srKy/6+vr/+xsbH/sLCw/7CwsP+xsbH/srKy/7Gxsf+xsbH/sbGx/7Kysv+wsLD/rKys/66urv+xsbH/r6+v/7Gxsf+urq7/rq6u/7CwsP+tra3/rKys/6qqqv+qqqr/q6ur/6mpqf9NWFv/SlVZ/0xWVv9VXFv/r7Sz/7i7uv+1uLf/tLe1/7Kysv+2trb/t7e3/76+vv/BwcH/wcHB/8PDw//Dw8P/w8PD/8DAwP+/v7//v7+//7y8vP+7u7v/urq6/7m5uf+3t7f/tbW1/7S0tP+zs7P/srKy/7CwsP+vr6//r6+v/7Kysv+wsLD/sbGx/7Kysv+xsbH/sLCw/7Gxsf+xsbH/sbGx/7CwsP+wsLD/srKy/7Kysv+wsLD/sbGx/7CwsP+vr6//r6+v/66urv+vr6//r6+v/7CwsP+urq7/rq6u/6ysrP+srKz/r6+v/6qqqv+pqan/q6ur/6urq/+oqKj/U15h/09aXf9MVFb/U1lX/6yxr/+0uLf/tLe1/7W3tf+xsbH/tra2/7i4uP++vr7/wcHB/8HBwf/Dw8P/w8PD/8PDw//AwMD/v7+//7+/v/+8vLz/u7u7/7q6uv+4uLj/t7e3/7W1tf+0tLT/s7Oz/7Gxsf+wsLD/sbGx/7Gxsf+xsbH/sLCw/7Gxsf+ysrL/sbGx/7CwsP+xsbH/sbGx/7Gxsf+wsLD/sLCw/7Gxsf+ysrL/sLCw/7Gxsf+wsLD/r6+v/6+vr/+urq7/r6+v/6+vr/+vr6//ra2t/66urv+srKz/ra2t/7CwsP+rq6v/qqqq/6urq/+rq6v/qKio/1FdX/9OWV3/T1dY/1ddW/+us7L/t7q5/7W4t/+2uLf/sLCw/7W1tf+5ubn/vr6+/8HBwf/BwcH/w8PD/8PDw//Dw8P/wMDA/7+/v/+/v7//vLy8/7u7u/+6urr/uLi4/7e3t/+1tbX/tLS0/7Ozs/+xsbH/sbGx/7Kysv+zs7P/sbGx/7Kysv+ysrL/sbGx/7Gxsf+wsLD/sbGx/7Gxsf+xsbH/sbGx/7Gxsf+xsbH/sLCw/7CwsP+xsbH/sLCw/6+vr/+vr6//r6+v/6+vr/+vr6//rq6u/62trf+urq7/ra2t/7CwsP+urq7/rq6u/6ysrP+rq6v/qamp/6mpqf9OWl3/S1Za/0xWVv9VW1n/rLGv/7O3tf+ztbT/tri3/6+vr/+1tbX/ubm5/76+vv/BwcH/wcHB/8PDw//Dw8P/w8PD/8DAwP+/v7//v7+//7y8vP+7u7v/urq6/7i4uP+3t7f/tbW1/7S0tP+zs7P/s7Oz/7Kysv+ysrL/sbGx/7CwsP+ysrL/s7Oz/7Gxsf+xsbH/sLCw/7Gxsf+xsbH/sbGx/7Kysv+ysrL/sLCw/6+vr/+wsLD/sbGx/7CwsP+vr6//r6+v/66urv+vr6//r6+v/62trf+srKz/r6+v/66urv+vr6//rKys/62trf+rq6v/qqqq/6enp/+rq6v/UVtg/0tWWv9PWFj/WV5d/66zsv+1urn/t7m4/7S3tv+ysrL/tbW1/7i4uP+9vb3/wcHB/8HBwf/CwsL/w8PD/8PDw//BwcH/v7+//7+/v/+8vLz/u7u7/7q6uv+4uLj/t7e3/7W1tf+0tLT/s7Oz/7Ozs/+zs7P/srKy/7Kysv+wsLD/srKy/7Ozs/+wsLD/sbGx/7CwsP+xsbH/sbGx/7Gxsf+ysrL/sbGx/6+vr/+wsLD/sLCw/7CwsP+wsLD/sLCw/6+vr/+wsLD/r6+v/66urv+srKz/rKys/66urv+urq7/r6+v/6ysrP+rq6v/qqqq/6qqqv+oqKj/qqqq/1FdYP9LVln/S1RU/1dcW/+tsrH/tLi3/7e5uP+0trT/srKy/7S0tP+5ubn/vr6+/8PDw//Dw8P/wsLC/8LCwv/CwsL/wcHB/7+/v/++vr7/vLy8/7y8vP+6urr/ubm5/7e3t/+2trb/tbW1/7S0tP+ysrL/srKy/7Ozs/+zs7P/sbGx/7Kysv+zs7P/sbGx/7CwsP+xsbH/sbGx/7Gxsf+xsbH/sbGx/7CwsP+vr6//sLCw/7Gxsf+wsLD/r6+v/7Gxsf+urq7/r6+v/7CwsP+wsLD/rq6u/6+vr/+vr6//rq6u/66urv+tra3/rKys/6urq/+qqqr/qqqq/6qqqv9QW17/TVhc/0tVVf9YXlz/sba1/7a5uP+3ubj/tLe2/7CwsP+zs7P/vLy8/729vf/CwsL/w8PD/8PDw//CwsL/wsLC/8HBwf+/v7//vr6+/7y8vP+8vLz/urq6/7i4uP+3t7f/tbW1/7W1tf+zs7P/s7Oz/7Kysv+zs7P/srKy/7Gxsf+ysrL/s7Oz/7Gxsf+wsLD/sbGx/7Gxsf+xsbH/sbGx/7Gxsf+wsLD/r6+v/7CwsP+xsbH/sLCw/6+vr/+xsbH/r6+v/6+vr/+wsLD/r6+v/6+vr/+vr6//rq6u/6urq/+srKz/rKys/6ysrP+urq7/qamp/6urq/+rq6v/Tlpd/05ZXf9NVVb/V1xb/62ysf+0uLf/t7m4/7W3tv+vr6//s7Oz/7y8vP+8vLz/wcHB/8HBwf/BwcH/wsLC/8LCwv/BwcH/v7+//76+vv+8vLz/vLy8/7q6uv+3t7f/tra2/7W1tf+0tLT/s7Oz/7S0tP+ysrL/srKy/7Gxsf+xsbH/srKy/7Ozs/+xsbH/sLCw/7Gxsf+xsbH/sbGx/7Gxsf+xsbH/sLCw/6+vr/+wsLD/sbGx/7CwsP+vr6//sbGx/7Gxsf+wsLD/rq6u/62trf+tra3/rq6u/62trf+rq6v/ra2t/6ysrP+srKz/rKys/6qqqv+qqqr/qqqq/09aXf9QW13/TVZW/1RbWP+prq3/sra0/7e5uP+1trX/sbGx/7Ozs/+7u7v/vr6+/8PDw//Dw8P/w8PD/8LCwv/CwsL/wcHB/8DAwP++vr7/vLy8/7y8vP+6urr/t7e3/7a2tv+1tbX/s7Oz/7Ozs/+0tLT/srKy/7Kysv+xsbH/sbGx/7Kysv+ysrL/srKy/7CwsP+xsbH/sbGx/7Gxsf+xsbH/sbGx/7CwsP+wsLD/sbGx/7Gxsf+wsLD/r6+v/7CwsP+tra3/r6+v/7CwsP+xsbH/ra2t/6+vr/+vr6//r6+v/7CwsP+urq7/q6ur/6qqqv+rq6v/qqqq/6enp/9TXmH/UFtf/05WV/9UW1j/rLGw/7S4t/+ytLP/sbOy/7Ozs/+xsbH/uLi4/76+vv/AwMD/wcHB/8PDw//BwcH/wcHB/8DAwP+/v7//wcHB/729vf+7u7v/uLi4/7i4uP+3t7f/tra2/7S0tP+zs7P/s7Oz/7Ozs/+ysrL/srKy/7CwsP+wsLD/sLCw/7Gxsf+xsbH/sbGx/7Gxsf+xsbH/sLCw/7CwsP+xsbH/sbGx/7CwsP+wsLD/sbGx/7Gxsf+wsLD/srKy/7Gxsf+vr6//r6+v/66urv+urq7/ra2t/66urv+urq7/q6ur/6ysrP+qqqr/qqqq/6mpqf+qqqr/UFpd/0tWW/9NVlb/VFtY/6yxsP+0uLf/srSz/7O1s/+2trb/tLS0/7m5uf++vr7/wMDA/8HBwf/ExMT/wcHB/8HBwf/BwcH/v7+//8DAwP+9vb3/u7u7/7m5uf+4uLj/t7e3/7a2tv+0tLT/tLS0/7Ozs/+zs7P/srKy/7Kysv+ysrL/sbGx/7Kysv+ysrL/sbGx/7CwsP+wsLD/sLCw/7Ozs/+ysrL/sbGx/66urv+vr6//sbGx/7CwsP+xsbH/srKy/7Kysv+xsbH/r6+v/6+vr/+urq7/rq6u/62trf+urq7/rKys/6qqqv+tra3/ra2t/6qqqv+pqan/qqqq/1FbYP9OWVz/TVZW/1RbWP+ssbD/tLi3/7S3tv+2t7b/sLCw/6+vr/+4uLj/vr6+/8DAwP/BwcH/xMTE/8TExP/Dw8P/w8PD/8LCwv+/v7//vLy8/7u7u/+6urr/uLi4/7a2tv+2trb/tbW1/7W1tf+zs7P/s7Oz/7Kysv+ysrL/sbGx/7Gxsf+xsbH/srKy/62trf+vr6//sLCw/7Gxsf+wsLD/sLCw/7Gxsf+ysrL/srKy/7Gxsf+urq7/ra2t/66urv+ysrL/sbGx/6+vr/+vr6//rq6u/66urv+tra3/rq6u/6ysrP+qqqr/ra2t/6ysrP+qqqr/qamp/6qqqv9PWl3/S1Zb/01VVv9UW1j/rLGw/7S4t/+ytLP/srW0/7W1tf+zs7P/ubm5/76+vv/AwMD/wcHB/8TExP/Dw8P/w8PD/8LCwv/AwMD/v7+//7y8vP+7u7v/urq6/7i4uP+2trb/tra2/7W1tf+1tbX/tLS0/7Ozs/+ysrL/srKy/7CwsP+vr6//sLCw/7CwsP+wsLD/sLCw/6+vr/+wsLD/sbGx/7Gxsf+xsbH/sbGx/7Kysv+wsLD/r6+v/7CwsP+zs7P/srKy/7Gxsf+vr6//r6+v/66urv+urq7/ra2t/66urv+urq7/rKys/6ysrP+rq6v/qqqq/6mpqf+qqqr/UV1g/05ZXf9LVVX/Vlxb/62ysf+zt7b/tri3/7W3tv+wsLD/srKy/7m5uf++vr7/wcHB/8LCwv/ExMT/xMTE/8LCwv/AwMD/w8PD/76+vv+9vb3/vLy8/7q6uv+3t7f/t7e3/7e3t/+1tbX/s7Oz/7Ozs/+zs7P/srKy/7CwsP+ysrL/sLCw/7Gxsf+wsLD/srKy/7Kysv+xsbH/sLCw/7Gxsf+xsbH/sbGx/7CwsP+xsbH/sbGx/7CwsP+wsLD/sLCw/7Gxsf+wsLD/rq6u/66urv+urq7/rq6u/62trf+tra3/ra2t/66urv+pqan/rKys/6mpqf+oqKj/qamp/1FbYP9OWVz/S1NV/1ddW/+utLL/s7i3/7a4t/+1t7b/s7Oz/7Ozs/+5ubn/vb29/8HBwf/BwcH/w8PD/8HBwf/Dw8P/wsLC/8LCwv++vr7/vb29/7y8vP+6urr/t7e3/7e3t/+3t7f/tbW1/7Ozs/+zs7P/s7Oz/7Kysv+wsLD/srKy/7CwsP+xsbH/sLCw/7CwsP+ysrL/srKy/7Kysv+xsbH/sbGx/7Gxsf+wsLD/sbGx/7Gxsf+wsLD/sLCw/7Gxsf+xsbH/sLCw/66urv+urq7/rKys/62trf+urq7/r6+v/6urq/+urq7/rKys/6ysrP+pqan/qKio/6mpqf9QW17/TVhb/0tVVf9XXVz/sLW0/7W4t/+3ubj/tre2/7S0tP+0tLT/ubm5/7y8vP/AwMD/wMDA/8LCwv/AwMD/xMTE/8PDw//AwMD/vr6+/729vf+8vLz/urq6/7e3t/+3t7f/t7e3/7W1tf+zs7P/s7Oz/7Ozs/+ysrL/sLCw/7Gxsf+wsLD/sbGx/7Gxsf+ysrL/s7Oz/7Kysv+wsLD/sbGx/7Gxsf+xsbH/sLCw/7Gxsf+xsbH/sLCw/7CwsP+xsbH/sbGx/7CwsP+urq7/rq6u/6+vr/+vr6//ra2t/6ysrP+pqan/rq6u/6ysrP+tra3/qamp/6ioqP+pqan/T1pd/0tWW/9NVVb/WF9d/7C1tP+2ubj/t7m4/7a3t/+1tbX/tra2/7i4uP+8vLz/v7+//8DAwP/CwsL/wMDA/8PDw//CwsL/wMDA/76+vv+9vb3/vLy8/7q6uv+3t7f/t7e3/7e3t/+1tbX/s7Oz/7Ozs/+zs7P/srKy/7CwsP+wsLD/sLCw/7Gxsf+ysrL/sbGx/7Kysv+ysrL/sbGx/7Gxsf+xsbH/sbGx/7CwsP+xsbH/sbGx/7CwsP+wsLD/sbGx/7Gxsf+wsLD/rq6u/66urv+urq7/rq6u/62trf+tra3/q6ur/62trf+qqqr/rq6u/6urq/+oqKj/qamp/09aXf9KVVn/TldX/1hdXP+ssbD/sba1/7W3tv+3uLf/tbW1/7Ozs/+1tbX/vr6+/8HBwf/BwcH/w8PD/8TExP/CwsL/wsLC/8HBwf/AwMD/vr6+/7u7u/+5ubn/ubm5/7e3t/+1tbX/tLS0/7W1tf+zs7P/srKy/7Gxsf+xsbH/sbGx/7CwsP+wsLD/sbGx/7Ozs/+ysrL/sLCw/6+vr/+wsLD/sLCw/7Gxsf+xsbH/sLCw/7Gxsf+urq7/srKy/7Gxsf+vr6//rq6u/66urv+urq7/sLCw/6+vr/+tra3/ra2t/6+vr/+srKz/qqqq/6urq/+tra3/qqqq/6mpqf9QW17/TVhc/09ZWf9ZYF3/rbKx/7W4t/+2uLf/tLW0/7Ozs/+1tbX/uLi4/729vf+/v7//v7+//8HBwf/ExMT/wsLC/8LCwv/BwcH/wMDA/76+vv+7u7v/ubm5/7m5uf+3t7f/tbW1/7S0tP+1tbX/s7Oz/7Kysv+xsbH/sbGx/7Gxsf+wsLD/sbGx/7Gxsf+wsLD/sbGx/7Gxsf+xsbH/sLCw/7Gxsf+xsbH/sbGx/7Kysv+0tLT/rq6u/7CwsP+urq7/sLCw/7CwsP+vr6//r6+v/62trf+tra3/rKys/6urq/+wsLD/rq6u/6ysrP+tra3/rKys/6ioqP+np6f/Ul1g/05ZXf9NVVb/VlxZ/6qvrf+ytrX/tbe2/7Gzs/+xsbH/s7Oz/7y8vP/AwMD/wcHB/8LCwv/Dw8P/xMTE/8LCwv/CwsL/wcHB/8DAwP++vr7/u7u7/7m5uf+5ubn/t7e3/7W1tf+0tLT/tbW1/7Ozs/+ysrL/sbGx/7Gxsf+wsLD/sbGx/7Gxsf+xsbH/r6+v/7CwsP+xsbH/srKy/7Gxsf+xsbH/sbGx/7CwsP+wsLD/srKy/66urv+ysrL/sbGx/7Gxsf+xsbH/sLCw/7CwsP+urq7/rq6u/66urv+urq7/qqqq/6urq/+rq6v/qqqq/62trf+qqqr/qamp/1BcXv9OWV3/S1VV/1RZWP+qr63/sba1/7W3tv+xtLP/sLCw/7Kysv+7u7v/vb29/7+/v/+/v7//wcHB/8TExP/CwsL/wsLC/8HBwf/AwMD/vr6+/7u7u/+5ubn/ubm5/7e3t/+1tbX/tLS0/7W1tf+zs7P/srKy/7Gxsf+xsbH/sLCw/7Kysv+ysrL/sLCw/7Gxsf+ysrL/sLCw/7CwsP+ysrL/srKy/7Gxsf+wsLD/r6+v/7Gxsf+urq7/srKy/7Gxsf+vr6//r6+v/66urv+urq7/ra2t/66urv+urq7/r6+v/6qqqv+srKz/ra2t/6ysrP+tra3/qamp/6mpqf9PWl3/TFdb/0tTVf9WXFv/rLGw/7K2tf+0trX/s7W0/7CwsP+wsLD/urq6/7+/v//BwcH/w8PD/8PDw//ExMT/w8PD/8TExP/CwsL/v7+//729vf+6urr/ubm5/7i4uP+3t7f/tbW1/7Ozs/+0tLT/tLS0/7Kysv+xsbH/sbGx/6+vr/+xsbH/sbGx/7Ozs/+ysrL/sLCw/7Gxsf+xsbH/sbGx/7Gxsf+xsbH/sLCw/7CwsP+xsbH/r6+v/7CwsP+wsLD/sbGx/7CwsP+wsLD/rq6u/62trf+tra3/rq6u/66urv+rq6v/rKys/62trf+srKz/qqqq/6mpqf+oqKj/TVlc/01YXP9NVlb/WF1c/6+0sv+0t7b/tbe2/7S2tf+ysrL/sbGx/7u7u/+/v7//wMDA/8PDw//ExMT/wsLC/8LCwv/CwsL/wMDA/76+vv+8vLz/urq6/7m5uf+4uLj/t7e3/7W1tf+zs7P/s7Oz/7S0tP+ysrL/sbGx/7Gxsf+xsbH/srKy/6+vr/+xsbH/sbGx/7CwsP+xsbH/sbGx/7Gxsf+xsbH/sbGx/7CwsP+wsLD/sLCw/6+vr/+wsLD/sLCw/7Gxsf+vr6//sLCw/66urv+rq6v/q6ur/6ysrP+srKz/r6+v/66urv+srKz/qqqq/6mpqf+qqqr/qKio/w==",
+     "source": "abo:B082JHBD9S:frame0:320,260,64"
+    }
+   }
+  },
+  {
+   "id": "ring_top",
+   "name": "Upper cage ring",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Horizontal ring on the cage",
+   "geometry": {
+    "op": "torus",
+    "radius": 59,
+    "tube": 3
+   },
+   "position": [
+    0,
+    178,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "ring_low",
+   "name": "Lower cage ring",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Horizontal ring near the bottom",
+   "geometry": {
+    "op": "torus",
+    "radius": 59,
+    "tube": 3
+   },
+   "position": [
+    0,
+    66,
+    0
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "bar_front",
+   "name": "Front cage bar",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3,
+    "radiusBottom": 3,
+    "depth": 160,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    140,
+    61
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "bar_back",
+   "name": "Back cage bar",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3,
+    "radiusBottom": 3,
+    "depth": 160,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    140,
+    -61
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "bar_left",
+   "name": "Left cage bar",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3,
+    "radiusBottom": 3,
+    "depth": 160,
+    "radialSegments": 16
+   },
+   "position": [
+    -61,
+    140,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "bar_right",
+   "name": "Right cage bar",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Vertical cage bar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3,
+    "radiusBottom": 3,
+    "depth": 160,
+    "radialSegments": 16
+   },
+   "position": [
+    61,
+    140,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "basket_x",
+   "name": "Bottom basket arc A",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Curved cage rib under the glass",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -60,
+      0,
+      0
+     ],
+     [
+      -48,
+      -26,
+      0
+     ],
+     [
+      -25,
+      -45,
+      0
+     ],
+     [
+      0,
+      -52,
+      0
+     ],
+     [
+      25,
+      -45,
+      0
+     ],
+     [
+      48,
+      -26,
+      0
+     ],
+     [
+      60,
+      0,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    66,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "basket_z",
+   "name": "Bottom basket arc B",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Curved cage rib under the glass",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -60
+     ],
+     [
+      0,
+      -26,
+      -48
+     ],
+     [
+      0,
+      -45,
+      -25
+     ],
+     [
+      0,
+      -52,
+      0
+     ],
+     [
+      0,
+      -45,
+      25
+     ],
+     [
+      0,
+      -26,
+      48
+     ],
+     [
+      0,
+      0,
+      60
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    66,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Bottom finial",
+   "category": "mechanical",
+   "materialName": "Matte black metal",
+   "detail": "Small knob at the lowest point",
+   "geometry": {
+    "op": "sphere",
+    "radius": 7
+   },
+   "position": [
+    0,
+    7,
+    0
+   ],
+   "material": {
+    "color": "#1c2022",
+    "roughness": 0.6,
+    "metalness": 0.5,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,366 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Sideboard",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1500,
+     820,
+     400
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    490,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f4",
+    "roughness": 0.6,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1520,
+     20,
+     410
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    890,
+    0
+   ],
+   "material": {
+    "color": "#f8f8f8",
+    "roughness": 0.5,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "doorL",
+   "name": "Left door",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "left door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     440,
+     740,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -500,
+    470,
+    208
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "doorR",
+   "name": "Right door",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "right door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     440,
+     740,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    500,
+    470,
+    208
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "drw1",
+   "name": "Top drawer",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     540,
+     230,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    745,
+    208
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "oak",
+   "name": "Oak insert",
+   "category": "enclosure",
+   "materialName": "oak effect",
+   "detail": "second drawer oak front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     540,
+     170,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    570,
+    208
+   ],
+   "material": {
+    "color": "#b8a38a",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     3,
+     2
+    ],
+    "albedoPatch": {
+     "width": 48,
+     "height": 48,
+     "rgbaBase64": "3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/g4OL/4uLk/+Pj5f/l5ef/5+fp/+jo6v/q6uz/7Ozu/+3t8P/t7e//8fHz/9/f4f/S0ND/0s7L/9LOy//Uz83/19LP/9rV0v/f2df/4tza/+Hc2v/m4d7/6ePh/+rk4v/w6+j/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/g4OL/4uLk/+Pj5f/l5ef/5+fo/+vn5v/q6uj/6+zu/+zv8f/q7vH/8PHy/+nq6v/Y19T/2dTR/9vX1P/e29f/4NzZ/+Le2v/k4d3/5uPf/+no5v/o6OT/7u3q/+vq5//x8O7/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/g4OL/4uLk/+Tk5f/l5ef/5+fo/+zp5P/q6uf/6+3s/+vv8v/q7vH/8fLz/+3t6//a2Nb/2tnX/93c2f/f3tz/4uHf/+Tj4f/m5eP/6Ofl/+jp4//s7ej/7u/q//P08P/y8+3/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/g4OL/4uLk/+Tk5v/l5ef/5+fo/+zo5v/r6+n/7O3v/+vv8v/q7vH/8fLz/+7s6//c2df/3NvZ/97d2v/h4N3/4uDe/+Ti4P/m5eL/6Ofk/+jn4v/u7Of/7evl//Tz7f/u7ef/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/g4OL/4uLk/+Tk5v/l5ef/5+fo/+zo5//r6+v/7O3v/+7v8//t7vL/9PLy//Ls6f/e2NT/3NjV/9/b2P/h3dr/4d3Z/+Pf2//l4d7/5+Pg/+zm3f/r5Nv/7OXc/+nj2v/q5Nn/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/g4OL/4uLk/+Tk5v/m5uj/5+fp/+ro6f/r6+3/7O3x/+7v8//08/X/8+7t//Ho5f/a0Mz/1c3J/9TLx//Tycb/ysC9/8zCv//Hvbn/xry3/8O3rf/HurD/xbmu/8q9sf/Owbf/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eL/4uLk/+Tk5v/m5uj/6Ojq/+vp7P/r6u//7O3y/+7v9P/x7vD/+/Px/9DFwP+5qqT/vq6m/7yspf+7qqP/u6yl/8Oyq//Gta3/y7qy/9LBtP/ezL//383A/+LQw//cy73/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+vp7v/s6/D/7e7z//Dv9P/18fL//vXz/9DDvv/Br6X/zbWr/9G5r//Rua//zrat/9O5r//Otqv/z7ir/9S9rv/XwbL/0Lqr/823pv/cx7b/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+rp7f/s6/D/7e7y//Dv9P/38/T/+/Lv/9bHwf/Aq6H/yK6i/8qvov/Eqp3/ya6i/8+zpv/Osqb/0bWn/9K5qv/WvK3/1Lqr/9i/r//dw7T/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+rq6v/r7O7/7e7w/+/w8v/x8e//+fPv/9LIwP+8rKP/xLGm/8i1qf/JtKr/y7ar/8y3rP/Ouq7/ybSo/9C5rP/TvK//2cK1/93FuP/exrn/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+rq6v/r7O7/7e7w/+/w8v/29vT/+PLt/9HIwf/Cs6r/ybWr/8e0qf/QvLH/0b2y/9K+s//Xwrf/1cC1/9jEtv/eybv/5M/B/+bRwv/lz8H/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pk/+Tk5v/m5uj/6Ojq/+rq6v/r7O7/7e7w/+/x8//09PL/+vXw/9rQyP/IuLD/zLmu/8+8sf/Sv7T/z7uw/8+7sP/UwLT/1sK2/9rFt//bxrn/487A/+zWyP/t2Mr/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Tk5v/m5uj/6Ojq/+rq6v/r7O7/7e7x//Dx8//z8/H/+fTv/9XLxP/DtKr/ybar/867sP/Zxrv/3cm+/9nEuf/ZxLn/2cW5/9jGt//hzr//5tPE/+vYyf/m08T/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Tk5v/m5uj/6Ojq/+rq6v/r7O7/7u/x//Dx8//09PL/+vTw/9jPxv/NvbP/0b6z/825rv/Ouq//0b2y/9G9sv/Xw7f/2cW6/+LPwP/p2Mn/6dfI//Th0v/r2cn/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Xl5//m5uj/6Ojq/+vr6//s7e//7u/x//Dx8//19PL/+fTu/9XMw//JubD/0L2y/8+7sf/Sv7T/0b2y/9TAtP/bxrv/2sW6/+DPwP/h0MH/28u7/9/Pv//j0sL/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Xl5//n5+n/6enr/+vr6//s7e//7u/x//Dx8//08/D//ffz/9rPyP/Ht67/zLmu/8y5rv/Mua7/0r6z/9K+s//YxLj/2sa7/9TFtf/by7v/49XF/+rby//j08P/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Xl5//n5+n/6enr/+nr7//s7e7/8e7s//Ly8v/09vj/9vTy/9LGvv++raD/x7Km/8+6rf/Vv7P/4Mu//+DKvv/iy7//5c/B/+LOvv/r18j/8t7N//Pezf/0387/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Xl5//n5+n/6ens/+fs8P/t7ez/8/Dr//Ly8v/w9fr/+Pn4/9rOw//JtKX/ybSl/9C8rP/Sva3/1L+v/9fBsv/ZxLT/3ce3/+XPvv/o0sH/6dLB/+rTwv/r1MP/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Xl5//n5+n/6ens/+fs8P/t7ez/8/Dr//Ly8v/v9Pj/+Pn3/9nOw//Ktab/x7Ok/8u2p//Ltqf/zLen/9K9rf/YwrL/28W1/+HLuv/lz77/69TD/+/Yx//03cz/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Xl5//n5+n/6ens/+fs8P/t7ez/8u/q//Ly8v/y9/v/9PXz/9nMw//Qu6z/1cGy/9fDtP/axbb/3Me4/+POvv/o08P/6NLC/+jSwv/o0cH/6tPC/+/ZyP/z3Mv/3t7g/97e4P/e3uD/3t7g/97e4P/f3+H/3t7g/93d3//e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Xl5//n5+n/6ens/+fs8P/t7ez/8u/q//Hx8f/y9/v/9vf1/9zQxv/Rvq//1L+w/9S/sP/WwbL/3ci4/+PNvv/l0MD/5c+//+fRwf/mz7//7tfG/+vUw//q08P/3t7g/97e4P/e3uD/3t7g/97e4P/f3+H/3t7g/93d3//e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Xl5//n5+n/6ens/+fs8P/t7ez/8u/q//Hx8f/v9Pj/+fn4/9/Tyf/Svq//1MCx/9fDtP/bxrf/2cS0/9nEtP/ZxLT/3ce3/+jSwv/t18b/7NbG//Lby//u18b/3t7g/97e4P/e3uD/3t7g/97e4P/f3+H/3t7g/93d3//e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Xl5//m5uj/6Ojr/+br7//s7Ov/8u/p//Hx8f/w9fn/9PXz/9rPxP/Ou6z/1cCx/9rGt//cyLj/4Mu8/+HMvf/kzr//6dPD/+rUxP/y3Mv/9N3N//vl1P/24M//3t7g/97e4P/e3uD/3t7g/97e4P/f3+H/3t7g/93d3//e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Tk5v/m5uj/6Ojq/+fr7//s7Oz/8e3q//Dw8P/w9fj/9PPy/+DVy//XxLb/2MO0/93Juv/dybn/4s2+/+jTw//r18f/7tnJ//LczP/u2Mj/8NnJ/+vUw//x28r/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/n5+n/6Ojq/+rq6v/r7O7/7e7w/+/w8//19fT/+PPv/9vQyf/Rw7f/1cOz/97MvP/fzr7/4M6+/+PRwf/n1MP/69fG/+rVyP/o08X/69bI//Hbzf/34tT/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/n5+n/6Ojq/+rq6v/r7O7/7e7w/+/w8//09PL/+vTw/97VzP/XyL3/2ci4/93MvP/dzLz/28q5/+DOvv/m1MP/69nI/+3Yyv/039H/9+LU//fh0//14NH/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/n5+n/6Ojq/+rq6v/r7O7/7e7w//Dx8//09PL/+vTw/97VzP/Zy8D/3cy8/+HPv//j0sH/5NPC/+jWxv/t28r/8uDP//Xg0v/z3tD/+ePV///s3v//693/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/n5+n/6Ojq/+rq6v/r7O7/7e7w//Dx8//08/H/+PPv/9zTyv/YyLz/3Mm6/+DMvf/k0MH/5dLC/+nVxf/r1sf/7trK//Tf0f/y3c//79rM//DazP/t2Mn/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Tk5v/m5uj/6Ojq/+rq6v/r7O7/7e7w/+/x8//19fP/+/by/+DXzv/Xx7v/2ca3/9nFtf/Xw7T/076u/9jDtP/ZxLX/3cm5/+LOwP/l0ML/6dTG/+/Zy//w2sz/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Tk5v/m5uj/6Ojq/+rq6v/r7O7/7e7w//Dx8//09PL/+fTv/93Uy//Wxrv/28e4/9rGt//cx7j/2MO0/97Juf/hy7z/59HB/+nVx//u2cv/8dvN//Pdz//24NL/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pl/+Tk5v/m5uj/6Ojq/+rq6v/r7O7/7e7w/+/w8v/19PL/+vXw/93Uy//UxLn/2MG0/9rEtf/hyrz/4Mm6/+bPwP/n0MH/69TE/+/azP/v283/8dzO//bg0v/14NL/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pk/+Tk5v/m5uj/6Ojq/+jr6//r7O//8O3x//Dv8//y9fP/+Pby/97Tzf/Twbj/2MO0/9zIuP/fy7v/4sy+/+XPwf/o08P/7tfI//Ldzf/y3c7/8dzN//Xgz//549P/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pk/+Tk5v/m5uj/6Ojq/+bs7P/s6/D/8ezz//Dv9P/v9fP/9vby/+DTz//Vwrn/2cW2/97LvP/izr//48/A/+jUxP/r18f/7NfH/+zYx//n0sL/7NfH//nj0//96Nf/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4+Pk/+Tk5v/m5uj/6Ojq/+bs7P/s6/D/8ezz//Dv9P/v9fP/9fXw/+HV0P/bxr7/3Mi6/9vHuP/cyLn/4M29/+XRwv/o08T/5dDA/+/by//w28v/897N//bg0P/0387/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+bs7P/s6/D/8ezz//Dv9P/w9vT/9PTw/+PW0v/cxr7/2sa3/93Iuf/izr7/5tHB/+jTxP/q1MX/7NfH/+7YyP/24dD/+OLS//fg0P//6Nj/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/f3+H/39/h/9/f4f/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+bs7P/s6/D/8ezz//Dv9P/x9/X/9PXw/+DTz//ZxLz/2sO1/+HJu//iyrz/6NDB/+bOv//q0cL/5Mu9/+XMvf/u1cb/7dPE/+vRwf/iyLn/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/d3d//3d3f/93d3//e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+bs7P/s6/D/8ezz//Dv9P/t8/H/9fbx/9vPy//PurH/0rqt/9jBs//YwbL/17+x/9i/sf/Yv7H/1r2u/+DHuP/hx7j/7NLD/+DGt//r0cH/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/f3+H/39/h/9/f4f/f3+H/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+bs7P/s6/D/8ezz//Dv9P/u9PL/9/fz/9vPy//Isar/zbOm/9O5rP/Tuaz/07ms/9W7rv/Wu63/2b6w/9m+sP/hxbf/4cW3/+XJu//lyLr/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/d3d//3d3f/93d3//e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+br7f/s6/D/8ezy//Dv9P/u9PP/9PXx/9jMyP/GsKf/zbOm/9G3qv/Ptqj/0beo/9a7rv/Vuqz/3cGz/9i9rv/Zva7/4ca3/9/Etf/ozL3/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojr/+br8P/s6+7/8e3r//Dw8v/t8vj/8/P1/+HVzv/Puqv/07uq/9nAr//Yv67/2cCv/9e9rf/ZwK//5cu5/+HGtP/lyrf/69C//+vPvP/t0r7/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojr/+br8f/s6+3/8e3q//Dw8v/t8ff/8/P0/+HUzf/NuKn/zrWm/9K5qv/Wva3/3MO0/9W7rP/Xva7/3MKy/9m+rv/awK//48i4/+bLuv/rz77/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojr/+br8f/s6+3/8e3q//Dw8v/r8Pb/8fDy/9/Ty//Lt6n/zLSl/862p//Otqf/zram/9W8rf/QuKj/2sGx/9vCsv/iybn/6M69/+LIt//pz77/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojr/+br8f/s6+3/8e3q//Dw8v/v9Pr/9fT3/+PXz//Pu63/072v/9vDtf/bxLb/5c2//+DHuf/mzsD/5s6//+3Uxf/r0sL/8NbH//HWx//02sr/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojr/+br8f/s6+3/8e3q//Dw8v/q7/X/9PP1/+DTzP/Sv7H/0r+w/9bCtP/Yw7X/4Mu8/9/Ku//izb3/6NPD/+jSw//p08T/7NbH//Lby//u2Mf/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojr/+br8f/s6+3/8e3q//Dw8v/q7/X/8/P0/+LVzv/Vwrb/1cK1/9vHu//bx7r/28e6/9/Lvf/gzL//6dTG/+3Yyv/t2Mr/8NvN//Tf0f/y3c7/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojr/+br8f/s6+3/8e3q//Dw8v/q7/X/9PP2/+XZ0f/Zxrn/2cW5/+HOwf/hzcD/48/C/+nVyP/n08X/8NvN//Dczv/x3M7/897P//bh0v/34tP/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/39/h/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+jq7v/r7O//7+3w/+/w8//w8fT/9/Ly/+HW0P/Xxrv/2cW5/+HOwf/cybz/4My//+HNwP/izcD/7NjK/+vXyf/r2cn/7NjJ/+3Yyf/u28v/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/3t7g/97e4P/e3uD/39/h/97e4P/e3uD/3t7g/9/f4f/h4eP/4uLk/+Tk5v/m5uj/6Ojq/+rq7P/r7PD/7e7z/+/w9P/z8/P/+fTw/+DX0f/Uxrz/18O3/+HNwP/cybz/3cm8/+DMv//p1Mf/6tbI/+nWx//s2cr/7NnK/+7bzP/w3M3/",
+     "source": "abo:B0154WJZH2:frame0:234,178,48"
+    }
+   }
+  },
+  {
+   "id": "drw3",
+   "name": "Third drawer",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "third drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     540,
+     170,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    390,
+    208
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "drw4",
+   "name": "Bottom drawer",
+   "category": "enclosure",
+   "materialName": "white laminate",
+   "detail": "bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     540,
+     150,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    215,
+    208
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "footFL",
+   "name": "Front left foot",
+   "category": "mechanical",
+   "materialName": "plastic",
+   "detail": "foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 15,
+    "radiusBottom": 15,
+    "depth": 80,
+    "radialSegments": 16
+   },
+   "position": [
+    -700,
+    40,
+    150
+   ],
+   "material": {
+    "color": "#333333",
+    "roughness": 0.7,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "footFR",
+   "name": "Front right foot",
+   "category": "mechanical",
+   "materialName": "plastic",
+   "detail": "foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 15,
+    "radiusBottom": 15,
+    "depth": 80,
+    "radialSegments": 16
+   },
+   "position": [
+    700,
+    40,
+    150
+   ],
+   "material": {
+    "color": "#333333",
+    "roughness": 0.7,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "footBL",
+   "name": "Back left foot",
+   "category": "mechanical",
+   "materialName": "plastic",
+   "detail": "foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 15,
+    "radiusBottom": 15,
+    "depth": 80,
+    "radialSegments": 16
+   },
+   "position": [
+    -700,
+    40,
+    -150
+   ],
+   "material": {
+    "color": "#333333",
+    "roughness": 0.7,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "footBR",
+   "name": "Back right foot",
+   "category": "mechanical",
+   "materialName": "plastic",
+   "detail": "foot",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 15,
+    "radiusBottom": 15,
+    "depth": 80,
+    "radialSegments": 16
+   },
+   "position": [
+    700,
+    40,
+    -150
+   ],
+   "material": {
+    "color": "#333333",
+    "roughness": 0.7,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  }
+ ]
+}
