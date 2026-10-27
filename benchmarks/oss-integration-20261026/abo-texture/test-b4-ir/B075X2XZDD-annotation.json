@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- base: Base disc; material \"brushed steel\"; colour #a8a7a3\n- foot: Base underside; material \"black rubber\"; colour #1a1a1a\n- pole: Main pole; material \"brushed steel\"; colour #9c9b97\n- arm: Curved arm; material \"brushed steel\"; colour #9c9b97\n- head: Lamp head; material \"brushed steel\"; colour #b0afab\n- diffuser: Diffuser; material \"frosted diffuser\"; colour #f5efd8\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"base\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[2,2]},{\"id\":\"foot\",\"surface\":\"rubber\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"pole\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,4]},{\"id\":\"arm\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,2]},{\"id\":\"head\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[2,2]},{\"id\":\"diffuser\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.006651300000000001,
+  "durationMs": 3418,
+  "isError": false
+ }
+}

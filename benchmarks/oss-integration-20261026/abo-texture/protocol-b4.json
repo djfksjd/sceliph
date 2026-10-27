@@ -1,0 +1,19 @@
+{
+ "schema": "sceliph.abo-texture-protocol/0.2",
+ "registered": "2026-10-27, after dev (9b dev 10 items, one setting, no tuning) and before any test call",
+ "arms": {
+  "B0": "LLM-written IR as is (slice-9b test r1 a1) — scored in abo-texture/test-b0.json",
+  "B1": "materialName rules (protocol-b1.json) — abo-texture/test-b1.json",
+  "B4": "same IR; Sonnet sees the frame-0 photo and the part list and writes per part surface, albedoVariation (0 = uniform) and textureScale (scripts/abo-material-annotate.ts, guide frozen); geometry and colours unchanged"
+ },
+ "metric": "appearance protocol v2, identical renders to the B0/B1 runs",
+ "strata": "textured = B0 reference detailReference >= 1.0 (same as protocol-b1)",
+ "criteria": [
+  "Q1 textured: median paired (B4 - B0) detailLog < 0 and bootstrap 95% CI upper bound < 0",
+  "Q2 textured: median paired (B4 - B0) spreadLog < 0",
+  "Q3 all items: median paired (B4 - B0) deltaE00 <= +0.5",
+  "Q4 untextured: share with detailLog worse than B0 by > 0.3 is at most the B1 share (2/12)",
+  "Q5 descriptive: B4 vs B1 paired detailLog on textured and untextured items"
+ ],
+ "bootstrap": "items, 10000 resamples, seed 20261027"
+}

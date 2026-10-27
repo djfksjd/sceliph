@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- base: Brass base; material \"brushed brass\"; colour #8f7a45\n- cup: Globe holder cup; material \"brushed brass\"; colour #85703f\n- globe: Opal glass globe; material \"opal glass\"; colour #fff1d6\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"base\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.15,\"textureScale\":[3,2]},{\"id\":\"cup\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.1,\"textureScale\":[2,2]},{\"id\":\"globe\",\"surface\":\"ceramic-glass\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.005645300000000001,
+  "durationMs": 2958,
+  "isError": false
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- shade: Frosted glass shade; material \"frosted opal glass\"; colour #f6f6f4\n- canopy: Ceiling canopy; material \"brushed nickel\"; colour #8d8b87\n- cap: Bottom cap; material \"brushed nickel\"; colour #8d8b87\n- knob: Finial knob; material \"satin nickel\"; colour #a9a7a2\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"shade\",\"surface\":\"ceramic-glass\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"canopy\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.05,\"textureScale\":[3,1]},{\"id\":\"cap\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.05,\"textureScale\":[3,1]},{\"id\":\"knob\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.03,\"textureScale\":[2,2]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.006165299999999999,
+  "durationMs": 10667,
+  "isError": false
+ }
+}

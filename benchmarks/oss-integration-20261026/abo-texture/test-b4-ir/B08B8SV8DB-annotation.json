@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- canopy: Ceiling canopy; material \"brushed nickel\"; colour #b4b4b2\n- cord: Cord; material \"black fabric cord\"; colour #1a1a1a\n- cap: Shade cap; material \"brushed nickel\"; colour #b4b4b2\n- shade: Globe shade; material \"gray concrete-look poly\"; colour #6b6b6a\n- socket: Inner bulb recess; material \"dark bronze\"; colour #3a2c18\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"canopy\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"cord\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[6,6]},{\"id\":\"cap\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shade\",\"surface\":\"concrete\",\"albedoVariation\":0.2,\"textureScale\":[3,3]},{\"id\":\"socket\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0057573,
+  "durationMs": 3251,
+  "isError": false
+ }
+}

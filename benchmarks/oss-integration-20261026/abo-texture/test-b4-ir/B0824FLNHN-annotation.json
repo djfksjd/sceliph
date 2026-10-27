@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- plate: Back plate; material \"brushed nickel\"; colour #b4b3ac\n- screw_l: Left screw; material \"polished nickel\"; colour #d0d0d0\n- screw_r: Right screw; material \"polished nickel\"; colour #d0d0d0\n- arm: Arm; material \"polished nickel\"; colour #c8c8c8\n- clamp: Clamp block; material \"polished nickel\"; colour #c8c8c8\n- stem: Stem; material \"polished nickel\"; colour #c8c8c8\n- ball: Ball finial; material \"polished nickel\"; colour #d0d0d0\n- shade: Linen shade; material \"white linen\"; colour #f4f5f6\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"plate\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.05,\"textureScale\":[3,3]},{\"id\":\"screw_l\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"screw_r\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"arm\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"clamp\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"stem\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"ball\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shade\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[6,6]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0083733,
+  "durationMs": 4296,
+  "isError": false
+ }
+}

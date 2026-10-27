@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- top: Top; material \"weathered oak\"; colour #6b3f24\n- carcass: Carcass; material \"weathered oak\"; colour #5e3520\n- leg_fl: Front left leg; material \"weathered oak\"; colour #5e3520\n- leg_fr: Front right leg; material \"weathered oak\"; colour #5e3520\n- leg_bl: Back left leg; material \"weathered oak\"; colour #5e3520\n- leg_br: Back right leg; material \"weathered oak\"; colour #5e3520\n- drawer_tl: Top left drawer; material \"black faux leather\"; colour #1c1c1e\n- drawer_tr: Top right drawer; material \"black faux leather\"; colour #1c1c1e\n- drawer_ml: Middle left drawer; material \"black faux leather\"; colour #1c1c1e\n- drawer_mr: Middle right drawer; material \"black faux leather\"; colour #1c1c1e\n- drawer_bl: Bottom left drawer; material \"black faux leather\"; colour #1c1c1e\n- drawer_br: Bottom right drawer; material \"black faux leather\"; colour #1c1c1e\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"top\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,2]},{\"id\":\"carcass\",\"surface\":\"wood\",\"albedoVariation\":0.28,\"textureScale\":[3,2]},{\"id\":\"leg_fl\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[1,3]},{\"id\":\"leg_fr\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[1,3]},{\"id\":\"leg_bl\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[1,3]},{\"id\":\"leg_br\",\"surface\":\"wood\",\"albedoVariation\":0.25,\"textureScale\":[1,3]},{\"id\":\"drawer_tl\",\"surface\":\"leather\",\"albedoVariation\":0.08,\"textureScale\":[4,3]},{\"id\":\"drawer_tr\",\"surface\":\"leather\",\"albedoVariation\":0.08,\"textureScale\":[4,3]},{\"id\":\"drawer_ml\",\"surface\":\"leather\",\"albedoVariation\":0.08,\"textureScale\":[4,3]},{\"id\":\"drawer_mr\",\"surface\":\"leather\",\"albedoVariation\":0.08,\"textureScale\":[4,3]},{\"id\":\"drawer_bl\",\"surface\":\"leather\",\"albedoVariation\":0.08,\"textureScale\":[4,3]},{\"id\":\"drawer_br\",\"surface\":\"leather\",\"albedoVariation\":0.08,\"textureScale\":[4,3]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0103973,
+  "durationMs": 5424,
+  "isError": false
+ }
+}

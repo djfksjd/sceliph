@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- plinth: Plinth base; material \"dark oak\"; colour #2e2018\n- body: Carcass; material \"dark oak veneer\"; colour #3d2a1f\n- d1: Drawer 1; material \"dark oak\"; colour #46301f\n- d2: Drawer 2; material \"dark oak\"; colour #46301f\n- d3: Drawer 3; material \"dark oak\"; colour #46301f\n- d4: Drawer 4; material \"dark oak\"; colour #46301f\n- d5: Drawer 5; material \"dark oak\"; colour #46301f\n- d6: Drawer 6; material \"dark oak\"; colour #46301f\n- h1: Handle 1; material \"brass\"; colour #c9a45c\n- h2: Handle 2; material \"brass\"; colour #c9a45c\n- h3: Handle 3; material \"brass\"; colour #c9a45c\n- h4: Handle 4; material \"brass\"; colour #c9a45c\n- h5: Handle 5; material \"brass\"; colour #c9a45c\n- h6: Handle 6; material \"brass\"; colour #c9a45c\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"plinth\",\"surface\":\"wood\",\"albedoVariation\":0.1,\"textureScale\":[2,1]},{\"id\":\"body\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,3]},{\"id\":\"d1\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,1]},{\"id\":\"d2\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,1]},{\"id\":\"d3\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,1]},{\"id\":\"d4\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,1]},{\"id\":\"d5\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,1]},{\"id\":\"d6\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,1]},{\"id\":\"h1\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"h2\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"h3\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"h4\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"h5\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"h6\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0109613,
+  "durationMs": 4931,
+  "isError": false
+ }
+}

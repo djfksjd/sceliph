@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- rim: Bronze rim; material \"bronze painted metal\"; colour #4a3a33\n- shade: Frosted glass shade; material \"frosted glass\"; colour #f6f6f4\n- finial_base: Finial cap; material \"bronze painted metal\"; colour #4a3a33\n- finial_neck: Finial neck; material \"bronze painted metal\"; colour #4a3a33\n- finial_knob: Finial knob; material \"bronze painted metal\"; colour #4a3a33\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"rim\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shade\",\"surface\":\"ceramic-glass\",\"albedoVariation\":0.05,\"textureScale\":[2,2]},{\"id\":\"finial_base\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"finial_neck\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"finial_knob\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0066952999999999995,
+  "durationMs": 3256,
+  "isError": false
+ }
+}

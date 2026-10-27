@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- canopy: Canopy; material \"antique brass\"; colour #a8987a\n- rod: Downrod; material \"antique brass\"; colour #a8987a\n- motor: Motor housing; material \"antique brass\"; colour #a8987a\n- light: Light bowl; material \"frosted glass\"; colour #f0ece4\n- blade1: Blade 1; material \"dark wood\"; colour #4a2c2e\n- blade2: Blade 2; material \"dark wood\"; colour #4a2c2e\n- blade3: Blade 3; material \"dark wood\"; colour #4a2c2e\n- blade4: Blade 4; material \"dark wood\"; colour #4a2c2e\n- blade5: Blade 5; material \"dark wood\"; colour #4a2c2e\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"canopy\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"rod\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"motor\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"light\",\"surface\":\"ceramic-glass\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"blade1\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[3,1]},{\"id\":\"blade2\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[3,1]},{\"id\":\"blade3\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[3,1]},{\"id\":\"blade4\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[3,1]},{\"id\":\"blade5\",\"surface\":\"wood\",\"albedoVariation\":0.15,\"textureScale\":[3,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0080473,
+  "durationMs": 4068,
+  "isError": false
+ }
+}

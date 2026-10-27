@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- base: Base; material \"brushed steel\"; colour #8a8d90\n- arc: Arc pole; material \"brushed steel\"; colour #a5a8ab\n- shade: Drum shade; material \"fabric\"; colour #efe6d2\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"base\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[2,2]},{\"id\":\"arc\",\"surface\":\"brushed-metal\",\"albedoVariation\":0,\"textureScale\":[2,2]},{\"id\":\"shade\",\"surface\":\"fabric\",\"albedoVariation\":0.12,\"textureScale\":[5,5]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0057533,
+  "durationMs": 2893,
+  "isError": false
+ }
+}

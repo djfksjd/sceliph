@@ -1,0 +1,206 @@
+{
+ "schema": "sceliph.material-annotation/0.1",
+ "model": "sonnet",
+ "guide": "You annotate the materials of a 3D model of the product in the photo. The geometry and base colours are fixed; you only describe surface appearance.\nOutput exactly one JSON object and nothing else: {\"components\":[{\"id\":string,\"surface\":finish,\"albedoVariation\":number,\"textureScale\":[u,v]}, ...]} with one entry per listed component id.\nfinish: one of \"raw\", \"concrete\", \"asphalt\", \"plaster\", \"stone\", \"coated-metal\", \"brushed-metal\", \"bead-blasted-metal\", \"anodized-metal\", \"polished-metal\", \"machined-copper\", \"ceramic-glass\", \"optical-glass\", \"sapphire\", \"pcb-soldermask\", \"molded-polymer\", \"soft-touch-polymer\", \"rubber\", \"leather\", \"wood\", \"skin\", \"fabric\", \"hex-knit\", \"hair\", \"semiconductor\".\nalbedoVariation (0 to 0.5): how much visible colour pattern the part shows in the photo. 0 = a uniform colour (painted MDF, lacquer, plain plastic, smooth metal). 0.1-0.2 = subtle (fine weave, light grain). 0.25-0.4 = clear (wood grain, knots, plank lines, marble veining, visible weave). Judge from the photo, not from the material name.\ntextureScale [u,v]: pattern repeats across one face, 1 to 6; small numbers for large features such as planks or veins, larger for fine weave.\nParts that are not visible in the photo: keep the finish implied by the material and use 0 unless the visible parts of the same material show a pattern.",
+ "totalCostUsd": 0.2815,
+ "receipts": [
+  {
+   "modelId": "B07HSCYS4C",
+   "varied": 3,
+   "components": 18,
+   "costUsd": 0.013567300000000001
+  },
+  {
+   "modelId": "B071SHBTM5",
+   "varied": 8,
+   "components": 14,
+   "costUsd": 0.0109613
+  },
+  {
+   "modelId": "B082XCSHKB",
+   "varied": 5,
+   "components": 9,
+   "costUsd": 0.0080473
+  },
+  {
+   "modelId": "B075X2NLKP",
+   "varied": 2,
+   "components": 4,
+   "costUsd": 0.0058373
+  },
+  {
+   "modelId": "B082JHBD9S",
+   "varied": 1,
+   "components": 14,
+   "costUsd": 0.0114253
+  },
+  {
+   "modelId": "B07HSMYNYJ",
+   "varied": 12,
+   "components": 17,
+   "costUsd": 0.0123713
+  },
+  {
+   "modelId": "B07B4SCM7N",
+   "varied": 14,
+   "components": 14,
+   "costUsd": 0.0113073
+  },
+  {
+   "modelId": "B07QVRTT6J",
+   "varied": 5,
+   "components": 11,
+   "costUsd": 0.010185300000000001
+  },
+  {
+   "modelId": "B0154WJZH2",
+   "varied": 1,
+   "components": 12,
+   "costUsd": 0.0102473
+  },
+  {
+   "modelId": "B07K6S7QHQ",
+   "varied": 8,
+   "components": 12,
+   "costUsd": 0.010601300000000001
+  },
+  {
+   "modelId": "B07B4Y45GY",
+   "varied": 12,
+   "components": 12,
+   "costUsd": 0.0103973
+  },
+  {
+   "modelId": "B082JH9VWG",
+   "varied": 0,
+   "components": 16,
+   "costUsd": 0.0126733
+  },
+  {
+   "modelId": "B07B4Z9PL9",
+   "varied": 0,
+   "components": 6,
+   "costUsd": 0.0066473
+  },
+  {
+   "modelId": "B07TVYR4SS",
+   "varied": 6,
+   "components": 6,
+   "costUsd": 0.0069692999999999995
+  },
+  {
+   "modelId": "B07B4W2MFW",
+   "varied": 13,
+   "components": 13,
+   "costUsd": 0.0109613
+  },
+  {
+   "modelId": "B07B78G4QH",
+   "varied": 9,
+   "components": 9,
+   "costUsd": 0.008677299999999999
+  },
+  {
+   "modelId": "B07MBMJS1B",
+   "varied": 1,
+   "components": 14,
+   "costUsd": 0.0119933
+  },
+  {
+   "modelId": "B0742FPL25",
+   "varied": 1,
+   "components": 3,
+   "costUsd": 0.0057533
+  },
+  {
+   "modelId": "B0828FB1G7",
+   "varied": 3,
+   "components": 4,
+   "costUsd": 0.006165299999999999
+  },
+  {
+   "modelId": "B082MXDF82",
+   "varied": 0,
+   "components": 13,
+   "costUsd": 0.0112253
+  },
+  {
+   "modelId": "B07QC76NM2",
+   "varied": 0,
+   "components": 8,
+   "costUsd": 0.0082253
+  },
+  {
+   "modelId": "B075X1T4ZS",
+   "varied": 3,
+   "components": 3,
+   "costUsd": 0.005181300000000001
+  },
+  {
+   "modelId": "B0824FLNHN",
+   "varied": 2,
+   "components": 8,
+   "costUsd": 0.0083733
+  },
+  {
+   "modelId": "B0828FFDWG",
+   "varied": 0,
+   "components": 6,
+   "costUsd": 0.0069833
+  },
+  {
+   "modelId": "B075X2LLWF",
+   "varied": 2,
+   "components": 3,
+   "costUsd": 0.005645300000000001
+  },
+  {
+   "modelId": "B07374QGD7",
+   "varied": 2,
+   "components": 5,
+   "costUsd": 0.0057412999999999995
+  },
+  {
+   "modelId": "B07B4W2ZRW",
+   "varied": 4,
+   "components": 9,
+   "costUsd": 0.0082293
+  },
+  {
+   "modelId": "B0828DZ1QL",
+   "varied": 1,
+   "components": 5,
+   "costUsd": 0.0066952999999999995
+  },
+  {
+   "modelId": "B07HK6MTMC",
+   "varied": 1,
+   "components": 6,
+   "costUsd": 0.0068533
+  },
+  {
+   "modelId": "B0825CLV7M",
+   "varied": 1,
+   "components": 5,
+   "costUsd": 0.0054212999999999996
+  },
+  {
+   "modelId": "B075X2XZDD",
+   "varied": 0,
+   "components": 6,
+   "costUsd": 0.006651300000000001
+  },
+  {
+   "modelId": "B08B8SV8DB",
+   "varied": 2,
+   "components": 5,
+   "costUsd": 0.0057573
+  },
+  {
+   "modelId": "B07B4VYKPR",
+   "varied": 2,
+   "components": 4,
+   "costUsd": 0.0057753
+  }
+ ]
+}

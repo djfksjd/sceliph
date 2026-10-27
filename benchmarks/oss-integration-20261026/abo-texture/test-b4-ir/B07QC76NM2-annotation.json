@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- plate: Backplate; material \"oil-rubbed bronze\"; colour #1c1a19\n- arm: Arm; material \"oil-rubbed bronze\"; colour #1c1a19\n- cap: Socket cap; material \"oil-rubbed bronze\"; colour #1c1a19\n- socket: Socket body; material \"oil-rubbed bronze\"; colour #1c1a19\n- collar: Glass holder ring; material \"oil-rubbed bronze\"; colour #1c1a19\n- globe: Glass globe; material \"clear glass\"; colour #dfe6e8\n- bulbneck: Bulb base; material \"brass\"; colour #8a7a5a\n- bulb: Filament bulb; material \"glass\"; colour #f2e6c8\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"plate\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"arm\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"cap\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"socket\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"collar\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"globe\",\"surface\":\"optical-glass\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"bulbneck\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"bulb\",\"surface\":\"optical-glass\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0082253,
+  "durationMs": 4125,
+  "isError": false
+ }
+}

@@ -1,0 +1,525 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Stevens 2-Drawer Bookcase",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "gray wood laminate",
+   "detail": "left side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     1399,
+     320
+    ],
+    "radius": 3
+   },
+   "position": [
+    -300,
+    849.5,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "gray wood laminate",
+   "detail": "right side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     1399,
+     320
+    ],
+    "radius": 3
+   },
+   "position": [
+    300,
+    849.5,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "gray wood laminate",
+   "detail": "top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     630,
+     20,
+     330
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1539,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "dark board",
+   "detail": "back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     580,
+     1380,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    849,
+    -150
+   ],
+   "material": {
+    "color": "#2b2623",
+    "roughness": 0.8,
+    "surface": "raw",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "shelf_1",
+   "name": "Upper shelf",
+   "category": "enclosure",
+   "materialName": "gray wood laminate",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     580,
+     18,
+     310
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1241,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "shelf_2",
+   "name": "Middle shelf",
+   "category": "enclosure",
+   "materialName": "gray wood laminate",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     580,
+     18,
+     310
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    965,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "shelf_3",
+   "name": "Lower shelf",
+   "category": "enclosure",
+   "materialName": "gray wood laminate",
+   "detail": "shelf above drawers",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     580,
+     18,
+     310
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    680,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "div_top",
+   "name": "Top divider",
+   "category": "enclosure",
+   "materialName": "gray wood laminate",
+   "detail": "vertical divider",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     288,
+     310
+    ],
+    "radius": 3
+   },
+   "position": [
+    130,
+    1385,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "div_mid",
+   "name": "Middle divider",
+   "category": "enclosure",
+   "materialName": "gray wood laminate",
+   "detail": "vertical divider",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     276,
+     310
+    ],
+    "radius": 3
+   },
+   "position": [
+    -150,
+    1103,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "div_low",
+   "name": "Lower divider",
+   "category": "enclosure",
+   "materialName": "gray wood laminate",
+   "detail": "vertical divider",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     285,
+     310
+    ],
+    "radius": 3
+   },
+   "position": [
+    130,
+    822,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "base",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "gray wood laminate",
+   "detail": "base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     580,
+     20,
+     310
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    160,
+    0
+   ],
+   "material": {
+    "color": "#4a4039",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.2,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "drawer_1",
+   "name": "Upper drawer front",
+   "category": "mechanical",
+   "materialName": "grooved gray wood",
+   "detail": "drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     570,
+     245,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    548,
+    161
+   ],
+   "material": {
+    "color": "#51463e",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     4,
+     2
+    ]
+   }
+  },
+  {
+   "id": "drawer_2",
+   "name": "Lower drawer front",
+   "category": "mechanical",
+   "materialName": "grooved gray wood",
+   "detail": "drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     570,
+     245,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    290,
+    161
+   ],
+   "material": {
+    "color": "#51463e",
+    "roughness": 0.7,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     4,
+     2
+    ]
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 150,
+    "radialSegments": 24
+   },
+   "position": [
+    -250,
+    75,
+    120
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 150,
+    "radialSegments": 24
+   },
+   "position": [
+    250,
+    75,
+    120
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 150,
+    "radialSegments": 24
+   },
+   "position": [
+    -250,
+    75,
+    -120
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 150,
+    "radialSegments": 24
+   },
+   "position": [
+    250,
+    75,
+    -120
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  }
+ ]
+}

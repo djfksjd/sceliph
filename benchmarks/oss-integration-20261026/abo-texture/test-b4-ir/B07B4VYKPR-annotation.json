@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- ring: Brass base ring; material \"brass\"; colour #a98a3a\n- base: Concrete base; material \"concrete\"; colour #9a9a9c\n- neck: Brass neck; material \"brass\"; colour #8a6d2c\n- shade: Drum shade; material \"linen fabric\"; colour #d9d9d6\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"ring\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"base\",\"surface\":\"concrete\",\"albedoVariation\":0.12,\"textureScale\":[2,2]},{\"id\":\"neck\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shade\",\"surface\":\"fabric\",\"albedoVariation\":0.15,\"textureScale\":[6,5]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0057753,
+  "durationMs": 3059,
+  "isError": false
+ }
+}
