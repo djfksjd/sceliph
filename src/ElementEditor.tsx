@@ -1,7 +1,7 @@
 import {PartRegenerationPanel}from'./PartRegenerationPanel';
 import {PartRegenerationPlanPanel} from './PartRegenerationPlanPanel';
 import {bindRequiredParameters,declarationTextSha256}from'./engine/parameter-binding';
-import {beveledPlatePack, qualityBeveledPlatePack}from'./engine/plate-bevel';
+import {beveledPlatePack, qualityBeveledPlatePack, deterministicBeveledPlatePack}from'./engine/plate-bevel';
 import {parseEditableElementSource} from './engine/editable-source';
 import { centeredPlatePack } from './engine/centered-plate-pack';
 import {ElementSourceLoadSession,type ElementSourceLoadState} from './element-source-load';
@@ -43,6 +43,7 @@ domainRegistry.register(surfaceGearPack);
 domainRegistry.register(centeredPlatePack);
 domainRegistry.register(beveledPlatePack);
 domainRegistry.register(qualityBeveledPlatePack);
+domainRegistry.register(deterministicBeveledPlatePack);
 
 function download(blob: Blob, name: string): void {
   const url = URL.createObjectURL(blob);

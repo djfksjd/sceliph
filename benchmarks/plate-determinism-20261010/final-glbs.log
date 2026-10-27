@@ -1,0 +1,82 @@
+
+> sceliph@0.4.0 gltf:validate
+> vite-node scripts/validate-glb.ts outputs/plate-determinism-current/blender-roundtrip.glb outputs/plate-determinism-current/plan-blender-edited.glb outputs/plate-determinism-current/plan-blender-edited-stability.glb
+
+{
+  "schema": "morphloom.khronos-gltf-validation/0.1",
+  "pass": true,
+  "reports": [
+    {
+      "path": "/Users/danny/sceliph-engine-20261010/outputs/plate-determinism-current/blender-roundtrip.glb",
+      "bytes": 216736,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 2,
+        "meshes": 1,
+        "materials": 1,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/Users/danny/sceliph-engine-20261010/outputs/plate-determinism-current/plan-blender-edited.glb",
+      "bytes": 493576,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 3,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 4,
+        "meshes": 3,
+        "materials": 3,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "path": "/Users/danny/sceliph-engine-20261010/outputs/plate-determinism-current/plan-blender-edited-stability.glb",
+      "bytes": 493576,
+      "status": "pass",
+      "validator": "Khronos glTF Validator",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 3,
+      "hints": 0,
+      "truncated": false,
+      "issueCodes": [
+        "UNUSED_OBJECT"
+      ],
+      "independentRead": {
+        "status": "pass",
+        "parser": "glTF Transform WebIO",
+        "nodes": 4,
+        "meshes": 3,
+        "materials": 3,
+        "skins": 0,
+        "animations": 0
+      }
+    }
+  ]
+}

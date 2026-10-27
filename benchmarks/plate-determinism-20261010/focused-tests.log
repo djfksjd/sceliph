@@ -1,0 +1,14 @@
+
+ RUN  v3.2.7 /Users/danny/sceliph-engine-20261010
+
+ ✓ tests/extrude-cap-diagonals.test.ts (3 tests) 547ms
+   ✓ repairs real near-tangent cap slivers at three scales without moving a boundary or changing wall attributes  485ms
+ ✓ tests/part-regeneration-plan.test.ts (4 tests) 437ms
+ ✓ tests/plate-arithmetic.test.ts (4 tests) 210ms
+ ✓ tests/plate-bevel.test.ts (3 tests) 130ms
+ ✓ tests/centered-plate-pack.test.ts (5 tests) 59ms
+
+ Test Files  5 passed (5)
+      Tests  19 passed (19)
+   Start at  16:19:42
+   Duration  2.29s (transform 263ms, setup 0ms, collect 509ms, tests 1.38s, environment 0ms, prepare 121ms)

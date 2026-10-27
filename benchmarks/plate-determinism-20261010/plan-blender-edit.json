@@ -1,0 +1,46 @@
+{
+  "schema": "morphloom.blender-component-edit-audit/0.2",
+  "application": "Blender",
+  "version": "5.2.1 LTS",
+  "input": {
+    "path": "/Users/danny/sceliph-engine-20261010/output/playwright/browser-reopened.glb",
+    "bytes": 477924,
+    "sha256": "5f406bd07c54d046d50b9d6aaf008b5404b9a9ab5a98edbd1ed0107c37c73afc"
+  },
+  "output": {
+    "path": "/Users/danny/sceliph-engine-20261010/outputs/plate-determinism-current/plan-blender-edited.glb",
+    "bytes": 493576,
+    "sha256": "f03f1b45e5053e2a8de348d9c43e8075bcc7fc5a787857d9e17c7390d2392a4b"
+  },
+  "stabilityOutput": {
+    "path": "/Users/danny/sceliph-engine-20261010/outputs/plate-determinism-current/plan-blender-edited-stability.glb",
+    "bytes": 493576,
+    "sha256": "0ac447f11572bc0e4286d5f2faa3eea695e8b7709b4d7a8c447612a3dc9e00e8"
+  },
+  "edit": {
+    "component": "panel_user",
+    "kind": "translation",
+    "translationMm": [
+      3.0,
+      0.0,
+      0.0
+    ]
+  },
+  "meshCount": 3,
+  "unchangedMeshes": 2,
+  "maximumUnchangedCenterDriftMm": 0.0,
+  "maximumUnchangedSizeDriftMm": 0.0,
+  "topologyChanges": [],
+  "topologyInterpretation": "Polygon counts, canonical face geometry, UVs, PBR factors, hierarchy, and modifier bindings are blocking. A one-time seam vertex/edge re-index is reported only when those semantic invariants remain stable.",
+  "runtime": {
+    "armatures": 0,
+    "actions": 0,
+    "preserved": true
+  },
+  "skinnedSemanticDeferrals": [],
+  "stabilityChanges": [],
+  "warnings": [],
+  "pass": true,
+  "blockers": [],
+  "limitation": "This proves one requested object transform or bounded local-relief edit, canonical face/UV/PBR-slot/hierarchy preservation, bounded non-target drift, and armature/action inventory preservation through two Blender round trips. Vertex/edge indices at UV or normal seams are not promised to remain identical. It does not prove artistic usability, native CAD feature history, bone-weight editing, shader-node parity beyond exported PBR factors, or every possible edit operation."
+}

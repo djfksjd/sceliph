@@ -38,8 +38,8 @@ export function PartRegenerationPlanPanel({registry, project, targetId, disabled
       if (!target) throw Error('Load a static authored extrusion project, then select a part.');
       if (current()) setText(JSON.stringify({schema: PART_PLAN_SCHEMA, sourceSha256, steps: [{targetId: target, declaration: {
         schema: 'sceliph.domain-invocation/0.1', units: 'mm', coordinates: 'right-handed-y-up',
-        packId: 'product.quality-beveled-plate', input: {widthMm: 32, heightMm: 14, thicknessMm: 5, boreDiameterMm: 4, edgeBevelMm: 0.6},
-        requiredCapabilities: ['authored-single-extrusion'],
+        packId: 'product.deterministic-beveled-plate', input: {widthMm: 32, heightMm: 14, thicknessMm: 5, boreDiameterMm: 4, edgeBevelMm: 0.6},
+        requiredCapabilities: ['authored-single-extrusion', 'deterministic-descriptor'],
       }}]}, null, 2));
     } catch (e) {if (current()) setError(e instanceof Error ? e.message : String(e));}
     finally {finish();}

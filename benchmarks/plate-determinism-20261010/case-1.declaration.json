@@ -1,0 +1,17 @@
+{
+  "schema": "sceliph.domain-invocation/0.1",
+  "units": "mm",
+  "coordinates": "right-handed-y-up",
+  "packId": "product.deterministic-beveled-plate",
+  "input": {
+    "widthMm": 24,
+    "heightMm": 14,
+    "thicknessMm": 5,
+    "boreDiameterMm": 4,
+    "edgeBevelMm": 0.6
+  },
+  "requiredCapabilities": [
+    "authored-single-extrusion",
+    "deterministic-descriptor"
+  ]
+}

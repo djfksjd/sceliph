@@ -27,7 +27,7 @@ Sceliph는 사진·도면·실측값·자연어 요구를 선언형 IR로 정리
 ![스튜디오 반사광, 안정적인 부품 ID와 Inspector를 갖춘 최신 Sceliph 작업 화면](./assets/screenshots/workbench-20261010-desktop.jpg)
 
 <table><tr>
-<td width="72%"><img src="./assets/screenshots/replacement-plan-20261010.jpg" alt="두 부품의 원본 SHA 결합 JSON 교체 계획을 검사한 뒤 적용하는 화면" width="100%" /><br /><strong>LLM이 작성한 JSON 계획 검토</strong><br />모든 대상 검사 후 한 번의 되돌릴 수 있는 편집으로 적용합니다.</td>
+<td width="72%"><img src="./assets/screenshots/deterministic-plan-20261010.jpg" alt="두 부품의 원본 SHA 결합 JSON 교체 계획을 검사한 뒤 적용하는 화면" width="100%" /><br /><strong>LLM이 작성한 JSON 계획 검토</strong><br />모든 대상 검사 후 한 번의 되돌릴 수 있는 편집으로 적용합니다.</td>
 <td width="28%"><img src="./assets/screenshots/workbench-20261010-mobile.jpg" alt="상세 성능 수치를 접은 390픽셀 모바일 작업 화면" width="100%" /><br /><strong>모바일 배치</strong><br />뷰포트에서 부품 트리와 Inspector로 스크롤하며 작업합니다.</td>
 </tr></table>
 
@@ -39,9 +39,15 @@ Sceliph는 사진·도면·실측값·자연어 요구를 선언형 IR로 정리
 
 상단 이미지는 제공된 **브랜드 비주얼**이며, 현재 엔진이 생성한 모델이나 품질 검증 결과가 아닙니다.
 
+### 결정적인 생성 체크포인트 · 2026-10-10
+
+새 선택형 `product.deterministic-beveled-plate` 팩은 native sin/cos로 생성한 원본 좌표의 환경별 차이를 해결합니다. 실제 Node24/Chrome154에서6개 선언을 생성해 **metadata를 포함한 source JSON·GLB 전체 바이트가 일치**했습니다. 브라우저 새 세션의 재열기·내보내기와 두 부품 교체 계획도 일치합니다. 이전 생성기의54 source SHA는 보존했습니다.
+
+편집기는 새 replacement template에 이 팩을 사용합니다. 기존 선언과 native 파일은 원래 계산 정책을 유지합니다. 독립적인140자리 Decimal oracle로 좌표 계산을 검증했으며 Float32 메시·사진·제조 정확도와 구분합니다. [현재 증거와 남은 게이트](./docs/PLATE_DETERMINISM_20261010.ko.md)
+
 ### 실무 흐름 체크포인트 · 2026-10-10
 
-최종 **164파일·1040테스트**, benchmark·build와 별도 계약 테스트13개가 통과했습니다.
+최신 **165파일·1044테스트**, benchmark·build와 별도 계약 테스트19개가 통과했습니다.
 
 현재 원본 SHA에 결합된 JSON 계획으로 최대 8개 창작 extrusion 부품을 한 번에 교체합니다. 검사·검토 후 적용하며, 한 대상이라도 실패하면 전체 교체를 거부합니다. ID·배치·PBR·비대상 부품을 보존하고 한 번의 Undo로 복구합니다. native `0.6` 정적 메시 대상이며 조립 종속·리깅·임의 사진 복원은 이 경로의 범위가 아닙니다.
 

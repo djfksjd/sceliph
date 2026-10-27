@@ -1,0 +1,36 @@
+
+> sceliph@0.4.0 build
+> tsc -b && vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 225 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                         0.87 kB │ gzip:   0.43 kB
+dist/holdout-review.html                                0.94 kB │ gzip:   0.54 kB
+dist/assets/sceliph-symbol-dark-EpLEejAt.png          465.33 kB
+dist/assets/DepthEditor-vj6vYx2Q.css                    0.85 kB │ gzip:   0.42 kB
+dist/assets/EvidenceEditor---dj4yt5.css                22.54 kB │ gzip:   5.18 kB
+dist/assets/main-DUFKVTXS.css                          40.55 kB │ gzip:   8.57 kB
+dist/assets/__vite-browser-external-BIHI7g3E.js         0.03 kB │ gzip:   0.05 kB
+dist/assets/modulepreload-polyfill-B5Qt9EMX.js          0.71 kB │ gzip:   0.40 kB
+dist/assets/holdoutReview-CwqDtuCX.js                   1.96 kB │ gzip:   1.16 kB
+dist/assets/blender-source-normal-import-B9YBQfrM.js    2.48 kB │ gzip:   1.20 kB
+dist/assets/blender-normal-kit-FNB08Rq7.js              6.24 kB │ gzip:   2.45 kB
+dist/assets/blender_source_normal_import-B0ckH5j_.js    8.99 kB │ gzip:   3.44 kB
+dist/assets/LICENSE_raw-Civxp_Zu.js                    11.39 kB │ gzip:   3.96 kB
+dist/assets/DepthEditor-Hl84IsBT.js                    34.55 kB │ gzip:  12.50 kB
+dist/assets/EvidenceEditor-C_e9fES3.js                 58.64 kB │ gzip:  21.44 kB
+dist/assets/index.modern-AKgUv0Cq.js                   70.16 kB │ gzip:  16.31 kB
+dist/assets/index.modern-D9Yzc92E.js                   76.25 kB │ gzip:  21.76 kB
+dist/assets/react-C54xO61s.js                         192.48 kB │ gzip:  60.34 kB
+dist/assets/module-BhjKzkE4.js                        289.42 kB │ gzip:  92.04 kB
+dist/assets/three-CD_17ma4.js                         733.89 kB │ gzip: 193.71 kB
+dist/assets/main-HETO9qp_.js                          804.89 kB │ gzip: 272.78 kB
+
+(!) Some chunks are larger than 800 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.97s

@@ -1,0 +1,29 @@
+{
+  "schema": "sceliph.part-regeneration-plan/0.1",
+  "sourceSha256": "104ff541bdb7714cdfe339037b4d8b08f49b1b4941cdcb3e7462607da0fdb081",
+  "planSha256": "c5ad51b5f7f31b5a6de0754094566a779527c5e2666533a717cc6a454f144433",
+  "outputSha256": "c4ce0edda731570731d70fd2c1cb177d8499a5e77857815b681ad1f104810fef",
+  "steps": [
+    {
+      "schema": "sceliph.part-regeneration/0.1",
+      "targetId": "panel_user",
+      "packId": "product.deterministic-beveled-plate",
+      "sourceSha256": "104ff541bdb7714cdfe339037b4d8b08f49b1b4941cdcb3e7462607da0fdb081",
+      "declarationSha256": "49ca4b931a90e7ee50f0339e9c26facf9e914196569766b1d9cb26c52c1e830b",
+      "outputSha256": "ad33ba8ef5f250fcf10cb2080aad0ffb05078e280a2f6194322d4112e1a9a5b9",
+      "preserved": "Target ID/name/transform/material and non-target source; target geometry/UV/normals regenerated",
+      "scope": "Authored static mesh only; no CAD/reference/assembly/rig certification"
+    },
+    {
+      "schema": "sceliph.part-regeneration/0.1",
+      "targetId": "brace_user",
+      "packId": "product.deterministic-beveled-plate",
+      "sourceSha256": "ad33ba8ef5f250fcf10cb2080aad0ffb05078e280a2f6194322d4112e1a9a5b9",
+      "declarationSha256": "afa0a2d026f0bb8801acddbcb796a37cd2947b093bc569c8bbf23776ed412d14",
+      "outputSha256": "c4ce0edda731570731d70fd2c1cb177d8499a5e77857815b681ad1f104810fef",
+      "preserved": "Target ID/name/transform/material and non-target source; target geometry/UV/normals regenerated",
+      "scope": "Authored static mesh only; no CAD/reference/assembly/rig certification"
+    }
+  ],
+  "scope": "Atomic authored static extrusion replacement; topology and editable-mesh UV checked, no reference fidelity or whole delivery approval"
+}

@@ -1,3 +1,7 @@
+# Current continuation · deterministic descriptors · 2026-10-10
+
+See [current determinism proof](PLATE_DETERMINISM_20261010.ko.md): new opt-in pack produces whole source/GLB equality in6 actual Node/Chrome cases and a two-part plan, legacy54SHA preserved. Overall production still fails; next resolve UV-preserving strict delivery and current target-app evidence. Prior checkpoints follow.
+
 # Current continuation · 2026-10-10
 
 See [the practical workflow checkpoint](PRACTICAL_WORKFLOW_20261010.ko.md): atomic source-bound multi-part replacement, opt-in cap diagonal repair, actual browser and Blender acceptance, new UI captures. Whole production and cross-runtime descriptor equality remain incomplete.

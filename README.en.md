@@ -27,7 +27,7 @@ Actual Chrome captures of the current workbench on **2026-10-10**, based on `78b
 ![Sceliph workbench with studio-lit bearing, stable component IDs and Inspector](./assets/screenshots/workbench-20261010-desktop.jpg)
 
 <table><tr>
-<td width="72%"><img src="./assets/screenshots/replacement-plan-20261010.jpg" alt="Two source-bound part replacements checked before Apply" width="100%" /><br /><strong>Review an LLM-authored JSON plan</strong><br />Check every replacement, then apply one reversible edit.</td>
+<td width="72%"><img src="./assets/screenshots/deterministic-plan-20261010.jpg" alt="Two source-bound part replacements checked before Apply" width="100%" /><br /><strong>Review an LLM-authored JSON plan</strong><br />Check every replacement, then apply one reversible edit.</td>
 <td width="28%"><img src="./assets/screenshots/workbench-20261010-mobile.jpg" alt="390-pixel mobile layout with folded scene diagnostics" width="100%" /><br /><strong>Mobile layout</strong><br />Scroll from the viewport to the part tree and Inspector.</td>
 </tr></table>
 
@@ -39,9 +39,15 @@ These are authored demonstration assets. Screenshots do not certify photograph r
 
 The supplied hero image is **brand artwork**, not an engine-generated asset or quality-validation result.
 
+### Deterministic generation checkpoint · 2026-10-10
+
+The new opt-in `product.deterministic-beveled-plate` pack fixes native sin/cos drift in generated source coordinates. Six actual Node24/Chrome154 declaration imports produce **byte-identical complete source JSON and GLB**, including metadata; fresh browser reopen/export and a two-part replacement plan also match.54 captured source hashes from previous generators are unchanged.
+
+The editor prepares new replacement templates with this pack. Existing declarations and native files keep their original policy. An independent140-digit Decimal oracle verifies coordinate arithmetic; these numerical results are separate from Float32 mesh, photo and manufacturing accuracy. [Current evidence and remaining gates](./docs/PLATE_DETERMINISM_20261010.ko.md)
+
 ### Practical workflow checkpoint · 2026-10-10
 
-Final **164 files / 1040 tests**, benchmark, build and 13 focused contract tests passed.
+Latest **165 files / 1044 tests**, benchmark, build and 19 focused contract tests passed.
 
 A source-bound JSON plan now replaces up to eight distinct authored extrusion parts atomically. Review first; a failed target prevents every replacement. IDs, placement, PBR and unrelated parts are preserved, and one Undo restores the complete operation. This is native `0.6` static mesh editing; assembly attachments, rigging and arbitrary photo reconstruction remain outside this path.
 

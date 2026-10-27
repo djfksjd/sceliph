@@ -1,3 +1,10 @@
+# Deterministic plan capture · 2026-10-10
+
+- `deterministic-plan-20261010.jpg`: actual1440×1000 Chrome154 view of two checked `product.deterministic-beveled-plate` replacements.
+- `deterministic-plan-mobile-20261010.jpg`: same checked operation at390×844; no horizontal overflow observed.
+
+JPEG90, no retouching/compositing. Base `aa44f80` plus the current deterministic generator change; code/artifact SHA manifest: `../../benchmarks/plate-determinism-20261010/verification.json`. New source/GLB byte equality comes from actual file comparisons, not screenshots. Prior captures and their provenance remain below.
+
 # Current Sceliph UI captures · 2026-10-10
 
 Actual Playwright Chrome154 screenshots of the running source at `http://127.0.0.1:4173/?editor=elements`. Base GitHub main: `78bec7e0ff31a0e5f602dbc43fbfc3e14b33dba5`, plus this branch's source-bound plan, cap policy and viewport refinement. Source SHA manifest: `../../benchmarks/practical-workflow-20261010/verification.json`.
