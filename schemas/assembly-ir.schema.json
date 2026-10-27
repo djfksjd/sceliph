@@ -454,6 +454,7 @@
           "maximum": 1
         },
         "albedoVariation": {"type": "number", "minimum": 0, "maximum": 0.5, "description": "Opt-in colour variation from the finish pattern; mean colour preserved."},
+        "albedoPatch": {"type": "object", "required": ["width", "height", "rgbaBase64"], "additionalProperties": false, "properties": {"width": {"type": "integer", "minimum": 4, "maximum": 128}, "height": {"type": "integer", "minimum": 4, "maximum": 128}, "rgbaBase64": {"type": "string"}, "source": {"type": "string", "maxLength": 200}}, "description": "Opt-in photo pattern tile, mirrored repeat at textureScale, mean colour preserved."},
         "textureScale": {
           "type": "array",
           "prefixItems": [

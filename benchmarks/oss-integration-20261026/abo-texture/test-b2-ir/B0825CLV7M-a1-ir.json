@@ -1,0 +1,168 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Scandinavian wood pendant light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "White glass shade",
+   "category": "enclosure",
+   "materialName": "glossy white glass",
+   "detail": "Cylindrical white shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 48,
+    "radiusBottom": 48,
+    "depth": 125,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    62.5,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.15,
+    "metalness": 0,
+    "surface": "ceramic-glass",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "wood",
+   "name": "Blonde wood collar",
+   "category": "enclosure",
+   "materialName": "blonde wood",
+   "detail": "Wood section above shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 47,
+    "radiusBottom": 47,
+    "depth": 80,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    165,
+    0
+   ],
+   "material": {
+    "color": "#d9b27c",
+    "roughness": 0.7,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.25,
+    "textureScale": [
+     2,
+     1
+    ],
+    "albedoPatch": {
+     "width": 24,
+     "height": 24,
+     "rgbaBase64": "5MKM/+XFjv/jxo//2r6H/9fAi//bw5P/4cqe/+zXqv/w2aj/6M6d/9/GlP/bwI7/1ruJ/9K0g//Ts4L/1rOE/9m0hv/kwZD/58SS/+nHlP/fvYj/6MWR//HOnP/ryJj/5sST/+bFk//cu4v/3L+M/9rAjv/Xv4v/4syY/+/Ypf/r0J7/4MGQ/+DBkP/XuYf/zq+A/9C1hP/UuIj/1LiJ/8+0hP/Nr3z/3L6K/+bIlf/ixJD/3cCN/+bKmf/nzZ3/6MeZ/9u8jv/bvo//0LeI/9fAj//Uvo3/3ciX/+zVpP/lyJX/4sCN/969i//TtID/07WD/9i6if/gw5L/38ST/9q+jf/OsID/0rKD/96+j//iwpT/2r2P/+bJnf/py6H/5smZ/9a5if/av4//zLSE/9a/kP/Tv4//2MSX/+bTpP/gwpD/4b+K/9y6h//Ssn7/2bqG/9y+iv/cvor/3b+O/+DCkv/Wtoj/zKyB/9W2iv/gwZb/2bqQ/+XHnP/nyJ7/48KQ/9q7if/YvIn/07iG/9a9jP/Vvo3/2MKS/+XPof/dv4//2rmH/9e4hv/RtIH/2LuL/93Ajv/Yu4v/172M/9y/kv/fwpP/0bOF/9Cyhv/avI7/2ryN/+LEl//jxZj/4L2J/969if/YuYX/2LqH/9S6iP/XvY3/1LuN/+TNn//cwZT/07eM/8+0iP/PtIr/1buT/9O6kP/SupH/0bqR/9C6kf/expr/1LyO/8mwgv/RuYn/1buM/9W7jP/lyZn/3r6L/9y9jf/StYf/2r6R/9C2i//Wv5X/z7mR/9zFnv/Uv5z/zriZ/8e0lP/Jtpf/z7yc/8u6mv/Lu53/y7ud/8q6nf/MvZn/0sGZ/8GwiP/Htoz/zLmP/8q2i//hzJ//0ruU/9O+mf/TwJ3/y7mZ/9TDpv/l1bv/59nA/+3gyP/Zzbr/2Mu4/9jNuv/Zzrz/2dG+/9jQvv/Y0b//19DB/9fQwP/Ry7b/2NK6/8/Irv/UyrD/z8So/8a5nP/Wx6n/8OnS/9/ZxP/Py7f/4+DR/+Tj1f/o6d7/5OXe/97f2v/LysT/zsrD/8/Mxf/QzMb/zszI/8/Pyv/Pz8v/zs/L/83Oy//Nz83/zMzL/9fX0v/v7ej/5N/Z/9XOxf/Uy8D/xMi//8PHwP/IzMf/3OHe/9Xc3f/X4eL/2OLl/9bg5v/Iy8z/ycnJ/8nKy//Jysv/yczN/8zP0f/Lz9L/ys7R/8nO0f/Hy9b/x8rW/83P2v/n5/D/4+Hq/9DM0v/Mxsn/wsTC/8LEwv/EyMf/1tnY/9fa2v/b39//2dzd/9jc3f/Iysn/xsjH/8fJyP/Hycj/yMrJ/8rLzP/JzMz/ycvL/8jLy//Gysv/x8rM/83P0f/j5eb/3uDg/83Ozv/LzMz/wsTD/8LDwv/Fx8b/1tjX/9fY1//b3dz/2NrZ/9ja2f/GyMf/xMbF/8XHxv/Fx8b/xsjH/8jKyf/Iysn/x8nI/8fJyP/Fx8b/xsjH/8zOzf/i5OP/3d/e/8rMy//Iysn/wcPC/8HDwv/Fx8b/1dfW/9XX1v/Z29r/1tjX/9bY1//ExsX/wsTD/8PFxP/ExsX/xcfG/8bIx//GyMf/xcfG/8XHxv/CxMP/w8XE/8rMy//g4uH/3N7d/8nLyv/Hycj/v8HA/77Av//Cw8P/0tTT/9PV1P/X2dj/1NbV/9TW1f/CxMP/wMLB/8HDwv/CxMP/w8XE/8XHxv/ExsX/w8XE/8PFxP/AwsH/wsTD/8jKyf/g4uH/3N7d/8jKyf/GyMf/vsC//72/vv/Bw8L/09XU/9TW1f/V19b/1tjX/9HT0v/Bw8L/wMLB/8DCwf/CxMP/xcfG/8XHxv/ExsX/wsTD/8LEw//AwsH/wsTD/8nKyv/g4uH/293c/8bIx//ExsX/wMLB/7/BwP/CxMP/1dfW/9fZ2P/V19b/19nY/9DS0f/Bw8L/v8HA/8DCwf/CxMP/xcfG/8TGxf/ExsX/wsTD/8LEw//Bw8L/w8XE/8jKyf/f4eD/2tzb/8XHxv/DxcT/wMLB/7/BwP/CxMP/1dfW/9fZ2P/V19b/19nY/9DS0f/AwsH/v8HA/8HDwv/CxMP/xMbF/8TGxf/ExsX/wsTD/8LEw//DxcT/w8XE/8jKyf/e4N//2NrZ/8XHxv/DxcT/wMLB/7/BwP/CxMP/1dfW/9fZ2P/V19b/19nY/9DS0f+/wcD/wMLB/8LEw//DxcT/w8XE/8TGxf/ExsX/wsTD/8LEw//CxMP/w8XE/8jKyf/f4eD/2dva/8bIx//ExsX/wMLB/7/BwP/CxMP/1dfW/9fZ2P/V19b/19nY/9DS0f++wL//wMLB/8PFxP/DxcT/wsTD/8TGxf/ExsX/wsTD/8LEw//AwsH/wsTD/8jKyf/g4eD/293c/8fJyP/ExsX/v8HA/7/BwP/DxcT/1tjX/9TW1f/U1tX/1tjX/8/R0P/AwsH/wMLB/8HDwv/CxMP/xMbF/8TGxf/ExsX/wsTD/8LEw//Bw8L/wcPC/8bIx//e39//2dva/8TGxf/ExsX/v8HA/7/BwP/DxcT/1tjX/9bY1//V19b/19nY/9HT0v/AwsH/wMLB/8HDwv/CxMP/xMbF/8TGxf/ExsX/wsTD/8LEw//Bw8L/wsTD/8fJyP/e4N//2tzb/8TGxf/ExsX/v8HA/7/BwP/DxcT/1tjX/9XX1v/T1dT/1dfW/8/R0P/AwsH/wMLB/8HDwv/CxMP/xMbF/8XHxv/ExsX/wsTD/8HDwv/CxMP/w8XE/8fJyP/f4eD/2tzb/8TGxf/ExsX/v8HA/7/BwP/DxcT/1tjX/9TW1f/U1tX/1tjX/9DS0f/AwsH/wMLB/8HDwv/CxMP/xMbF/8bIx//ExsX/wsTD/8DCwf/DxcT/w8TD/8jKyf/f4eD/293c/8TGxf/ExsX/v8HA/77Av//CxMP/1dfW/9XX1v/X2dj/1tjX/9LU0//AwsH/wMLB/8HDwv/CxMP/w8XE/8XHxv/Fxsb/wsTD/8LEw//CxMP/wsTD/8nLyv/f4eD/2tzb/8TGxf/DxcT/",
+     "source": "abo:B0825CLV7M:frame0:54,510,24"
+    }
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Grey cap",
+   "category": "mechanical",
+   "materialName": "grey metal",
+   "detail": "Small connector cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 14,
+    "depth": 45,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    227,
+    0
+   ],
+   "material": {
+    "color": "#9a9a9a",
+    "roughness": 0.4,
+    "metalness": 0.6,
+    "surface": "brushed-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Suspension cord",
+   "category": "interconnect",
+   "materialName": "grey cord",
+   "detail": "Thin hanging cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -766,
+      0
+     ],
+     [
+      0,
+      766,
+      0
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1016,
+    0
+   ],
+   "material": {
+    "color": "#888888",
+    "roughness": 0.6,
+    "metalness": 0.1,
+    "surface": "fabric",
+    "textureScale": [
+     1,
+     4
+    ]
+   }
+  },
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "white painted metal",
+   "detail": "Round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 62,
+    "radiusBottom": 65,
+    "depth": 15,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1789.5,
+    0
+   ],
+   "material": {
+    "color": "#eeeeee",
+    "roughness": 0.5,
+    "metalness": 0.1,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  }
+ ]
+}

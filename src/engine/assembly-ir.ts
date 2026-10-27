@@ -86,6 +86,13 @@ export interface AssemblyMaterialIR {
    * Absent keeps the legacy solid base colour.
    */
   albedoVariation?: number;
+  /**
+   * Opt-in base-colour pattern taken from a photo: a small RGBA tile (≤128×128,
+   * base64, row-major, top row first) repeated with mirrored wrapping at
+   * `textureScale`. Its mean is normalised away so the declared colour stays the
+   * average. Takes precedence over albedoVariation. Absent keeps solid colour.
+   */
+  albedoPatch?: { width: number; height: number; rgbaBase64: string; source?: string };
   textureScale?: [number, number];
   thicknessMm?: number;
   emissive?: string;

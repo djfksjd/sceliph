@@ -122,6 +122,18 @@ export function inferSurfaceFinish(materialName: string, explicit?: SurfaceFinis
   return 'raw';
 }
 
+function linearChannelToSrgb(value: number): number {
+  const v = Math.min(1, Math.max(0, value));
+  return v <= 0.0031308 ? 12.92 * v : 1.055 * v ** (1 / 2.4) - 0.055;
+}
+
+function decodeBase64(value: string): Uint8Array {
+  const binary = atob(value);
+  const out = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i += 1) out[i] = binary.charCodeAt(i);
+  return out;
+}
+
 function srgbChannelToLinear(value: number): number {
   return value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4;
 }
@@ -459,7 +471,39 @@ export function createSurfaceMaterial(source: AssemblyMaterialIR, context: Surfa
     if (finish === 'hex-knit' || finish === 'asphalt') material.map = maps.albedo;
   }
   const albedoVariation = source.albedoVariation ?? 0;
-  if (context.mode === 'beauty' && albedoVariation > 0 && effectivePattern !== 'none') {
+  if (context.mode === 'beauty' && source.albedoPatch) {
+    const { width, height, rgbaBase64 } = source.albedoPatch;
+    const bytes = decodeBase64(rgbaBase64);
+    // Mean-normalise in linear light, then scale so the brightest texel is 1:
+    // the map only modulates, and the base colour is lifted by the same factor.
+    const linear = new Float32Array(width * height * 3);
+    const mean = [0, 0, 0];
+    for (let i = 0; i < width * height; i += 1) for (let c = 0; c < 3; c += 1) {
+      const value = srgbChannelToLinear(bytes[i * 4 + c]! / 255);
+      linear[i * 3 + c] = value;
+      mean[c]! += value / (width * height);
+    }
+    let peak = 0;
+    for (let i = 0; i < width * height; i += 1) for (let c = 0; c < 3; c += 1) peak = Math.max(peak, mean[c]! > 0 ? linear[i * 3 + c]! / mean[c]! : 1);
+    const data = new Uint8Array(width * height * 4);
+    for (let i = 0; i < width * height; i += 1) {
+      for (let c = 0; c < 3; c += 1) data[i * 4 + c] = Math.round(linearChannelToSrgb((mean[c]! > 0 ? linear[i * 3 + c]! / mean[c]! : 1) / peak) * 255);
+      data[i * 4 + 3] = 255;
+    }
+    const map = new THREE.DataTexture(data, width, height, THREE.RGBAFormat, THREE.UnsignedByteType);
+    map.name = `morphloom_${finish}_photo_patch`;
+    map.colorSpace = THREE.SRGBColorSpace;
+    map.wrapS = map.wrapT = THREE.MirroredRepeatWrapping;
+    const repeat = source.textureScale ?? [1, 1];
+    map.repeat.set(repeat[0], repeat[1]);
+    map.flipY = false;
+    map.magFilter = THREE.LinearFilter;
+    map.minFilter = THREE.LinearMipmapLinearFilter;
+    map.generateMipmaps = true;
+    map.needsUpdate = true;
+    material.map = map;
+    material.color.multiplyScalar(peak).setRGB(Math.min(1, material.color.r), Math.min(1, material.color.g), Math.min(1, material.color.b));
+  } else if (context.mode === 'beauty' && albedoVariation > 0 && effectivePattern !== 'none') {
     const pattern = context.periodicDirectional && effectivePattern === 'directional' ? 'directional-periodic' : effectivePattern;
     const varied = createMicroSurfaceMaps(finish, source.textureScale ?? preset.textureScale, pattern, albedoVariation);
     material.map = varied.albedo;

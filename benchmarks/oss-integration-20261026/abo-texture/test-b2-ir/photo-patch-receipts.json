@@ -1,0 +1,478 @@
+{
+ "schema": "sceliph.abo-photo-patch/0.1",
+ "sizes": [
+  96,
+  64,
+  48,
+  32,
+  24
+ ],
+ "minIoU": 0.8,
+ "receipts": [
+  {
+   "modelId": "B07HSCYS4C",
+   "patterned": 3,
+   "patched": [],
+   "silhouetteIoU": 0.7261
+  },
+  {
+   "modelId": "B071SHBTM5",
+   "patterned": 8,
+   "patched": [
+    {
+     "id": "body",
+     "size": 64
+    },
+    {
+     "id": "d1",
+     "size": 64
+    },
+    {
+     "id": "d2",
+     "size": 64
+    },
+    {
+     "id": "d3",
+     "size": 64
+    },
+    {
+     "id": "d4",
+     "size": 48
+    },
+    {
+     "id": "d5",
+     "size": 48
+    },
+    {
+     "id": "d6",
+     "size": 48
+    }
+   ],
+   "silhouetteIoU": 0.932
+  },
+  {
+   "modelId": "B082XCSHKB",
+   "patterned": 5,
+   "patched": [],
+   "silhouetteIoU": 0.5725
+  },
+  {
+   "modelId": "B075X2NLKP",
+   "patterned": 2,
+   "patched": [
+    {
+     "id": "base",
+     "size": 96
+    },
+    {
+     "id": "shade",
+     "size": 96
+    }
+   ],
+   "silhouetteIoU": 0.9141
+  },
+  {
+   "modelId": "B082JHBD9S",
+   "patterned": 1,
+   "patched": [
+    {
+     "id": "glass",
+     "size": 64
+    }
+   ],
+   "silhouetteIoU": 0.8887
+  },
+  {
+   "modelId": "B07HSMYNYJ",
+   "patterned": 12,
+   "patched": [
+    {
+     "id": "side_l",
+     "size": 32
+    },
+    {
+     "id": "side_r",
+     "size": 48
+    },
+    {
+     "id": "shelf_1",
+     "size": 24
+    },
+    {
+     "id": "shelf_2",
+     "size": 24
+    },
+    {
+     "id": "shelf_3",
+     "size": 32
+    },
+    {
+     "id": "div_top",
+     "size": 48
+    },
+    {
+     "id": "div_mid",
+     "size": 32
+    },
+    {
+     "id": "div_low",
+     "size": 32
+    },
+    {
+     "id": "drawer_1",
+     "size": 48
+    },
+    {
+     "id": "drawer_2",
+     "size": 48
+    }
+   ],
+   "silhouetteIoU": 0.9443
+  },
+  {
+   "modelId": "B07B4SCM7N",
+   "patterned": 14,
+   "patched": [
+    {
+     "id": "carcass",
+     "size": 32
+    },
+    {
+     "id": "d_top_l",
+     "size": 48
+    },
+    {
+     "id": "d_top_c",
+     "size": 48
+    },
+    {
+     "id": "d_top_r",
+     "size": 48
+    },
+    {
+     "id": "d_mid_l",
+     "size": 96
+    },
+    {
+     "id": "d_mid_r",
+     "size": 64
+    },
+    {
+     "id": "d_bot_l",
+     "size": 64
+    },
+    {
+     "id": "d_bot_r",
+     "size": 64
+    }
+   ],
+   "silhouetteIoU": 0.9285
+  },
+  {
+   "modelId": "B07QVRTT6J",
+   "patterned": 5,
+   "patched": [],
+   "silhouetteIoU": 0.6384
+  },
+  {
+   "modelId": "B0154WJZH2",
+   "patterned": 1,
+   "patched": [
+    {
+     "id": "oak",
+     "size": 48
+    }
+   ],
+   "silhouetteIoU": 0.8916
+  },
+  {
+   "modelId": "B07K6S7QHQ",
+   "patterned": 8,
+   "patched": [
+    {
+     "id": "top",
+     "size": 32
+    },
+    {
+     "id": "sideL",
+     "size": 96
+    },
+    {
+     "id": "sideR",
+     "size": 96
+    },
+    {
+     "id": "base",
+     "size": 48
+    },
+    {
+     "id": "divider",
+     "size": 96
+    },
+    {
+     "id": "midshelf",
+     "size": 32
+    },
+    {
+     "id": "rshelf",
+     "size": 32
+    }
+   ],
+   "silhouetteIoU": 0.8444
+  },
+  {
+   "modelId": "B07B4Y45GY",
+   "patterned": 12,
+   "patched": [
+    {
+     "id": "drawer_tl",
+     "size": 64
+    },
+    {
+     "id": "drawer_tr",
+     "size": 64
+    },
+    {
+     "id": "drawer_ml",
+     "size": 64
+    },
+    {
+     "id": "drawer_mr",
+     "size": 64
+    },
+    {
+     "id": "drawer_bl",
+     "size": 64
+    },
+    {
+     "id": "drawer_br",
+     "size": 48
+    }
+   ],
+   "silhouetteIoU": 0.9558
+  },
+  {
+   "modelId": "B082JH9VWG",
+   "patterned": 0,
+   "patched": [],
+   "silhouetteIoU": null
+  },
+  {
+   "modelId": "B07B4Z9PL9",
+   "patterned": 0,
+   "patched": [],
+   "silhouetteIoU": null
+  },
+  {
+   "modelId": "B07TVYR4SS",
+   "patterned": 6,
+   "patched": [
+    {
+     "id": "side",
+     "size": 96
+    }
+   ],
+   "silhouetteIoU": 0.8247
+  },
+  {
+   "modelId": "B07B4W2MFW",
+   "patterned": 13,
+   "patched": [
+    {
+     "id": "hb_rattan_l",
+     "size": 64
+    },
+    {
+     "id": "hb_rattan_r",
+     "size": 64
+    },
+    {
+     "id": "mattress",
+     "size": 48
+    },
+    {
+     "id": "fb_rattan_l",
+     "size": 48
+    },
+    {
+     "id": "fb_rattan_r",
+     "size": 48
+    },
+    {
+     "id": "fb_base",
+     "size": 24
+    },
+    {
+     "id": "pillow_l",
+     "size": 32
+    },
+    {
+     "id": "pillow_r",
+     "size": 24
+    }
+   ],
+   "silhouetteIoU": 0.9118
+  },
+  {
+   "modelId": "B07B78G4QH",
+   "patterned": 9,
+   "patched": [],
+   "silhouetteIoU": 0.7265
+  },
+  {
+   "modelId": "B07MBMJS1B",
+   "patterned": 1,
+   "patched": [],
+   "silhouetteIoU": 0.7112
+  },
+  {
+   "modelId": "B0742FPL25",
+   "patterned": 1,
+   "patched": [],
+   "silhouetteIoU": 0.7359
+  },
+  {
+   "modelId": "B0828FB1G7",
+   "patterned": 3,
+   "patched": [
+    {
+     "id": "canopy",
+     "size": 64
+    }
+   ],
+   "silhouetteIoU": 0.94
+  },
+  {
+   "modelId": "B082MXDF82",
+   "patterned": 0,
+   "patched": [],
+   "silhouetteIoU": null
+  },
+  {
+   "modelId": "B07QC76NM2",
+   "patterned": 0,
+   "patched": [],
+   "silhouetteIoU": null
+  },
+  {
+   "modelId": "B075X1T4ZS",
+   "patterned": 3,
+   "patched": [
+    {
+     "id": "base",
+     "size": 48
+    },
+    {
+     "id": "shade",
+     "size": 96
+    }
+   ],
+   "silhouetteIoU": 0.9111
+  },
+  {
+   "modelId": "B0824FLNHN",
+   "patterned": 2,
+   "patched": [],
+   "silhouetteIoU": 0.7026
+  },
+  {
+   "modelId": "B0828FFDWG",
+   "patterned": 0,
+   "patched": [],
+   "silhouetteIoU": null
+  },
+  {
+   "modelId": "B075X2LLWF",
+   "patterned": 2,
+   "patched": [
+    {
+     "id": "base",
+     "size": 96
+    }
+   ],
+   "silhouetteIoU": 0.9555
+  },
+  {
+   "modelId": "B07374QGD7",
+   "patterned": 2,
+   "patched": [
+    {
+     "id": "shade",
+     "size": 64
+    }
+   ],
+   "silhouetteIoU": 0.9608
+  },
+  {
+   "modelId": "B07B4W2ZRW",
+   "patterned": 4,
+   "patched": [
+    {
+     "id": "shade",
+     "size": 96
+    }
+   ],
+   "silhouetteIoU": 0.84
+  },
+  {
+   "modelId": "B0828DZ1QL",
+   "patterned": 1,
+   "patched": [],
+   "silhouetteIoU": 0.4481
+  },
+  {
+   "modelId": "B07HK6MTMC",
+   "patterned": 1,
+   "patched": [
+    {
+     "id": "shade",
+     "size": 96
+    }
+   ],
+   "silhouetteIoU": 0.9033
+  },
+  {
+   "modelId": "B0825CLV7M",
+   "patterned": 1,
+   "patched": [
+    {
+     "id": "wood",
+     "size": 24
+    }
+   ],
+   "silhouetteIoU": 0.8096
+  },
+  {
+   "modelId": "B075X2XZDD",
+   "patterned": 0,
+   "patched": [],
+   "silhouetteIoU": null
+  },
+  {
+   "modelId": "B08B8SV8DB",
+   "patterned": 2,
+   "patched": [
+    {
+     "id": "shade",
+     "size": 64
+    }
+   ],
+   "silhouetteIoU": 0.8287
+  },
+  {
+   "modelId": "B07B4VYKPR",
+   "patterned": 2,
+   "patched": [
+    {
+     "id": "base",
+     "size": 96
+    },
+    {
+     "id": "shade",
+     "size": 96
+    }
+   ],
+   "silhouetteIoU": 0.9397
+  }
+ ]
+}

@@ -45,3 +45,29 @@ describe('opt-in albedo variation', () => {
     expect(() => validateAssemblyIR(ir(0.8))).toThrow(/albedoVariation/);
   });
 });
+
+describe('opt-in photo albedo patch', () => {
+  const patchIr = (rgba: Uint8Array): AssemblyIR => ({
+    ...ir(),
+    components: [{ ...ir().components[0]!, material: { color: '#a0703c', surface: 'wood', textureScale: [2, 2], albedoPatch: { width: 8, height: 8, rgbaBase64: btoa(String.fromCharCode(...rgba)) } } }],
+  } as AssemblyIR);
+  const stripes = new Uint8Array(8 * 8 * 4);
+  for (let i = 0; i < 64; i += 1) stripes.set((i % 8) < 4 ? [200, 150, 100, 255] : [100, 70, 40, 255], i * 4);
+
+  it('maps a mirrored, mean-normalised photo tile and keeps the declared mean colour', () => {
+    const m = material(patchIr(stripes));
+    expect(m.map).toBeInstanceOf(THREE.DataTexture);
+    expect(m.map!.wrapS).toBe(THREE.MirroredRepeatWrapping);
+    expect(m.map!.repeat.toArray()).toEqual([2, 2]);
+    const data = m.map!.image.data as Uint8Array;
+    const lin = (v: number) => { const x = v / 255; return x <= 0.04045 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4; };
+    let mean = 0;
+    for (let i = 0; i < 64; i += 1) mean += lin(data[i * 4]!) / 64;
+    expect(m.color.r * mean).toBeCloseTo(new THREE.Color('#a0703c').r, 2);
+    expect(Math.max(...Array.from(data).filter((_, i) => i % 4 !== 3))).toBe(255);
+  });
+
+  it('rejects a patch whose bytes do not match its size', () => {
+    expect(() => validateAssemblyIR(patchIr(stripes.slice(0, 100)))).toThrow(/albedoPatch/);
+  });
+});
