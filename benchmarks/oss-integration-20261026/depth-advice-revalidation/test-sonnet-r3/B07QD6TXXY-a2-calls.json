@@ -1,0 +1,33 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Rivet Jaxon Rustic Round Side Table, Diameter, Natural and Black.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 673 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0265754,
+   "durationMs": 21980,
+   "isError": false
+  },
+  {
+   "round": 1,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0221212,
+   "durationMs": 10037,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":10},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Rivet Jaxon Round Side Table\",\"units\":\"mm\",\"components\":[{\"id\":\"rim\",\"name\":\"Tray rim\",\"category\":\"enclosure\",\"materialName\":\"black powder-coated steel\",\"detail\":\"Thin vertical tray wall\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[190,573],[195,573],[195,673],[190,673]],\"segments\":64},\"position\":[0,0,0],\"material\":{\"color\":\"#1f2022\",\"roughness\":0.6,\"metalness\":0.4}},{\"id\":\"plate\",\"name\":\"Tray bottom plate\",\"category\":\"mechanical\",\"materialName\":\"black steel\",\"detail\":\"Underside plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":193,\"radiusBottom\":193,\"depth\":6,\"radialSegments\":64},\"position\":[0,576,0],\"material\":{\"color\":\"#1f2022\",\"roughness\":0.6,\"metalness\":0.4}},{\"id\":\"top\",\"name\":\"Wood tray insert\",\"category\":\"mechanical\",\"materialName\":\"natural wood\",\"detail\":\"Wood panel inside tray\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":191,\"radiusBottom\":191,\"depth\":10,\"radialSegments\":64},\"position\":[0,640,0],\"material\":{\"color\":\"#a58b6a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg1\",\"name\":\"Leg 1\",\"category\":\"mechanical\",\"materialName\":\"black steel\",\"detail\":\"Splayed leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[22.2,287,3.9],[-22.2,-287,-3.9]],\"radius\":15},\"position\":[-145,286,-26],\"material\":{\"color\":\"#1f2022\",\"roughness\":0.6,\"metalness\":0.4}},{\"id\":\"leg2\",\"name\":\"Leg 2\",\"category\":\"mechanical\",\"materialName\":\"black steel\",\"detail\":\"Splayed leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[-7.7,287,-21.2],[7.7,-287,21.2]],\"radius\":15},\"position\":[50.4,286,138.6],\"material\":{\"color\":\"#1f2022\",\"roughness\":0.6,\"metalness\":0.4}},{\"id\":\"leg3\",\"name\":\"Leg 3\",\"category\":\"mechanical\",\"materialName\":\"black steel\",\"detail\":\"Splayed leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[-14.5,287,17.2],[14.5,-287,-17.2]],\"radius\":15},\"position\":[94.8,286,-113],\"material\":{\"color\":\"#1f2022\",\"roughness\":0.6,\"metalness\":0.4}}]}}",
+   "stage": "requirements"
+  },
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":10},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Rivet Jaxon Round Side Table\",\"units\":\"mm\",\"components\":[{\"id\":\"rim\",\"name\":\"Tray body\",\"category\":\"enclosure\",\"materialName\":\"black powder-coated steel\",\"detail\":\"Solid tray wall block\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":195,\"radiusBottom\":195,\"depth\":100,\"radialSegments\":64},\"position\":[0,623,0],\"material\":{\"color\":\"#1f2022\",\"roughness\":0.6,\"metalness\":0.4}},{\"id\":\"top\",\"name\":\"Wood tray insert\",\"category\":\"mechanical\",\"materialName\":\"natural wood\",\"detail\":\"Wood panel inside tray\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":191,\"radiusBottom\":191,\"depth\":10,\"radialSegments\":64},\"position\":[0,665,0],\"material\":{\"color\":\"#a58b6a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg1\",\"name\":\"Leg 1\",\"category\":\"mechanical\",\"materialName\":\"black steel\",\"detail\":\"Splayed leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[22.2,287,3.9],[-22.2,-287,-3.9]],\"radius\":15},\"position\":[-145,286,-26],\"material\":{\"color\":\"#1f2022\",\"roughness\":0.6,\"metalness\":0.4}},{\"id\":\"leg2\",\"name\":\"Leg 2\",\"category\":\"mechanical\",\"materialName\":\"black steel\",\"detail\":\"Splayed leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[-7.7,287,-21.2],[7.7,-287,21.2]],\"radius\":15},\"position\":[50.4,286,138.6],\"material\":{\"color\":\"#1f2022\",\"roughness\":0.6,\"metalness\":0.4}},{\"id\":\"leg3\",\"name\":\"Leg 3\",\"category\":\"mechanical\",\"materialName\":\"black steel\",\"detail\":\"Splayed leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[-14.5,287,17.2],[14.5,-287,-17.2]],\"radius\":15},\"position\":[94.8,286,-113],\"material\":{\"color\":\"#1f2022\",\"roughness\":0.6,\"metalness\":0.4}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

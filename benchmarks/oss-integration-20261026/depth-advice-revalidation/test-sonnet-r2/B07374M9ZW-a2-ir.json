@@ -1,0 +1,191 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rose gold dome pendant",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "rose gold metal",
+   "detail": "round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 58,
+    "radiusBottom": 60,
+    "depth": 14,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    755,
+    0
+   ],
+   "material": {
+    "color": "#b76e4f",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Cord",
+   "category": "interconnect",
+   "materialName": "black fabric cord",
+   "detail": "hanging cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      225,
+      0
+     ],
+     [
+      0,
+      -225,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    535,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Cord cap",
+   "category": "mechanical",
+   "materialName": "rose gold metal",
+   "detail": "small cap above neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 9,
+    "depth": 18,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    309,
+    0
+   ],
+   "material": {
+    "color": "#b76e4f",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck",
+   "category": "mechanical",
+   "materialName": "rose gold metal",
+   "detail": "tapered neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 13,
+    "radiusBottom": 30,
+    "depth": 100,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#b76e4f",
+    "roughness": 0.2,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Dome shade",
+   "category": "enclosure",
+   "materialName": "polished copper",
+   "detail": "flared shade with vertical skirt, closed solid of revolution",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      205
+     ],
+     [
+      28,
+      205
+     ],
+     [
+      30,
+      200
+     ],
+     [
+      150,
+      115
+     ],
+     [
+      158,
+      100
+     ],
+     [
+      158,
+      12
+     ],
+     [
+      154,
+      4
+     ],
+     [
+      0,
+      4
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8704a",
+    "roughness": 0.2,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "diffuser",
+   "name": "Inner glow",
+   "category": "display",
+   "materialName": "warm glow",
+   "detail": "lit interior disc",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 148,
+    "radiusBottom": 148,
+    "depth": 4,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    2,
+    0
+   ],
+   "material": {
+    "color": "#f2c14a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

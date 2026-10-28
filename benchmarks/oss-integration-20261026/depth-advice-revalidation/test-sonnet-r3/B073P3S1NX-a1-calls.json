@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Rivet Olive 4 Wood Shelf Standing Floor Lamp With Light Bulb and USB Charging Station - ches, Brass.\nThe product listing gives its overall height as 1575 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0191589,
+   "durationMs": 12929,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Four-tier shelf floor lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Base shelf\",\"category\":\"enclosure\",\"materialName\":\"dark walnut wood\",\"detail\":\"Square bottom shelf platform\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[300,50,300],\"radius\":4},\"position\":[0,25,0],\"material\":{\"color\":\"#4a2c20\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"shelf1\",\"name\":\"Lower shelf\",\"category\":\"enclosure\",\"materialName\":\"dark walnut wood\",\"detail\":\"Lower shelf panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[290,20,290],\"radius\":3},\"position\":[0,417,0],\"material\":{\"color\":\"#4a2c20\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"shelf2\",\"name\":\"Upper shelf\",\"category\":\"enclosure\",\"materialName\":\"dark walnut wood\",\"detail\":\"Upper shelf panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[290,20,290],\"radius\":3},\"position\":[0,798,0],\"material\":{\"color\":\"#4a2c20\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"pole_fl\",\"name\":\"Front left pole\",\"category\":\"mechanical\",\"materialName\":\"antique brass\",\"detail\":\"Vertical brass tube\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":8,\"radiusBottom\":8,\"depth\":1100,\"radialSegments\":24},\"position\":[-135,600,135],\"material\":{\"color\":\"#a8895a\",\"roughness\":0.35,\"metalness\":0.85}},{\"id\":\"pole_fr\",\"name\":\"Front right pole\",\"category\":\"mechanical\",\"materialName\":\"antique brass\",\"detail\":\"Vertical brass tube\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":8,\"radiusBottom\":8,\"depth\":1100,\"radialSegments\":24},\"position\":[135,600,135],\"material\":{\"color\":\"#a8895a\",\"roughness\":0.35,\"metalness\":0.85}},{\"id\":\"pole_bl\",\"name\":\"Back left pole\",\"category\":\"mechanical\",\"materialName\":\"antique brass\",\"detail\":\"Vertical brass tube\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":8,\"radiusBottom\":8,\"depth\":1100,\"radialSegments\":24},\"position\":[-135,600,-135],\"material\":{\"color\":\"#a8895a\",\"roughness\":0.35,\"metalness\":0.85}},{\"id\":\"pole_br\",\"name\":\"Back right pole\",\"category\":\"mechanical\",\"materialName\":\"antique brass\",\"detail\":\"Vertical brass tube\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":8,\"radiusBottom\":8,\"depth\":1100,\"radialSegments\":24},\"position\":[135,600,-135],\"material\":{\"color\":\"#a8895a\",\"roughness\":0.35,\"metalness\":0.85}},{\"id\":\"socket\",\"name\":\"Lamp socket housing\",\"category\":\"power\",\"materialName\":\"brass\",\"detail\":\"Small switch and USB housing under shade\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[70,40,50],\"radius\":6},\"position\":[0,1120,0],\"material\":{\"color\":\"#8c7248\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"shade\",\"name\":\"Linen shade\",\"category\":\"enclosure\",\"materialName\":\"natural burlap linen\",\"detail\":\"Square tall shade\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[340,435,340],\"radius\":6},\"position\":[0,1357,0],\"material\":{\"color\":\"#dcb888\",\"roughness\":0.95,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

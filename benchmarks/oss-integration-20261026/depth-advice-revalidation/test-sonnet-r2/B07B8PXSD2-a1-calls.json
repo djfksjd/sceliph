@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Rivet Modern Wood Shelf, Walnut.\nThe product listing gives its overall height as 89 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.016103199999999998,
+   "durationMs": 10181,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Rivet Modern Wood Shelf, Walnut\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Top board\",\"category\":\"enclosure\",\"materialName\":\"Walnut veneer\",\"detail\":\"Top board of the box shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[459,19,200],\"radius\":2},\"position\":[0,79.5,0],\"material\":{\"color\":\"#4a2b22\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"bottom\",\"name\":\"Bottom board\",\"category\":\"enclosure\",\"materialName\":\"Walnut veneer\",\"detail\":\"Bottom board of the box shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[459,19,200],\"radius\":2},\"position\":[0,9.5,0],\"material\":{\"color\":\"#4a2b22\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"front\",\"name\":\"Front panel\",\"category\":\"enclosure\",\"materialName\":\"Walnut veneer\",\"detail\":\"Front fascia facing the viewer\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[459,51,19],\"radius\":2},\"position\":[0,44.5,90.5],\"material\":{\"color\":\"#4f2e25\",\"roughness\":0.55,\"metalness\":0}},{\"id\":\"back\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"Walnut veneer\",\"detail\":\"Rear panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[459,51,19],\"radius\":2},\"position\":[0,44.5,-90.5],\"material\":{\"color\":\"#43261e\",\"roughness\":0.65,\"metalness\":0}},{\"id\":\"side_l\",\"name\":\"Left end\",\"category\":\"enclosure\",\"materialName\":\"Walnut veneer\",\"detail\":\"Left end panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[19,51,162],\"radius\":2},\"position\":[-220,44.5,0],\"material\":{\"color\":\"#4a2b22\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"side_r\",\"name\":\"Right end\",\"category\":\"enclosure\",\"materialName\":\"Walnut veneer\",\"detail\":\"Right end panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[19,51,162],\"radius\":2},\"position\":[220,44.5,0],\"material\":{\"color\":\"#4a2b22\",\"roughness\":0.6,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

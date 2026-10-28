@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Rivet Mid-Century Mercury Glass Shade Indoor/Outdoor Wall Sconce Light with Bulb, Black.\nThe product listing gives its overall height as 254 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0113947,
+   "durationMs": 6639,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Wall sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"plate\",\"name\":\"Back plate\",\"category\":\"mechanical\",\"materialName\":\"black metal\",\"detail\":\"square wall mounting plate\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[85,100,6],\"radius\":2},\"position\":[0,200,3],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.6,\"metalness\":0.4}},{\"id\":\"cap\",\"name\":\"Top cap\",\"category\":\"enclosure\",\"materialName\":\"black metal\",\"detail\":\"cylindrical housing with domed top\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":28,\"radiusBottom\":38,\"depth\":40,\"radialSegments\":48},\"position\":[0,234,40],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.5,\"metalness\":0.4}},{\"id\":\"dome\",\"name\":\"Cap dome\",\"category\":\"enclosure\",\"materialName\":\"black metal\",\"detail\":\"small top dome\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":20,\"radiusBottom\":28,\"depth\":10,\"radialSegments\":48},\"position\":[0,249,40],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.5,\"metalness\":0.4}},{\"id\":\"collar\",\"name\":\"Collar\",\"category\":\"mechanical\",\"materialName\":\"black metal\",\"detail\":\"ring under the cap\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":38,\"radiusBottom\":38,\"depth\":8,\"radialSegments\":48},\"position\":[0,210,40],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.5,\"metalness\":0.4}},{\"id\":\"shade\",\"name\":\"Glass shade\",\"category\":\"enclosure\",\"materialName\":\"seeded glass\",\"detail\":\"clear cylindrical glass shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":37,\"radiusBottom\":37,\"depth\":170,\"radialSegments\":48},\"position\":[0,121,40],\"material\":{\"color\":\"#e6eef0\",\"roughness\":0.2,\"metalness\":0.0}},{\"id\":\"socket\",\"name\":\"Socket\",\"category\":\"power\",\"materialName\":\"black metal\",\"detail\":\"bulb socket\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":9,\"radiusBottom\":9,\"depth\":30,\"radialSegments\":24},\"position\":[0,190,40],\"material\":{\"color\":\"#222222\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"bulb\",\"name\":\"Edison bulb\",\"category\":\"power\",\"materialName\":\"glass\",\"detail\":\"warm filament bulb\",\"geometry\":{\"op\":\"sphere\",\"radius\":20},\"position\":[0,150,40],\"material\":{\"color\":\"#ffc77a\",\"roughness\":0.3,\"metalness\":0.0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

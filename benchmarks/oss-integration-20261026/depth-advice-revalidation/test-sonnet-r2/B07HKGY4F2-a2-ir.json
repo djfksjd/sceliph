@@ -1,0 +1,88 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Concrete cubic wall sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Concrete body",
+   "category": "enclosure",
+   "materialName": "concrete",
+   "detail": "Cubic concrete light housing",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     124,
+     121,
+     114
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    60.5,
+    16
+   ],
+   "material": {
+    "color": "#b9b0a5",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "base",
+   "name": "Black wall base",
+   "category": "mechanical",
+   "materialName": "black painted metal",
+   "detail": "Wall mounting plate block",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     124,
+     121,
+     32
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    60.5,
+    -57
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "screw",
+   "name": "Side screw",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "Small set screw on side face",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 2.5,
+    "radiusBottom": 2.5,
+    "depth": 1.5,
+    "radialSegments": 24
+   },
+   "position": [
+    62.5,
+    70,
+    -33
+   ],
+   "rotation": [
+    0,
+    0,
+    1.5708
+   ],
+   "material": {
+    "color": "#d8d8d8",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

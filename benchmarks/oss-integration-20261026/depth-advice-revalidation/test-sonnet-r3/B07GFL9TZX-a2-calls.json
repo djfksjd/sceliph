@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand - Movian Indre 1-Door Shoe Cabinet/Cupboard/Organizer with Mirror, White.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 1790 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0230732,
+   "durationMs": 16356,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-15,\"elevationDeg\":4},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian Indre 1-Door Mirror Shoe Cabinet\",\"units\":\"mm\",\"components\":[{\"id\":\"side_l\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"18 mm side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,1750,240],\"radius\":2},\"position\":[-241,915,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"side_r\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"18 mm side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,1750,240],\"radius\":2},\"position\":[241,915,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"top\",\"name\":\"Top panel\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"Top board\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[500,18,240],\"radius\":2},\"position\":[0,1781,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"bottom\",\"name\":\"Bottom panel\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"Bottom board above plinth\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[464,18,240],\"radius\":2},\"position\":[0,49,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"back\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"White hardboard\",\"detail\":\"Thin back panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[464,1714,8],\"radius\":1},\"position\":[0,915,-116],\"material\":{\"color\":\"#eeeeec\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"plinth\",\"name\":\"Plinth\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"Recessed base plinth\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[464,40,220],\"radius\":2},\"position\":[0,20,-10],\"material\":{\"color\":\"#f0f0ee\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"shelf\",\"name\":\"Interior shelf\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"Mid shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[464,16,225],\"radius\":2},\"position\":[0,900,-5],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"door\",\"name\":\"Door\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"Full height door\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[464,1700,18],\"radius\":2},\"position\":[0,915,111],\"material\":{\"color\":\"#f6f6f4\",\"roughness\":0.55,\"metalness\":0}},{\"id\":\"mirror\",\"name\":\"Mirror\",\"category\":\"mechanical\",\"materialName\":\"Mirror glass\",\"detail\":\"Vertical mirror strip on door\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[200,1600,4],\"radius\":1},\"position\":[105,915,121],\"material\":{\"color\":\"#b4b8bb\",\"roughness\":0.05,\"metalness\":0.9}},{\"id\":\"handle\",\"name\":\"Handle\",\"category\":\"mechanical\",\"materialName\":\"Grey plastic\",\"detail\":\"Recessed grip handle\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[12,70,12],\"radius\":3},\"position\":[-105,863,123],\"material\":{\"color\":\"#aeb0b2\",\"roughness\":0.4,\"metalness\":0.3}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

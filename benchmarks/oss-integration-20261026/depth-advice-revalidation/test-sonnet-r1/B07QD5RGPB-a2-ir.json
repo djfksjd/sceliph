@@ -1,0 +1,327 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Mid-Century Triple Vanity Light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Back plate",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Rectangular mounting backplate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     686,
+     122,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    193,
+    -103
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "globe_l",
+   "name": "Left globe",
+   "category": "enclosure",
+   "materialName": "Opal glass",
+   "detail": "Frosted opal glass globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    -240,
+    92,
+    0
+   ],
+   "material": {
+    "color": "#f8e3d0",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_c",
+   "name": "Center globe",
+   "category": "enclosure",
+   "materialName": "Opal glass",
+   "detail": "Frosted opal glass globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    0,
+    92,
+    0
+   ],
+   "material": {
+    "color": "#f8e3d0",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_r",
+   "name": "Right globe",
+   "category": "enclosure",
+   "materialName": "Opal glass",
+   "detail": "Frosted opal glass globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    240,
+    92,
+    0
+   ],
+   "material": {
+    "color": "#f8e3d0",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap_l",
+   "name": "Left cap",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 33,
+    "radiusBottom": 73,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    -240,
+    164,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "cap_c",
+   "name": "Center cap",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 33,
+    "radiusBottom": 73,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    164,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "cap_r",
+   "name": "Right cap",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 33,
+    "radiusBottom": 73,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    240,
+    164,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "neck_l",
+   "name": "Left neck",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Neck above cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 32,
+    "depth": 33,
+    "radialSegments": 48
+   },
+   "position": [
+    -240,
+    195.5,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "neck_c",
+   "name": "Center neck",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Neck above cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 32,
+    "depth": 33,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    195.5,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "neck_r",
+   "name": "Right neck",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Neck above cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 32,
+    "depth": 33,
+    "radialSegments": 48
+   },
+   "position": [
+    240,
+    195.5,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "arm_l",
+   "name": "Left arm",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Rod joining neck to plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 70,
+    "radialSegments": 24
+   },
+   "position": [
+    -240,
+    200,
+    -58
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "arm_c",
+   "name": "Center arm",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Rod joining neck to plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 70,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    200,
+    -58
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "arm_r",
+   "name": "Right arm",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Rod joining neck to plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 70,
+    "radialSegments": 24
+   },
+   "position": [
+    240,
+    200,
+    -58
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  }
+ ]
+}

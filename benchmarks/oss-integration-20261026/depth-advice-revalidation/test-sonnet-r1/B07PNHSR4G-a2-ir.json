@@ -1,0 +1,271 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "5-Tier Ladder Bookcase White",
+ "units": "mm",
+ "components": [
+  {
+   "id": "bl",
+   "name": "Back leg left",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "vertical rear post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     1892,
+     30
+    ],
+    "radius": 4
+   },
+   "position": [
+    -290,
+    946,
+    -225
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "br",
+   "name": "Back leg right",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "vertical rear post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     1892,
+     30
+    ],
+    "radius": 4
+   },
+   "position": [
+    290,
+    946,
+    -225
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "fl",
+   "name": "Front leg left",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "slanted front leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -946,
+      110
+     ],
+     [
+      0,
+      946,
+      -110
+     ]
+    ],
+    "radius": 16
+   },
+   "position": [
+    -290,
+    946,
+    130
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "fr",
+   "name": "Front leg right",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "slanted front leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -946,
+      110
+     ],
+     [
+      0,
+      946,
+      -110
+     ]
+    ],
+    "radius": 16
+   },
+   "position": [
+    290,
+    946,
+    130
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "s1",
+   "name": "Shelf 1",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "bottom shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     20,
+     470
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    174,
+    -5
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "s2",
+   "name": "Shelf 2",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     20,
+     415
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    555,
+    -32
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "s3",
+   "name": "Shelf 3",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     20,
+     371
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    937,
+    -54
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "s4",
+   "name": "Shelf 4",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     20,
+     333
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1266,
+    -73
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "s5",
+   "name": "Shelf 5",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     20,
+     300
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1560,
+    -90
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "s6",
+   "name": "Top shelf",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     580,
+     22,
+     266
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1881,
+    -107
+   ],
+   "material": {
+    "color": "#f8f8f6",
+    "roughness": 0.5
+   }
+  }
+ ]
+}

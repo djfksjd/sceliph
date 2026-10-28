@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand - Rivet mediados de siglo Moderna lámpara de mesa de cerámica de rayas cruzadas con foco LED, 21 pulgadas, color blanco.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 533 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0211072,
+   "durationMs": 12884,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Ceramic table lamp with rectangular shade\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Ceramic base\",\"category\":\"enclosure\",\"materialName\":\"white glazed ceramic\",\"detail\":\"Rectangular column base\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[135,270,105],\"radius\":4},\"position\":[0,135,0],\"material\":{\"color\":\"#f1eeea\",\"roughness\":0.4,\"metalness\":0}},{\"id\":\"band_top\",\"name\":\"Upper stripe band\",\"category\":\"enclosure\",\"materialName\":\"brown glaze lines\",\"detail\":\"Crossed stripe band near top\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[136.5,30,106.5],\"radius\":1},\"position\":[0,240,0],\"material\":{\"color\":\"#9a6a40\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"band_bot\",\"name\":\"Lower stripe band\",\"category\":\"enclosure\",\"materialName\":\"brown glaze lines\",\"detail\":\"Crossed stripe band near bottom\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[136.5,30,106.5],\"radius\":1},\"position\":[0,28,0],\"material\":{\"color\":\"#9a6a40\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"neck\",\"name\":\"Neck\",\"category\":\"mechanical\",\"materialName\":\"dark metal\",\"detail\":\"Short socket neck\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":40,\"radialSegments\":24},\"position\":[0,285,0],\"material\":{\"color\":\"#4a4540\",\"roughness\":0.4,\"metalness\":0.7}},{\"id\":\"shade\",\"name\":\"Rectangular shade\",\"category\":\"enclosure\",\"materialName\":\"linen fabric\",\"detail\":\"Cream linen rectangular shade\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[350,233,210],\"radius\":3},\"position\":[0,416,0],\"material\":{\"color\":\"#f3dcc9\",\"roughness\":0.9,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

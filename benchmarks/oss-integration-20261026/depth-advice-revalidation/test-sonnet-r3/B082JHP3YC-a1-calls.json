@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Traditional Barnyard-Style Outdoor Wall Sconce, Galvanized Finish.\nThe product listing gives its overall height as 301 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0151725,
+   "durationMs": 12752,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Barn Wall Sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Barn shade\",\"category\":\"enclosure\",\"materialName\":\"speckled dark galvanized metal\",\"detail\":\"Domed barn-style shade with flared rim\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,186],[14,186],[16,180],[30,170],[48,146],[78,98],[100,50],[108,32],[112,24],[116,21],[110,21],[104,31],[98,48],[76,96],[46,144],[26,166],[0,166]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#3c3f41\",\"roughness\":0.7,\"metalness\":0.5}},{\"id\":\"stem\",\"name\":\"Mounting stem\",\"category\":\"mechanical\",\"materialName\":\"speckled dark metal\",\"detail\":\"Vertical rod above the shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":5,\"radiusBottom\":5,\"depth\":120,\"radialSegments\":24},\"position\":[0,241,0],\"material\":{\"color\":\"#3c3f41\",\"roughness\":0.7,\"metalness\":0.5}},{\"id\":\"bulb\",\"name\":\"Bulb\",\"category\":\"power\",\"materialName\":\"clear glass\",\"detail\":\"Globe bulb peeking below the rim\",\"geometry\":{\"op\":\"sphere\",\"radius\":32},\"position\":[0,32,0],\"material\":{\"color\":\"#e8eef0\",\"roughness\":0.1,\"metalness\":0.1}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

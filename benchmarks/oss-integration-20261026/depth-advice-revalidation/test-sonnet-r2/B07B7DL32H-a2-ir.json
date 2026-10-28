@@ -1,0 +1,399 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rustic grey bookcase with doors",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top cap",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     890,
+     50,
+     410
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    1855,
+    0
+   ],
+   "material": {
+    "color": "#7a6f62",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "sideL",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     26,
+     1740,
+     380
+    ],
+    "radius": 4
+   },
+   "position": [
+    -417,
+    960,
+    0
+   ],
+   "material": {
+    "color": "#7a6f62",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "sideR",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     26,
+     1740,
+     380
+    ],
+    "radius": 4
+   },
+   "position": [
+    417,
+    960,
+    0
+   ],
+   "material": {
+    "color": "#7a6f62",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "dark wood",
+   "detail": "back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     820,
+     1740,
+     12
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    960,
+    -182
+   ],
+   "material": {
+    "color": "#5e5448",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "deck",
+   "name": "Cabinet top deck",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "shelf over cabinet",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     820,
+     30,
+     360
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    665,
+    0
+   ],
+   "material": {
+    "color": "#7a6f62",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "shelf1",
+   "name": "Shelf lower",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     820,
+     28,
+     360
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1060,
+    0
+   ],
+   "material": {
+    "color": "#7a6f62",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "shelf2",
+   "name": "Shelf upper",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     820,
+     28,
+     360
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1440,
+    0
+   ],
+   "material": {
+    "color": "#7a6f62",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "divider",
+   "name": "Vertical divider",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "centre divider",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     22,
+     1130,
+     350
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1245,
+    0
+   ],
+   "material": {
+    "color": "#7a6f62",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "fascia",
+   "name": "Top front rail",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "label rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     820,
+     60,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1790,
+    190
+   ],
+   "material": {
+    "color": "#857a6c",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "doorL",
+   "name": "Left door",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "panel door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     490,
+     22
+    ],
+    "radius": 4
+   },
+   "position": [
+    -203,
+    370,
+    190
+   ],
+   "material": {
+    "color": "#82766a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "doorR",
+   "name": "Right door",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "panel door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     490,
+     22
+    ],
+    "radius": 4
+   },
+   "position": [
+    203,
+    370,
+    190
+   ],
+   "material": {
+    "color": "#82766a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "knobL",
+   "name": "Left knob",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "knob",
+   "geometry": {
+    "op": "sphere",
+    "radius": 12
+   },
+   "position": [
+    -14,
+    380,
+    210
+   ],
+   "material": {
+    "color": "#b7a98a",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "knobR",
+   "name": "Right knob",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "knob",
+   "geometry": {
+    "op": "sphere",
+    "radius": 12
+   },
+   "position": [
+    14,
+    380,
+    210
+   ],
+   "material": {
+    "color": "#b7a98a",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "baseRail",
+   "name": "Bottom front rail",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "apron",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     820,
+     50,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    95,
+    190
+   ],
+   "material": {
+    "color": "#7a6f62",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "footFL",
+   "name": "Front left foot",
+   "category": "mechanical",
+   "materialName": "grey wood",
+   "detail": "foot",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     90,
+     40
+    ],
+    "radius": 4
+   },
+   "position": [
+    -410,
+    45,
+    170
+   ],
+   "material": {
+    "color": "#6e6458",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "footFR",
+   "name": "Front right foot",
+   "category": "mechanical",
+   "materialName": "grey wood",
+   "detail": "foot",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     90,
+     40
+    ],
+    "radius": 4
+   },
+   "position": [
+    410,
+    45,
+    170
+   ],
+   "material": {
+    "color": "#6e6458",
+    "roughness": 0.85
+   }
+  }
+ ]
+}

@@ -1,0 +1,324 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Tree-Style 3-Light Floor Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "square base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     40,
+     300
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    20,
+    0
+   ],
+   "material": {
+    "color": "#3a2f27",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "central stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 11,
+    "radiusBottom": 11,
+    "depth": 1713,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    896.5,
+    0
+   ],
+   "material": {
+    "color": "#3a2f27",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Brass collar",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "collar at base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 13,
+    "radiusBottom": 13,
+    "depth": 40,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    60,
+    0
+   ],
+   "material": {
+    "color": "#b8a060",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "arm1",
+   "name": "Arm 1",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "top arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      -114,
+      0,
+      -95
+     ]
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    1630,
+    0
+   ],
+   "material": {
+    "color": "#3a2f27",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "socket1",
+   "name": "Socket 1",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "lamp socket",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 18,
+    "depth": 60,
+    "radialSegments": 24
+   },
+   "position": [
+    -114,
+    1605,
+    -95
+   ],
+   "material": {
+    "color": "#2e2520",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade1",
+   "name": "Shade 1",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "conical shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 86,
+    "depth": 125,
+    "radialSegments": 40
+   },
+   "position": [
+    -114,
+    1530,
+    -95
+   ],
+   "material": {
+    "color": "#c2a862",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "arm2",
+   "name": "Arm 2",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "middle arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      -25,
+      0,
+      133
+     ]
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    1450,
+    0
+   ],
+   "material": {
+    "color": "#3a2f27",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "socket2",
+   "name": "Socket 2",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "lamp socket",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 18,
+    "depth": 60,
+    "radialSegments": 24
+   },
+   "position": [
+    -25,
+    1425,
+    133
+   ],
+   "material": {
+    "color": "#2e2520",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade2",
+   "name": "Shade 2",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "conical shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 86,
+    "depth": 125,
+    "radialSegments": 40
+   },
+   "position": [
+    -25,
+    1350,
+    133
+   ],
+   "material": {
+    "color": "#c2a862",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "arm3",
+   "name": "Arm 3",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "lower arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      126,
+      0,
+      -50
+     ]
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    1310,
+    0
+   ],
+   "material": {
+    "color": "#3a2f27",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "socket3",
+   "name": "Socket 3",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "lamp socket",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 18,
+    "depth": 60,
+    "radialSegments": 24
+   },
+   "position": [
+    126,
+    1285,
+    -50
+   ],
+   "material": {
+    "color": "#2e2520",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade3",
+   "name": "Shade 3",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "conical shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 86,
+    "depth": 125,
+    "radialSegments": 40
+   },
+   "position": [
+    126,
+    1210,
+    -50
+   ],
+   "material": {
+    "color": "#c2a862",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  }
+ ]
+}

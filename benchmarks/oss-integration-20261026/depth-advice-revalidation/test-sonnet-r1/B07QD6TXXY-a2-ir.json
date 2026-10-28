@@ -1,0 +1,154 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Jaxon Round Side Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "apron",
+   "name": "Tray apron",
+   "category": "enclosure",
+   "materialName": "black powder-coated steel",
+   "detail": "Deep round rim forming the tray sides",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 190,
+    "radiusBottom": 190,
+    "depth": 105,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    620.5,
+    0
+   ],
+   "material": {
+    "color": "#1e1f21",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "top",
+   "name": "Wood tabletop",
+   "category": "enclosure",
+   "materialName": "natural wood veneer",
+   "detail": "Recessed round wood panel inside the tray",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 184,
+    "radiusBottom": 184,
+    "depth": 6,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    661,
+    0
+   ],
+   "material": {
+    "color": "#a68a67",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg1",
+   "name": "Leg 1",
+   "category": "mechanical",
+   "materialName": "black powder-coated steel",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      27.5,
+      298,
+      0
+     ],
+     [
+      -27.5,
+      -297,
+      0
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    -152.5,
+    302,
+    0
+   ],
+   "material": {
+    "color": "#1e1f21",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "leg2",
+   "name": "Leg 2",
+   "category": "mechanical",
+   "materialName": "black powder-coated steel",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -13.75,
+      298,
+      -23.8
+     ],
+     [
+      13.75,
+      -297,
+      23.8
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    76,
+    302,
+    132
+   ],
+   "material": {
+    "color": "#1e1f21",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "leg3",
+   "name": "Leg 3",
+   "category": "mechanical",
+   "materialName": "black powder-coated steel",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -13.75,
+      298,
+      23.8
+     ],
+     [
+      13.75,
+      -297,
+      -23.8
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    76,
+    302,
+    -132
+   ],
+   "material": {
+    "color": "#1e1f21",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

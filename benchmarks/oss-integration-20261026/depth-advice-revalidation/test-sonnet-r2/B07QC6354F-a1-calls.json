@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: AmazonBasics Retro Hairpin Compact Computer Desk - Black with Gold Legs.\nThe product listing gives its overall height as 660 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.026605199999999996,
+   "durationMs": 17513,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":12,\"elevationDeg\":18},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Retro Hairpin Computer Desk\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Desktop\",\"category\":\"enclosure\",\"materialName\":\"black wood laminate\",\"detail\":\"1100 x 25 x 550 mm black desktop\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1100,25,550],\"radius\":3},\"position\":[0,647.5,0],\"material\":{\"color\":\"#1c1c1d\",\"roughness\":0.6,\"metalness\":0.05}},{\"id\":\"fl_a\",\"name\":\"Front left leg rod A\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"Hairpin leg rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[-45,317.5,0],[-3,-317.5,0]],\"radius\":4.5},\"position\":[-480,317.5,-200],\"material\":{\"color\":\"#c4a04a\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"fl_b\",\"name\":\"Front left leg rod B\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"Hairpin leg rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[45,317.5,0],[3,-317.5,0]],\"radius\":4.5},\"position\":[-480,317.5,-200],\"material\":{\"color\":\"#c4a04a\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"fr_a\",\"name\":\"Front right leg rod A\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"Hairpin leg rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[-45,317.5,0],[-3,-317.5,0]],\"radius\":4.5},\"position\":[480,317.5,-200],\"material\":{\"color\":\"#c4a04a\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"fr_b\",\"name\":\"Front right leg rod B\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"Hairpin leg rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[45,317.5,0],[3,-317.5,0]],\"radius\":4.5},\"position\":[480,317.5,-200],\"material\":{\"color\":\"#c4a04a\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"bl_a\",\"name\":\"Back left leg rod A\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"Hairpin leg rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[-45,317.5,0],[-3,-317.5,0]],\"radius\":4.5},\"position\":[-480,317.5,200],\"material\":{\"color\":\"#c4a04a\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"bl_b\",\"name\":\"Back left leg rod B\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"Hairpin leg rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[45,317.5,0],[3,-317.5,0]],\"radius\":4.5},\"position\":[-480,317.5,200],\"material\":{\"color\":\"#c4a04a\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"br_a\",\"name\":\"Back right leg rod A\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"Hairpin leg rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[-45,317.5,0],[-3,-317.5,0]],\"radius\":4.5},\"position\":[480,317.5,200],\"material\":{\"color\":\"#c4a04a\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"br_b\",\"name\":\"Back right leg rod B\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"Hairpin leg rod\",\"geometry\":{\"op\":\"tube\",\"points\":[[45,317.5,0],[3,-317.5,0]],\"radius\":4.5},\"position\":[480,317.5,200],\"material\":{\"color\":\"#c4a04a\",\"roughness\":0.35,\"metalness\":0.9}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

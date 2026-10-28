@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Stone & Beam Traditional Barnyard-Style Outdoor Wall Sconce, Galvanized Finish.\nThe product listing gives its overall height as 301 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0182632,
+   "durationMs": 12794,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Barnyard outdoor wall sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Barn shade\",\"category\":\"enclosure\",\"materialName\":\"speckled dark galvanized metal\",\"detail\":\"Domed barn-style shade with flared rim\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[113,0],[108,8],[98,22],[80,50],[60,78],[40,100],[28,118],[24,135],[22,160],[0,160]],\"segments\":48},\"position\":[0,23,0],\"material\":{\"color\":\"#3a3d3f\",\"roughness\":0.7,\"metalness\":0.5}},{\"id\":\"stem\",\"name\":\"Arm stem\",\"category\":\"mechanical\",\"materialName\":\"speckled dark metal\",\"detail\":\"Vertical stem rod on top of shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":120,\"radialSegments\":24},\"position\":[0,241,0],\"material\":{\"color\":\"#3a3d3f\",\"roughness\":0.7,\"metalness\":0.5}},{\"id\":\"bulb\",\"name\":\"Bulb\",\"category\":\"power\",\"materialName\":\"clear glass\",\"detail\":\"Exposed glass bulb below rim\",\"geometry\":{\"op\":\"sphere\",\"radius\":22},\"position\":[0,28,0],\"material\":{\"color\":\"#e8eef0\",\"roughness\":0.1,\"metalness\":0.1}},{\"id\":\"socket\",\"name\":\"Socket\",\"category\":\"interconnect\",\"materialName\":\"metal\",\"detail\":\"Bulb socket inside shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":14,\"radiusBottom\":14,\"depth\":30,\"radialSegments\":24},\"position\":[0,70,0],\"material\":{\"color\":\"#555555\",\"roughness\":0.5,\"metalness\":0.6}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

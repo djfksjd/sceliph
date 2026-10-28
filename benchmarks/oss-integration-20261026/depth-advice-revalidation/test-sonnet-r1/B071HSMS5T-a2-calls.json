@@ -1,0 +1,33 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Rivet Glass Bowl Pendant Lamp, Modern Textured, W/Bulb, -, Chrome.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 1524 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.021633199999999998,
+   "durationMs": 13439,
+   "isError": false
+  },
+  {
+   "round": 1,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0259932,
+   "durationMs": 12839,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Glass Bowl Pendant Lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"brushed chrome\",\"detail\":\"round ceiling plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":133,\"radiusBottom\":133,\"depth\":40,\"radialSegments\":48},\"position\":[0,1504,0],\"material\":{\"color\":\"#b8babd\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"cord\",\"name\":\"Suspension cord\",\"category\":\"interconnect\",\"materialName\":\"twisted cord\",\"detail\":\"thin twisted cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-430,0],[0,430,0]],\"radius\":4},\"position\":[0,1070,0],\"material\":{\"color\":\"#8a8678\",\"roughness\":0.7,\"metalness\":0.2}},{\"id\":\"cap\",\"name\":\"Cord cap\",\"category\":\"mechanical\",\"materialName\":\"brushed chrome\",\"detail\":\"small cap above collar\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":20,\"radiusBottom\":28,\"depth\":50,\"radialSegments\":32},\"position\":[0,650,0],\"material\":{\"color\":\"#b8babd\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"collar\",\"name\":\"Socket collar\",\"category\":\"mechanical\",\"materialName\":\"brushed chrome\",\"detail\":\"collar holding shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":42,\"radiusBottom\":58,\"depth\":110,\"radialSegments\":32},\"position\":[0,570,0],\"material\":{\"color\":\"#aeb1b5\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"shade\",\"name\":\"Glass shade\",\"category\":\"enclosure\",\"materialName\":\"textured clear glass\",\"detail\":\"dome-shaped hammered glass shell\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[55,510],[130,500],[205,450],[250,340],[268,180],[268,0],[262,0],[262,180],[244,340],[199,444],[128,493],[55,503]],\"segments\":56},\"position\":[0,0,0],\"material\":{\"color\":\"#d8dde0\",\"roughness\":0.1,\"metalness\":0.1}},{\"id\":\"bulb\",\"name\":\"Filament bulb\",\"category\":\"power\",\"materialName\":\"warm glass\",\"detail\":\"Edison style bulb\",\"geometry\":{\"op\":\"sphere\",\"radius\":45},\"position\":[0,400,0],\"material\":{\"color\":\"#ffcf80\",\"roughness\":0.3,\"metalness\":0}}]}}",
+   "stage": "requirements"
+  },
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Glass Bowl Pendant Lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"brushed chrome\",\"detail\":\"round ceiling plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":133,\"radiusBottom\":133,\"depth\":40,\"radialSegments\":48},\"position\":[0,1504,0],\"material\":{\"color\":\"#b8babd\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"cord\",\"name\":\"Suspension cord\",\"category\":\"interconnect\",\"materialName\":\"twisted cord\",\"detail\":\"thin twisted cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-430,0],[0,430,0]],\"radius\":4},\"position\":[0,1070,0],\"material\":{\"color\":\"#8a8678\",\"roughness\":0.7,\"metalness\":0.2}},{\"id\":\"cap\",\"name\":\"Cord cap\",\"category\":\"mechanical\",\"materialName\":\"brushed chrome\",\"detail\":\"small cap above collar\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":20,\"radiusBottom\":28,\"depth\":50,\"radialSegments\":32},\"position\":[0,650,0],\"material\":{\"color\":\"#b8babd\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"collar\",\"name\":\"Socket collar\",\"category\":\"mechanical\",\"materialName\":\"brushed chrome\",\"detail\":\"collar holding shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":42,\"radiusBottom\":58,\"depth\":110,\"radialSegments\":32},\"position\":[0,570,0],\"material\":{\"color\":\"#aeb1b5\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"shade\",\"name\":\"Glass shade\",\"category\":\"enclosure\",\"materialName\":\"textured clear glass\",\"detail\":\"dome-shaped hammered glass shell\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,510],[55,510],[130,500],[205,450],[250,340],[268,180],[268,0],[262,0],[262,180],[244,340],[199,444],[128,493],[55,503],[0,503]],\"segments\":56},\"position\":[0,0,0],\"material\":{\"color\":\"#d8dde0\",\"roughness\":0.1,\"metalness\":0.1}},{\"id\":\"bulb\",\"name\":\"Filament bulb\",\"category\":\"power\",\"materialName\":\"warm glass\",\"detail\":\"Edison style bulb\",\"geometry\":{\"op\":\"sphere\",\"radius\":45},\"position\":[0,400,0],\"material\":{\"color\":\"#ffcf80\",\"roughness\":0.3,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

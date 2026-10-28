@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Rivet Mid-Century Modern Curved Brass Table Desk Lamp With LED Light Bulb - ches, Brass and Walnut.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 551 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0201632,
+   "durationMs": 12876,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Mid-century brass table lamp with drum shade\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Walnut base\",\"category\":\"enclosure\",\"materialName\":\"walnut wood\",\"detail\":\"Tapered walnut disc base\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[100,0],[104,10],[96,28],[60,42],[0,44]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#3e2218\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"stem\",\"name\":\"Brass flared stem\",\"category\":\"mechanical\",\"materialName\":\"brushed brass\",\"detail\":\"Trumpet-flared brass column\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[52,0],[50,8],[28,24],[16,60],[11,140],[10,268],[0,268]],\"segments\":48},\"position\":[0,43,0],\"material\":{\"color\":\"#b08a3e\",\"roughness\":0.35,\"metalness\":0.9}},{\"id\":\"rod\",\"name\":\"Black neck rod\",\"category\":\"mechanical\",\"materialName\":\"black metal\",\"detail\":\"Thin black rod up to shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4,\"radiusBottom\":4,\"depth\":225,\"radialSegments\":16},\"position\":[0,423,0],\"material\":{\"color\":\"#151515\",\"roughness\":0.5,\"metalness\":0.6}},{\"id\":\"shade\",\"name\":\"Drum shade\",\"category\":\"enclosure\",\"materialName\":\"linen fabric\",\"detail\":\"Tan linen drum shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":197,\"radiusBottom\":197,\"depth\":157,\"radialSegments\":64},\"position\":[0,450,0],\"material\":{\"color\":\"#b8855a\",\"roughness\":0.95,\"metalness\":0.0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

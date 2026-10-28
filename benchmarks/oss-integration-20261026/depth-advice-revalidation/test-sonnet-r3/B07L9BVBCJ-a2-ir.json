@@ -1,0 +1,259 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "AmazonBasics 2-Tier Stackable Storage Shelf",
+ "units": "mm",
+ "components": [
+  {
+   "id": "leg_fl",
+   "name": "Front left post",
+   "category": "mechanical",
+   "materialName": "black epoxy steel",
+   "detail": "Tubular post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    -275,
+    282,
+    165
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right post",
+   "category": "mechanical",
+   "materialName": "black epoxy steel",
+   "detail": "Tubular post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    275,
+    282,
+    165
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left post",
+   "category": "mechanical",
+   "materialName": "black epoxy steel",
+   "detail": "Tubular post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    -275,
+    282,
+    -165
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right post",
+   "category": "mechanical",
+   "materialName": "black epoxy steel",
+   "detail": "Tubular post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    275,
+    282,
+    -165
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "top_panel",
+   "name": "Top shelf liner",
+   "category": "enclosure",
+   "materialName": "black liner",
+   "detail": "Flat top surface",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     550,
+     6,
+     340
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    520,
+    0
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.8,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "top_rail_f",
+   "name": "Top front wire rail",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Front frame wire",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     24,
+     6
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    508,
+    165
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "top_rail_b",
+   "name": "Top back wire rail",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Back frame wire",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     24,
+     6
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    508,
+    -165
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bottom_deck",
+   "name": "Bottom wire shelf deck",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Wire grid deck",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     550,
+     8,
+     340
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    60,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bot_rail_f",
+   "name": "Bottom front wire rail",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Front frame wire",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     24,
+     6
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    66,
+    165
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bot_rail_b",
+   "name": "Bottom back wire rail",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Back frame wire",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     24,
+     6
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    66,
+    -165
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

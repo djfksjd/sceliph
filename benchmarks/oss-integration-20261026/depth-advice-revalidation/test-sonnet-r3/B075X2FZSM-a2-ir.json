@@ -1,0 +1,153 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-century brass table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Walnut base",
+   "category": "enclosure",
+   "materialName": "walnut wood",
+   "detail": "Tapered dark walnut disc base",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      85,
+      0
+     ],
+     [
+      105,
+      18
+     ],
+     [
+      80,
+      52
+     ],
+     [
+      0,
+      52
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#4a2a1e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Brass stem",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Flared trumpet-shaped brass stem",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      50,
+      0
+     ],
+     [
+      50,
+      8
+     ],
+     [
+      30,
+      18
+     ],
+     [
+      15,
+      50
+     ],
+     [
+      9,
+      120
+     ],
+     [
+      8,
+      265
+     ],
+     [
+      0,
+      265
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    42,
+    0
+   ],
+   "material": {
+    "color": "#b08a3e",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Black rod",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Thin black neck and finial rod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 220,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    410,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "tan linen",
+   "detail": "Drum shade in tan linen, modelled as a closed solid drum",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 201,
+    "radiusBottom": 201,
+    "depth": 160,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    471,
+    0
+   ],
+   "material": {
+    "color": "#b9824f",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,292 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Tray Table Floor Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Shade",
+   "category": "enclosure",
+   "materialName": "white painted metal",
+   "detail": "Tapered drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 125,
+    "radiusBottom": 172,
+    "depth": 180,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1383,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "white painted steel",
+   "detail": "Central stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 700,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    1050,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.4,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Bulb",
+   "category": "power",
+   "materialName": "frosted glass",
+   "detail": "Light bulb under shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 16,
+    "depth": 100,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    1320,
+    0
+   ],
+   "material": {
+    "color": "#fff6dc",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "chain_l",
+   "name": "Pull chain left",
+   "category": "mechanical",
+   "materialName": "metal chain",
+   "detail": "Pull chain",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      40,
+      0
+     ],
+     [
+      0,
+      -40,
+      0
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    -35,
+    1250,
+    0
+   ],
+   "material": {
+    "color": "#d8d8d8",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "chain_r",
+   "name": "Pull chain right",
+   "category": "mechanical",
+   "materialName": "metal chain",
+   "detail": "Pull chain",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      40,
+      0
+     ],
+     [
+      0,
+      -40,
+      0
+     ]
+    ],
+    "radius": 2
+   },
+   "position": [
+    35,
+    1250,
+    0
+   ],
+   "material": {
+    "color": "#d8d8d8",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "tray",
+   "name": "Tray",
+   "category": "enclosure",
+   "materialName": "white painted metal",
+   "detail": "Shallow round tray rim",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 172,
+    "radiusBottom": 160,
+    "depth": 45,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    690,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "tray_inlay",
+   "name": "Tray wood inlay",
+   "category": "enclosure",
+   "materialName": "light wood",
+   "detail": "Wood tray surface",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 155,
+    "radiusBottom": 155,
+    "depth": 4,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    711,
+    0
+   ],
+   "material": {
+    "color": "#d9b887",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_l",
+   "name": "Leg left",
+   "category": "mechanical",
+   "materialName": "white painted steel",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      47,
+      335,
+      -12
+     ],
+     [
+      -48,
+      -335,
+      13
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    -162,
+    342,
+    47
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "leg_r",
+   "name": "Leg right",
+   "category": "mechanical",
+   "materialName": "white painted steel",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -47,
+      335,
+      -12
+     ],
+     [
+      48,
+      -335,
+      13
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    162,
+    342,
+    47
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "leg_b",
+   "name": "Leg back",
+   "category": "mechanical",
+   "materialName": "white painted steel",
+   "detail": "Splayed rear leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      335,
+      50
+     ],
+     [
+      0,
+      -335,
+      -50
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    0,
+    342,
+    -170
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  }
+ ]
+}

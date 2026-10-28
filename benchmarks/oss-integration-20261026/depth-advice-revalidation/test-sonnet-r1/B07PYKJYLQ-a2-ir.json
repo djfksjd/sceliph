@@ -1,0 +1,432 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Five-drawer chest, black",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "black woodgrain laminate",
+   "detail": "Full-height left side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     1214,
+     400
+    ],
+    "radius": 2
+   },
+   "position": [
+    -292,
+    607,
+    0
+   ],
+   "material": {
+    "color": "#38383a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "black woodgrain laminate",
+   "detail": "Full-height right side",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     1214,
+     400
+    ],
+    "radius": 2
+   },
+   "position": [
+    292,
+    607,
+    0
+   ],
+   "material": {
+    "color": "#38383a",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "black woodgrain laminate",
+   "detail": "Top slab",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     608,
+     18,
+     408
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1245,
+    0
+   ],
+   "material": {
+    "color": "#2f2f31",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "fibreboard",
+   "detail": "Thin back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     570,
+     1170,
+     8
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    640,
+    -194
+   ],
+   "material": {
+    "color": "#2b2b2d",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "base",
+   "name": "Base rail",
+   "category": "enclosure",
+   "materialName": "black woodgrain laminate",
+   "detail": "Bottom panel above recessed kick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     570,
+     18,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    50,
+    -4
+   ],
+   "material": {
+    "color": "#2f2f31",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer1",
+   "name": "Drawer front 1",
+   "category": "mechanical",
+   "materialName": "black woodgrain laminate",
+   "detail": "Top drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     566,
+     228,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1114,
+    191
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer2",
+   "name": "Drawer front 2",
+   "category": "mechanical",
+   "materialName": "black woodgrain laminate",
+   "detail": "Second drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     566,
+     228,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    882,
+    191
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer3",
+   "name": "Drawer front 3",
+   "category": "mechanical",
+   "materialName": "black woodgrain laminate",
+   "detail": "Middle drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     566,
+     228,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    650,
+    191
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer4",
+   "name": "Drawer front 4",
+   "category": "mechanical",
+   "materialName": "black woodgrain laminate",
+   "detail": "Fourth drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     566,
+     228,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    418,
+    191
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer5",
+   "name": "Drawer front 5",
+   "category": "mechanical",
+   "materialName": "black woodgrain laminate",
+   "detail": "Bottom drawer",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     566,
+     228,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    186,
+    191
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "Arched pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -35,
+      0,
+      0
+     ],
+     [
+      35,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1160,
+    206
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "Arched pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -35,
+      0,
+      0
+     ],
+     [
+      35,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    928,
+    206
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "Arched pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -35,
+      0,
+      0
+     ],
+     [
+      35,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    696,
+    206
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "Arched pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -35,
+      0,
+      0
+     ],
+     [
+      35,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    464,
+    206
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle5",
+   "name": "Handle 5",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "Arched pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -35,
+      0,
+      0
+     ],
+     [
+      35,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    232,
+    206
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

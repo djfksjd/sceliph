@@ -1,0 +1,203 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rose gold dome pendant",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "polished copper",
+   "detail": "round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 59,
+    "radiusBottom": 59,
+    "depth": 24,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    750,
+    0
+   ],
+   "material": {
+    "color": "#c27a55",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Cord",
+   "category": "interconnect",
+   "materialName": "black fabric cord",
+   "detail": "hanging cable",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      209,
+      0
+     ],
+     [
+      0,
+      -209,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    521,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Cord grip",
+   "category": "mechanical",
+   "materialName": "copper",
+   "detail": "small cap above neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 8,
+    "depth": 22,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    310,
+    0
+   ],
+   "material": {
+    "color": "#b8693f",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck",
+   "category": "mechanical",
+   "materialName": "copper",
+   "detail": "tapered neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 12,
+    "radiusBottom": 26,
+    "depth": 95,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    253,
+    0
+   ],
+   "material": {
+    "color": "#c27a55",
+    "roughness": 0.25,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Dome shade",
+   "category": "enclosure",
+   "materialName": "polished rose copper",
+   "detail": "wide cylindrical dome shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      155,
+      2
+     ],
+     [
+      160,
+      6
+     ],
+     [
+      160,
+      100
+     ],
+     [
+      150,
+      130
+     ],
+     [
+      60,
+      185
+     ],
+     [
+      25,
+      208
+     ],
+     [
+      22,
+      208
+     ],
+     [
+      57,
+      180
+     ],
+     [
+      147,
+      125
+     ],
+     [
+      155,
+      100
+     ],
+     [
+      155,
+      2
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8693f",
+    "roughness": 0.25,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "glow",
+   "name": "Inner diffuser",
+   "category": "display",
+   "materialName": "warm glow",
+   "detail": "yellow lit interior disc",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 152,
+    "radiusBottom": 152,
+    "depth": 4,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    12,
+    0
+   ],
+   "material": {
+    "color": "#f2d24a",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  }
+ ]
+}

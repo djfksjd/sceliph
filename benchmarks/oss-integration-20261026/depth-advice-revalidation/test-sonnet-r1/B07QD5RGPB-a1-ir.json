@@ -1,0 +1,324 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Three-globe vanity light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Backplate",
+   "category": "enclosure",
+   "materialName": "Dark bronze painted metal",
+   "detail": "Long rectangular mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     679,
+     126,
+     12
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    191,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "globe_l",
+   "name": "Left globe",
+   "category": "enclosure",
+   "materialName": "Opal glass",
+   "detail": "Frosted white glass globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 90
+   },
+   "position": [
+    -238,
+    92,
+    92
+   ],
+   "material": {
+    "color": "#f8e4d2",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_c",
+   "name": "Centre globe",
+   "category": "enclosure",
+   "materialName": "Opal glass",
+   "detail": "Frosted white glass globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 90
+   },
+   "position": [
+    0,
+    92,
+    92
+   ],
+   "material": {
+    "color": "#f8e4d2",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_r",
+   "name": "Right globe",
+   "category": "enclosure",
+   "materialName": "Opal glass",
+   "detail": "Frosted white glass globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 90
+   },
+   "position": [
+    238,
+    92,
+    92
+   ],
+   "material": {
+    "color": "#f8e4d2",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap_l",
+   "name": "Left cap",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Dome cap holding the globe",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      82,
+      0
+     ],
+     [
+      70,
+      18
+     ],
+     [
+      57,
+      30
+     ],
+     [
+      40,
+      40
+     ],
+     [
+      0,
+      46
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    -238,
+    136,
+    92
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "cap_c",
+   "name": "Centre cap",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Dome cap holding the globe",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      82,
+      0
+     ],
+     [
+      70,
+      18
+     ],
+     [
+      57,
+      30
+     ],
+     [
+      40,
+      40
+     ],
+     [
+      0,
+      46
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    136,
+    92
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "cap_r",
+   "name": "Right cap",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Dome cap holding the globe",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      82,
+      0
+     ],
+     [
+      70,
+      18
+     ],
+     [
+      57,
+      30
+     ],
+     [
+      40,
+      40
+     ],
+     [
+      0,
+      46
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    238,
+    136,
+    92
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "neck_l",
+   "name": "Left neck",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Arm from plate to cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 26,
+    "radiusBottom": 26,
+    "depth": 80,
+    "radialSegments": 32
+   },
+   "position": [
+    -238,
+    190,
+    50
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "neck_c",
+   "name": "Centre neck",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Arm from plate to cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 26,
+    "radiusBottom": 26,
+    "depth": 80,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    190,
+    50
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "neck_r",
+   "name": "Right neck",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Arm from plate to cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 26,
+    "radiusBottom": 26,
+    "depth": 80,
+    "radialSegments": 32
+   },
+   "position": [
+    238,
+    190,
+    50
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  }
+ ]
+}

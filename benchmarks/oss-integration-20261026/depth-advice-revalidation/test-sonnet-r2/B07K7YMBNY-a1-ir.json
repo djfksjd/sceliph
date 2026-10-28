@@ -1,0 +1,182 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Oak storage cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "Overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     22,
+     400
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    389,
+    0
+   ],
+   "material": {
+    "color": "#c18f55",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "side_l",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "Side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     378,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    -390,
+    189,
+    0
+   ],
+   "material": {
+    "color": "#c9985e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "Side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     378,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    390,
+    189,
+    0
+   ],
+   "material": {
+    "color": "#c9985e",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "Back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     350,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    200,
+    -182
+   ],
+   "material": {
+    "color": "#b78750",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "base",
+   "name": "Bottom shelf",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "Bottom board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     18,
+     360
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    50,
+    0
+   ],
+   "material": {
+    "color": "#b78750",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "flap",
+   "name": "Front flap",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "Front door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     780,
+     290,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    210,
+    195
+   ],
+   "material": {
+    "color": "#c9965a",
+    "roughness": 0.55
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Plinth strip",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "Bottom front strip",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     780,
+     50,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    25,
+    175
+   ],
+   "material": {
+    "color": "#c18f55",
+    "roughness": 0.6
+   }
+  }
+ ]
+}

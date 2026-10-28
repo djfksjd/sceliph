@@ -1,0 +1,451 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Laurel 5-Drawer Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "Whitewashed wood",
+   "detail": "Main cabinet box",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     850,
+     989,
+     430
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    694.5,
+    0
+   ],
+   "material": {
+    "color": "#cfc3ae",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top slab",
+   "category": "enclosure",
+   "materialName": "Whitewashed wood",
+   "detail": "Overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     870,
+     30,
+     450
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1204,
+    0
+   ],
+   "material": {
+    "color": "#d3c8b3",
+    "roughness": 0.75,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer1",
+   "name": "Drawer 1",
+   "category": "mechanical",
+   "materialName": "Whitewashed wood",
+   "detail": "Bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     190,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    310,
+    224
+   ],
+   "material": {
+    "color": "#d6ccb8",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer2",
+   "name": "Drawer 2",
+   "category": "mechanical",
+   "materialName": "Whitewashed wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     190,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    506,
+    224
+   ],
+   "material": {
+    "color": "#e0d8c6",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer3",
+   "name": "Drawer 3",
+   "category": "mechanical",
+   "materialName": "Whitewashed wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     190,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    702,
+    224
+   ],
+   "material": {
+    "color": "#d2c7b2",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer4",
+   "name": "Drawer 4",
+   "category": "mechanical",
+   "materialName": "Whitewashed wood",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     190,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    898,
+    224
+   ],
+   "material": {
+    "color": "#d9cfbb",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer5",
+   "name": "Drawer 5",
+   "category": "mechanical",
+   "materialName": "Whitewashed wood",
+   "detail": "Top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     190,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1094,
+    224
+   ],
+   "material": {
+    "color": "#d2c7b2",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     90,
+     8,
+     12
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    330,
+    238
+   ],
+   "material": {
+    "color": "#2e2b29",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     90,
+     8,
+     12
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    526,
+    238
+   ],
+   "material": {
+    "color": "#2e2b29",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     90,
+     8,
+     12
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    722,
+    238
+   ],
+   "material": {
+    "color": "#2e2b29",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     90,
+     8,
+     12
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    918,
+    238
+   ],
+   "material": {
+    "color": "#2e2b29",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle5",
+   "name": "Handle 5",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     90,
+     8,
+     12
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1114,
+    238
+   ],
+   "material": {
+    "color": "#2e2b29",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      100,
+      0
+     ],
+     [
+      -35,
+      -100,
+      35
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    -355,
+    100,
+    150
+   ],
+   "material": {
+    "color": "#2b2927",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      100,
+      0
+     ],
+     [
+      35,
+      -100,
+      35
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    355,
+    100,
+    150
+   ],
+   "material": {
+    "color": "#2b2927",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      100,
+      0
+     ],
+     [
+      -35,
+      -100,
+      -35
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    -355,
+    100,
+    -150
+   ],
+   "material": {
+    "color": "#2b2927",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      100,
+      0
+     ],
+     [
+      35,
+      -100,
+      -35
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    355,
+    100,
+    -150
+   ],
+   "material": {
+    "color": "#2b2927",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

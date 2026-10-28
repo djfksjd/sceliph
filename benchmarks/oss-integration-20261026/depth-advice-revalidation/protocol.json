@@ -1,0 +1,101 @@
+{
+ "guide": "You write Sceliph AssemblyIR JSON. Output exactly one JSON object and nothing else: {\"view\":{\"azimuthDeg\":number,\"elevationDeg\":number},\"assembly\":AssemblyIR}.\nAssemblyIR: {\"schema\":\"morphloom.assembly/0.1\",\"name\":string,\"units\":\"mm\",\"components\":[component,...]}\ncomponent: {\"id\":string,\"name\":string,\"category\":one of \"enclosure\",\"display\",\"logic\",\"power\",\"camera\",\"audio\",\"radio\",\"mechanical\",\"interconnect\",\"materialName\":string,\"detail\":string,\"geometry\":geometry,\"position\":[x,y,z] (optional, mm, centre of the part),\"rotation\":[rx,ry,rz] (optional, radians, XYZ Euler),\"material\":{\"color\":\"#rrggbb\",\"roughness\":0..1 (optional),\"metalness\":0..1 (optional)}}\nWorld: millimetres, Y is up, the floor is y = 0. Each geometry is centred on the component position.\ngeometry options:\n- {\"op\":\"roundedBox\",\"size\":[x,y,z],\"radius\":r}  (r at most 0.4 x the smallest size)\n- {\"op\":\"cylinder\",\"radiusTop\":r1,\"radiusBottom\":r2,\"depth\":h,\"radialSegments\":32}  (axis along Y, height h)\n- {\"op\":\"sphere\",\"radius\":r}\n- {\"op\":\"torus\",\"radius\":R,\"tube\":t}  (ring lies in the XY plane; its axis is Z; outer diameter 2(R+t); rotate it for other planes)\n- {\"op\":\"tube\",\"points\":[[x,y,z],...],\"radius\":r}  (swept circle along a smooth curve through the points, relative to the component position; a straight rod or brace needs exactly two points, otherwise the curve bends)\n- {\"op\":\"lathe\",\"profile\":[[r,y],...],\"segments\":48}  (profile radius r >= 0 at height y, relative to the component position, revolved about the vertical Y axis; for vases, lamp bases, turned legs, shades)\n- {\"op\":\"extrude\",\"points\":[[x,y],...],\"depth\":d}  (closed outline in the X-Y plane relative to the component position, extruded along Z by d and centred on it; for shaped panels, brackets, cut-out legs)\nChoose the components yourself: 2 to 16 meaningful rigid parts (top, legs, drawer fronts, shade, base, ...), each with a short unique id.\nYou are modelling the product in a catalog photograph whose background has been removed. The user states the overall height from the product listing; make the model exactly that tall and derive every other size and placement from the photo in proportion to it.\nPut the object on the floor (lowest point at y = 0) and model only the object, not the floor or background.\n\"view\" is your estimate of where the photo was taken from, relative to your own model: azimuthDeg 0 means the camera looks at the model's +Z side (from +Z toward -Z); positive azimuth moves the camera toward +X (azimuth 90 = camera on the +X side). elevationDeg is the camera height angle above the horizontal (0 = level, 90 = straight down).\nGive every component an explicit \"position\".",
+ "requests": {
+  "a1": [
+   "Catalog photo (background removed) of: {name}.",
+   "The product listing gives its overall height as {height} mm.",
+   "Decide the components yourself."
+  ],
+  "a2": [
+   "Two catalog photos (background removed) of: {name}.",
+   "The second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.",
+   "The product listing gives its overall height as {height} mm.",
+   "Decide the components yourself."
+  ]
+ },
+ "maxRounds": 3,
+ "padShare": 0.08,
+ "maxSide": 640,
+ "backgroundThreshold": 235,
+ "exclusions": {
+  "minMaskShare": 0.02,
+  "maxMaskShare": 0.9
+ },
+ "frames": {
+  "front": 0,
+  "side": 18
+ },
+ "compare": {
+  "views": 8,
+  "elevationDeg": 20,
+  "raster": 320,
+  "yawStepDeg": 5,
+  "surfaceSamples": 8000,
+  "seed": 1
+ },
+ "note": "9b test protocol. Identical to protocol-dev.json except note and preregistration; frozen after the 10-item dev pass and before any test item was run or viewed.",
+ "preregistration": {
+  "registered": "2026-10-28, before any model call on these items; analysis script and criteria fixed and checked only against the slice-9b data the rule came from",
+  "purpose": "re-validate the slice-12 side-photo rule (src/engine/depth-view-advice.ts) on items never used to derive it",
+  "selection": "benchmarks/oss-integration-20261026/depth-advice-revalidation/selection.json (seed 20261027, continued after the 55 slice-8 items with the 45 slice-9b items excluded; test 18 thin + 18 other; no ELECTRIC_FAN left in the pool)",
+  "replacements": {
+   "rule": "same as slice 9b: a colour or size variant of an earlier item (same product line and design, decided from names and mesh metadata only, before any image) is replaced by the next reserve item of the same stratum that is not itself a variant",
+   "replaced": {
+    "B0825CXG81": "B075X2FZSM (Rivet Scandinavian wood table lamp, size/colour variant of slice-9 B0825F3GBJ)",
+    "B07DBJX741": "B07QD5RGPB (Ravenna ribbed glass semi-flush, colour variant of slice-9 B07DBKYHFP; reserve B0828F9CR3 skipped as variant of slice-9b B0828FFDWG)"
+   }
+  },
+  "items": [
+   "B084L7SNDG",
+   "B07GFL9TZX",
+   "B07B7DL32H",
+   "B079X4Z6QX",
+   "B07L9BVBCJ",
+   "B07QD6TXXY",
+   "B07H8VCM68",
+   "B07GFFKRSD",
+   "B07FFWSBBF",
+   "B07B8PXSD2",
+   "B07K7YMBNY",
+   "B07GFRWK15",
+   "B07TQ8WK61",
+   "B07QV37J6B",
+   "B07PYKJYLQ",
+   "B07PNHSR4G",
+   "B07SJ75Y1M",
+   "B07QC6354F",
+   "B071HSN4ZJ",
+   "B073P3S1NX",
+   "B07374M9ZW",
+   "B07HK8NDXS",
+   "B082JHP3YC",
+   "B076V626RZ",
+   "B082XLN2ZK",
+   "B075X1KVK8",
+   "B075HR1XB1",
+   "B07HKC3S4T",
+   "B07HK86X5V",
+   "B07374SBFL",
+   "B07HKGY4F2",
+   "B075X2FZSM",
+   "B07QD5RGPB",
+   "B0825D7RYX",
+   "B071HSMS5T",
+   "B073P3HHFT"
+  ],
+  "arms": "a1 (frame 0) and a2 (frames 0 and 18), prompts and guide unchanged from slice 9b",
+  "primaryModel": "sonnet",
+  "repeats": 3,
+  "rule": "applied per item from repeat-1 a1View azimuth and stratum (thin -> thin-structure, other -> box-furniture), no scores consulted",
+  "exclusions": "protocol exclusions (mask share) and items missing an arm in any repeat are dropped, not replaced",
+  "analysis": "scripts/depth-advice-revalidation-summary.ts (footprint = max of [long, short] errors, averaged over repeats; bootstrap 10k, seed 20261027; tie band 0.005)",
+  "criteria": [
+   "V1-requested-gain: requested, median paired (a2 - a1) footprint < 0 and 95% CI upper < 0",
+   "V2-requested-sign: requested, one-sided sign test on |diff| > 0.005, p < 0.05",
+   "V3-not-requested-no-gain: not requested, median diff >= -0.01, n >= 6",
+   "V4-separation: median(requested) - median(not requested) < 0, 95% CI upper < 0, n >= 6 per group"
+  ],
+  "prediction": "V1 and V2 pass (thin items mostly frontal); V3 and V4 uncertain because fresh furniture may be shot frontally and fall into the requested group",
+  "sanityCheck": "the same script on slice-9b test data: requested n 22 diff -0.0251 [-0.0547,-0.0074], not requested n 11 diff +0.0034; V1-V4 pass (circular, the data the rule came from)"
+ }
+}

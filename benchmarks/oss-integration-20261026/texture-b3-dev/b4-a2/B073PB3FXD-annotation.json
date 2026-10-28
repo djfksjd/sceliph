@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- base: Base panel; material \"Navy fabric\"; colour #1b2461\n- wall_front: Front wall; material \"Navy fabric\"; colour #1b2461\n- wall_back: Back wall; material \"Navy fabric\"; colour #1b2461\n- wall_left: Left wall; material \"Navy fabric\"; colour #1b2461\n- wall_right: Right wall; material \"Navy fabric\"; colour #1b2461\n- rim_top: Top rim front; material \"Navy fabric\"; colour #1b2461\n- handle_front: Front handle; material \"Navy fabric strap\"; colour #1b2461\n- handle_side: Side handle; material \"Navy fabric strap\"; colour #1b2461\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"base\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[4,4]},{\"id\":\"wall_front\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[4,4]},{\"id\":\"wall_back\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[4,4]},{\"id\":\"wall_left\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[4,4]},{\"id\":\"wall_right\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[4,4]},{\"id\":\"rim_top\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[4,4]},{\"id\":\"handle_front\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[3,2]},{\"id\":\"handle_side\",\"surface\":\"fabric\",\"albedoVariation\":0.1,\"textureScale\":[3,2]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0086313,
+  "durationMs": 3630,
+  "isError": false
+ }
+}

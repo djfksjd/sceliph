@@ -1,0 +1,496 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "5-Globe Pendant Chandelier",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Canopy",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 163,
+    "radiusBottom": 163,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1209,
+    0
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "cord0",
+   "name": "Cord 0",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      502.5,
+      0
+     ],
+     [
+      0,
+      -502.5,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    696.5,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8,
+    "surface": "fabric",
+    "textureScale": [
+     1,
+     6
+    ]
+   }
+  },
+  {
+   "id": "cord1",
+   "name": "Cord 1",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      283.5,
+      0
+     ],
+     [
+      0,
+      -283.5,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    115,
+    915.5,
+    83
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8,
+    "surface": "fabric",
+    "textureScale": [
+     1,
+     6
+    ]
+   }
+  },
+  {
+   "id": "cord2",
+   "name": "Cord 2",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      390,
+      0
+     ],
+     [
+      0,
+      -390,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    87,
+    809,
+    115
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8,
+    "surface": "fabric",
+    "textureScale": [
+     1,
+     6
+    ]
+   }
+  },
+  {
+   "id": "cord3",
+   "name": "Cord 3",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      354.5,
+      0
+     ],
+     [
+      0,
+      -354.5,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    -100,
+    844.5,
+    -100
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8,
+    "surface": "fabric",
+    "textureScale": [
+     1,
+     6
+    ]
+   }
+  },
+  {
+   "id": "cord4",
+   "name": "Cord 4",
+   "category": "interconnect",
+   "materialName": "black cord",
+   "detail": "suspension cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      314,
+      0
+     ],
+     [
+      0,
+      -314,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    -59,
+    885,
+    -70
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8,
+    "surface": "fabric",
+    "textureScale": [
+     1,
+     6
+    ]
+   }
+  },
+  {
+   "id": "globe0",
+   "name": "Globe 0",
+   "category": "display",
+   "materialName": "frosted glass",
+   "detail": "opal globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    0,
+    102,
+    0
+   ],
+   "material": {
+    "color": "#f7ecd2",
+    "roughness": 0.3,
+    "metalness": 0,
+    "surface": "ceramic-glass",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "globe1",
+   "name": "Globe 1",
+   "category": "display",
+   "materialName": "frosted glass",
+   "detail": "opal globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    115,
+    540,
+    83
+   ],
+   "material": {
+    "color": "#f7ecd2",
+    "roughness": 0.3,
+    "metalness": 0,
+    "surface": "ceramic-glass",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "globe2",
+   "name": "Globe 2",
+   "category": "display",
+   "materialName": "frosted glass",
+   "detail": "opal globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    87,
+    327,
+    115
+   ],
+   "material": {
+    "color": "#f7ecd2",
+    "roughness": 0.3,
+    "metalness": 0,
+    "surface": "ceramic-glass",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "globe3",
+   "name": "Globe 3",
+   "category": "display",
+   "materialName": "frosted glass",
+   "detail": "opal globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    -100,
+    398,
+    -100
+   ],
+   "material": {
+    "color": "#f7ecd2",
+    "roughness": 0.3,
+    "metalness": 0,
+    "surface": "ceramic-glass",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "globe4",
+   "name": "Globe 4",
+   "category": "display",
+   "materialName": "frosted glass",
+   "detail": "opal globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    -59,
+    479,
+    -70
+   ],
+   "material": {
+    "color": "#f7ecd2",
+    "roughness": 0.3,
+    "metalness": 0,
+    "surface": "ceramic-glass",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "cap0",
+   "name": "Cap 0",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 45,
+    "depth": 24,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    190,
+    0
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "cap1",
+   "name": "Cap 1",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 45,
+    "depth": 24,
+    "radialSegments": 32
+   },
+   "position": [
+    115,
+    628,
+    83
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "cap2",
+   "name": "Cap 2",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 45,
+    "depth": 24,
+    "radialSegments": 32
+   },
+   "position": [
+    87,
+    415,
+    115
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "cap3",
+   "name": "Cap 3",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 45,
+    "depth": 24,
+    "radialSegments": 32
+   },
+   "position": [
+    -100,
+    486,
+    -100
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "cap4",
+   "name": "Cap 4",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "socket cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 45,
+    "depth": 24,
+    "radialSegments": 32
+   },
+   "position": [
+    -59,
+    567,
+    -70
+   ],
+   "material": {
+    "color": "#1c1a19",
+    "roughness": 0.5,
+    "metalness": 0.6,
+    "surface": "coated-metal",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  }
+ ]
+}

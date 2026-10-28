@@ -1,0 +1,240 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Shelf floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "fabric",
+   "detail": "Off-white drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 197,
+    "radiusBottom": 197,
+    "depth": 310,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1394,
+    0
+   ],
+   "material": {
+    "color": "#f2ead8",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "topframe",
+   "name": "Top frame",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Top support frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     250,
+     14,
+     220
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    1228,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legfl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      47.5,
+      610,
+      40
+     ],
+     [
+      -47.5,
+      -610,
+      -40
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    -167.5,
+    610,
+    150
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legfr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -47.5,
+      610,
+      40
+     ],
+     [
+      47.5,
+      -610,
+      -40
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    167.5,
+    610,
+    150
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legbl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      47.5,
+      610,
+      -40
+     ],
+     [
+      -47.5,
+      -610,
+      40
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    -167.5,
+    610,
+    -150
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legbr",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -47.5,
+      610,
+      -40
+     ],
+     [
+      47.5,
+      -610,
+      40
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    167.5,
+    610,
+    -150
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shelf_up",
+   "name": "Upper shelf",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Upper shelf panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     340,
+     10,
+     290
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    800,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "shelf_low",
+   "name": "Lower shelf",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Lower shelf panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     390,
+     10,
+     330
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    460,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Concrete cubic wall sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "backplate",
+   "name": "Black back plate",
+   "category": "enclosure",
+   "materialName": "powder-coated metal",
+   "detail": "Black wall mounting base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     122,
+     121,
+     32
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    60.5,
+    -57.5
+   ],
+   "material": {
+    "color": "#2a2a2b",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "concrete",
+   "name": "Concrete cube body",
+   "category": "enclosure",
+   "materialName": "concrete",
+   "detail": "Cubic concrete housing with light-grey speckled finish",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     112,
+     115
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    60,
+    16
+   ],
+   "material": {
+    "color": "#b5aca2",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  }
+ ]
+}

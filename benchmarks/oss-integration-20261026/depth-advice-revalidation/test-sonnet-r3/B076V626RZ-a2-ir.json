@@ -1,0 +1,248 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Walters desk lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "enclosure",
+   "materialName": "bronze metal",
+   "detail": "round base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 82,
+    "radiusBottom": 91,
+    "depth": 25,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    12.5,
+    0
+   ],
+   "material": {
+    "color": "#4a3328",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "ball",
+   "name": "Ball",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "ball at pole foot",
+   "geometry": {
+    "op": "sphere",
+    "radius": 9
+   },
+   "position": [
+    0,
+    38,
+    0
+   ],
+   "material": {
+    "color": "#4a3328",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "vertical rod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4.5,
+    "radiusBottom": 4.5,
+    "depth": 375,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    222,
+    0
+   ],
+   "material": {
+    "color": "#40291f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "joint",
+   "name": "Pivot joint",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "pivot knuckle",
+   "geometry": {
+    "op": "sphere",
+    "radius": 10
+   },
+   "position": [
+    0,
+    408,
+    0
+   ],
+   "material": {
+    "color": "#40291f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Curved arm",
+   "category": "mechanical",
+   "materialName": "bronze metal",
+   "detail": "gooseneck arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      408,
+      0
+     ],
+     [
+      4,
+      468,
+      10
+     ],
+     [
+      30,
+      498,
+      50
+     ],
+     [
+      60,
+      478,
+      100
+     ],
+     [
+      84,
+      435,
+      142
+     ]
+    ],
+    "radius": 4.5
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#40291f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Socket",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "brass lamp socket",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 22,
+    "radiusBottom": 24,
+    "depth": 65,
+    "radialSegments": 32
+   },
+   "position": [
+    84,
+    395,
+    142
+   ],
+   "material": {
+    "color": "#a98339",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Collar",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "shade holder ring",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 32,
+    "depth": 8,
+    "radialSegments": 32
+   },
+   "position": [
+    84,
+    360,
+    142
+   ],
+   "material": {
+    "color": "#b08d42",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Shade",
+   "category": "mechanical",
+   "materialName": "blue enamel",
+   "detail": "dome shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -50
+     ],
+     [
+      92,
+      -50
+     ],
+     [
+      90,
+      -44
+     ],
+     [
+      80,
+      -22
+     ],
+     [
+      58,
+      6
+     ],
+     [
+      32,
+      32
+     ],
+     [
+      20,
+      46
+     ],
+     [
+      0,
+      50
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    92,
+    300,
+    148
+   ],
+   "material": {
+    "color": "#2a3a74",
+    "roughness": 0.25,
+    "metalness": 0.3
+   }
+  }
+ ]
+}

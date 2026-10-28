@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand - Movian Natura Chest of Drawers, Grey.\nThe product listing gives its overall height as 795 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.022189200000000003,
+   "durationMs": 14645,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-30,\"elevationDeg\":12},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Six drawer chest\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Top panel\",\"category\":\"enclosure\",\"materialName\":\"black wood grain laminate\",\"detail\":\"20 mm top overhanging the carcass\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1400,20,410],\"radius\":3},\"position\":[0,785,0],\"material\":{\"color\":\"#1c1c1d\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"body\",\"name\":\"Carcass\",\"category\":\"enclosure\",\"materialName\":\"black wood grain laminate\",\"detail\":\"Main carcass body with sides and back\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1380,735,390],\"radius\":2},\"position\":[0,407.5,0],\"material\":{\"color\":\"#18181a\",\"roughness\":0.65,\"metalness\":0}},{\"id\":\"plinth\",\"name\":\"Plinth\",\"category\":\"enclosure\",\"materialName\":\"black laminate\",\"detail\":\"Recessed base plinth\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1340,40,360],\"radius\":2},\"position\":[0,20,-5],\"material\":{\"color\":\"#101011\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"d_l1\",\"name\":\"Drawer top left\",\"category\":\"mechanical\",\"materialName\":\"black wood grain laminate\",\"detail\":\"Drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[683,232,16],\"radius\":3},\"position\":[-343,637,197],\"material\":{\"color\":\"#202022\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"d_r1\",\"name\":\"Drawer top right\",\"category\":\"mechanical\",\"materialName\":\"black wood grain laminate\",\"detail\":\"Drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[683,232,16],\"radius\":3},\"position\":[343,637,197],\"material\":{\"color\":\"#202022\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"d_l2\",\"name\":\"Drawer middle left\",\"category\":\"mechanical\",\"materialName\":\"black wood grain laminate\",\"detail\":\"Drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[683,232,16],\"radius\":3},\"position\":[-343,399,197],\"material\":{\"color\":\"#202022\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"d_r2\",\"name\":\"Drawer middle right\",\"category\":\"mechanical\",\"materialName\":\"black wood grain laminate\",\"detail\":\"Drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[683,232,16],\"radius\":3},\"position\":[343,399,197],\"material\":{\"color\":\"#202022\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"d_l3\",\"name\":\"Drawer bottom left\",\"category\":\"mechanical\",\"materialName\":\"black wood grain laminate\",\"detail\":\"Drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[683,232,16],\"radius\":3},\"position\":[-343,161,197],\"material\":{\"color\":\"#202022\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"d_r3\",\"name\":\"Drawer bottom right\",\"category\":\"mechanical\",\"materialName\":\"black wood grain laminate\",\"detail\":\"Drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[683,232,16],\"radius\":3},\"position\":[343,161,197],\"material\":{\"color\":\"#202022\",\"roughness\":0.6,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

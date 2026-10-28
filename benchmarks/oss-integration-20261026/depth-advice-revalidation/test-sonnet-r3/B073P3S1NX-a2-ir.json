@@ -1,0 +1,229 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Four-tier shelf floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base shelf",
+   "category": "enclosure",
+   "materialName": "walnut wood",
+   "detail": "bottom shelf board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     380,
+     35,
+     380
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    17.5,
+    0
+   ],
+   "material": {
+    "color": "#5a3524",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "shelf1",
+   "name": "Lower shelf",
+   "category": "enclosure",
+   "materialName": "walnut wood",
+   "detail": "middle shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     350,
+     22,
+     350
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    456,
+    0
+   ],
+   "material": {
+    "color": "#5a3524",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "shelf2",
+   "name": "Upper shelf",
+   "category": "enclosure",
+   "materialName": "walnut wood",
+   "detail": "top shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     350,
+     22,
+     350
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    853,
+    0
+   ],
+   "material": {
+    "color": "#5a3524",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "pole1",
+   "name": "Pole front left",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "corner post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 1190,
+    "radialSegments": 24
+   },
+   "position": [
+    -170,
+    608,
+    170
+   ],
+   "material": {
+    "color": "#a88a4a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "pole2",
+   "name": "Pole front right",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "corner post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 1190,
+    "radialSegments": 24
+   },
+   "position": [
+    170,
+    608,
+    170
+   ],
+   "material": {
+    "color": "#a88a4a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "pole3",
+   "name": "Pole back left",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "corner post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 1190,
+    "radialSegments": 24
+   },
+   "position": [
+    -170,
+    608,
+    -170
+   ],
+   "material": {
+    "color": "#a88a4a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "pole4",
+   "name": "Pole back right",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "corner post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 1190,
+    "radialSegments": 24
+   },
+   "position": [
+    170,
+    608,
+    -170
+   ],
+   "material": {
+    "color": "#a88a4a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Lamp socket",
+   "category": "power",
+   "materialName": "brass",
+   "detail": "socket housing under shade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     40,
+     60
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    1190,
+    0
+   ],
+   "material": {
+    "color": "#8a6f3a",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Linen shade",
+   "category": "enclosure",
+   "materialName": "burlap fabric",
+   "detail": "square drum shade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     390,
+     362,
+     390
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    1394,
+    0
+   ],
+   "material": {
+    "color": "#dcb98a",
+    "roughness": 0.95
+   }
+  }
+ ]
+}

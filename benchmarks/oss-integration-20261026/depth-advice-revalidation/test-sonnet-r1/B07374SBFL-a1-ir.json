@@ -1,0 +1,129 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Arc Floor Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round weighted base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 112,
+    "radiusBottom": 120,
+    "depth": 34,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    17,
+    0
+   ],
+   "material": {
+    "color": "#8d8a80",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "lowpole",
+   "name": "Lower pole",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Thick lower tube",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 11,
+    "radiusBottom": 11,
+    "depth": 1040,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    554,
+    0
+   ],
+   "material": {
+    "color": "#8a877c",
+    "roughness": 0.45,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "uprod",
+   "name": "Upper rod and arm",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "Thin rod curving over to the shade",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      1070,
+      0
+     ],
+     [
+      0,
+      1300,
+      0
+     ],
+     [
+      0,
+      1420,
+      0
+     ],
+     [
+      15,
+      1478,
+      0
+     ],
+     [
+      55,
+      1493,
+      0
+     ],
+     [
+      103,
+      1470,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#a5a398",
+    "roughness": 0.3,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Dome shade",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Domed metal shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 100
+   },
+   "position": [
+    103,
+    1380,
+    0
+   ],
+   "material": {
+    "color": "#7f7c6c",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

@@ -1,0 +1,261 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "4 Drawer Chest Black",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plinth",
+   "name": "Plinth",
+   "category": "enclosure",
+   "materialName": "black board",
+   "detail": "recessed base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     730,
+     40,
+     360
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    20,
+    0
+   ],
+   "material": {
+    "color": "#0c0c0d",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "black laminate",
+   "detail": "main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     770,
+     680,
+     380
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    380,
+    0
+   ],
+   "material": {
+    "color": "#101012",
+    "roughness": 0.4
+   }
+  },
+  {
+   "id": "drawer1",
+   "name": "Drawer 1",
+   "category": "mechanical",
+   "materialName": "high gloss black",
+   "detail": "top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     750,
+     160,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    632,
+    199
+   ],
+   "material": {
+    "color": "#0e0e10",
+    "roughness": 0.15
+   }
+  },
+  {
+   "id": "drawer2",
+   "name": "Drawer 2",
+   "category": "mechanical",
+   "materialName": "high gloss black",
+   "detail": "second drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     750,
+     160,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    467,
+    199
+   ],
+   "material": {
+    "color": "#0e0e10",
+    "roughness": 0.15
+   }
+  },
+  {
+   "id": "drawer3",
+   "name": "Drawer 3",
+   "category": "mechanical",
+   "materialName": "high gloss black",
+   "detail": "third drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     750,
+     160,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    302,
+    199
+   ],
+   "material": {
+    "color": "#0e0e10",
+    "roughness": 0.15
+   }
+  },
+  {
+   "id": "drawer4",
+   "name": "Drawer 4",
+   "category": "mechanical",
+   "materialName": "high gloss black",
+   "detail": "bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     750,
+     160,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    137,
+    199
+   ],
+   "material": {
+    "color": "#0e0e10",
+    "roughness": 0.15
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "brushed silver",
+   "detail": "curved handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     14,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    632,
+    215
+   ],
+   "material": {
+    "color": "#d4d4d6",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "brushed silver",
+   "detail": "curved handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     14,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    467,
+    215
+   ],
+   "material": {
+    "color": "#d4d4d6",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "brushed silver",
+   "detail": "curved handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     14,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    302,
+    215
+   ],
+   "material": {
+    "color": "#d4d4d6",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "brushed silver",
+   "detail": "curved handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     14,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    137,
+    215
+   ],
+   "material": {
+    "color": "#d4d4d6",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

@@ -1,0 +1,422 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Five drawer chest",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Charcoal wood grain laminate",
+   "detail": "20 mm side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     1234,
+     400
+    ],
+    "radius": 2
+   },
+   "position": [
+    -290,
+    617,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Charcoal wood grain laminate",
+   "detail": "20 mm side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     1234,
+     400
+    ],
+    "radius": 2
+   },
+   "position": [
+    290,
+    617,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "Charcoal wood grain laminate",
+   "detail": "Slightly overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     620,
+     20,
+     410
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1244,
+    3
+   ],
+   "material": {
+    "color": "#38383a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass core",
+   "category": "enclosure",
+   "materialName": "Dark laminate",
+   "detail": "Interior body behind drawer fronts",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     1194,
+     370
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    637,
+    -5
+   ],
+   "material": {
+    "color": "#2c2c2e",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "drawer1",
+   "name": "Drawer front 1",
+   "category": "mechanical",
+   "materialName": "Charcoal wood grain laminate",
+   "detail": "Top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     230,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1109,
+    196
+   ],
+   "material": {
+    "color": "#434345",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer2",
+   "name": "Drawer front 2",
+   "category": "mechanical",
+   "materialName": "Charcoal wood grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     230,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    875,
+    196
+   ],
+   "material": {
+    "color": "#434345",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer3",
+   "name": "Drawer front 3",
+   "category": "mechanical",
+   "materialName": "Charcoal wood grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     230,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    641,
+    196
+   ],
+   "material": {
+    "color": "#434345",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer4",
+   "name": "Drawer front 4",
+   "category": "mechanical",
+   "materialName": "Charcoal wood grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     230,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    407,
+    196
+   ],
+   "material": {
+    "color": "#434345",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "drawer5",
+   "name": "Drawer front 5",
+   "category": "mechanical",
+   "materialName": "Charcoal wood grain laminate",
+   "detail": "Bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     230,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    173,
+    196
+   ],
+   "material": {
+    "color": "#434345",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Curved pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -30,
+      0,
+      2
+     ],
+     [
+      0,
+      -5,
+      6
+     ],
+     [
+      30,
+      0,
+      2
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1159,
+    208
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Curved pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -30,
+      0,
+      2
+     ],
+     [
+      0,
+      -5,
+      6
+     ],
+     [
+      30,
+      0,
+      2
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    925,
+    208
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Curved pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -30,
+      0,
+      2
+     ],
+     [
+      0,
+      -5,
+      6
+     ],
+     [
+      30,
+      0,
+      2
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    691,
+    208
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Curved pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -30,
+      0,
+      2
+     ],
+     [
+      0,
+      -5,
+      6
+     ],
+     [
+      30,
+      0,
+      2
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    457,
+    208
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle5",
+   "name": "Handle 5",
+   "category": "mechanical",
+   "materialName": "Dark metal",
+   "detail": "Curved pull",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -30,
+      0,
+      2
+     ],
+     [
+      0,
+      -5,
+      6
+     ],
+     [
+      30,
+      0,
+      2
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    223,
+    208
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

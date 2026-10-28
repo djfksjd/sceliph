@@ -1,0 +1,353 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "2-Tier Wire Storage Shelf",
+ "units": "mm",
+ "components": [
+  {
+   "id": "post_fl",
+   "name": "Front left post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "vertical post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    -298,
+    282,
+    168
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "post_fr",
+   "name": "Front right post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "vertical post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    298,
+    282,
+    168
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "post_bl",
+   "name": "Back left post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "vertical post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    -298,
+    282,
+    -168
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "post_br",
+   "name": "Back right post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "vertical post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    298,
+    282,
+    -168
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "top_panel",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "black liner",
+   "detail": "solid top shelf panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     596,
+     8,
+     342
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    550,
+    0
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.8,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "top_rail_f",
+   "name": "Top front rail",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "wire frame rim",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -298,
+      0,
+      0
+     ],
+     [
+      298,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    534,
+    168
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "top_rail_b",
+   "name": "Top back rail",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "wire frame rim",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -298,
+      0,
+      0
+     ],
+     [
+      298,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    534,
+    -168
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bottom_grid",
+   "name": "Bottom wire shelf",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "wire grid shelf surface",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     590,
+     4,
+     336
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    52,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bot_rail_f",
+   "name": "Bottom front rail",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "wire frame rim",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -298,
+      0,
+      0
+     ],
+     [
+      298,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    58,
+    168
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bot_rail_b",
+   "name": "Bottom back rail",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "wire frame rim",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -298,
+      0,
+      0
+     ],
+     [
+      298,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    58,
+    -168
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bot_rail_l",
+   "name": "Bottom left rail",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "wire frame rim",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -168
+     ],
+     [
+      0,
+      0,
+      168
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    -298,
+    58,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bot_rail_r",
+   "name": "Bottom right rail",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "wire frame rim",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -168
+     ],
+     [
+      0,
+      0,
+      168
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    298,
+    58,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

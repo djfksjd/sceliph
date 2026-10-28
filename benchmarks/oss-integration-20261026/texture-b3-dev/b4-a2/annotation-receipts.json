@@ -1,0 +1,68 @@
+{
+ "schema": "sceliph.material-annotation/0.1",
+ "model": "sonnet",
+ "guide": "You annotate the materials of a 3D model of the product in the photo. The geometry and base colours are fixed; you only describe surface appearance.\nOutput exactly one JSON object and nothing else: {\"components\":[{\"id\":string,\"surface\":finish,\"albedoVariation\":number,\"textureScale\":[u,v]}, ...]} with one entry per listed component id.\nfinish: one of \"raw\", \"concrete\", \"asphalt\", \"plaster\", \"stone\", \"coated-metal\", \"brushed-metal\", \"bead-blasted-metal\", \"anodized-metal\", \"polished-metal\", \"machined-copper\", \"ceramic-glass\", \"optical-glass\", \"sapphire\", \"pcb-soldermask\", \"molded-polymer\", \"soft-touch-polymer\", \"rubber\", \"leather\", \"wood\", \"skin\", \"fabric\", \"hex-knit\", \"hair\", \"semiconductor\".\nalbedoVariation (0 to 0.5): how much visible colour pattern the part shows in the photo. 0 = a uniform colour (painted MDF, lacquer, plain plastic, smooth metal). 0.1-0.2 = subtle (fine weave, light grain). 0.25-0.4 = clear (wood grain, knots, plank lines, marble veining, visible weave). Judge from the photo, not from the material name.\ntextureScale [u,v]: pattern repeats across one face, 1 to 6; small numbers for large features such as planks or veins, larger for fine weave.\nParts that are not visible in the photo: keep the finish implied by the material and use 0 unless the visible parts of the same material show a pattern.",
+ "totalCostUsd": 0.0982,
+ "receipts": [
+  {
+   "modelId": "B07GFLG5MM",
+   "varied": 8,
+   "components": 13,
+   "costUsd": 0.012615999999999999
+  },
+  {
+   "modelId": "B07GFFQZRQ",
+   "varied": 1,
+   "components": 7,
+   "costUsd": 0.0080693
+  },
+  {
+   "modelId": "B075YZ16V7",
+   "varied": 7,
+   "components": 15,
+   "costUsd": 0.0113873
+  },
+  {
+   "modelId": "B082XCPNH5",
+   "varied": 8,
+   "components": 9,
+   "costUsd": 0.0084293
+  },
+  {
+   "modelId": "B07B4SB2D9",
+   "varied": 1,
+   "components": 9,
+   "costUsd": 0.0077733
+  },
+  {
+   "modelId": "B07374P5NP",
+   "varied": 0,
+   "components": 16,
+   "costUsd": 0.0116493
+  },
+  {
+   "modelId": "B07TY5GXBQ",
+   "varied": 3,
+   "components": 6,
+   "costUsd": 0.0067893
+  },
+  {
+   "modelId": "B073PB3FXD",
+   "varied": 8,
+   "components": 8,
+   "costUsd": 0.0086313
+  },
+  {
+   "modelId": "B075Z96L53",
+   "varied": 15,
+   "components": 15,
+   "costUsd": 0.0125253
+  },
+  {
+   "modelId": "B07B78G1BW",
+   "varied": 12,
+   "components": 12,
+   "costUsd": 0.010283299999999999
+  }
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Scandinavian Wall Sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Wall plate",
+   "category": "mechanical",
+   "materialName": "matte white metal",
+   "detail": "Round wall mounting plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 32,
+    "radiusBottom": 32,
+    "depth": 3,
+    "radialSegments": 48
+   },
+   "position": [
+    11,
+    173,
+    1.5
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.7,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Wood cap",
+   "category": "mechanical",
+   "materialName": "oak wood",
+   "detail": "Wooden top cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 15,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    195,
+    14
+   ],
+   "material": {
+    "color": "#c9a470",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck",
+   "category": "mechanical",
+   "materialName": "matte white metal",
+   "detail": "Neck between cap and shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 9,
+    "depth": 24,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    180,
+    14
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Shade",
+   "category": "enclosure",
+   "materialName": "matte white metal",
+   "detail": "Dome shade tilted toward viewer, open end forward",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      30
+     ],
+     [
+      10,
+      29
+     ],
+     [
+      20,
+      22
+     ],
+     [
+      29,
+      8
+     ],
+     [
+      34,
+      -12
+     ],
+     [
+      35,
+      -30
+     ],
+     [
+      33,
+      -30
+     ],
+     [
+      32,
+      -12
+     ],
+     [
+      27,
+      8
+     ],
+     [
+      18,
+      22
+     ],
+     [
+      8,
+      27
+     ],
+     [
+      0,
+      27
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    145,
+    42
+   ],
+   "rotation": [
+    -1,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.65,
+    "metalness": 0.05
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Bulb",
+   "category": "power",
+   "materialName": "frosted glass",
+   "detail": "Light bulb inside shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 12
+   },
+   "position": [
+    0,
+    138,
+    56
+   ],
+   "material": {
+    "color": "#fafafa",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Cord",
+   "category": "interconnect",
+   "materialName": "clear PVC",
+   "detail": "Looped power cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      104,
+      68
+     ],
+     [
+      4,
+      85,
+      70
+     ],
+     [
+      12,
+      60,
+      72
+     ],
+     [
+      0,
+      40,
+      74
+     ],
+     [
+      -20,
+      30,
+      72
+     ],
+     [
+      -18,
+      15,
+      72
+     ],
+     [
+      0,
+      10,
+      72
+     ],
+     [
+      15,
+      8,
+      72
+     ],
+     [
+      17,
+      8,
+      72
+     ]
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#bdbdbd",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "plug",
+   "name": "Plug",
+   "category": "interconnect",
+   "materialName": "plastic",
+   "detail": "Two-prong plug",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     6,
+     10,
+     3
+    ],
+    "radius": 1
+   },
+   "position": [
+    17,
+    5,
+    72
+   ],
+   "material": {
+    "color": "#c8c8c8",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  }
+ ]
+}

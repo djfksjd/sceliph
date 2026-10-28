@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Marca Amazon - Movian Indre Modern - Escritorio con 1 cajón.\nThe product listing gives its overall height as 730 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0128892,
+   "durationMs": 6699,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-30,\"elevationDeg\":18},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Desk with 1 drawer\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Desktop\",\"category\":\"enclosure\",\"materialName\":\"white laminated particleboard\",\"detail\":\"Thick rectangular desktop slightly overhanging the sides\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1100,25,550],\"radius\":3},\"position\":[0,717.5,0],\"material\":{\"color\":\"#f0f1f2\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"left_side\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"white laminated particleboard\",\"detail\":\"Full-depth vertical side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,705,500],\"radius\":2},\"position\":[-515,352.5,0],\"material\":{\"color\":\"#eceeef\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"right_side\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"white laminated particleboard\",\"detail\":\"Full-depth vertical side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,705,500],\"radius\":2},\"position\":[515,352.5,0],\"material\":{\"color\":\"#eceeef\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"drawer_box\",\"name\":\"Drawer housing\",\"category\":\"mechanical\",\"materialName\":\"white laminated particleboard\",\"detail\":\"Drawer carcass under the top\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1012,110,470],\"radius\":3},\"position\":[0,625,-10],\"material\":{\"color\":\"#e6e8e9\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"drawer_front\",\"name\":\"Drawer front\",\"category\":\"mechanical\",\"materialName\":\"white laminated particleboard\",\"detail\":\"Flat drawer front panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1010,115,18],\"radius\":2},\"position\":[0,622,252],\"material\":{\"color\":\"#f2f3f4\",\"roughness\":0.55,\"metalness\":0}},{\"id\":\"handle\",\"name\":\"Drawer handle\",\"category\":\"mechanical\",\"materialName\":\"brushed chrome\",\"detail\":\"Slim bar handle\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[130,10,14],\"radius\":3},\"position\":[0,640,270],\"material\":{\"color\":\"#c9ced2\",\"roughness\":0.3,\"metalness\":0.9}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

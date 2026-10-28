@@ -1,0 +1,229 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet oval wall sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Wall plate",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "wall mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     168,
+     60
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    149,
+    -23
+   ],
+   "material": {
+    "color": "#8a8a88",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Vertical rod",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "vertical stem",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      315,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#9a9a98",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "arm to shade",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -8,
+      122
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    326,
+    0
+   ],
+   "material": {
+    "color": "#9a9a98",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck collar",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "collar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 26,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    305,
+    122
+   ],
+   "material": {
+    "color": "#a0a0a0",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "wood",
+   "name": "Faux wood cap",
+   "category": "enclosure",
+   "materialName": "faux wood",
+   "detail": "dome top",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      52,
+      0
+     ],
+     [
+      50,
+      30
+     ],
+     [
+      42,
+      60
+     ],
+     [
+      28,
+      78
+     ],
+     [
+      14,
+      86
+     ],
+     [
+      8,
+      92
+     ],
+     [
+      0,
+      92
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    186,
+    122
+   ],
+   "material": {
+    "color": "#7a3f2a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Gray shade",
+   "category": "enclosure",
+   "materialName": "matte gray",
+   "detail": "capsule lower",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      28,
+      1
+     ],
+     [
+      43,
+      8
+     ],
+     [
+      50,
+      20
+     ],
+     [
+      52,
+      38
+     ],
+     [
+      52,
+      123
+     ],
+     [
+      0,
+      123
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    63,
+    122
+   ],
+   "material": {
+    "color": "#c8c8c6",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Marca Amazon - Movian Indre Modern - Escritorio con 1 cajón.\nThe product listing gives its overall height as 730 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0118392,
+   "durationMs": 5641,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-30,\"elevationDeg\":18},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Desk with 1 drawer\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Desktop\",\"category\":\"enclosure\",\"materialName\":\"white melamine\",\"detail\":\"Desktop panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1100,25,550],\"radius\":2},\"position\":[0,717.5,0],\"material\":{\"color\":\"#f0f0f2\",\"roughness\":0.6}},{\"id\":\"legL\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"white melamine\",\"detail\":\"Left side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,705,500],\"radius\":2},\"position\":[-541,352.5,0],\"material\":{\"color\":\"#eeeef0\",\"roughness\":0.6}},{\"id\":\"legR\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"white melamine\",\"detail\":\"Right side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,705,500],\"radius\":2},\"position\":[541,352.5,0],\"material\":{\"color\":\"#eeeef0\",\"roughness\":0.6}},{\"id\":\"drawer\",\"name\":\"Drawer front\",\"category\":\"enclosure\",\"materialName\":\"white melamine\",\"detail\":\"Drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1064,130,18],\"radius\":2},\"position\":[0,635,255],\"material\":{\"color\":\"#f2f2f4\",\"roughness\":0.6}},{\"id\":\"back\",\"name\":\"Back rail\",\"category\":\"enclosure\",\"materialName\":\"white melamine\",\"detail\":\"Rear panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1064,130,16],\"radius\":2},\"position\":[0,635,-240],\"material\":{\"color\":\"#e8e8ea\",\"roughness\":0.6}},{\"id\":\"handle\",\"name\":\"Handle\",\"category\":\"mechanical\",\"materialName\":\"chrome\",\"detail\":\"Bar handle\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[120,10,12],\"radius\":3},\"position\":[0,665,272],\"material\":{\"color\":\"#d0d4d8\",\"roughness\":0.3,\"metalness\":0.8}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

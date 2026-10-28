@@ -1,0 +1,232 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Oval Plug-In Wall Sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade_lo",
+   "name": "White shade",
+   "category": "enclosure",
+   "materialName": "matte white glass",
+   "detail": "Capsule-shaped lower shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      62
+     ],
+     [
+      20,
+      63.5
+     ],
+     [
+      36,
+      69
+     ],
+     [
+      46,
+      79
+     ],
+     [
+      51,
+      92
+     ],
+     [
+      52,
+      114
+     ],
+     [
+      52,
+      184
+     ],
+     [
+      0,
+      184
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#c9c8c5",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade_up",
+   "name": "Wood cap",
+   "category": "enclosure",
+   "materialName": "faux wood",
+   "detail": "Domed faux wood top of shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      184
+     ],
+     [
+      52,
+      184
+     ],
+     [
+      51,
+      200
+     ],
+     [
+      47,
+      220
+     ],
+     [
+      38,
+      240
+     ],
+     [
+      25,
+      255
+     ],
+     [
+      12,
+      265
+     ],
+     [
+      7,
+      270
+     ],
+     [
+      0,
+      270
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#7a4030",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "ferrule",
+   "name": "Neck collar",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "Collar between shade and arm",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 7,
+    "depth": 22,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    281,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.3,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Bent tube arm from shade to wall, down to floor-level end",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      291,
+      0
+     ],
+     [
+      0,
+      318,
+      -5
+     ],
+     [
+      0,
+      322,
+      -40
+     ],
+     [
+      0,
+      316,
+      -110
+     ],
+     [
+      0,
+      300,
+      -123
+     ],
+     [
+      0,
+      200,
+      -123
+     ],
+     [
+      0,
+      0,
+      -123
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.3,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "plate",
+   "name": "Wall plate",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "Round wall mounting plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 42,
+    "radiusBottom": 42,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    148,
+    -146
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#a9a9a9",
+    "roughness": 0.35,
+    "metalness": 1
+   }
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Rivet Mid-Century Modern Rose Gold Dome Ceiling Pendant Chandelier Fixture, Copper Shade.\nThe product listing gives its overall height as 762 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.021246300000000003,
+   "durationMs": 16162,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":-10},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Rose Gold Dome Pendant\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Dome shade\",\"category\":\"enclosure\",\"materialName\":\"polished rose gold metal\",\"detail\":\"Lathe-turned dome shade with straight rim and conical shoulder\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,0],[158,0],[158,8],[160,100],[140,112],[30,198],[27,200],[0,200]],\"segments\":64},\"position\":[0,0,0],\"material\":{\"color\":\"#b8734f\",\"roughness\":0.25,\"metalness\":0.9}},{\"id\":\"glow\",\"name\":\"Inner glow disc\",\"category\":\"enclosure\",\"materialName\":\"warm lit interior\",\"detail\":\"Warm yellow interior seen under the rim\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":150,\"radiusBottom\":150,\"depth\":3,\"radialSegments\":48},\"position\":[0,-0.5,0],\"material\":{\"color\":\"#f2c24a\",\"roughness\":0.6,\"metalness\":0.1}},{\"id\":\"neck\",\"name\":\"Neck\",\"category\":\"mechanical\",\"materialName\":\"polished rose gold metal\",\"detail\":\"Tapered neck above shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":14,\"radiusBottom\":27,\"depth\":90,\"radialSegments\":32},\"position\":[0,240,0],\"material\":{\"color\":\"#b8734f\",\"roughness\":0.25,\"metalness\":0.9}},{\"id\":\"cap\",\"name\":\"Neck cap\",\"category\":\"mechanical\",\"materialName\":\"polished rose gold metal\",\"detail\":\"Small cap where cord enters\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":10,\"depth\":22,\"radialSegments\":24},\"position\":[0,296,0],\"material\":{\"color\":\"#c0805a\",\"roughness\":0.25,\"metalness\":0.9}},{\"id\":\"cord\",\"name\":\"Cord\",\"category\":\"interconnect\",\"materialName\":\"black fabric cord\",\"detail\":\"Straight black suspension cord\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-222,0],[0,222,0]],\"radius\":3},\"position\":[0,528,0],\"material\":{\"color\":\"#111111\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"stem\",\"name\":\"Canopy stem\",\"category\":\"mechanical\",\"materialName\":\"polished rose gold metal\",\"detail\":\"Short stem below canopy\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":8,\"radiusBottom\":8,\"depth\":30,\"radialSegments\":24},\"position\":[0,737,0],\"material\":{\"color\":\"#c0805a\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"canopy\",\"name\":\"Ceiling canopy\",\"category\":\"mechanical\",\"materialName\":\"polished rose gold metal\",\"detail\":\"Round ceiling plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":60,\"radiusBottom\":60,\"depth\":12,\"radialSegments\":48},\"position\":[0,756,0],\"material\":{\"color\":\"#b8734f\",\"roughness\":0.3,\"metalness\":0.9}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

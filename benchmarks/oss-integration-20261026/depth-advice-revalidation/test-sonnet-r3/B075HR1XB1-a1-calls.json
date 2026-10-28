@@ -1,0 +1,33 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Rivet Mid-Century Modern Oval Plug-In Light Wall Sconce - ches, Faux Wood and Nickel.\nThe product listing gives its overall height as 330 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0183045,
+   "durationMs": 13675,
+   "isError": false
+  },
+  {
+   "round": 1,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0271992,
+   "durationMs": 13942,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":2},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Mid-century oval plug-in wall sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"bottom_rod\",\"name\":\"Bottom rod\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Thin nickel rod below body\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4.5,\"radiusBottom\":4.5,\"depth\":55,\"radialSegments\":24},\"position\":[0,27.5,0],\"material\":{\"color\":\"#b9b9b6\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"body\",\"name\":\"Grey body\",\"category\":\"enclosure\",\"materialName\":\"matte grey painted\",\"detail\":\"Capsule lower body with rounded bottom\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,51],[20,53],[38,60],[50,73],[54,90],[54,178],[0,178]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#c9c8c5\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"wood_dome\",\"name\":\"Faux wood dome\",\"category\":\"enclosure\",\"materialName\":\"faux wood\",\"detail\":\"Upper domed cap\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,178],[54,178],[53,200],[48,225],[38,248],[22,262],[8,268],[0,268]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#8a4a34\",\"roughness\":0.55,\"metalness\":0}},{\"id\":\"top_rod\",\"name\":\"Top rod\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Nickel stem above dome\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4.5,\"radiusBottom\":4.5,\"depth\":56,\"radialSegments\":24},\"position\":[0,294,0],\"material\":{\"color\":\"#b9b9b6\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"hook\",\"name\":\"Hook tip\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Curved hook at the top\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-6,0],[0,2,0],[2,6,0],[4.5,3,0]],\"radius\":4.5},\"position\":[0,325,0],\"material\":{\"color\":\"#b9b9b6\",\"roughness\":0.3,\"metalness\":0.9}}]}}",
+   "stage": "requirements"
+  },
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":2},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Mid-century oval plug-in wall sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"bottom_rod\",\"name\":\"Bottom rod\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Thin nickel rod below body\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4.5,\"radiusBottom\":4.5,\"depth\":60,\"radialSegments\":24},\"position\":[0,30,0],\"material\":{\"color\":\"#b9b9b6\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"body_bottom\",\"name\":\"Grey body rounded bottom\",\"category\":\"enclosure\",\"materialName\":\"matte grey painted\",\"detail\":\"Hemispherical bottom of capsule body\",\"geometry\":{\"op\":\"sphere\",\"radius\":54},\"position\":[0,105,0],\"material\":{\"color\":\"#c9c8c5\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"body\",\"name\":\"Grey body\",\"category\":\"enclosure\",\"materialName\":\"matte grey painted\",\"detail\":\"Cylindrical capsule body\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":54,\"radiusBottom\":54,\"depth\":73,\"radialSegments\":48},\"position\":[0,141.5,0],\"material\":{\"color\":\"#c9c8c5\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"wood_band\",\"name\":\"Faux wood lower cap\",\"category\":\"enclosure\",\"materialName\":\"faux wood\",\"detail\":\"Cylindrical base of wood cap\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":54,\"radiusBottom\":54,\"depth\":22,\"radialSegments\":48},\"position\":[0,189,0],\"material\":{\"color\":\"#8a4a34\",\"roughness\":0.55,\"metalness\":0}},{\"id\":\"wood_dome\",\"name\":\"Faux wood dome\",\"category\":\"enclosure\",\"materialName\":\"faux wood\",\"detail\":\"Upper domed cap\",\"geometry\":{\"op\":\"sphere\",\"radius\":54},\"position\":[0,200,0],\"material\":{\"color\":\"#8a4a34\",\"roughness\":0.55,\"metalness\":0}},{\"id\":\"top_rod\",\"name\":\"Top rod\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Nickel stem above dome\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":4.5,\"radiusBottom\":4.5,\"depth\":71,\"radialSegments\":24},\"position\":[0,285.5,0],\"material\":{\"color\":\"#b9b9b6\",\"roughness\":0.3,\"metalness\":0.9}},{\"id\":\"hook\",\"name\":\"Hook tip\",\"category\":\"mechanical\",\"materialName\":\"nickel\",\"detail\":\"Rounded tip at the top\",\"geometry\":{\"op\":\"sphere\",\"radius\":4.5},\"position\":[0,325.5,0],\"material\":{\"color\":\"#b9b9b6\",\"roughness\":0.3,\"metalness\":0.9}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

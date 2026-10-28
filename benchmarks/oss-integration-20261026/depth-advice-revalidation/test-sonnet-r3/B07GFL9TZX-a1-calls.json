@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand - Movian Indre 1-Door Shoe Cabinet/Cupboard/Organizer with Mirror, White.\nThe product listing gives its overall height as 1790 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0085309,
+   "durationMs": 6228,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-20,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Narrow shoe cabinet with mirror\",\"units\":\"mm\",\"components\":[{\"id\":\"body\",\"name\":\"Cabinet carcass\",\"category\":\"enclosure\",\"materialName\":\"White laminated board\",\"detail\":\"Tall narrow carcass\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[500,1730,170],\"radius\":3},\"position\":[0,895,0],\"material\":{\"color\":\"#f4f4f4\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"plinth\",\"name\":\"Plinth\",\"category\":\"enclosure\",\"materialName\":\"White laminated board\",\"detail\":\"Recessed base\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[470,60,150],\"radius\":2},\"position\":[0,30,-2],\"material\":{\"color\":\"#eeeeee\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"door\",\"name\":\"Door\",\"category\":\"mechanical\",\"materialName\":\"White laminated board\",\"detail\":\"Front door panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[490,1690,18],\"radius\":3},\"position\":[0,905,88],\"material\":{\"color\":\"#f7f7f7\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"mirror\",\"name\":\"Mirror\",\"category\":\"mechanical\",\"materialName\":\"Mirror glass\",\"detail\":\"Tall mirror on door right side\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[210,1500,4],\"radius\":1},\"position\":[110,915,98],\"material\":{\"color\":\"#aeb4b8\",\"roughness\":0.05,\"metalness\":0.9}},{\"id\":\"handle\",\"name\":\"Handle\",\"category\":\"mechanical\",\"materialName\":\"Grey plastic\",\"detail\":\"Small recessed handle\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[14,80,12],\"radius\":3},\"position\":[-190,860,100],\"material\":{\"color\":\"#aaaaaa\",\"roughness\":0.4,\"metalness\":0.3}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

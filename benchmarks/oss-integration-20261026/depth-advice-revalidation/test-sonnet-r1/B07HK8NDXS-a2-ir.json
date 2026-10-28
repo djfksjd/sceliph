@@ -1,0 +1,280 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Shelf floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "white fabric",
+   "detail": "Cylindrical off-white drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 199,
+    "radiusBottom": 199,
+    "depth": 298,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1400,
+    0
+   ],
+   "material": {
+    "color": "#f1ead8",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "leg1",
+   "name": "Leg front right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Tapered splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -42,
+      620,
+      -42
+     ],
+     [
+      42,
+      -620,
+      42
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    207,
+    620,
+    207
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg2",
+   "name": "Leg front left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Tapered splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      42,
+      620,
+      -42
+     ],
+     [
+      -42,
+      -620,
+      42
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    -207,
+    620,
+    207
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg3",
+   "name": "Leg back right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Tapered splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -42,
+      620,
+      42
+     ],
+     [
+      42,
+      -620,
+      -42
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    207,
+    620,
+    -207
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg4",
+   "name": "Leg back left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Tapered splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      42,
+      620,
+      42
+     ],
+     [
+      -42,
+      -620,
+      -42
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    -207,
+    620,
+    -207
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shelf_up",
+   "name": "Upper shelf",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Flat upper shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     10,
+     400
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    780,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "shelf_low",
+   "name": "Lower shelf",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Flat lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     450,
+     10,
+     450
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    440,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bar_x",
+   "name": "Top bar X",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Top cross bar along X",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -165,
+      0,
+      0
+     ],
+     [
+      165,
+      0,
+      0
+     ]
+    ],
+    "radius": 7
+   },
+   "position": [
+    0,
+    1240,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bar_z",
+   "name": "Top bar Z",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Top cross bar along Z",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -165
+     ],
+     [
+      0,
+      0,
+      165
+     ]
+    ],
+    "radius": 7
+   },
+   "position": [
+    0,
+    1246,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

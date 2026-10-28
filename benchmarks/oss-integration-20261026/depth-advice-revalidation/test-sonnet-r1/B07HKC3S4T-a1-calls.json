@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Rivet Modern Shelving/Storage Space Floor Lamp with USB and Bulb, White.\nThe product listing gives its overall height as 1473 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.029445199999999998,
+   "durationMs": 19381,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Rivet Floor Lamp with Tray Shelf\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Drum Shade\",\"category\":\"enclosure\",\"materialName\":\"white painted metal\",\"detail\":\"Tapered drum shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":150,\"radiusBottom\":195,\"depth\":190,\"radialSegments\":48},\"position\":[0,1378,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.5,\"metalness\":0.1}},{\"id\":\"pole\",\"name\":\"Center Pole\",\"category\":\"mechanical\",\"materialName\":\"white painted steel\",\"detail\":\"Slim vertical stem\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":9,\"radiusBottom\":9,\"depth\":660,\"radialSegments\":24},\"position\":[0,970,0],\"material\":{\"color\":\"#f2f2f0\",\"roughness\":0.45,\"metalness\":0.2}},{\"id\":\"bulb\",\"name\":\"Bulb\",\"category\":\"power\",\"materialName\":\"frosted glass\",\"detail\":\"Bulb under shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":16,\"radiusBottom\":16,\"depth\":110,\"radialSegments\":24},\"position\":[0,1245,0],\"material\":{\"color\":\"#fff6dc\",\"roughness\":0.3,\"metalness\":0}},{\"id\":\"chain_l\",\"name\":\"Pull Chain Left\",\"category\":\"mechanical\",\"materialName\":\"metal chain\",\"detail\":\"Pull chain\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,40,0],[0,-40,0]],\"radius\":2},\"position\":[-45,1245,0],\"material\":{\"color\":\"#d8d8d8\",\"roughness\":0.4,\"metalness\":0.7}},{\"id\":\"chain_r\",\"name\":\"Pull Chain Right\",\"category\":\"mechanical\",\"materialName\":\"metal chain\",\"detail\":\"Pull chain\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,40,0],[0,-40,0]],\"radius\":2},\"position\":[45,1245,0],\"material\":{\"color\":\"#d8d8d8\",\"roughness\":0.4,\"metalness\":0.7}},{\"id\":\"tray\",\"name\":\"Tray Shelf\",\"category\":\"enclosure\",\"materialName\":\"white painted metal\",\"detail\":\"Shallow dish tray\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":180,\"radiusBottom\":150,\"depth\":40,\"radialSegments\":48},\"position\":[0,665,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.5,\"metalness\":0.1}},{\"id\":\"tray_wood\",\"name\":\"Wood Insert\",\"category\":\"enclosure\",\"materialName\":\"light wood\",\"detail\":\"Wood tray insert\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":165,\"radiusBottom\":165,\"depth\":4,\"radialSegments\":48},\"position\":[0,684,0],\"material\":{\"color\":\"#d9b98a\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"leg_a\",\"name\":\"Leg Front\",\"category\":\"mechanical\",\"materialName\":\"white painted steel\",\"detail\":\"Splayed leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,321,-60],[0,-321,60]],\"radius\":10},\"position\":[0,329,170],\"material\":{\"color\":\"#f2f2f0\",\"roughness\":0.45,\"metalness\":0.2}},{\"id\":\"leg_b\",\"name\":\"Leg Back Right\",\"category\":\"mechanical\",\"materialName\":\"white painted steel\",\"detail\":\"Splayed leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[-52,321,30],[52,-321,-30]],\"radius\":10},\"position\":[147,329,-85],\"material\":{\"color\":\"#f2f2f0\",\"roughness\":0.45,\"metalness\":0.2}},{\"id\":\"leg_c\",\"name\":\"Leg Back Left\",\"category\":\"mechanical\",\"materialName\":\"white painted steel\",\"detail\":\"Splayed leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[52,321,30],[-52,-321,-30]],\"radius\":10},\"position\":[-147,329,-85],\"material\":{\"color\":\"#f2f2f0\",\"roughness\":0.45,\"metalness\":0.2}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

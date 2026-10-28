@@ -15,6 +15,8 @@
  * With --strata '{"thin":["LAMP",...]}' and --quota '{"test":{"thin":24,"other":12},"reserve":{...}}'
  * the continued items fill per-stratum quotas in order (test first, then
  * reserve); "other" is every type not named in a stratum.
+ * --exclude a.json,b.json skips every item of those manifests (and repeats of
+ * their meshes), for a quota manifest that is not a prefix of the order.
  *
  * Downloads (into --data-dir, skipped when present): the 16 listings shards,
  * 3dmodels.csv.gz, spins.csv.gz, then the GLB and spin frames 0 and 18 of each
@@ -164,12 +166,14 @@ let chosen: Array<(typeof order)[number] & { split?: string }> = order.slice(0, 
 if (earlier) {
   const prefix = order.slice(0, earlier.items.length).map((item) => item.modelId);
   if (prefix.join() !== earlier.items.map((item) => item.modelId).join()) throw new Error('The rebuilt order does not start with the earlier manifest; inputs changed.');
-  const seen = new Set(prefix.map((modelId) => models.get(modelId)!.signature));
+  const excludedIds = new Set((argument('exclude')?.split(',') ?? []).flatMap((path) => (JSON.parse(readFileSync(resolve(path), 'utf8')) as { items: Array<{ modelId: string }> }).items.map((item) => item.modelId)));
+  const seen = new Set([...prefix, ...excludedIds].filter((modelId) => models.has(modelId)).map((modelId) => models.get(modelId)!.signature));
   chosen = [];
   const filled: Record<string, Record<string, number>> = {};
   const total = quota ? Object.values(quota).reduce((sum, perStratum) => sum + Object.values(perStratum).reduce((a, b) => a + b, 0), 0) : wanted;
   for (const candidate of order.slice(prefix.length)) {
     if (chosen.length === total) break;
+    if (excludedIds.has(candidate.modelId)) continue;
     const signature = models.get(candidate.modelId)!.signature;
     if (seen.has(signature)) { reject('mesh repeats an earlier item'); continue; }
     let split: string | undefined;
@@ -205,7 +209,7 @@ writeFileSync(out, `${JSON.stringify({
   license: 'CC-BY-4.0 (Amazon Berkeley Objects)',
   rules: { productTypes: PRODUCT_TYPES, maxFaces: MAX_FACES, heightAgreement: HEIGHT_AGREEMENT, spinFrames: SPIN_FRAMES, inputFrame: INPUT_FRAME, sideFrame: SIDE_FRAME, excluded: 'items and models in benchmarks/development-exposure-ledger.json; duplicate 3dmodel ids', order: 'per-type seeded Fisher–Yates (mulberry32), then round-robin over sorted types', replacement: 'a dev/test item that fails a pre-registered run-time exclusion is replaced by the next reserve item of any type' },
   seed,
-  ...(earlier ? { continuesFrom: { path: continueFrom, items: earlier.items.length } } : {}),
+  ...(earlier ? { continuesFrom: { path: continueFrom, items: earlier.items.length, ...(argument('exclude') ? { excluded: argument('exclude')!.split(',') } : {}) } } : {}),
   ...(quota ? { strata, quota } : {}),
   candidates: candidates.size,
   candidatesByType: Object.fromEntries(types.map((type) => [type, byType.get(type)!.length])),

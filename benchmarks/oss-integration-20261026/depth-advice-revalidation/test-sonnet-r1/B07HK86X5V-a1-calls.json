@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand – Rivet Mid-Century Mercury Glass Shade Indoor/Outdoor Wall Sconce Light with Bulb, Black.\nThe product listing gives its overall height as 254 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0207412,
+   "durationMs": 14007,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Mercury Glass Wall Sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"plate\",\"name\":\"Back plate\",\"category\":\"mechanical\",\"materialName\":\"matte black metal\",\"detail\":\"Square wall mounting plate\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[115,118,6],\"radius\":1.5},\"position\":[0,185,-55],\"material\":{\"color\":\"#1a1a1a\",\"roughness\":0.6,\"metalness\":0.4}},{\"id\":\"collar\",\"name\":\"Cap collar\",\"category\":\"enclosure\",\"materialName\":\"matte black metal\",\"detail\":\"Cylindrical cap lower section\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":44,\"radiusBottom\":44,\"depth\":27,\"radialSegments\":48},\"position\":[0,216.5,0],\"material\":{\"color\":\"#161616\",\"roughness\":0.55,\"metalness\":0.4}},{\"id\":\"dome\",\"name\":\"Cap dome\",\"category\":\"enclosure\",\"materialName\":\"matte black metal\",\"detail\":\"Tapered dome top of cap\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":20,\"radiusBottom\":42,\"depth\":24,\"radialSegments\":48},\"position\":[0,242,0],\"material\":{\"color\":\"#161616\",\"roughness\":0.55,\"metalness\":0.4}},{\"id\":\"glass\",\"name\":\"Glass shade\",\"category\":\"enclosure\",\"materialName\":\"clear seeded glass\",\"detail\":\"Hollow cylindrical glass shade\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[50,0],[52,0],[52,203],[50,203],[50,0]],\"segments\":64},\"position\":[0,0,0],\"material\":{\"color\":\"#dfe8ea\",\"roughness\":0.2,\"metalness\":0.0}},{\"id\":\"socket\",\"name\":\"Bulb socket\",\"category\":\"interconnect\",\"materialName\":\"black metal\",\"detail\":\"Socket inside shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":14,\"radiusBottom\":14,\"depth\":45,\"radialSegments\":24},\"position\":[0,180,0],\"material\":{\"color\":\"#111111\",\"roughness\":0.5,\"metalness\":0.3}},{\"id\":\"bulb\",\"name\":\"Edison bulb\",\"category\":\"mechanical\",\"materialName\":\"amber glass\",\"detail\":\"Teardrop filament bulb\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":14,\"radiusBottom\":29,\"depth\":100,\"radialSegments\":32},\"position\":[0,112,0],\"material\":{\"color\":\"#f5c987\",\"roughness\":0.3,\"metalness\":0.0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

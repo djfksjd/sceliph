@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand - Alkove Hayes Classic Fixed Solid Wood Dining Table, Seats 4-6, Wild Oak.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 750 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.016241000000000002,
+   "durationMs": 10807,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-30,\"elevationDeg\":20},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Oak dining table\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Table top\",\"category\":\"enclosure\",\"materialName\":\"wild oak\",\"detail\":\"Solid oak top with block-jointed strips\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1200,30,800],\"radius\":3},\"position\":[0,735,0],\"material\":{\"color\":\"#c99356\",\"roughness\":0.6}},{\"id\":\"leg_fl\",\"name\":\"Front left leg\",\"category\":\"mechanical\",\"materialName\":\"wild oak\",\"detail\":\"Square leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[70,720,70],\"radius\":3},\"position\":[-535,360,335],\"material\":{\"color\":\"#b9814a\",\"roughness\":0.65}},{\"id\":\"leg_fr\",\"name\":\"Front right leg\",\"category\":\"mechanical\",\"materialName\":\"wild oak\",\"detail\":\"Square leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[70,720,70],\"radius\":3},\"position\":[535,360,335],\"material\":{\"color\":\"#b9814a\",\"roughness\":0.65}},{\"id\":\"leg_bl\",\"name\":\"Back left leg\",\"category\":\"mechanical\",\"materialName\":\"wild oak\",\"detail\":\"Square leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[70,720,70],\"radius\":3},\"position\":[-535,360,-335],\"material\":{\"color\":\"#b9814a\",\"roughness\":0.65}},{\"id\":\"leg_br\",\"name\":\"Back right leg\",\"category\":\"mechanical\",\"materialName\":\"wild oak\",\"detail\":\"Square leg\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[70,720,70],\"radius\":3},\"position\":[535,360,-335],\"material\":{\"color\":\"#b9814a\",\"roughness\":0.65}},{\"id\":\"apron_f\",\"name\":\"Front apron\",\"category\":\"mechanical\",\"materialName\":\"wild oak\",\"detail\":\"Long apron rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1000,80,20],\"radius\":2},\"position\":[0,680,360],\"material\":{\"color\":\"#c08a52\",\"roughness\":0.65}},{\"id\":\"apron_b\",\"name\":\"Back apron\",\"category\":\"mechanical\",\"materialName\":\"wild oak\",\"detail\":\"Long apron rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1000,80,20],\"radius\":2},\"position\":[0,680,-360],\"material\":{\"color\":\"#c08a52\",\"roughness\":0.65}},{\"id\":\"apron_l\",\"name\":\"Left apron\",\"category\":\"mechanical\",\"materialName\":\"wild oak\",\"detail\":\"Short apron rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,80,660],\"radius\":2},\"position\":[-525,680,0],\"material\":{\"color\":\"#c08a52\",\"roughness\":0.65}},{\"id\":\"apron_r\",\"name\":\"Right apron\",\"category\":\"mechanical\",\"materialName\":\"wild oak\",\"detail\":\"Short apron rail\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,80,660],\"radius\":2},\"position\":[525,680,0],\"material\":{\"color\":\"#c08a52\",\"roughness\":0.65}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

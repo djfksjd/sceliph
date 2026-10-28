@@ -1,0 +1,267 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Scandinavian Wall Sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Wall plate",
+   "category": "mechanical",
+   "materialName": "matte white metal",
+   "detail": "Round wall mounting disc",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 30,
+    "depth": 3,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    171,
+    1.5
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.7,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Stem",
+   "category": "mechanical",
+   "materialName": "matte white metal",
+   "detail": "Vertical neck holding the shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 16,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    180,
+    8
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.7,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "wood_cap",
+   "name": "Wood cap",
+   "category": "mechanical",
+   "materialName": "light oak",
+   "detail": "Wooden top cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 17,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    194.5,
+    8
+   ],
+   "material": {
+    "color": "#c9a46c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Shade",
+   "category": "enclosure",
+   "materialName": "matte white metal",
+   "detail": "Bell shaped shade tilted forward and down",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      38
+     ],
+     [
+      8,
+      38
+     ],
+     [
+      14,
+      30
+     ],
+     [
+      24,
+      15
+     ],
+     [
+      30,
+      0
+     ],
+     [
+      32,
+      -30
+     ],
+     [
+      32,
+      -38
+     ],
+     [
+      29.5,
+      -38
+     ],
+     [
+      29.5,
+      -30
+     ],
+     [
+      27,
+      0
+     ],
+     [
+      20,
+      15
+     ],
+     [
+      0,
+      25
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    150,
+    40
+   ],
+   "rotation": [
+    -1,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.65,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Bulb",
+   "category": "logic",
+   "materialName": "frosted glass",
+   "detail": "Light bulb inside shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 12
+   },
+   "position": [
+    0,
+    148,
+    44
+   ],
+   "material": {
+    "color": "#f0f0ee",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cord_top",
+   "name": "Cord upper",
+   "category": "interconnect",
+   "materialName": "clear cord",
+   "detail": "Cord hanging from shade rim",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      50,
+      -4
+     ],
+     [
+      -8,
+      25,
+      0
+     ],
+     [
+      -5,
+      -5,
+      0
+     ]
+    ],
+    "radius": 0.8
+   },
+   "position": [
+    0,
+    50,
+    62
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.5,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "cord_loop",
+   "name": "Cord loop",
+   "category": "interconnect",
+   "materialName": "clear cord",
+   "detail": "Loop of excess cord",
+   "geometry": {
+    "op": "torus",
+    "radius": 24,
+    "tube": 0.8
+   },
+   "position": [
+    0,
+    32,
+    62
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.5,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "plug",
+   "name": "Plug",
+   "category": "interconnect",
+   "materialName": "white plastic",
+   "detail": "Two prong plug",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     6,
+     12,
+     3
+    ],
+    "radius": 1
+   },
+   "position": [
+    20,
+    6,
+    62
+   ],
+   "material": {
+    "color": "#d8d8d8",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

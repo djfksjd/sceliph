@@ -1,0 +1,154 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Jaxon Round Side Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "apron",
+   "name": "Tray rim",
+   "category": "enclosure",
+   "materialName": "black powder-coated metal",
+   "detail": "Round metal tray sidewall",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 196,
+    "radiusBottom": 196,
+    "depth": 110,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    618,
+    0
+   ],
+   "material": {
+    "color": "#1f2022",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "top",
+   "name": "Wood top",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Recessed wood tabletop inside the tray",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 190,
+    "radiusBottom": 190,
+    "depth": 10,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    650,
+    0
+   ],
+   "material": {
+    "color": "#a98d6c",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg1",
+   "name": "Leg front",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      280,
+      -27
+     ],
+     [
+      0,
+      -280,
+      27
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    0,
+    282,
+    145
+   ],
+   "material": {
+    "color": "#1f2022",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "leg2",
+   "name": "Leg right",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -23.4,
+      280,
+      13.5
+     ],
+     [
+      23.4,
+      -280,
+      -13.5
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    125.6,
+    282,
+    -72.5
+   ],
+   "material": {
+    "color": "#1f2022",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "leg3",
+   "name": "Leg left",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      23.4,
+      280,
+      13.5
+     ],
+     [
+      -23.4,
+      -280,
+      -13.5
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    -125.6,
+    282,
+    -72.5
+   ],
+   "material": {
+    "color": "#1f2022",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

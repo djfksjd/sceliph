@@ -1,0 +1,161 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-century brass table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Walnut base",
+   "category": "enclosure",
+   "materialName": "walnut wood",
+   "detail": "Tapered disc base",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      105,
+      0
+     ],
+     [
+      107,
+      12
+     ],
+     [
+      95,
+      30
+     ],
+     [
+      55,
+      50
+     ],
+     [
+      0,
+      50
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#4a2c20",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Brass stem",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Flared trumpet stem",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      50,
+      0
+     ],
+     [
+      50,
+      6
+     ],
+     [
+      30,
+      14
+     ],
+     [
+      15,
+      40
+     ],
+     [
+      10,
+      100
+     ],
+     [
+      9,
+      200
+     ],
+     [
+      10,
+      268
+     ],
+     [
+      0,
+      268
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    42,
+    0
+   ],
+   "material": {
+    "color": "#b08a3e",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Black rod",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Thin neck and finial rod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 5,
+    "depth": 246,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    428,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "linen fabric",
+   "detail": "Cylindrical tan linen drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 198,
+    "radiusBottom": 198,
+    "depth": 190,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    456,
+    0
+   ],
+   "material": {
+    "color": "#b87a50",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,196 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian 2-voudig modulaire boekenkast",
+ "units": "mm",
+ "components": [
+  {
+   "id": "sideL",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Oak-look MDF",
+   "detail": "Left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     594,
+     280
+    ],
+    "radius": 1
+   },
+   "position": [
+    -67,
+    297,
+    0
+   ],
+   "material": {
+    "color": "#d9aa7c",
+    "roughness": 0.7,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.35,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "sideR",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Oak-look MDF",
+   "detail": "Right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     594,
+     280
+    ],
+    "radius": 1
+   },
+   "position": [
+    67,
+    297,
+    0
+   ],
+   "material": {
+    "color": "#d9aa7c",
+    "roughness": 0.7,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "White MDF",
+   "detail": "Top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     118,
+     16,
+     280
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    586,
+    0
+   ],
+   "material": {
+    "color": "#f4f5f6",
+    "roughness": 0.5,
+    "metalness": 0,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "White MDF",
+   "detail": "Bottom panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     118,
+     16,
+     280
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    8,
+    0
+   ],
+   "material": {
+    "color": "#f4f5f6",
+    "roughness": 0.5,
+    "metalness": 0,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Middle shelf",
+   "category": "mechanical",
+   "materialName": "White MDF",
+   "detail": "Middle shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     118,
+     16,
+     270
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    297,
+    -5
+   ],
+   "material": {
+    "color": "#f4f5f6",
+    "roughness": 0.5,
+    "metalness": 0,
+    "surface": "molded-polymer",
+    "textureScale": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "Oak-look MDF",
+   "detail": "Back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     118,
+     562,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    297,
+    -137
+   ],
+   "material": {
+    "color": "#d2a273",
+    "roughness": 0.75,
+    "metalness": 0,
+    "surface": "wood",
+    "albedoVariation": 0.3,
+    "textureScale": [
+     2,
+     3
+    ]
+   }
+  }
+ ]
+}

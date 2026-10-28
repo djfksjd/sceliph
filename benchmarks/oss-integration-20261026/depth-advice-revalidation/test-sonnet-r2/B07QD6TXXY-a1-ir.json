@@ -1,0 +1,173 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Round side table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "rim",
+   "name": "Tray rim",
+   "category": "enclosure",
+   "materialName": "black powder-coated metal",
+   "detail": "Tall circular wall around the top",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      160,
+      -55
+     ],
+     [
+      165,
+      -55
+     ],
+     [
+      165,
+      55
+     ],
+     [
+      160,
+      55
+     ],
+     [
+      160,
+      -55
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    618,
+    0
+   ],
+   "material": {
+    "color": "#1f2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "top",
+   "name": "Wood top",
+   "category": "enclosure",
+   "materialName": "natural wood",
+   "detail": "Wood insert inside the rim, slightly below the rim edge",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 160,
+    "radiusBottom": 160,
+    "depth": 84,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    606,
+    0
+   ],
+   "material": {
+    "color": "#a98d68",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legA",
+   "name": "Leg left",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -113,
+      575,
+      65
+     ],
+     [
+      -147,
+      0,
+      85
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1f2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "legB",
+   "name": "Leg right",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      113,
+      575,
+      65
+     ],
+     [
+      147,
+      0,
+      85
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1f2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "legC",
+   "name": "Leg back",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      575,
+      -130
+     ],
+     [
+      0,
+      0,
+      -170
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#1f2022",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  }
+ ]
+}

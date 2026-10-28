@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Marca Amazon - Movian Indre Modern - Escritorio con 1 cajón.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 730 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0195792,
+   "durationMs": 11320,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-35,\"elevationDeg\":18},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian Indre desk\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Desktop\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"25 mm thick top panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1100,25,550],\"radius\":3},\"position\":[0,717.5,0],\"material\":{\"color\":\"#f2f3f4\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"side_l\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"Solid side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,705,540],\"radius\":2},\"position\":[-531,352.5,0],\"material\":{\"color\":\"#f2f3f4\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"side_r\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"Solid side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,705,540],\"radius\":2},\"position\":[531,352.5,0],\"material\":{\"color\":\"#f2f3f4\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"drawer\",\"name\":\"Drawer front\",\"category\":\"mechanical\",\"materialName\":\"White melamine board\",\"detail\":\"Single drawer front under the top\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1044,110,18],\"radius\":2},\"position\":[0,650,262],\"material\":{\"color\":\"#f2f3f4\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"handle\",\"name\":\"Drawer handle\",\"category\":\"mechanical\",\"materialName\":\"Brushed metal\",\"detail\":\"Bar handle\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[130,8,12],\"radius\":3},\"position\":[0,665,277],\"material\":{\"color\":\"#c9ccd0\",\"roughness\":0.3,\"metalness\":0.8}},{\"id\":\"back_rail\",\"name\":\"Back rail\",\"category\":\"enclosure\",\"materialName\":\"White melamine board\",\"detail\":\"Rear stretcher panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1044,110,18],\"radius\":2},\"position\":[0,650,-255],\"material\":{\"color\":\"#f2f3f4\",\"roughness\":0.6,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

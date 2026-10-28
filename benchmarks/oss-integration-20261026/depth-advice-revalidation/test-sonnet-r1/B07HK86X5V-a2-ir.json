@@ -1,0 +1,210 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Black wall sconce with glass jar shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Backplate",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Rectangular wall mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     115,
+     119,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    186,
+    -96
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Straight rod joining plate and cap",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -40
+     ],
+     [
+      0,
+      0,
+      40
+     ]
+    ],
+    "radius": 3.5
+   },
+   "position": [
+    0,
+    224,
+    -46
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Cap body",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "Cylindrical cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 46,
+    "radiusBottom": 46,
+    "depth": 31,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    218,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.55,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "dome",
+   "name": "Cap dome",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "Tapered dome top",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 28,
+    "radiusBottom": 44,
+    "depth": 20,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    244,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.55,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "rim",
+   "name": "Rim ring",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Collar holding the glass",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 48,
+    "radiusBottom": 48,
+    "depth": 8,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    201,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "glass",
+   "name": "Glass shade",
+   "category": "enclosure",
+   "materialName": "clear seeded glass",
+   "detail": "Cylindrical jar shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 50,
+    "depth": 200,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    100,
+    0
+   ],
+   "material": {
+    "color": "#dde6e8",
+    "roughness": 0.15,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Socket",
+   "category": "power",
+   "materialName": "black plastic",
+   "detail": "Bulb socket",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 14,
+    "depth": 36,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    180,
+    0
+   ],
+   "material": {
+    "color": "#0d0d0d",
+    "roughness": 0.7,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Edison bulb",
+   "category": "power",
+   "materialName": "warm glass",
+   "detail": "Teardrop filament bulb",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 22,
+    "depth": 100,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    112,
+    0
+   ],
+   "material": {
+    "color": "#f6d9a0",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  }
+ ]
+}

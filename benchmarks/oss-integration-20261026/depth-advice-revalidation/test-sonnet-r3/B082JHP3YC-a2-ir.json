@@ -1,0 +1,203 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Barn wall sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Barn shade",
+   "category": "enclosure",
+   "materialName": "speckled painted metal",
+   "detail": "Dome barn shade with flared rim and neck",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      20
+     ],
+     [
+      113,
+      20
+     ],
+     [
+      113,
+      24
+     ],
+     [
+      104,
+      36
+     ],
+     [
+      86,
+      68
+     ],
+     [
+      64,
+      98
+     ],
+     [
+      36,
+      130
+     ],
+     [
+      26,
+      150
+     ],
+     [
+      23,
+      170
+     ],
+     [
+      23,
+      184
+     ],
+     [
+      0,
+      184
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#3b3d3f",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Gooseneck arm",
+   "category": "mechanical",
+   "materialName": "speckled painted metal",
+   "detail": "Curved arm connecting shade to wall plate",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      180,
+      0
+     ],
+     [
+      0,
+      255,
+      -8
+     ],
+     [
+      0,
+      298,
+      -50
+     ],
+     [
+      0,
+      283,
+      -112
+     ],
+     [
+      0,
+      230,
+      -152
+     ],
+     [
+      0,
+      125,
+      -158
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#3b3d3f",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "plate",
+   "name": "Wall plate",
+   "category": "mechanical",
+   "materialName": "speckled painted metal",
+   "detail": "Mounting backplate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     115,
+     20
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    66,
+    -168
+   ],
+   "material": {
+    "color": "#37393b",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Set screw knob",
+   "category": "mechanical",
+   "materialName": "painted metal",
+   "detail": "Small knob on plate face",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 10,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    66,
+    -152
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#3b3d3f",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Bulb",
+   "category": "power",
+   "materialName": "clear glass",
+   "detail": "Globe bulb under the shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 24
+   },
+   "position": [
+    0,
+    38,
+    0
+   ],
+   "material": {
+    "color": "#e8eef0",
+    "roughness": 0.1,
+    "metalness": 0.1
+   }
+  }
+ ]
+}

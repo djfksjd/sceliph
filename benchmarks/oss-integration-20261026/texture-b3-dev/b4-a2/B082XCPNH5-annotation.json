@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- dome: Light dome; material \"frosted glass\"; colour #f1f1ee\n- housing: Motor housing; material \"brushed nickel\"; colour #9a9a9c\n- motor: Motor cap; material \"brushed nickel\"; colour #8c8c8f\n- rod: Downrod; material \"brushed nickel\"; colour #9a9a9c\n- canopy: Ceiling canopy; material \"brushed nickel\"; colour #8c8c8f\n- blade1: Blade 1; material \"brushed nickel\"; colour #8e8e90\n- blade2: Blade 2; material \"brushed nickel\"; colour #8e8e90\n- blade3: Blade 3; material \"brushed nickel\"; colour #8e8e90\n- blade4: Blade 4; material \"brushed nickel\"; colour #8e8e90\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"dome\",\"surface\":\"ceramic-glass\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"housing\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.05,\"textureScale\":[3,1]},{\"id\":\"motor\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.05,\"textureScale\":[3,1]},{\"id\":\"rod\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.05,\"textureScale\":[1,3]},{\"id\":\"canopy\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.05,\"textureScale\":[3,1]},{\"id\":\"blade1\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.08,\"textureScale\":[1,4]},{\"id\":\"blade2\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.08,\"textureScale\":[1,4]},{\"id\":\"blade3\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.08,\"textureScale\":[1,4]},{\"id\":\"blade4\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.08,\"textureScale\":[1,4]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0084293,
+  "durationMs": 4519,
+  "isError": false
+ }
+}

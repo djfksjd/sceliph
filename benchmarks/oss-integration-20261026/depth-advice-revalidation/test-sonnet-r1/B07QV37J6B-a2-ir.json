@@ -1,0 +1,517 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Gaming Computer Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "carbon-look MDF",
+   "detail": "Black desktop panel with clipped corners",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     20,
+     600
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    741,
+    0
+   ],
+   "material": {
+    "color": "#202022",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "trim",
+   "name": "Red edge",
+   "category": "enclosure",
+   "materialName": "red edge band",
+   "detail": "Red trim under desktop",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1104,
+     10,
+     604
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    731,
+    0
+   ],
+   "material": {
+    "color": "#c0141c",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Monitor shelf",
+   "category": "enclosure",
+   "materialName": "red MDF",
+   "detail": "Raised shelf at back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     620,
+     14,
+     200
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    902,
+    -190
+   ],
+   "material": {
+    "color": "#c0141c",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelfL",
+   "name": "Shelf support left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Shelf post",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -72,
+      0
+     ],
+     [
+      0,
+      72,
+      0
+     ]
+    ],
+    "radius": 8
+   },
+   "position": [
+    -270,
+    823,
+    -190
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shelfR",
+   "name": "Shelf support right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Shelf post",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -72,
+      0
+     ],
+     [
+      0,
+      72,
+      0
+     ]
+    ],
+    "radius": 8
+   },
+   "position": [
+    270,
+    823,
+    -190
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "footL",
+   "name": "Left foot",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Floor runner",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -290
+     ],
+     [
+      0,
+      0,
+      290
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    -480,
+    13,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "footR",
+   "name": "Right foot",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Floor runner",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -290
+     ],
+     [
+      0,
+      0,
+      290
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    480,
+    13,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legL1",
+   "name": "Left leg A",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Diagonal leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -357,
+      -290
+     ],
+     [
+      0,
+      357,
+      20
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    -480,
+    372,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legL2",
+   "name": "Left leg B",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Diagonal leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -357,
+      290
+     ],
+     [
+      0,
+      357,
+      -20
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    -480,
+    372,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legR1",
+   "name": "Right leg A",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Diagonal leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -357,
+      -290
+     ],
+     [
+      0,
+      357,
+      20
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    480,
+    372,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legR2",
+   "name": "Right leg B",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Diagonal leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -357,
+      290
+     ],
+     [
+      0,
+      357,
+      -20
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    480,
+    372,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bar",
+   "name": "Cross bar",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Lower stretcher",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -480,
+      0,
+      0
+     ],
+     [
+      480,
+      0,
+      0
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    0,
+    230,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "basket",
+   "name": "Wire basket",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Under-desk storage basket",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     500,
+     40,
+     230
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    695,
+    110
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "tray",
+   "name": "Controller tray",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Tilted tray",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     220,
+     8,
+     150
+    ],
+    "radius": 3
+   },
+   "position": [
+    -400,
+    785,
+    -180
+   ],
+   "rotation": [
+    0.4,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "cupL",
+   "name": "Left cup holder",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Cup holder",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 38,
+    "depth": 80,
+    "radialSegments": 24
+   },
+   "position": [
+    -595,
+    730,
+    -20
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "cupR",
+   "name": "Right cup holder",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Cup holder",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 45,
+    "radiusBottom": 35,
+    "depth": 90,
+    "radialSegments": 24
+   },
+   "position": [
+    595,
+    715,
+    20
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "hook",
+   "name": "Headphone hook",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Headphone hanger",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -55,
+      0
+     ],
+     [
+      0,
+      55,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    380,
+    810,
+    -285
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

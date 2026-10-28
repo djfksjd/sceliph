@@ -1,0 +1,265 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Retro Hairpin Compact Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "black laminate",
+   "detail": "black wood-grain desktop panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     25,
+     550
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    647.5,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.6,
+    "metalness": 0.05
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Front left hairpin leg",
+   "category": "mechanical",
+   "materialName": "gold metal rod",
+   "detail": "gold hairpin leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -70,
+      317,
+      0
+     ],
+     [
+      -35,
+      2,
+      0
+     ],
+     [
+      -12,
+      -250,
+      0
+     ],
+     [
+      0,
+      -312,
+      0
+     ],
+     [
+      12,
+      -250,
+      0
+     ],
+     [
+      35,
+      2,
+      0
+     ],
+     [
+      70,
+      317,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    -440,
+    317.5,
+    190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Front right hairpin leg",
+   "category": "mechanical",
+   "materialName": "gold metal rod",
+   "detail": "gold hairpin leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -70,
+      317,
+      0
+     ],
+     [
+      -35,
+      2,
+      0
+     ],
+     [
+      -12,
+      -250,
+      0
+     ],
+     [
+      0,
+      -312,
+      0
+     ],
+     [
+      12,
+      -250,
+      0
+     ],
+     [
+      35,
+      2,
+      0
+     ],
+     [
+      70,
+      317,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    440,
+    317.5,
+    190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Back left hairpin leg",
+   "category": "mechanical",
+   "materialName": "gold metal rod",
+   "detail": "gold hairpin leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -70,
+      317,
+      0
+     ],
+     [
+      -35,
+      2,
+      0
+     ],
+     [
+      -12,
+      -250,
+      0
+     ],
+     [
+      0,
+      -312,
+      0
+     ],
+     [
+      12,
+      -250,
+      0
+     ],
+     [
+      35,
+      2,
+      0
+     ],
+     [
+      70,
+      317,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    -440,
+    317.5,
+    -190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Back right hairpin leg",
+   "category": "mechanical",
+   "materialName": "gold metal rod",
+   "detail": "gold hairpin leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -70,
+      317,
+      0
+     ],
+     [
+      -35,
+      2,
+      0
+     ],
+     [
+      -12,
+      -250,
+      0
+     ],
+     [
+      0,
+      -312,
+      0
+     ],
+     [
+      12,
+      -250,
+      0
+     ],
+     [
+      35,
+      2,
+      0
+     ],
+     [
+      70,
+      317,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    440,
+    317.5,
+    -190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  }
+ ]
+}

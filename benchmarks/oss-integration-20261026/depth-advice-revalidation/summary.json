@@ -1,0 +1,454 @@
+{
+ "schema": "sceliph.depth-advice-revalidation/0.1",
+ "repeats": 3,
+ "tieBand": 0.005,
+ "requested": {
+  "n": 20,
+  "a1Median": 0.1546,
+  "a2Median": 0.0588,
+  "diffMedian": -0.081,
+  "diffCi95": [
+   -0.155,
+   -0.0157
+  ],
+  "better": 15,
+  "worse": 3,
+  "ties": 2,
+  "signTestP": 0.0038,
+  "iouDiffMedian": 0.0306
+ },
+ "notRequested": {
+  "n": 15,
+  "a1Median": 0.0767,
+  "a2Median": 0.1037,
+  "diffMedian": 0.0061,
+  "diffCi95": [
+   -0.0096,
+   0.0228
+  ],
+  "better": 7,
+  "worse": 8,
+  "ties": 0,
+  "signTestP": 0.6964,
+  "iouDiffMedian": 0.0083
+ },
+ "gapCi95": [
+  -0.168,
+  -0.0172
+ ],
+ "byReason": {
+  "oblique-photo-sufficient": 15,
+  "frontal-photo": 3,
+  "frontal-thin-structure": 15,
+  "oblique-thin-structure": 2
+ },
+ "criteria": [
+  {
+   "id": "V1-requested-gain",
+   "rule": "requested: median paired (a2 − a1) footprint < 0 and bootstrap 95% CI upper < 0",
+   "pass": true
+  },
+  {
+   "id": "V2-requested-sign",
+   "rule": "requested: one-sided sign test on items with |diff| > 0.005, p < 0.05",
+   "pass": true
+  },
+  {
+   "id": "V3-not-requested-no-gain",
+   "rule": "not requested: median paired (a2 − a1) footprint ≥ −0.01 (a second photo would not materially help); needs n ≥ 6",
+   "pass": true
+  },
+  {
+   "id": "V4-separation",
+   "rule": "median(requested diffs) − median(not-requested diffs) < 0 with bootstrap 95% CI upper < 0; needs n ≥ 6 per group",
+   "pass": true
+  }
+ ],
+ "rows": [
+  {
+   "modelId": "B084L7SNDG",
+   "stratum": "other",
+   "azimuthDeg": 30,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.0139,
+   "a2": 0.0053,
+   "diff": -0.0087,
+   "iouDiff": 0.0083
+  },
+  {
+   "modelId": "B07GFL9TZX",
+   "stratum": "other",
+   "azimuthDeg": 0,
+   "reason": "frontal-photo",
+   "request": true,
+   "a1": 0.1362,
+   "a2": 0.129,
+   "diff": -0.0072,
+   "iouDiff": 0.0022
+  },
+  {
+   "modelId": "B07B7DL32H",
+   "stratum": "other",
+   "azimuthDeg": -20,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.2304,
+   "a2": 0.2209,
+   "diff": -0.0096,
+   "iouDiff": -0.0051
+  },
+  {
+   "modelId": "B079X4Z6QX",
+   "stratum": "other",
+   "azimuthDeg": -30,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.1475,
+   "a2": 0.1095,
+   "diff": -0.038,
+   "iouDiff": 0.0238
+  },
+  {
+   "modelId": "B07L9BVBCJ",
+   "stratum": "other",
+   "azimuthDeg": 28,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.0546,
+   "a2": 0.0183,
+   "diff": -0.0362,
+   "iouDiff": 0.0155
+  },
+  {
+   "modelId": "B07QD6TXXY",
+   "stratum": "other",
+   "azimuthDeg": 0,
+   "reason": "frontal-photo",
+   "request": true,
+   "a1": 0.1248,
+   "a2": 0.0476,
+   "diff": -0.0772,
+   "iouDiff": 0.0671
+  },
+  {
+   "modelId": "B07H8VCM68",
+   "stratum": "other",
+   "azimuthDeg": -22,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.063,
+   "a2": 0.0559,
+   "diff": -0.007,
+   "iouDiff": -0.0168
+  },
+  {
+   "modelId": "B07GFFKRSD",
+   "stratum": "other",
+   "azimuthDeg": -30,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.0128,
+   "a2": 0.0038,
+   "diff": -0.009,
+   "iouDiff": 0.0232
+  },
+  {
+   "modelId": "B07FFWSBBF",
+   "stratum": "other",
+   "azimuthDeg": -30,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.1601,
+   "a2": 0.1752,
+   "diff": 0.0151,
+   "iouDiff": -0.0171
+  },
+  {
+   "modelId": "B07B8PXSD2",
+   "stratum": "other",
+   "azimuthDeg": 0,
+   "reason": "frontal-photo",
+   "request": true,
+   "a1": 0.2684,
+   "a2": 0.0361,
+   "diff": -0.2323,
+   "iouDiff": 0.1291
+  },
+  {
+   "modelId": "B07K7YMBNY",
+   "stratum": "other",
+   "azimuthDeg": -30,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.0213,
+   "a2": 0.0416,
+   "diff": 0.0203,
+   "iouDiff": -0.0393
+  },
+  {
+   "modelId": "B07GFRWK15",
+   "stratum": "other",
+   "azimuthDeg": -30,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.1194,
+   "a2": 0.1255,
+   "diff": 0.0061,
+   "iouDiff": 0.029
+  },
+  {
+   "modelId": "B07TQ8WK61",
+   "stratum": "other",
+   "azimuthDeg": -25,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.0767,
+   "a2": 0.1037,
+   "diff": 0.027,
+   "iouDiff": -0.0199
+  },
+  {
+   "modelId": "B07QV37J6B",
+   "stratum": "other",
+   "azimuthDeg": -35,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.0362,
+   "a2": 0.0546,
+   "diff": 0.0184,
+   "iouDiff": 0.0129
+  },
+  {
+   "modelId": "B07PYKJYLQ",
+   "stratum": "other",
+   "azimuthDeg": -30,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.1234,
+   "a2": 0.0643,
+   "diff": -0.0592,
+   "iouDiff": 0.0336
+  },
+  {
+   "modelId": "B07PNHSR4G",
+   "stratum": "other",
+   "azimuthDeg": 20,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.0652,
+   "a2": 0.2583,
+   "diff": 0.1931,
+   "iouDiff": 0.0197
+  },
+  {
+   "modelId": "B07SJ75Y1M",
+   "stratum": "other",
+   "azimuthDeg": -25,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.0883,
+   "a2": 0.1111,
+   "diff": 0.0228,
+   "iouDiff": -0.1514
+  },
+  {
+   "modelId": "B07QC6354F",
+   "stratum": "other",
+   "azimuthDeg": -30,
+   "reason": "oblique-photo-sufficient",
+   "request": false,
+   "a1": 0.0768,
+   "a2": 0.1104,
+   "diff": 0.0336,
+   "iouDiff": -0.0102
+  },
+  {
+   "modelId": "B073P3S1NX",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.0942,
+   "a2": 0.2351,
+   "diff": 0.1409,
+   "iouDiff": -0.1455
+  },
+  {
+   "modelId": "B07374M9ZW",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.0576,
+   "a2": 0.0532,
+   "diff": -0.0044,
+   "iouDiff": 0.0116
+  },
+  {
+   "modelId": "B07HK8NDXS",
+   "stratum": "thin",
+   "azimuthDeg": 20,
+   "reason": "oblique-thin-structure",
+   "request": true,
+   "a1": 0.1342,
+   "a2": 0.2937,
+   "diff": 0.1595,
+   "iouDiff": -0.0036
+  },
+  {
+   "modelId": "B082JHP3YC",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.1963,
+   "a2": 0.0431,
+   "diff": -0.1533,
+   "iouDiff": 0.2167
+  },
+  {
+   "modelId": "B076V626RZ",
+   "stratum": "thin",
+   "azimuthDeg": -20,
+   "reason": "oblique-thin-structure",
+   "request": true,
+   "a1": 0.2422,
+   "a2": 0.0855,
+   "diff": -0.1567,
+   "iouDiff": 0.1697
+  },
+  {
+   "modelId": "B082XLN2ZK",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.5843,
+   "a2": 0.5059,
+   "diff": -0.0784,
+   "iouDiff": 0.0218
+  },
+  {
+   "modelId": "B075X1KVK8",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.1249,
+   "a2": 0.1946,
+   "diff": 0.0697,
+   "iouDiff": -0.0445
+  },
+  {
+   "modelId": "B075HR1XB1",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.5024,
+   "a2": 0.0366,
+   "diff": -0.4658,
+   "iouDiff": 0.3315
+  },
+  {
+   "modelId": "B07HKC3S4T",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.2195,
+   "a2": 0.134,
+   "diff": -0.0856,
+   "iouDiff": -0.0506
+  },
+  {
+   "modelId": "B07HK86X5V",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.4004,
+   "a2": 0.1342,
+   "diff": -0.2663,
+   "iouDiff": 0.2592
+  },
+  {
+   "modelId": "B07374SBFL",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.2094,
+   "a2": 0.0394,
+   "diff": -0.1701,
+   "iouDiff": 0.3404
+  },
+  {
+   "modelId": "B07HKGY4F2",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.169,
+   "a2": 0.0319,
+   "diff": -0.1371,
+   "iouDiff": 0.1016
+  },
+  {
+   "modelId": "B075X2FZSM",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.0501,
+   "a2": 0.0487,
+   "diff": -0.0014,
+   "iouDiff": 0.0278
+  },
+  {
+   "modelId": "B07QD5RGPB",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.1401,
+   "a2": 0.0565,
+   "diff": -0.0836,
+   "iouDiff": 0.0828
+  },
+  {
+   "modelId": "B0825D7RYX",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.035,
+   "a2": 0.0108,
+   "diff": -0.0242,
+   "iouDiff": -0.0601
+  },
+  {
+   "modelId": "B071HSMS5T",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.1188,
+   "a2": 0.0866,
+   "diff": -0.0322,
+   "iouDiff": 0.0334
+  },
+  {
+   "modelId": "B073P3HHFT",
+   "stratum": "thin",
+   "azimuthDeg": 0,
+   "reason": "frontal-thin-structure",
+   "request": true,
+   "a1": 0.2258,
+   "a2": 0.0611,
+   "diff": -0.1646,
+   "iouDiff": -0.0178
+  }
+ ]
+}

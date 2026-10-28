@@ -1,0 +1,241 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Wild Oak Dining Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Table top",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Solid oak block top with slight overhang",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1200,
+     30,
+     800
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    735,
+    0
+   ],
+   "material": {
+    "color": "#c99557",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legFL",
+   "name": "Leg front left",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Square solid leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     720,
+     70
+    ],
+    "radius": 3
+   },
+   "position": [
+    -525,
+    360,
+    325
+   ],
+   "material": {
+    "color": "#b98547",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legFR",
+   "name": "Leg front right",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Square solid leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     720,
+     70
+    ],
+    "radius": 3
+   },
+   "position": [
+    525,
+    360,
+    325
+   ],
+   "material": {
+    "color": "#b98547",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legBL",
+   "name": "Leg back left",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Square solid leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     720,
+     70
+    ],
+    "radius": 3
+   },
+   "position": [
+    -525,
+    360,
+    -325
+   ],
+   "material": {
+    "color": "#b98547",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legBR",
+   "name": "Leg back right",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Square solid leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     720,
+     70
+    ],
+    "radius": 3
+   },
+   "position": [
+    525,
+    360,
+    -325
+   ],
+   "material": {
+    "color": "#b98547",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "apronF",
+   "name": "Front apron",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Long apron rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     980,
+     90,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    675,
+    347.5
+   ],
+   "material": {
+    "color": "#c08c4e",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "apronB",
+   "name": "Back apron",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Long apron rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     980,
+     90,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    675,
+    -347.5
+   ],
+   "material": {
+    "color": "#c08c4e",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "apronL",
+   "name": "Left apron",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Short apron rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     90,
+     580
+    ],
+    "radius": 2
+   },
+   "position": [
+    -512.5,
+    675,
+    0
+   ],
+   "material": {
+    "color": "#c08c4e",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "apronR",
+   "name": "Right apron",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Short apron rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     90,
+     580
+    ],
+    "radius": 2
+   },
+   "position": [
+    512.5,
+    675,
+    0
+   ],
+   "material": {
+    "color": "#c08c4e",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: AmazonBasics Foldable Storage Cubes (6 Pack), Navy.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 279 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0213837,
+   "durationMs": 12296,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":55,\"elevationDeg\":14},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Foldable fabric storage cube, navy\",\"units\":\"mm\",\"components\":[{\"id\":\"body\",\"name\":\"Cube body\",\"category\":\"enclosure\",\"materialName\":\"Navy non-woven fabric\",\"detail\":\"Open-top fabric storage cube with 4 mm walls and base\",\"geometry\":{\"op\":\"booleanCSG\",\"operation\":\"difference\",\"operands\":[{\"geometry\":{\"op\":\"roundedBox\",\"size\":[279,279,279],\"radius\":4},\"position\":[0,0,0],\"rotation\":[0,0,0]},{\"geometry\":{\"op\":\"roundedBox\",\"size\":[271,281,271],\"radius\":2},\"position\":[0,5,0],\"rotation\":[0,0,0]}]},\"position\":[0,139.5,0],\"material\":{\"color\":\"#1c2160\",\"surface\":\"fabric\",\"roughness\":0.95,\"metalness\":0,\"sheen\":0.3,\"sheenRoughness\":0.8,\"microNormalStrength\":0.5}},{\"id\":\"handle\",\"name\":\"Fabric pull handle\",\"category\":\"mechanical\",\"materialName\":\"Navy fabric strap\",\"detail\":\"Fabric strap handle on the +X face\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[8,26,90],\"radius\":3},\"position\":[142,225,0],\"material\":{\"color\":\"#1c2160\",\"surface\":\"fabric\",\"roughness\":0.95,\"metalness\":0,\"sheen\":0.3,\"sheenRoughness\":0.8,\"microNormalStrength\":0.5}},{\"id\":\"rim\",\"name\":\"Top rim stiffener\",\"category\":\"enclosure\",\"materialName\":\"Navy fabric rim\",\"detail\":\"Slightly thicker upper edge band\",\"geometry\":{\"op\":\"booleanCSG\",\"operation\":\"difference\",\"operands\":[{\"geometry\":{\"op\":\"roundedBox\",\"size\":[280,10,280],\"radius\":3},\"position\":[0,0,0],\"rotation\":[0,0,0]},{\"geometry\":{\"op\":\"roundedBox\",\"size\":[266,14,266],\"radius\":2},\"position\":[0,0,0],\"rotation\":[0,0,0]}]},\"position\":[0,274,0],\"material\":{\"color\":\"#1c2160\",\"surface\":\"fabric\",\"roughness\":0.95,\"metalness\":0,\"sheen\":0.3,\"sheenRoughness\":0.8,\"microNormalStrength\":0.5}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

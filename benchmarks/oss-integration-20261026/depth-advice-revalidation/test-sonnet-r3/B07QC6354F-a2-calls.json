@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: AmazonBasics Retro Hairpin Compact Computer Desk - Black with Gold Legs.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 660 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.018633300000000002,
+   "durationMs": 15208,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":15,\"elevationDeg\":14},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Hairpin Compact Desk\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Desktop\",\"category\":\"enclosure\",\"materialName\":\"black laminate\",\"detail\":\"black particleboard desktop\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1100,30,550],\"radius\":3},\"position\":[0,645,0],\"material\":{\"color\":\"#1a1a1b\",\"roughness\":0.6,\"metalness\":0.0}},{\"id\":\"legL\",\"name\":\"Left hairpin leg\",\"category\":\"mechanical\",\"materialName\":\"gold steel rod\",\"detail\":\"gold hairpin leg, V shaped\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,300,-170],[0,-200,-40],[0,-325,0],[0,-200,40],[0,300,170]],\"radius\":5},\"position\":[-470,325,0],\"material\":{\"color\":\"#c9a24a\",\"roughness\":0.35,\"metalness\":0.8}},{\"id\":\"legR\",\"name\":\"Right hairpin leg\",\"category\":\"mechanical\",\"materialName\":\"gold steel rod\",\"detail\":\"gold hairpin leg, V shaped\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,300,-170],[0,-200,-40],[0,-325,0],[0,-200,40],[0,300,170]],\"radius\":5},\"position\":[470,325,0],\"material\":{\"color\":\"#c9a24a\",\"roughness\":0.35,\"metalness\":0.8}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

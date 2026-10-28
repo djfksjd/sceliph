@@ -1,0 +1,387 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "5-drawer chest black",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "black woodgrain laminate",
+   "detail": "left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1234,
+     390
+    ],
+    "radius": 2
+   },
+   "position": [
+    -341,
+    617,
+    0
+   ],
+   "material": {
+    "color": "#2e2e2f",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "black woodgrain laminate",
+   "detail": "right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1234,
+     390
+    ],
+    "radius": 2
+   },
+   "position": [
+    341,
+    617,
+    0
+   ],
+   "material": {
+    "color": "#2e2e2f",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "black woodgrain laminate",
+   "detail": "top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     710,
+     20,
+     400
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1244,
+    2
+   ],
+   "material": {
+    "color": "#2b2b2c",
+    "roughness": 0.65
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "fiberboard",
+   "detail": "back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     664,
+     1160,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    640,
+    -190
+   ],
+   "material": {
+    "color": "#262626",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "base",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "black woodgrain laminate",
+   "detail": "bottom panel above plinth",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     664,
+     18,
+     370
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    62,
+    -5
+   ],
+   "material": {
+    "color": "#2e2e2f",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "front1",
+   "name": "Drawer front 1",
+   "category": "mechanical",
+   "materialName": "black woodgrain laminate",
+   "detail": "bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     664,
+     228,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    186,
+    192
+   ],
+   "material": {
+    "color": "#323233",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "front2",
+   "name": "Drawer front 2",
+   "category": "mechanical",
+   "materialName": "black woodgrain laminate",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     664,
+     228,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    418,
+    192
+   ],
+   "material": {
+    "color": "#323233",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "front3",
+   "name": "Drawer front 3",
+   "category": "mechanical",
+   "materialName": "black woodgrain laminate",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     664,
+     228,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    650,
+    192
+   ],
+   "material": {
+    "color": "#323233",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "front4",
+   "name": "Drawer front 4",
+   "category": "mechanical",
+   "materialName": "black woodgrain laminate",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     664,
+     228,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    882,
+    192
+   ],
+   "material": {
+    "color": "#323233",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "front5",
+   "name": "Drawer front 5",
+   "category": "mechanical",
+   "materialName": "black woodgrain laminate",
+   "detail": "top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     664,
+     228,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1114,
+    192
+   ],
+   "material": {
+    "color": "#323233",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "arched pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     10,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    226,
+    207
+   ],
+   "material": {
+    "color": "#1a1a1b",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "arched pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     10,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    458,
+    207
+   ],
+   "material": {
+    "color": "#1a1a1b",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "arched pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     10,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    690,
+    207
+   ],
+   "material": {
+    "color": "#1a1a1b",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "arched pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     10,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    922,
+    207
+   ],
+   "material": {
+    "color": "#1a1a1b",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle5",
+   "name": "Handle 5",
+   "category": "mechanical",
+   "materialName": "dark metal",
+   "detail": "arched pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     100,
+     10,
+     12
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1154,
+    207
+   ],
+   "material": {
+    "color": "#1a1a1b",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

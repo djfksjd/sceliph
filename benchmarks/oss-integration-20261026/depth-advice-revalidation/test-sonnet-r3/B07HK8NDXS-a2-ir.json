@@ -1,0 +1,267 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Shelving floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "legA",
+   "name": "Leg front right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "tapered tube leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      250,
+      -610,
+      250
+     ],
+     [
+      140,
+      610,
+      140
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    0,
+    610,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legB",
+   "name": "Leg front left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "tapered tube leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -250,
+      -610,
+      250
+     ],
+     [
+      -140,
+      610,
+      140
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    0,
+    610,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legC",
+   "name": "Leg back right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "tapered tube leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      250,
+      -610,
+      -250
+     ],
+     [
+      140,
+      610,
+      -140
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    0,
+    610,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legD",
+   "name": "Leg back left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "tapered tube leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -250,
+      -610,
+      -250
+     ],
+     [
+      -140,
+      610,
+      -140
+     ]
+    ],
+    "radius": 9
+   },
+   "position": [
+    0,
+    610,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shelfLow",
+   "name": "Lower shelf",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "flat shelf panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     6,
+     400
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    387,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "shelfUp",
+   "name": "Upper shelf",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "flat shelf panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     360,
+     6,
+     360
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    745,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "barX",
+   "name": "Top cross bar X",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "top frame bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     290,
+     16,
+     16
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1225,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "barZ",
+   "name": "Top cross bar Z",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "top frame bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     16,
+     290
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1241,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "off-white fabric",
+   "detail": "cylindrical drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 204,
+    "radiusBottom": 204,
+    "depth": 320,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1389,
+    0
+   ],
+   "material": {
+    "color": "#f1e9d6",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

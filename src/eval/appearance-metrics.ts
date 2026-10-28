@@ -192,7 +192,7 @@ function spread(lab: Float32Array, inner: Uint8Array, ids: RgbaImage | undefined
 const logGap = (candidate: number, reference: number, floor: number) => Math.abs(Math.log(Math.max(candidate, floor) / Math.max(reference, floor)));
 
 /** Mean SSIM of L-star (scaled to 0–1) over 8×8 windows (stride 4) lying fully inside the shared mask. */
-function ssim(a: Float32Array, b: Float32Array, shared: Uint8Array, width: number, height: number): number {
+export function ssim(a: Float32Array, b: Float32Array, shared: Uint8Array, width: number, height: number): number {
   const C1 = 0.01 ** 2;
   const C2 = 0.03 ** 2;
   let total = 0;

@@ -1,0 +1,227 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rose Gold Dome Pendant",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Dome shade",
+   "category": "enclosure",
+   "materialName": "polished rose gold metal",
+   "detail": "Spun metal dome shade with straight rim and sloping shoulder",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      200
+     ],
+     [
+      28,
+      200
+     ],
+     [
+      75,
+      182
+     ],
+     [
+      130,
+      158
+     ],
+     [
+      158,
+      140
+     ],
+     [
+      160,
+      100
+     ],
+     [
+      159,
+      0
+     ],
+     [
+      153,
+      0
+     ],
+     [
+      153,
+      100
+     ],
+     [
+      150,
+      135
+     ],
+     [
+      0,
+      135
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b76e4f",
+    "roughness": 0.2,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "glow",
+   "name": "Inner diffuser",
+   "category": "display",
+   "materialName": "warm glowing diffuser",
+   "detail": "Warm lit underside disc",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 152,
+    "radiusBottom": 152,
+    "depth": 4,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    8,
+    0
+   ],
+   "material": {
+    "color": "#f5d36a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck",
+   "category": "mechanical",
+   "materialName": "polished rose gold metal",
+   "detail": "Tapered neck above shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 12,
+    "radiusBottom": 30,
+    "depth": 100,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    245,
+    0
+   ],
+   "material": {
+    "color": "#b76e4f",
+    "roughness": 0.2,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Neck cap",
+   "category": "mechanical",
+   "materialName": "rose gold metal",
+   "detail": "Small cord grip cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 9,
+    "depth": 16,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    303,
+    0
+   ],
+   "material": {
+    "color": "#c98562",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Cord",
+   "category": "interconnect",
+   "materialName": "black fabric cord",
+   "detail": "Hanging cord",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -225,
+      0
+     ],
+     [
+      0,
+      225,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    530,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "rose gold metal",
+   "detail": "Round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 56,
+    "radiusBottom": 58,
+    "depth": 12,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    756,
+    0
+   ],
+   "material": {
+    "color": "#c4805d",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "canopy_boss",
+   "name": "Canopy boss",
+   "category": "mechanical",
+   "materialName": "rose gold metal",
+   "detail": "Small boss at cord entry",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 14,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    744,
+    0
+   ],
+   "material": {
+    "color": "#d08a62",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

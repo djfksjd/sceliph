@@ -1,0 +1,628 @@
+{
+ "schema": "sceliph.abo-visual-critique/0.1",
+ "protocolSha256": "19980cb2e092db9985954dc0475f683b93d843130677ed8314111bd962322732",
+ "sourceRun": "abo-multiview/dev-sonnet",
+ "model": "sonnet",
+ "rounds": 2,
+ "minGain": 0.01,
+ "turntableSign": 1,
+ "totalCostUsd": 0.4825,
+ "results": [
+  {
+   "modelId": "B07GFLG5MM",
+   "productType": "CABINET",
+   "accepted": 0,
+   "history": [
+    {
+     "round": 0,
+     "iou": [
+      0.9545829892650702,
+      0.958109986102839
+     ],
+     "accepted": true
+    },
+    {
+     "round": 1,
+     "iou": [
+      0.96343481138319,
+      0.9578863726658721
+     ],
+     "accepted": false,
+     "reason": "gain 0.0043 < 0.01"
+    }
+   ],
+   "scores": {
+    "a2": {
+     "meanIoU": 0.9499,
+     "chamfer": 0.009,
+     "fScore5": 0.9938,
+     "fScore2": 0.972,
+     "extentError": [
+      0.0344,
+      0.0001,
+      0.0312
+     ],
+     "footprintError": [
+      0.0383,
+      0.041
+     ],
+     "yawDeg": 359.5
+    },
+    "critique": {
+     "meanIoU": 0.9499,
+     "chamfer": 0.009,
+     "fScore5": 0.9938,
+     "fScore2": 0.972,
+     "extentError": [
+      0.0344,
+      0.0001,
+      0.0312
+     ],
+     "footprintError": [
+      0.0383,
+      0.041
+     ],
+     "yawDeg": 359.5
+    }
+   },
+   "costUsd": 0.0393,
+   "ms": 44380
+  },
+  {
+   "modelId": "B07GFFQZRQ",
+   "productType": "DESK",
+   "accepted": 0,
+   "history": [
+    {
+     "round": 0,
+     "iou": [
+      0.8168144572903805,
+      0.6703775860469431
+     ],
+     "accepted": true
+    },
+    {
+     "round": 1,
+     "iou": [
+      0.81386205347113,
+      0.671825764596849
+     ],
+     "accepted": false,
+     "reason": "gain -0.0008 < 0.01"
+    }
+   ],
+   "scores": {
+    "a2": {
+     "meanIoU": 0.914,
+     "chamfer": 0.0113,
+     "fScore5": 0.9723,
+     "fScore2": 0.9292,
+     "extentError": [
+      0.0002,
+      0.0009,
+      0.0327
+     ],
+     "footprintError": [
+      0.0002,
+      0.0327
+     ],
+     "yawDeg": 0
+    },
+    "critique": {
+     "meanIoU": 0.914,
+     "chamfer": 0.0113,
+     "fScore5": 0.9723,
+     "fScore2": 0.9292,
+     "extentError": [
+      0.0002,
+      0.0009,
+      0.0327
+     ],
+     "footprintError": [
+      0.0002,
+      0.0327
+     ],
+     "yawDeg": 0
+    }
+   },
+   "costUsd": 0.0361,
+   "ms": 61450
+  },
+  {
+   "modelId": "B075YZ16V7",
+   "productType": "DRESSER",
+   "accepted": 0,
+   "history": [
+    {
+     "round": 0,
+     "iou": [
+      0.8690710889481619,
+      0.8522246535375638
+     ],
+     "accepted": true
+    },
+    {
+     "round": 1,
+     "iou": [
+      0.8869290970680995,
+      0.8464295956409521
+     ],
+     "accepted": false,
+     "reason": "gain 0.0060 < 0.01"
+    }
+   ],
+   "scores": {
+    "a2": {
+     "meanIoU": 0.8625,
+     "chamfer": 0.0148,
+     "fScore5": 0.9541,
+     "fScore2": 0.8569,
+     "extentError": [
+      0.0211,
+      0.004,
+      0.0035
+     ],
+     "footprintError": [
+      0.0234,
+      0.0311
+     ],
+     "yawDeg": 359.5
+    },
+    "critique": {
+     "meanIoU": 0.8625,
+     "chamfer": 0.0148,
+     "fScore5": 0.9541,
+     "fScore2": 0.8569,
+     "extentError": [
+      0.0211,
+      0.004,
+      0.0035
+     ],
+     "footprintError": [
+      0.0234,
+      0.0311
+     ],
+     "yawDeg": 359.5
+    }
+   },
+   "costUsd": 0.0452,
+   "ms": 83751
+  },
+  {
+   "modelId": "B082XCPNH5",
+   "productType": "ELECTRIC_FAN",
+   "accepted": 0,
+   "history": [
+    {
+     "round": 0,
+     "iou": [
+      0.6735751295336787,
+      0.6751152073732719
+     ],
+     "accepted": true
+    },
+    {
+     "round": 1,
+     "iou": [
+      0.6422172452407615,
+      0.6429770565193061
+     ],
+     "accepted": false,
+     "reason": "gain -0.0317 < 0.01"
+    }
+   ],
+   "scores": {
+    "a2": {
+     "meanIoU": 0.6383,
+     "chamfer": 0.0077,
+     "fScore5": 0.9889,
+     "fScore2": 0.9324,
+     "extentError": [
+      0.1526,
+      0,
+      0.1526
+     ],
+     "footprintError": [
+      0.1499,
+      0.1499
+     ],
+     "yawDeg": 245.5
+    },
+    "critique": {
+     "meanIoU": 0.6383,
+     "chamfer": 0.0077,
+     "fScore5": 0.9889,
+     "fScore2": 0.9324,
+     "extentError": [
+      0.1526,
+      0,
+      0.1526
+     ],
+     "footprintError": [
+      0.1499,
+      0.1499
+     ],
+     "yawDeg": 245.5
+    }
+   },
+   "costUsd": 0.0383,
+   "ms": 39408
+  },
+  {
+   "modelId": "B07B4SB2D9",
+   "productType": "LAMP",
+   "accepted": 1,
+   "history": [
+    {
+     "round": 0,
+     "iou": [
+      0.852280462899932,
+      0.8524813052345344
+     ],
+     "accepted": true
+    },
+    {
+     "round": 1,
+     "iou": [
+      0.8918149466192171,
+      0.8892045454545454
+     ],
+     "accepted": true
+    },
+    {
+     "round": 2,
+     "iou": [
+      0.8828070175438596,
+      0.8759635599159075
+     ],
+     "accepted": false,
+     "reason": "gain -0.0111 < 0.01"
+    }
+   ],
+   "scores": {
+    "a2": {
+     "meanIoU": 0.8126,
+     "chamfer": 0.0103,
+     "fScore5": 0.997,
+     "fScore2": 0.9132,
+     "extentError": [
+      0.0004,
+      0.0008,
+      0.0004
+     ],
+     "footprintError": [
+      0.0014,
+      0.0014
+     ],
+     "yawDeg": 354.5
+    },
+    "critique": {
+     "meanIoU": 0.8865,
+     "chamfer": 0.0078,
+     "fScore5": 0.9845,
+     "fScore2": 0.8899,
+     "extentError": [
+      0.0013,
+      0.0008,
+      0.0013
+     ],
+     "footprintError": [
+      0.0014,
+      0.0014
+     ],
+     "yawDeg": 357.5
+    }
+   },
+   "costUsd": 0.0643,
+   "ms": 41725
+  },
+  {
+   "modelId": "B07374P5NP",
+   "productType": "LIGHT_FIXTURE",
+   "accepted": 1,
+   "history": [
+    {
+     "round": 0,
+     "iou": [
+      0.7842201834862386,
+      0.5478061558611657
+     ],
+     "accepted": true
+    },
+    {
+     "round": 1,
+     "iou": [
+      0.7841171935235158,
+      0.6162181055574973
+     ],
+     "accepted": true
+    },
+    {
+     "round": 2,
+     "iou": [
+      0.6602519244226732,
+      0.5364878373875375
+     ],
+     "accepted": false,
+     "reason": "gain -0.1018 < 0.01"
+    }
+   ],
+   "scores": {
+    "a2": {
+     "meanIoU": 0.3767,
+     "chamfer": 0.029,
+     "fScore5": 0.8384,
+     "fScore2": 0.4661,
+     "extentError": [
+      0.044,
+      0.0488,
+      0.327
+     ],
+     "footprintError": [
+      0.117,
+      0.1932
+     ],
+     "yawDeg": 54
+    },
+    "critique": {
+     "meanIoU": 0.4278,
+     "chamfer": 0.0212,
+     "fScore5": 0.9387,
+     "fScore2": 0.5015,
+     "extentError": [
+      0.1478,
+      0.0425,
+      0.0484
+     ],
+     "footprintError": [
+      0.0924,
+      0.0097
+     ],
+     "yawDeg": 335.5
+    }
+   },
+   "costUsd": 0.1139,
+   "ms": 89220
+  },
+  {
+   "modelId": "B07TY5GXBQ",
+   "productType": "SHELF",
+   "accepted": 0,
+   "history": [
+    {
+     "round": 0,
+     "iou": [
+      0.96243798724309,
+      0.9415468856947297
+     ],
+     "accepted": true
+    },
+    {
+     "round": 1,
+     "iou": [
+      0.9570186927015121,
+      0.9474266740453791
+     ],
+     "accepted": false,
+     "reason": "gain 0.0002 < 0.01"
+    }
+   ],
+   "scores": {
+    "a2": {
+     "meanIoU": 0.8713,
+     "chamfer": 0.0211,
+     "fScore5": 0.9148,
+     "fScore2": 0.6367,
+     "extentError": [
+      0.0122,
+      0.01,
+      0.048
+     ],
+     "footprintError": [
+      0.0345,
+      0.25
+     ],
+     "yawDeg": 11.5
+    },
+    "critique": {
+     "meanIoU": 0.8713,
+     "chamfer": 0.0211,
+     "fScore5": 0.9148,
+     "fScore2": 0.6367,
+     "extentError": [
+      0.0122,
+      0.01,
+      0.048
+     ],
+     "footprintError": [
+      0.0345,
+      0.25
+     ],
+     "yawDeg": 11.5
+    }
+   },
+   "costUsd": 0.0278,
+   "ms": 39360
+  },
+  {
+   "modelId": "B073PB3FXD",
+   "productType": "STORAGE_BOX",
+   "accepted": 0,
+   "history": [
+    {
+     "round": 0,
+     "iou": [
+      0.9805639974556506,
+      0.9625575233579696
+     ],
+     "accepted": true
+    },
+    {
+     "round": 1,
+     "iou": [
+      0.9809219858156029,
+      0.9628073124606009
+     ],
+     "accepted": false,
+     "reason": "gain 0.0003 < 0.01"
+    }
+   ],
+   "scores": {
+    "a2": {
+     "meanIoU": 0.9299,
+     "chamfer": 0.015,
+     "fScore5": 1,
+     "fScore2": 0.7703,
+     "extentError": [
+      0.0317,
+      0.0032,
+      0.0317
+     ],
+     "footprintError": [
+      0.0259,
+      0.0261
+     ],
+     "yawDeg": 0.5
+    },
+    "critique": {
+     "meanIoU": 0.9299,
+     "chamfer": 0.015,
+     "fScore5": 1,
+     "fScore2": 0.7703,
+     "extentError": [
+      0.0317,
+      0.0032,
+      0.0317
+     ],
+     "footprintError": [
+      0.0259,
+      0.0261
+     ],
+     "yawDeg": 0.5
+    }
+   },
+   "costUsd": 0.0347,
+   "ms": 58696
+  },
+  {
+   "modelId": "B075Z96L53",
+   "productType": "TABLE",
+   "accepted": 0,
+   "history": [
+    {
+     "round": 0,
+     "iou": [
+      0.5526568886751623,
+      0.5779205041202132
+     ],
+     "accepted": true
+    },
+    {
+     "round": 1,
+     "iou": [
+      0.5344143326907813,
+      0.5392682092784681
+     ],
+     "accepted": false,
+     "reason": "gain -0.0284 < 0.01"
+    }
+   ],
+   "scores": {
+    "a2": {
+     "meanIoU": 0.5714,
+     "chamfer": 0.0232,
+     "fScore5": 0.9223,
+     "fScore2": 0.5192,
+     "extentError": [
+      0.1202,
+      0.0457,
+      0.0126
+     ],
+     "footprintError": [
+      0.02,
+      0.1286
+     ],
+     "yawDeg": 89.5
+    },
+    "critique": {
+     "meanIoU": 0.5714,
+     "chamfer": 0.0232,
+     "fScore5": 0.9223,
+     "fScore2": 0.5192,
+     "extentError": [
+      0.1202,
+      0.0457,
+      0.0126
+     ],
+     "footprintError": [
+      0.02,
+      0.1286
+     ],
+     "yawDeg": 89.5
+    }
+   },
+   "costUsd": 0.043,
+   "ms": 78762
+  },
+  {
+   "modelId": "B07B78G1BW",
+   "productType": "CABINET",
+   "accepted": 0,
+   "history": [
+    {
+     "round": 0,
+     "iou": [
+      0.7731333027943198,
+      0.8192586399108138
+     ],
+     "accepted": true
+    },
+    {
+     "round": 1,
+     "iou": [
+      0.7208087233075875,
+      0.7937232130512927
+     ],
+     "accepted": false,
+     "reason": "gain -0.0389 < 0.01"
+    }
+   ],
+   "scores": {
+    "a2": {
+     "meanIoU": 0.811,
+     "chamfer": 0.0229,
+     "fScore5": 0.8984,
+     "fScore2": 0.6117,
+     "extentError": [
+      0.0064,
+      0.0135,
+      0.1297
+     ],
+     "footprintError": [
+      0.0064,
+      0.1297
+     ],
+     "yawDeg": 180
+    },
+    "critique": {
+     "meanIoU": 0.811,
+     "chamfer": 0.0229,
+     "fScore5": 0.8984,
+     "fScore2": 0.6117,
+     "extentError": [
+      0.0064,
+      0.0135,
+      0.1297
+     ],
+     "footprintError": [
+      0.0064,
+      0.1297
+     ],
+     "yawDeg": 180
+    }
+   },
+   "costUsd": 0.04,
+   "ms": 75689
+  }
+ ]
+}

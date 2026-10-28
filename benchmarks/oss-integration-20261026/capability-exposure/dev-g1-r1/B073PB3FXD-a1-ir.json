@@ -1,0 +1,161 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Foldable Storage Cube Navy",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shell",
+   "name": "Cube shell",
+   "category": "enclosure",
+   "materialName": "Navy fabric",
+   "detail": "Open-top hollow fabric cube body",
+   "geometry": {
+    "op": "booleanCSG",
+    "operation": "difference",
+    "operands": [
+     {
+      "geometry": {
+       "op": "roundedBox",
+       "size": [
+        279,
+        279,
+        279
+       ],
+       "radius": 4
+      },
+      "position": [
+       0,
+       0,
+       0
+      ],
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "geometry": {
+       "op": "roundedBox",
+       "size": [
+        267,
+        270,
+        267
+       ],
+       "radius": 2
+      },
+      "position": [
+       0,
+       12,
+       0
+      ],
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "position": [
+    0,
+    139.5,
+    0
+   ],
+   "material": {
+    "color": "#14195a",
+    "surface": "fabric",
+    "roughness": 0.9,
+    "metalness": 0,
+    "sheen": 0.3,
+    "sheenRoughness": 0.8,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "base",
+   "name": "Base board",
+   "category": "mechanical",
+   "materialName": "Navy fabric",
+   "detail": "Bottom panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     270,
+     4,
+     270
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    6,
+    0
+   ],
+   "material": {
+    "color": "#12175a",
+    "surface": "fabric",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle_front",
+   "name": "Front handle",
+   "category": "mechanical",
+   "materialName": "Navy fabric strap",
+   "detail": "Fabric pull strap on front face",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     85,
+     22,
+     8
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    205,
+    141
+   ],
+   "material": {
+    "color": "#161c60",
+    "surface": "fabric",
+    "roughness": 0.9,
+    "metalness": 0,
+    "sheen": 0.3,
+    "sheenRoughness": 0.8
+   }
+  },
+  {
+   "id": "handle_back",
+   "name": "Back handle",
+   "category": "mechanical",
+   "materialName": "Navy fabric strap",
+   "detail": "Fabric pull strap on back face",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     85,
+     22,
+     8
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    205,
+    -141
+   ],
+   "material": {
+    "color": "#161c60",
+    "surface": "fabric",
+    "roughness": 0.9,
+    "metalness": 0,
+    "sheen": 0.3,
+    "sheenRoughness": 0.8
+   }
+  }
+ ]
+}

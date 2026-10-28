@@ -1,0 +1,363 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "2-Tier Wire Storage Shelf",
+ "units": "mm",
+ "components": [
+  {
+   "id": "post_fl",
+   "name": "Front left post",
+   "category": "mechanical",
+   "materialName": "black steel tube",
+   "detail": "Vertical post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 11,
+    "radiusBottom": 11,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    -268,
+    282,
+    160
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "post_fr",
+   "name": "Front right post",
+   "category": "mechanical",
+   "materialName": "black steel tube",
+   "detail": "Vertical post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 11,
+    "radiusBottom": 11,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    268,
+    282,
+    160
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "post_bl",
+   "name": "Back left post",
+   "category": "mechanical",
+   "materialName": "black steel tube",
+   "detail": "Vertical post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 11,
+    "radiusBottom": 11,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    -268,
+    282,
+    -160
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "post_br",
+   "name": "Back right post",
+   "category": "mechanical",
+   "materialName": "black steel tube",
+   "detail": "Vertical post",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 11,
+    "radiusBottom": 11,
+    "depth": 564,
+    "radialSegments": 24
+   },
+   "position": [
+    268,
+    282,
+    -160
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "top_panel",
+   "name": "Top liner panel",
+   "category": "enclosure",
+   "materialName": "black liner",
+   "detail": "Solid top surface",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     540,
+     4,
+     326
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    538,
+    0
+   ],
+   "material": {
+    "color": "#0c0c0c",
+    "roughness": 0.8,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "top_rim_f",
+   "name": "Top front rim",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Zigzag wire frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     536,
+     14,
+     5
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    531,
+    160
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "top_rim_b",
+   "name": "Top back rim",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Zigzag wire frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     536,
+     14,
+     5
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    531,
+    -160
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "top_rim_l",
+   "name": "Top left rim",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Zigzag wire frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     5,
+     14,
+     320
+    ],
+    "radius": 2
+   },
+   "position": [
+    -268,
+    531,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "top_rim_r",
+   "name": "Top right rim",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Zigzag wire frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     5,
+     14,
+     320
+    ],
+    "radius": 2
+   },
+   "position": [
+    268,
+    531,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bot_deck",
+   "name": "Bottom wire deck",
+   "category": "mechanical",
+   "materialName": "black wire grid",
+   "detail": "Lower shelf deck",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     536,
+     4,
+     316
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    60,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bot_rim_f",
+   "name": "Bottom front rim",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Zigzag wire frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     536,
+     14,
+     5
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    64,
+    160
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bot_rim_b",
+   "name": "Bottom back rim",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Zigzag wire frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     536,
+     14,
+     5
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    64,
+    -160
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bot_rim_l",
+   "name": "Bottom left rim",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Zigzag wire frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     5,
+     14,
+     320
+    ],
+    "radius": 2
+   },
+   "position": [
+    -268,
+    64,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bot_rim_r",
+   "name": "Bottom right rim",
+   "category": "mechanical",
+   "materialName": "black wire",
+   "detail": "Zigzag wire frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     5,
+     14,
+     320
+    ],
+    "radius": 2
+   },
+   "position": [
+    268,
+    64,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

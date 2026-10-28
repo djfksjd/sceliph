@@ -1,0 +1,651 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Coastal Breeze End Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Parquet top",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "Natural parquet tabletop",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     650,
+     35,
+     650
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    490.5,
+    0
+   ],
+   "material": {
+    "color": "#9a6b3f",
+    "surface": "wood",
+    "roughness": 0.6,
+    "metalness": 0,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "leg1",
+   "name": "Leg",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     473,
+     60
+    ],
+    "radius": 3
+   },
+   "position": [
+    275,
+    236.5,
+    275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "leg2",
+   "name": "Leg",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     473,
+     60
+    ],
+    "radius": 3
+   },
+   "position": [
+    -275,
+    236.5,
+    275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "leg3",
+   "name": "Leg",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     473,
+     60
+    ],
+    "radius": 3
+   },
+   "position": [
+    275,
+    236.5,
+    -275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "leg4",
+   "name": "Leg",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     473,
+     60
+    ],
+    "radius": 3
+   },
+   "position": [
+    -275,
+    236.5,
+    -275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "apf",
+   "name": "Upper rail front",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Apron",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     490,
+     60,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    443,
+    275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "apb",
+   "name": "Upper rail back",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Apron",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     490,
+     60,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    443,
+    -275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "apr",
+   "name": "Upper rail right",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Apron",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     60,
+     490
+    ],
+    "radius": 2
+   },
+   "position": [
+    275,
+    443,
+    0
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "apl",
+   "name": "Upper rail left",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Apron",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     60,
+     490
+    ],
+    "radius": 2
+   },
+   "position": [
+    -275,
+    443,
+    0
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "lrf",
+   "name": "Lower rail front",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Stretcher",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     490,
+     40,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    80,
+    275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "lrb",
+   "name": "Lower rail back",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Stretcher",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     490,
+     40,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    80,
+    -275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "lrr",
+   "name": "Lower rail right",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Stretcher",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     40,
+     490
+    ],
+    "radius": 2
+   },
+   "position": [
+    275,
+    80,
+    0
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "lrl",
+   "name": "Lower rail left",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Stretcher",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     40,
+     490
+    ],
+    "radius": 2
+   },
+   "position": [
+    -275,
+    80,
+    0
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "dfa",
+   "name": "Front brace A",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -230,
+      150,
+      0
+     ],
+     [
+      0,
+      -150,
+      0
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    0,
+    250,
+    275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "dfb",
+   "name": "Front brace B",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      230,
+      150,
+      0
+     ],
+     [
+      0,
+      -150,
+      0
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    0,
+    250,
+    275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "dba",
+   "name": "Back brace A",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -230,
+      150,
+      0
+     ],
+     [
+      0,
+      -150,
+      0
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    0,
+    250,
+    -275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "dbb",
+   "name": "Back brace B",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      230,
+      150,
+      0
+     ],
+     [
+      0,
+      -150,
+      0
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    0,
+    250,
+    -275
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "dra",
+   "name": "Right brace A",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      150,
+      -230
+     ],
+     [
+      0,
+      -150,
+      0
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    275,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "drb",
+   "name": "Right brace B",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      150,
+      230
+     ],
+     [
+      0,
+      -150,
+      0
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    275,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "dla",
+   "name": "Left brace A",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      150,
+      -230
+     ],
+     [
+      0,
+      -150,
+      0
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    -275,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "dlb",
+   "name": "Left brace B",
+   "category": "mechanical",
+   "materialName": "white paint",
+   "detail": "Diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      150,
+      230
+     ],
+     [
+      0,
+      -150,
+      0
+     ]
+    ],
+    "radius": 14
+   },
+   "position": [
+    -275,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#f2f1ec",
+    "surface": "coated-metal",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  }
+ ]
+}

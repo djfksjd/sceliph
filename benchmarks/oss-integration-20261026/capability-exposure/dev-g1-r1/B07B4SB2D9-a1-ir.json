@@ -1,0 +1,228 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Brass floor lamp with linen shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base tray",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Round base with lip",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 80,
+    "radiusBottom": 85,
+    "depth": 22,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    11,
+    0
+   ],
+   "material": {
+    "color": "#b8802e",
+    "surface": "polished-metal",
+    "roughness": 0.3,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "baserim",
+   "name": "Base ring",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Raised ring on base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 70,
+    "radiusBottom": 72,
+    "depth": 12,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    28,
+    0
+   ],
+   "material": {
+    "color": "#b8802e",
+    "surface": "polished-metal",
+    "roughness": 0.3,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Slim brass stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 9,
+    "radiusBottom": 9,
+    "depth": 540,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    290,
+    0
+   ],
+   "material": {
+    "color": "#b8802e",
+    "surface": "polished-metal",
+    "roughness": 0.3,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Collar",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Collar under shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 13,
+    "radiusBottom": 13,
+    "depth": 16,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    520,
+    0
+   ],
+   "material": {
+    "color": "#b8802e",
+    "surface": "polished-metal",
+    "roughness": 0.3,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Knob",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Adjustment knob",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 16,
+    "radiusBottom": 16,
+    "depth": 8,
+    "radialSegments": 32
+   },
+   "position": [
+    -24,
+    530,
+    18
+   ],
+   "rotation": [
+    1.5708,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8802e",
+    "surface": "polished-metal",
+    "roughness": 0.3,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "switch",
+   "name": "Switch",
+   "category": "interconnect",
+   "materialName": "Black plastic",
+   "detail": "Inline switch",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     8,
+     24,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    9,
+    70,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "molded-polymer",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Shade",
+   "category": "enclosure",
+   "materialName": "Linen",
+   "detail": "Tapered drum shade, hollow",
+   "geometry": {
+    "op": "booleanCSG",
+    "operation": "difference",
+    "operands": [
+     {
+      "geometry": {
+       "op": "cylinder",
+       "radiusTop": 118,
+       "radiusBottom": 148,
+       "depth": 170,
+       "radialSegments": 64
+      },
+      "position": [
+       0,
+       0,
+       0
+      ],
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "geometry": {
+       "op": "cylinder",
+       "radiusTop": 104,
+       "radiusBottom": 138,
+       "depth": 190,
+       "radialSegments": 64
+      },
+      "position": [
+       0,
+       0,
+       0
+      ],
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "position": [
+    0,
+    626,
+    0
+   ],
+   "material": {
+    "color": "#f2efe8",
+    "surface": "fabric",
+    "roughness": 0.9,
+    "metalness": 0,
+    "sheen": 0.3,
+    "sheenRoughness": 0.8
+   }
+  }
+ ]
+}

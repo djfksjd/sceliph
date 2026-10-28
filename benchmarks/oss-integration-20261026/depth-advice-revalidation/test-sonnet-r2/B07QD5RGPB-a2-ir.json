@@ -1,0 +1,408 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-Century 3-Light Vanity",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Backplate",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Rectangular mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     686,
+     123,
+     25
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    192,
+    -99.5
+   ],
+   "material": {
+    "color": "#1c1b1a",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "globe_l",
+   "name": "Left globe",
+   "category": "enclosure",
+   "materialName": "opal glass",
+   "detail": "Frosted glass sphere",
+   "geometry": {
+    "op": "sphere",
+    "radius": 96
+   },
+   "position": [
+    -240,
+    96,
+    15
+   ],
+   "material": {
+    "color": "#f8dcc4",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_c",
+   "name": "Center globe",
+   "category": "enclosure",
+   "materialName": "opal glass",
+   "detail": "Frosted glass sphere",
+   "geometry": {
+    "op": "sphere",
+    "radius": 96
+   },
+   "position": [
+    0,
+    96,
+    15
+   ],
+   "material": {
+    "color": "#f8dcc4",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe_r",
+   "name": "Right globe",
+   "category": "enclosure",
+   "materialName": "opal glass",
+   "detail": "Frosted glass sphere",
+   "geometry": {
+    "op": "sphere",
+    "radius": 96
+   },
+   "position": [
+    240,
+    96,
+    15
+   ],
+   "material": {
+    "color": "#f8dcc4",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap_l",
+   "name": "Left cap",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Dome cap holding the globe",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      60
+     ],
+     [
+      78,
+      60
+     ],
+     [
+      74,
+      75
+     ],
+     [
+      62,
+      87
+     ],
+     [
+      42,
+      95
+     ],
+     [
+      0,
+      99
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    -240,
+    96,
+    15
+   ],
+   "material": {
+    "color": "#1c1b1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "cap_c",
+   "name": "Center cap",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Dome cap holding the globe",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      60
+     ],
+     [
+      78,
+      60
+     ],
+     [
+      74,
+      75
+     ],
+     [
+      62,
+      87
+     ],
+     [
+      42,
+      95
+     ],
+     [
+      0,
+      99
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    96,
+    15
+   ],
+   "material": {
+    "color": "#1c1b1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "cap_r",
+   "name": "Right cap",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Dome cap holding the globe",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      60
+     ],
+     [
+      78,
+      60
+     ],
+     [
+      74,
+      75
+     ],
+     [
+      62,
+      87
+     ],
+     [
+      42,
+      95
+     ],
+     [
+      0,
+      99
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    240,
+    96,
+    15
+   ],
+   "material": {
+    "color": "#1c1b1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "neck_l",
+   "name": "Left neck",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Cylindrical neck above cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 33,
+    "radiusBottom": 33,
+    "depth": 30,
+    "radialSegments": 32
+   },
+   "position": [
+    -240,
+    200,
+    15
+   ],
+   "material": {
+    "color": "#1c1b1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "neck_c",
+   "name": "Center neck",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Cylindrical neck above cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 33,
+    "radiusBottom": 33,
+    "depth": 30,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    200,
+    15
+   ],
+   "material": {
+    "color": "#1c1b1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "neck_r",
+   "name": "Right neck",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Cylindrical neck above cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 33,
+    "radiusBottom": 33,
+    "depth": 30,
+    "radialSegments": 32
+   },
+   "position": [
+    240,
+    200,
+    15
+   ],
+   "material": {
+    "color": "#1c1b1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "arm_l",
+   "name": "Left arm",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Rod connecting neck to plate",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      35
+     ],
+     [
+      0,
+      0,
+      -35
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    -240,
+    200,
+    -52
+   ],
+   "material": {
+    "color": "#1c1b1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "arm_c",
+   "name": "Center arm",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Rod connecting neck to plate",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      35
+     ],
+     [
+      0,
+      0,
+      -35
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    0,
+    200,
+    -52
+   ],
+   "material": {
+    "color": "#1c1b1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "arm_r",
+   "name": "Right arm",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Rod connecting neck to plate",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      35
+     ],
+     [
+      0,
+      0,
+      -35
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    240,
+    200,
+    -52
+   ],
+   "material": {
+    "color": "#1c1b1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

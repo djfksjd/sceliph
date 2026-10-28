@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- sideL: Left side panel; material \"Oak-look MDF\"; colour #d9aa7c\n- sideR: Right side panel; material \"Oak-look MDF\"; colour #d9aa7c\n- top: Top panel; material \"White MDF\"; colour #f4f5f6\n- bottom: Bottom panel; material \"White MDF\"; colour #f4f5f6\n- shelf: Middle shelf; material \"White MDF\"; colour #f4f5f6\n- back: Back panel; material \"Oak-look MDF\"; colour #d2a273\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"sideL\",\"surface\":\"wood\",\"albedoVariation\":0.35,\"textureScale\":[2,3]},{\"id\":\"sideR\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[2,3]},{\"id\":\"top\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"bottom\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shelf\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"back\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[2,3]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0067893,
+  "durationMs": 3562,
+  "isError": false
+ }
+}

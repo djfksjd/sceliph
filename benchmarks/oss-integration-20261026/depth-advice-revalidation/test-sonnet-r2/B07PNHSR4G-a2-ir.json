@@ -1,0 +1,295 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "5-Tier Ladder Bookcase White",
+ "units": "mm",
+ "components": [
+  {
+   "id": "legFL",
+   "name": "Front leg left",
+   "category": "enclosure",
+   "materialName": "painted rubber wood",
+   "detail": "slanted front leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -946,
+      200
+     ],
+     [
+      0,
+      946,
+      -130
+     ]
+    ],
+    "radius": 16
+   },
+   "position": [
+    -310,
+    946,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legFR",
+   "name": "Front leg right",
+   "category": "enclosure",
+   "materialName": "painted rubber wood",
+   "detail": "slanted front leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -946,
+      200
+     ],
+     [
+      0,
+      946,
+      -130
+     ]
+    ],
+    "radius": 16
+   },
+   "position": [
+    310,
+    946,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legBL",
+   "name": "Rear leg left",
+   "category": "enclosure",
+   "materialName": "painted rubber wood",
+   "detail": "rear leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -946,
+      -200
+     ],
+     [
+      0,
+      946,
+      -130
+     ]
+    ],
+    "radius": 16
+   },
+   "position": [
+    -310,
+    946,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legBR",
+   "name": "Rear leg right",
+   "category": "enclosure",
+   "materialName": "painted rubber wood",
+   "detail": "rear leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -946,
+      -200
+     ],
+     [
+      0,
+      946,
+      -130
+     ]
+    ],
+    "radius": 16
+   },
+   "position": [
+    310,
+    946,
+    0
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf1",
+   "name": "Shelf 1",
+   "category": "enclosure",
+   "materialName": "painted rubber wood",
+   "detail": "bottom shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     22,
+     371
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    150,
+    -6
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf2",
+   "name": "Shelf 2",
+   "category": "enclosure",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     22,
+     301
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    520,
+    -22
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf3",
+   "name": "Shelf 3",
+   "category": "enclosure",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     22,
+     231
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    890,
+    -38
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf4",
+   "name": "Shelf 4",
+   "category": "enclosure",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     22,
+     170
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1260,
+    -53
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf5",
+   "name": "Shelf 5",
+   "category": "enclosure",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     22,
+     120
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1630,
+    -69
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "painted rubber wood",
+   "detail": "top board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     640,
+     24,
+     170
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1880,
+    -80
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  }
+ ]
+}

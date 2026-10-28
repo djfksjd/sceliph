@@ -1,0 +1,207 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Wall shoe cabinet Riva, wild oak",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "wild oak",
+   "detail": "overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     20,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    390,
+    0
+   ],
+   "material": {
+    "color": "#c8955a",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "sideL",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "wild oak",
+   "detail": "side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     380,
+     360
+    ],
+    "radius": 2
+   },
+   "position": [
+    -390,
+    190,
+    -10
+   ],
+   "material": {
+    "color": "#c28d52",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "sideR",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "wild oak",
+   "detail": "side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     380,
+     360
+    ],
+    "radius": 2
+   },
+   "position": [
+    390,
+    190,
+    -10
+   ],
+   "material": {
+    "color": "#c28d52",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     370,
+     10
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    195,
+    -185
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "bottom shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     20,
+     350
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    20,
+    -10
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "flap",
+   "name": "Front flap",
+   "category": "mechanical",
+   "materialName": "wild oak",
+   "detail": "flap front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     770,
+     325,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    215,
+    180
+   ],
+   "material": {
+    "color": "#cf9b5e",
+    "roughness": 0.55
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Bottom front strip",
+   "category": "enclosure",
+   "materialName": "wild oak",
+   "detail": "front strip",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     35,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    18,
+    172
+   ],
+   "material": {
+    "color": "#c28d52",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Inner shelf",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     16,
+     340
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    200,
+    -10
+   ],
+   "material": {
+    "color": "#b98650",
+    "roughness": 0.7
+   }
+  }
+ ]
+}

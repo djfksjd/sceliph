@@ -1,0 +1,805 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Stark 6-Drawer Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "stained pine",
+   "detail": "Main cabinet",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1520,
+     613,
+     460
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    506,
+    0
+   ],
+   "material": {
+    "color": "#a84a1c",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "clearcoatRoughness": 0.5,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "d1",
+   "name": "Drawer top left",
+   "category": "enclosure",
+   "materialName": "stained pine",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     195,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -376,
+    701,
+    232
+   ],
+   "material": {
+    "color": "#b0501f",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "d2",
+   "name": "Drawer mid left",
+   "category": "enclosure",
+   "materialName": "stained pine",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     195,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -376,
+    500,
+    232
+   ],
+   "material": {
+    "color": "#b0501f",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "d3",
+   "name": "Drawer bottom left",
+   "category": "enclosure",
+   "materialName": "stained pine",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     195,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    -376,
+    299,
+    232
+   ],
+   "material": {
+    "color": "#b0501f",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "d4",
+   "name": "Drawer top right",
+   "category": "enclosure",
+   "materialName": "stained pine",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     195,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    376,
+    701,
+    232
+   ],
+   "material": {
+    "color": "#b0501f",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "d5",
+   "name": "Drawer mid right",
+   "category": "enclosure",
+   "materialName": "stained pine",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     195,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    376,
+    500,
+    232
+   ],
+   "material": {
+    "color": "#b0501f",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "d6",
+   "name": "Drawer bottom right",
+   "category": "enclosure",
+   "materialName": "stained pine",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     195,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    376,
+    299,
+    232
+   ],
+   "material": {
+    "color": "#b0501f",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "h1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Recessed bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     150,
+     8,
+     14
+    ],
+    "radius": 2
+   },
+   "position": [
+    -376,
+    788,
+    246
+   ],
+   "material": {
+    "color": "#161616",
+    "surface": "coated-metal",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "h2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     150,
+     8,
+     14
+    ],
+    "radius": 2
+   },
+   "position": [
+    -376,
+    587,
+    246
+   ],
+   "material": {
+    "color": "#161616",
+    "surface": "coated-metal",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "h3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     150,
+     8,
+     14
+    ],
+    "radius": 2
+   },
+   "position": [
+    -376,
+    386,
+    246
+   ],
+   "material": {
+    "color": "#161616",
+    "surface": "coated-metal",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "h4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     150,
+     8,
+     14
+    ],
+    "radius": 2
+   },
+   "position": [
+    376,
+    788,
+    246
+   ],
+   "material": {
+    "color": "#161616",
+    "surface": "coated-metal",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "h5",
+   "name": "Handle 5",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     150,
+     8,
+     14
+    ],
+    "radius": 2
+   },
+   "position": [
+    376,
+    587,
+    246
+   ],
+   "material": {
+    "color": "#161616",
+    "surface": "coated-metal",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "h6",
+   "name": "Handle 6",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     150,
+     8,
+     14
+    ],
+    "radius": 2
+   },
+   "position": [
+    376,
+    386,
+    246
+   ],
+   "material": {
+    "color": "#161616",
+    "surface": "coated-metal",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_fl",
+   "name": "Post front left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Leg post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     200,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    -715,
+    100,
+    205
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_fr",
+   "name": "Post front right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Leg post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     200,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    715,
+    100,
+    205
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_bl",
+   "name": "Post back left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Leg post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     200,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    -715,
+    100,
+    -205
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_br",
+   "name": "Post back right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Leg post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     200,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    715,
+    100,
+    -205
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_mf",
+   "name": "Post middle front",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Centre post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     200,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    100,
+    205
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_mb",
+   "name": "Post middle back",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Centre post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     200,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    100,
+    -205
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "top_f",
+   "name": "Top rail front",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1450,
+     20,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    190,
+    205
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "top_b",
+   "name": "Top rail back",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1450,
+     20,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    190,
+    -205
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "top_l",
+   "name": "Top rail left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     20,
+     410
+    ],
+    "radius": 2
+   },
+   "position": [
+    -715,
+    190,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "top_r",
+   "name": "Top rail right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     20,
+     410
+    ],
+    "radius": 2
+   },
+   "position": [
+    715,
+    190,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "top_m",
+   "name": "Top rail middle",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Cross rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     16,
+     410
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    190,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bot_f",
+   "name": "Bottom rail front",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1450,
+     20,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    12,
+    205
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bot_b",
+   "name": "Bottom rail back",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1450,
+     20,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    12,
+    -205
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bot_l",
+   "name": "Bottom rail left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     20,
+     410
+    ],
+    "radius": 2
+   },
+   "position": [
+    -715,
+    12,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bot_r",
+   "name": "Bottom rail right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Frame rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     20,
+     410
+    ],
+    "radius": 2
+   },
+   "position": [
+    715,
+    12,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bot_m",
+   "name": "Bottom rail middle",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Cross rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     16,
+     16,
+     410
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    12,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "surface": "coated-metal",
+    "roughness": 0.45,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

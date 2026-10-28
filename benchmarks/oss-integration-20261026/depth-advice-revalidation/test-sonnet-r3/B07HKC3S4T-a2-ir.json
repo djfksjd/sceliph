@@ -1,0 +1,287 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Floor lamp with tray table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "white painted metal",
+   "detail": "tapered drum shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 148,
+    "radiusBottom": 175,
+    "depth": 188,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1379,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "white steel",
+   "detail": "central stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 10,
+    "radiusBottom": 10,
+    "depth": 640,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    970,
+    0
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Bulb",
+   "category": "power",
+   "materialName": "frosted glass",
+   "detail": "bulb under shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 32
+   },
+   "position": [
+    0,
+    1240,
+    0
+   ],
+   "material": {
+    "color": "#fff3d0",
+    "roughness": 0.4
+   }
+  },
+  {
+   "id": "tray",
+   "name": "Tray rim",
+   "category": "enclosure",
+   "materialName": "white painted metal",
+   "detail": "shallow dish",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 162,
+    "radiusBottom": 120,
+    "depth": 85,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    695,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "trayTop",
+   "name": "Wood insert",
+   "category": "enclosure",
+   "materialName": "light wood",
+   "detail": "tray surface",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 148,
+    "radiusBottom": 148,
+    "depth": 6,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    731,
+    0
+   ],
+   "material": {
+    "color": "#d9b98a",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "leg1",
+   "name": "Leg back",
+   "category": "mechanical",
+   "materialName": "white steel",
+   "detail": "splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      325,
+      13
+     ],
+     [
+      0,
+      -325,
+      -13
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    0,
+    325,
+    -185
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "leg2",
+   "name": "Leg right",
+   "category": "mechanical",
+   "materialName": "white steel",
+   "detail": "splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -56,
+      325,
+      -32
+     ],
+     [
+      56,
+      -325,
+      32
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    160,
+    325,
+    92
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "leg3",
+   "name": "Leg left",
+   "category": "mechanical",
+   "materialName": "white steel",
+   "detail": "splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      56,
+      325,
+      -32
+     ],
+     [
+      -56,
+      -325,
+      32
+     ]
+    ],
+    "radius": 12
+   },
+   "position": [
+    -160,
+    325,
+    92
+   ],
+   "material": {
+    "color": "#f2f2f0",
+    "roughness": 0.5,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "chain1",
+   "name": "Pull chain A",
+   "category": "interconnect",
+   "materialName": "brass",
+   "detail": "pull chain",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      50,
+      0
+     ],
+     [
+      0,
+      -50,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    -45,
+    1230,
+    0
+   ],
+   "material": {
+    "color": "#c8b27a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "chain2",
+   "name": "Pull chain B",
+   "category": "interconnect",
+   "materialName": "brass",
+   "detail": "pull chain",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      50,
+      0
+     ],
+     [
+      0,
+      -50,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    45,
+    1230,
+    0
+   ],
+   "material": {
+    "color": "#c8b27a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

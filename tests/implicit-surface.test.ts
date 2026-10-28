@@ -67,6 +67,24 @@ describe('bounded implicit surface engine', () => {
     result.geometry.dispose();
   });
 
+  it('keeps every triangle non-degenerate when the surface touches a grid node exactly', () => {
+    // Pole at y = 120 lands on a node: bounds ±160 at resolution 32 is a 10 mm step.
+    const pole: ImplicitSurfaceDescriptor = {
+      bounds: { min: [-280, -160, -280], max: [280, 160, 280] },
+      resolution: 32,
+      triangleBudget: 400_000,
+      primitives: [{ id: 'cushion', type: 'ellipsoid', radii: [240, 120, 240] }],
+    };
+    const result = polygonizeImplicitSurface(pole);
+    expect(analyzeTopology(new THREE.Mesh(result.geometry))).toMatchObject({
+      pass: true, boundaryEdges: 0, nonManifoldEdges: 0, degenerateTriangles: 0,
+    });
+    expect(compileAssemblyIR({
+      schema: 'morphloom.assembly/0.1', name: 'Cushion', units: 'mm',
+      components: [{ id: 'cushion', name: 'Cushion', category: 'mechanical', materialName: 'linen', detail: 'seat cushion', material: { color: '#c8c0b0' }, geometry: { op: 'implicitSurface', descriptor: pole } }],
+    } as never, 'beauty').metrics.topology.pass).toBe(true);
+  });
+
   it('fails closed on unsafe graphs, clipped bounds, and insufficient triangle budgets', () => {
     expect(() => validateImplicitSurfaceDescriptor({ ...sphere, resolution: 128 })).toThrow(/resolution/);
     expect(() => validateImplicitSurfaceDescriptor({
