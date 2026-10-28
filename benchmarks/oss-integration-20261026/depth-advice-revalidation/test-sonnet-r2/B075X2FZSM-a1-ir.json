@@ -1,0 +1,208 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-century brass drum table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Walnut base",
+   "category": "enclosure",
+   "materialName": "walnut wood",
+   "detail": "Tapered disc base",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      88,
+      0
+     ],
+     [
+      105,
+      28
+     ],
+     [
+      100,
+      40
+     ],
+     [
+      60,
+      48
+     ],
+     [
+      0,
+      48
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#4a2a1e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Brass trumpet stem",
+   "category": "mechanical",
+   "materialName": "brushed brass",
+   "detail": "Flared trumpet column",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      45
+     ],
+     [
+      50,
+      45
+     ],
+     [
+      50,
+      52
+     ],
+     [
+      38,
+      62
+     ],
+     [
+      24,
+      85
+     ],
+     [
+      16,
+      130
+     ],
+     [
+      12,
+      200
+     ],
+     [
+      11,
+      260
+     ],
+     [
+      11,
+      310
+     ],
+     [
+      0,
+      310
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8873a",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Black rod",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Thin rod up through shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 225,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    422,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Drum shade",
+   "category": "enclosure",
+   "materialName": "linen fabric",
+   "detail": "Cylindrical drum shade with closed wall profile",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      193,
+      353
+     ],
+     [
+      198,
+      353
+     ],
+     [
+      198,
+      548
+     ],
+     [
+      193,
+      548
+     ],
+     [
+      193,
+      353
+     ]
+    ],
+    "segments": 96
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b9794d",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Finial",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Top cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 16,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    543,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

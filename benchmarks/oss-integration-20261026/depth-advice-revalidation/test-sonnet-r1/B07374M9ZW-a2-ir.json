@@ -1,0 +1,205 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rose gold dome pendant lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "polished rose gold metal",
+   "detail": "Round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 55,
+    "radiusBottom": 57,
+    "depth": 16,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    754,
+    0
+   ],
+   "material": {
+    "color": "#c98a6a",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Suspension cord",
+   "category": "interconnect",
+   "materialName": "black fabric cord",
+   "detail": "Thin black cord",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 2.5,
+    "radiusBottom": 2.5,
+    "depth": 445,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    530,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Neck cap",
+   "category": "mechanical",
+   "materialName": "rose gold metal",
+   "detail": "Small cap where cord enters neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 8,
+    "depth": 16,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    302,
+    0
+   ],
+   "material": {
+    "color": "#c98a6a",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck",
+   "category": "mechanical",
+   "materialName": "polished rose gold metal",
+   "detail": "Tapered neck above shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -55
+     ],
+     [
+      28,
+      -55
+     ],
+     [
+      25,
+      -30
+     ],
+     [
+      18,
+      10
+     ],
+     [
+      15,
+      45
+     ],
+     [
+      0,
+      45
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#c98a6a",
+    "roughness": 0.2,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Dome shade",
+   "category": "enclosure",
+   "materialName": "polished copper",
+   "detail": "Wide dome shade with shoulder and vertical rim, closed solid",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      3
+     ],
+     [
+      157,
+      3
+     ],
+     [
+      158,
+      40
+     ],
+     [
+      157,
+      140
+     ],
+     [
+      110,
+      165
+     ],
+     [
+      30,
+      195
+     ],
+     [
+      26,
+      200
+     ],
+     [
+      0,
+      200
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#b8704c",
+    "roughness": 0.2,
+    "metalness": 0.95
+   }
+  },
+  {
+   "id": "glow",
+   "name": "Interior glow disc",
+   "category": "display",
+   "materialName": "warm lit interior",
+   "detail": "Yellow lit inner surface seen at the opening",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 148,
+    "radiusBottom": 148,
+    "depth": 3,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1.5,
+    0
+   ],
+   "material": {
+    "color": "#f2c94a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

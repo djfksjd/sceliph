@@ -1,0 +1,651 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Coastal Breeze End Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Tabletop",
+   "category": "mechanical",
+   "materialName": "Reclaimed wood",
+   "detail": "Natural wood parquet top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     660,
+     40,
+     660
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    488,
+    0
+   ],
+   "material": {
+    "color": "#9a6b3f",
+    "surface": "wood",
+    "roughness": 0.6,
+    "metalness": 0,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "leg1",
+   "name": "Leg front right",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     468,
+     60
+    ],
+    "radius": 3
+   },
+   "position": [
+    280,
+    234,
+    280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "leg2",
+   "name": "Leg front left",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     468,
+     60
+    ],
+    "radius": 3
+   },
+   "position": [
+    -280,
+    234,
+    280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "leg3",
+   "name": "Leg back right",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     468,
+     60
+    ],
+    "radius": 3
+   },
+   "position": [
+    280,
+    234,
+    -280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "leg4",
+   "name": "Leg back left",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     468,
+     60
+    ],
+    "radius": 3
+   },
+   "position": [
+    -280,
+    234,
+    -280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "apf",
+   "name": "Apron front",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "top rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     500,
+     50,
+     30
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    435,
+    280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "apb",
+   "name": "Apron back",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "top rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     500,
+     50,
+     30
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    435,
+    -280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "apr",
+   "name": "Apron right",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "top rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     50,
+     500
+    ],
+    "radius": 2
+   },
+   "position": [
+    280,
+    435,
+    0
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "apl",
+   "name": "Apron left",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "top rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     50,
+     500
+    ],
+    "radius": 2
+   },
+   "position": [
+    -280,
+    435,
+    0
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "lrf",
+   "name": "Lower rail front",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "bottom rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     500,
+     40,
+     30
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    70,
+    280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "lrb",
+   "name": "Lower rail back",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "bottom rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     500,
+     40,
+     30
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    70,
+    -280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "lrr",
+   "name": "Lower rail right",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "bottom rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     40,
+     500
+    ],
+    "radius": 2
+   },
+   "position": [
+    280,
+    70,
+    0
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "lrl",
+   "name": "Lower rail left",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "bottom rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     40,
+     500
+    ],
+    "radius": 2
+   },
+   "position": [
+    -280,
+    70,
+    0
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "bf1",
+   "name": "Brace front A",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "V brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -240,
+      -170,
+      0
+     ],
+     [
+      0,
+      150,
+      0
+     ]
+    ],
+    "radius": 18
+   },
+   "position": [
+    0,
+    250,
+    280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "bf2",
+   "name": "Brace front B",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "V brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      240,
+      -170,
+      0
+     ],
+     [
+      0,
+      150,
+      0
+     ]
+    ],
+    "radius": 18
+   },
+   "position": [
+    0,
+    250,
+    280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "bb1",
+   "name": "Brace back A",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "V brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -240,
+      -170,
+      0
+     ],
+     [
+      0,
+      150,
+      0
+     ]
+    ],
+    "radius": 18
+   },
+   "position": [
+    0,
+    250,
+    -280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "bb2",
+   "name": "Brace back B",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "V brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      240,
+      -170,
+      0
+     ],
+     [
+      0,
+      150,
+      0
+     ]
+    ],
+    "radius": 18
+   },
+   "position": [
+    0,
+    250,
+    -280
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "br1",
+   "name": "Brace right A",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "V brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -170,
+      -240
+     ],
+     [
+      0,
+      150,
+      0
+     ]
+    ],
+    "radius": 18
+   },
+   "position": [
+    280,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "br2",
+   "name": "Brace right B",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "V brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -170,
+      240
+     ],
+     [
+      0,
+      150,
+      0
+     ]
+    ],
+    "radius": 18
+   },
+   "position": [
+    280,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "bl1",
+   "name": "Brace left A",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "V brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -170,
+      -240
+     ],
+     [
+      0,
+      150,
+      0
+     ]
+    ],
+    "radius": 18
+   },
+   "position": [
+    -280,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "bl2",
+   "name": "Brace left B",
+   "category": "mechanical",
+   "materialName": "White painted wood",
+   "detail": "V brace",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -170,
+      240
+     ],
+     [
+      0,
+      150,
+      0
+     ]
+    ],
+    "radius": 18
+   },
+   "position": [
+    -280,
+    250,
+    0
+   ],
+   "material": {
+    "color": "#f2f0eb",
+    "surface": "wood",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  }
+ ]
+}

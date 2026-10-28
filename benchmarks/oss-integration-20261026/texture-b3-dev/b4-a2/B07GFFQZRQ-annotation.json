@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- top: Desktop; material \"white laminate board\"; colour #f1f2f3\n- side_l: Left side panel; material \"white laminate board\"; colour #eceeef\n- side_r: Right side panel; material \"white laminate board\"; colour #eceeef\n- back: Back modesty panel; material \"white laminate board\"; colour #e8eaeb\n- drawer_body: Drawer box; material \"white laminate board\"; colour #e6e8e9\n- drawer_front: Drawer front; material \"white laminate board\"; colour #f2f3f4\n- handle: Drawer handle; material \"brushed aluminium\"; colour #c4c7ca\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"top\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"side_l\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"side_r\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"back\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"drawer_body\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"drawer_front\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"handle\",\"surface\":\"brushed-metal\",\"albedoVariation\":0.05,\"textureScale\":[4,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0080693,
+  "durationMs": 3433,
+  "isError": false
+ }
+}

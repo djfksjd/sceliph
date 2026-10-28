@@ -1,0 +1,410 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "X-brace oak end table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "post_fl",
+   "name": "Post front left",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     55,
+     610,
+     55
+    ],
+    "radius": 3
+   },
+   "position": [
+    -252.5,
+    305,
+    252.5
+   ],
+   "material": {
+    "color": "#c9a26b",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "post_fr",
+   "name": "Post front right",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     55,
+     610,
+     55
+    ],
+    "radius": 3
+   },
+   "position": [
+    252.5,
+    305,
+    252.5
+   ],
+   "material": {
+    "color": "#c9a26b",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "post_bl",
+   "name": "Post back left",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     55,
+     610,
+     55
+    ],
+    "radius": 3
+   },
+   "position": [
+    -252.5,
+    305,
+    -252.5
+   ],
+   "material": {
+    "color": "#c9a26b",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "post_br",
+   "name": "Post back right",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     55,
+     610,
+     55
+    ],
+    "radius": 3
+   },
+   "position": [
+    252.5,
+    305,
+    -252.5
+   ],
+   "material": {
+    "color": "#c9a26b",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "oak",
+   "detail": "recessed tabletop",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     460,
+     20,
+     460
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    590,
+    0
+   ],
+   "material": {
+    "color": "#c4995f",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "apron_f",
+   "name": "Front top apron",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "top rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     450,
+     80,
+     28
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    565,
+    266
+   ],
+   "material": {
+    "color": "#cfa870",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "apron_b",
+   "name": "Back top apron",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "top rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     450,
+     80,
+     28
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    565,
+    -266
+   ],
+   "material": {
+    "color": "#cfa870",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "apron_l",
+   "name": "Left top apron",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "top rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     28,
+     80,
+     450
+    ],
+    "radius": 3
+   },
+   "position": [
+    -266,
+    565,
+    0
+   ],
+   "material": {
+    "color": "#cfa870",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "apron_r",
+   "name": "Right top apron",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "top rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     28,
+     80,
+     450
+    ],
+    "radius": 3
+   },
+   "position": [
+    266,
+    565,
+    0
+   ],
+   "material": {
+    "color": "#cfa870",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "rail_f",
+   "name": "Front bottom rail",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "lower rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     450,
+     70,
+     28
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    70,
+    266
+   ],
+   "material": {
+    "color": "#cfa870",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Bottom slat shelf",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "slatted lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     450,
+     20,
+     450
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    50,
+    0
+   ],
+   "material": {
+    "color": "#b98f58",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "xbrace_r1",
+   "name": "Right X brace A",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -190,
+      -200
+     ],
+     [
+      0,
+      190,
+      200
+     ]
+    ],
+    "radius": 22
+   },
+   "position": [
+    266,
+    315,
+    0
+   ],
+   "material": {
+    "color": "#c9a26b",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xbrace_r2",
+   "name": "Right X brace B",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -190,
+      200
+     ],
+     [
+      0,
+      190,
+      -200
+     ]
+    ],
+    "radius": 22
+   },
+   "position": [
+    266,
+    315,
+    0
+   ],
+   "material": {
+    "color": "#c9a26b",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xbrace_l1",
+   "name": "Left X brace A",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -190,
+      -200
+     ],
+     [
+      0,
+      190,
+      200
+     ]
+    ],
+    "radius": 22
+   },
+   "position": [
+    -266,
+    315,
+    0
+   ],
+   "material": {
+    "color": "#c9a26b",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xbrace_l2",
+   "name": "Left X brace B",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -190,
+      200
+     ],
+     [
+      0,
+      190,
+      -200
+     ]
+    ],
+    "radius": 22
+   },
+   "position": [
+    -266,
+    315,
+    0
+   ],
+   "material": {
+    "color": "#c9a26b",
+    "roughness": 0.8
+   }
+  }
+ ]
+}

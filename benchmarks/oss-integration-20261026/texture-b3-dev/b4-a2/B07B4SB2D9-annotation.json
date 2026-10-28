@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- base_low: Base lower disc; material \"brass\"; colour #b8812f\n- base_mid: Base middle step; material \"brass\"; colour #b8812f\n- base_top: Base top tray; material \"brass\"; colour #c08a35\n- pole: Pole; material \"brass\"; colour #b8812f\n- collar: Collar; material \"brass\"; colour #b8812f\n- knob_stem: Knob stem; material \"brass\"; colour #b8812f\n- knob: Knob; material \"brass\"; colour #b8812f\n- shade: Linen shade; material \"linen\"; colour #f1efe8\n- cord_switch: Cord switch; material \"black plastic\"; colour #1a1a1a\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"base_low\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"base_mid\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"base_top\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"pole\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"collar\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"knob_stem\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"knob\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"shade\",\"surface\":\"fabric\",\"albedoVariation\":0.12,\"textureScale\":[5,5]},{\"id\":\"cord_switch\",\"surface\":\"molded-polymer\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0077733,
+  "durationMs": 3802,
+  "isError": false
+ }
+}

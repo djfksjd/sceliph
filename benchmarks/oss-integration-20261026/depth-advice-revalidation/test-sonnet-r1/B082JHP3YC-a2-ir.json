@@ -1,0 +1,175 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Barn wall sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Barn shade",
+   "category": "enclosure",
+   "materialName": "speckled powder-coated metal",
+   "detail": "Dome shade with flared rim and neck",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      104,
+      0
+     ],
+     [
+      102,
+      4
+     ],
+     [
+      95,
+      15
+     ],
+     [
+      80,
+      60
+     ],
+     [
+      60,
+      100
+     ],
+     [
+      28,
+      130
+     ],
+     [
+      20,
+      150
+     ],
+     [
+      17,
+      162
+     ],
+     [
+      0,
+      162
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    24,
+    0
+   ],
+   "material": {
+    "color": "#3a3d3f",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Bulb",
+   "category": "logic",
+   "materialName": "glass",
+   "detail": "Exposed bulb under shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 30
+   },
+   "position": [
+    0,
+    48,
+    0
+   ],
+   "material": {
+    "color": "#e8eef0",
+    "roughness": 0.1,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Gooseneck arm",
+   "category": "mechanical",
+   "materialName": "speckled powder-coated metal",
+   "detail": "Curved arm from shade to wall plate",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -20,
+      80
+     ],
+     [
+      0,
+      55,
+      80
+     ],
+     [
+      0,
+      93,
+      40
+     ],
+     [
+      0,
+      93,
+      -2
+     ],
+     [
+      0,
+      70,
+      -60
+     ],
+     [
+      0,
+      15,
+      -80
+     ],
+     [
+      0,
+      -80,
+      -85
+     ]
+    ],
+    "radius": 7
+   },
+   "position": [
+    0,
+    200,
+    -80
+   ],
+   "material": {
+    "color": "#3a3d3f",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "plate",
+   "name": "Wall plate",
+   "category": "mechanical",
+   "materialName": "speckled powder-coated metal",
+   "detail": "Mounting backplate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     80,
+     119,
+     25
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    59.5,
+    -165
+   ],
+   "material": {
+    "color": "#34373a",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  }
+ ]
+}

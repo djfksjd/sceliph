@@ -209,3 +209,68 @@ export function applyPartColors(ir: AssemblyIR, parts: PartColor[]): AssemblyIR 
     }),
   };
 }
+
+export interface TurntableView { mask: Uint8Array; width: number; height: number }
+export interface TurntableFit {
+  cameras: [OrbitCamera, OrbitCamera];
+  /** Silhouette IoU per view at the fitted cameras. */
+  iou: [number, number];
+  /** Side frame azimuth = front azimuth + sign × 90° (a dataset constant, passed in). */
+  sign: 1 | -1;
+}
+
+/**
+ * Two turntable frames a quarter turn apart, fitted jointly: shared azimuth
+ * (side = front + sign·90°), elevation, distance and field of view (with a soft
+ * prior around fovDeg), plus a free image offset per frame because each frame
+ * is cropped on its own. The IR shape is never changed.
+ */
+export function fitTurntableCameras(meshes: WorldTriangleMesh[], views: [TurntableView, TurntableView], sign: 1 | -1, options: PartColorOptions = {}): TurntableFit {
+  const smalls = views.map((view) => downsample(view.mask, view.width, view.height, options.fitRaster ?? 160));
+  const { min, max } = bounds(meshes);
+  const target: Vec3 = [(min[0] + max[0]) / 2, (min[1] + max[1]) / 2, (min[2] + max[2]) / 2];
+  const radius = Math.hypot(max[0] - min[0], max[1] - min[1], max[2] - min[2]) / 2;
+  const baseFov = (options.fovDeg ?? 30) * Math.PI / 180;
+  // x = [azimuth°, elevation°, log distance, log focal, dx0, dy0, dx1, dy1]
+  const make = (x: number[], k: 0 | 1, w: number, h: number): OrbitCamera => {
+    const fov = baseFov * Math.exp(-x[3]!);
+    const f = h / 2 / Math.tan(fov / 2);
+    return {
+      width: w, height: h, fx: f, fy: f,
+      cx: w / 2 + x[4 + 2 * k]! * w * 0.5, cy: h / 2 + x[5 + 2 * k]! * h * 0.5,
+      target, azimuthDeg: x[0]! + (k === 1 ? sign * 90 : 0), elevationDeg: x[1]!,
+      distanceMm: radius / Math.tan(baseFov / 2) * Math.exp(x[2]! + x[3]!),
+      rollDeg: 0, focalScale: 1,
+    };
+  };
+  const viewIou = (x: number[], k: 0 | 1) => {
+    try {
+      return iou(rasterizeSilhouette(orbitToPinhole(make(x, k, smalls[k]!.width, smalls[k]!.height)), meshes), smalls[k]!.mask);
+    } catch {
+      return 0;
+    }
+  };
+  const hintAz = options.viewHint?.azimuthDeg ?? 0;
+  const hintEl = Math.max(-10, Math.min(60, options.viewHint?.elevationDeg ?? 15));
+  const prior = options.viewHint ? 0.05 : 0;
+  const scales = [30, 15, 0.4, 0.3, 0.3, 0.3, 0.3, 0.3];
+  const lossAt = (origin: number[]) => (u: number[]) => {
+    const x = origin.map((value, i) => value + u[i]! * scales[i]!);
+    return 1 - (viewIou(x, 0) + viewIou(x, 1)) / 2 + prior * ((x[0]! - hintAz) / 45) ** 2 + 0.05 * (x[3]! / 0.3) ** 2;
+  };
+  const budget = options.maxEvaluations ?? 3200;
+  let best = { x: [hintAz, hintEl, 0, 0, 0, 0, 0, 0], value: Infinity };
+  const starts = options.viewHint ? [-45, 0, 45] : [0, 90, 180, 270];
+  for (const [k, offset] of starts.entries()) {
+    const origin = [hintAz + offset, hintEl, 0, 0, 0, 0, 0, 0];
+    const result = minimizeCmaEs(lossAt(origin), new Array(8).fill(0), { sigma: 0.5, seed: (options.seed ?? 1) + k, maxEvaluations: Math.round(budget / starts.length) });
+    if (result.bestValue < best.value) best = { x: origin.map((value, i) => value + result.best[i]! * scales[i]!), value: result.bestValue };
+  }
+  const refined = minimizeCmaEs(lossAt(best.x), new Array(8).fill(0), { sigma: 0.15, seed: (options.seed ?? 1) + 99, maxEvaluations: budget });
+  if (refined.bestValue < best.value) best = { x: best.x.map((value, i) => value + refined.best[i]! * scales[i]!), value: refined.bestValue };
+  return {
+    cameras: [make(best.x, 0, views[0].width, views[0].height), make(best.x, 1, views[1].width, views[1].height)],
+    iou: [viewIou(best.x, 0), viewIou(best.x, 1)],
+    sign,
+  };
+}

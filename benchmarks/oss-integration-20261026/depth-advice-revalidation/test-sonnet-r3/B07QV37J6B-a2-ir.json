@@ -1,0 +1,518 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Gaming desk with monitor shelf",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "carbon-look MDF",
+   "detail": "Black desktop panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1000,
+     18,
+     600
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    736,
+    0
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.6,
+    "metalness": 0.05
+   }
+  },
+  {
+   "id": "trim",
+   "name": "Red edge trim",
+   "category": "enclosure",
+   "materialName": "red laminate",
+   "detail": "Red band under top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1004,
+     14,
+     604
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    722,
+    0
+   ],
+   "material": {
+    "color": "#c8141b",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Monitor shelf",
+   "category": "enclosure",
+   "materialName": "carbon-look MDF",
+   "detail": "Raised shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     520,
+     18,
+     170
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    900,
+    -210
+   ],
+   "material": {
+    "color": "#c8141b",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf_leg_l",
+   "name": "Shelf support left",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "Shelf post",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -70,
+      0
+     ],
+     [
+      0,
+      70,
+      0
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    -230,
+    818,
+    -210
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shelf_leg_r",
+   "name": "Shelf support right",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "Shelf post",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -70,
+      0
+     ],
+     [
+      0,
+      70,
+      0
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    230,
+    818,
+    -210
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "foot_l",
+   "name": "Left foot",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "Floor runner",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -290
+     ],
+     [
+      0,
+      0,
+      290
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    -440,
+    13,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "foot_r",
+   "name": "Right foot",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "Floor runner",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -290
+     ],
+     [
+      0,
+      0,
+      290
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    440,
+    13,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_l",
+   "name": "Left diagonal A",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "K-frame diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -355,
+      -280
+     ],
+     [
+      0,
+      355,
+      40
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    -440,
+    368,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "diag_l",
+   "name": "Left diagonal B",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "K-frame diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -355,
+      280
+     ],
+     [
+      0,
+      355,
+      -60
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    -440,
+    368,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_r",
+   "name": "Right diagonal A",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "K-frame diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -355,
+      -280
+     ],
+     [
+      0,
+      355,
+      40
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    440,
+    368,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "diag_r",
+   "name": "Right diagonal B",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "K-frame diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -355,
+      280
+     ],
+     [
+      0,
+      355,
+      -60
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    440,
+    368,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "crossbar",
+   "name": "Cross brace",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "Lower stretcher",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -440,
+      0,
+      0
+     ],
+     [
+      440,
+      0,
+      0
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    0,
+    190,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "basket",
+   "name": "Wire basket",
+   "category": "mechanical",
+   "materialName": "wire",
+   "detail": "Storage basket under top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     420,
+     40,
+     200
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    692,
+    150
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "cup_r",
+   "name": "Cup holder",
+   "category": "mechanical",
+   "materialName": "wire",
+   "detail": "Cup holder right",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 38,
+    "depth": 100,
+    "radialSegments": 24
+   },
+   "position": [
+    545,
+    715,
+    60
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "speaker_l",
+   "name": "Left wire holder",
+   "category": "mechanical",
+   "materialName": "wire",
+   "detail": "Headset/speaker ring holder",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 55,
+    "radiusBottom": 55,
+    "depth": 40,
+    "radialSegments": 24
+   },
+   "position": [
+    -545,
+    715,
+    60
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "controller",
+   "name": "Controller stand",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "Tilted tray",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     150,
+     6,
+     110
+    ],
+    "radius": 2
+   },
+   "position": [
+    -400,
+    790,
+    -240
+   ],
+   "rotation": [
+    0.4,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "hook",
+   "name": "Headphone hook",
+   "category": "mechanical",
+   "materialName": "wire",
+   "detail": "Headset hanger",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -60,
+      0
+     ],
+     [
+      0,
+      60,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    360,
+    805,
+    -250
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  }
+ ]
+}

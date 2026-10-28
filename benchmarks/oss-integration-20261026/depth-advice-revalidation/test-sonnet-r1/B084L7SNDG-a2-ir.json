@@ -1,0 +1,413 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rustic X-brace end table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top slab with apron",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "table top and apron band",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     60,
+     560
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    580,
+    0
+   ],
+   "material": {
+    "color": "#c9a26a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Bottom shelf frame",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "lower shelf with slats",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     50,
+     560
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    25,
+    0
+   ],
+   "material": {
+    "color": "#c4995d",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Leg front left",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     46,
+     550,
+     46
+    ],
+    "radius": 3
+   },
+   "position": [
+    -257,
+    275,
+    257
+   ],
+   "material": {
+    "color": "#cfa66c",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Leg front right",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     46,
+     550,
+     46
+    ],
+    "radius": 3
+   },
+   "position": [
+    257,
+    275,
+    257
+   ],
+   "material": {
+    "color": "#cfa66c",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Leg back left",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     46,
+     550,
+     46
+    ],
+    "radius": 3
+   },
+   "position": [
+    -257,
+    275,
+    -257
+   ],
+   "material": {
+    "color": "#cfa66c",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Leg back right",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "corner post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     46,
+     550,
+     46
+    ],
+    "radius": 3
+   },
+   "position": [
+    257,
+    275,
+    -257
+   ],
+   "material": {
+    "color": "#cfa66c",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xl_a",
+   "name": "Left X brace A",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -215,
+      -235
+     ],
+     [
+      0,
+      215,
+      235
+     ]
+    ],
+    "radius": 17
+   },
+   "position": [
+    -248,
+    305,
+    0
+   ],
+   "material": {
+    "color": "#c9a26a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xl_b",
+   "name": "Left X brace B",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -215,
+      235
+     ],
+     [
+      0,
+      215,
+      -235
+     ]
+    ],
+    "radius": 17
+   },
+   "position": [
+    -266,
+    305,
+    0
+   ],
+   "material": {
+    "color": "#c9a26a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xr_a",
+   "name": "Right X brace A",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -215,
+      -235
+     ],
+     [
+      0,
+      215,
+      235
+     ]
+    ],
+    "radius": 17
+   },
+   "position": [
+    248,
+    305,
+    0
+   ],
+   "material": {
+    "color": "#c9a26a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xr_b",
+   "name": "Right X brace B",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -215,
+      235
+     ],
+     [
+      0,
+      215,
+      -235
+     ]
+    ],
+    "radius": 17
+   },
+   "position": [
+    266,
+    305,
+    0
+   ],
+   "material": {
+    "color": "#c9a26a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xf_a",
+   "name": "Front X brace A",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -235,
+      -215,
+      0
+     ],
+     [
+      235,
+      215,
+      0
+     ]
+    ],
+    "radius": 17
+   },
+   "position": [
+    0,
+    305,
+    248
+   ],
+   "material": {
+    "color": "#c9a26a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xf_b",
+   "name": "Front X brace B",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -235,
+      215,
+      0
+     ],
+     [
+      235,
+      -215,
+      0
+     ]
+    ],
+    "radius": 17
+   },
+   "position": [
+    0,
+    305,
+    266
+   ],
+   "material": {
+    "color": "#c9a26a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xb_a",
+   "name": "Back X brace A",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -235,
+      -215,
+      0
+     ],
+     [
+      235,
+      215,
+      0
+     ]
+    ],
+    "radius": 17
+   },
+   "position": [
+    0,
+    305,
+    -248
+   ],
+   "material": {
+    "color": "#c9a26a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "xb_b",
+   "name": "Back X brace B",
+   "category": "mechanical",
+   "materialName": "oak",
+   "detail": "diagonal",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -235,
+      215,
+      0
+     ],
+     [
+      235,
+      -215,
+      0
+     ]
+    ],
+    "radius": 17
+   },
+   "position": [
+    0,
+    305,
+    -266
+   ],
+   "material": {
+    "color": "#c9a26a",
+    "roughness": 0.8
+   }
+  }
+ ]
+}

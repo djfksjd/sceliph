@@ -1,0 +1,137 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Indre 1-Door Mirror Shoe Cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plinth",
+   "name": "Plinth",
+   "category": "enclosure",
+   "materialName": "White laminated board",
+   "detail": "Recessed base plinth",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     490,
+     60,
+     225
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    30,
+    -5
+   ],
+   "material": {
+    "color": "#eeeeee",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "body",
+   "name": "Cabinet body",
+   "category": "enclosure",
+   "materialName": "White laminated board",
+   "detail": "Main carcass with sides, top and back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     520,
+     1730,
+     232
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    925,
+    -9
+   ],
+   "material": {
+    "color": "#f4f4f4",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door",
+   "name": "Door",
+   "category": "enclosure",
+   "materialName": "White laminated board",
+   "detail": "Single full-height door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     516,
+     1720,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    925,
+    116
+   ],
+   "material": {
+    "color": "#f7f7f7",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "mirror",
+   "name": "Mirror",
+   "category": "mechanical",
+   "materialName": "Mirror glass",
+   "detail": "Full-length mirror inset on right side of door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     213,
+     1600,
+     4
+    ],
+    "radius": 1
+   },
+   "position": [
+    111,
+    900,
+    126
+   ],
+   "material": {
+    "color": "#a9adb0",
+    "roughness": 0.05,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Handle",
+   "category": "mechanical",
+   "materialName": "Grey plastic",
+   "detail": "Recessed vertical door handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     70,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    -116,
+    1170,
+    128
+   ],
+   "material": {
+    "color": "#b8bcc0",
+    "roughness": 0.4,
+    "metalness": 0.3
+   }
+  }
+ ]
+}

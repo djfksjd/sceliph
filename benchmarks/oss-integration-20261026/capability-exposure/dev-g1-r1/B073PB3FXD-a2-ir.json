@@ -1,0 +1,175 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Foldable fabric storage cube, navy",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Cube body",
+   "category": "enclosure",
+   "materialName": "Navy non-woven fabric",
+   "detail": "Open-top fabric storage cube with 4 mm walls and base",
+   "geometry": {
+    "op": "booleanCSG",
+    "operation": "difference",
+    "operands": [
+     {
+      "geometry": {
+       "op": "roundedBox",
+       "size": [
+        279,
+        279,
+        279
+       ],
+       "radius": 4
+      },
+      "position": [
+       0,
+       0,
+       0
+      ],
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "geometry": {
+       "op": "roundedBox",
+       "size": [
+        271,
+        281,
+        271
+       ],
+       "radius": 2
+      },
+      "position": [
+       0,
+       5,
+       0
+      ],
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "position": [
+    0,
+    139.5,
+    0
+   ],
+   "material": {
+    "color": "#1c2160",
+    "surface": "fabric",
+    "roughness": 0.95,
+    "metalness": 0,
+    "sheen": 0.3,
+    "sheenRoughness": 0.8,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Fabric pull handle",
+   "category": "mechanical",
+   "materialName": "Navy fabric strap",
+   "detail": "Fabric strap handle on the +X face",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     8,
+     26,
+     90
+    ],
+    "radius": 3
+   },
+   "position": [
+    142,
+    225,
+    0
+   ],
+   "material": {
+    "color": "#1c2160",
+    "surface": "fabric",
+    "roughness": 0.95,
+    "metalness": 0,
+    "sheen": 0.3,
+    "sheenRoughness": 0.8,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "rim",
+   "name": "Top rim stiffener",
+   "category": "enclosure",
+   "materialName": "Navy fabric rim",
+   "detail": "Slightly thicker upper edge band",
+   "geometry": {
+    "op": "booleanCSG",
+    "operation": "difference",
+    "operands": [
+     {
+      "geometry": {
+       "op": "roundedBox",
+       "size": [
+        280,
+        10,
+        280
+       ],
+       "radius": 3
+      },
+      "position": [
+       0,
+       0,
+       0
+      ],
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "geometry": {
+       "op": "roundedBox",
+       "size": [
+        266,
+        14,
+        266
+       ],
+       "radius": 2
+      },
+      "position": [
+       0,
+       0,
+       0
+      ],
+      "rotation": [
+       0,
+       0,
+       0
+      ]
+     }
+    ]
+   },
+   "position": [
+    0,
+    274,
+    0
+   ],
+   "material": {
+    "color": "#1c2160",
+    "surface": "fabric",
+    "roughness": 0.95,
+    "metalness": 0,
+    "sheen": 0.3,
+    "sheenRoughness": 0.8,
+    "microNormalStrength": 0.5
+   }
+  }
+ ]
+}

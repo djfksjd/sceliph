@@ -1,0 +1,285 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Black Dome Floor Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Dome Base",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Low dished round base",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      115,
+      0
+     ],
+     [
+      114,
+      6
+     ],
+     [
+      80,
+      20
+     ],
+     [
+      35,
+      38
+     ],
+     [
+      12,
+      50
+     ],
+     [
+      0,
+      52
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "stem",
+   "name": "Skinny Stem",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Slim vertical tube",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 7,
+    "radiusBottom": 7,
+    "depth": 1410,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    735,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Dome Shade",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "Hemispherical shade, closed underside",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      166,
+      0
+     ],
+     [
+      164,
+      26
+     ],
+     [
+      158.2,
+      51
+     ],
+     [
+      149.1,
+      75
+     ],
+     [
+      136.8,
+      98
+     ],
+     [
+      122,
+      118
+     ],
+     [
+      105,
+      136
+     ],
+     [
+      84,
+      150
+     ],
+     [
+      60,
+      159
+     ],
+     [
+      31,
+      164
+     ],
+     [
+      0,
+      165
+     ]
+    ],
+    "segments": 64
+   },
+   "position": [
+    0,
+    1283,
+    0
+   ],
+   "material": {
+    "color": "#0d0d0d",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Top Cap",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Small finial on top of shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 5,
+    "radiusBottom": 6,
+    "depth": 32,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    1464,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "chain_l",
+   "name": "Pull Chain Left",
+   "category": "interconnect",
+   "materialName": "steel chain",
+   "detail": "Pull chain",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -70,
+      0
+     ]
+    ],
+    "radius": 1.2
+   },
+   "position": [
+    -51,
+    1272,
+    0
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "bead_l",
+   "name": "Pull Bead Left",
+   "category": "interconnect",
+   "materialName": "black bead",
+   "detail": "Pull bead",
+   "geometry": {
+    "op": "sphere",
+    "radius": 5
+   },
+   "position": [
+    -51,
+    1196,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "chain_r",
+   "name": "Pull Chain Right",
+   "category": "interconnect",
+   "materialName": "steel chain",
+   "detail": "Pull chain",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -70,
+      0
+     ]
+    ],
+    "radius": 1.2
+   },
+   "position": [
+    51,
+    1272,
+    0
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "bead_r",
+   "name": "Pull Bead Right",
+   "category": "interconnect",
+   "materialName": "black bead",
+   "detail": "Pull bead",
+   "geometry": {
+    "op": "sphere",
+    "radius": 5
+   },
+   "position": [
+    51,
+    1196,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  }
+ ]
+}

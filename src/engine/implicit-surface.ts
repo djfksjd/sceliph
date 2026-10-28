@@ -65,6 +65,8 @@ type DistanceField = (point: THREE.Vector3) => number;
 const MIN_RESOLUTION = 8;
 const MAX_RESOLUTION = 64;
 const MAX_TRIANGLES = 400_000;
+/** Samples within this fraction of a cell of the surface are treated as just outside it. */
+const ON_SURFACE_SNAP = 1e-6;
 const MAX_PRIMITIVES = 64;
 const MAX_OPERATIONS = 128;
 const VALID_ID = /^[a-zA-Z0-9_-]{1,80}$/;
@@ -328,13 +330,16 @@ function polygonizeImplicitSurfaceAtResolution(
   const field = new Float32Array(side ** 3);
   const cornerAt = (x: number, y: number, z: number): number => (z * side + y) * side + x;
   let boundaryMinimumDistanceMm = Number.POSITIVE_INFINITY;
+  // A node exactly on a convex surface (e.g. an ellipsoid pole) counted as inside would
+  // pull every surrounding cell vertex onto itself and leave zero-area triangles.
+  const snap = Math.min(step.x, step.y, step.z) * ON_SURFACE_SNAP;
   for (let z = 0; z < side; z += 1) {
     for (let y = 0; y < side; y += 1) {
       for (let x = 0; x < side; x += 1) {
         scratch.set(minimum.x + x * step.x, minimum.y + y * step.y, minimum.z + z * step.z);
         const distance = sample(scratch);
         if (!Number.isFinite(distance)) throw new Error('Implicit surface field produced a non-finite distance.');
-        field[cornerAt(x, y, z)] = distance;
+        field[cornerAt(x, y, z)] = Math.abs(distance) < snap ? snap : distance;
         if (x === 0 || y === 0 || z === 0 || x === resolution || y === resolution || z === resolution) {
           boundaryMinimumDistanceMm = Math.min(boundaryMinimumDistanceMm, distance);
         }

@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: AmazonBasics Classic 5-Tier Open Bookcase with Solid Rubber Wood - White.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 1892 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0321552,
+   "durationMs": 20168,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":20,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"5-Tier Ladder Bookcase White\",\"units\":\"mm\",\"components\":[{\"id\":\"legFL\",\"name\":\"Front leg left\",\"category\":\"enclosure\",\"materialName\":\"painted rubber wood\",\"detail\":\"slanted front leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-946,200],[0,946,-130]],\"radius\":16},\"position\":[-310,946,0],\"material\":{\"color\":\"#f6f6f4\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"legFR\",\"name\":\"Front leg right\",\"category\":\"enclosure\",\"materialName\":\"painted rubber wood\",\"detail\":\"slanted front leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-946,200],[0,946,-130]],\"radius\":16},\"position\":[310,946,0],\"material\":{\"color\":\"#f6f6f4\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"legBL\",\"name\":\"Rear leg left\",\"category\":\"enclosure\",\"materialName\":\"painted rubber wood\",\"detail\":\"rear leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-946,-200],[0,946,-130]],\"radius\":16},\"position\":[-310,946,0],\"material\":{\"color\":\"#f6f6f4\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"legBR\",\"name\":\"Rear leg right\",\"category\":\"enclosure\",\"materialName\":\"painted rubber wood\",\"detail\":\"rear leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,-946,-200],[0,946,-130]],\"radius\":16},\"position\":[310,946,0],\"material\":{\"color\":\"#f6f6f4\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"shelf1\",\"name\":\"Shelf 1\",\"category\":\"enclosure\",\"materialName\":\"painted rubber wood\",\"detail\":\"bottom shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,22,371],\"radius\":4},\"position\":[0,150,-6],\"material\":{\"color\":\"#ffffff\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"shelf2\",\"name\":\"Shelf 2\",\"category\":\"enclosure\",\"materialName\":\"painted rubber wood\",\"detail\":\"shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,22,301],\"radius\":4},\"position\":[0,520,-22],\"material\":{\"color\":\"#ffffff\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"shelf3\",\"name\":\"Shelf 3\",\"category\":\"enclosure\",\"materialName\":\"painted rubber wood\",\"detail\":\"shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,22,231],\"radius\":4},\"position\":[0,890,-38],\"material\":{\"color\":\"#ffffff\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"shelf4\",\"name\":\"Shelf 4\",\"category\":\"enclosure\",\"materialName\":\"painted rubber wood\",\"detail\":\"shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,22,170],\"radius\":4},\"position\":[0,1260,-53],\"material\":{\"color\":\"#ffffff\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"shelf5\",\"name\":\"Shelf 5\",\"category\":\"enclosure\",\"materialName\":\"painted rubber wood\",\"detail\":\"shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[600,22,120],\"radius\":4},\"position\":[0,1630,-69],\"material\":{\"color\":\"#ffffff\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"top\",\"name\":\"Top panel\",\"category\":\"enclosure\",\"materialName\":\"painted rubber wood\",\"detail\":\"top board\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[640,24,170],\"radius\":4},\"position\":[0,1880,-80],\"material\":{\"color\":\"#ffffff\",\"roughness\":0.5,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

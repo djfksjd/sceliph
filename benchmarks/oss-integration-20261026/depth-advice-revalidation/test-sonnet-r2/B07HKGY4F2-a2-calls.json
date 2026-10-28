@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Rivet Modern Concrete Cubic Outdoor Porch Light Wall Sconce with Integrated LED Light - ches, Black Base.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 121 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0209192,
+   "durationMs": 14332,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":4},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Concrete cubic wall sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"body\",\"name\":\"Concrete body\",\"category\":\"enclosure\",\"materialName\":\"concrete\",\"detail\":\"Cubic concrete light housing\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[124,121,114],\"radius\":1.5},\"position\":[0,60.5,16],\"material\":{\"color\":\"#b9b0a5\",\"roughness\":0.9,\"metalness\":0}},{\"id\":\"base\",\"name\":\"Black wall base\",\"category\":\"mechanical\",\"materialName\":\"black painted metal\",\"detail\":\"Wall mounting plate block\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[124,121,32],\"radius\":2},\"position\":[0,60.5,-57],\"material\":{\"color\":\"#2a2a2c\",\"roughness\":0.6,\"metalness\":0.3}},{\"id\":\"screw\",\"name\":\"Side screw\",\"category\":\"mechanical\",\"materialName\":\"steel\",\"detail\":\"Small set screw on side face\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":2.5,\"radiusBottom\":2.5,\"depth\":1.5,\"radialSegments\":24},\"position\":[62.5,70,-33],\"rotation\":[0,0,1.5708],\"material\":{\"color\":\"#d8d8d8\",\"roughness\":0.4,\"metalness\":0.8}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

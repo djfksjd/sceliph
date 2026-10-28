@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Amazon Brand - Movian Indre 1-Door Shoe Cabinet/Cupboard/Organizer with Mirror, White.\nThe product listing gives its overall height as 1790 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0161192,
+   "durationMs": 10981,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":3},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian Indre mirror shoe cabinet\",\"units\":\"mm\",\"components\":[{\"id\":\"body\",\"name\":\"Carcass\",\"category\":\"enclosure\",\"materialName\":\"white laminated board\",\"detail\":\"Tall narrow cabinet carcass\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[480,1750,230],\"radius\":3},\"position\":[0,915,0],\"material\":{\"color\":\"#f4f4f4\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"plinth\",\"name\":\"Plinth\",\"category\":\"enclosure\",\"materialName\":\"white laminated board\",\"detail\":\"Recessed base plinth\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[450,40,205],\"radius\":2},\"position\":[0,20,-5],\"material\":{\"color\":\"#efefef\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"door\",\"name\":\"Door\",\"category\":\"enclosure\",\"materialName\":\"white laminated board\",\"detail\":\"Full height door panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[476,1710,18],\"radius\":3},\"position\":[0,900,124],\"material\":{\"color\":\"#f6f6f6\",\"roughness\":0.45,\"metalness\":0}},{\"id\":\"mirror\",\"name\":\"Mirror\",\"category\":\"mechanical\",\"materialName\":\"mirror glass\",\"detail\":\"Tall mirror inset on right of door\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[245,1560,4],\"radius\":1},\"position\":[100,900,134],\"material\":{\"color\":\"#a9adb0\",\"roughness\":0.08,\"metalness\":0.9}},{\"id\":\"handle\",\"name\":\"Handle\",\"category\":\"mechanical\",\"materialName\":\"grey plastic\",\"detail\":\"Small recessed handle on left of door\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[14,80,12],\"radius\":3},\"position\":[-185,880,134],\"material\":{\"color\":\"#b8bcc0\",\"roughness\":0.4,\"metalness\":0.3}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

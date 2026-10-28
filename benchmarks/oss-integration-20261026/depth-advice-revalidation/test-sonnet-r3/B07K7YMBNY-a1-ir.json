@@ -1,0 +1,215 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Oak storage bench cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "wild oak",
+   "detail": "Overhanging solid oak top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     820,
+     25,
+     410
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    387.5,
+    0
+   ],
+   "material": {
+    "color": "#c8975a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_l",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "wild oak",
+   "detail": "Left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     375,
+     390
+    ],
+    "radius": 2
+   },
+   "position": [
+    -390,
+    187.5,
+    -5
+   ],
+   "material": {
+    "color": "#c58f50",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "wild oak",
+   "detail": "Right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     20,
+     375,
+     390
+    ],
+    "radius": 2
+   },
+   "position": [
+    390,
+    187.5,
+    -5
+   ],
+   "material": {
+    "color": "#c58f50",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "wild oak",
+   "detail": "Back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     350,
+     15
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    200,
+    -190
+   ],
+   "material": {
+    "color": "#b98547",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom shelf",
+   "category": "enclosure",
+   "materialName": "wild oak",
+   "detail": "Interior base panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     20,
+     370
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    35,
+    -5
+   ],
+   "material": {
+    "color": "#b98547",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Front plinth",
+   "category": "enclosure",
+   "materialName": "wild oak",
+   "detail": "Recessed plinth strip",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     30,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    15,
+    170
+   ],
+   "material": {
+    "color": "#c8975a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "flap",
+   "name": "Front flap",
+   "category": "mechanical",
+   "materialName": "wild oak",
+   "detail": "Fold-down front flap",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     765,
+     305,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    200,
+    192
+   ],
+   "material": {
+    "color": "#cd9d62",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "gap",
+   "name": "Handle recess",
+   "category": "mechanical",
+   "materialName": "shadow gap",
+   "detail": "Dark recess above flap",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     760,
+     14,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    364,
+    196
+   ],
+   "material": {
+    "color": "#5a3a1c",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

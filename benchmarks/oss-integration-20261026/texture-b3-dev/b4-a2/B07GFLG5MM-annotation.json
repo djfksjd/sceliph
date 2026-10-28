@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- side_l: Left side; material \"dark grey wood-grain laminate\"; colour #3a3a3c\n- side_r: Right side; material \"dark grey wood-grain laminate\"; colour #3a3a3c\n- top: Top panel; material \"dark grey wood-grain laminate\"; colour #3a3a3c\n- plinth: Base plinth; material \"dark grey laminate\"; colour #2e2e30\n- back: Back panel; material \"dark grey hardboard\"; colour #2e2e30\n- door1: Door 1 (bottom); material \"dark grey wood-grain laminate\"; colour #3d3d3f\n- door2: Door 2; material \"dark grey wood-grain laminate\"; colour #3d3d3f\n- door3: Door 3; material \"dark grey wood-grain laminate\"; colour #3d3d3f\n- door4: Door 4 (top); material \"dark grey wood-grain laminate\"; colour #3d3d3f\n- handle1: Handle 1; material \"chrome\"; colour #c0c0c4\n- handle2: Handle 2; material \"chrome\"; colour #c0c0c4\n- handle3: Handle 3; material \"chrome\"; colour #c0c0c4\n- handle4: Handle 4; material \"chrome\"; colour #c0c0c4\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"side_l\",\"surface\":\"molded-polymer\",\"albedoVariation\":0.15,\"textureScale\":[3,4]},{\"id\":\"side_r\",\"surface\":\"molded-polymer\",\"albedoVariation\":0.15,\"textureScale\":[3,4]},{\"id\":\"top\",\"surface\":\"molded-polymer\",\"albedoVariation\":0.15,\"textureScale\":[3,2]},{\"id\":\"plinth\",\"surface\":\"molded-polymer\",\"albedoVariation\":0.05,\"textureScale\":[2,1]},{\"id\":\"back\",\"surface\":\"raw\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"door1\",\"surface\":\"molded-polymer\",\"albedoVariation\":0.18,\"textureScale\":[4,3]},{\"id\":\"door2\",\"surface\":\"molded-polymer\",\"albedoVariation\":0.18,\"textureScale\":[4,3]},{\"id\":\"door3\",\"surface\":\"molded-polymer\",\"albedoVariation\":0.18,\"textureScale\":[4,3]},{\"id\":\"door4\",\"surface\":\"molded-polymer\",\"albedoVariation\":0.18,\"textureScale\":[4,3]},{\"id\":\"handle1\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"handle2\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"handle3\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"handle4\",\"surface\":\"polished-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.012615999999999999,
+  "durationMs": 4780,
+  "isError": false
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Retro Hairpin Compact Computer Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desk top",
+   "category": "enclosure",
+   "materialName": "Black wood-grain laminate",
+   "detail": "Rectangular black desktop panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     25,
+     550
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    647.5,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legL",
+   "name": "Left hairpin leg",
+   "category": "mechanical",
+   "materialName": "Gold painted steel rod",
+   "detail": "V-shaped hairpin leg at left end",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      317,
+      -230
+     ],
+     [
+      0,
+      -250,
+      -40
+     ],
+     [
+      0,
+      -310,
+      -12
+     ],
+     [
+      0,
+      -317,
+      0
+     ],
+     [
+      0,
+      -310,
+      12
+     ],
+     [
+      0,
+      -250,
+      40
+     ],
+     [
+      0,
+      317,
+      230
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    -470,
+    317.5,
+    0
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "legR",
+   "name": "Right hairpin leg",
+   "category": "mechanical",
+   "materialName": "Gold painted steel rod",
+   "detail": "V-shaped hairpin leg at right end",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      317,
+      -230
+     ],
+     [
+      0,
+      -250,
+      -40
+     ],
+     [
+      0,
+      -310,
+      -12
+     ],
+     [
+      0,
+      -317,
+      0
+     ],
+     [
+      0,
+      -310,
+      12
+     ],
+     [
+      0,
+      -250,
+      40
+     ],
+     [
+      0,
+      317,
+      230
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    470,
+    317.5,
+    0
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

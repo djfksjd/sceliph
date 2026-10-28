@@ -1,0 +1,727 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-century buffet credenza",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top slab",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1370,
+     26,
+     410
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    800,
+    0
+   ],
+   "material": {
+    "color": "#a8682f",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "clearcoatRoughness": 0.5,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "body",
+   "name": "Cabinet body",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1340,
+     320,
+     390
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    627,
+    0
+   ],
+   "material": {
+    "color": "#a8682f",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "clearcoatRoughness": 0.5,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "door1",
+   "name": "Door 1",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Horizontal plank door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     330,
+     296,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    -502,
+    630,
+    196
+   ],
+   "material": {
+    "color": "#b0702f",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "door2",
+   "name": "Door 2",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Horizontal plank door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     330,
+     296,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    -167,
+    630,
+    196
+   ],
+   "material": {
+    "color": "#b0702f",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "door3",
+   "name": "Door 3",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Horizontal plank door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     330,
+     296,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    167,
+    630,
+    196
+   ],
+   "material": {
+    "color": "#b0702f",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "door4",
+   "name": "Door 4",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Horizontal plank door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     330,
+     296,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    502,
+    630,
+    196
+   ],
+   "material": {
+    "color": "#b0702f",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "hl1",
+   "name": "Handle L1",
+   "category": "mechanical",
+   "materialName": "Dark wood",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     10,
+     190,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    -346,
+    650,
+    208
+   ],
+   "material": {
+    "color": "#3a2418",
+    "surface": "wood",
+    "roughness": 0.4,
+    "metalness": 0,
+    "clearcoat": 0.3
+   }
+  },
+  {
+   "id": "hl2",
+   "name": "Handle L2",
+   "category": "mechanical",
+   "materialName": "Dark wood",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     10,
+     190,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    -324,
+    650,
+    208
+   ],
+   "material": {
+    "color": "#3a2418",
+    "surface": "wood",
+    "roughness": 0.4,
+    "metalness": 0,
+    "clearcoat": 0.3
+   }
+  },
+  {
+   "id": "hr1",
+   "name": "Handle R1",
+   "category": "mechanical",
+   "materialName": "Dark wood",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     10,
+     190,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    324,
+    650,
+    208
+   ],
+   "material": {
+    "color": "#3a2418",
+    "surface": "wood",
+    "roughness": 0.4,
+    "metalness": 0,
+    "clearcoat": 0.3
+   }
+  },
+  {
+   "id": "hr2",
+   "name": "Handle R2",
+   "category": "mechanical",
+   "materialName": "Dark wood",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     10,
+     190,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    346,
+    650,
+    208
+   ],
+   "material": {
+    "color": "#3a2418",
+    "surface": "wood",
+    "roughness": 0.4,
+    "metalness": 0,
+    "clearcoat": 0.3
+   }
+  },
+  {
+   "id": "legfl",
+   "name": "Leg front left",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 18,
+    "depth": 470,
+    "radialSegments": 4
+   },
+   "position": [
+    -600,
+    235,
+    150
+   ],
+   "rotation": [
+    0,
+    0.785,
+    0
+   ],
+   "material": {
+    "color": "#a0612a",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "legfr",
+   "name": "Leg front right",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 18,
+    "depth": 470,
+    "radialSegments": 4
+   },
+   "position": [
+    600,
+    235,
+    150
+   ],
+   "rotation": [
+    0,
+    0.785,
+    0
+   ],
+   "material": {
+    "color": "#a0612a",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "legbl",
+   "name": "Leg back left",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 18,
+    "depth": 470,
+    "radialSegments": 4
+   },
+   "position": [
+    -600,
+    235,
+    -150
+   ],
+   "rotation": [
+    0,
+    0.785,
+    0
+   ],
+   "material": {
+    "color": "#a0612a",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "legbr",
+   "name": "Leg back right",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 18,
+    "depth": 470,
+    "radialSegments": 4
+   },
+   "position": [
+    600,
+    235,
+    -150
+   ],
+   "rotation": [
+    0,
+    0.785,
+    0
+   ],
+   "material": {
+    "color": "#a0612a",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "railf",
+   "name": "Shelf rail front",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1200,
+     30,
+     26
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    215,
+    150
+   ],
+   "material": {
+    "color": "#a0612a",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "railb",
+   "name": "Shelf rail back",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1200,
+     30,
+     26
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    215,
+    -150
+   ],
+   "material": {
+    "color": "#a0612a",
+    "surface": "wood",
+    "roughness": 0.5,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "slat1",
+   "name": "Slat 1",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     16,
+     290
+    ],
+    "radius": 2
+   },
+   "position": [
+    -500,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#8f5526",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "slat2",
+   "name": "Slat 2",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     16,
+     290
+    ],
+    "radius": 2
+   },
+   "position": [
+    -375,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#8f5526",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "slat3",
+   "name": "Slat 3",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     16,
+     290
+    ],
+    "radius": 2
+   },
+   "position": [
+    -250,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#8f5526",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "slat4",
+   "name": "Slat 4",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     16,
+     290
+    ],
+    "radius": 2
+   },
+   "position": [
+    -125,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#8f5526",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "slat5",
+   "name": "Slat 5",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     16,
+     290
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#8f5526",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "slat6",
+   "name": "Slat 6",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     16,
+     290
+    ],
+    "radius": 2
+   },
+   "position": [
+    125,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#8f5526",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "slat7",
+   "name": "Slat 7",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     16,
+     290
+    ],
+    "radius": 2
+   },
+   "position": [
+    250,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#8f5526",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "slat8",
+   "name": "Slat 8",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     16,
+     290
+    ],
+    "radius": 2
+   },
+   "position": [
+    375,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#8f5526",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "slat9",
+   "name": "Slat 9",
+   "category": "mechanical",
+   "materialName": "Pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     24,
+     16,
+     290
+    ],
+    "radius": 2
+   },
+   "position": [
+    500,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#8f5526",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  }
+ ]
+}

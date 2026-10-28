@@ -1,0 +1,267 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Indre 1-Door Shoe Cabinet with Mirror",
+ "units": "mm",
+ "components": [
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "18 mm side panel, full height",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1790,
+     240
+    ],
+    "radius": 2
+   },
+   "position": [
+    -221,
+    895,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "18 mm side panel, full height",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1790,
+     240
+    ],
+    "radius": 2
+   },
+   "position": [
+    221,
+    895,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "Top panel between the sides",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     424,
+     18,
+     240
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1781,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "Base panel above the plinth",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     424,
+     18,
+     240
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    49,
+    0
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Plinth",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "Recessed plinth at the bottom",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     424,
+     40,
+     220
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    20,
+    -5
+   ],
+   "material": {
+    "color": "#eeeeec",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "White hardboard",
+   "detail": "Thin back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     424,
+     1720,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    910,
+    -111
+   ],
+   "material": {
+    "color": "#eeeeec",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Inner shelf",
+   "category": "mechanical",
+   "materialName": "White melamine board",
+   "detail": "Interior shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     424,
+     16,
+     225
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    900,
+    -3
+   ],
+   "material": {
+    "color": "#f4f4f2",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door",
+   "name": "Door",
+   "category": "enclosure",
+   "materialName": "White melamine board",
+   "detail": "Full height door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     424,
+     1722,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    911,
+    113
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.45,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "mirror",
+   "name": "Mirror",
+   "category": "mechanical",
+   "materialName": "Mirror glass",
+   "detail": "Tall mirror inset on the right of the door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     200,
+     1500,
+     3
+    ],
+    "radius": 1
+   },
+   "position": [
+    95,
+    920,
+    123.5
+   ],
+   "material": {
+    "color": "#b8bcc0",
+    "roughness": 0.05,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Handle",
+   "category": "mechanical",
+   "materialName": "Grey plastic",
+   "detail": "Recessed grip handle on the door's left edge",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     12,
+     70,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    -170,
+    880,
+    125
+   ],
+   "material": {
+    "color": "#b0b3b6",
+    "roughness": 0.4,
+    "metalness": 0.3
+   }
+  }
+ ]
+}

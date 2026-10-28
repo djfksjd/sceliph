@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: AmazonBasics Retro Hairpin Compact Computer Desk - Black with Gold Legs.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 660 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.026275199999999995,
+   "durationMs": 17530,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":12,\"elevationDeg\":18},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Retro Hairpin Compact Desk\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Desktop\",\"category\":\"enclosure\",\"materialName\":\"black laminate\",\"detail\":\"black wood-grain desktop panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1100,25,550],\"radius\":3},\"position\":[0,647.5,0],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.6,\"metalness\":0.05}},{\"id\":\"leg_fl\",\"name\":\"Front left hairpin leg\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"gold hairpin leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[-70,317,0],[-35,2,0],[-12,-250,0],[0,-312,0],[12,-250,0],[35,2,0],[70,317,0]],\"radius\":5},\"position\":[-440,317.5,190],\"material\":{\"color\":\"#c9a24a\",\"roughness\":0.35,\"metalness\":0.85}},{\"id\":\"leg_fr\",\"name\":\"Front right hairpin leg\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"gold hairpin leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[-70,317,0],[-35,2,0],[-12,-250,0],[0,-312,0],[12,-250,0],[35,2,0],[70,317,0]],\"radius\":5},\"position\":[440,317.5,190],\"material\":{\"color\":\"#c9a24a\",\"roughness\":0.35,\"metalness\":0.85}},{\"id\":\"leg_bl\",\"name\":\"Back left hairpin leg\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"gold hairpin leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[-70,317,0],[-35,2,0],[-12,-250,0],[0,-312,0],[12,-250,0],[35,2,0],[70,317,0]],\"radius\":5},\"position\":[-440,317.5,-190],\"material\":{\"color\":\"#c9a24a\",\"roughness\":0.35,\"metalness\":0.85}},{\"id\":\"leg_br\",\"name\":\"Back right hairpin leg\",\"category\":\"mechanical\",\"materialName\":\"gold metal rod\",\"detail\":\"gold hairpin leg\",\"geometry\":{\"op\":\"tube\",\"points\":[[-70,317,0],[-35,2,0],[-12,-250,0],[0,-312,0],[12,-250,0],[35,2,0],[70,317,0]],\"radius\":5},\"position\":[440,317.5,-190],\"material\":{\"color\":\"#c9a24a\",\"roughness\":0.35,\"metalness\":0.85}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

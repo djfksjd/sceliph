@@ -1,0 +1,318 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Three-globe vanity light",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Back plate",
+   "category": "enclosure",
+   "materialName": "Dark bronze metal",
+   "detail": "Rectangular mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     686,
+     122,
+     12
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    193,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "globe1",
+   "name": "Left globe",
+   "category": "enclosure",
+   "materialName": "Opal glass",
+   "detail": "Frosted glass sphere",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    -241,
+    92,
+    50
+   ],
+   "material": {
+    "color": "#f7dcc8",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe2",
+   "name": "Center globe",
+   "category": "enclosure",
+   "materialName": "Opal glass",
+   "detail": "Frosted glass sphere",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    0,
+    92,
+    50
+   ],
+   "material": {
+    "color": "#f7dcc8",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "globe3",
+   "name": "Right globe",
+   "category": "enclosure",
+   "materialName": "Opal glass",
+   "detail": "Frosted glass sphere",
+   "geometry": {
+    "op": "sphere",
+    "radius": 92
+   },
+   "position": [
+    241,
+    92,
+    50
+   ],
+   "material": {
+    "color": "#f7dcc8",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "cap1",
+   "name": "Left cap",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Conical holder cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 34,
+    "radiusBottom": 70,
+    "depth": 30,
+    "radialSegments": 32
+   },
+   "position": [
+    -241,
+    172,
+    50
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "cap2",
+   "name": "Center cap",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Conical holder cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 34,
+    "radiusBottom": 70,
+    "depth": 30,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    172,
+    50
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "cap3",
+   "name": "Right cap",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Conical holder cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 34,
+    "radiusBottom": 70,
+    "depth": 30,
+    "radialSegments": 32
+   },
+   "position": [
+    241,
+    172,
+    50
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "neck1",
+   "name": "Left neck",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Cylindrical neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 30,
+    "depth": 40,
+    "radialSegments": 32
+   },
+   "position": [
+    -241,
+    200,
+    50
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "neck2",
+   "name": "Center neck",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Cylindrical neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 30,
+    "depth": 40,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    200,
+    50
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "neck3",
+   "name": "Right neck",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Cylindrical neck",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 30,
+    "depth": 40,
+    "radialSegments": 32
+   },
+   "position": [
+    241,
+    200,
+    50
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "stem1",
+   "name": "Left stem",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Connector to plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     36,
+     40
+    ],
+    "radius": 4
+   },
+   "position": [
+    -241,
+    200,
+    26
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "stem2",
+   "name": "Center stem",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Connector to plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     36,
+     40
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    200,
+    26
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "stem3",
+   "name": "Right stem",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Connector to plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     36,
+     40
+    ],
+    "radius": 4
+   },
+   "position": [
+    241,
+    200,
+    26
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

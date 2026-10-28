@@ -1,0 +1,20 @@
+{
+ "request": "Catalog photo (background removed) of: Marca Amazon - Movian Saale - Armario de 2 puertas correderas con espejo.\nThe product listing gives its overall height as 2180 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.028253200000000003,
+   "durationMs": 17905,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-22,\"elevationDeg\":8},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian Saale sliding wardrobe\",\"units\":\"mm\",\"components\":[{\"id\":\"plinth\",\"name\":\"Plinth\",\"category\":\"enclosure\",\"materialName\":\"light oak laminate\",\"detail\":\"recessed base\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1960,30,560],\"radius\":4},\"position\":[0,15,-10],\"material\":{\"color\":\"#b9aba0\",\"roughness\":0.7}},{\"id\":\"side_l\",\"name\":\"Left side\",\"category\":\"enclosure\",\"materialName\":\"light oak laminate\",\"detail\":\"side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,2150,610],\"radius\":3},\"position\":[-991,1105,0],\"material\":{\"color\":\"#c4b5aa\",\"roughness\":0.7}},{\"id\":\"side_r\",\"name\":\"Right side\",\"category\":\"enclosure\",\"materialName\":\"light oak laminate\",\"detail\":\"side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,2150,610],\"radius\":3},\"position\":[991,1105,0],\"material\":{\"color\":\"#c4b5aa\",\"roughness\":0.7}},{\"id\":\"top\",\"name\":\"Top\",\"category\":\"enclosure\",\"materialName\":\"light oak laminate\",\"detail\":\"top panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[2000,18,610],\"radius\":3},\"position\":[0,2171,0],\"material\":{\"color\":\"#c4b5aa\",\"roughness\":0.7}},{\"id\":\"bottom\",\"name\":\"Bottom\",\"category\":\"enclosure\",\"materialName\":\"light oak laminate\",\"detail\":\"bottom panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1964,18,600],\"radius\":3},\"position\":[0,39,0],\"material\":{\"color\":\"#b9aba0\",\"roughness\":0.7}},{\"id\":\"back\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"fibreboard\",\"detail\":\"back\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1964,2110,10],\"radius\":2},\"position\":[0,1095,-295],\"material\":{\"color\":\"#a99d93\",\"roughness\":0.8}},{\"id\":\"door_l\",\"name\":\"Left door\",\"category\":\"mechanical\",\"materialName\":\"light oak laminate\",\"detail\":\"sliding door panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1000,2090,20],\"radius\":3},\"position\":[-500,1090,285],\"material\":{\"color\":\"#c9bbb0\",\"roughness\":0.7}},{\"id\":\"door_r\",\"name\":\"Right door\",\"category\":\"mechanical\",\"materialName\":\"light oak laminate\",\"detail\":\"sliding door panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[1000,2090,20],\"radius\":3},\"position\":[500,1090,262],\"material\":{\"color\":\"#c9bbb0\",\"roughness\":0.7}},{\"id\":\"mirror_l\",\"name\":\"Left mirror\",\"category\":\"mechanical\",\"materialName\":\"mirror glass\",\"detail\":\"upper mirror\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[700,1420,6],\"radius\":1},\"position\":[-350,1440,299],\"material\":{\"color\":\"#e8eaec\",\"roughness\":0.05,\"metalness\":0.8}},{\"id\":\"mirror_r\",\"name\":\"Right mirror\",\"category\":\"mechanical\",\"materialName\":\"mirror glass\",\"detail\":\"upper mirror\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[700,1420,6],\"radius\":1},\"position\":[350,1440,276],\"material\":{\"color\":\"#e8eaec\",\"roughness\":0.05,\"metalness\":0.8}},{\"id\":\"strip_l\",\"name\":\"Left black edge\",\"category\":\"mechanical\",\"materialName\":\"black trim\",\"detail\":\"front edge strip\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[6,2090,4],\"radius\":1},\"position\":[-997,1090,307],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.5}},{\"id\":\"strip_r\",\"name\":\"Right black edge\",\"category\":\"mechanical\",\"materialName\":\"black trim\",\"detail\":\"front edge strip\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[6,2090,4],\"radius\":1},\"position\":[997,1090,307],\"material\":{\"color\":\"#1c1c1e\",\"roughness\":0.5}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

@@ -1,0 +1,216 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Glass Bowl Pendant Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "chrome",
+   "detail": "Round chrome ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 122,
+    "radiusBottom": 122,
+    "depth": 30,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1509,
+    0
+   ],
+   "material": {
+    "color": "#c4c6c8",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Suspension cord",
+   "category": "interconnect",
+   "materialName": "twisted fabric cord",
+   "detail": "Thin twisted cord hanging from canopy",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      447,
+      0
+     ],
+     [
+      0,
+      -447,
+      0
+     ]
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1047,
+    0
+   ],
+   "material": {
+    "color": "#7a7468",
+    "roughness": 0.7,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "collar_top",
+   "name": "Upper collar",
+   "category": "mechanical",
+   "materialName": "chrome",
+   "detail": "Small neck above the collar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 18,
+    "radiusBottom": 28,
+    "depth": 50,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    590,
+    0
+   ],
+   "material": {
+    "color": "#c4c6c8",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Socket collar",
+   "category": "mechanical",
+   "materialName": "chrome",
+   "detail": "Chrome holder ring at top of shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 40,
+    "radiusBottom": 62,
+    "depth": 70,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    520,
+    0
+   ],
+   "material": {
+    "color": "#b8babd",
+    "roughness": 0.25,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Glass shade",
+   "category": "enclosure",
+   "materialName": "textured clear glass",
+   "detail": "Dome shaped hammered glass shade with closed wall thickness",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      237,
+      0
+     ],
+     [
+      236,
+      60
+     ],
+     [
+      226,
+      200
+     ],
+     [
+      192,
+      320
+     ],
+     [
+      135,
+      415
+     ],
+     [
+      75,
+      465
+     ],
+     [
+      55,
+      485
+     ],
+     [
+      50,
+      485
+     ],
+     [
+      70,
+      462
+     ],
+     [
+      130,
+      410
+     ],
+     [
+      187,
+      316
+     ],
+     [
+      221,
+      198
+     ],
+     [
+      231,
+      60
+     ],
+     [
+      232,
+      0
+     ],
+     [
+      237,
+      0
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#c9ced1",
+    "roughness": 0.15,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Filament bulb",
+   "category": "power",
+   "materialName": "warm glass",
+   "detail": "Edison style bulb inside shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 42
+   },
+   "position": [
+    0,
+    310,
+    0
+   ],
+   "material": {
+    "color": "#ffcf80",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  }
+ ]
+}

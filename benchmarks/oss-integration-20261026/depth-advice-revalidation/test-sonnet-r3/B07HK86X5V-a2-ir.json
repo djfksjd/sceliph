@@ -1,0 +1,212 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Black wall sconce with seeded glass jar",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Backplate",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Rectangular wall plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     115,
+     118,
+     12
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    185,
+    -92
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Rod from plate to cap",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -46
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    231,
+    -40
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Cap dome",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "Domed top cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 45,
+    "depth": 48,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    230,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "rim",
+   "name": "Rim ring",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "Collar above glass",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 49,
+    "radiusBottom": 49,
+    "depth": 7,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    203,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "glass",
+   "name": "Glass shade",
+   "category": "enclosure",
+   "materialName": "clear seeded glass",
+   "detail": "Open-bottom cylindrical jar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 50,
+    "depth": 200,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    100,
+    0
+   ],
+   "material": {
+    "color": "#e8f0f2",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Socket",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Bulb socket",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 14,
+    "depth": 28,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    184,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Edison bulb",
+   "category": "mechanical",
+   "materialName": "warm glass",
+   "detail": "Teardrop filament bulb",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      -40
+     ],
+     [
+      12,
+      -30
+     ],
+     [
+      22,
+      -10
+     ],
+     [
+      24,
+      10
+     ],
+     [
+      18,
+      26
+     ],
+     [
+      12,
+      36
+     ],
+     [
+      0,
+      38
+     ]
+    ],
+    "segments": 32
+   },
+   "position": [
+    0,
+    138,
+    0
+   ],
+   "material": {
+    "color": "#ffd9a0",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  }
+ ]
+}

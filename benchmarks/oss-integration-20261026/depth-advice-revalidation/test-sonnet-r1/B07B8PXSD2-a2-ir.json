@@ -1,0 +1,33 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Modern Wood Shelf, Walnut",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shelf",
+   "name": "Shelf body",
+   "category": "enclosure",
+   "materialName": "walnut finish wood",
+   "detail": "Solid rectangular shelf board, 459 x 89 x 159 mm",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     459,
+     89,
+     159
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    44.5,
+    0
+   ],
+   "material": {
+    "color": "#4a2a22",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import type { AssemblyIR } from '../src/engine/assembly-ir';
 import { orbitToPinhole } from '../src/engine/orbit-camera';
 import { rasterizeIdBuffer, worldTriangleMesh } from '../src/engine/mesh-silhouette-raster';
-import { applyPartColors, partColorsFromPhoto } from '../src/engine/photo-part-color';
+import { applyPartColors, fitTurntableCameras, partColorsFromPhoto } from '../src/engine/photo-part-color';
 
 const box = (w: number, h: number, d: number, at: [number, number, number]) => {
   const geometry = new THREE.BoxGeometry(w / 1000, h / 1000, d / 1000);
@@ -46,5 +46,20 @@ describe('photo part colours', () => {
     expect(recoloured.components.map((component) => component.material.color)).toEqual(['#8c5a32', '#ebebe4', '#123456']);
     expect(recoloured.components[0]!.geometry).toEqual(ir.components[0]!.geometry);
     expect(ir.components[0]!.material.color).toBe('#888888');
+  });
+});
+
+describe('turntable camera pair', () => {
+  it('fits two frames a quarter turn apart with shared pose and the given turn sign', () => {
+    // An L-shaped, non-symmetric object so the side view depends on the turn direction.
+    const meshes = [box(800, 300, 300, [0, 150, 0]), box(200, 700, 200, [300, 350, 100])];
+    const size = 240;
+    const camera = (azimuthDeg: number, cx: number) => orbitToPinhole({ width: size, height: size, fx: 300, fy: 300, cx, cy: 120, target: [0, 350, 0], azimuthDeg, elevationDeg: 15, distanceMm: 3200, rollDeg: 0, focalScale: 1 });
+    const silhouette = (azimuthDeg: number, cx: number) => Uint8Array.from(rasterizeIdBuffer(camera(azimuthDeg, cx), meshes), (id) => (id >= 0 ? 1 : 0));
+    const views = [{ mask: silhouette(20, 120), width: size, height: size }, { mask: silhouette(110, 126), width: size, height: size }] as const;
+    const fit = fitTurntableCameras(meshes, [views[0], views[1]], 1, { viewHint: { azimuthDeg: 0, elevationDeg: 10 }, maxEvaluations: 2400, seed: 2 });
+    expect(Math.min(...fit.iou)).toBeGreaterThan(0.9);
+    expect(fit.cameras[1].azimuthDeg - fit.cameras[0].azimuthDeg).toBe(90);
+    expect(fit.cameras[0].elevationDeg).toBe(fit.cameras[1].elevationDeg);
   });
 });

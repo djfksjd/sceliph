@@ -1,0 +1,189 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Indre desk with 1 drawer",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "white melamine chipboard",
+   "detail": "Rectangular worktop",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     25,
+     550
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    717.5,
+    0
+   ],
+   "material": {
+    "color": "#eef0f2",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "white melamine chipboard",
+   "detail": "Solid side panel acting as leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     705,
+     520
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    -532,
+    352.5,
+    5
+   ],
+   "material": {
+    "color": "#e8eaed",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "white melamine chipboard",
+   "detail": "Solid side panel acting as leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     705,
+     520
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    532,
+    352.5,
+    5
+   ],
+   "material": {
+    "color": "#e8eaed",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer",
+   "name": "Drawer front",
+   "category": "mechanical",
+   "materialName": "white melamine chipboard",
+   "detail": "Drawer front under the top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1046,
+     110,
+     18
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    645,
+    256
+   ],
+   "material": {
+    "color": "#eceef0",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_body",
+   "name": "Drawer box",
+   "category": "mechanical",
+   "materialName": "white melamine chipboard",
+   "detail": "Drawer housing behind the front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1046,
+     100,
+     250
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    650,
+    115
+   ],
+   "material": {
+    "color": "#e4e6e9",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back_rail",
+   "name": "Back rail",
+   "category": "enclosure",
+   "materialName": "white melamine chipboard",
+   "detail": "Rear stiffening rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1046,
+     110,
+     12
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    0,
+    645,
+    -245
+   ],
+   "material": {
+    "color": "#e4e6e9",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Drawer handle",
+   "category": "mechanical",
+   "materialName": "brushed metal",
+   "detail": "Bar handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     130,
+     10,
+     14
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    655,
+    274
+   ],
+   "material": {
+    "color": "#c8ccd0",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

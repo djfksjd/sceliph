@@ -1,0 +1,129 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Hairpin Compact Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "black laminate",
+   "detail": "black particleboard desktop",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     30,
+     550
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    645,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1b",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legL",
+   "name": "Left hairpin leg",
+   "category": "mechanical",
+   "materialName": "gold steel rod",
+   "detail": "gold hairpin leg, V shaped",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      300,
+      -170
+     ],
+     [
+      0,
+      -200,
+      -40
+     ],
+     [
+      0,
+      -325,
+      0
+     ],
+     [
+      0,
+      -200,
+      40
+     ],
+     [
+      0,
+      300,
+      170
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    -470,
+    325,
+    0
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "legR",
+   "name": "Right hairpin leg",
+   "category": "mechanical",
+   "materialName": "gold steel rod",
+   "detail": "gold hairpin leg, V shaped",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      300,
+      -170
+     ],
+     [
+      0,
+      -200,
+      -40
+     ],
+     [
+      0,
+      -325,
+      0
+     ],
+     [
+      0,
+      -200,
+      40
+     ],
+     [
+      0,
+      300,
+      170
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    470,
+    325,
+    0
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

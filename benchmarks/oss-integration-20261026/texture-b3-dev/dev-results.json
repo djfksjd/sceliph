@@ -1,0 +1,1906 @@
+{
+ "schema": "sceliph.abo-b3-dev/0.1",
+ "bakeFrames": [
+  0,
+  18
+ ],
+ "heldOut": [
+  9,
+  27,
+  36,
+  54
+ ],
+ "bake": {
+  "atlasSize": 2048,
+  "erodePx": 3,
+  "minFacing": 0.25,
+  "depthTolerance": 0.01
+ },
+ "delight": {
+  "strength": 0.35,
+  "radiusShare": 0.125
+ },
+ "scoreErodePx": 2,
+ "results": [
+  {
+   "modelId": "B07GFLG5MM",
+   "name": "Amazon Brand - Movian Idro 4-Door Shoe Cabinet/Cupboard/Organizer, 25 x 52 x 163cm, Dark Grey",
+   "fitIoU": [
+    0.9546,
+    0.9581
+   ],
+   "registration": {
+    "9": {
+     "turnedIoU": 0.622,
+     "refitIoU": 0.9682
+    },
+    "27": {
+     "turnedIoU": 0.6404,
+     "refitIoU": 0.9853
+    },
+    "36": {
+     "turnedIoU": 0.8783,
+     "refitIoU": 0.9637
+    },
+    "54": {
+     "turnedIoU": 0.8225,
+     "refitIoU": 0.9573
+    }
+   },
+   "truthFitIoU": [
+    0.988,
+    0.9813
+   ],
+   "truthHeldOutIoU": {
+    "9": 0.9407,
+    "27": 0.8139,
+    "36": 0.9157,
+    "54": 0.9175
+   },
+   "bake": {
+    "raw": {
+     "coverage": 0.3288,
+     "perPhoto": [
+      394700,
+      550497
+     ],
+     "overlapTexels": 0
+    },
+    "light": {
+     "coverage": 0.3288
+    }
+   },
+   "scores": {
+    "B0": {
+     "9": {
+      "ssim": 0.7358758464242028,
+      "ssimCoarse": 0.7798433811592421,
+      "deltaE00": 5.0315762657098215,
+      "scoredPixels": 83590,
+      "missingShare": 0.019794886053748836,
+      "silhouetteIoU": 0.9585651537335286
+     },
+     "27": {
+      "ssim": 0.820948991507542,
+      "ssimCoarse": 0.8868704373732396,
+      "deltaE00": 4.933517480896225,
+      "scoredPixels": 54284,
+      "missingShare": 0.010736071573810492,
+      "silhouetteIoU": 0.9611980401454085
+     },
+     "36": {
+      "ssim": 0.789722925733986,
+      "ssimCoarse": 0.8347368105875186,
+      "deltaE00": 4.281101327832885,
+      "scoredPixels": 85116,
+      "missingShare": 0.013512795160484377,
+      "silhouetteIoU": 0.9584844071193199
+     },
+     "54": {
+      "ssim": 0.8065200912040464,
+      "ssimCoarse": 0.8500331235427685,
+      "deltaE00": 4.303916072651145,
+      "scoredPixels": 68344,
+      "missingShare": 0.02164603895764792,
+      "silhouetteIoU": 0.948222194103505
+     }
+    },
+    "B4": {
+     "9": {
+      "ssim": 0.6083614034909197,
+      "ssimCoarse": 0.768048687446902,
+      "deltaE00": 5.041175668675412,
+      "scoredPixels": 83590,
+      "missingShare": 0.019794886053748836,
+      "silhouetteIoU": 0.9585651537335286
+     },
+     "27": {
+      "ssim": 0.7469622774241377,
+      "ssimCoarse": 0.8743330722812961,
+      "deltaE00": 4.94504230193553,
+      "scoredPixels": 54284,
+      "missingShare": 0.010736071573810492,
+      "silhouetteIoU": 0.9611980401454085
+     },
+     "36": {
+      "ssim": 0.7751478501053793,
+      "ssimCoarse": 0.8347368105875186,
+      "deltaE00": 4.305681715164819,
+      "scoredPixels": 85116,
+      "missingShare": 0.013512795160484377,
+      "silhouetteIoU": 0.9584844071193199
+     },
+     "54": {
+      "ssim": 0.6756501045870689,
+      "ssimCoarse": 0.837087294041572,
+      "deltaE00": 4.390311229058756,
+      "scoredPixels": 68344,
+      "missingShare": 0.02164603895764792,
+      "silhouetteIoU": 0.948222194103505
+     }
+    },
+    "B3raw": {
+     "9": {
+      "ssim": 0.6067976474659297,
+      "ssimCoarse": 0.6142811299625599,
+      "deltaE00": 5.451195566775657,
+      "scoredPixels": 83590,
+      "missingShare": 0.019794886053748836,
+      "silhouetteIoU": 0.9585651537335286
+     },
+     "27": {
+      "ssim": 0.6728327489380727,
+      "ssimCoarse": 0.6582286186355012,
+      "deltaE00": 5.921144728164579,
+      "scoredPixels": 54284,
+      "missingShare": 0.010736071573810492,
+      "silhouetteIoU": 0.9611980401454085
+     },
+     "36": {
+      "ssim": 0.7189006981599448,
+      "ssimCoarse": 0.8360863841927003,
+      "deltaE00": 2.203990005617974,
+      "scoredPixels": 85116,
+      "missingShare": 0.013512795160484377,
+      "silhouetteIoU": 0.9584844071193199
+     },
+     "54": {
+      "ssim": 0.6574248210910498,
+      "ssimCoarse": 0.7147481870351681,
+      "deltaE00": 4.042494481741291,
+      "scoredPixels": 68344,
+      "missingShare": 0.02164603895764792,
+      "silhouetteIoU": 0.948222194103505
+     }
+    },
+    "B3light": {
+     "9": {
+      "ssim": 0.6059187733948469,
+      "ssimCoarse": 0.6140667339745277,
+      "deltaE00": 5.494968334008128,
+      "scoredPixels": 83590,
+      "missingShare": 0.019794886053748836,
+      "silhouetteIoU": 0.9585651537335286
+     },
+     "27": {
+      "ssim": 0.6719947898007018,
+      "ssimCoarse": 0.6564142646750354,
+      "deltaE00": 5.919787922752307,
+      "scoredPixels": 54284,
+      "missingShare": 0.010736071573810492,
+      "silhouetteIoU": 0.9611980401454085
+     },
+     "36": {
+      "ssim": 0.7178952830917456,
+      "ssimCoarse": 0.8345214631519815,
+      "deltaE00": 2.2009917450089787,
+      "scoredPixels": 85116,
+      "missingShare": 0.013512795160484377,
+      "silhouetteIoU": 0.9584844071193199
+     },
+     "54": {
+      "ssim": 0.6581149066818598,
+      "ssimCoarse": 0.7224740724516228,
+      "deltaE00": 4.026104408417091,
+      "scoredPixels": 68344,
+      "missingShare": 0.02164603895764792,
+      "silhouetteIoU": 0.948222194103505
+     }
+    }
+   },
+   "ms": 39609
+  },
+  {
+   "modelId": "B07GFFQZRQ",
+   "name": "Amazon Brand - Movian Inari 1-Drawer Desk, 50 x 90 x 73 cm, White",
+   "fitIoU": [
+    0.8168,
+    0.6704
+   ],
+   "registration": {
+    "9": {
+     "turnedIoU": 0.5777,
+     "refitIoU": 0.7083
+    },
+    "27": {
+     "turnedIoU": 0.6143,
+     "refitIoU": 0.7076
+    },
+    "36": {
+     "turnedIoU": 0.7048,
+     "refitIoU": 0.7641
+    },
+    "54": {
+     "turnedIoU": 0.7286,
+     "refitIoU": 0.8037
+    }
+   },
+   "truthFitIoU": [
+    0.9239,
+    0.6856
+   ],
+   "truthHeldOutIoU": {
+    "9": 0.7112,
+    "27": 0.6614,
+    "36": 0.7973,
+    "54": 0.7263
+   },
+   "bake": {
+    "raw": {
+     "coverage": 0.3592,
+     "perPhoto": [
+      661853,
+      370231
+     ],
+     "overlapTexels": 0
+    },
+    "light": {
+     "coverage": 0.3592
+    }
+   },
+   "scores": {
+    "B0": {
+     "9": {
+      "ssim": 0.8903744568173236,
+      "ssimCoarse": 0.6461543969637852,
+      "deltaE00": 11.427738937602888,
+      "scoredPixels": 66640,
+      "missingShare": 0.1193723188078573,
+      "silhouetteIoU": 0.6966936391404533
+     },
+     "27": {
+      "ssim": 0.9705292400717551,
+      "ssimCoarse": 0.9559752609449953,
+      "deltaE00": 4.710296137172699,
+      "scoredPixels": 99608,
+      "missingShare": 0.040335532977200515,
+      "silhouetteIoU": 0.7034416128681387
+     },
+     "36": {
+      "ssim": 0.9607400678166196,
+      "ssimCoarse": 0.9632773654870237,
+      "deltaE00": 4.169811097684339,
+      "scoredPixels": 108464,
+      "missingShare": 0.05837395296010601,
+      "silhouetteIoU": 0.7613402291960283
+     },
+     "54": {
+      "ssim": 0.9830820606166816,
+      "ssimCoarse": 0.994502226940135,
+      "deltaE00": 3.2254520675483014,
+      "scoredPixels": 115328,
+      "missingShare": 0.041461014107097294,
+      "silhouetteIoU": 0.8047916067307751
+     }
+    },
+    "B4": {
+     "9": {
+      "ssim": 0.8903744568173236,
+      "ssimCoarse": 0.6461543969637852,
+      "deltaE00": 11.427738937602888,
+      "scoredPixels": 66640,
+      "missingShare": 0.1193723188078573,
+      "silhouetteIoU": 0.6966936391404533
+     },
+     "27": {
+      "ssim": 0.9705292400717551,
+      "ssimCoarse": 0.9559752609449953,
+      "deltaE00": 4.710296137172699,
+      "scoredPixels": 99608,
+      "missingShare": 0.040335532977200515,
+      "silhouetteIoU": 0.7034416128681387
+     },
+     "36": {
+      "ssim": 0.9607400678166196,
+      "ssimCoarse": 0.9632773654870237,
+      "deltaE00": 4.169811097684339,
+      "scoredPixels": 108464,
+      "missingShare": 0.05837395296010601,
+      "silhouetteIoU": 0.7613402291960283
+     },
+     "54": {
+      "ssim": 0.9830820606166816,
+      "ssimCoarse": 0.994502226940135,
+      "deltaE00": 3.2254520675483014,
+      "scoredPixels": 115328,
+      "missingShare": 0.041461014107097294,
+      "silhouetteIoU": 0.8047916067307751
+     }
+    },
+    "B3raw": {
+     "9": {
+      "ssim": 0.7452033314904258,
+      "ssimCoarse": 0.46695381504077527,
+      "deltaE00": 11.300783873708633,
+      "scoredPixels": 66640,
+      "missingShare": 0.1193723188078573,
+      "silhouetteIoU": 0.6966936391404533
+     },
+     "27": {
+      "ssim": 0.9070589456441366,
+      "ssimCoarse": 0.935063101576111,
+      "deltaE00": 3.399097476239186,
+      "scoredPixels": 99608,
+      "missingShare": 0.040335532977200515,
+      "silhouetteIoU": 0.7034416128681387
+     },
+     "36": {
+      "ssim": 0.8937238180577904,
+      "ssimCoarse": 0.9483667660228592,
+      "deltaE00": 3.935252151087906,
+      "scoredPixels": 108464,
+      "missingShare": 0.05837395296010601,
+      "silhouetteIoU": 0.7613402291960283
+     },
+     "54": {
+      "ssim": 0.9225307606288657,
+      "ssimCoarse": 0.8787716384896324,
+      "deltaE00": 4.45549246820523,
+      "scoredPixels": 115328,
+      "missingShare": 0.041461014107097294,
+      "silhouetteIoU": 0.8047916067307751
+     }
+    },
+    "B3light": {
+     "9": {
+      "ssim": 0.748063827018313,
+      "ssimCoarse": 0.4715331390323085,
+      "deltaE00": 11.224548465525249,
+      "scoredPixels": 66640,
+      "missingShare": 0.1193723188078573,
+      "silhouetteIoU": 0.6966936391404533
+     },
+     "27": {
+      "ssim": 0.9054478022785326,
+      "ssimCoarse": 0.935739157508778,
+      "deltaE00": 3.365013477032969,
+      "scoredPixels": 99608,
+      "missingShare": 0.040335532977200515,
+      "silhouetteIoU": 0.7034416128681387
+     },
+     "36": {
+      "ssim": 0.8899703823790895,
+      "ssimCoarse": 0.9451084894200588,
+      "deltaE00": 3.890635797073102,
+      "scoredPixels": 108464,
+      "missingShare": 0.05837395296010601,
+      "silhouetteIoU": 0.7613402291960283
+     },
+     "54": {
+      "ssim": 0.9238232587903987,
+      "ssimCoarse": 0.8790389176635338,
+      "deltaE00": 4.428271714779027,
+      "scoredPixels": 115328,
+      "missingShare": 0.041461014107097294,
+      "silhouetteIoU": 0.8047916067307751
+     }
+    }
+   },
+   "ms": 58503
+  },
+  {
+   "modelId": "B075YZ16V7",
+   "name": "Amazon Brand – Rivet Mid-Century Stark 6-Drawer Dresser, 61\"W, Warm Espresso",
+   "fitIoU": [
+    0.8691,
+    0.8522
+   ],
+   "registration": {
+    "9": {
+     "turnedIoU": 0.8457,
+     "refitIoU": 0.9067
+    },
+    "27": {
+     "turnedIoU": 0.8036,
+     "refitIoU": 0.8782
+    },
+    "36": {
+     "turnedIoU": 0.8635,
+     "refitIoU": 0.8967
+    },
+    "54": {
+     "turnedIoU": 0.7455,
+     "refitIoU": 0.8629
+    }
+   },
+   "truthFitIoU": [
+    0.9082,
+    0.8839
+   ],
+   "truthHeldOutIoU": {
+    "9": 0.8652,
+    "27": 0.787,
+    "36": 0.9075,
+    "54": 0.7507
+   },
+   "bake": {
+    "raw": {
+     "coverage": 0.1688,
+     "perPhoto": [
+      299634,
+      109796
+     ],
+     "overlapTexels": 0
+    },
+    "light": {
+     "coverage": 0.1688
+    }
+   },
+   "scores": {
+    "B0": {
+     "9": {
+      "ssim": 0.34344462205387466,
+      "ssimCoarse": 0.19261299095992884,
+      "deltaE00": 10.078517045860705,
+      "scoredPixels": 111182,
+      "missingShare": 0.06064762134422499,
+      "silhouetteIoU": 0.8984
+     },
+     "27": {
+      "ssim": 0.5073933139520472,
+      "ssimCoarse": 0.4818067445562059,
+      "deltaE00": 9.945981429458316,
+      "scoredPixels": 66483,
+      "missingShare": 0.07819179817385338,
+      "silhouetteIoU": 0.8713580123727799
+     },
+     "36": {
+      "ssim": 0.365018388480992,
+      "ssimCoarse": 0.2621343613709637,
+      "deltaE00": 10.159905100700271,
+      "scoredPixels": 116573,
+      "missingShare": 0.057107205028268604,
+      "silhouetteIoU": 0.8926711879238679
+     },
+     "54": {
+      "ssim": 0.4035668769945461,
+      "ssimCoarse": 0.31936901330666045,
+      "deltaE00": 10.12264663943643,
+      "scoredPixels": 82716,
+      "missingShare": 0.07763655101339746,
+      "silhouetteIoU": 0.8531688716852505
+     }
+    },
+    "B4": {
+     "9": {
+      "ssim": 0.1597178043753831,
+      "ssimCoarse": 0.1445611779713541,
+      "deltaE00": 11.021257563500738,
+      "scoredPixels": 111182,
+      "missingShare": 0.06064762134422499,
+      "silhouetteIoU": 0.8984
+     },
+     "27": {
+      "ssim": 0.22543501206495156,
+      "ssimCoarse": 0.39062014833963593,
+      "deltaE00": 10.529654127370662,
+      "scoredPixels": 66483,
+      "missingShare": 0.07819179817385338,
+      "silhouetteIoU": 0.8713580123727799
+     },
+     "36": {
+      "ssim": 0.21883158885161985,
+      "ssimCoarse": 0.16385255276754018,
+      "deltaE00": 10.833255000738664,
+      "scoredPixels": 116573,
+      "missingShare": 0.057107205028268604,
+      "silhouetteIoU": 0.8926711879238679
+     },
+     "54": {
+      "ssim": 0.1944879211783215,
+      "ssimCoarse": 0.2700058140310667,
+      "deltaE00": 10.684909172128036,
+      "scoredPixels": 82716,
+      "missingShare": 0.07763655101339746,
+      "silhouetteIoU": 0.8531688716852505
+     }
+    },
+    "B3raw": {
+     "9": {
+      "ssim": 0.2036297489118348,
+      "ssimCoarse": 0.09385273954636121,
+      "deltaE00": 11.836277860856969,
+      "scoredPixels": 111182,
+      "missingShare": 0.06064762134422499,
+      "silhouetteIoU": 0.8984
+     },
+     "27": {
+      "ssim": 0.3263019721402452,
+      "ssimCoarse": 0.4105275016473646,
+      "deltaE00": 8.444922607530938,
+      "scoredPixels": 66483,
+      "missingShare": 0.07819179817385338,
+      "silhouetteIoU": 0.8713580123727799
+     },
+     "36": {
+      "ssim": 0.21883158885161985,
+      "ssimCoarse": 0.16385255276754018,
+      "deltaE00": 10.833287359706967,
+      "scoredPixels": 116573,
+      "missingShare": 0.057107205028268604,
+      "silhouetteIoU": 0.8926711879238679
+     },
+     "54": {
+      "ssim": 0.19449001833166935,
+      "ssimCoarse": 0.2700058140310667,
+      "deltaE00": 10.684846853580485,
+      "scoredPixels": 82716,
+      "missingShare": 0.07763655101339746,
+      "silhouetteIoU": 0.8531688716852505
+     }
+    },
+    "B3light": {
+     "9": {
+      "ssim": 0.20425074371811172,
+      "ssimCoarse": 0.09376035466603283,
+      "deltaE00": 11.751457805336928,
+      "scoredPixels": 111182,
+      "missingShare": 0.06064762134422499,
+      "silhouetteIoU": 0.8984
+     },
+     "27": {
+      "ssim": 0.32668038521832937,
+      "ssimCoarse": 0.40653397972899985,
+      "deltaE00": 8.498753284660536,
+      "scoredPixels": 66483,
+      "missingShare": 0.07819179817385338,
+      "silhouetteIoU": 0.8713580123727799
+     },
+     "36": {
+      "ssim": 0.21883158885161985,
+      "ssimCoarse": 0.16385255276754018,
+      "deltaE00": 10.833287359706967,
+      "scoredPixels": 116573,
+      "missingShare": 0.057107205028268604,
+      "silhouetteIoU": 0.8926711879238679
+     },
+     "54": {
+      "ssim": 0.19449051559098432,
+      "ssimCoarse": 0.2700058140310667,
+      "deltaE00": 10.684831069692983,
+      "scoredPixels": 82716,
+      "missingShare": 0.07763655101339746,
+      "silhouetteIoU": 0.8531688716852505
+     }
+    }
+   },
+   "ms": 101570
+  },
+  {
+   "modelId": "B082XCPNH5",
+   "name": "Amazon Brand – Stone & Beam Remote-Controlled 4-Blade Ceiling Fan with Light, 52\" Diameter, Brushed Nickel",
+   "fitIoU": [
+    0.6736,
+    0.6751
+   ],
+   "registration": {
+    "9": {
+     "turnedIoU": 0.6335,
+     "refitIoU": 0.741
+    },
+    "27": {
+     "turnedIoU": 0.6337,
+     "refitIoU": 0.7101
+    },
+    "36": {
+     "turnedIoU": 0.6548,
+     "refitIoU": 0.6492
+    },
+    "54": {
+     "turnedIoU": 0.6554,
+     "refitIoU": 0.6498
+    }
+   },
+   "truthFitIoU": [
+    0.6578,
+    0.6574
+   ],
+   "truthHeldOutIoU": {
+    "9": 0.6797,
+    "27": 0.6801,
+    "36": 0.6399,
+    "54": 0.6414
+   },
+   "bake": {
+    "raw": {
+     "coverage": 0.2886,
+     "perPhoto": [
+      166453,
+      173679
+     ],
+     "overlapTexels": 0
+    },
+    "light": {
+     "coverage": 0.2886
+    }
+   },
+   "scores": {
+    "B0": {
+     "9": {
+      "ssim": 0.783716931895231,
+      "ssimCoarse": 0.7481620209433061,
+      "deltaE00": 9.242733436105427,
+      "scoredPixels": 14992,
+      "missingShare": 0.2134387351778656,
+      "silhouetteIoU": 0.720135310545569
+     },
+     "27": {
+      "ssim": 0.7796730230635891,
+      "ssimCoarse": 0.5465992426117072,
+      "deltaE00": 7.458965877146663,
+      "scoredPixels": 16631,
+      "missingShare": 0.08657190707261563,
+      "silhouetteIoU": 0.6888054143324375
+     },
+     "36": {
+      "ssim": 0.6952076792882169,
+      "ssimCoarse": null,
+      "deltaE00": 8.016818955303135,
+      "scoredPixels": 14148,
+      "missingShare": 0.30616272009714635,
+      "silhouetteIoU": 0.6547772525426157
+     },
+     "54": {
+      "ssim": 0.6995664697393571,
+      "ssimCoarse": null,
+      "deltaE00": 8.020464455683486,
+      "scoredPixels": 14162,
+      "missingShare": 0.3056314511232544,
+      "silhouetteIoU": 0.6554194426534852
+     }
+    },
+    "B4": {
+     "9": {
+      "ssim": 0.6383579184160344,
+      "ssimCoarse": 0.7199608150449984,
+      "deltaE00": 9.30886643017755,
+      "scoredPixels": 14992,
+      "missingShare": 0.2134387351778656,
+      "silhouetteIoU": 0.720135310545569
+     },
+     "27": {
+      "ssim": 0.622050425979391,
+      "ssimCoarse": 0.484227666499792,
+      "deltaE00": 7.55309815972513,
+      "scoredPixels": 16631,
+      "missingShare": 0.08657190707261563,
+      "silhouetteIoU": 0.6888054143324375
+     },
+     "36": {
+      "ssim": 0.5483507105491353,
+      "ssimCoarse": null,
+      "deltaE00": 8.144836928619535,
+      "scoredPixels": 14148,
+      "missingShare": 0.30616272009714635,
+      "silhouetteIoU": 0.6547772525426157
+     },
+     "54": {
+      "ssim": 0.554044484342094,
+      "ssimCoarse": null,
+      "deltaE00": 8.143916556176752,
+      "scoredPixels": 14162,
+      "missingShare": 0.3056314511232544,
+      "silhouetteIoU": 0.6554194426534852
+     }
+    },
+    "B3raw": {
+     "9": {
+      "ssim": 0.6386260937005572,
+      "ssimCoarse": 0.7199608150449984,
+      "deltaE00": 9.415759493423405,
+      "scoredPixels": 14992,
+      "missingShare": 0.2134387351778656,
+      "silhouetteIoU": 0.720135310545569
+     },
+     "27": {
+      "ssim": 0.47440890424439214,
+      "ssimCoarse": 0.2599370928535914,
+      "deltaE00": 7.759376305982323,
+      "scoredPixels": 16631,
+      "missingShare": 0.08657190707261563,
+      "silhouetteIoU": 0.6888054143324375
+     },
+     "36": {
+      "ssim": 0.47426521604559474,
+      "ssimCoarse": null,
+      "deltaE00": 9.066950960953392,
+      "scoredPixels": 14148,
+      "missingShare": 0.30616272009714635,
+      "silhouetteIoU": 0.6547772525426157
+     },
+     "54": {
+      "ssim": 0.5250952466615586,
+      "ssimCoarse": null,
+      "deltaE00": 9.29614841977373,
+      "scoredPixels": 14162,
+      "missingShare": 0.3056314511232544,
+      "silhouetteIoU": 0.6554194426534852
+     }
+    },
+    "B3light": {
+     "9": {
+      "ssim": 0.6386260937005572,
+      "ssimCoarse": 0.7199608150449984,
+      "deltaE00": 9.415759493423405,
+      "scoredPixels": 14992,
+      "missingShare": 0.2134387351778656,
+      "silhouetteIoU": 0.720135310545569
+     },
+     "27": {
+      "ssim": 0.4774439089806947,
+      "ssimCoarse": 0.2575509470175228,
+      "deltaE00": 7.769511471442958,
+      "scoredPixels": 16631,
+      "missingShare": 0.08657190707261563,
+      "silhouetteIoU": 0.6888054143324375
+     },
+     "36": {
+      "ssim": 0.4757885851930375,
+      "ssimCoarse": null,
+      "deltaE00": 9.088925740559985,
+      "scoredPixels": 14148,
+      "missingShare": 0.30616272009714635,
+      "silhouetteIoU": 0.6547772525426157
+     },
+     "54": {
+      "ssim": 0.5255140564844203,
+      "ssimCoarse": null,
+      "deltaE00": 9.325668256395668,
+      "scoredPixels": 14162,
+      "missingShare": 0.3056314511232544,
+      "silhouetteIoU": 0.6554194426534852
+     }
+    }
+   },
+   "ms": 55091
+  },
+  {
+   "modelId": "B07B4SB2D9",
+   "name": "Amazon Brand – Stone & Beam Modern Traditional Living Room Table Desk Lamp With Light Bulb - 7 x 7 x 28 Inches, Brass with Linen Shade",
+   "fitIoU": [
+    0.8523,
+    0.8525
+   ],
+   "registration": {
+    "9": {
+     "turnedIoU": 0.7976,
+     "refitIoU": 0.8401
+    },
+    "27": {
+     "turnedIoU": 0.7995,
+     "refitIoU": 0.851
+    },
+    "36": {
+     "turnedIoU": 0.8025,
+     "refitIoU": 0.8531
+    },
+    "54": {
+     "turnedIoU": 0.7956,
+     "refitIoU": 0.844
+    }
+   },
+   "truthFitIoU": [
+    0.966,
+    0.9601
+   ],
+   "truthHeldOutIoU": {
+    "9": 0.9083,
+    "27": 0.9217,
+    "36": 0.9102,
+    "54": 0.9072
+   },
+   "bake": {
+    "raw": {
+     "coverage": 0.2136,
+     "perPhoto": [
+      134684,
+      140427
+     ],
+     "overlapTexels": 0
+    },
+    "light": {
+     "coverage": 0.2136
+    }
+   },
+   "scores": {
+    "B0": {
+     "9": {
+      "ssim": 0.921344404508457,
+      "ssimCoarse": 0.8044544499445966,
+      "deltaE00": 8.92004748451836,
+      "scoredPixels": 15718,
+      "missingShare": 0.010436721045698653,
+      "silhouetteIoU": 0.814681960375391
+     },
+     "27": {
+      "ssim": 0.9174475643216375,
+      "ssimCoarse": 0.8030749602142537,
+      "deltaE00": 8.689970856891104,
+      "scoredPixels": 15769,
+      "missingShare": 0.011042695028242837,
+      "silhouetteIoU": 0.8183770581547143
+     },
+     "36": {
+      "ssim": 0.9237848827940923,
+      "ssimCoarse": 0.804767051196238,
+      "deltaE00": 8.7503570793671,
+      "scoredPixels": 15788,
+      "missingShare": 0.013992395437262358,
+      "silhouetteIoU": 0.8209446625300747
+     },
+     "54": {
+      "ssim": 0.9218296658542284,
+      "ssimCoarse": 0.8021354984588495,
+      "deltaE00": 8.848140992935676,
+      "scoredPixels": 15881,
+      "missingShare": 0.015026220250100848,
+      "silhouetteIoU": 0.8185551458263494
+     }
+    },
+    "B4": {
+     "9": {
+      "ssim": 0.4267995840392992,
+      "ssimCoarse": 0.6544498876842828,
+      "deltaE00": 7.482988588999685,
+      "scoredPixels": 15718,
+      "missingShare": 0.010436721045698653,
+      "silhouetteIoU": 0.814681960375391
+     },
+     "27": {
+      "ssim": 0.42597045324547494,
+      "ssimCoarse": 0.6024674863643319,
+      "deltaE00": 7.285571707722229,
+      "scoredPixels": 15769,
+      "missingShare": 0.011042695028242837,
+      "silhouetteIoU": 0.8183770581547143
+     },
+     "36": {
+      "ssim": 0.43039295438003516,
+      "ssimCoarse": 0.5979844806602813,
+      "deltaE00": 7.3437774502789805,
+      "scoredPixels": 15788,
+      "missingShare": 0.013992395437262358,
+      "silhouetteIoU": 0.8209446625300747
+     },
+     "54": {
+      "ssim": 0.43011864951175616,
+      "ssimCoarse": 0.6310547233644265,
+      "deltaE00": 7.426126683022591,
+      "scoredPixels": 15881,
+      "missingShare": 0.015026220250100848,
+      "silhouetteIoU": 0.8185551458263494
+     }
+    },
+    "B3raw": {
+     "9": {
+      "ssim": 0.8318012929740799,
+      "ssimCoarse": 0.45871559139446133,
+      "deltaE00": 6.69472809686307,
+      "scoredPixels": 15718,
+      "missingShare": 0.010436721045698653,
+      "silhouetteIoU": 0.814681960375391
+     },
+     "27": {
+      "ssim": 0.7265943512465012,
+      "ssimCoarse": 0.6406476172640185,
+      "deltaE00": 6.791638676622486,
+      "scoredPixels": 15769,
+      "missingShare": 0.011042695028242837,
+      "silhouetteIoU": 0.8183770581547143
+     },
+     "36": {
+      "ssim": 0.5439539099799285,
+      "ssimCoarse": 0.6490494457759134,
+      "deltaE00": 6.985478063099936,
+      "scoredPixels": 15788,
+      "missingShare": 0.013992395437262358,
+      "silhouetteIoU": 0.8209446625300747
+     },
+     "54": {
+      "ssim": 0.4865100700547005,
+      "ssimCoarse": 0.640144017168564,
+      "deltaE00": 7.21696397427094,
+      "scoredPixels": 15881,
+      "missingShare": 0.015026220250100848,
+      "silhouetteIoU": 0.8185551458263494
+     }
+    },
+    "B3light": {
+     "9": {
+      "ssim": 0.8308713313252853,
+      "ssimCoarse": 0.4530405845000985,
+      "deltaE00": 6.703033982404348,
+      "scoredPixels": 15718,
+      "missingShare": 0.010436721045698653,
+      "silhouetteIoU": 0.814681960375391
+     },
+     "27": {
+      "ssim": 0.7258747286727627,
+      "ssimCoarse": 0.6309224947521253,
+      "deltaE00": 6.815223303588571,
+      "scoredPixels": 15769,
+      "missingShare": 0.011042695028242837,
+      "silhouetteIoU": 0.8183770581547143
+     },
+     "36": {
+      "ssim": 0.5440082998801272,
+      "ssimCoarse": 0.6541062449831017,
+      "deltaE00": 6.992810420968929,
+      "scoredPixels": 15788,
+      "missingShare": 0.013992395437262358,
+      "silhouetteIoU": 0.8209446625300747
+     },
+     "54": {
+      "ssim": 0.48498905825257355,
+      "ssimCoarse": 0.6387258488808711,
+      "deltaE00": 7.223949868490577,
+      "scoredPixels": 15881,
+      "missingShare": 0.015026220250100848,
+      "silhouetteIoU": 0.8185551458263494
+     }
+    }
+   },
+   "ms": 28994
+  },
+  {
+   "modelId": "B07374P5NP",
+   "name": "Amazon Brand – Rivet Eclipse Mid Century Modern 5-Globe Hanging Ceiling Pendant Chandelier Fixture - 20 x 20 x 48 Inches, Black Metal With Frosted Glass Globes",
+   "fitIoU": [
+    0.7842,
+    0.5478
+   ],
+   "registration": {
+    "9": {
+     "turnedIoU": 0.5525,
+     "refitIoU": 0.6365
+    },
+    "27": {
+     "turnedIoU": 0.4701,
+     "refitIoU": 0.5191
+    },
+    "36": {
+     "turnedIoU": 0.5291,
+     "refitIoU": 0.5929
+    },
+    "54": {
+     "turnedIoU": 0.5195,
+     "refitIoU": 0.6564
+    }
+   },
+   "truthFitIoU": [
+    0.885,
+    0.871
+   ],
+   "truthHeldOutIoU": {
+    "9": 0.8474,
+    "27": 0.7909,
+    "36": 0.7765,
+    "54": 0.7543
+   },
+   "bake": {
+    "raw": {
+     "coverage": 0.3041,
+     "perPhoto": [
+      261594,
+      193688
+     ],
+     "overlapTexels": 0
+    },
+    "light": {
+     "coverage": 0.3041
+    }
+   },
+   "scores": {
+    "B0": {
+     "9": {
+      "ssim": 0.788868088824909,
+      "ssimCoarse": 0.7169634741954442,
+      "deltaE00": 7.445009846108416,
+      "scoredPixels": 22493,
+      "missingShare": 0.2759187180912905,
+      "silhouetteIoU": 0.599778084830214
+     },
+     "27": {
+      "ssim": 0.793851341769739,
+      "ssimCoarse": 0.8434820395652143,
+      "deltaE00": 6.569866141205161,
+      "scoredPixels": 21318,
+      "missingShare": 0.341776659386573,
+      "silhouetteIoU": 0.4939430648092065
+     },
+     "36": {
+      "ssim": 0.8238608491175593,
+      "ssimCoarse": 0.7743697588223281,
+      "deltaE00": 7.221528102952822,
+      "scoredPixels": 23826,
+      "missingShare": 0.28165559286513775,
+      "silhouetteIoU": 0.5652499812607751
+     },
+     "54": {
+      "ssim": 0.824825876096662,
+      "ssimCoarse": 0.8005660098306883,
+      "deltaE00": 6.681559513344918,
+      "scoredPixels": 24667,
+      "missingShare": 0.144494597182328,
+      "silhouetteIoU": 0.6407482533243183
+     }
+    },
+    "B4": {
+     "9": {
+      "ssim": 0.788868088824909,
+      "ssimCoarse": 0.7169634741954442,
+      "deltaE00": 7.445009846108416,
+      "scoredPixels": 22493,
+      "missingShare": 0.2759187180912905,
+      "silhouetteIoU": 0.599778084830214
+     },
+     "27": {
+      "ssim": 0.793851341769739,
+      "ssimCoarse": 0.8434820395652143,
+      "deltaE00": 6.569866141205161,
+      "scoredPixels": 21318,
+      "missingShare": 0.341776659386573,
+      "silhouetteIoU": 0.4939430648092065
+     },
+     "36": {
+      "ssim": 0.8238608491175593,
+      "ssimCoarse": 0.7743697588223281,
+      "deltaE00": 7.221528102952822,
+      "scoredPixels": 23826,
+      "missingShare": 0.28165559286513775,
+      "silhouetteIoU": 0.5652499812607751
+     },
+     "54": {
+      "ssim": 0.824825876096662,
+      "ssimCoarse": 0.8005660098306883,
+      "deltaE00": 6.681559513344918,
+      "scoredPixels": 24667,
+      "missingShare": 0.144494597182328,
+      "silhouetteIoU": 0.6407482533243183
+     }
+    },
+    "B3raw": {
+     "9": {
+      "ssim": 0.7625074557430703,
+      "ssimCoarse": 0.717249073426276,
+      "deltaE00": 5.293405865587388,
+      "scoredPixels": 22493,
+      "missingShare": 0.2759187180912905,
+      "silhouetteIoU": 0.599778084830214
+     },
+     "27": {
+      "ssim": 0.7728942098609091,
+      "ssimCoarse": 0.8491152962798476,
+      "deltaE00": 4.21722899906003,
+      "scoredPixels": 21318,
+      "missingShare": 0.341776659386573,
+      "silhouetteIoU": 0.4939430648092065
+     },
+     "36": {
+      "ssim": 0.8165658107651291,
+      "ssimCoarse": 0.7954902950393598,
+      "deltaE00": 5.589963761628685,
+      "scoredPixels": 23826,
+      "missingShare": 0.28165559286513775,
+      "silhouetteIoU": 0.5652499812607751
+     },
+     "54": {
+      "ssim": 0.8225181727629614,
+      "ssimCoarse": 0.7977613290443165,
+      "deltaE00": 5.061244664074675,
+      "scoredPixels": 24667,
+      "missingShare": 0.144494597182328,
+      "silhouetteIoU": 0.6407482533243183
+     }
+    },
+    "B3light": {
+     "9": {
+      "ssim": 0.7625406058252984,
+      "ssimCoarse": 0.717249073426276,
+      "deltaE00": 5.294246762436632,
+      "scoredPixels": 22493,
+      "missingShare": 0.2759187180912905,
+      "silhouetteIoU": 0.599778084830214
+     },
+     "27": {
+      "ssim": 0.7731846816845278,
+      "ssimCoarse": 0.8491152962798476,
+      "deltaE00": 4.219218902868807,
+      "scoredPixels": 21318,
+      "missingShare": 0.341776659386573,
+      "silhouetteIoU": 0.4939430648092065
+     },
+     "36": {
+      "ssim": 0.8167091830771446,
+      "ssimCoarse": 0.7954902950393598,
+      "deltaE00": 5.59092263833805,
+      "scoredPixels": 23826,
+      "missingShare": 0.28165559286513775,
+      "silhouetteIoU": 0.5652499812607751
+     },
+     "54": {
+      "ssim": 0.8227329370137314,
+      "ssimCoarse": 0.7977613290443165,
+      "deltaE00": 5.058250104271896,
+      "scoredPixels": 24667,
+      "missingShare": 0.144494597182328,
+      "silhouetteIoU": 0.6407482533243183
+     }
+    }
+   },
+   "ms": 40657
+  },
+  {
+   "modelId": "B07TY5GXBQ",
+   "name": "Movian 2-voudig modulair MDF boekenkast, beige/wit, 20 x 29 x 60 cm",
+   "fitIoU": [
+    0.9624,
+    0.9415
+   ],
+   "registration": {
+    "9": {
+     "turnedIoU": 0.7968,
+     "refitIoU": 0.9517
+    },
+    "27": {
+     "turnedIoU": 0.9064,
+     "refitIoU": 0.9541
+    },
+    "36": {
+     "turnedIoU": 0.9621,
+     "refitIoU": 0.9696
+    },
+    "54": {
+     "turnedIoU": 0.7371,
+     "refitIoU": 0.9205
+    }
+   },
+   "truthFitIoU": [
+    0.9563,
+    0.9501
+   ],
+   "truthHeldOutIoU": {
+    "9": 0.8137,
+    "27": 0.8838,
+    "36": 0.9529,
+    "54": 0.7379
+   },
+   "bake": {
+    "raw": {
+     "coverage": 0.4354,
+     "perPhoto": [
+      499273,
+      751767
+     ],
+     "overlapTexels": 0
+    },
+    "light": {
+     "coverage": 0.4354
+    }
+   },
+   "scores": {
+    "B0": {
+     "9": {
+      "ssim": 0.6980297710402932,
+      "ssimCoarse": 0.38956683002621884,
+      "deltaE00": 20.260847508029265,
+      "scoredPixels": 103055,
+      "missingShare": 0.030192018405450844,
+      "silhouetteIoU": 0.9398034608722495
+     },
+     "27": {
+      "ssim": 0.7332859941055299,
+      "ssimCoarse": 0.8240151307656853,
+      "deltaE00": 7.043353857384427,
+      "scoredPixels": 131736,
+      "missingShare": 0.019776955919521354,
+      "silhouetteIoU": 0.9469066832195324
+     },
+     "36": {
+      "ssim": 0.7622360649585839,
+      "ssimCoarse": 0.7547572130183625,
+      "deltaE00": 9.577818697978248,
+      "scoredPixels": 123634,
+      "missingShare": 0.018350614180768138,
+      "silhouetteIoU": 0.966245719966128
+     },
+     "54": {
+      "ssim": 0.7306496092106913,
+      "ssimCoarse": 0.8640399789463342,
+      "deltaE00": 8.899399378319155,
+      "scoredPixels": 132165,
+      "missingShare": 0.045103293870212696,
+      "silhouetteIoU": 0.9192661389346083
+     }
+    },
+    "B4": {
+     "9": {
+      "ssim": 0.14004128817045428,
+      "ssimCoarse": 0.19861506090203507,
+      "deltaE00": 20.498553474289388,
+      "scoredPixels": 103055,
+      "missingShare": 0.030192018405450844,
+      "silhouetteIoU": 0.9398034608722495
+     },
+     "27": {
+      "ssim": 0.190433114869203,
+      "ssimCoarse": 0.21701043036988818,
+      "deltaE00": 8.663342971347312,
+      "scoredPixels": 131736,
+      "missingShare": 0.019776955919521354,
+      "silhouetteIoU": 0.9469066832195324
+     },
+     "36": {
+      "ssim": 0.1817226625317196,
+      "ssimCoarse": 0.23662819771635618,
+      "deltaE00": 10.498592413015903,
+      "scoredPixels": 123634,
+      "missingShare": 0.018350614180768138,
+      "silhouetteIoU": 0.966245719966128
+     },
+     "54": {
+      "ssim": 0.15240200483954755,
+      "ssimCoarse": 0.20741911341893365,
+      "deltaE00": 10.500148087235155,
+      "scoredPixels": 132165,
+      "missingShare": 0.045103293870212696,
+      "silhouetteIoU": 0.9192661389346083
+     }
+    },
+    "B3raw": {
+     "9": {
+      "ssim": 0.388496868100475,
+      "ssimCoarse": 0.19942989807917413,
+      "deltaE00": 15.24023230876826,
+      "scoredPixels": 103055,
+      "missingShare": 0.030192018405450844,
+      "silhouetteIoU": 0.9398034608722495
+     },
+     "27": {
+      "ssim": 0.6353849025908287,
+      "ssimCoarse": 0.696440931071583,
+      "deltaE00": 4.504948946409649,
+      "scoredPixels": 131736,
+      "missingShare": 0.019776955919521354,
+      "silhouetteIoU": 0.9469066832195324
+     },
+     "36": {
+      "ssim": 0.5795360876292437,
+      "ssimCoarse": 0.6174714345588536,
+      "deltaE00": 8.104224248857685,
+      "scoredPixels": 123634,
+      "missingShare": 0.018350614180768138,
+      "silhouetteIoU": 0.966245719966128
+     },
+     "54": {
+      "ssim": 0.4619629607362543,
+      "ssimCoarse": 0.5304946448436909,
+      "deltaE00": 15.594860634629049,
+      "scoredPixels": 132165,
+      "missingShare": 0.045103293870212696,
+      "silhouetteIoU": 0.9192661389346083
+     }
+    },
+    "B3light": {
+     "9": {
+      "ssim": 0.3851831263062813,
+      "ssimCoarse": 0.18008655470159332,
+      "deltaE00": 15.141080611575598,
+      "scoredPixels": 103055,
+      "missingShare": 0.030192018405450844,
+      "silhouetteIoU": 0.9398034608722495
+     },
+     "27": {
+      "ssim": 0.6353515558345445,
+      "ssimCoarse": 0.6963797390379403,
+      "deltaE00": 4.507711168070409,
+      "scoredPixels": 131736,
+      "missingShare": 0.019776955919521354,
+      "silhouetteIoU": 0.9469066832195324
+     },
+     "36": {
+      "ssim": 0.579518404705674,
+      "ssimCoarse": 0.6174381626849431,
+      "deltaE00": 8.104053312705743,
+      "scoredPixels": 123634,
+      "missingShare": 0.018350614180768138,
+      "silhouetteIoU": 0.966245719966128
+     },
+     "54": {
+      "ssim": 0.4606482552306911,
+      "ssimCoarse": 0.5209877859892624,
+      "deltaE00": 15.68261957722587,
+      "scoredPixels": 132165,
+      "missingShare": 0.045103293870212696,
+      "silhouetteIoU": 0.9192661389346083
+     }
+    }
+   },
+   "ms": 56663
+  },
+  {
+   "modelId": "B073PB3FXD",
+   "name": "AmazonBasics Foldable Storage Cubes (6 Pack), Navy",
+   "fitIoU": [
+    0.9806,
+    0.9626
+   ],
+   "registration": {
+    "9": {
+     "turnedIoU": 0.8708,
+     "refitIoU": 0.9742
+    },
+    "27": {
+     "turnedIoU": 0.8363,
+     "refitIoU": 0.9652
+    },
+    "36": {
+     "turnedIoU": 0.9237,
+     "refitIoU": 0.9808
+    },
+    "54": {
+     "turnedIoU": 0.9481,
+     "refitIoU": 0.9733
+    }
+   },
+   "truthFitIoU": [
+    0.9749,
+    0.9766
+   ],
+   "truthHeldOutIoU": {
+    "9": 0.875,
+    "27": 0.8982,
+    "36": 0.9519,
+    "54": 0.9289
+   },
+   "bake": {
+    "raw": {
+     "coverage": 0.2701,
+     "perPhoto": [
+      435936,
+      223186
+     ],
+     "overlapTexels": 0
+    },
+    "light": {
+     "coverage": 0.2701
+    }
+   },
+   "scores": {
+    "B0": {
+     "9": {
+      "ssim": 0.8677193497243962,
+      "ssimCoarse": 0.857239840160538,
+      "deltaE00": 5.976507289672118,
+      "scoredPixels": 197049,
+      "missingShare": 0.004675571593477481,
+      "silhouetteIoU": 0.9715973922059722
+     },
+     "27": {
+      "ssim": 0.8768286741925186,
+      "ssimCoarse": 0.8889140208707341,
+      "deltaE00": 5.840724313060794,
+      "scoredPixels": 191459,
+      "missingShare": 0.010245144638784768,
+      "silhouetteIoU": 0.962799522775949
+     },
+     "36": {
+      "ssim": 0.9378853166934487,
+      "ssimCoarse": 0.9603634241493975,
+      "deltaE00": 3.494691634668113,
+      "scoredPixels": 217534,
+      "missingShare": 0.012296106013913668,
+      "silhouetteIoU": 0.9793920637059511
+     },
+     "54": {
+      "ssim": 0.9208782707957277,
+      "ssimCoarse": 0.9300212179600785,
+      "deltaE00": 3.52452979928691,
+      "scoredPixels": 212444,
+      "missingShare": 0.010259198516828294,
+      "silhouetteIoU": 0.9702606940482068
+     }
+    },
+    "B4": {
+     "9": {
+      "ssim": 0.8076576449958472,
+      "ssimCoarse": 0.8168679591301292,
+      "deltaE00": 5.978644160379266,
+      "scoredPixels": 197049,
+      "missingShare": 0.004675571593477481,
+      "silhouetteIoU": 0.9715973922059722
+     },
+     "27": {
+      "ssim": 0.8155861710458772,
+      "ssimCoarse": 0.8440755384458128,
+      "deltaE00": 5.844644472820093,
+      "scoredPixels": 191459,
+      "missingShare": 0.010245144638784768,
+      "silhouetteIoU": 0.962799522775949
+     },
+     "36": {
+      "ssim": 0.8675174931237651,
+      "ssimCoarse": 0.9310468383055637,
+      "deltaE00": 3.515869492853335,
+      "scoredPixels": 217534,
+      "missingShare": 0.012296106013913668,
+      "silhouetteIoU": 0.9793920637059511
+     },
+     "54": {
+      "ssim": 0.8538120899418138,
+      "ssimCoarse": 0.9002313304953102,
+      "deltaE00": 3.546432971165512,
+      "scoredPixels": 212444,
+      "missingShare": 0.010259198516828294,
+      "silhouetteIoU": 0.9702606940482068
+     }
+    },
+    "B3raw": {
+     "9": {
+      "ssim": 0.8711644079146755,
+      "ssimCoarse": 0.8914598576766903,
+      "deltaE00": 2.970555029611128,
+      "scoredPixels": 197049,
+      "missingShare": 0.004675571593477481,
+      "silhouetteIoU": 0.9715973922059722
+     },
+     "27": {
+      "ssim": 0.8702538814062287,
+      "ssimCoarse": 0.8950556912476727,
+      "deltaE00": 3.1063161951193723,
+      "scoredPixels": 191459,
+      "missingShare": 0.010245144638784768,
+      "silhouetteIoU": 0.962799522775949
+     },
+     "36": {
+      "ssim": 0.8713447938757133,
+      "ssimCoarse": 0.9214153255582116,
+      "deltaE00": 3.238690277431021,
+      "scoredPixels": 217534,
+      "missingShare": 0.012296106013913668,
+      "silhouetteIoU": 0.9793920637059511
+     },
+     "54": {
+      "ssim": 0.8812610864656837,
+      "ssimCoarse": 0.9153201490219782,
+      "deltaE00": 2.4060893191759196,
+      "scoredPixels": 212444,
+      "missingShare": 0.010259198516828294,
+      "silhouetteIoU": 0.9702606940482068
+     }
+    },
+    "B3light": {
+     "9": {
+      "ssim": 0.8711579028073794,
+      "ssimCoarse": 0.8908937340819955,
+      "deltaE00": 2.950115118161214,
+      "scoredPixels": 197049,
+      "missingShare": 0.004675571593477481,
+      "silhouetteIoU": 0.9715973922059722
+     },
+     "27": {
+      "ssim": 0.8705502690777372,
+      "ssimCoarse": 0.8943936554263534,
+      "deltaE00": 3.0842006729541236,
+      "scoredPixels": 191459,
+      "missingShare": 0.010245144638784768,
+      "silhouetteIoU": 0.962799522775949
+     },
+     "36": {
+      "ssim": 0.8714411791958937,
+      "ssimCoarse": 0.9212388720156878,
+      "deltaE00": 3.244015568740631,
+      "scoredPixels": 217534,
+      "missingShare": 0.012296106013913668,
+      "silhouetteIoU": 0.9793920637059511
+     },
+     "54": {
+      "ssim": 0.8820507453563193,
+      "ssimCoarse": 0.9158767228206823,
+      "deltaE00": 2.386105249216839,
+      "scoredPixels": 212444,
+      "missingShare": 0.010259198516828294,
+      "silhouetteIoU": 0.9702606940482068
+     }
+    }
+   },
+   "ms": 60907
+  },
+  {
+   "modelId": "B075Z96L53",
+   "name": "Amazon Brand – Stone & Beam Coastal Breeze Accent Side End Table, 27.5\"W, Natural and White",
+   "fitIoU": [
+    0.5527,
+    0.5779
+   ],
+   "registration": {
+    "9": {
+     "turnedIoU": 0.3845,
+     "refitIoU": 0.5109
+    },
+    "27": {
+     "turnedIoU": 0.413,
+     "refitIoU": 0.5389
+    },
+    "36": {
+     "turnedIoU": 0.5472,
+     "refitIoU": 0.5564
+    },
+    "54": {
+     "turnedIoU": 0.4922,
+     "refitIoU": 0.5792
+    }
+   },
+   "truthFitIoU": [
+    0.6806,
+    0.6796
+   ],
+   "truthHeldOutIoU": {
+    "9": 0.5235,
+    "27": 0.5275,
+    "36": 0.682,
+    "54": 0.6804
+   },
+   "bake": {
+    "raw": {
+     "coverage": 0.129,
+     "perPhoto": [
+      133091,
+      103434
+     ],
+     "overlapTexels": 0
+    },
+    "light": {
+     "coverage": 0.129
+    }
+   },
+   "scores": {
+    "B0": {
+     "9": {
+      "ssim": 0.3230080964227212,
+      "ssimCoarse": 0.266209206139328,
+      "deltaE00": 12.170197791132221,
+      "scoredPixels": 41693,
+      "missingShare": 0.19781268245446648,
+      "silhouetteIoU": 0.507971432693695
+     },
+     "27": {
+      "ssim": 0.33842145939227103,
+      "ssimCoarse": 0.30551839246039536,
+      "deltaE00": 12.190081858995555,
+      "scoredPixels": 43012,
+      "missingShare": 0.16871330932191372,
+      "silhouetteIoU": 0.5326210399120536
+     },
+     "36": {
+      "ssim": 0.4172215697529549,
+      "ssimCoarse": 0.24834912394027248,
+      "deltaE00": 10.073530755462418,
+      "scoredPixels": 55893,
+      "missingShare": 0.22529472770757933,
+      "silhouetteIoU": 0.551043297603276
+     },
+     "54": {
+      "ssim": 0.40168927969329304,
+      "ssimCoarse": 0.24259424789484177,
+      "deltaE00": 10.216668012585224,
+      "scoredPixels": 58138,
+      "missingShare": 0.18602352791149934,
+      "silhouetteIoU": 0.5752177831180535
+     }
+    },
+    "B4": {
+     "9": {
+      "ssim": 0.17796501442537727,
+      "ssimCoarse": 0.22495301029076906,
+      "deltaE00": 11.279885840751614,
+      "scoredPixels": 41693,
+      "missingShare": 0.19781268245446648,
+      "silhouetteIoU": 0.507971432693695
+     },
+     "27": {
+      "ssim": 0.17489352428099336,
+      "ssimCoarse": 0.19464655481952955,
+      "deltaE00": 11.352145042129429,
+      "scoredPixels": 43012,
+      "missingShare": 0.16871330932191372,
+      "silhouetteIoU": 0.5326210399120536
+     },
+     "36": {
+      "ssim": 0.27350541175000903,
+      "ssimCoarse": 0.19204445365930192,
+      "deltaE00": 8.750819685984629,
+      "scoredPixels": 55893,
+      "missingShare": 0.22529472770757933,
+      "silhouetteIoU": 0.551043297603276
+     },
+     "54": {
+      "ssim": 0.2538886718741634,
+      "ssimCoarse": 0.18652805149163262,
+      "deltaE00": 8.861435288830386,
+      "scoredPixels": 58138,
+      "missingShare": 0.18602352791149934,
+      "silhouetteIoU": 0.5752177831180535
+     }
+    },
+    "B3raw": {
+     "9": {
+      "ssim": 0.22131567223709828,
+      "ssimCoarse": 0.2773493403123688,
+      "deltaE00": 9.812615086380532,
+      "scoredPixels": 41693,
+      "missingShare": 0.19781268245446648,
+      "silhouetteIoU": 0.507971432693695
+     },
+     "27": {
+      "ssim": 0.22297737034889492,
+      "ssimCoarse": 0.3015304516306166,
+      "deltaE00": 10.18567238161055,
+      "scoredPixels": 43012,
+      "missingShare": 0.16871330932191372,
+      "silhouetteIoU": 0.5326210399120536
+     },
+     "36": {
+      "ssim": 0.2740150208509809,
+      "ssimCoarse": 0.246428181071334,
+      "deltaE00": 8.511463360930197,
+      "scoredPixels": 55893,
+      "missingShare": 0.22529472770757933,
+      "silhouetteIoU": 0.551043297603276
+     },
+     "54": {
+      "ssim": 0.23202648915974336,
+      "ssimCoarse": 0.19381009055995213,
+      "deltaE00": 8.890961393404472,
+      "scoredPixels": 58138,
+      "missingShare": 0.18602352791149934,
+      "silhouetteIoU": 0.5752177831180535
+     }
+    },
+    "B3light": {
+     "9": {
+      "ssim": 0.22128955128335642,
+      "ssimCoarse": 0.2720708409999086,
+      "deltaE00": 9.736984797552463,
+      "scoredPixels": 41693,
+      "missingShare": 0.19781268245446648,
+      "silhouetteIoU": 0.507971432693695
+     },
+     "27": {
+      "ssim": 0.2216260869852676,
+      "ssimCoarse": 0.30008954609994803,
+      "deltaE00": 10.041133393759523,
+      "scoredPixels": 43012,
+      "missingShare": 0.16871330932191372,
+      "silhouetteIoU": 0.5326210399120536
+     },
+     "36": {
+      "ssim": 0.2737775921144748,
+      "ssimCoarse": 0.22817081714895576,
+      "deltaE00": 8.508497077452219,
+      "scoredPixels": 55893,
+      "missingShare": 0.22529472770757933,
+      "silhouetteIoU": 0.551043297603276
+     },
+     "54": {
+      "ssim": 0.23245177100791348,
+      "ssimCoarse": 0.19655833056817035,
+      "deltaE00": 8.854707722617658,
+      "scoredPixels": 58138,
+      "missingShare": 0.18602352791149934,
+      "silhouetteIoU": 0.5752177831180535
+     }
+    }
+   },
+   "ms": 73209
+  },
+  {
+   "modelId": "B07B78G1BW",
+   "name": "Amazon Brand – Rivet Ian Mid-Century Modern Wood Buffet Bar Cabinet Credenza, Brown",
+   "fitIoU": [
+    0.7731,
+    0.8193
+   ],
+   "registration": {
+    "9": {
+     "turnedIoU": 0.7866,
+     "refitIoU": 0.8911
+    },
+    "27": {
+     "turnedIoU": 0.7115,
+     "refitIoU": 0.856
+    },
+    "36": {
+     "turnedIoU": 0.7948,
+     "refitIoU": 0.894
+    },
+    "54": {
+     "turnedIoU": 0.7997,
+     "refitIoU": 0.8834
+    }
+   },
+   "truthFitIoU": [
+    0.9307,
+    0.9136
+   ],
+   "truthHeldOutIoU": {
+    "9": 0.8237,
+    "27": 0.816,
+    "36": 0.888,
+    "54": 0.7744
+   },
+   "bake": {
+    "raw": {
+     "coverage": 0.1758,
+     "perPhoto": [
+      372319,
+      129153
+     ],
+     "overlapTexels": 0
+    },
+    "light": {
+     "coverage": 0.1758
+    }
+   },
+   "scores": {
+    "B0": {
+     "9": {
+      "ssim": 0.35884027533056034,
+      "ssimCoarse": 0.33111815928402444,
+      "deltaE00": 13.788043701612054,
+      "scoredPixels": 101873,
+      "missingShare": 0.06408649326230022,
+      "silhouetteIoU": 0.8869428618320789
+     },
+     "27": {
+      "ssim": 0.5703260087733208,
+      "ssimCoarse": 0.6098155145218219,
+      "deltaE00": 18.264159031404784,
+      "scoredPixels": 65643,
+      "missingShare": 0.10027514135702746,
+      "silhouetteIoU": 0.8511880597014926
+     },
+     "36": {
+      "ssim": 0.6000512000140943,
+      "ssimCoarse": 0.5474160773149971,
+      "deltaE00": 24.241028598785142,
+      "scoredPixels": 107948,
+      "missingShare": 0.06162051747616886,
+      "silhouetteIoU": 0.8926982364417301
+     },
+     "54": {
+      "ssim": 0.5817108471403538,
+      "ssimCoarse": 0.6289904208989512,
+      "deltaE00": 19.297332872621034,
+      "scoredPixels": 86097,
+      "missingShare": 0.06567152233071874,
+      "silhouetteIoU": 0.8811269306613075
+     }
+    },
+    "B4": {
+     "9": {
+      "ssim": 0.2011112084748313,
+      "ssimCoarse": 0.14479899303942165,
+      "deltaE00": 14.139607617203689,
+      "scoredPixels": 101873,
+      "missingShare": 0.06408649326230022,
+      "silhouetteIoU": 0.8869428618320789
+     },
+     "27": {
+      "ssim": 0.2455525992623766,
+      "ssimCoarse": 0.39623363032481135,
+      "deltaE00": 18.292310307544387,
+      "scoredPixels": 65643,
+      "missingShare": 0.10027514135702746,
+      "silhouetteIoU": 0.8511880597014926
+     },
+     "36": {
+      "ssim": 0.308315591271286,
+      "ssimCoarse": 0.19902007962436133,
+      "deltaE00": 24.450954846862107,
+      "scoredPixels": 107948,
+      "missingShare": 0.06162051747616886,
+      "silhouetteIoU": 0.8926982364417301
+     },
+     "54": {
+      "ssim": 0.2939894379483067,
+      "ssimCoarse": 0.3225971302747834,
+      "deltaE00": 19.496626279979488,
+      "scoredPixels": 86097,
+      "missingShare": 0.06567152233071874,
+      "silhouetteIoU": 0.8811269306613075
+     }
+    },
+    "B3raw": {
+     "9": {
+      "ssim": 0.21143140436619637,
+      "ssimCoarse": 0.15186978121133918,
+      "deltaE00": 12.899129065835593,
+      "scoredPixels": 101873,
+      "missingShare": 0.06408649326230022,
+      "silhouetteIoU": 0.8869428618320789
+     },
+     "27": {
+      "ssim": 0.2828954847469134,
+      "ssimCoarse": 0.3815156576602821,
+      "deltaE00": 16.71573967005882,
+      "scoredPixels": 65643,
+      "missingShare": 0.10027514135702746,
+      "silhouetteIoU": 0.8511880597014926
+     },
+     "36": {
+      "ssim": 0.30849368528351256,
+      "ssimCoarse": 0.19902007962436133,
+      "deltaE00": 24.448433173642076,
+      "scoredPixels": 107948,
+      "missingShare": 0.06162051747616886,
+      "silhouetteIoU": 0.8926982364417301
+     },
+     "54": {
+      "ssim": 0.2933408444087223,
+      "ssimCoarse": 0.27505550591324246,
+      "deltaE00": 19.672761034157777,
+      "scoredPixels": 86097,
+      "missingShare": 0.06567152233071874,
+      "silhouetteIoU": 0.8811269306613075
+     }
+    },
+    "B3light": {
+     "9": {
+      "ssim": 0.21153526727332758,
+      "ssimCoarse": 0.15123495059538503,
+      "deltaE00": 12.888504038977334,
+      "scoredPixels": 101873,
+      "missingShare": 0.06408649326230022,
+      "silhouetteIoU": 0.8869428618320789
+     },
+     "27": {
+      "ssim": 0.28351397525623595,
+      "ssimCoarse": 0.3829483199106235,
+      "deltaE00": 16.638080771225763,
+      "scoredPixels": 65643,
+      "missingShare": 0.10027514135702746,
+      "silhouetteIoU": 0.8511880597014926
+     },
+     "36": {
+      "ssim": 0.30851858905920876,
+      "ssimCoarse": 0.19902007962436133,
+      "deltaE00": 24.447419642941593,
+      "scoredPixels": 107948,
+      "missingShare": 0.06162051747616886,
+      "silhouetteIoU": 0.8926982364417301
+     },
+     "54": {
+      "ssim": 0.29384737272331296,
+      "ssimCoarse": 0.2760238438311131,
+      "deltaE00": 19.628903287811426,
+      "scoredPixels": 86097,
+      "missingShare": 0.06567152233071874,
+      "silhouetteIoU": 0.8811269306613075
+     }
+    }
+   },
+   "ms": 76478
+  }
+ ]
+}

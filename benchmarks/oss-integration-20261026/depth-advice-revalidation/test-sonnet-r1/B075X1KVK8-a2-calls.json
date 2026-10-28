@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand - Rivet mediados de siglo Moderna lámpara de mesa de cerámica de rayas cruzadas con foco LED, 21 pulgadas, color blanco.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 533 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0195772,
+   "durationMs": 11307,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":6},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Cross-stripe ceramic table lamp\",\"units\":\"mm\",\"components\":[{\"id\":\"base\",\"name\":\"Ceramic base\",\"category\":\"enclosure\",\"materialName\":\"white glazed ceramic\",\"detail\":\"Rectangular column base with crossed brown stripe detailing\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[150,290,80],\"radius\":4},\"position\":[0,145,0],\"material\":{\"color\":\"#f1eeea\",\"roughness\":0.4,\"metalness\":0}},{\"id\":\"stripe_low\",\"name\":\"Lower stripe band\",\"category\":\"mechanical\",\"materialName\":\"brown glaze\",\"detail\":\"Brown stripe band near the bottom\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[152,6,82],\"radius\":1},\"position\":[0,28,0],\"material\":{\"color\":\"#8a5a3a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"stripe_high\",\"name\":\"Upper stripe band\",\"category\":\"mechanical\",\"materialName\":\"brown glaze\",\"detail\":\"Brown stripe band near the top\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[152,6,82],\"radius\":1},\"position\":[0,258,0],\"material\":{\"color\":\"#8a5a3a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"neck\",\"name\":\"Neck\",\"category\":\"mechanical\",\"materialName\":\"dark metal\",\"detail\":\"Short neck connecting base to shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":14,\"radialSegments\":24},\"position\":[0,297,0],\"material\":{\"color\":\"#4a4440\",\"roughness\":0.4,\"metalness\":0.8}},{\"id\":\"shade\",\"name\":\"Rectangular shade\",\"category\":\"enclosure\",\"materialName\":\"linen fabric\",\"detail\":\"Wide rectangular off-white linen shade\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[380,236,200],\"radius\":3},\"position\":[0,415,0],\"material\":{\"color\":\"#f4dcd0\",\"roughness\":0.9,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

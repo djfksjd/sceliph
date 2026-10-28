@@ -1,0 +1,249 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Oval wall sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade_low",
+   "name": "Frosted lower shade",
+   "category": "enclosure",
+   "materialName": "matte grey glass",
+   "detail": "capsule lower half",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      2
+     ],
+     [
+      38,
+      9
+     ],
+     [
+      48,
+      22
+     ],
+     [
+      52,
+      40
+     ],
+     [
+      52,
+      121
+     ],
+     [
+      0,
+      121
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    64,
+    0
+   ],
+   "material": {
+    "color": "#c9c9c8",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shade_wood",
+   "name": "Faux wood cap",
+   "category": "enclosure",
+   "materialName": "faux wood",
+   "detail": "domed upper shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      52,
+      0
+     ],
+     [
+      51,
+      20
+     ],
+     [
+      46,
+      45
+     ],
+     [
+      34,
+      65
+     ],
+     [
+      20,
+      78
+     ],
+     [
+      9,
+      84
+     ],
+     [
+      0,
+      84
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    185,
+    0
+   ],
+   "material": {
+    "color": "#7a4030",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Nickel collar",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "neck collar",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 24,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    281,
+    0
+   ],
+   "material": {
+    "color": "#a8a8a6",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Curved arm",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "arm bending from collar to the vertical rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      292,
+      0
+     ],
+     [
+      0,
+      320,
+      0
+     ],
+     [
+      0,
+      326,
+      -30
+     ],
+     [
+      0,
+      326,
+      -100
+     ],
+     [
+      0,
+      318,
+      -121
+     ],
+     [
+      0,
+      290,
+      -121
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#a8a8a6",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "rod",
+   "name": "Vertical rod",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "vertical support rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      295,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    0,
+    -121
+   ],
+   "material": {
+    "color": "#a8a8a6",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "plate",
+   "name": "Wall plate",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "wall mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     60,
+     168,
+     23
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    150,
+    -145
+   ],
+   "material": {
+    "color": "#9a9a98",
+    "roughness": 0.35,
+    "metalness": 0.85
+   }
+  }
+ ]
+}

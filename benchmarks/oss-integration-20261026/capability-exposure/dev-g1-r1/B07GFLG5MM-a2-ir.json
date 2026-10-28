@@ -1,0 +1,367 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Idro 4-Door Shoe Cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "sideL",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "18mm side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1610,
+     240
+    ],
+    "radius": 2
+   },
+   "position": [
+    -271,
+    825,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "surface": "molded-polymer",
+    "roughness": 0.6,
+    "metalness": 0,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "sideR",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "18mm side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     1610,
+     240
+    ],
+    "radius": 2
+   },
+   "position": [
+    271,
+    825,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "surface": "molded-polymer",
+    "roughness": 0.6,
+    "metalness": 0,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "top board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     560,
+     18,
+     240
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1621,
+    0
+   ],
+   "material": {
+    "color": "#3a3a3c",
+    "surface": "molded-polymer",
+    "roughness": 0.6,
+    "metalness": 0,
+    "microNormalStrength": 0.5
+   }
+  },
+  {
+   "id": "base",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "Dark grey laminate",
+   "detail": "bottom board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     524,
+     18,
+     230
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    29,
+    -3
+   ],
+   "material": {
+    "color": "#333335",
+    "surface": "molded-polymer",
+    "roughness": 0.6,
+    "metalness": 0,
+    "microNormalStrength": 0.4
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "Dark grey hardboard",
+   "detail": "thin back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     524,
+     1590,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    815,
+    -114
+   ],
+   "material": {
+    "color": "#2e2e30",
+    "surface": "molded-polymer",
+    "roughness": 0.7,
+    "metalness": 0,
+    "microNormalStrength": 0.3
+   }
+  },
+  {
+   "id": "door1",
+   "name": "Top flap door",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "tilt-out door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     524,
+     394,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1414.5,
+    111
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "surface": "molded-polymer",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.6
+   }
+  },
+  {
+   "id": "door2",
+   "name": "Second flap door",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "tilt-out door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     524,
+     394,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1017.5,
+    111
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "surface": "molded-polymer",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.6
+   }
+  },
+  {
+   "id": "door3",
+   "name": "Third flap door",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "tilt-out door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     524,
+     394,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    620.5,
+    111
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "surface": "molded-polymer",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.6
+   }
+  },
+  {
+   "id": "door4",
+   "name": "Bottom flap door",
+   "category": "enclosure",
+   "materialName": "Dark grey woodgrain laminate",
+   "detail": "tilt-out door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     524,
+     394,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    223.5,
+    111
+   ],
+   "material": {
+    "color": "#3d3d3f",
+    "surface": "molded-polymer",
+    "roughness": 0.55,
+    "metalness": 0,
+    "microNormalStrength": 0.6
+   }
+  },
+  {
+   "id": "handle1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "Chrome",
+   "detail": "slim handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     80,
+     6,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1600,
+    122
+   ],
+   "material": {
+    "color": "#c8c8cc",
+    "surface": "polished-metal",
+    "roughness": 0.2,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "handle2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "Chrome",
+   "detail": "slim handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     80,
+     6,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1203,
+    122
+   ],
+   "material": {
+    "color": "#c8c8cc",
+    "surface": "polished-metal",
+    "roughness": 0.2,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "handle3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "Chrome",
+   "detail": "slim handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     80,
+     6,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    806,
+    122
+   ],
+   "material": {
+    "color": "#c8c8cc",
+    "surface": "polished-metal",
+    "roughness": 0.2,
+    "metalness": 1
+   }
+  },
+  {
+   "id": "handle4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "Chrome",
+   "detail": "slim handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     80,
+     6,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    409,
+    122
+   ],
+   "material": {
+    "color": "#c8c8cc",
+    "surface": "polished-metal",
+    "roughness": 0.2,
+    "metalness": 1
+   }
+  }
+ ]
+}

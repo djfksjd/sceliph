@@ -1,0 +1,233 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Shelf floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "shade",
+   "name": "Linen shade",
+   "category": "enclosure",
+   "materialName": "burlap fabric",
+   "detail": "Square tan linen shade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     330,
+     360,
+     330
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    1395,
+    0
+   ],
+   "material": {
+    "color": "#d9b58a",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "base",
+   "name": "Base shelf",
+   "category": "mechanical",
+   "materialName": "dark walnut wood",
+   "detail": "Bottom base platform",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     310,
+     50,
+     310
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    25,
+    0
+   ],
+   "material": {
+    "color": "#5a3524",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_low",
+   "name": "Lower shelf",
+   "category": "mechanical",
+   "materialName": "dark walnut wood",
+   "detail": "Lower wood shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     25,
+     300
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    465,
+    0
+   ],
+   "material": {
+    "color": "#5a3524",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf_up",
+   "name": "Upper shelf",
+   "category": "mechanical",
+   "materialName": "dark walnut wood",
+   "detail": "Upper wood shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     25,
+     300
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    860,
+    0
+   ],
+   "material": {
+    "color": "#5a3524",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pole_fl",
+   "name": "Front left pole",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Brass upright",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 7,
+    "radiusBottom": 7,
+    "depth": 1155,
+    "radialSegments": 24
+   },
+   "position": [
+    -135,
+    637,
+    135
+   ],
+   "material": {
+    "color": "#a68a45",
+    "roughness": 0.4,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "pole_fr",
+   "name": "Front right pole",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Brass upright",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 7,
+    "radiusBottom": 7,
+    "depth": 1155,
+    "radialSegments": 24
+   },
+   "position": [
+    135,
+    637,
+    135
+   ],
+   "material": {
+    "color": "#a68a45",
+    "roughness": 0.4,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "pole_bl",
+   "name": "Back left pole",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Brass upright",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 7,
+    "radiusBottom": 7,
+    "depth": 1155,
+    "radialSegments": 24
+   },
+   "position": [
+    -135,
+    637,
+    -135
+   ],
+   "material": {
+    "color": "#a68a45",
+    "roughness": 0.4,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "pole_br",
+   "name": "Back right pole",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "Brass upright",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 7,
+    "radiusBottom": 7,
+    "depth": 1155,
+    "radialSegments": 24
+   },
+   "position": [
+    135,
+    637,
+    -135
+   ],
+   "material": {
+    "color": "#a68a45",
+    "roughness": 0.4,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Switch housing",
+   "category": "power",
+   "materialName": "brass",
+   "detail": "Socket and USB housing under shade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     40,
+     50
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    1190,
+    0
+   ],
+   "material": {
+    "color": "#8c7338",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  }
+ ]
+}

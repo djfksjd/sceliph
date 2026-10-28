@@ -1,0 +1,338 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rustic oak sideboard",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "thick top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1600,
+     30,
+     420
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    747,
+    0
+   ],
+   "material": {
+    "color": "#6b4a2f",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1560,
+     432,
+     390
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    516,
+    0
+   ],
+   "material": {
+    "color": "#5a3d27",
+    "roughness": 0.75
+   }
+  },
+  {
+   "id": "door_l",
+   "name": "Left door",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "left door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     520,
+     410,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -520,
+    516,
+    204
+   ],
+   "material": {
+    "color": "#6e4d33",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "door_r",
+   "name": "Right door",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "right door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     520,
+     410,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    520,
+    516,
+    204
+   ],
+   "material": {
+    "color": "#6e4d33",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "drawer_1",
+   "name": "Top drawer",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     500,
+     132,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    656,
+    204
+   ],
+   "material": {
+    "color": "#6b4a2f",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "drawer_2",
+   "name": "Middle drawer",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     500,
+     132,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    516,
+    204
+   ],
+   "material": {
+    "color": "#725035",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "drawer_3",
+   "name": "Bottom drawer",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     500,
+     132,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    376,
+    204
+   ],
+   "material": {
+    "color": "#6b4a2f",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "post_lf",
+   "name": "Left front post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "frame post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     732,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    -787,
+    366,
+    190
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_lb",
+   "name": "Left back post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "frame post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     732,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    -787,
+    366,
+    -190
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_rf",
+   "name": "Right front post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "frame post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     732,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    787,
+    366,
+    190
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "post_rb",
+   "name": "Right back post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "frame post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     732,
+     25
+    ],
+    "radius": 2
+   },
+   "position": [
+    787,
+    366,
+    -190
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bar_l",
+   "name": "Left foot bar",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "bottom bar of left frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     25,
+     405
+    ],
+    "radius": 2
+   },
+   "position": [
+    -787,
+    12.5,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bar_r",
+   "name": "Right foot bar",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "bottom bar of right frame",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     25,
+     405
+    ],
+    "radius": 2
+   },
+   "position": [
+    787,
+    12.5,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

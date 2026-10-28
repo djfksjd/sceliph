@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Rivet Scandinavian Wall Sconce, Matte White.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 203 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.0408252,
+   "durationMs": 28817,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":5},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Rivet Scandinavian Wall Sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"plate\",\"name\":\"Wall plate\",\"category\":\"mechanical\",\"materialName\":\"matte white metal\",\"detail\":\"Round wall mounting plate\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":32,\"radiusBottom\":32,\"depth\":9,\"radialSegments\":48},\"position\":[0,167,0],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.7,\"metalness\":0.1}},{\"id\":\"arm\",\"name\":\"Swivel arm\",\"category\":\"mechanical\",\"materialName\":\"white metal\",\"detail\":\"Short arm joining plate to shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":3.5,\"radiusBottom\":3.5,\"depth\":24,\"radialSegments\":24},\"position\":[0,169,12],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#f0f0ee\",\"roughness\":0.6,\"metalness\":0.1}},{\"id\":\"shade\",\"name\":\"Dome shade\",\"category\":\"enclosure\",\"materialName\":\"matte white metal\",\"detail\":\"Bell shaped shade tilted down\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,45],[8,43],[9,35],[14,22],[24,5],[31,-25],[33,-45],[31.5,-45],[29.5,-25],[22,5],[12,22],[7,35],[0,36]],\"segments\":48},\"position\":[0,142,62],\"rotation\":[-0.6,0,0],\"material\":{\"color\":\"#f6f6f4\",\"roughness\":0.75,\"metalness\":0.05}},{\"id\":\"neck\",\"name\":\"Neck\",\"category\":\"mechanical\",\"materialName\":\"white metal\",\"detail\":\"Neck above shade\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":8,\"radiusBottom\":8,\"depth\":20,\"radialSegments\":32},\"position\":[0,190,33],\"rotation\":[-0.6,0,0],\"material\":{\"color\":\"#f4f4f2\",\"roughness\":0.6,\"metalness\":0.1}},{\"id\":\"cap\",\"name\":\"Wood cap\",\"category\":\"mechanical\",\"materialName\":\"oak\",\"detail\":\"Wooden cap on top\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":11,\"radiusBottom\":11,\"depth\":16,\"radialSegments\":32},\"position\":[0,195,28],\"rotation\":[-0.6,0,0],\"material\":{\"color\":\"#c9a26a\",\"roughness\":0.8,\"metalness\":0}},{\"id\":\"bulb\",\"name\":\"Bulb\",\"category\":\"power\",\"materialName\":\"frosted glass\",\"detail\":\"Bulb inside shade\",\"geometry\":{\"op\":\"sphere\",\"radius\":13},\"position\":[0,142,66],\"material\":{\"color\":\"#eeeeee\",\"roughness\":0.4,\"metalness\":0}},{\"id\":\"cord\",\"name\":\"Power cord\",\"category\":\"interconnect\",\"materialName\":\"clear pvc\",\"detail\":\"Cord hanging from plate\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,65,0],[0,0,0],[0,-60,2]],\"radius\":1.2},\"position\":[0,70,6],\"material\":{\"color\":\"#b8b8b8\",\"roughness\":0.5,\"metalness\":0.1}},{\"id\":\"loop\",\"name\":\"Cord loop\",\"category\":\"interconnect\",\"materialName\":\"clear pvc\",\"detail\":\"Coiled loop of cord\",\"geometry\":{\"op\":\"torus\",\"radius\":17,\"tube\":1.1},\"position\":[0,45,8],\"material\":{\"color\":\"#b8b8b8\",\"roughness\":0.5,\"metalness\":0.1}},{\"id\":\"plug\",\"name\":\"Plug\",\"category\":\"interconnect\",\"materialName\":\"plastic\",\"detail\":\"Two-prong plug\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[6,10,2.5],\"radius\":0.8},\"position\":[0,5,8],\"material\":{\"color\":\"#b0b0b0\",\"roughness\":0.5,\"metalness\":0.2}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

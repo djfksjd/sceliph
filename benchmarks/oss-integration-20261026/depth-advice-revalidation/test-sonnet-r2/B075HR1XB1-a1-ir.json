@@ -1,0 +1,190 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Oval plug-in wall sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "body",
+   "name": "Grey lower shell",
+   "category": "enclosure",
+   "materialName": "matte grey painted metal",
+   "detail": "Capsule-shaped lower body with rounded bottom",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      2
+     ],
+     [
+      35,
+      8
+     ],
+     [
+      46,
+      19
+     ],
+     [
+      53,
+      33
+     ],
+     [
+      54.5,
+      48
+     ],
+     [
+      54.5,
+      130
+     ],
+     [
+      0,
+      130
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    50.7,
+    0
+   ],
+   "material": {
+    "color": "#b9b8b5",
+    "roughness": 0.7,
+    "metalness": 0.05
+   }
+  },
+  {
+   "id": "wood",
+   "name": "Faux wood cap",
+   "category": "enclosure",
+   "materialName": "faux wood",
+   "detail": "Egg-shaped dome upper section",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      54.5,
+      0
+     ],
+     [
+      53,
+      15
+     ],
+     [
+      48,
+      35
+     ],
+     [
+      40,
+      52
+     ],
+     [
+      28,
+      68
+     ],
+     [
+      16,
+      80
+     ],
+     [
+      7,
+      87
+     ],
+     [
+      0,
+      87
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    181,
+    0
+   ],
+   "material": {
+    "color": "#8a4a33",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rod_top",
+   "name": "Top nickel rod",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "Upper rod with hook tip",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 62,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    299,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "hook",
+   "name": "Hook tip",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "Rounded top of hook",
+   "geometry": {
+    "op": "sphere",
+    "radius": 4.5
+   },
+   "position": [
+    0,
+    325.5,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "rod_bottom",
+   "name": "Bottom nickel rod",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "Lower rod stub",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 52,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    26,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b8",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

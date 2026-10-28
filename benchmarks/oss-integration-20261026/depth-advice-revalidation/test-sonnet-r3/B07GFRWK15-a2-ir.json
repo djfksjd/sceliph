@@ -1,0 +1,307 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Six drawer chest",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "black wood grain board",
+   "detail": "Top board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1600,
+     18,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    786,
+    0
+   ],
+   "material": {
+    "color": "#222224",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "side_l",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "black wood grain board",
+   "detail": "Left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     747,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    -791,
+    403.5,
+    0
+   ],
+   "material": {
+    "color": "#242426",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "black wood grain board",
+   "detail": "Right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     747,
+     480
+    ],
+    "radius": 2
+   },
+   "position": [
+    791,
+    403.5,
+    0
+   ],
+   "material": {
+    "color": "#242426",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "black board",
+   "detail": "Back panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1564,
+     747,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    403.5,
+    -237
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Interior carcass",
+   "category": "mechanical",
+   "materialName": "dark interior",
+   "detail": "Drawer cavity block",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1564,
+     740,
+     440
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    400,
+    -10
+   ],
+   "material": {
+    "color": "#111112",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Plinth",
+   "category": "enclosure",
+   "materialName": "black board",
+   "detail": "Recessed base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1564,
+     30,
+     430
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    15,
+    -5
+   ],
+   "material": {
+    "color": "#1a1a1c",
+    "roughness": 0.7
+   }
+  },
+  {
+   "id": "d1l",
+   "name": "Drawer top left",
+   "category": "mechanical",
+   "materialName": "black wood grain board",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     778,
+     244,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -391,
+    648,
+    227
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.55
+   }
+  },
+  {
+   "id": "d1r",
+   "name": "Drawer top right",
+   "category": "mechanical",
+   "materialName": "black wood grain board",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     778,
+     244,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    391,
+    648,
+    227
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.55
+   }
+  },
+  {
+   "id": "d2l",
+   "name": "Drawer middle left",
+   "category": "mechanical",
+   "materialName": "black wood grain board",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     778,
+     244,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -391,
+    400,
+    227
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.55
+   }
+  },
+  {
+   "id": "d2r",
+   "name": "Drawer middle right",
+   "category": "mechanical",
+   "materialName": "black wood grain board",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     778,
+     244,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    391,
+    400,
+    227
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.55
+   }
+  },
+  {
+   "id": "d3l",
+   "name": "Drawer bottom left",
+   "category": "mechanical",
+   "materialName": "black wood grain board",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     778,
+     244,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -391,
+    152,
+    227
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.55
+   }
+  },
+  {
+   "id": "d3r",
+   "name": "Drawer bottom right",
+   "category": "mechanical",
+   "materialName": "black wood grain board",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     778,
+     244,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    391,
+    152,
+    227
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.55
+   }
+  }
+ ]
+}

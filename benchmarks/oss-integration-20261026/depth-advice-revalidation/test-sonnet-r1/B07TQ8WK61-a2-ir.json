@@ -1,0 +1,338 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rustic oak sideboard with 3 drawers and 2 doors",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "Thick top panel with overhang",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1600,
+     30,
+     390
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    747,
+    0
+   ],
+   "material": {
+    "color": "#6b4d34",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "Main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1560,
+     460,
+     370
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    502,
+    -5
+   ],
+   "material": {
+    "color": "#5a4130",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "doorL",
+   "name": "Left door",
+   "category": "mechanical",
+   "materialName": "aged oak laminate",
+   "detail": "Left door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     516,
+     440,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    -520,
+    502,
+    182
+   ],
+   "material": {
+    "color": "#6a4c35",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "doorR",
+   "name": "Right door",
+   "category": "mechanical",
+   "materialName": "aged oak laminate",
+   "detail": "Right door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     516,
+     440,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    520,
+    502,
+    182
+   ],
+   "material": {
+    "color": "#6a4c35",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "drw1",
+   "name": "Top drawer",
+   "category": "mechanical",
+   "materialName": "aged oak laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     516,
+     142,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    650,
+    182
+   ],
+   "material": {
+    "color": "#634632",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "drw2",
+   "name": "Middle drawer",
+   "category": "mechanical",
+   "materialName": "aged oak laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     516,
+     142,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    502,
+    182
+   ],
+   "material": {
+    "color": "#68492f",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "drw3",
+   "name": "Bottom drawer",
+   "category": "mechanical",
+   "materialName": "aged oak laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     516,
+     142,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    354,
+    182
+   ],
+   "material": {
+    "color": "#5f432f",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "postLF",
+   "name": "Left front post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Vertical steel post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     12,
+     732,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    -792,
+    366,
+    180
+   ],
+   "material": {
+    "color": "#25262a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "postLB",
+   "name": "Left back post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Vertical steel post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     12,
+     732,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    -792,
+    366,
+    -190
+   ],
+   "material": {
+    "color": "#25262a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "postRF",
+   "name": "Right front post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Vertical steel post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     12,
+     732,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    792,
+    366,
+    180
+   ],
+   "material": {
+    "color": "#25262a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "postRB",
+   "name": "Right back post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Vertical steel post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     12,
+     732,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    792,
+    366,
+    -190
+   ],
+   "material": {
+    "color": "#25262a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "runL",
+   "name": "Left runner",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Bottom runner joining posts",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     12,
+     20,
+     390
+    ],
+    "radius": 2
+   },
+   "position": [
+    -792,
+    10,
+    -5
+   ],
+   "material": {
+    "color": "#25262a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "runR",
+   "name": "Right runner",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Bottom runner joining posts",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     12,
+     20,
+     390
+    ],
+    "radius": 2
+   },
+   "position": [
+    792,
+    10,
+    -5
+   ],
+   "material": {
+    "color": "#25262a",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "5-Tier Ladder Bookcase",
+ "units": "mm",
+ "components": [
+  {
+   "id": "backL",
+   "name": "Back leg left",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "vertical rear post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     36,
+     1892,
+     30
+    ],
+    "radius": 4
+   },
+   "position": [
+    -290,
+    946,
+    -240
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "backR",
+   "name": "Back leg right",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "vertical rear post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     36,
+     1892,
+     30
+    ],
+    "radius": 4
+   },
+   "position": [
+    290,
+    946,
+    -240
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "frontL",
+   "name": "Front leg left",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "leaning front leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -946,
+      125
+     ],
+     [
+      0,
+      946,
+      -125
+     ]
+    ],
+    "radius": 19
+   },
+   "position": [
+    -290,
+    946,
+    115
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "frontR",
+   "name": "Front leg right",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "leaning front leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -946,
+      125
+     ],
+     [
+      0,
+      946,
+      -125
+     ]
+    ],
+    "radius": 19
+   },
+   "position": [
+    290,
+    946,
+    115
+   ],
+   "material": {
+    "color": "#f6f6f4",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf1",
+   "name": "Bottom shelf",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "deepest shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     18,
+     458
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    243,
+    -21
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf2",
+   "name": "Shelf 2",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     18,
+     410
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    607,
+    -45
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf3",
+   "name": "Shelf 3",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     18,
+     364
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    954,
+    -68
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf4",
+   "name": "Shelf 4",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     18,
+     320
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1284,
+    -90
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf5",
+   "name": "Shelf 5",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     600,
+     18,
+     284
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1561,
+    -108
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "mechanical",
+   "materialName": "painted rubber wood",
+   "detail": "top shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     620,
+     20,
+     250
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1882,
+    -125
+   ],
+   "material": {
+    "color": "#ffffff",
+    "roughness": 0.5
+   }
+  }
+ ]
+}

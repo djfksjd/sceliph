@@ -1,0 +1,286 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Four drawer chest",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plinth",
+   "name": "Plinth",
+   "category": "enclosure",
+   "materialName": "black board",
+   "detail": "recessed base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     720,
+     60,
+     340
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    30,
+    -10
+   ],
+   "material": {
+    "color": "#0c0c0d",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "body",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "black board",
+   "detail": "main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     640,
+     362
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    380,
+    -9
+   ],
+   "material": {
+    "color": "#101012",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "black board",
+   "detail": "top slab",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     740,
+     20,
+     380
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    710,
+    0
+   ],
+   "material": {
+    "color": "#0e0e10",
+    "roughness": 0.4
+   }
+  },
+  {
+   "id": "d1",
+   "name": "Drawer 1",
+   "category": "mechanical",
+   "materialName": "high gloss black",
+   "detail": "top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     730,
+     155,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    620.75,
+    181
+   ],
+   "material": {
+    "color": "#131315",
+    "roughness": 0.2
+   }
+  },
+  {
+   "id": "d2",
+   "name": "Drawer 2",
+   "category": "mechanical",
+   "materialName": "high gloss black",
+   "detail": "second drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     730,
+     155,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    462.25,
+    181
+   ],
+   "material": {
+    "color": "#131315",
+    "roughness": 0.2
+   }
+  },
+  {
+   "id": "d3",
+   "name": "Drawer 3",
+   "category": "mechanical",
+   "materialName": "high gloss black",
+   "detail": "third drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     730,
+     155,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    303.75,
+    181
+   ],
+   "material": {
+    "color": "#131315",
+    "roughness": 0.2
+   }
+  },
+  {
+   "id": "d4",
+   "name": "Drawer 4",
+   "category": "mechanical",
+   "materialName": "high gloss black",
+   "detail": "bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     730,
+     155,
+     18
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    145.25,
+    181
+   ],
+   "material": {
+    "color": "#131315",
+    "roughness": 0.2
+   }
+  },
+  {
+   "id": "h1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "brushed chrome",
+   "detail": "curved handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     18,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    40,
+    620,
+    194
+   ],
+   "material": {
+    "color": "#d0d0d2",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "h2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "brushed chrome",
+   "detail": "curved handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     18,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    40,
+    461.5,
+    194
+   ],
+   "material": {
+    "color": "#d0d0d2",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "h3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "brushed chrome",
+   "detail": "curved handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     18,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    40,
+    303,
+    194
+   ],
+   "material": {
+    "color": "#d0d0d2",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "h4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "brushed chrome",
+   "detail": "curved handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     18,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    40,
+    144.5,
+    194
+   ],
+   "material": {
+    "color": "#d0d0d2",
+    "roughness": 0.3,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

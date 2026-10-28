@@ -1,0 +1,278 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Inari 1-Drawer Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desktop",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Desktop panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     900,
+     25,
+     500
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    717.5,
+    0
+   ],
+   "material": {
+    "color": "#f2f3f4",
+    "surface": "molded-polymer",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.1
+   }
+  },
+  {
+   "id": "sideL",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     705,
+     480
+    ],
+    "radius": 1
+   },
+   "position": [
+    -441,
+    352.5,
+    0
+   ],
+   "material": {
+    "color": "#f2f3f4",
+    "surface": "molded-polymer",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.1
+   }
+  },
+  {
+   "id": "sideR",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     705,
+     480
+    ],
+    "radius": 1
+   },
+   "position": [
+    441,
+    352.5,
+    0
+   ],
+   "material": {
+    "color": "#f2f3f4",
+    "surface": "molded-polymer",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.1
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Upper back rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     864,
+     140,
+     18
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    635,
+    -225
+   ],
+   "material": {
+    "color": "#eceeef",
+    "surface": "molded-polymer",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.1
+   }
+  },
+  {
+   "id": "drawer",
+   "name": "Drawer box",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Drawer body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     105,
+     460
+    ],
+    "radius": 1
+   },
+   "position": [
+    280,
+    650,
+    0
+   ],
+   "material": {
+    "color": "#f2f3f4",
+    "surface": "molded-polymer",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.1
+   }
+  },
+  {
+   "id": "drawerFront",
+   "name": "Drawer front",
+   "category": "enclosure",
+   "materialName": "White laminate",
+   "detail": "Drawer front panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     304,
+     108,
+     18
+    ],
+    "radius": 1
+   },
+   "position": [
+    280,
+    650,
+    236
+   ],
+   "material": {
+    "color": "#f5f6f7",
+    "surface": "molded-polymer",
+    "roughness": 0.5,
+    "metalness": 0,
+    "clearcoat": 0.1
+   }
+  },
+  {
+   "id": "handle",
+   "name": "Drawer handle",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium",
+   "detail": "Bar handle",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -80,
+      0,
+      0
+     ],
+     [
+      80,
+      0,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    280,
+    662,
+    260
+   ],
+   "material": {
+    "color": "#c4c7ca",
+    "surface": "brushed-metal",
+    "roughness": 0.35,
+    "metalness": 0.9,
+    "anisotropy": 0.6
+   }
+  },
+  {
+   "id": "handleStandL",
+   "name": "Handle post left",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium",
+   "detail": "Handle post",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -9
+     ],
+     [
+      0,
+      0,
+      9
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    205,
+    662,
+    250
+   ],
+   "material": {
+    "color": "#c4c7ca",
+    "surface": "brushed-metal",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "handleStandR",
+   "name": "Handle post right",
+   "category": "mechanical",
+   "materialName": "Brushed aluminium",
+   "detail": "Handle post",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      -9
+     ],
+     [
+      0,
+      0,
+      9
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    355,
+    662,
+    250
+   ],
+   "material": {
+    "color": "#c4c7ca",
+    "surface": "brushed-metal",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

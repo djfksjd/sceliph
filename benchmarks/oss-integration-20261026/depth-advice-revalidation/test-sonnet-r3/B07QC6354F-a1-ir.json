@@ -1,0 +1,297 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Retro Hairpin Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desk top",
+   "category": "enclosure",
+   "materialName": "black laminate",
+   "detail": "black wood-grain desktop panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1000,
+     25,
+     500
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    647.5,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "l1a",
+   "name": "Front left leg rod A",
+   "category": "mechanical",
+   "materialName": "gold metal",
+   "detail": "hairpin rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -27.5,
+      315,
+      0
+     ],
+     [
+      27.5,
+      -315,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    -420,
+    320,
+    190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "l1b",
+   "name": "Front left leg rod B",
+   "category": "mechanical",
+   "materialName": "gold metal",
+   "detail": "hairpin rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      27.5,
+      315,
+      0
+     ],
+     [
+      -27.5,
+      -315,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    -420,
+    320,
+    190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "l2a",
+   "name": "Back left leg rod A",
+   "category": "mechanical",
+   "materialName": "gold metal",
+   "detail": "hairpin rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -27.5,
+      315,
+      0
+     ],
+     [
+      27.5,
+      -315,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    -420,
+    320,
+    -190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "l2b",
+   "name": "Back left leg rod B",
+   "category": "mechanical",
+   "materialName": "gold metal",
+   "detail": "hairpin rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      27.5,
+      315,
+      0
+     ],
+     [
+      -27.5,
+      -315,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    -420,
+    320,
+    -190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "r1a",
+   "name": "Front right leg rod A",
+   "category": "mechanical",
+   "materialName": "gold metal",
+   "detail": "hairpin rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -27.5,
+      315,
+      0
+     ],
+     [
+      27.5,
+      -315,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    420,
+    320,
+    190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "r1b",
+   "name": "Front right leg rod B",
+   "category": "mechanical",
+   "materialName": "gold metal",
+   "detail": "hairpin rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      27.5,
+      315,
+      0
+     ],
+     [
+      -27.5,
+      -315,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    420,
+    320,
+    190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "r2a",
+   "name": "Back right leg rod A",
+   "category": "mechanical",
+   "materialName": "gold metal",
+   "detail": "hairpin rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -27.5,
+      315,
+      0
+     ],
+     [
+      27.5,
+      -315,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    420,
+    320,
+    -190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "r2b",
+   "name": "Back right leg rod B",
+   "category": "mechanical",
+   "materialName": "gold metal",
+   "detail": "hairpin rod",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      27.5,
+      315,
+      0
+     ],
+     [
+      -27.5,
+      -315,
+      0
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    420,
+    320,
+    -190
+   ],
+   "material": {
+    "color": "#c9a24a",
+    "roughness": 0.35,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

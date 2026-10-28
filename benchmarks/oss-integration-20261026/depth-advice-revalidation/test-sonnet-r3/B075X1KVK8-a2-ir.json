@@ -1,0 +1,83 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Cross-stripe ceramic table lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Ceramic base",
+   "category": "enclosure",
+   "materialName": "white glazed ceramic",
+   "detail": "Tall rectangular ceramic column with crossed brown pinstripes",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     140,
+     290,
+     100
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    145,
+    0
+   ],
+   "material": {
+    "color": "#f1eeea",
+    "roughness": 0.4,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Lamp neck",
+   "category": "mechanical",
+   "materialName": "brushed bronze",
+   "detail": "Short metal stem joining base and shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 6,
+    "radiusBottom": 6,
+    "depth": 20,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    300,
+    0
+   ],
+   "material": {
+    "color": "#6b5b4e",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Rectangular linen shade",
+   "category": "enclosure",
+   "materialName": "cream linen fabric",
+   "detail": "Rectangular fabric shade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     366,
+     238,
+     235
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    414,
+    0
+   ],
+   "material": {
+    "color": "#f4e3d6",
+    "roughness": 0.9,
+    "metalness": 0
+   }
+  }
+ ]
+}

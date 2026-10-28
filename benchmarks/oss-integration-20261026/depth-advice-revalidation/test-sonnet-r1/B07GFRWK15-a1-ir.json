@@ -1,0 +1,293 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Six-drawer chest of drawers",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "black wood-grain laminate",
+   "detail": "Top panel with a slight overhang",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1400,
+     18,
+     410
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    786,
+    0
+   ],
+   "material": {
+    "color": "#1c1c1d",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_l",
+   "name": "Left side panel",
+   "category": "enclosure",
+   "materialName": "black wood-grain laminate",
+   "detail": "Left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     737,
+     410
+    ],
+    "radius": 2
+   },
+   "position": [
+    -691,
+    408.5,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side panel",
+   "category": "enclosure",
+   "materialName": "black wood-grain laminate",
+   "detail": "Right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     737,
+     410
+    ],
+    "radius": 2
+   },
+   "position": [
+    691,
+    408.5,
+    0
+   ],
+   "material": {
+    "color": "#1e1e1f",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "core",
+   "name": "Carcass core",
+   "category": "enclosure",
+   "materialName": "dark laminate",
+   "detail": "Inner carcass body behind drawer fronts",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1364,
+     737,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    408.5,
+    -15
+   ],
+   "material": {
+    "color": "#121213",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Recessed plinth",
+   "category": "mechanical",
+   "materialName": "dark laminate",
+   "detail": "Recessed base plinth",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1364,
+     40,
+     370
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    20,
+    -10
+   ],
+   "material": {
+    "color": "#0f0f10",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_l1",
+   "name": "Drawer front left top",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     678,
+     232,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -341,
+    655,
+    196
+   ],
+   "material": {
+    "color": "#242425",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_r1",
+   "name": "Drawer front right top",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     678,
+     232,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    341,
+    655,
+    196
+   ],
+   "material": {
+    "color": "#242425",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_l2",
+   "name": "Drawer front left middle",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     678,
+     232,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -341,
+    417,
+    196
+   ],
+   "material": {
+    "color": "#242425",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_r2",
+   "name": "Drawer front right middle",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     678,
+     232,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    341,
+    417,
+    196
+   ],
+   "material": {
+    "color": "#242425",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_l3",
+   "name": "Drawer front left bottom",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     678,
+     232,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -341,
+    179,
+    196
+   ],
+   "material": {
+    "color": "#242425",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer_r3",
+   "name": "Drawer front right bottom",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     678,
+     232,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    341,
+    179,
+    196
+   ],
+   "material": {
+    "color": "#242425",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  }
+ ]
+}

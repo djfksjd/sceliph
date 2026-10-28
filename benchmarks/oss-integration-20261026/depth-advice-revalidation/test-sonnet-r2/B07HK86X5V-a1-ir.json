@@ -1,0 +1,184 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Black wall sconce with seeded glass cylinder shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Wall plate",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Square mounting plate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     116,
+     117,
+     6
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    184,
+    3
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.6,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Cap collar",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "Cylindrical upper housing",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 50,
+    "depth": 25,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    215.5,
+    58
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "dome",
+   "name": "Cap dome",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "Tapered domed top of cap",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 46,
+    "depth": 26,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    241,
+    58
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.5,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "glass",
+   "name": "Glass shade",
+   "category": "enclosure",
+   "materialName": "seeded clear glass",
+   "detail": "Cylindrical crackle glass shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 52,
+    "radiusBottom": 52,
+    "depth": 203,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    101.5,
+    58
+   ],
+   "material": {
+    "color": "#dfe6e8",
+    "roughness": 0.2,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Socket",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Bulb socket",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 13,
+    "radiusBottom": 13,
+    "depth": 40,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    183,
+    58
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.6,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Edison bulb",
+   "category": "mechanical",
+   "materialName": "amber glass",
+   "detail": "Teardrop filament bulb",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      8
+     ],
+     [
+      26,
+      38
+     ],
+     [
+      28,
+      62
+     ],
+     [
+      20,
+      86
+     ],
+     [
+      12,
+      100
+     ],
+     [
+      12,
+      104
+     ],
+     [
+      0,
+      104
+     ]
+    ],
+    "segments": 40
+   },
+   "position": [
+    0,
+    60,
+    58
+   ],
+   "material": {
+    "color": "#ffd9a0",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Shelf Floor Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base shelf",
+   "category": "enclosure",
+   "materialName": "Walnut wood",
+   "detail": "Bottom wood base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     300,
+     60,
+     300
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    30,
+    0
+   ],
+   "material": {
+    "color": "#4a2c20",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf1",
+   "name": "Lower shelf",
+   "category": "enclosure",
+   "materialName": "Walnut wood",
+   "detail": "Lower shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     290,
+     25,
+     290
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    426,
+    0
+   ],
+   "material": {
+    "color": "#4a2c20",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "shelf2",
+   "name": "Upper shelf",
+   "category": "enclosure",
+   "materialName": "Walnut wood",
+   "detail": "Upper shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     290,
+     25,
+     290
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    803,
+    0
+   ],
+   "material": {
+    "color": "#4a2c20",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "pole1",
+   "name": "Pole front left",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Vertical brass tube",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 1090,
+    "radialSegments": 24
+   },
+   "position": [
+    -130,
+    605,
+    130
+   ],
+   "material": {
+    "color": "#a98a45",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "pole2",
+   "name": "Pole front right",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Vertical brass tube",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 1090,
+    "radialSegments": 24
+   },
+   "position": [
+    130,
+    605,
+    130
+   ],
+   "material": {
+    "color": "#a98a45",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "pole3",
+   "name": "Pole back left",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Vertical brass tube",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 1090,
+    "radialSegments": 24
+   },
+   "position": [
+    -130,
+    605,
+    -130
+   ],
+   "material": {
+    "color": "#a98a45",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "pole4",
+   "name": "Pole back right",
+   "category": "mechanical",
+   "materialName": "Brass",
+   "detail": "Vertical brass tube",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 1090,
+    "radialSegments": 24
+   },
+   "position": [
+    130,
+    605,
+    -130
+   ],
+   "material": {
+    "color": "#a98a45",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Lamp socket housing",
+   "category": "power",
+   "materialName": "Brass",
+   "detail": "Socket and switch housing under shade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     50,
+     70
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    1120,
+    0
+   ],
+   "material": {
+    "color": "#a98a45",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Linen shade",
+   "category": "enclosure",
+   "materialName": "Burlap linen",
+   "detail": "Square natural linen shade",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     340,
+     430,
+     340
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1360,
+    0
+   ],
+   "material": {
+    "color": "#d9b27c",
+    "roughness": 0.95,
+    "metalness": 0
+   }
+  }
+ ]
+}

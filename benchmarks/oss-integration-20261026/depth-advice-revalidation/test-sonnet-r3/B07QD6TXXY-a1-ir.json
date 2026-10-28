@@ -1,0 +1,154 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Jaxon Round Side Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "rim",
+   "name": "Metal rim",
+   "category": "enclosure",
+   "materialName": "black powder-coated steel",
+   "detail": "Tray rim body around the tabletop",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 190,
+    "radiusBottom": 190,
+    "depth": 89,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    627.5,
+    0
+   ],
+   "material": {
+    "color": "#222224",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "top",
+   "name": "Wood top",
+   "category": "mechanical",
+   "materialName": "natural wood",
+   "detail": "Inset wood-look tabletop",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 186,
+    "radiusBottom": 186,
+    "depth": 13,
+    "radialSegments": 64
+   },
+   "position": [
+    0,
+    666.5,
+    0
+   ],
+   "material": {
+    "color": "#a88b66",
+    "roughness": 0.8,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg1",
+   "name": "Leg left",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -17.3,
+      -290,
+      10
+     ],
+     [
+      17.3,
+      290,
+      -10
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    -134,
+    295,
+    77.5
+   ],
+   "material": {
+    "color": "#222224",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "leg2",
+   "name": "Leg right",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      17.3,
+      -290,
+      10
+     ],
+     [
+      -17.3,
+      290,
+      -10
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    134,
+    295,
+    77.5
+   ],
+   "material": {
+    "color": "#222224",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  },
+  {
+   "id": "leg3",
+   "name": "Leg back",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Splayed leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -290,
+      -20
+     ],
+     [
+      0,
+      290,
+      20
+     ]
+    ],
+    "radius": 13
+   },
+   "position": [
+    0,
+    295,
+    -155
+   ],
+   "material": {
+    "color": "#222224",
+    "roughness": 0.6,
+    "metalness": 0.5
+   }
+  }
+ ]
+}

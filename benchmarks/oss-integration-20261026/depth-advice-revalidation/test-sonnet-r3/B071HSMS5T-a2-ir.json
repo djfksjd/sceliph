@@ -1,0 +1,207 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Glass Bowl Pendant Lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "canopy",
+   "name": "Ceiling canopy",
+   "category": "mechanical",
+   "materialName": "brushed chrome",
+   "detail": "round ceiling plate",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 118,
+    "radiusBottom": 118,
+    "depth": 50,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    1499,
+    0
+   ],
+   "material": {
+    "color": "#b9bbbd",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "cord",
+   "name": "Suspension cord",
+   "category": "interconnect",
+   "materialName": "twisted cord",
+   "detail": "thin cord",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 850,
+    "radialSegments": 12
+   },
+   "position": [
+    0,
+    1050,
+    0
+   ],
+   "material": {
+    "color": "#8a857a",
+    "roughness": 0.6,
+    "metalness": 0.2
+   }
+  },
+  {
+   "id": "neck",
+   "name": "Neck",
+   "category": "mechanical",
+   "materialName": "brushed chrome",
+   "detail": "upper fitting",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 38,
+    "radiusBottom": 45,
+    "depth": 120,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    570,
+    0
+   ],
+   "material": {
+    "color": "#b9bbbd",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "collar",
+   "name": "Collar",
+   "category": "mechanical",
+   "materialName": "brushed chrome",
+   "detail": "wide collar holding glass",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 75,
+    "radiusBottom": 95,
+    "depth": 45,
+    "radialSegments": 40
+   },
+   "position": [
+    0,
+    520,
+    0
+   ],
+   "material": {
+    "color": "#a9abad",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Glass shade",
+   "category": "enclosure",
+   "materialName": "textured clear glass",
+   "detail": "dimpled bell shade with closed thick wall",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      268,
+      0
+     ],
+     [
+      270,
+      40
+     ],
+     [
+      255,
+      200
+     ],
+     [
+      215,
+      340
+     ],
+     [
+      150,
+      440
+     ],
+     [
+      90,
+      495
+     ],
+     [
+      72,
+      515
+     ],
+     [
+      64,
+      515
+     ],
+     [
+      82,
+      490
+     ],
+     [
+      142,
+      432
+     ],
+     [
+      206,
+      334
+     ],
+     [
+      246,
+      196
+     ],
+     [
+      260,
+      40
+     ],
+     [
+      261,
+      0
+     ],
+     [
+      268,
+      0
+     ]
+    ],
+    "segments": 56
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#c9ced1",
+    "roughness": 0.15,
+    "metalness": 0.1
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Bulb",
+   "category": "mechanical",
+   "materialName": "filament glass",
+   "detail": "warm bulb",
+   "geometry": {
+    "op": "sphere",
+    "radius": 45
+   },
+   "position": [
+    0,
+    350,
+    0
+   ],
+   "material": {
+    "color": "#ffd89a",
+    "roughness": 0.3,
+    "metalness": 0
+   }
+  }
+ ]
+}

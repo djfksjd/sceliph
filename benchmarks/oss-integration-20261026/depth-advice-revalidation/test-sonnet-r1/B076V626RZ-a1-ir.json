@@ -1,0 +1,295 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Vintage desk lamp with blue shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "enclosure",
+   "materialName": "dark bronze metal",
+   "detail": "Round weighted base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 82,
+    "radiusBottom": 90,
+    "depth": 24,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    12,
+    0
+   ],
+   "material": {
+    "color": "#3d2b24",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "foot_ball",
+   "name": "Base ball",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Ball joint at pole foot",
+   "geometry": {
+    "op": "sphere",
+    "radius": 13
+   },
+   "position": [
+    0,
+    38,
+    0
+   ],
+   "material": {
+    "color": "#3d2b24",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Vertical stem",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      340,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    60,
+    0
+   ],
+   "material": {
+    "color": "#3d2b24",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "elbow",
+   "name": "Elbow joint",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Pivot knuckle",
+   "geometry": {
+    "op": "sphere",
+    "radius": 12
+   },
+   "position": [
+    0,
+    407,
+    0
+   ],
+   "material": {
+    "color": "#3d2b24",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Curved arm",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Gooseneck arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -36,
+      -43,
+      0
+     ],
+     [
+      -31,
+      10,
+      0
+     ],
+     [
+      -6,
+      45,
+      0
+     ],
+     [
+      19,
+      40,
+      0
+     ],
+     [
+      36,
+      15,
+      0
+     ],
+     [
+      44,
+      5,
+      0
+     ]
+    ],
+    "radius": 6
+   },
+   "position": [
+    36,
+    450,
+    0
+   ],
+   "material": {
+    "color": "#3d2b24",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "knuckle",
+   "name": "Upper knuckle",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "Swivel joint above socket",
+   "geometry": {
+    "op": "sphere",
+    "radius": 11
+   },
+   "position": [
+    80,
+    448,
+    0
+   ],
+   "material": {
+    "color": "#3d2b24",
+    "roughness": 0.4,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Brass socket",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Socket housing",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 20,
+    "radiusBottom": 24,
+    "depth": 60,
+    "radialSegments": 32
+   },
+   "position": [
+    84,
+    398,
+    0
+   ],
+   "material": {
+    "color": "#b8913f",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "socket_ring",
+   "name": "Socket ring",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Flange ring below socket",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 30,
+    "radiusBottom": 30,
+    "depth": 8,
+    "radialSegments": 32
+   },
+   "position": [
+    88,
+    365,
+    0
+   ],
+   "material": {
+    "color": "#a98238",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Dome shade",
+   "category": "mechanical",
+   "materialName": "blue enamel",
+   "detail": "Dome shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      55
+     ],
+     [
+      22,
+      54
+     ],
+     [
+      50,
+      42
+     ],
+     [
+      75,
+      20
+     ],
+     [
+      88,
+      -10
+     ],
+     [
+      93,
+      -52
+     ],
+     [
+      90,
+      -52
+     ],
+     [
+      85,
+      -10
+     ],
+     [
+      72,
+      18
+     ],
+     [
+      48,
+      38
+     ],
+     [
+      0,
+      50
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    99,
+    300,
+    0
+   ],
+   "material": {
+    "color": "#2a3a73",
+    "roughness": 0.25,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

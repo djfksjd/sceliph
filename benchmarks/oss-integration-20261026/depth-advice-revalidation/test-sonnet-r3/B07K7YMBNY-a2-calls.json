@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon merk - Alkove - Hayes - massief houten schoenenkast Riva met 2 legplanken, wilde eiken.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 400 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.017580600000000002,
+   "durationMs": 13709,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-30,\"elevationDeg\":20},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Riva oak shoe cabinet\",\"units\":\"mm\",\"components\":[{\"id\":\"top\",\"name\":\"Top panel\",\"category\":\"enclosure\",\"materialName\":\"wild oak\",\"detail\":\"Top panel with slight overhang\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[740,20,390],\"radius\":2},\"position\":[0,390,0],\"material\":{\"color\":\"#c8955a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"side_l\",\"name\":\"Left side\",\"category\":\"enclosure\",\"materialName\":\"wild oak\",\"detail\":\"Left side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,370,370],\"radius\":2},\"position\":[-350,195,0],\"material\":{\"color\":\"#c28d52\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"side_r\",\"name\":\"Right side\",\"category\":\"enclosure\",\"materialName\":\"wild oak\",\"detail\":\"Right side panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[20,370,370],\"radius\":2},\"position\":[350,195,0],\"material\":{\"color\":\"#c28d52\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"back\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"wild oak\",\"detail\":\"Back panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[680,360,10],\"radius\":1},\"position\":[0,200,-175],\"material\":{\"color\":\"#b88349\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"bottom\",\"name\":\"Bottom panel\",\"category\":\"enclosure\",\"materialName\":\"wild oak\",\"detail\":\"Bottom panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[680,20,360],\"radius\":2},\"position\":[0,40,-5],\"material\":{\"color\":\"#b88349\",\"roughness\":0.7,\"metalness\":0}},{\"id\":\"plinth\",\"name\":\"Front plinth strip\",\"category\":\"enclosure\",\"materialName\":\"wild oak\",\"detail\":\"Recessed strip below the front flap\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[680,40,20],\"radius\":2},\"position\":[0,25,165],\"material\":{\"color\":\"#c8955a\",\"roughness\":0.6,\"metalness\":0}},{\"id\":\"front\",\"name\":\"Front flap\",\"category\":\"mechanical\",\"materialName\":\"wild oak\",\"detail\":\"Large front flap/drawer front\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[675,305,20],\"radius\":2},\"position\":[0,218,190],\"material\":{\"color\":\"#cf9d62\",\"roughness\":0.55,\"metalness\":0}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

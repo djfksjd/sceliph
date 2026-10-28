@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Movian 2-voudig modulair MDF boekenkast, beige/wit.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 594 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.023083700000000002,
+   "durationMs": 14460,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":-40,\"elevationDeg\":12},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Movian 2-voudig modulaire boekenkast\",\"units\":\"mm\",\"components\":[{\"id\":\"side_l\",\"name\":\"Left side panel\",\"category\":\"enclosure\",\"materialName\":\"Oak-effect MDF\",\"detail\":\"Full height side panel with oak veneer look\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,594,250],\"radius\":1},\"position\":[-66,297,0],\"material\":{\"color\":\"#d2a679\",\"surface\":\"wood\",\"roughness\":0.6,\"metalness\":0,\"microNormalStrength\":0.4}},{\"id\":\"side_r\",\"name\":\"Right side panel\",\"category\":\"enclosure\",\"materialName\":\"Oak-effect MDF\",\"detail\":\"Full height side panel with oak veneer look\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[18,594,250],\"radius\":1},\"position\":[66,297,0],\"material\":{\"color\":\"#d2a679\",\"surface\":\"wood\",\"roughness\":0.6,\"metalness\":0,\"microNormalStrength\":0.4}},{\"id\":\"top\",\"name\":\"Top panel\",\"category\":\"enclosure\",\"materialName\":\"White MDF\",\"detail\":\"White top panel between sides\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[114,18,250],\"radius\":1},\"position\":[0,585,0],\"material\":{\"color\":\"#f4f5f7\",\"surface\":\"molded-polymer\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"bottom\",\"name\":\"Bottom panel\",\"category\":\"enclosure\",\"materialName\":\"White MDF\",\"detail\":\"White bottom panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[114,18,250],\"radius\":1},\"position\":[0,9,0],\"material\":{\"color\":\"#f4f5f7\",\"surface\":\"molded-polymer\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"shelf\",\"name\":\"Middle shelf\",\"category\":\"enclosure\",\"materialName\":\"White MDF\",\"detail\":\"Fixed white shelf\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[114,16,240],\"radius\":1},\"position\":[0,285,-5],\"material\":{\"color\":\"#f4f5f7\",\"surface\":\"molded-polymer\",\"roughness\":0.5,\"metalness\":0}},{\"id\":\"back\",\"name\":\"Back panel\",\"category\":\"enclosure\",\"materialName\":\"Oak-effect MDF\",\"detail\":\"Thin back panel\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[114,558,6],\"radius\":1},\"position\":[0,297,-120],\"material\":{\"color\":\"#d2a679\",\"surface\":\"wood\",\"roughness\":0.65,\"metalness\":0,\"microNormalStrength\":0.3}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

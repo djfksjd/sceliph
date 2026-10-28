@@ -1,0 +1,241 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Alkove Hayes Dining Table",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Table top",
+   "category": "enclosure",
+   "materialName": "Wild oak",
+   "detail": "Solid oak top, 1400 x 900, 30 mm thick",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1400,
+     30,
+     900
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    735,
+    0
+   ],
+   "material": {
+    "color": "#c99a5e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "apron_front",
+   "name": "Front apron",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Apron rail front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1220,
+     80,
+     25
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    665,
+    -370
+   ],
+   "material": {
+    "color": "#b8844a",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "apron_back",
+   "name": "Back apron",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Apron rail back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1220,
+     80,
+     25
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    665,
+    370
+   ],
+   "material": {
+    "color": "#b8844a",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "apron_left",
+   "name": "Left apron",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Apron rail left",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     80,
+     740
+    ],
+    "radius": 3
+   },
+   "position": [
+    -597,
+    665,
+    0
+   ],
+   "material": {
+    "color": "#b8844a",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "apron_right",
+   "name": "Right apron",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Apron rail right",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     80,
+     740
+    ],
+    "radius": 3
+   },
+   "position": [
+    597,
+    665,
+    0
+   ],
+   "material": {
+    "color": "#b8844a",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fl",
+   "name": "Leg front left",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     720,
+     70
+    ],
+    "radius": 4
+   },
+   "position": [
+    -585,
+    360,
+    385
+   ],
+   "material": {
+    "color": "#b98548",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_fr",
+   "name": "Leg front right",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     720,
+     70
+    ],
+    "radius": 4
+   },
+   "position": [
+    585,
+    360,
+    385
+   ],
+   "material": {
+    "color": "#b98548",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_bl",
+   "name": "Leg back left",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     720,
+     70
+    ],
+    "radius": 4
+   },
+   "position": [
+    -585,
+    360,
+    -385
+   ],
+   "material": {
+    "color": "#b98548",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "leg_br",
+   "name": "Leg back right",
+   "category": "mechanical",
+   "materialName": "Wild oak",
+   "detail": "Square leg",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     70,
+     720,
+     70
+    ],
+    "radius": 4
+   },
+   "position": [
+    585,
+    360,
+    -385
+   ],
+   "material": {
+    "color": "#b98548",
+    "roughness": 0.65,
+    "metalness": 0
+   }
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "guide": "You write Sceliph AssemblyIR JSON. Output exactly one JSON object and nothing else: {\"view\":{\"azimuthDeg\":number,\"elevationDeg\":number},\"assembly\":AssemblyIR}.\nAssemblyIR: {\"schema\":\"morphloom.assembly/0.1\",\"name\":string,\"units\":\"mm\",\"components\":[component,...]}\ncomponent: {\"id\":string,\"name\":string,\"category\":one of \"enclosure\",\"display\",\"logic\",\"power\",\"camera\",\"audio\",\"radio\",\"mechanical\",\"interconnect\",\"materialName\":string,\"detail\":string,\"geometry\":geometry,\"position\":[x,y,z] (optional, mm, centre of the part),\"rotation\":[rx,ry,rz] (optional, radians, XYZ Euler),\"material\":material}\nmaterial: {\"color\":\"#rrggbb\" (base colour of the finish),\"surface\":finish,\"roughness\":0..1,\"metalness\":0..1, optional \"clearcoat\":0..1,\"clearcoatRoughness\":0..1,\"transmission\":0..1 with \"ior\":1..2.5 (glass, clear plastic),\"sheen\":0..1,\"sheenRoughness\":0..1 (fabric),\"anisotropy\":0..1 (brushed metal),\"microNormalStrength\":0..1 (fine surface grain)}\nfinish: one of \"wood\",\"fabric\",\"leather\",\"rubber\",\"molded-polymer\",\"soft-touch-polymer\",\"coated-metal\",\"brushed-metal\",\"polished-metal\",\"anodized-metal\",\"bead-blasted-metal\",\"ceramic-glass\",\"optical-glass\",\"stone\",\"concrete\",\"plaster\",\"raw\". Give every visible part the finish you see; set clearcoat for lacquered or glossy surfaces, transmission and ior for glass, sheen for upholstery.\nWorld: millimetres, Y is up, the floor is y = 0. Each geometry is centred on the component position.\ngeometry options:\n- {\"op\":\"roundedBox\",\"size\":[x,y,z],\"radius\":r}  (r at most 0.4 x the smallest size)\n- {\"op\":\"cylinder\",\"radiusTop\":r1,\"radiusBottom\":r2,\"depth\":h,\"radialSegments\":32}  (axis along Y, height h)\n- {\"op\":\"sphere\",\"radius\":r}\n- {\"op\":\"torus\",\"radius\":R,\"tube\":t}  (ring lies in the XY plane; its axis is Z; outer diameter 2(R+t); rotate it for other planes)\n- {\"op\":\"tube\",\"points\":[[x,y,z],...],\"radius\":r}  (swept circle along a smooth curve through the points, relative to the component position; a straight rod or brace needs exactly two points, otherwise the curve bends)\n- {\"op\":\"lathe\",\"profile\":[[r,y],...],\"segments\":48}  (profile radius r >= 0 at height y, relative to the component position, revolved about the vertical Y axis; for vases, lamp bases, turned legs, shades)\n- {\"op\":\"extrude\",\"points\":[[x,y],...],\"depth\":d}  (closed outline in the X-Y plane relative to the component position, extruded along Z by d and centred on it; for shaped panels, brackets, cut-out legs)\n- {\"op\":\"booleanCSG\",\"operation\":\"difference\"|\"union\"|\"intersection\",\"operands\":[{\"geometry\":geometry,\"position\":[x,y,z],\"rotation\":[rx,ry,rz]},...]}  (2 to 8 operands, each placed relative to the component position; difference subtracts every later operand from the first; cutters must pass fully through the faces they open; for holes, slots, open frames, hollow shades, recessed handles, arched cut-outs)\n- {\"op\":\"implicitSurface\",\"descriptor\":{\"bounds\":{\"min\":[x,y,z],\"max\":[x,y,z]},\"resolution\":24..64,\"triangleBudget\":20000..120000,\"primitives\":[{\"id\":string,\"type\":\"ellipsoid\",\"radii\":[rx,ry,rz],\"transform\":{\"position\":[x,y,z],\"rotation\":[rx,ry,rz]}} | {\"id\",\"type\":\"capsule\",\"radius\":r,\"height\":h,...} | {\"id\",\"type\":\"box\",\"size\":[x,y,z],...} | {\"id\",\"type\":\"sphere\",\"radius\":r,...} | {\"id\",\"type\":\"cone\",\"radius\":r,\"height\":h,...}],\"operations\":[{\"id\":string,\"type\":\"smooth-union\"|\"subtract\"|\"intersect\",\"left\":id,\"right\":id,\"radius\":blend_mm}],\"output\":id}}  (a smooth blended solid, relative to the component position; bounds must enclose the surface with padding; for cushions, padded seats and backs, rounded upholstery, organic or moulded shapes that primitives cannot express)\nChoose the components yourself: 2 to 40 meaningful parts (top, legs, drawer fronts, handles, shade, cushions, base, ...), each with a short unique id. Model the visible parts that make the product recognisable, including small ones such as handles, knobs, feet, sockets and brackets.\nYou are modelling the product in a catalog photograph whose background has been removed. The user states the overall height from the product listing; make the model exactly that tall and derive every other size and placement from the photo in proportion to it.\nPut the object on the floor (lowest point at y = 0) and model only the object, not the floor or background.\n\"view\" is your estimate of where the photo was taken from, relative to your own model: azimuthDeg 0 means the camera looks at the model's +Z side (from +Z toward -Z); positive azimuth moves the camera toward +X (azimuth 90 = camera on the +X side). elevationDeg is the camera height angle above the horizontal (0 = level, 90 = straight down).\nGive every component an explicit \"position\".",
+ "requests": {
+  "a1": [
+   "Catalog photo (background removed) of: {name}.",
+   "The product listing gives its overall height as {height} mm.",
+   "Decide the components yourself."
+  ],
+  "a2": [
+   "Two catalog photos (background removed) of: {name}.",
+   "The second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.",
+   "The product listing gives its overall height as {height} mm.",
+   "Decide the components yourself."
+  ]
+ },
+ "maxRounds": 3,
+ "padShare": 0.08,
+ "maxSide": 640,
+ "backgroundThreshold": 235,
+ "exclusions": {
+  "minMaskShare": 0.02,
+  "maxMaskShare": 0.9
+ },
+ "frames": {
+  "front": 0,
+  "side": 18
+ },
+ "compare": {
+  "views": 8,
+  "elevationDeg": 20,
+  "raster": 320,
+  "yawStepDeg": 5,
+  "surfaceSamples": 8000,
+  "seed": 1
+ },
+ "note": "Roadmap step 2b (dev only, exploratory): the slice-9b dev guide (G0) widened to the engine capability set (G1): booleanCSG, implicitSurface, material finishes, up to 40 parts. Everything else, including requests, frames and compare, is unchanged."
+}

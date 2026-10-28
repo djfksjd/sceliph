@@ -1,0 +1,433 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Gaming Computer Desk",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Desk top",
+   "category": "enclosure",
+   "materialName": "carbon-look MDF",
+   "detail": "Black desktop with red edge banding",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     30,
+     600
+    ],
+    "radius": 10
+   },
+   "position": [
+    0,
+    735,
+    0
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.6,
+    "metalness": 0.05
+   }
+  },
+  {
+   "id": "edge",
+   "name": "Red front edge",
+   "category": "enclosure",
+   "materialName": "red edge band",
+   "detail": "Red trim along front edge",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1100,
+     22,
+     8
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    732,
+    303
+   ],
+   "material": {
+    "color": "#c4161c",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf",
+   "name": "Monitor shelf",
+   "category": "enclosure",
+   "materialName": "carbon-look MDF",
+   "detail": "Raised shelf with red edge",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     640,
+     20,
+     200
+    ],
+    "radius": 6
+   },
+   "position": [
+    -30,
+    899,
+    -190
+   ],
+   "material": {
+    "color": "#c4161c",
+    "roughness": 0.5
+   }
+  },
+  {
+   "id": "shelf_l",
+   "name": "Shelf support left",
+   "category": "mechanical",
+   "materialName": "steel tube",
+   "detail": "Support leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -70,
+      0
+     ],
+     [
+      0,
+      70,
+      0
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    -300,
+    819,
+    -190
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "shelf_r",
+   "name": "Shelf support right",
+   "category": "mechanical",
+   "materialName": "steel tube",
+   "detail": "Support leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -70,
+      0
+     ],
+     [
+      0,
+      70,
+      0
+     ]
+    ],
+    "radius": 10
+   },
+   "position": [
+    240,
+    819,
+    -190
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "frame_l_a",
+   "name": "Left leg A",
+   "category": "mechanical",
+   "materialName": "steel tube",
+   "detail": "Slanted leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -360,
+      -260
+     ],
+     [
+      0,
+      360,
+      150
+     ]
+    ],
+    "radius": 16
+   },
+   "position": [
+    -480,
+    375,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "frame_l_b",
+   "name": "Left leg B",
+   "category": "mechanical",
+   "materialName": "steel tube",
+   "detail": "Slanted leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -360,
+      260
+     ],
+     [
+      0,
+      360,
+      -150
+     ]
+    ],
+    "radius": 16
+   },
+   "position": [
+    -480,
+    375,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "frame_r_a",
+   "name": "Right leg A",
+   "category": "mechanical",
+   "materialName": "steel tube",
+   "detail": "Slanted leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -360,
+      -260
+     ],
+     [
+      0,
+      360,
+      150
+     ]
+    ],
+    "radius": 16
+   },
+   "position": [
+    480,
+    375,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "frame_r_b",
+   "name": "Right leg B",
+   "category": "mechanical",
+   "materialName": "steel tube",
+   "detail": "Slanted leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -360,
+      260
+     ],
+     [
+      0,
+      360,
+      -150
+     ]
+    ],
+    "radius": 16
+   },
+   "position": [
+    480,
+    375,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "foot_l",
+   "name": "Left foot",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "Floor bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     30,
+     560
+    ],
+    "radius": 8
+   },
+   "position": [
+    -480,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "foot_r",
+   "name": "Right foot",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "Floor bar",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     30,
+     30,
+     560
+    ],
+    "radius": 8
+   },
+   "position": [
+    480,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "crossbar",
+   "name": "Stretcher bar",
+   "category": "mechanical",
+   "materialName": "steel",
+   "detail": "Cross brace between frames",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     960,
+     24,
+     24
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    230,
+    0
+   ],
+   "material": {
+    "color": "#151515",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "basket",
+   "name": "Under-desk basket",
+   "category": "mechanical",
+   "materialName": "wire",
+   "detail": "Storage basket",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     420,
+     50,
+     260
+    ],
+    "radius": 10
+   },
+   "position": [
+    40,
+    695,
+    40
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "cup_l",
+   "name": "Left cup holder",
+   "category": "mechanical",
+   "materialName": "wire",
+   "detail": "Cup holder",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 42,
+    "depth": 70,
+    "radialSegments": 32
+   },
+   "position": [
+    -600,
+    720,
+    60
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "cup_r",
+   "name": "Right cup holder",
+   "category": "mechanical",
+   "materialName": "wire",
+   "detail": "Cup holder",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 45,
+    "radiusBottom": 38,
+    "depth": 90,
+    "radialSegments": 32
+   },
+   "position": [
+    590,
+    710,
+    150
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  }
+ ]
+}

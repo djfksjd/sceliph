@@ -1,0 +1,319 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Movian Natura 6-drawer chest",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "black wood-grain laminate",
+   "detail": "Top board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1500,
+     18,
+     420
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    786,
+    0
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "sideL",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "black wood-grain laminate",
+   "detail": "Left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     737,
+     420
+    ],
+    "radius": 2
+   },
+   "position": [
+    -741,
+    408.5,
+    0
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "sideR",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "black wood-grain laminate",
+   "detail": "Right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     737,
+     420
+    ],
+    "radius": 2
+   },
+   "position": [
+    741,
+    408.5,
+    0
+   ],
+   "material": {
+    "color": "#2a2a2c",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "black fibreboard",
+   "detail": "Thin back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1464,
+     737,
+     6
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    408.5,
+    -207
+   ],
+   "material": {
+    "color": "#222224",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Plinth",
+   "category": "enclosure",
+   "materialName": "black wood-grain laminate",
+   "detail": "Recessed base",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1464,
+     58,
+     390
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    29,
+    -10
+   ],
+   "material": {
+    "color": "#1c1c1e",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass interior",
+   "category": "enclosure",
+   "materialName": "black laminate",
+   "detail": "Interior volume behind drawers",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1464,
+     719,
+     394
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    417.5,
+    -7
+   ],
+   "material": {
+    "color": "#1a1a1c",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "dr_l1",
+   "name": "Drawer front top-left",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     726,
+     234,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -366,
+    657,
+    201
+   ],
+   "material": {
+    "color": "#2d2d2f",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "dr_r1",
+   "name": "Drawer front top-right",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     726,
+     234,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    366,
+    657,
+    201
+   ],
+   "material": {
+    "color": "#2d2d2f",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "dr_l2",
+   "name": "Drawer front mid-left",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     726,
+     234,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -366,
+    419,
+    201
+   ],
+   "material": {
+    "color": "#2d2d2f",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "dr_r2",
+   "name": "Drawer front mid-right",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     726,
+     234,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    366,
+    419,
+    201
+   ],
+   "material": {
+    "color": "#2d2d2f",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "dr_l3",
+   "name": "Drawer front bottom-left",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     726,
+     234,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -366,
+    181,
+    201
+   ],
+   "material": {
+    "color": "#2d2d2f",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "dr_r3",
+   "name": "Drawer front bottom-right",
+   "category": "mechanical",
+   "materialName": "black wood-grain laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     726,
+     234,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    366,
+    181,
+    201
+   ],
+   "material": {
+    "color": "#2d2d2f",
+    "roughness": 0.5,
+    "metalness": 0
+   }
+  }
+ ]
+}

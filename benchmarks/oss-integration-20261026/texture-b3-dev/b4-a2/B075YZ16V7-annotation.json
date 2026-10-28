@@ -1,0 +1,12 @@
+{
+ "request": "Catalog photo of the product. Components of the model:\n- body: Carcass; material \"stained pine\"; colour #a8481c\n- d1: Drawer top left; material \"stained pine\"; colour #b4501f\n- d2: Drawer mid left; material \"stained pine\"; colour #b4501f\n- d3: Drawer bottom left; material \"stained pine\"; colour #b4501f\n- d4: Drawer top right; material \"stained pine\"; colour #b4501f\n- d5: Drawer mid right; material \"stained pine\"; colour #b4501f\n- d6: Drawer bottom right; material \"stained pine\"; colour #b4501f\n- p1: Post front left; material \"black steel\"; colour #1a1a1a\n- p2: Post front right; material \"black steel\"; colour #1a1a1a\n- p3: Post back left; material \"black steel\"; colour #1a1a1a\n- p4: Post back right; material \"black steel\"; colour #1a1a1a\n- r1: Bottom rail front; material \"black steel\"; colour #1a1a1a\n- r2: Bottom rail back; material \"black steel\"; colour #1a1a1a\n- r3: Top rail front; material \"black steel\"; colour #1a1a1a\n- r4: Top rail back; material \"black steel\"; colour #1a1a1a\nAnnotate every component.",
+ "reply": "{\"components\":[{\"id\":\"body\",\"surface\":\"wood\",\"albedoVariation\":0.3,\"textureScale\":[3,2]},{\"id\":\"d1\",\"surface\":\"wood\",\"albedoVariation\":0.35,\"textureScale\":[3,2]},{\"id\":\"d2\",\"surface\":\"wood\",\"albedoVariation\":0.35,\"textureScale\":[3,2]},{\"id\":\"d3\",\"surface\":\"wood\",\"albedoVariation\":0.35,\"textureScale\":[3,2]},{\"id\":\"d4\",\"surface\":\"wood\",\"albedoVariation\":0.35,\"textureScale\":[3,2]},{\"id\":\"d5\",\"surface\":\"wood\",\"albedoVariation\":0.35,\"textureScale\":[3,2]},{\"id\":\"d6\",\"surface\":\"wood\",\"albedoVariation\":0.35,\"textureScale\":[3,2]},{\"id\":\"p1\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"p2\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"p3\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"p4\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"r1\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"r2\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"r3\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]},{\"id\":\"r4\",\"surface\":\"coated-metal\",\"albedoVariation\":0,\"textureScale\":[1,1]}]}",
+ "record": {
+  "modelIds": [
+   "claude-sonnet-5-5"
+  ],
+  "costUsd": 0.0113873,
+  "durationMs": 4886,
+  "isError": false
+ }
+}

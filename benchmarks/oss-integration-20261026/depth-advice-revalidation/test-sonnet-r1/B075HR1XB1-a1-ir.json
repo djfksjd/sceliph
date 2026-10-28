@@ -1,0 +1,186 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Oval plug-in wall sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "rod_bottom",
+   "name": "Lower rod",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "Thin nickel rod below the body",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3.5,
+    "radiusBottom": 3.5,
+    "depth": 55,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    27.5,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b4",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "body",
+   "name": "Grey body",
+   "category": "enclosure",
+   "materialName": "matte painted grey",
+   "detail": "Capsule-shaped lower body with rounded bottom",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      1.5
+     ],
+     [
+      38,
+      8
+     ],
+     [
+      48,
+      20
+     ],
+     [
+      53,
+      36
+     ],
+     [
+      53,
+      128
+     ],
+     [
+      0,
+      128
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    51,
+    0
+   ],
+   "material": {
+    "color": "#c4c2bf",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "wood_cap",
+   "name": "Faux wood dome",
+   "category": "enclosure",
+   "materialName": "faux wood",
+   "detail": "Domed wood-look top shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      53,
+      0
+     ],
+     [
+      53,
+      8
+     ],
+     [
+      50,
+      30
+     ],
+     [
+      42,
+      55
+     ],
+     [
+      30,
+      72
+     ],
+     [
+      17,
+      84
+     ],
+     [
+      8,
+      90
+     ],
+     [
+      0,
+      91
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    179,
+    0
+   ],
+   "material": {
+    "color": "#7a3f2c",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "rod_top",
+   "name": "Upper stem",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "Nickel stem above the dome",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 3.5,
+    "radiusBottom": 3.5,
+    "depth": 64,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    293,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b4",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "hook_tip",
+   "name": "Hook tip",
+   "category": "mechanical",
+   "materialName": "nickel",
+   "detail": "Rounded top end of the stem",
+   "geometry": {
+    "op": "sphere",
+    "radius": 4
+   },
+   "position": [
+    0,
+    326,
+    0
+   ],
+   "material": {
+    "color": "#b8b8b4",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  }
+ ]
+}

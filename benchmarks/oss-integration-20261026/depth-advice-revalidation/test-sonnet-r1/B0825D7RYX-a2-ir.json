@@ -1,0 +1,269 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Dome floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "domed round base",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      115,
+      0
+     ],
+     [
+      112,
+      10
+     ],
+     [
+      90,
+      28
+     ],
+     [
+      50,
+      58
+     ],
+     [
+      10,
+      74
+     ],
+     [
+      0,
+      78
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#141414",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Stem",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "skinny stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 8,
+    "radiusBottom": 8,
+    "depth": 1240,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    690,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Dome shade",
+   "category": "enclosure",
+   "materialName": "black metal",
+   "detail": "hemispherical dome shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      0
+     ],
+     [
+      166,
+      0
+     ],
+     [
+      160,
+      47
+     ],
+     [
+      144,
+      90
+     ],
+     [
+      117,
+      127
+     ],
+     [
+      83,
+      156
+     ],
+     [
+      43,
+      174
+     ],
+     [
+      0,
+      180
+     ]
+    ],
+    "segments": 56
+   },
+   "position": [
+    0,
+    1283,
+    0
+   ],
+   "material": {
+    "color": "#0e0e0e",
+    "roughness": 0.7,
+    "metalness": 0.3
+   }
+  },
+  {
+   "id": "finial",
+   "name": "Top cap",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "small top nub",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 7,
+    "radiusBottom": 7,
+    "depth": 18,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    1471,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "chain1",
+   "name": "Pull chain left",
+   "category": "interconnect",
+   "materialName": "metal chain",
+   "detail": "pull chain",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -85,
+      0
+     ]
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    -49,
+    1280,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "chain2",
+   "name": "Pull chain right",
+   "category": "interconnect",
+   "materialName": "metal chain",
+   "detail": "pull chain",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      -85,
+      0
+     ]
+    ],
+    "radius": 1.5
+   },
+   "position": [
+    57,
+    1280,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "bead1",
+   "name": "Bead left",
+   "category": "mechanical",
+   "materialName": "black bead",
+   "detail": "chain pull bead",
+   "geometry": {
+    "op": "sphere",
+    "radius": 5
+   },
+   "position": [
+    -49,
+    1192,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "bead2",
+   "name": "Bead right",
+   "category": "mechanical",
+   "materialName": "black bead",
+   "detail": "chain pull bead",
+   "geometry": {
+    "op": "sphere",
+    "radius": 5
+   },
+   "position": [
+    57,
+    1192,
+    0
+   ],
+   "material": {
+    "color": "#1a1a1a",
+    "roughness": 0.5,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

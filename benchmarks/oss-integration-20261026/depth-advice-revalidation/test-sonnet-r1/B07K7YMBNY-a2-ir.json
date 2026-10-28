@@ -1,0 +1,189 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Oak wall shoe cabinet",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top panel",
+   "category": "enclosure",
+   "materialName": "oiled wild oak",
+   "detail": "Overhanging top board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     25,
+     400
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    387.5,
+    0
+   ],
+   "material": {
+    "color": "#c68e4f",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_l",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "oiled wild oak",
+   "detail": "Left side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     345,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    -391,
+    202.5,
+    -10
+   ],
+   "material": {
+    "color": "#c88f50",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "oiled wild oak",
+   "detail": "Right side panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     18,
+     345,
+     380
+    ],
+    "radius": 2
+   },
+   "position": [
+    391,
+    202.5,
+    -10
+   ],
+   "material": {
+    "color": "#c88f50",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "oiled wild oak",
+   "detail": "Rear panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     764,
+     345,
+     10
+    ],
+    "radius": 1
+   },
+   "position": [
+    0,
+    202.5,
+    -195
+   ],
+   "material": {
+    "color": "#b98048",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "bottom",
+   "name": "Bottom panel",
+   "category": "enclosure",
+   "materialName": "oiled wild oak",
+   "detail": "Base board",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     764,
+     18,
+     370
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    39,
+    -5
+   ],
+   "material": {
+    "color": "#b98048",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "plinth",
+   "name": "Front plinth strip",
+   "category": "enclosure",
+   "materialName": "oiled wild oak",
+   "detail": "Strip under drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     780,
+     30,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    15,
+    180
+   ],
+   "material": {
+    "color": "#c28849",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "front",
+   "name": "Drawer front",
+   "category": "mechanical",
+   "materialName": "oiled wild oak",
+   "detail": "Flap/drawer front panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     764,
+     300,
+     20
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    213,
+    190
+   ],
+   "material": {
+    "color": "#c98f50",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  }
+ ]
+}

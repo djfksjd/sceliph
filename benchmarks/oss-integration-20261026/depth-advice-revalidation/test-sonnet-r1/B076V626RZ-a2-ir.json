@@ -1,0 +1,240 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Vintage desk lamp with blue dome shade",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "round weighted base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 82,
+    "radiusBottom": 91,
+    "depth": 26,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    13,
+    0
+   ],
+   "material": {
+    "color": "#4a3027",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "knob",
+   "name": "Base knob",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "bulb at pole foot",
+   "geometry": {
+    "op": "sphere",
+    "radius": 12
+   },
+   "position": [
+    0,
+    38,
+    0
+   ],
+   "material": {
+    "color": "#3d2a22",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "pole",
+   "name": "Pole",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "vertical stem",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4.5,
+    "radiusBottom": 4.5,
+    "depth": 370,
+    "radialSegments": 20
+   },
+   "position": [
+    0,
+    215,
+    0
+   ],
+   "material": {
+    "color": "#3d2a22",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "joint",
+   "name": "Pivot joint",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "swivel joint",
+   "geometry": {
+    "op": "sphere",
+    "radius": 10
+   },
+   "position": [
+    0,
+    405,
+    0
+   ],
+   "material": {
+    "color": "#3d2a22",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Gooseneck arm",
+   "category": "mechanical",
+   "materialName": "dark bronze metal",
+   "detail": "curved arm",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      90,
+      0
+     ],
+     [
+      40,
+      97,
+      50
+     ],
+     [
+      80,
+      50,
+      95
+     ],
+     [
+      80,
+      2,
+      95
+     ]
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    408,
+    0
+   ],
+   "material": {
+    "color": "#3d2a22",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Brass socket",
+   "category": "mechanical",
+   "materialName": "antique brass",
+   "detail": "lamp socket housing",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 20,
+    "radiusBottom": 24,
+    "depth": 55,
+    "radialSegments": 32
+   },
+   "position": [
+    80,
+    385,
+    95
+   ],
+   "material": {
+    "color": "#a88334",
+    "roughness": 0.35,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Dome shade",
+   "category": "mechanical",
+   "materialName": "navy enamel",
+   "detail": "dome shade",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      108
+     ],
+     [
+      30,
+      104
+     ],
+     [
+      55,
+      92
+     ],
+     [
+      80,
+      60
+     ],
+     [
+      92,
+      10
+     ],
+     [
+      92,
+      0
+     ],
+     [
+      89,
+      0
+     ],
+     [
+      86,
+      8
+     ],
+     [
+      74,
+      55
+     ],
+     [
+      50,
+      86
+     ],
+     [
+      26,
+      98
+     ],
+     [
+      0,
+      100
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    80,
+    245,
+    95
+   ],
+   "material": {
+    "color": "#27346a",
+    "roughness": 0.25,
+    "metalness": 0.4
+   }
+  }
+ ]
+}

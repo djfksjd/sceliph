@@ -1,0 +1,349 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rustic wood bookcase with doors",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top crown",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "Overhanging top",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     930,
+     50,
+     420
+    ],
+    "radius": 8
+   },
+   "position": [
+    0,
+    1855,
+    0
+   ],
+   "material": {
+    "color": "#7a6e62",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "side_l",
+   "name": "Left side",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "Side panel to floor",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     1830,
+     370
+    ],
+    "radius": 5
+   },
+   "position": [
+    -427,
+    915,
+    0
+   ],
+   "material": {
+    "color": "#756a5e",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "side_r",
+   "name": "Right side",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "Side panel to floor",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     25,
+     1830,
+     370
+    ],
+    "radius": 5
+   },
+   "position": [
+    427,
+    915,
+    0
+   ],
+   "material": {
+    "color": "#756a5e",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "back",
+   "name": "Back panel",
+   "category": "enclosure",
+   "materialName": "grey wood",
+   "detail": "Back",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     830,
+     1720,
+     10
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    950,
+    -170
+   ],
+   "material": {
+    "color": "#6a5f54",
+    "roughness": 0.9
+   }
+  },
+  {
+   "id": "shelf1",
+   "name": "Shelf 1",
+   "category": "mechanical",
+   "materialName": "grey wood",
+   "detail": "Cabinet top shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     830,
+     30,
+     350
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    650,
+    0
+   ],
+   "material": {
+    "color": "#7d7165",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "shelf2",
+   "name": "Shelf 2",
+   "category": "mechanical",
+   "materialName": "grey wood",
+   "detail": "Middle shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     830,
+     30,
+     350
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    1010,
+    0
+   ],
+   "material": {
+    "color": "#7d7165",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "shelf3",
+   "name": "Shelf 3",
+   "category": "mechanical",
+   "materialName": "grey wood",
+   "detail": "Upper shelf",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     830,
+     30,
+     350
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    1380,
+    0
+   ],
+   "material": {
+    "color": "#7d7165",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "divider",
+   "name": "Vertical divider",
+   "category": "mechanical",
+   "materialName": "grey wood",
+   "detail": "Centre divider",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     22,
+     1140,
+     345
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1215,
+    0
+   ],
+   "material": {
+    "color": "#7a6e62",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "top_rail",
+   "name": "Top front rail",
+   "category": "mechanical",
+   "materialName": "grey wood",
+   "detail": "Front rail under crown",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     830,
+     60,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1760,
+    175
+   ],
+   "material": {
+    "color": "#7d7165",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "bottom_rail",
+   "name": "Bottom front rail",
+   "category": "mechanical",
+   "materialName": "grey wood",
+   "detail": "Base rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     830,
+     80,
+     20
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    100,
+    175
+   ],
+   "material": {
+    "color": "#7d7165",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "door_l",
+   "name": "Left door",
+   "category": "mechanical",
+   "materialName": "grey wood",
+   "detail": "Panel door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     490,
+     22
+    ],
+    "radius": 4
+   },
+   "position": [
+    -203,
+    395,
+    185
+   ],
+   "material": {
+    "color": "#80746a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "door_r",
+   "name": "Right door",
+   "category": "mechanical",
+   "materialName": "grey wood",
+   "detail": "Panel door",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     400,
+     490,
+     22
+    ],
+    "radius": 4
+   },
+   "position": [
+    203,
+    395,
+    185
+   ],
+   "material": {
+    "color": "#80746a",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "knob_l",
+   "name": "Left knob",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Knob",
+   "geometry": {
+    "op": "sphere",
+    "radius": 13
+   },
+   "position": [
+    -18,
+    400,
+    205
+   ],
+   "material": {
+    "color": "#a8a08a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "knob_r",
+   "name": "Right knob",
+   "category": "mechanical",
+   "materialName": "brass",
+   "detail": "Knob",
+   "geometry": {
+    "op": "sphere",
+    "radius": 13
+   },
+   "position": [
+    18,
+    400,
+    205
+   ],
+   "material": {
+    "color": "#a8a08a",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  }
+ ]
+}

@@ -1,0 +1,517 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Laurel 5-Drawer Dresser",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top slab",
+   "category": "enclosure",
+   "materialName": "Gray washed wood",
+   "detail": "Overhanging top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     870,
+     30,
+     460
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1204,
+    0
+   ],
+   "material": {
+    "color": "#cfc3ae",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "Gray washed wood",
+   "detail": "Main cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     850,
+     964,
+     440
+    ],
+    "radius": 6
+   },
+   "position": [
+    0,
+    707,
+    0
+   ],
+   "material": {
+    "color": "#c4b8a2",
+    "roughness": 0.75,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer1",
+   "name": "Drawer front 1",
+   "category": "enclosure",
+   "materialName": "Gray washed wood",
+   "detail": "Top drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     180,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    1086,
+    225
+   ],
+   "material": {
+    "color": "#d6ccb8",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer2",
+   "name": "Drawer front 2",
+   "category": "enclosure",
+   "materialName": "Gray washed wood",
+   "detail": "Second drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     180,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    899,
+    225
+   ],
+   "material": {
+    "color": "#ddd3c0",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer3",
+   "name": "Drawer front 3",
+   "category": "enclosure",
+   "materialName": "Gray washed wood",
+   "detail": "Middle drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     180,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    712,
+    225
+   ],
+   "material": {
+    "color": "#d0c5b0",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer4",
+   "name": "Drawer front 4",
+   "category": "enclosure",
+   "materialName": "Gray washed wood",
+   "detail": "Fourth drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     180,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    525,
+    225
+   ],
+   "material": {
+    "color": "#d9cfbb",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "drawer5",
+   "name": "Drawer front 5",
+   "category": "enclosure",
+   "materialName": "Gray washed wood",
+   "detail": "Bottom drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     800,
+     180,
+     20
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    338,
+    225
+   ],
+   "material": {
+    "color": "#d2c7b2",
+    "roughness": 0.7,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "h1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Slim bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     90,
+     8,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    1120,
+    240
+   ],
+   "material": {
+    "color": "#2b2826",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "h2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Slim bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     90,
+     8,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    933,
+    240
+   ],
+   "material": {
+    "color": "#2b2826",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "h3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Slim bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     90,
+     8,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    746,
+    240
+   ],
+   "material": {
+    "color": "#2b2826",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "h4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Slim bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     90,
+     8,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    559,
+    240
+   ],
+   "material": {
+    "color": "#2b2826",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "h5",
+   "name": "Handle 5",
+   "category": "mechanical",
+   "materialName": "Dark bronze metal",
+   "detail": "Slim bar pull",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     90,
+     8,
+     10
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    372,
+    240
+   ],
+   "material": {
+    "color": "#2b2826",
+    "roughness": 0.4,
+    "metalness": 0.8
+   }
+  },
+  {
+   "id": "legFL",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Splayed steel leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      27.5,
+      107,
+      -22.5
+     ],
+     [
+      -27.5,
+      -107,
+      22.5
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    -367.5,
+    118,
+    192.5
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "legFR",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Splayed steel leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -27.5,
+      107,
+      -22.5
+     ],
+     [
+      27.5,
+      -107,
+      22.5
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    367.5,
+    118,
+    192.5
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "legBL",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Splayed steel leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      27.5,
+      107,
+      22.5
+     ],
+     [
+      -27.5,
+      -107,
+      -22.5
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    -367.5,
+    118,
+    -192.5
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "legBR",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Splayed steel leg",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -27.5,
+      107,
+      22.5
+     ],
+     [
+      27.5,
+      -107,
+      -22.5
+     ]
+    ],
+    "radius": 11
+   },
+   "position": [
+    367.5,
+    118,
+    -192.5
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "railF",
+   "name": "Front stretcher",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Thin rod between front legs",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -352,
+      0,
+      0
+     ],
+     [
+      352,
+      0,
+      0
+     ]
+    ],
+    "radius": 7
+   },
+   "position": [
+    0,
+    150,
+    185
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  },
+  {
+   "id": "railB",
+   "name": "Back stretcher",
+   "category": "mechanical",
+   "materialName": "Black metal",
+   "detail": "Thin rod between back legs",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      -352,
+      0,
+      0
+     ],
+     [
+      352,
+      0,
+      0
+     ]
+    ],
+    "radius": 7
+   },
+   "position": [
+    0,
+    150,
+    -185
+   ],
+   "material": {
+    "color": "#2a2a2a",
+    "roughness": 0.5,
+    "metalness": 0.7
+   }
+  }
+ ]
+}

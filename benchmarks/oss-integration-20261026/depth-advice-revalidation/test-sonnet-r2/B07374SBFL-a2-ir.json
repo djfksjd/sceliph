@@ -1,0 +1,148 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Arc floor lamp",
+ "units": "mm",
+ "components": [
+  {
+   "id": "base",
+   "name": "Base",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "round weighted base",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 115,
+    "radiusBottom": 120,
+    "depth": 35,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    17.5,
+    0
+   ],
+   "material": {
+    "color": "#8e8c84",
+    "roughness": 0.4,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "lowpole",
+   "name": "Lower pole",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "thick lower tube",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 12,
+    "radiusBottom": 12,
+    "depth": 1050,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    560,
+    0
+   ],
+   "material": {
+    "color": "#8a8880",
+    "roughness": 0.45,
+    "metalness": 0.85
+   }
+  },
+  {
+   "id": "uppole",
+   "name": "Upper rod",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "thin telescoping rod",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 4,
+    "radiusBottom": 4,
+    "depth": 380,
+    "radialSegments": 16
+   },
+   "position": [
+    0,
+    1250,
+    0
+   ],
+   "material": {
+    "color": "#a5a39b",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arc arm",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "curved arm to shade",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -40,
+      0
+     ],
+     [
+      0,
+      60,
+      0
+     ],
+     [
+      10,
+      90,
+      20
+     ],
+     [
+      50,
+      95,
+      90
+     ],
+     [
+      106,
+      88,
+      180
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    1400,
+    0
+   ],
+   "material": {
+    "color": "#a5a39b",
+    "roughness": 0.3,
+    "metalness": 0.9
+   }
+  },
+  {
+   "id": "shade",
+   "name": "Dome shade",
+   "category": "mechanical",
+   "materialName": "brushed nickel",
+   "detail": "spherical dome shade",
+   "geometry": {
+    "op": "sphere",
+    "radius": 105
+   },
+   "position": [
+    106,
+    1385,
+    180
+   ],
+   "material": {
+    "color": "#8c8a80",
+    "roughness": 0.3,
+    "metalness": 0.95
+   }
+  }
+ ]
+}

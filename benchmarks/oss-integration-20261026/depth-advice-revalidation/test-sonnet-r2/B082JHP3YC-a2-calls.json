@@ -1,0 +1,20 @@
+{
+ "request": "Two catalog photos (background removed) of: Amazon Brand – Stone & Beam Traditional Barnyard-Style Outdoor Wall Sconce, Galvanized Finish.\nThe second photo shows the same product from the same camera after the turntable turned it a quarter turn (90 degrees) about the vertical axis; both photos use the same zoom, so their pixel scales match. Use it for the depth and the hidden sides. \"view\" refers to the first photo.\nThe product listing gives its overall height as 301 mm.\nDecide the components yourself.",
+ "calls": [
+  {
+   "round": 0,
+   "modelIds": [
+    "claude-sonnet-5-5"
+   ],
+   "costUsd": 0.031085199999999997,
+   "durationMs": 21832,
+   "isError": false
+  }
+ ],
+ "rounds": [
+  {
+   "text": "{\"view\":{\"azimuthDeg\":0,\"elevationDeg\":4},\"assembly\":{\"schema\":\"morphloom.assembly/0.1\",\"name\":\"Barn Wall Sconce\",\"units\":\"mm\",\"components\":[{\"id\":\"shade\",\"name\":\"Barn shade\",\"category\":\"enclosure\",\"materialName\":\"speckled galvanized steel\",\"detail\":\"Domed barn shade with flared rim\",\"geometry\":{\"op\":\"lathe\",\"profile\":[[0,180],[27,180],[33,153],[62,118],[90,78],[100,48],[113,24],[113,19],[0,19]],\"segments\":48},\"position\":[0,0,0],\"material\":{\"color\":\"#3a3d40\",\"roughness\":0.7,\"metalness\":0.4}},{\"id\":\"bulb\",\"name\":\"Bulb\",\"category\":\"power\",\"materialName\":\"glass\",\"detail\":\"Clear bulb under the shade\",\"geometry\":{\"op\":\"sphere\",\"radius\":24},\"position\":[0,25,0],\"material\":{\"color\":\"#e8eef0\",\"roughness\":0.1,\"metalness\":0.1}},{\"id\":\"arm\",\"name\":\"Gooseneck arm\",\"category\":\"mechanical\",\"materialName\":\"speckled galvanized steel\",\"detail\":\"Curved arm from shade neck to wall plate\",\"geometry\":{\"op\":\"tube\",\"points\":[[0,180,0],[0,250,-5],[0,288,-35],[0,292,-80],[0,285,-125],[0,240,-155],[0,150,-157]],\"radius\":6},\"position\":[0,0,0],\"material\":{\"color\":\"#3a3d40\",\"roughness\":0.7,\"metalness\":0.4}},{\"id\":\"plate\",\"name\":\"Wall plate\",\"category\":\"mechanical\",\"materialName\":\"speckled galvanized steel\",\"detail\":\"Rectangular mounting plate\",\"geometry\":{\"op\":\"roundedBox\",\"size\":[80,115,22],\"radius\":6},\"position\":[0,66,-157],\"material\":{\"color\":\"#33363a\",\"roughness\":0.7,\"metalness\":0.4}},{\"id\":\"knob\",\"name\":\"Set screw boss\",\"category\":\"mechanical\",\"materialName\":\"steel\",\"detail\":\"Small boss on plate face\",\"geometry\":{\"op\":\"cylinder\",\"radiusTop\":6,\"radiusBottom\":6,\"depth\":12,\"radialSegments\":24},\"position\":[0,68,-142],\"rotation\":[1.5708,0,0],\"material\":{\"color\":\"#2e3134\",\"roughness\":0.6,\"metalness\":0.4}}]}}",
+   "stage": "pass"
+  }
+ ]
+}

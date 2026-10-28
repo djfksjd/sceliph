@@ -1,0 +1,227 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Rivet Mercury Glass Wall Sconce",
+ "units": "mm",
+ "components": [
+  {
+   "id": "plate",
+   "name": "Wall plate",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Rectangular backplate",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     116,
+     120,
+     12
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    184,
+    -97
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "arm",
+   "name": "Arm",
+   "category": "mechanical",
+   "materialName": "matte black metal",
+   "detail": "Straight rod from plate to cap",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      88
+     ]
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    224,
+    -91
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.6,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "cap",
+   "name": "Cap",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "Domed top cap",
+   "geometry": {
+    "op": "lathe",
+    "profile": [
+     [
+      0,
+      54
+     ],
+     [
+      24,
+      54
+     ],
+     [
+      34,
+      48
+     ],
+     [
+      44,
+      38
+     ],
+     [
+      44,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "segments": 48
+   },
+   "position": [
+    0,
+    200,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.55,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "rim",
+   "name": "Rim ring",
+   "category": "enclosure",
+   "materialName": "matte black metal",
+   "detail": "Collar holding the glass",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 50,
+    "depth": 8,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    200,
+    0
+   ],
+   "material": {
+    "color": "#161616",
+    "roughness": 0.55,
+    "metalness": 0.4
+   }
+  },
+  {
+   "id": "glass",
+   "name": "Glass shade",
+   "category": "enclosure",
+   "materialName": "clear seeded glass",
+   "detail": "Cylindrical shade",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 50,
+    "radiusBottom": 50,
+    "depth": 196,
+    "radialSegments": 48
+   },
+   "position": [
+    0,
+    102,
+    0
+   ],
+   "material": {
+    "color": "#dfe8ea",
+    "roughness": 0.15,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "socket",
+   "name": "Socket",
+   "category": "mechanical",
+   "materialName": "black plastic",
+   "detail": "Bulb socket",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 14,
+    "radiusBottom": 14,
+    "depth": 40,
+    "radialSegments": 24
+   },
+   "position": [
+    0,
+    178,
+    0
+   ],
+   "material": {
+    "color": "#111111",
+    "roughness": 0.6
+   }
+  },
+  {
+   "id": "bulb_neck",
+   "name": "Bulb neck",
+   "category": "power",
+   "materialName": "warm glass",
+   "detail": "Tapered upper bulb",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 13,
+    "radiusBottom": 24,
+    "depth": 50,
+    "radialSegments": 32
+   },
+   "position": [
+    0,
+    138,
+    0
+   ],
+   "material": {
+    "color": "#ffd9a0",
+    "roughness": 0.2
+   }
+  },
+  {
+   "id": "bulb",
+   "name": "Bulb",
+   "category": "power",
+   "materialName": "warm glass",
+   "detail": "Edison bulb globe",
+   "geometry": {
+    "op": "sphere",
+    "radius": 27
+   },
+   "position": [
+    0,
+    88,
+    0
+   ],
+   "material": {
+    "color": "#ffcf8a",
+    "roughness": 0.2
+   }
+  }
+ ]
+}

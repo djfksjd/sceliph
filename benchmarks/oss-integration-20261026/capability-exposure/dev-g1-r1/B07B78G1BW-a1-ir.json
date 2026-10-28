@@ -1,0 +1,740 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Mid-century buffet credenza",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top slab",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Top slab",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1440,
+     33,
+     430
+    ],
+    "radius": 5
+   },
+   "position": [
+    0,
+    796.5,
+    0
+   ],
+   "material": {
+    "color": "#a8672e",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2,
+    "clearcoatRoughness": 0.5
+   }
+  },
+  {
+   "id": "body",
+   "name": "Cabinet body",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Cabinet carcass",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1390,
+     410,
+     400
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    575,
+    -5
+   ],
+   "material": {
+    "color": "#a0612b",
+    "surface": "wood",
+    "roughness": 0.6,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "door1",
+   "name": "Door 1",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     340,
+     385,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -517,
+    575,
+    202
+   ],
+   "material": {
+    "color": "#b06f33",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2
+   }
+  },
+  {
+   "id": "door2",
+   "name": "Door 2",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     340,
+     385,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    -172,
+    575,
+    202
+   ],
+   "material": {
+    "color": "#b06f33",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2
+   }
+  },
+  {
+   "id": "door3",
+   "name": "Door 3",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     340,
+     385,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    172,
+    575,
+    202
+   ],
+   "material": {
+    "color": "#b06f33",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2
+   }
+  },
+  {
+   "id": "door4",
+   "name": "Door 4",
+   "category": "enclosure",
+   "materialName": "Stained pine",
+   "detail": "Door panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     340,
+     385,
+     16
+    ],
+    "radius": 2
+   },
+   "position": [
+    517,
+    575,
+    202
+   ],
+   "material": {
+    "color": "#b06f33",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0,
+    "clearcoat": 0.2
+   }
+  },
+  {
+   "id": "h1",
+   "name": "Handle 1",
+   "category": "mechanical",
+   "materialName": "Dark bronze",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -110,
+      0
+     ],
+     [
+      0,
+      110,
+      0
+     ]
+    ],
+    "radius": 8
+   },
+   "position": [
+    -362,
+    590,
+    226
+   ],
+   "material": {
+    "color": "#3a2418",
+    "surface": "coated-metal",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "h2",
+   "name": "Handle 2",
+   "category": "mechanical",
+   "materialName": "Dark bronze",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -110,
+      0
+     ],
+     [
+      0,
+      110,
+      0
+     ]
+    ],
+    "radius": 8
+   },
+   "position": [
+    -328,
+    590,
+    226
+   ],
+   "material": {
+    "color": "#3a2418",
+    "surface": "coated-metal",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "h3",
+   "name": "Handle 3",
+   "category": "mechanical",
+   "materialName": "Dark bronze",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -110,
+      0
+     ],
+     [
+      0,
+      110,
+      0
+     ]
+    ],
+    "radius": 8
+   },
+   "position": [
+    328,
+    590,
+    226
+   ],
+   "material": {
+    "color": "#3a2418",
+    "surface": "coated-metal",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "h4",
+   "name": "Handle 4",
+   "category": "mechanical",
+   "materialName": "Dark bronze",
+   "detail": "Vertical bar handle",
+   "geometry": {
+    "op": "tube",
+    "points": [
+     [
+      0,
+      -110,
+      0
+     ],
+     [
+      0,
+      110,
+      0
+     ]
+    ],
+    "radius": 8
+   },
+   "position": [
+    362,
+    590,
+    226
+   ],
+   "material": {
+    "color": "#3a2418",
+    "surface": "coated-metal",
+    "roughness": 0.4,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "legfl",
+   "name": "Front left leg",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 26,
+    "radiusBottom": 15,
+    "depth": 372,
+    "radialSegments": 24
+   },
+   "position": [
+    -610,
+    186,
+    150
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "material": {
+    "color": "#9a5a28",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legfr",
+   "name": "Front right leg",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 26,
+    "radiusBottom": 15,
+    "depth": 372,
+    "radialSegments": 24
+   },
+   "position": [
+    610,
+    186,
+    150
+   ],
+   "material": {
+    "color": "#9a5a28",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legbl",
+   "name": "Back left leg",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 26,
+    "radiusBottom": 15,
+    "depth": 372,
+    "radialSegments": 24
+   },
+   "position": [
+    -610,
+    186,
+    -150
+   ],
+   "material": {
+    "color": "#9a5a28",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "legbr",
+   "name": "Back right leg",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Tapered leg",
+   "geometry": {
+    "op": "cylinder",
+    "radiusTop": 26,
+    "radiusBottom": 15,
+    "depth": 372,
+    "radialSegments": 24
+   },
+   "position": [
+    610,
+    186,
+    -150
+   ],
+   "material": {
+    "color": "#9a5a28",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "railf",
+   "name": "Front shelf rail",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Shelf rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1220,
+     30,
+     26
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    250,
+    150
+   ],
+   "material": {
+    "color": "#9a5a28",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "railb",
+   "name": "Back shelf rail",
+   "category": "mechanical",
+   "materialName": "Stained pine",
+   "detail": "Shelf rail",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1220,
+     30,
+     26
+    ],
+    "radius": 4
+   },
+   "position": [
+    0,
+    250,
+    -150
+   ],
+   "material": {
+    "color": "#9a5a28",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "s1",
+   "name": "Slat 1",
+   "category": "mechanical",
+   "materialName": "Dark stained pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     16,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    -540,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#7a4520",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "s2",
+   "name": "Slat 2",
+   "category": "mechanical",
+   "materialName": "Dark stained pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     16,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    -420,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#7a4520",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "s3",
+   "name": "Slat 3",
+   "category": "mechanical",
+   "materialName": "Dark stained pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     16,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    -300,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#7a4520",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "s4",
+   "name": "Slat 4",
+   "category": "mechanical",
+   "materialName": "Dark stained pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     16,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    -180,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#7a4520",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "s5",
+   "name": "Slat 5",
+   "category": "mechanical",
+   "materialName": "Dark stained pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     16,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    -60,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#7a4520",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "s6",
+   "name": "Slat 6",
+   "category": "mechanical",
+   "materialName": "Dark stained pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     16,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    60,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#7a4520",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "s7",
+   "name": "Slat 7",
+   "category": "mechanical",
+   "materialName": "Dark stained pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     16,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    180,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#7a4520",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "s8",
+   "name": "Slat 8",
+   "category": "mechanical",
+   "materialName": "Dark stained pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     16,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    300,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#7a4520",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "s9",
+   "name": "Slat 9",
+   "category": "mechanical",
+   "materialName": "Dark stained pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     16,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    420,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#7a4520",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  },
+  {
+   "id": "s10",
+   "name": "Slat 10",
+   "category": "mechanical",
+   "materialName": "Dark stained pine",
+   "detail": "Shelf slat",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     40,
+     16,
+     300
+    ],
+    "radius": 3
+   },
+   "position": [
+    540,
+    240,
+    0
+   ],
+   "material": {
+    "color": "#7a4520",
+    "surface": "wood",
+    "roughness": 0.55,
+    "metalness": 0
+   }
+  }
+ ]
+}

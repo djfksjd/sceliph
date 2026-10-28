@@ -1,0 +1,416 @@
+{
+ "schema": "morphloom.assembly/0.1",
+ "name": "Sideboard 3 drawers 2 doors",
+ "units": "mm",
+ "components": [
+  {
+   "id": "top",
+   "name": "Top",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "Thick top panel",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1600,
+     30,
+     400
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    747,
+    0
+   ],
+   "material": {
+    "color": "#6b4f36",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "carcass",
+   "name": "Carcass",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "Cabinet body",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     1540,
+     462,
+     360
+    ],
+    "radius": 3
+   },
+   "position": [
+    0,
+    501,
+    -10
+   ],
+   "material": {
+    "color": "#5a432e",
+    "roughness": 0.85
+   }
+  },
+  {
+   "id": "door_l",
+   "name": "Left door",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "Left door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     496,
+     444,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    -520,
+    501,
+    179
+   ],
+   "material": {
+    "color": "#6e5239",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "door_r",
+   "name": "Right door",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "Right door front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     496,
+     444,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    520,
+    501,
+    179
+   ],
+   "material": {
+    "color": "#6e5239",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "drawer_1",
+   "name": "Top drawer",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     530,
+     144,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    649,
+    179
+   ],
+   "material": {
+    "color": "#664b33",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "drawer_2",
+   "name": "Middle drawer",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     530,
+     144,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    501,
+    179
+   ],
+   "material": {
+    "color": "#725639",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "drawer_3",
+   "name": "Bottom drawer",
+   "category": "enclosure",
+   "materialName": "aged oak laminate",
+   "detail": "Drawer front",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     530,
+     144,
+     18
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    353,
+    179
+   ],
+   "material": {
+    "color": "#664b33",
+    "roughness": 0.8
+   }
+  },
+  {
+   "id": "handle_1",
+   "name": "Handle top",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Drawer handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     10,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    675,
+    192
+   ],
+   "material": {
+    "color": "#1f1f1f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle_2",
+   "name": "Handle middle",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Drawer handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     10,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    527,
+    192
+   ],
+   "material": {
+    "color": "#1f1f1f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "handle_3",
+   "name": "Handle bottom",
+   "category": "mechanical",
+   "materialName": "black metal",
+   "detail": "Drawer handle",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     120,
+     10,
+     8
+    ],
+    "radius": 2
+   },
+   "position": [
+    0,
+    379,
+    192
+   ],
+   "material": {
+    "color": "#1f1f1f",
+    "roughness": 0.5,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_lf",
+   "name": "Left front post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Vertical post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     732,
+     40
+    ],
+    "radius": 2
+   },
+   "position": [
+    -787,
+    366,
+    175
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.55,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_lb",
+   "name": "Left back post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Vertical post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     732,
+     40
+    ],
+    "radius": 2
+   },
+   "position": [
+    -787,
+    366,
+    -175
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.55,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_rf",
+   "name": "Right front post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Vertical post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     732,
+     40
+    ],
+    "radius": 2
+   },
+   "position": [
+    787,
+    366,
+    175
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.55,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "leg_rb",
+   "name": "Right back post",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Vertical post",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     732,
+     40
+    ],
+    "radius": 2
+   },
+   "position": [
+    787,
+    366,
+    -175
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.55,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "runner_l",
+   "name": "Left runner",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Floor runner",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     30,
+     390
+    ],
+    "radius": 2
+   },
+   "position": [
+    -787,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.55,
+    "metalness": 0.6
+   }
+  },
+  {
+   "id": "runner_r",
+   "name": "Right runner",
+   "category": "mechanical",
+   "materialName": "black steel",
+   "detail": "Floor runner",
+   "geometry": {
+    "op": "roundedBox",
+    "size": [
+     14,
+     30,
+     390
+    ],
+    "radius": 2
+   },
+   "position": [
+    787,
+    15,
+    0
+   ],
+   "material": {
+    "color": "#222222",
+    "roughness": 0.55,
+    "metalness": 0.6
+   }
+  }
+ ]
+}
