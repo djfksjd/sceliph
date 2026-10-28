@@ -10,13 +10,13 @@
 
 [한국어](./README.md) · [English](./README.en.md)
 
-[![License](https://img.shields.io/badge/license-Apache--2.0-335cff?style=flat-square)](./LICENSE)
+[![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-335cff?style=flat-square)](./LICENSE)
 ![Stage](https://img.shields.io/badge/stage-v0.4%20alpha-d69526?style=flat-square)
 ![Three.js](https://img.shields.io/badge/Three.js-r179-111111?style=flat-square)
 
 </div>
 
-Sceliph is an open-source local tool that turns photographs, drawings, measurements, and requirements into declarative IR, then generates meshes and PBR materials. A development agent such as Codex or Claude proposes structure and parameters; the engine computes geometry, patterns, and checks. The default workflow does not require a paid 3D generation API.
+Sceliph is a source-available (noncommercial) local tool that turns photographs, drawings, measurements, and requirements into declarative IR, then generates meshes and PBR materials. A development agent such as Codex or Claude proposes structure and parameters; the engine computes geometry, patterns, and checks. The default workflow does not require a paid 3D generation API.
 
 **This is `v0.4 alpha`. It does not guarantee accurate reconstruction from arbitrary photos, production delivery across all domains, or manufacturing CAD/BREP precision.** Passing a particular check or increasing polygon counts is not proof of overall quality.
 
@@ -231,7 +231,9 @@ Tests, internal scores, and format validation do not replace independent expert 
 
 The viewer does not upload local file inputs to external servers. External model calls made separately by development agents or users require their own review. Browser memory and saved repository/download files are distinct; users manage saved local files.
 
-Code is [Apache-2.0](./LICENSE). See [NOTICE](./NOTICE) for included data and source attribution. Optional external model code and weights have separate licenses.
+Code is licensed under [PolyForm Noncommercial 1.0.0](./LICENSE). Personal study, research, hobby use and use by noncommercial organisations are permitted; **commercial use is not.** For commercial use, ask the repository owner for a separate licence.
+
+Versions published under Apache-2.0 before 2026-10-29 stay under Apache-2.0 for anyone who received them. Third-party code included here (portions adapted from OxiHuman and img2threejs, `vendor/manifold-3d-3.5.4`, and others) keeps its own licence; the Apache-2.0 text is in [LICENSES/Apache-2.0.txt](./LICENSES/Apache-2.0.txt). See [NOTICE](./NOTICE) for included data and source attribution. Optional external model code and weights have separate licences.
 
 ### Optional Blender source-normal import
 

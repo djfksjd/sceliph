@@ -10,13 +10,13 @@
 
 [한국어](./README.md) · [English](./README.en.md)
 
-[![License](https://img.shields.io/badge/license-Apache--2.0-335cff?style=flat-square)](./LICENSE)
+[![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-335cff?style=flat-square)](./LICENSE)
 ![Stage](https://img.shields.io/badge/stage-v0.4%20alpha-d69526?style=flat-square)
 ![Three.js](https://img.shields.io/badge/Three.js-r179-111111?style=flat-square)
 
 </div>
 
-Sceliph는 사진·도면·실측값·자연어 요구를 선언형 IR로 정리하고, 로컬 기하 엔진에서 메시와 PBR 재질을 생성하는 오픈소스 도구입니다. Codex/Claude 같은 개발 에이전트가 구조와 파라미터를 제안하고, 엔진이 형상 계산·반복 배치·검증을 수행합니다. 기본 경로에 유료 3D 생성 API가 필요하지 않습니다.
+Sceliph는 사진·도면·실측값·자연어 요구를 선언형 IR로 정리하고, 로컬 기하 엔진에서 메시와 PBR 재질을 생성하는 소스 공개(비상업) 도구입니다. Codex/Claude 같은 개발 에이전트가 구조와 파라미터를 제안하고, 엔진이 형상 계산·반복 배치·검증을 수행합니다. 기본 경로에 유료 3D 생성 API가 필요하지 않습니다.
 
 **현재는 `v0.4 alpha`입니다. 임의 사진의 정확한 3D 복원, 모든 분야의 실무 납품, 제조용 CAD/BREP 정확도를 보장하지 않습니다.** 특정 검사 통과나 많은 폴리곤을 전체 품질의 증거로 취급하지 않습니다.
 
@@ -233,7 +233,9 @@ npm run gltf:validate -- path/to/asset.glb
 
 뷰어의 로컬 파일 입력은 외부 서버에 업로드하지 않습니다. 개발 에이전트나 사용자가 별도 외부 모델을 호출하는 경로는 별도로 검토해야 합니다. 메모리에서 읽은 파일과 저장소·다운로드에 저장한 파일은 다르며, 로컬 파일은 사용자가 관리합니다.
 
-코드는 [Apache-2.0](./LICENSE)입니다. 포함 데이터와 참고 코드의 출처·라이선스는 [NOTICE](./NOTICE)를 확인하세요. 선택적 외부 모델의 코드·가중치 라이선스는 별도입니다.
+코드는 [PolyForm Noncommercial 1.0.0](./LICENSE)입니다. 개인 학습·연구·취미와 비영리 기관의 사용은 허용하고, **상업적 이용은 허용하지 않습니다.** 상업적 이용은 저장소 소유자에게 별도 라이선스를 문의하세요.
+
+2026-10-29 이전에 Apache-2.0으로 공개된 버전은 그 버전을 받은 사람에게 Apache-2.0 조건이 그대로 유지됩니다. 포함된 제3자 코드(OxiHuman·img2threejs에서 가져온 부분, `vendor/manifold-3d-3.5.4` 등)는 각자의 원 라이선스를 따르며, Apache-2.0 전문은 [LICENSES/Apache-2.0.txt](./LICENSES/Apache-2.0.txt)에 있습니다. 포함 데이터와 참고 코드의 출처·라이선스는 [NOTICE](./NOTICE)를 확인하세요. 선택적 외부 모델의 코드·가중치 라이선스는 별도입니다.
 
 ### 선택형 Blender normal 보존 import
 
